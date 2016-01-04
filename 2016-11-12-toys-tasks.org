@@ -1365,3 +1365,22 @@ tags: [coding, algorithms]
 
    Good luck!
    #+END_QUOTE
+** Solution
+   #+BEGIN_SRC python :results output
+     def decodeMorse(morseCode):
+         return morseCode.replace('.', MORSE_CODE['.']).replace('-', MORSE_CODE['-']).replace(' ', '')
+
+
+     def testAndPrint(got, expected):
+         if got == expected:
+             test.expect(True)
+         else:
+             print "<pre style='display:inline'>Got '%s', expected '%s'</pre>" % (got, expected)
+             test.expect(False)
+
+     test.describe("Example from description")
+     testAndPrint(decodeMorse('.... . -.--   .--- ..- -.. .'), 'HEY JUDE')
+
+     test.describe("Your own tests")
+     # Add more tests here
+   #+END_SRC
