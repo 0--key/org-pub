@@ -33,6 +33,7 @@ tags: [tutorial, samples, data types]
    | Steven     | Fry       | 66  |
 
    #+BEGIN_SRC sqlite :db data_types.db :results column :var orgtable=simple_example :colnames yes :exports both
+   DROP TABLE IF EXISTS customers;
    CREATE TABLE IF NOT EXISTS customers(first_name TEXT, last_name TEXT, age INT);
    .mode csv
    .import $orgtable customers

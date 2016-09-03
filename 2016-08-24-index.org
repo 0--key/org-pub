@@ -57,12 +57,11 @@ tags: [sotfware development, emacs, Python, learning]
 ** how-to
 
 * SQLite3
-
 ** Innate shell
 
-** Data types
+** [[http://0--key.github.io/sqlite3/data_types.html][Data types]]
 
-** Python interaction
+** [[http://0--key.github.io/python/stdlib/sqlite3/interaction.html][Python interaction]]
 
 * Postgres
 
