@@ -1,0 +1,99 @@
+#+BEGIN_HTML
+---
+layout: post
+title: Git
+tagline: " host all your code there"
+permalink: /git/tips/how-to-clone-repository.html
+categories: [git]
+tags: [tutorial, clone, remotes]
+---
+#+END_HTML
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+
+#+TOC: headlines 2
+
+* Definition
+  Nowadays [[https://github.com/][Git]] is a standard option to host your code and share it
+  among collaborators. Seems like the best way to introduce it is to
+  show how to get a copy of some project on your hard drive for
+  further development, tests, adjustments etc.
+
+* Documentation
+  The definitive guide how-to do this meta-task is on the official
+  Git [[https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository#Cloning-an-Existing-Repository][documentation site]].
+
+* Prerequisites
+  Of cause you need git installed on your host.
+  #+BEGIN_SRC sh :exports both
+  git --version
+  #+END_SRC
+
+  #+RESULTS:
+  : git version 2.9.3
+
+* Cloning itself
+
+** Browse at Github seeking something interesting to you
+   and get the link for your particular repo like this:
+   #+BEGIN_QUOTE
+   https://github.com/0--key/org-pub.git
+   #+END_QUOTE
+
+** Open terminal tab and type:
+   #+BEGIN_SRC shell :exports both
+   cd /usr/local/share/DVCS/ # it's path for all repositories on my hard drive
+   # git clone https://github.com/0--key/org-pub.git
+   # uncomment the string above for the actual git clone
+   ls | grep org-pub
+   #+END_SRC
+
+   #+RESULTS:
+   : org-pub
+
+** When this repository resides in your file-system
+   it's time to review what are inside:
+   #+BEGIN_SRC sh :exports both
+   cd /usr/local/share/DVCS/
+   ls org-pub
+   #+END_SRC
+
+   #+RESULTS:
+   | 2016-08-24-index.org                          |
+   | 2016-08-24-intro.org                          |
+   | 2016-08-24-intro.org~                         |
+   | 2016-08-25-how-to-evaluate.org                |
+   | 2016-08-26-disqus.org                         |
+   | 2016-08-27-mark-up-samples.org                |
+   | 2016-08-27-python-and-sqlite3-interaction.org |
+   | 2016-08-30-sqlite3-integrity-check.org        |
+   | 2016-08-31-sqlite3-data-types.org             |
+   | 2016-09-06-fork-git-repository.org            |
+   | 2016-09-06-how-to-clone-git-repo.org          |
+   | 2016-09-06-how-to-clone-git-repo.org~         |
+   | data_types.db                                 |
+   | img                                           |
+   | LICENSE                                       |
+   | README.md                                     |
+   | README.md~                                    |
+   | test-sqlite.db                                |
+
+   Seems like all are inside.
+
+** Check up remotes:
+   #+BEGIN_SRC sh :exports both
+   cd /usr/local/share/DVCS/org-pub/
+   git remote -v
+   #+END_SRC
+
+   #+RESULTS:
+   | origin | [[https://github.com/0--key/org-pub.git]] (fetch) |
+   | origin | [[https://github.com/0--key/org-pub.git]] (push)  |
+
+   Your local version should push and fetch code from a single remote.
+
+* Results
+  We got the local version of some interesting repository hosted on
+  Git.
+
+* Conclusion
+  It's time to go further and cope with fork technology.

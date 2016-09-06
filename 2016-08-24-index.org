@@ -81,44 +81,6 @@ tags: [sotfware development, emacs, Python, learning]
 
 ** Tips
 
-*** How to clone a repo
-
-    Get link for your particular repo like this
-    #+BEGIN_QUOTE
-    https://github.com/0--key/org-pub.git
-    #+END_QUOTE
-
-    Open terminal tab and type:
-    #+BEGIN_SRC shell :exports both
-    cd /usr/local/share/DVCS/ # it's path for all repositories on my hard drive
-    git clone https://github.com/0--key/org-pub.git
-    ls | grep org-pub
-    #+END_SRC
-
-    #+RESULTS:
-    : org-pub
-
-    When this repository resides on your path-tree it's time to review
-    what's in:
-
-    #+BEGIN_SRC sh :exports both
-    cd /usr/local/share/DVCS/
-    ls org-pub
-    #+END_SRC
-
-    #+RESULTS:
-    : LICENSE
-
-    It's empty but the License is there. Check up remotes:
-
-    #+BEGIN_SRC sh :exports both
-    cd /usr/local/share/DVCS/org-pub/
-    git remote -v
-    #+END_SRC
-
-    #+RESULTS:
-    | origin | [[https://github.com/0--key/org-pub.git]] (fetch) |
-    | origin | [[https://github.com/0--key/org-pub.git]] (push)  |
 
 * Brief prelude							    :prelude:
 
