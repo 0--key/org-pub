@@ -17,38 +17,39 @@ tags: [sotfware development, emacs, Python, learning]
   As the TDD approach became a standard option in software development
   therefore it is very time to wrap all code you're studied already in
   this modern envelop. /It is not just a modern quirk/, it effectively
-  used to enhance your general coding skills by bundling it together
+  used to enhance your general coding skill simultaneously tying:
+
   - initial idea clarification;
   - acceptance criteria definition;
-  - instant, even and continuous code quality testing;
+  - frequent and steady code quality testing;
   - source code purification;
-  - bug detection on an infant stage;
+  - bug detection on their infant age;
   - simplify software development process as a whole;
-  - /grant to you/ ability to do your job ten times faster.
+  - /grant to you ability/ to do your job ten times faster.
 
-  Next would be as a *literate code unveiled TDD approach* for direct
-  execution on your host. On a flip side the code might serve to you
-  as a gauge and start point, or even to encourage you in your journey
-  across realm of knowledge. Exactly to rectify your personal Python
-  skill all code samples should be run in a slick manner, hence it all
-  possible to modify, improve or rearrange on your own taste.
+  Next would be as a *literate programming tutorial* designed exactly
+  for lucid execution on your host. In addition it might serve to you
+  as a gauge and a start point, or even to encourage you in your
+  journey across the realm of knowledge. Exactly to rectify your
+  personal programming skill all code samples should be run easily,
+  hence it is possible to modify, improve or rearrange its content on
+  your own taste.
 
-  For experienced users I might suggest to curious reader to fork this
-  project on [[https://github.com/0--key/0--key.github.io][Github]] and evaluate it for your personal usage.It might
-  be interesting to you to change my variables on your on, or, in many
-  cases re-write one or another chunk of my code. On my
-  point of view it should be a huge comprehensive method to learn
-  programming. In any case feel free to contribute to it.
+  For experienced users I might suggest to fork this project source
+  code on [[https://github.com/0--key/org-pub][Github]] and evaluate it for your personal usage. It might be
+  curious to you to substitute your own variables, or, in many cases
+  to re-write one or another chunk of code. On my point of view it
+  should be a very /comprehensive method to learn programming by
+  active reading/.
 
   #+BEGIN_HTML
   <p align="right">Anton S. Kosinov</p>
   #+END_HTML
 
   #+END_QUOTE
-#+TOC: headlines 2
+
 
 * Emacs
-
 ** Tips
 
 ** Literate Programming
