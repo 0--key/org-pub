@@ -39,6 +39,11 @@ tags: [sotfware development, emacs, Python, learning]
   cases re-write one or another chunk of my code. On my
   point of view it should be a huge comprehensive method to learn
   programming. In any case feel free to contribute to it.
+
+  #+BEGIN_HTML
+  <p align="right">Anton S. Kosinov</p>
+  #+END_HTML
+
   #+END_QUOTE
 #+TOC: headlines 2
 
