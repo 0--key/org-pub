@@ -32,7 +32,6 @@ tags: [tutorial, clone, remotes]
   : git version 2.9.3
 
 * Cloning itself
-
 ** Browse at Github seeking something interesting to you
    and get the link for your particular repo like this:
    #+BEGIN_QUOTE
@@ -93,7 +92,19 @@ tags: [tutorial, clone, remotes]
 
 * Results
   We got the local version of some interesting repository hosted on
-  Git.
+  Git. It allows to do anything with a personal clone, and, if you're
+  previously accepted as a collaborator, even to contribute to
+  project.
+
+  It's a usual approach to share access as a collaborator to well-known
+  persons. And it is a habitual treatment to organize software
+  development among team members - the team leader create a repository
+  on Github and grant access to all participants. For security reasons
+  all other persons aside from officially invited by the project owner
+  has a restricted read-only access to the project's files by default.
+
+  But what about to obtain improvements and corrections from the
+  completely unknown developers?
 
 * Conclusion
-  It's time to go further and cope with fork technology.
+  It's time to go further and cope with [[http://0--key.github.io/git/tips/how-to-fork-repository.html][Git fork]] technology.
