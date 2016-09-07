@@ -16,10 +16,10 @@ tags: [tutorial, clone, remotes]
   Nowadays [[https://github.com/][Git]] is a standard option to host your code and share it
   among collaborators. Seems like the best way to introduce it is to
   show how to get a copy of some project on your hard drive for
-  further development, tests, adjustments etc.
+  further scrutiny, development, tests, adjustments etc.
 
 * Documentation
-  The definitive guide how-to do this meta-task is on the official
+  The definitive guide how-to do this meta-task is at the official
   Git [[https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository#Cloning-an-Existing-Repository][documentation site]].
 
 * Prerequisites
@@ -32,27 +32,19 @@ tags: [tutorial, clone, remotes]
   : git version 2.9.3
 
 * Cloning itself
-** Browse at Github seeking something interesting to you
-   and get the link for your particular repo like this:
+** Browse at Github
+   seeking something interesting to you and get the link for your
+   particular repo like this:
    #+BEGIN_QUOTE
    https://github.com/0--key/org-pub.git
    #+END_QUOTE
 
-** Open terminal tab and type:
+** Open terminal tab
+   and type:
    #+BEGIN_SRC shell :exports both
    cd /usr/local/share/DVCS/ # it's path for all repositories on my hard drive
    # git clone https://github.com/0--key/org-pub.git
    # uncomment the string above for the actual git clone
-   ls | grep org-pub
-   #+END_SRC
-
-   #+RESULTS:
-   : org-pub
-
-** When this repository resides in your file-system
-   it's time to review what are inside:
-   #+BEGIN_SRC sh :exports both
-   cd /usr/local/share/DVCS/
    ls org-pub
    #+END_SRC
 
@@ -76,7 +68,8 @@ tags: [tutorial, clone, remotes]
    | README.md~                                    |
    | test-sqlite.db                                |
 
-   Seems like all are inside.
+   Seems like repository cloned into org-pub folder and all files are
+   inside.
 
 ** Check up remotes:
    #+BEGIN_SRC sh :exports both
@@ -92,16 +85,17 @@ tags: [tutorial, clone, remotes]
 
 * Results
   We got the local version of some interesting repository hosted on
-  Git. It allows to do anything with a personal clone, and, if you're
-  previously accepted as a collaborator, even to contribute to
+  Git. It allows the arbitrary operations on a personal clone, and, if
+  you're previously accepted as a collaborator, even to contribute to
   project.
 
-  It's a usual approach to share access as a collaborator to well-known
-  persons. And it is a habitual treatment to organize software
-  development among team members - the team leader create a repository
-  on Github and grant access to all participants. For security reasons
-  all other persons aside from officially invited by the project owner
-  has a restricted read-only access to the project's files by default.
+  It's a usual approach to share access as a collaborator to
+  well-known persons. And it is a habitual treatment to organize
+  software development among the team members - a team leader creates
+  a repository on Github and grants access as a project collaborator
+  to them. For security reasons all other persons aside
+  from those, whom was formally invited by the project owner, has a
+  restricted read-only access to the project's files by default.
 
   But what about to obtain improvements and corrections from the
   completely unknown developers?
