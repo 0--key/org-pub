@@ -13,34 +13,52 @@ tags: [tutorial, stdlib, testing]
 #+TOC: headlines 2
 
 * Preamble
+  In most cases the best approach to study how something works is to
+  test its behavior in various circumstances. In a helicopter view it
+  is an experimentation or a scrutiny.
+
+  The same approach for studying programming language has a plethora
+  benefits and the most significant is that it take you chance to play
+  with code. Of cause studying by playing is a most natural way of
+  learning.
 
 * Methodology
 
 ** Template
    Lets create a mold for pouring by the test suits:
-   
-   #+BEGIN_SRC python :noweb yes :tangle tests/test_built-in_constants.py
-   """Discover how it works by testing"""
+
+   #+BEGIN_SRC org
+   #+BEGIN_SRC python :noweb yes :results none :tangle tests/test_built-in_constants.py
+   """Discover how it works by a coherent testing"""
    <<import-header>>
 
 
    <<built-in-constants-test>>
-
-   <<second-test-class>>
-
-   <<third-test-class>>
+   # it might be several test cases
+   # thus several test classes
+   # as several include source code block
+   ,#+END_SRC   
    #+END_SRC
 
-   #+RESULTS:
-   : Discover how it works by testing it all
+   #+BEGIN_QUOTE
+   *Tip* Use =C-c C-v t= to generate /(tangle)/ the test file
+   #+END_QUOTE
 
 ** Necessary imports
+   It's clear what you expected to test by means the =unittest= module:
+
+   #+BEGIN_SRC org
    #+NAME: import-header
    #+BEGIN_SRC python
    import unittest
+   ,#+END_SRC   
    #+END_SRC
 
 ** Test suits
+   Each test case class as a separate source code block with a
+   particular name for substitution into template.
+
+   #+BEGIN_SRC org
    #+NAME: built-in-constants-test
    #+BEGIN_SRC python
      class TestBuiltInConstants(unittest.TestCase):
@@ -54,26 +72,19 @@ tags: [tutorial, stdlib, testing]
          def test_none(self):
              value = None
              self.assertIsNone(value)
+   ,#+END_SRC   
    #+END_SRC
 
-   #+RESULTS: first-test-class
-   : None
-
-   #+NAME: second-test-class
-   #+BEGIN_SRC python
-  
-   #+END_SRC
-
-   #+NAME: third-test-class
-   #+BEGIN_SRC python
-  
-   #+END_SRC
+   Obviously that arbitrary number of named blocks can exist there.
 
 ** Test runner
+   Accustomed unittest as Python module:
+
+   #+BEGIN_SRC org
    #+BEGIN_SRC sh :results output :exports both
      python -m unittest -v tests/test_built-in_constants.py 2>&1
 
-   #+END_SRC
+   ,#+END_SRC
 
    #+RESULTS:
    : test_false (tests.test_built-in_constants.TestBuiltInConstants) ... ok
@@ -81,7 +92,11 @@ tags: [tutorial, stdlib, testing]
    : test_true (tests.test_built-in_constants.TestBuiltInConstants) ... ok
    : 
    : ----------------------------------------------------------------------
-   : Ran 3 tests in 0.001s
+   : Ran 3 tests in 0.000s
    : 
-   : OK
+   : OK   
+   #+END_SRC
 
+* Conclusion
+  Now it is totally clear how to compose tests for Python standard
+  library testing in a literate programming style.
