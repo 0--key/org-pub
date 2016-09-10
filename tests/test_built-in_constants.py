@@ -1,9 +1,8 @@
-"""Discover how it works by testing it all"""
-
+"""Discover how it works by testing"""
 import unittest
 
 
-class TestGeneric(unittest.TestCase):
+class TestBuiltInConstants(unittest.TestCase):
 
     def test_true(self):
         self.assertTrue(1 + 3 == 4)
