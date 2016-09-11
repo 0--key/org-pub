@@ -26,13 +26,15 @@ tags: [tutorial, testing]
 
 * Prerequisites
   Check up does pytest installed already:
-  
+
+  #+BEGIN_SRC org
   #+BEGIN_SRC sh :results ouput pp :exports both
   pip freeze | grep pytest
-  #+END_SRC
+  ,#+END_SRC
 
   #+RESULTS:
-  : pytest==3.0.2
+  : pytest==3.0.2  
+  #+END_SRC
 
   Seems like it's installed properly and we going on.
   #+BEGIN_QUOTE
@@ -43,7 +45,8 @@ tags: [tutorial, testing]
 * Working sample
   
 ** Lets create a separate test file:
-  
+
+   #+BEGIN_SRC org
    #+BEGIN_SRC python :noweb yes :tangle tests/test_sample.py
      """This is an initial pytest sample file"""
 
@@ -53,14 +56,20 @@ tags: [tutorial, testing]
 
      def test_answer():
          assert func(3) == 5
+   ,#+END_SRC   
    #+END_SRC
+
+   #+BEGIN_QUOTE
+   *Tip* Type =C-c C-v t= to generate ~tests/test_sample.py~
+   #+END_QUOTE
   
 ** Run pytest
 
+   #+BEGIN_SRC org
    #+BEGIN_SRC sh :results output :exports both
    ls tests | grep py
    py.test -v # -v means =verbose=
-   #+END_SRC
+   ,#+END_SRC
 
    #+RESULTS:
    #+begin_example
@@ -91,14 +100,17 @@ tags: [tutorial, testing]
 
    tests/test_sample.py:6: AssertionError
    ====================== 1 failed, 3 passed in 0.10 seconds ======================
-#+end_example
-
+#+end_example   
+   #+END_SRC
+-----
    =pytest= evaluated all tests in folder ~test~, but what if you want
    to test something /particular/?
+-----
 
+#+BEGIN_SRC org
    #+BEGIN_SRC sh :results output :exports both
    py.test -v tests/test_sample.py
-   #+END_SRC
+   ,#+END_SRC
 
    #+RESULTS:
    #+begin_example
@@ -121,7 +133,7 @@ tags: [tutorial, testing]
    tests/test_sample.py:6: AssertionError
    =========================== 1 failed in 0.05 seconds ===========================
 #+end_example
-
+#+END_SRC
 
 ** Conclusion
    #+BEGIN_QUOTE
