@@ -1,0 +1,135 @@
+#+BEGIN_HTML
+---
+layout: post
+title: Python
+tagline: " pytest module overview"
+permalink: /python/testing/pytest-in-babel.html
+categories: [python, pytest, literate programming]
+tags: [tutorial, testing]
+---
+#+END_HTML
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+
+#+TOC: headlines 2
+
+* Definition
+  #+BEGIN_QUOTE
+  /pytest: helps you write better programs/
+
+  The pytest framework makes it easy to write small tests, yet scales
+  to support complex functional testing for applications and
+  libraries.
+  #+END_QUOTE
+
+* Documentation
+  At the [[http://docs.pytest.org/en/latest/][official web-site]]
+
+* Prerequisites
+  Check up does pytest installed already:
+  
+  #+BEGIN_SRC sh :results ouput pp :exports both
+  pip freeze | grep pytest
+  #+END_SRC
+
+  #+RESULTS:
+  : pytest==3.0.2
+
+  Seems like it's installed properly and we going on.
+  #+BEGIN_QUOTE
+  *Tip* If you got an empty string as a result of code execution above
+   it signed on necessity to install pytest.
+  #+END_QUOTE
+
+* Working sample
+  
+** Lets create a separate test file:
+  
+   #+BEGIN_SRC python :noweb yes :tangle tests/test_sample.py
+     """This is an initial pytest sample file"""
+
+     def func(x):
+         return x + 1
+
+
+     def test_answer():
+         assert func(3) == 5
+   #+END_SRC
+  
+** Run pytest
+
+   #+BEGIN_SRC sh :results output :exports both
+   ls tests | grep py
+   py.test -v # -v means =verbose=
+   #+END_SRC
+
+   #+RESULTS:
+   #+begin_example
+   __pycache__
+   test_built-in_constants.py
+   test_built-in_constants.pyc
+   test_sample.py
+   test_sample.py~
+   test_sample.pyc
+   ============================= test session starts ==============================
+   platform linux -- Python 3.4.3, pytest-3.0.2, py-1.4.31, pluggy-0.3.1 -- /usr/local/share/DVCS/lib/Python/venv/bin/python3
+   cachedir: .cache
+   rootdir: /usr/local/share/DVCS/org-pub, inifile: 
+   collecting ... collected 4 items
+
+   tests/test_built-in_constants.py::TestBuiltInConstants::test_false PASSED
+   tests/test_built-in_constants.py::TestBuiltInConstants::test_none PASSED
+   tests/test_built-in_constants.py::TestBuiltInConstants::test_true PASSED
+   tests/test_sample.py::test_answer FAILED
+
+   =================================== FAILURES ===================================
+   _________________________________ test_answer __________________________________
+
+       def test_answer():
+   >       assert func(3) == 5
+   E       assert 4 == 5
+   E        +  where 4 = func(3)
+
+   tests/test_sample.py:6: AssertionError
+   ====================== 1 failed, 3 passed in 0.10 seconds ======================
+#+end_example
+
+   =pytest= evaluated all tests in folder ~test~, but what if you want
+   to test something /particular/?
+
+   #+BEGIN_SRC sh :results output :exports both
+   py.test -v tests/test_sample.py
+   #+END_SRC
+
+   #+RESULTS:
+   #+begin_example
+   ============================= test session starts ==============================
+   platform linux -- Python 3.4.3, pytest-3.0.2, py-1.4.31, pluggy-0.3.1 -- /usr/local/share/DVCS/lib/Python/venv/bin/python3
+   cachedir: .cache
+   rootdir: /usr/local/share/DVCS/org-pub, inifile: 
+   collecting ... collected 1 items
+
+   tests/test_sample.py::test_answer FAILED
+
+   =================================== FAILURES ===================================
+   _________________________________ test_answer __________________________________
+
+       def test_answer():
+   >       assert func(3) == 5
+   E       assert 4 == 5
+   E        +  where 4 = func(3)
+
+   tests/test_sample.py:6: AssertionError
+   =========================== 1 failed in 0.05 seconds ===========================
+#+end_example
+
+
+** Conclusion
+   #+BEGIN_QUOTE
+   *Features*
+*** Detailed info on failing assert statements (no need to remember self.assert* names); 
+*** Auto-discovery of test modules and functions; 
+*** Modular fixtures for managing small or parametrized long-lived test resources; 
+*** Can run unittest (including trial) and nose test suites out of the box; 
+*** Python2.6+, Python3.3+, PyPy-2.3, Jython-2.5 (untested); 
+*** Rich plugin architecture, with over 150+ external plugins and thriving community; 
+    #+END_QUOTE
