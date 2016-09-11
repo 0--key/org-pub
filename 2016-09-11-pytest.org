@@ -126,10 +126,10 @@ tags: [tutorial, testing]
 ** Conclusion
    #+BEGIN_QUOTE
    *Features*
-*** Detailed info on failing assert statements (no need to remember self.assert* names); 
-*** Auto-discovery of test modules and functions; 
-*** Modular fixtures for managing small or parametrized long-lived test resources; 
-*** Can run unittest (including trial) and nose test suites out of the box; 
-*** Python2.6+, Python3.3+, PyPy-2.3, Jython-2.5 (untested); 
-*** Rich plugin architecture, with over 150+ external plugins and thriving community; 
+  - Detailed info on failing assert statements (no need to remember self.assert* names); 
+  - Auto-discovery of test modules and functions; 
+  - Modular fixtures for managing small or parametrized long-lived test resources; 
+  - Can run unittest (including trial) and nose test suites out of the box; 
+  - Python2.6+, Python3.3+, PyPy-2.3, Jython-2.5 (untested); 
+  - Rich plugin architecture, with over 150+ external plugins and thriving community; 
     #+END_QUOTE
