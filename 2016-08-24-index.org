@@ -80,8 +80,7 @@ tags: [sotfware development, emacs, Python, learning]
 * Git
 
 ** Tips
-
-
+   
 * Brief prelude							    :prelude:
 
   #+BEGIN_QUOTE
@@ -112,11 +111,10 @@ tags: [sotfware development, emacs, Python, learning]
 * Preamble
 
   #+BEGIN_QUOTE
-  Of cause learning by doing is a final stage in human creativity. It
-  requires a lot of passion, huge amount of time and hardships happen
-  certainly. And it is a peculiar time machine. There is one way
-  further, and a lot of noways.
-
+  Of cause learning by doing is a uttermost stage of human creativity.
+  It requires a lot of passion, huge amount of time and the hardships
+  happen certainly. And it is a peculiar time machine. There is one
+  way further, and a plethora of noways there.
   #+END_QUOTE
 
 ** Short description
