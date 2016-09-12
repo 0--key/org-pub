@@ -3,9 +3,9 @@
 layout: post
 title: Python
 tagline: " standard library disclosure"
-permalink: /python/tdd/stdlib.html
-categories: [python, TDD]
-tags: [tutorial, stdlib, testing]
+permalink: /python/tdd/unittest_init.html
+categories: [python, stdlib, TDD, literate programming]
+tags: [tutorial, unittest, methodology]
 ---
 #+END_HTML
 #+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
@@ -15,7 +15,7 @@ tags: [tutorial, stdlib, testing]
 * Preamble
   In most cases the best approach to study how something works is to
   test its behavior in various circumstances. In a helicopter view it
-  is an experimentation or a scrutiny.
+  is a dissection or a scrutiny.
 
   The same approach for studying programming language has a plethora
   benefits and the most significant is that it take you chance to play
@@ -82,7 +82,7 @@ tags: [tutorial, stdlib, testing]
 
    #+BEGIN_SRC org
    #+BEGIN_SRC sh :results output :exports both
-     python -m unittest -v tests/test_built-in_constants.py 2>&1
+     python -m unittest -v tests/test_built-in_constants.py
 
    ,#+END_SRC
 
@@ -92,9 +92,9 @@ tags: [tutorial, stdlib, testing]
    : test_true (tests.test_built-in_constants.TestBuiltInConstants) ... ok
    : 
    : ----------------------------------------------------------------------
-   : Ran 3 tests in 0.000s
+   : Ran 3 tests in 0.002s
    : 
-   : OK   
+   : OK
    #+END_SRC
 
 * Conclusion
