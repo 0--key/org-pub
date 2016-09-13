@@ -33,3 +33,12 @@ class TestAll(unittest.TestCase):
 
     def test_one_value_is_empty_string(self):
         self.assertFalse(all(["", "Empty"]))
+
+    def test_string_as_argument(self):
+        self.assertTrue(all('l') and all('low') and all('at the'))
+
+    def test_non_iter_argument(self):
+        self.assertRaises(TypeError, lambda x: all(11))
+
+    def test_bool_argument(self):
+        self.assertRaises(TypeError, lambda x: all(True))
