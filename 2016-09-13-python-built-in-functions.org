@@ -125,6 +125,9 @@ tags: [built-in functions, unittest]
          def test_one_value_is_empty_string(self):
              self.assertFalse(all(["", "Empty"]))
 
+         def test_empty_list(self):
+             self.assertTrue(all([]))
+
          def test_string_as_argument(self):
              self.assertTrue(all('l') and all('low') and all('at the'))
 
@@ -132,41 +135,62 @@ tags: [built-in functions, unittest]
              self.assertRaises(TypeError, lambda x: all(11))
 
          # assertRaises(exception, callable, *args, **kwds)
-    
+
          def test_bool_argument(self):
              self.assertRaises(TypeError, lambda x: all(True))
+
+
    #+END_SRC
     
+*** any()
+
+    #+NAME: any-test-suite
+    #+BEGIN_SRC python
+      class TestAny(unittest.TestCase):
+
+          def test_boolean_arguments(self):
+              self.assertTrue(any([True, True]))
+
+          def test_mixed_arguments(self):
+              self.assertTrue(any([True, False]))
+
+          def test_all_false_elements(self):
+              self.assertFalse(any([False, False]))
+
+          def test_string_as_argument(self):
+              self.assertTrue(any("Blasphemy"))
+
+          def test_empty_list(self):
+              self.assertFalse(any([]))
+
+          # def test_(self):
+          #     self.assertTrue(any([True, True]))
+
+          # def test_(self):
+          #     self.assertTrue(any([True, True]))
+
+          # def test_(self):
+          #     self.assertTrue(any([True, True]))
+
+
+    #+END_SRC
+
 
 ** Test runner
    Accustomed unittest as Python module:
 
 
    #+BEGIN_SRC sh :results output :exports both
-     python -m unittest -v tests/test_built-in_functions.py
+     python -m unittest tests/test_built-in_functions.py
 
    #+END_SRC
 
    #+RESULTS:
-   #+begin_example
-   test_negative (tests.test_built-in_functions.TestAbs) ... ok
-   test_positive (tests.test_built-in_functions.TestAbs) ... ok
-   test_all_values_are_negative (tests.test_built-in_functions.TestAll) ... ok
-   test_all_values_are_positive_numbers (tests.test_built-in_functions.TestAll) ... ok
-   test_all_values_are_strings (tests.test_built-in_functions.TestAll) ... ok
-   test_bool_argument (tests.test_built-in_functions.TestAll) ... ok
-   test_non_iter_argument (tests.test_built-in_functions.TestAll) ... ok
-   test_one_value_is_empty_string (tests.test_built-in_functions.TestAll) ... ok
-   test_one_value_is_zero (tests.test_built-in_functions.TestAll) ... ok
-   test_single_element_is_None (tests.test_built-in_functions.TestAll) ... ok
-   test_single_element_is_false (tests.test_built-in_functions.TestAll) ... ok
-   test_string_as_argument (tests.test_built-in_functions.TestAll) ... ok
-
-   ----------------------------------------------------------------------
-   Ran 12 tests in 0.002s
-
-   OK
-#+end_example
+   : .................
+   : ----------------------------------------------------------------------
+   : Ran 17 tests in 0.002s
+   : 
+   : OK
 
 
 * Conclusion
