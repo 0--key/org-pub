@@ -54,14 +54,33 @@ tags: [built-in functions, unittest]
 ** Template
    Lets create a mold for pouring by the test suits:
 
-
+   #+BEGIN_EXAMPLE
    #+BEGIN_SRC python :noweb yes :tangle tests/test_built-in_functions.py
    """Discover how they work by a coherent testing"""
    <<import-header>>
 
 
    <<abs-test-suite>>
+
+   
    <<all-test-suite>>
+
+
+   <<any-test-suite>>
+   #+END_SRC
+   #+END_EXAMPLE
+
+   #+BEGIN_SRC python :noweb yes :tangle tests/test_built-in_functions.py :exports none
+   """Discover how they work by a coherent testing"""
+   <<import-header>>
+
+
+   <<abs-test-suite>>
+
+   
+   <<all-test-suite>>
+
+
    <<any-test-suite>>
    #+END_SRC   
 
@@ -71,8 +90,8 @@ tags: [built-in functions, unittest]
    #+END_QUOTE
 
 ** Necessary imports
-   It's clear what you expected to test by means the =unittest= module:
-
+   It's clear that you expected to test built-in functions of stdlib
+   by means the =unittest= module:
 
    #+NAME: import-header
    #+BEGIN_SRC python
@@ -95,7 +114,8 @@ tags: [built-in functions, unittest]
           def test_negative(self):
               self.assertFalse(abs(-4) == -4)
 
-
+          def test_string_as_argument(self):
+              self.assertRaises(TypeError, lambda x: abs('A'))
     #+END_SRC
 
 *** all()
@@ -138,8 +158,6 @@ tags: [built-in functions, unittest]
 
          def test_bool_argument(self):
              self.assertRaises(TypeError, lambda x: all(True))
-
-
    #+END_SRC
     
 *** any()
@@ -171,9 +189,9 @@ tags: [built-in functions, unittest]
 
           # def test_(self):
           #     self.assertTrue(any([True, True]))
-
-
     #+END_SRC
+
+    #+RESULTS: any-test-suite
 
 
 ** Test runner
@@ -186,9 +204,9 @@ tags: [built-in functions, unittest]
    #+END_SRC
 
    #+RESULTS:
-   : .................
+   : ...................
    : ----------------------------------------------------------------------
-   : Ran 17 tests in 0.002s
+   : Ran 19 tests in 0.002s
    : 
    : OK
 

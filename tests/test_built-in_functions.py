@@ -10,6 +10,9 @@ class TestAbs(unittest.TestCase):
     def test_negative(self):
         self.assertFalse(abs(-4) == -4)
 
+    def test_string_as_argument(self):
+        self.assertRaises(TypeError, lambda x: abs('A'))
+
 
 class TestAll(unittest.TestCase):
 
@@ -34,6 +37,9 @@ class TestAll(unittest.TestCase):
     def test_one_value_is_empty_string(self):
         self.assertFalse(all(["", "Empty"]))
 
+    def test_empty_list(self):
+        self.assertTrue(all([]))
+
     def test_string_as_argument(self):
         self.assertTrue(all('l') and all('low') and all('at the'))
 
@@ -41,7 +47,7 @@ class TestAll(unittest.TestCase):
         self.assertRaises(TypeError, lambda x: all(11))
 
     # assertRaises(exception, callable, *args, **kwds)
-    
+
     def test_bool_argument(self):
         self.assertRaises(TypeError, lambda x: all(True))
 
