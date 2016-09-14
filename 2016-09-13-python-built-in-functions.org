@@ -288,6 +288,37 @@ tags: [built-in functions, unittest]
               self.assertTrue(bool(["A", False]))
     #+END_SRC
 
+*** bytearray()
+    #+NAME: bytearray-test-suite
+    #+BEGIN_SRC python
+      class TestByteArray(unittest.TestCase):
+          def setUp(self):
+              self.seq = bytearray([0x13, 0x00, 0x00, 0x07, 0x08, 0x00])
+
+          def test_iterable_of_bytes(self):
+              self.assertEqual(self.seq.pop(), 0)
+              self.assertEqual(self.seq.pop(), 8)
+
+          def test_pop_the_last_item(self):
+              self.seq.append(0x09)
+              self.assertEqual(self.seq.pop(), 9)
+
+          def test_string_as_argument(self):
+              self.assertRaises(TypeError, lambda: self.seq.append('Foo'))
+              # it's array of integers from zero to 255
+
+          def test_unsupported_value(self):
+              self.assertRaises(ValueError, lambda: self.seq.append(0x257))
+
+          def test_arbitrary_variable(self):
+              self.assertEqual(self.seq.pop(1), 0)
+              self.assertEqual(self.seq.pop(1), 0)
+              self.assertEqual(self.seq.pop(1), 7)
+
+          def tearDown(self):
+              self.seq.clear()
+    #+END_SRC
+
 
 ** Test runner
    Accustomed unittest as Python module:
@@ -299,9 +330,9 @@ tags: [built-in functions, unittest]
    #+END_SRC
 
    #+RESULTS:
-   : ..............................
+   : ...................................
    : ----------------------------------------------------------------------
-   : Ran 30 tests in 0.005s
+   : Ran 35 tests in 0.004s
    : 
    : OK
 

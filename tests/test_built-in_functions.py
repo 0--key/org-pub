@@ -125,3 +125,31 @@ class TestBool(unittest.TestCase):
 
     def test_mixed_arguments(self):
         self.assertTrue(bool(["A", False]))
+
+
+class TestByteArray(unittest.TestCase):
+    def setUp(self):
+        self.seq = bytearray([0x13, 0x00, 0x00, 0x07, 0x08, 0x00])
+
+    def test_iterable_of_bytes(self):
+        self.assertEqual(self.seq.pop(), 0)
+        self.assertEqual(self.seq.pop(), 8)
+
+    def test_pop_the_last_item(self):
+        self.seq.append(0x09)
+        self.assertEqual(self.seq.pop(), 9)
+
+    def test_string_as_argument(self):
+        self.assertRaises(TypeError, lambda: self.seq.append('Foo'))
+        # it's array of integers from zero to 255
+
+    def test_unsupported_value(self):
+        self.assertRaises(ValueError, lambda: self.seq.append(0x257))
+
+    def test_arbitrary_variable(self):
+        self.assertEqual(self.seq.pop(1), 0)
+        self.assertEqual(self.seq.pop(1), 0)
+        self.assertEqual(self.seq.pop(1), 7)
+
+    def tearDown(self):
+        self.seq.clear()
