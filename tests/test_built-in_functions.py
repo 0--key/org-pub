@@ -153,3 +153,22 @@ class TestByteArray(unittest.TestCase):
 
     def tearDown(self):
         self.seq.clear()
+
+
+class TestBytes(unittest.TestCase):
+    """By definition it is an immutable byte sequence"""
+
+    def setUp(self):
+        self.seq = bytes([0x13, 0x00, 0x00, 0x07, 0x08, 0x00])
+
+    def test_count(self):
+        self.assertEqual(self.seq.count(0, 2), 2)
+
+    def test_find_bytes(self):
+        self.assertEqual(self.seq.find(7), 3)
+
+    def test_index(self):
+        self.assertRaises(ValueError, lambda: self.seq.index(11))
+
+    def test_is_digit(self):
+        self.assertFalse(self.seq.isalnum())
