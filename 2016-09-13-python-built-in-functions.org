@@ -28,24 +28,44 @@ tags: [built-in functions, unittest]
   The Python interpreter has a number of functions and types built into
   it that are always available. They are listed here in alphabetical
   order.
-  #+BEGIN_QUOTE
-                           *Built-in Functions*
-| abs()         | dict()      | help()       | min()      | setattr()      |
-| all()         | dir()       | hex()        | next()     | slice()        |
-| any()         | divmod()    | id()         | object()   | sorted()       |
-| ascii()       | enumerate() | input()      | oct()      | staticmethod() |
-| bin()         | eval()      | int()        | open()     | str()          |
-| bool()        | exec()      | isinstance() | ord()      | sum()          |
-| bytearray()   | filter()    | issubclass() | pow()      | super()        |
-| bytes()       | float()     | iter()       | print()    | tuple()        |
-| callable()    | format()    | len()        | property() | type()         |
-| chr()         | frozenset() | list()       | range()    | vars()         |
-| classmethod() | getattr()   | locals()     | repr()     | zip()          |
-| compile()     | globals()   | map()        | reversed() | __import__()   |
-| complex()     | hasattr()   | max()        | round()    |                |
-| delattr()     | hash()      | memoryview() | set()      |                |
-|               |             |              |            |                |
-  #+END_QUOTE
+
+** Built-ins
+   #+BEGIN_QUOTE
+                            *Built-in Functions*
+ | abs()         | dict()      | help()       | min()      | setattr()      |
+ | all()         | dir()       | hex()        | next()     | slice()        |
+ | any()         | divmod()    | id()         | object()   | sorted()       |
+ | ascii()       | enumerate() | input()      | oct()      | staticmethod() |
+ | bin()         | eval()      | int()        | open()     | str()          |
+ | bool()        | exec()      | isinstance() | ord()      | sum()          |
+ | bytearray()   | filter()    | issubclass() | pow()      | super()        |
+ | bytes()       | float()     | iter()       | print()    | tuple()        |
+ | callable()    | format()    | len()        | property() | type()         |
+ | chr()         | frozenset() | list()       | range()    | vars()         |
+ | classmethod() | getattr()   | locals()     | repr()     | zip()          |
+ | compile()     | globals()   | map()        | reversed() | __import__()   |
+ | complex()     | hasattr()   | max()        | round()    |                |
+ | delattr()     | hash()      | memoryview() | set()      |                |
+ |               |             |              |            |                |
+   #+END_QUOTE
+
+** Assert methods
+
+   Method                 Checks that          New in     
+   assertEqual(a, b)      a == b                          
+   assertNotEqual(a, b)   a != b                          
+   assertTrue(x)          bool(x) is True                 
+   assertFalse(x)         bool(x) is False                
+   assertIs(a, b)         a is b               3.1        
+   assertIsNot(a, b)      a is not b           3.1        
+   assertIsNone(x)        x is None            3.1        
+   assertIsNotNone(x)     x is not None        3.1        
+   assertIn(a, b)         a in b               3.1        
+   assertNotIn(a, b)      a not in b           3.1        
+   assertIsInstance(a, b) isinstance(a, b)     3.2        
+   assertNotIsInstance(a, b) not isinstance(a, b) 3.2        
+
+   
 
 
 * Methodology
