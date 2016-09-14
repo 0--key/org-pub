@@ -208,8 +208,8 @@ tags: [built-in functions, unittest]
               self.assertNotEqual(ascii({"first": 1, "second": 2}),
                                   '{"second": 2, "first": 1}')
 
-      # tests below have a hidden caveat: it passes SOMETIMES
-      # due unpredicted dictionary sequence
+          # tests below have a hidden caveat: it passes SOMETIMES
+          # due unpredicted dictionary sequence
 
           # def test_dict_convertation_single_quotes_ordered(self):
           #     self.assertNotEqual(ascii({"first": 1, "second": 2}),
