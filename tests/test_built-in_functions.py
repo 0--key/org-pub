@@ -95,3 +95,33 @@ class TestAscii(unittest.TestCase):
     # def test_dict_convertation_single_quotes_unordered(self):
     #     self.assertEqual(ascii({"first": 1, "second": 2}),
     #                      "{'second': 2, 'first': 1}")
+
+
+class TestBin(unittest.TestCase):
+
+    def test_integer_argument(self):
+        self.assertEqual(bin(16), '0b10000')
+
+    def test_integer_negative(self):
+        self.assertEqual(bin(-16), '-0b10000')
+
+    def test_string_as_argument(self):
+        self.assertRaises(TypeError, lambda x: bin("A"))
+
+    def test_float_as_argument(self):
+        self.assertRaises(TypeError, lambda x: bin(16.3))
+
+
+class TestBool(unittest.TestCase):
+
+    def test_numeric_argument(self):
+        self.assertTrue(bool(1) and bool(-2))
+
+    def test_zero_or_false_argument(self):
+        self.assertFalse(bool(0) and bool(False))
+
+    def test_string_as_argument(self):
+        self.assertTrue(bool("Abc"))
+
+    def test_mixed_arguments(self):
+        self.assertTrue(bool(["A", False]))
