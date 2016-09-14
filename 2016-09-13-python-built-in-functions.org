@@ -67,6 +67,9 @@ tags: [built-in functions, unittest]
 
 
    <<any-test-suite>>
+
+
+   <<all-test-classes-included>>
    #+END_SRC
    #+END_EXAMPLE
 
@@ -82,6 +85,9 @@ tags: [built-in functions, unittest]
 
 
    <<any-test-suite>>
+
+
+   <<ascii-test-suite>>
    #+END_SRC   
 
 
@@ -180,19 +186,39 @@ tags: [built-in functions, unittest]
 
           def test_empty_list(self):
               self.assertFalse(any([]))
-
-          # def test_(self):
-          #     self.assertTrue(any([True, True]))
-
-          # def test_(self):
-          #     self.assertTrue(any([True, True]))
-
-          # def test_(self):
-          #     self.assertTrue(any([True, True]))
     #+END_SRC
 
     #+RESULTS: any-test-suite
 
+*** ascii()
+    #+NAME: ascii-test-suite
+    #+BEGIN_SRC python
+      class TestAscii(unittest.TestCase):
+          def test_list_convertation(self):
+              self.assertEqual(ascii(['Several', 'words']),
+                               "['Several', 'words']")
+
+      # dictionary is unordered sequence in Python
+
+          def test_dict_convertation_double_quotes(self):
+              self.assertNotEqual(ascii({"first": 1, "second": 2}),
+                                  '{"first": 1, "second": 2}')
+
+          def test_dict_convertation_double_quotes_unordered(self):
+              self.assertNotEqual(ascii({"first": 1, "second": 2}),
+                                  '{"second": 2, "first": 1}')
+
+      # tests below have a hidden caveat: it passes SOMETIMES
+      # due unpredicted dictionary sequence
+
+          # def test_dict_convertation_single_quotes_ordered(self):
+          #     self.assertNotEqual(ascii({"first": 1, "second": 2}),
+          #                         "{'first': 1, 'second': 2}")
+
+          # def test_dict_convertation_single_quotes_unordered(self):
+          #     self.assertEqual(ascii({"first": 1, "second": 2}),
+          #                      "{'second': 2, 'first': 1}")
+    #+END_SRC
 
 ** Test runner
    Accustomed unittest as Python module:
@@ -204,9 +230,9 @@ tags: [built-in functions, unittest]
    #+END_SRC
 
    #+RESULTS:
-   : ...................
+   : ......................
    : ----------------------------------------------------------------------
-   : Ran 19 tests in 0.002s
+   : Ran 22 tests in 0.002s
    : 
    : OK
 

@@ -69,11 +69,29 @@ class TestAny(unittest.TestCase):
     def test_empty_list(self):
         self.assertFalse(any([]))
 
-    # def test_(self):
-    #     self.assertTrue(any([True, True]))
 
-    # def test_(self):
-    #     self.assertTrue(any([True, True]))
+class TestAscii(unittest.TestCase):
+    def test_list_convertation(self):
+        self.assertEqual(ascii(['Several', 'words']),
+                         "['Several', 'words']")
 
-    # def test_(self):
-    #     self.assertTrue(any([True, True]))
+# dictionary is unordered sequence in Python
+
+    def test_dict_convertation_double_quotes(self):
+        self.assertNotEqual(ascii({"first": 1, "second": 2}),
+                            '{"first": 1, "second": 2}')
+
+    def test_dict_convertation_double_quotes_unordered(self):
+        self.assertNotEqual(ascii({"first": 1, "second": 2}),
+                            '{"second": 2, "first": 1}')
+
+# tests below have a hidden caveat: it passes SOMETIMES
+# due unpredicted dictionary sequence
+
+    # def test_dict_convertation_single_quotes_ordered(self):
+    #     self.assertNotEqual(ascii({"first": 1, "second": 2}),
+    #                         "{'first': 1, 'second': 2}")
+
+    # def test_dict_convertation_single_quotes_unordered(self):
+    #     self.assertEqual(ascii({"first": 1, "second": 2}),
+    #                      "{'second': 2, 'first': 1}")
