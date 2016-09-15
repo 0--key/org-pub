@@ -85,6 +85,17 @@ class TestAscii(unittest.TestCase):
         self.assertNotEqual(ascii({"first": 1, "second": 2}),
                             '{"second": 2, "first": 1}')
 
+# tests below have a HIDDEN CAVEAT: it might pass SOMETIMES
+# due undefined dictionary sequence
+
+# def test_dict_convertation_single_quotes_ordered(self):
+#     self.assertNotEqual(ascii({"first": 1, "second": 2}),
+#                         "{'first': 1, 'second': 2}")
+
+# def test_dict_convertation_single_quotes_unordered(self):
+#     self.assertEqual(ascii({"first": 1, "second": 2}),
+#                      "{'second': 2, 'first': 1}")
+
 
 class TestBin(unittest.TestCase):
 
@@ -104,7 +115,7 @@ class TestBin(unittest.TestCase):
 class TestBool(unittest.TestCase):
 
     def test_numeric_argument(self):
-        self.assertTrue(bool(1) and bool(-2))
+        self.assertTrue(bool(1) and bool(-2) and bool(1.3))
 
     def test_zero_or_false_argument(self):
         self.assertFalse(bool(0) and bool(False))
@@ -112,7 +123,7 @@ class TestBool(unittest.TestCase):
     def test_string_as_argument(self):
         self.assertTrue(bool("Abc"))
 
-    def test_mixed_arguments(self):
+    def test_mixed_arguments_list(self):
         self.assertTrue(bool(["A", False]))
 
 
@@ -120,22 +131,22 @@ class TestByteArray(unittest.TestCase):
     def setUp(self):
         self.seq = bytearray([0x13, 0x00, 0x00, 0x07, 0x08, 0x00])
 
-    def test_iterable_of_bytes(self):
+    def test_as_iterable_of_bytes(self):
         self.assertEqual(self.seq.pop(), 0)
         self.assertEqual(self.seq.pop(), 8)
 
-    def test_pop_the_last_item(self):
+    def test_add_and_pop_item(self):
         self.seq.append(0x09)
         self.assertEqual(self.seq.pop(), 9)
 
     def test_string_as_argument(self):
         self.assertRaises(TypeError, lambda: self.seq.append('Foo'))
-        # it's array of integers from zero to 255
+        # it's should be an array of integers from zero to 255
 
     def test_unsupported_value(self):
         self.assertRaises(ValueError, lambda: self.seq.append(0x257))
 
-    def test_arbitrary_variable(self):
+    def test_arbitrary_array_member(self):
         self.assertEqual(self.seq.pop(1), 0)
         self.assertEqual(self.seq.pop(1), 0)
         self.assertEqual(self.seq.pop(1), 7)
