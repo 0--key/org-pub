@@ -172,3 +172,24 @@ class TestBytes(unittest.TestCase):
 
     def test_is_digit(self):
         self.assertFalse(self.seq.isalnum())
+
+
+class TestCallable(unittest.TestCase):
+
+    def sample_function():
+        return True
+
+    def test_anonimous_function(self):
+        self.assertTrue(callable(lambda: 3 + 2))
+
+    def test_built_in_function(self):
+        self.assertFalse(callable(abs(2)))
+
+    def test_string_as_argument(self):
+        self.assertFalse(callable("Ismael"))
+
+    def test_numeric_argument(self):
+        self.assertFalse(callable(2))
+
+    def test_sample_function(self):
+        self.assertTrue(self.sample_function)
