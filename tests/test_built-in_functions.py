@@ -193,3 +193,13 @@ class TestCallable(unittest.TestCase):
 
     def test_sample_function(self):
         self.assertTrue(self.sample_function)
+
+
+class TestChr(unittest.TestCase):
+
+    def test_string_as_argument(self):
+        self.assertRaises(TypeError, lambda: chr("Ismael"))
+
+    def test_numeric_argument(self):
+        self.assertEqual(chr(2), '\x02')
+        self.assertEqual(chr(105), 'i')

@@ -383,6 +383,21 @@ tags: [built-in functions, unittest]
           def test_sample_function(self):
               self.assertTrue(self.sample_function)
     #+END_SRC
+
+*** chr()
+    #+NAME: chr-test-suite
+    #+BEGIN_SRC python
+      class TestChr(unittest.TestCase):
+
+          def test_string_as_argument(self):
+              self.assertRaises(TypeError, lambda: chr("Ismael"))
+
+          def test_numeric_argument(self):
+              self.assertEqual(chr(2), '\x02')
+              self.assertEqual(chr(105), 'i')
+    #+END_SRC
+
+
 ** Test runner
    Accustomed unittest as Python module:
 
@@ -393,9 +408,9 @@ tags: [built-in functions, unittest]
    #+END_SRC
 
    #+RESULTS:
-   : ............................................
+   : ..............................................
    : ----------------------------------------------------------------------
-   : Ran 44 tests in 0.006s
+   : Ran 46 tests in 0.007s
    : 
    : OK
 
