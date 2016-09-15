@@ -11,7 +11,7 @@ class TestAbs(unittest.TestCase):
         self.assertFalse(abs(-4) == -4)
 
     def test_string_as_argument(self):
-        self.assertRaises(TypeError, lambda x: abs('A'))
+        self.assertRaises(TypeError, lambda: abs('A'))
 
 
 class TestAll(unittest.TestCase):
@@ -44,12 +44,12 @@ class TestAll(unittest.TestCase):
         self.assertTrue(all('l') and all('low') and all('at the'))
 
     def test_non_iter_argument(self):
-        self.assertRaises(TypeError, lambda x: all(11))
+        self.assertRaises(TypeError, lambda: all(11))
 
     # assertRaises(exception, callable, *args, **kwds)
 
     def test_bool_argument(self):
-        self.assertRaises(TypeError, lambda x: all(True))
+        self.assertRaises(TypeError, lambda: all(True))
 
 
 class TestAny(unittest.TestCase):
@@ -85,17 +85,6 @@ class TestAscii(unittest.TestCase):
         self.assertNotEqual(ascii({"first": 1, "second": 2}),
                             '{"second": 2, "first": 1}')
 
-    # tests below have a hidden caveat: it passes SOMETIMES
-    # due unpredicted dictionary sequence
-
-    # def test_dict_convertation_single_quotes_ordered(self):
-    #     self.assertNotEqual(ascii({"first": 1, "second": 2}),
-    #                         "{'first': 1, 'second': 2}")
-
-    # def test_dict_convertation_single_quotes_unordered(self):
-    #     self.assertEqual(ascii({"first": 1, "second": 2}),
-    #                      "{'second': 2, 'first': 1}")
-
 
 class TestBin(unittest.TestCase):
 
@@ -106,10 +95,10 @@ class TestBin(unittest.TestCase):
         self.assertEqual(bin(-16), '-0b10000')
 
     def test_string_as_argument(self):
-        self.assertRaises(TypeError, lambda x: bin("A"))
+        self.assertRaises(TypeError, lambda: bin("A"))
 
     def test_float_as_argument(self):
-        self.assertRaises(TypeError, lambda x: bin(16.3))
+        self.assertRaises(TypeError, lambda: bin(16.3))
 
 
 class TestBool(unittest.TestCase):

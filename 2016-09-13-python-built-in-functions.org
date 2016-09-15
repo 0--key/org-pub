@@ -10,7 +10,7 @@ tags: [built-in functions, unittest]
 #+END_HTML
 #+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
 
-#+TOC: headlines 2
+#+TOC: headlines 3
 
 * Preamble
   In most cases the best approach to study how something works is to
@@ -71,7 +71,8 @@ tags: [built-in functions, unittest]
 
 
 * Methodology
-  Seems like the best approach is to test each function and ensure how they work.
+  Seems like the best approach is to test each function and ensure how
+  they work.
 
 ** Template
    Lets create a mold for pouring by the test suits:
@@ -80,6 +81,7 @@ tags: [built-in functions, unittest]
    #+BEGIN_SRC python :noweb yes :tangle tests/test_built-in_functions.py
    """Discover how they work by a coherent testing"""
    <<import-header>>
+   # two lines between partitions isolate classes by PEP8
 
 
    <<abs-test-suite>>
@@ -155,7 +157,7 @@ tags: [built-in functions, unittest]
               self.assertFalse(abs(-4) == -4)
 
           def test_string_as_argument(self):
-              self.assertRaises(TypeError, lambda x: abs('A'))
+              self.assertRaises(TypeError, lambda: abs('A'))
     #+END_SRC
 
 *** all()
@@ -192,12 +194,12 @@ tags: [built-in functions, unittest]
              self.assertTrue(all('l') and all('low') and all('at the'))
 
          def test_non_iter_argument(self):
-             self.assertRaises(TypeError, lambda x: all(11))
+             self.assertRaises(TypeError, lambda: all(11))
 
          # assertRaises(exception, callable, *args, **kwds)
 
          def test_bool_argument(self):
-             self.assertRaises(TypeError, lambda x: all(True))
+             self.assertRaises(TypeError, lambda: all(True))
    #+END_SRC
     
 *** any()
@@ -241,17 +243,6 @@ tags: [built-in functions, unittest]
           def test_dict_convertation_double_quotes_unordered(self):
               self.assertNotEqual(ascii({"first": 1, "second": 2}),
                                   '{"second": 2, "first": 1}')
-
-          # tests below have a hidden caveat: it passes SOMETIMES
-          # due unpredicted dictionary sequence
-
-          # def test_dict_convertation_single_quotes_ordered(self):
-          #     self.assertNotEqual(ascii({"first": 1, "second": 2}),
-          #                         "{'first': 1, 'second': 2}")
-
-          # def test_dict_convertation_single_quotes_unordered(self):
-          #     self.assertEqual(ascii({"first": 1, "second": 2}),
-          #                      "{'second': 2, 'first': 1}")
     #+END_SRC
 
 *** bin()
@@ -266,10 +257,10 @@ tags: [built-in functions, unittest]
               self.assertEqual(bin(-16), '-0b10000')
 
           def test_string_as_argument(self):
-              self.assertRaises(TypeError, lambda x: bin("A"))
+              self.assertRaises(TypeError, lambda: bin("A"))
 
           def test_float_as_argument(self):
-              self.assertRaises(TypeError, lambda x: bin(16.3))
+              self.assertRaises(TypeError, lambda: bin(16.3))
     #+END_SRC
 
 *** bool()
@@ -342,6 +333,7 @@ tags: [built-in functions, unittest]
           def test_is_digit(self):
               self.assertFalse(self.seq.isalnum())
     #+END_SRC
+
 ** Test runner
    Accustomed unittest as Python module:
 
@@ -354,7 +346,7 @@ tags: [built-in functions, unittest]
    #+RESULTS:
    : .......................................
    : ----------------------------------------------------------------------
-   : Ran 39 tests in 0.004s
+   : Ran 39 tests in 0.006s
    : 
    : OK
 
