@@ -124,6 +124,21 @@ tags: [built-in functions, unittest]
 
 
    <<bytes-test-suite>>
+
+
+   <<callable-test-suite>>
+
+
+   <<chr-test-suite>>
+
+
+   <<classmethod-test-suite>>
+
+
+   <<compile-test-suite>>
+
+
+   <<complex-test-suite>>
    #+END_SRC   
 
 
