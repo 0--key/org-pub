@@ -139,6 +139,18 @@ tags: [built-in functions, unittest]
 
 
    <<complex-test-suite>>
+
+
+   <<delattr-test-suite>>
+
+
+   <<dict-test-suite>>
+
+
+   <<dir-test-suite>>
+
+
+   <<divmod-test-suite>>
    #+END_SRC   
 
 
@@ -417,6 +429,31 @@ tags: [built-in functions, unittest]
           def test_string_as_argument(self):
               self.assertRaises(ValueError, lambda: complex("Alioth"))
     #+END_SRC
+    
+*** delattr()
+    #+NAME: delattr-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** dict()
+    #+NAME: dict-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** dir()
+    #+NAME: dir-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** divmod()
+    #+NAME: divmod-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
 
 ** Test runner
    Accustomed unittest as Python module:
