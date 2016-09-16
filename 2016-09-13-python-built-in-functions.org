@@ -399,6 +399,11 @@ tags: [built-in functions, unittest]
 
 *** classmethod() and staticmethod()
 
+*** compile()
+    #+NAME: compile-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
 
 ** Test runner
    Accustomed unittest as Python module:
