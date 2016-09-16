@@ -209,3 +209,13 @@ class TestChr(unittest.TestCase):
 
 
     
+
+
+class TestComplex(unittest.TestCase):
+
+    def test_summ_two_arguments(self):
+        self.assertEqual(complex(3, 3) + complex(2, 2),
+                         complex(5, 5))
+
+    def test_string_as_argument(self):
+        self.assertRaises(ValueError, lambda: complex("Alioth"))
