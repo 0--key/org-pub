@@ -219,3 +219,26 @@ class TestComplex(unittest.TestCase):
 
     def test_string_as_argument(self):
         self.assertRaises(ValueError, lambda: complex("Alioth"))
+
+
+class TestDelattr(unittest.TestCase):
+
+    def setUp(self):
+        """Create a mockup object for testing purposes"""
+        class Pear():
+            def __init__(self):
+                self.size = 123
+                self.color = 'green'
+
+        self.obj = Pear()
+
+    def test_all_obj_attributes(self):
+        self.assertTrue(self.obj.size and self.obj.color)
+
+    def test_del_existing_attribute(self):
+        self.assertIsNone(delattr(self.obj, 'size'))
+        self.assertRaises(AttributeError, lambda: self.obj.size)
+
+    def test_del_non_existing_attribute(self):
+        self.assertRaises(AttributeError,
+                          lambda: delattr(self.obj, 'shape'))
