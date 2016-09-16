@@ -397,6 +397,8 @@ tags: [built-in functions, unittest]
               self.assertEqual(chr(105), 'i')
     #+END_SRC
 
+*** classmethod() and staticmethod()
+
 
 ** Test runner
    Accustomed unittest as Python module:

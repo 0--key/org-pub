@@ -203,3 +203,9 @@ class TestChr(unittest.TestCase):
     def test_numeric_argument(self):
         self.assertEqual(chr(2), '\x02')
         self.assertEqual(chr(105), 'i')
+
+
+
+
+
+    
