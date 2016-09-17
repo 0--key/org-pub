@@ -242,3 +242,30 @@ class TestDelattr(unittest.TestCase):
     def test_del_non_existing_attribute(self):
         self.assertRaises(AttributeError,
                           lambda: delattr(self.obj, 'shape'))
+
+
+
+class TestDict(unittest.TestCase):
+
+    def setUp(self):
+        """Create a mockup object for testing purposes"""
+        class Pear():
+            def __init__(self):
+                self.size = 123
+                self.color = 'green'
+
+        self.obj = Pear()
+        self.mock_dict = dict(a=1, b=2)
+
+    def test_all_dict_attributes(self):
+        self.assertTrue(self.mock_dict["a"] == 1)
+        self.assertTrue(self.mock_dict["b"] == 2)
+
+    # def test_mapping_obj(self):
+    #     #
+    #     self.assertTrue(dict(self.obj))
+    #     # self.assertRaises(AttributeError, lambda: self.obj.size)
+
+    # def test_del_non_existing_attribute(self):
+    #     self.assertRaises(AttributeError,
+    #                       lambda: delattr(self.obj, 'shape'))
