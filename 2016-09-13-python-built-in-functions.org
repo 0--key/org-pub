@@ -456,7 +456,7 @@ tags: [built-in functions, unittest]
                                 lambda: delattr(self.obj, 'shape'))
     #+END_SRC
 
-*** dict()
+*** TODO dict()
     #+NAME: dict-test-suite
     #+BEGIN_SRC python
       class TestDict(unittest.TestCase):
@@ -479,16 +479,11 @@ tags: [built-in functions, unittest]
           #     #
           #     self.assertTrue(dict(self.obj))
           #     # self.assertRaises(AttributeError, lambda: self.obj.size)
-
-          # def test_del_non_existing_attribute(self):
-          #     self.assertRaises(AttributeError,
-          #                       lambda: delattr(self.obj, 'shape'))
     #+END_SRC
 
 *** dir()
     #+NAME: dir-test-suite
     #+BEGIN_SRC python
-    
     #+END_SRC
 
 *** divmod()

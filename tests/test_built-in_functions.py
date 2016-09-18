@@ -244,7 +244,6 @@ class TestDelattr(unittest.TestCase):
                           lambda: delattr(self.obj, 'shape'))
 
 
-
 class TestDict(unittest.TestCase):
 
     def setUp(self):
@@ -266,6 +265,3 @@ class TestDict(unittest.TestCase):
     #     self.assertTrue(dict(self.obj))
     #     # self.assertRaises(AttributeError, lambda: self.obj.size)
 
-    # def test_del_non_existing_attribute(self):
-    #     self.assertRaises(AttributeError,
-    #                       lambda: delattr(self.obj, 'shape'))
