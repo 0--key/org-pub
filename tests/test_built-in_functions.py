@@ -265,3 +265,18 @@ class TestDict(unittest.TestCase):
     #     self.assertTrue(dict(self.obj))
     #     # self.assertRaises(AttributeError, lambda: self.obj.size)
 
+
+class TestDir(unittest.TestCase):
+
+    def setUp(self):
+        """Create a mockup object for testing purposes"""
+        class Pear():
+            def __init__(self):
+                self.size = 123
+                self.color = 'green'
+
+        self.obj = Pear()
+
+    def test_existing_attr(self):
+        self.assertTrue(dir(self.obj)[-1] == 'size' and
+                        dir(self.obj)[-2] == 'color')
