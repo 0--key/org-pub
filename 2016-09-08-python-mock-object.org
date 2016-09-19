@@ -1,0 +1,42 @@
+#+BEGIN_HTML
+---
+layout: post
+title: Python
+tagline: " test-driven development"
+permalink: /python/tdd/mock-object.html
+categories: [python, TDD]
+tags: [tutorial, mock, testing]
+---
+#+END_HTML
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+
+#+TOC: headlines 2
+
+* Premises
+  #+BEGIN_SRC python :results output :session stdlib :exports both
+class Event:
+    """A generic class that provides signal/slot functionality"""
+    def __init__(self):
+        self.listeners = []
+    def connect(self, listener):
+        self.listeners.append(listener)
+    def fire(self, *args, **kwargs):
+        for listener in self.listeners:
+            listener(*args, **kwargs)
+
+
+def handle_event(num):
+    print("\nI got number {0}".format(num))
+
+event = Event()
+event.connect(handle_event)
+event.fire(3)
+event.fire(10)
+  #+END_SRC
+
+  #+RESULTS:
+  : 
+  : ... ... ... ... ... ... ... ... ... >>> >>> ... ... >>> >>> >>> 
+  : I got number 3
+  : I got number 10
+
