@@ -1,0 +1,38 @@
+#+BEGIN_HTML
+---
+layout: post
+title: Git
+tagline: " fork a valuable project"
+permalink: /git/tips/how-to-fork-repository.html
+categories: [git]
+tags: [tutorial, clone, remotes]
+---
+#+END_HTML
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+
+#+TOC: headlines 2
+
+
+* Definition
+  Nowadays [[https://github.com/][Git]] is a standard option to host your code and share it
+  among collaborators. Seems like the best way to introduce it is to
+  show how to:
+
+  - Fork an existing repository /and obtain something useful in your
+    own repo/
+  - Define the remotes /you need to determine from where you want to
+    push repo's updates and where to pull your changes/
+  - Implement your changes /Some atomic enhancement like a typo/
+  - Accomplish a pull request to the parent repository /Get a chance
+    to merge your improvements with the main code/
+
+* Documentation
+  The definitive guide how-to do all meta-tasks above are the official
+  Git documentation site:
+  - 
+
+* Fixtures
+
+* Results
+
+* Conclusion
