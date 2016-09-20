@@ -1,0 +1,153 @@
+#+BEGIN_HTML
+---
+layout: post
+title: Python
+tagline: " staticmethod and classmethod in TDD dissection"
+permalink: /python/stdlib/classmethod-and-staticmethod.html
+categories: [python, stdlib, TDD, literate programming]
+tags: [built-in functions, unittest, staticmethod, classmethod]
+---
+#+END_HTML
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+
+#+TOC: headlines 2
+
+* Preamble
+  With no doubt the =classmethod= and =staticmethod= are widely spread
+  in Python OOP and definitely necessary to implement one or another
+  feature inside some particular class.
+
+* Documentation
+  At [[https://docs.python.org/3/library/functions.html][official web-site]].
+
+* Fixture
+  Exactly to illustrate the core idea of these built-in functions lets
+  create casual but colorful code snippet in accordion with OOP concept:
+  #+BEGIN_SRC python :results output :session stdlib :exports both
+    """Simple and trivial class to illustrate the core idea"""
+
+
+    class Vehicle:
+        """Naturally it is a vehicle"""
+    
+        counter = 0
+
+        def __init__(self, **kwargs):
+            """by default all cars are black"""
+            Vehicle.counter += 1  # increments the CLASS variable
+            # self.counter += 1 - increments the PARTICULAR ITEM VARIABLE
+            # the variables below are instance variables
+            if kwargs:
+                self.color = kwargs['color']
+            else:
+                self.color = 'black'
+
+
+    class Car(Vehicle):
+        """Naturally it is a car properties definition"""
+
+        counter = 0  # it's a class variable
+
+        @classmethod
+        def get_num_cars(cls):
+            return cls.counter
+
+        @staticmethod
+        def inc_counter():
+            Car.counter += 1
+
+    my_car = Car(color='red')
+    alice_car = Car(color='white')
+    your_car = Car()
+
+    print("Class car_counter = %s" % Car.get_num_cars()) # accessed from classmethod
+    print("Class vehicle_counter = %s" % Vehicle.counter) # accessed as a class variable
+    print("%s cars exists.\nMy car is %s, \nyour car is %s\nand Alice car is %s" %
+          (Car.counter, my_car.color, your_car.color, alice_car.color))
+    Car.inc_counter()
+    print("Now there are %s cars" % Car.counter)
+  #+END_SRC
+
+  #+RESULTS:
+  #+begin_example
+
+  'Simple and trivial class to illustrate the core idea'
+  >>> >>> ... ... >>>   File "<stdin>", line 1
+      counter = 0  # it's a class variable
+      ^
+  IndentationError: unexpected indent
+  >>>   File "<stdin>", line 1
+      def __init__(self, **kwargs):
+      ^
+  IndentationError: unexpected indent
+  File "<stdin>", line 1
+      """by default all cars are black"""
+      ^
+  IndentationError: unexpected indent
+  File "<stdin>", line 1
+      Car.counter += 1  # increment the class variable
+      ^
+  IndentationError: unexpected indent
+  ...   File "<stdin>", line 2
+      if kwargs:
+      ^
+  IndentationError: unexpected indent
+  File "<stdin>", line 1
+      self.color = kwargs['color']
+      ^
+  IndentationError: unexpected indent
+  File "<stdin>", line 1
+      else:
+      ^
+  IndentationError: unexpected indent
+  File "<stdin>", line 1
+      self.color = 'black'
+      ^
+  IndentationError: unexpected indent
+  >>>   File "<stdin>", line 1
+      @classmethod
+      ^
+  IndentationError: unexpected indent
+  File "<stdin>", line 1
+      def get_num_cars(cls):
+      ^
+  IndentationError: unexpected indent
+  File "<stdin>", line 1
+      return cls.counter
+      ^
+  IndentationError: unexpected indent
+  >>>   File "<stdin>", line 1
+      @staticmethod
+      ^
+  IndentationError: unexpected indent
+  File "<stdin>", line 1
+      def inc_counter():
+      ^
+  IndentationError: unexpected indent
+  File "<stdin>", line 1
+      Car.counter += 1
+      ^
+  IndentationError: unexpected indent
+  >>> Traceback (most recent call last):
+    File "<stdin>", line 1, in <module>
+  TypeError: object() takes no parameters
+  Traceback (most recent call last):
+    File "<stdin>", line 1, in <module>
+  TypeError: object() takes no parameters
+  >>> >>> Traceback (most recent call last):
+    File "<stdin>", line 1, in <module>
+  AttributeError: type object 'Car' has no attribute 'get_num_cars'
+  Traceback (most recent call last):
+    File "<stdin>", line 1, in <module>
+  AttributeError: type object 'Car' has no attribute 'counter'
+  ... Traceback (most recent call last):
+    File "<stdin>", line 2, in <module>
+  AttributeError: type object 'Car' has no attribute 'counter'
+  Traceback (most recent call last):
+    File "<stdin>", line 1, in <module>
+  AttributeError: type object 'Car' has no attribute 'inc_counter'
+  Traceback (most recent call last):
+    File "<stdin>", line 1, in <module>
+  AttributeError: type object 'Car' has no attribute 'counter'
+#+end_example
+
