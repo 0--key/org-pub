@@ -151,6 +151,162 @@ tags: [built-in functions, unittest]
 
 
    <<divmod-test-suite>>
+
+
+   <<enumerate-test-suite>>
+
+
+   <<eval-test-suite>>
+
+
+   <<exec-test-suite>>
+
+
+   <<filter-test-suite>>
+
+
+   <<float-test-suite>>
+
+
+   <<format-test-suite>>
+
+
+   <<frosenset-test-suite>>
+
+
+   <<getattr-test-suite>>
+
+
+   <<globals-test-suite>>
+
+
+   <<hasattr-test-suite>>
+
+
+   <<hash-test-suite>>
+
+
+   <<help-test-suite>>
+
+
+   <<hex-test-suite>>
+
+
+   <<id-test-suite>>
+
+
+   <<id-test-suite>>
+
+
+   <<input-test-suite>>
+
+
+   <<int-test-suite>>
+
+
+   <<isinstance-test-suite>>
+
+
+   <<issubclass-test-suite>>
+
+
+   <<iter-test-suite>>
+
+
+   <<len-test-suite>>
+
+
+   <<list-test-suite>>
+
+
+   <<locals-test-suite>>
+
+
+   <<map-test-suite>>
+
+
+   <<max-test-suite>>
+
+
+   <<memoryview-test-suite>>
+
+
+   <<min-test-suite>>
+
+
+   <<next-test-suite>>
+
+
+   <<object-test-suite>>
+
+
+   <<oct-test-suite>>
+
+
+   <<open-test-suite>>
+
+
+   <<ord-test-suite>>
+
+
+   <<pow-test-suite>>
+
+
+   <<print-test-suite>>
+
+
+   <<property-test-suite>>
+
+
+   <<range-test-suite>>
+
+
+   <<repr-test-suite>>
+
+
+   <<reversed-test-suite>>
+
+
+   <<round-test-suite>>
+
+
+   <<set-test-suite>>
+
+
+   <<setattr-test-suite>>
+
+
+   <<slice-test-suite>>
+
+
+   <<sorted-test-suite>>
+
+
+   <<staticmethod-test-suite>>
+
+
+   <<str-test-suite>>
+
+
+   <<sum-test-suite>>
+
+
+   <<super-test-suite>>
+
+
+   <<tuple-test-suite>>
+
+
+   <<type-test-suite>>
+
+
+   <<vars-test-suite>>
+
+
+   <<zip-test-suite>>
+
+
+   <<__import__-test-suite>>
    #+END_SRC   
 
 
