@@ -280,3 +280,12 @@ class TestDir(unittest.TestCase):
     def test_existing_attr(self):
         self.assertTrue(dir(self.obj)[-1] == 'size' and
                         dir(self.obj)[-2] == 'color')
+
+
+class TestDivmod(unittest.TestCase):
+
+    def test_simple_division(self):
+        self.assertTrue(divmod(5, 3) == (1, 2))
+
+    def test_complex_division(self):
+        self.assertTrue(divmod(10, 3) == (3, 1))
