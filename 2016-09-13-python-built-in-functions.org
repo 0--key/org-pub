@@ -668,6 +668,312 @@ tags: [built-in functions, unittest]
               self.assertTrue(divmod(10, 3) == (3, 1))
     #+END_SRC
 
+*** enumerate()
+    #+NAME: enumerate-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** eval()
+    #+NAME: eval-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** exec()
+    #+NAME: exec-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** filter()
+    #+NAME: filter-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** float()
+    #+NAME: float-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** format()
+    #+NAME: format-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** frozenset()
+    #+NAME: frozenset-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** getattr()
+    #+NAME: getattr-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** globals()
+    #+NAME: globals-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** hasattr()
+    #+NAME: hasattr-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** hash()
+    #+NAME: hash-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** help()
+    #+NAME: help-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** hex()
+    #+NAME: hex-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** id()
+    #+NAME: id-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** input()
+    #+NAME: input-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** int()
+    #+NAME: int-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+    
+*** isinstance()
+    #+NAME: isinstance-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** issubclass()
+    #+NAME: issubclass-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** iter()
+    #+NAME: iter-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** len()
+    #+NAME: len-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** list()
+    #+NAME: list-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** locals()
+    #+NAME: locals-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** map()
+    #+NAME: map-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** max()
+    #+NAME: max-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** memoryview()
+    #+NAME: memoryview-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** min()
+    #+NAME: min-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** next()
+    #+NAME: next-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** object()
+    #+NAME: object-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+    
+*** oct()
+    #+NAME: oct-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** open()
+    #+NAME: open-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** ord()
+    #+NAME: ord-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** pow()
+    #+NAME: pow-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** print()
+    #+NAME: print-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** property()
+    #+NAME: property-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** range()
+    #+NAME: range-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** repr()
+    #+NAME: repr-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** reversed()
+    #+NAME: reversed-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** round()
+    #+NAME: round-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** set()
+    #+NAME: set-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** setattr()
+    #+NAME: setattr-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** slice()
+    #+NAME: slice-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** sorted()
+    #+NAME: sorted-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** staticmethod()
+    #+NAME: staticmethod-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** str()
+    #+NAME: str-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** sum()
+    #+NAME: sum-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** super()
+    #+NAME: super-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** tuple()
+    #+NAME: tuple-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** type()
+    #+NAME: type-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** vars()
+    #+NAME: vars-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** zip()
+    #+NAME: zip-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
+*** __import__()
+    #+NAME: __import__-test-suite
+    #+BEGIN_SRC python
+    
+    #+END_SRC
+
 
 ** Test runner
    Accustomed unittest as Python module:
