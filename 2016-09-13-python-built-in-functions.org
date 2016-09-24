@@ -688,7 +688,14 @@ tags: [built-in functions, unittest]
 *** eval()
     #+NAME: eval-test-suite
     #+BEGIN_SRC python
-    
+      class TestEval(unittest.TestCase):
+
+          def test_strict_addition(self):
+              self.assertTrue(eval('2 + 2') == 4)
+
+          def test_wrong_type_argument(self):
+              """eval() arg 1 must be a string, bytes or code object"""
+              self.assertRaises(TypeError, lambda: eval(2 + 2))
     #+END_SRC
 
 *** exec()
@@ -996,9 +1003,9 @@ tags: [built-in functions, unittest]
    #+END_SRC
 
    #+RESULTS:
-   : .........................................................
+   : ...........................................................
    : ----------------------------------------------------------------------
-   : Ran 57 tests in 0.006s
+   : Ran 59 tests in 0.007s
    : 
    : OK
 

@@ -303,3 +303,14 @@ class TestEnumerate(unittest.TestCase):
         alist = [2, 3, 4]
         for i, j in enumerate(alist, 2):
             self.assertEqual(i, j)
+
+
+class TestEval(unittest.TestCase):
+
+    def test_strict_addition(self):
+        self.assertTrue(eval('2 + 2') == 4)
+
+    def test_wrong_type_argument(self):
+        """eval() arg 1 must be a string, bytes or code object"""
+        self.assertRaises(TypeError, lambda: eval(2 + 2))
+        
