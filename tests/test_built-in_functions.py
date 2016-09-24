@@ -289,3 +289,17 @@ class TestDivmod(unittest.TestCase):
 
     def test_complex_division(self):
         self.assertTrue(divmod(10, 3) == (3, 1))
+
+
+class TestEnumerate(unittest.TestCase):
+
+    def test_enumerate_zero_list(self):
+        """function returns an iterator"""
+        alist = [0, 1, 2]
+        for i, j in enumerate(alist):
+            self.assertEqual(i, j)
+
+    def test_enumerate_arbitrary_list(self):
+        alist = [2, 3, 4]
+        for i, j in enumerate(alist, 2):
+            self.assertEqual(i, j)
