@@ -2,7 +2,7 @@
 ---
 layout: post
 title: Python
-tagline: " standard library disclosure"
+tagline: " standard library dissection"
 permalink: /python/tdd/unittest_init.html
 categories: [python, stdlib, TDD, literate programming]
 tags: [tutorial, unittest, methodology]
