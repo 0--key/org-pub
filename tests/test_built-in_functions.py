@@ -313,4 +313,15 @@ class TestEval(unittest.TestCase):
     def test_wrong_type_argument(self):
         """eval() arg 1 must be a string, bytes or code object"""
         self.assertRaises(TypeError, lambda: eval(2 + 2))
-        
+
+
+class TestExec(unittest.TestCase):
+
+    def test_code_execution(self):
+        code = 'l = []\nfor i in range(3):\n\tl.append(i)\n'
+        exec(code)
+        self.assertTrue(self.l == [0, 1, 2])
+
+    def test_wrong_type_argument(self):
+        """eval() arg 1 must be a string, bytes or code object"""
+        self.assertRaises(TypeError, lambda: eval(2 + 2))
