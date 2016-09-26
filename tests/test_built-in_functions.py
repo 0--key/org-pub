@@ -353,3 +353,18 @@ class TestFilter(unittest.TestCase):
         for j in self.fc:
             result.append(j)
         self.assertEqual(result, [3, 4])
+
+
+class TestFloat(unittest.TestCase):
+
+    def test_simple_conversion(self):
+        self.assertEqual(float(1), 1.0)
+
+    def test_string_as_argument(self):
+        self.assertEqual(float('1.11'), 1.11)
+
+    def test_expression_as_argument(self):
+        self.assertEqual(float(1/2), 0.5)
+
+    def test_wrong_type_argument(self):
+        self.assertRaises(ValueError, lambda: float('Bob and Alice'))
