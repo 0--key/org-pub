@@ -325,3 +325,31 @@ class TestExec(unittest.TestCase):
     def test_wrong_type_argument(self):
         """eval() arg 1 must be a string, bytes or code object"""
         self.assertRaises(TypeError, lambda: eval(2 + 2))
+
+
+class TestFilter(unittest.TestCase):
+
+    def setUp(self):
+        self.f = filter(None, [True, False, None, 0, 1, 2])
+        self.ff = filter(None, [False, None, 0])
+        self.fc = filter(lambda x: x > 2 and x < 5, range(10))
+
+    def test_simple_filter(self):
+        """Accepts the true elements only"""
+        result = []
+        for j in self.f:
+            result.append(j)
+        self.assertEqual(result, [True, 1, 2])
+
+    def test_simple_false_filter(self):
+        """False elements are quashed"""
+        result = []
+        for j in self.ff:
+            result.append(j)
+        self.assertEqual(result, [])
+
+    def test_complex_filter(self):
+        result = []
+        for j in self.fc:
+            result.append(j)
+        self.assertEqual(result, [3, 4])
