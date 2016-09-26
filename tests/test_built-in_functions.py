@@ -71,6 +71,7 @@ class TestAny(unittest.TestCase):
 
 
 class TestAscii(unittest.TestCase):
+
     def test_list_convertation(self):
         self.assertEqual(ascii(['Several', 'words']),
                          "['Several', 'words']")
@@ -128,6 +129,7 @@ class TestBool(unittest.TestCase):
 
 
 class TestByteArray(unittest.TestCase):
+
     def setUp(self):
         self.seq = bytearray([0x13, 0x00, 0x00, 0x07, 0x08, 0x00])
 
@@ -205,12 +207,6 @@ class TestChr(unittest.TestCase):
         self.assertEqual(chr(105), 'i')
 
 
-
-
-
-    
-
-
 class TestComplex(unittest.TestCase):
 
     def test_summ_two_arguments(self):
@@ -226,6 +222,7 @@ class TestDelattr(unittest.TestCase):
     def setUp(self):
         """Create a mockup object for testing purposes"""
         class Pear():
+
             def __init__(self):
                 self.size = 123
                 self.color = 'green'
@@ -249,6 +246,7 @@ class TestDict(unittest.TestCase):
     def setUp(self):
         """Create a mockup object for testing purposes"""
         class Pear():
+
             def __init__(self):
                 self.size = 123
                 self.color = 'green'
@@ -271,6 +269,7 @@ class TestDir(unittest.TestCase):
     def setUp(self):
         """Create a mockup object for testing purposes"""
         class Pear():
+
             def __init__(self):
                 self.size = 123
                 self.color = 'green'
@@ -364,7 +363,21 @@ class TestFloat(unittest.TestCase):
         self.assertEqual(float('1.11'), 1.11)
 
     def test_expression_as_argument(self):
-        self.assertEqual(float(1/2), 0.5)
+        self.assertEqual(float(1 / 2), 0.5)
 
     def test_wrong_type_argument(self):
         self.assertRaises(ValueError, lambda: float('Bob and Alice'))
+
+
+class TestFormat(unittest.TestCase):
+    """http://www.python-course.eu/python3_formatted_output.php"""
+
+    def test_simple_string_formatting(self):
+        template = "Just {a} template {b}"
+        self.assertEqual(template.format(a='a', b='string'),
+                         'Just a template string')
+
+    def test_positional_args_formatting(self):
+        template = "This {0} sample {1}"
+        self.assertEqual(template.format('is a', 'formatting'),
+                         'This is a sample formatting')
