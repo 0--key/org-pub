@@ -381,3 +381,13 @@ class TestFormat(unittest.TestCase):
         template = "This {0} sample {1}"
         self.assertEqual(template.format('is a', 'formatting'),
                          'This is a sample formatting')
+
+
+class TestFrozenset(unittest.TestCase):
+    """tuples are immutable lists, frozensets are immutable sets"""
+
+    def test_simple_frozen_set(self):
+        self.assertEqual(frozenset('def'), set('def'))
+
+    def test_only_unique_elements(self):
+        self.assertEqual(frozenset('defdek'), set('dekdef'))
