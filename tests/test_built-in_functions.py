@@ -423,3 +423,23 @@ class TestGlobals(unittest.TestCase):
 
     def test_current_scope_classes(self):
         self.assertTrue('TestGetattr' and 'TestGlobals' in globals())
+
+
+class TestHasattr(unittest.TestCase):
+    """Return whether the object has an attribute with the given name"""
+
+    def setUp(self):
+        """Create a mockup object for testing purposes"""
+        class Pear():
+
+            def __init__(self):
+                self.size = 123
+                self.color = 'green'
+
+        self.obj = Pear()
+
+    def test_existing_attr(self):
+        self.assertTrue(hasattr(self.obj, 'size'))
+
+    def test_non_existing_attr(self):
+        self.assertFalse(hasattr(self.obj, 'shape'))
