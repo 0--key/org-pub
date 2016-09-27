@@ -391,3 +391,26 @@ class TestFrozenset(unittest.TestCase):
 
     def test_only_unique_elements(self):
         self.assertEqual(frozenset('defdek'), set('dekdef'))
+
+
+class TestGetattr(unittest.TestCase):
+    """::"""
+
+    def setUp(self):
+        """Create a mockup object for testing purposes"""
+        class Pear():
+
+            def __init__(self):
+                self.size = 123
+                self.color = 'green'
+
+        self.obj = Pear()
+
+    def test_existing_attr(self):
+        self.assertEqual(getattr(self.obj, 'size'), 123)
+
+    def test_non_existing_attr(self):
+        self.assertRaises(AttributeError, lambda: getattr(self.obj, 'shape'))
+
+    def test_default_value(self):
+        self.assertEqual(getattr(self.obj, 'shape', 'pyramid'), 'pyramid')
