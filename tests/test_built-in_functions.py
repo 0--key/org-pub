@@ -467,5 +467,5 @@ class TestHash(unittest.TestCase):
         hashes"""
         self.assertNotEqual(hash(self.obj1), hash(self.obj2))
 
-    def test_the_same_attributes(self):
+    def test_equal_attributes(self):
         self.assertEqual(hash(self.obj2.size), hash(self.obj1.size))
