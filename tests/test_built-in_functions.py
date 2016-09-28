@@ -443,3 +443,29 @@ class TestHasattr(unittest.TestCase):
 
     def test_non_existing_attr(self):
         self.assertFalse(hasattr(self.obj, 'shape'))
+
+
+class TestHash(unittest.TestCase):
+    """Return a hash value for the object"""
+
+    def setUp(self):
+        """Create a mockup object for testing purposes"""
+        class Pear():
+
+            def __init__(self):
+                self.size = 123
+                self.color = 'green'
+
+        self.obj1 = Pear()
+        self.obj2 = Pear()
+
+    def test_the_same_object(self):
+        self.assertEqual(hash(self.obj1), hash(self.obj1))
+
+    def test_different_objects(self):
+        """Different objects with the equal properties has the different
+        hashes"""
+        self.assertNotEqual(hash(self.obj1), hash(self.obj2))
+
+    def test_the_same_attributes(self):
+        self.assertEqual(hash(self.obj2.size), hash(self.obj1.size))
