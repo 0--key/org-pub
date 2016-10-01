@@ -171,7 +171,7 @@ tags: [built-in functions, unittest]
    <<format-test-suite>>
 
 
-   <<frosenset-test-suite>>
+   <<frozenset-test-suite>>
 
 
    <<getattr-test-suite>>
@@ -701,55 +701,185 @@ tags: [built-in functions, unittest]
 *** exec()
     #+NAME: exec-test-suite
     #+BEGIN_SRC python
-    
+      class TestExec(unittest.TestCase):
+
+          def test_code_execution(self):
+              l = []
+              code = 'for i in range(3):\n\tl.append(i)\n'
+              exec(code)
+              self.assertTrue(l == [0, 1, 2])
+
+          def test_wrong_type_argument(self):
+              self.assertRaises(TypeError, lambda: exec(2 + 2))
     #+END_SRC
 
 *** filter()
     #+NAME: filter-test-suite
     #+BEGIN_SRC python
-    
+      class TestFilter(unittest.TestCase):
+
+          def setUp(self):
+              self.f = filter(None, [True, False, None, 0, 1, 2])
+              self.ff = filter(None, [False, None, 0])
+              self.fc = filter(lambda x: x > 2 and x < 5, range(10))
+
+          def test_simple_filter(self):
+              """Accepts the true elements only"""
+              result = []
+              for j in self.f:
+                  result.append(j)
+              self.assertEqual(result, [True, 1, 2])
+
+          def test_simple_false_filter(self):
+              """False elements are quashed"""
+              result = []
+              for j in self.ff:
+                  result.append(j)
+              self.assertEqual(result, [])
+
+          def test_complex_filter(self):
+              result = []
+              for j in self.fc:
+                  result.append(j)
+              self.assertEqual(result, [3, 4])
     #+END_SRC
 
 *** float()
     #+NAME: float-test-suite
     #+BEGIN_SRC python
-    
+      class TestFloat(unittest.TestCase):
+
+          def test_simple_conversion(self):
+              self.assertEqual(float(1), 1.0)
+
+          def test_string_as_argument(self):
+              self.assertEqual(float('1.11'), 1.11)
+
+          def test_expression_as_argument(self):
+              self.assertEqual(float(1 / 2), 0.5)
+
+          def test_wrong_type_argument(self):
+              self.assertRaises(ValueError, lambda: float('Bob and Alice'))
     #+END_SRC
 
 *** format()
     #+NAME: format-test-suite
     #+BEGIN_SRC python
-    
+      class TestFormat(unittest.TestCase):
+          """http://www.python-course.eu/python3_formatted_output.php"""
+
+          def test_simple_string_formatting(self):
+              template = "Just {a} template {b}"
+              self.assertEqual(template.format(a='a', b='string'),
+                               'Just a template string')
+
+          def test_positional_args_formatting(self):
+              template = "This {0} sample {1}"
+              self.assertEqual(template.format('is a', 'formatting'),
+                               'This is a sample formatting')
     #+END_SRC
 
 *** frozenset()
     #+NAME: frozenset-test-suite
     #+BEGIN_SRC python
-    
+      class TestFrozenset(unittest.TestCase):
+          """Tuples are immutable lists, frozensets are immutable sets"""
+
+          def test_simple_frozen_set(self):
+              self.assertEqual(frozenset('def'), set('def'))
+
+          def test_only_unique_elements(self):
+              self.assertEqual(frozenset('defdek'), set('dekdef'))
     #+END_SRC
 
 *** getattr()
     #+NAME: getattr-test-suite
     #+BEGIN_SRC python
-    
+      class TestGetattr(unittest.TestCase):
+          """Get a named attribute from an object"""
+
+          def setUp(self):
+              """Create a mockup object for testing purposes"""
+              class Pear():
+
+                  def __init__(self):
+                      self.size = 123
+                      self.color = 'green'
+
+              self.obj = Pear()
+
+          def test_existing_attr(self):
+              self.assertEqual(getattr(self.obj, 'size'), 123)
+
+          def test_non_existing_attr(self):
+              self.assertRaises(AttributeError, lambda: getattr(self.obj, 'shape'))
+
+          def test_default_value(self):
+              self.assertEqual(getattr(self.obj, 'shape', 'pyramid'), 'pyramid')
     #+END_SRC
 
 *** globals()
     #+NAME: globals-test-suite
     #+BEGIN_SRC python
-    
+      class TestGlobals(unittest.TestCase):
+          """Return the dictionary containing the current scope's global
+          variables
+          """
+
+          def test_current_scope_classes(self):
+              self.assertTrue('TestGetattr' and 'TestGlobals' in globals())
     #+END_SRC
 
 *** hasattr()
     #+NAME: hasattr-test-suite
     #+BEGIN_SRC python
-    
+      class TestHasattr(unittest.TestCase):
+          """Return whether the object has an attribute with the given name"""
+
+          def setUp(self):
+              """Create a mockup object for testing purposes"""
+              class Pear():
+
+                  def __init__(self):
+                      self.size = 123
+                      self.color = 'green'
+
+              self.obj = Pear()
+
+          def test_existing_attr(self):
+              self.assertTrue(hasattr(self.obj, 'size'))
+
+          def test_non_existing_attr(self):
+              self.assertFalse(hasattr(self.obj, 'shape'))
     #+END_SRC
 
 *** hash()
     #+NAME: hash-test-suite
     #+BEGIN_SRC python
-    
+      class TestHash(unittest.TestCase):
+          """Return a hash value for the object"""
+
+          def setUp(self):
+              """Create a mockup object for testing purposes"""
+              class Pear():
+
+                  def __init__(self):
+                      self.size = 123
+                      self.color = 'green'
+
+              self.obj1 = Pear()
+              self.obj2 = Pear()
+
+          def test_the_same_object(self):
+              self.assertEqual(hash(self.obj1), hash(self.obj1))
+
+          def test_different_objects(self):
+              """Different objects with the equal properties has the different
+              hashes"""
+              self.assertNotEqual(hash(self.obj1), hash(self.obj2))
+
+          def test_equal_attributes(self):
+              self.assertEqual(hash(self.obj2.size), hash(self.obj1.size))
     #+END_SRC
 
 *** help()
@@ -1003,9 +1133,9 @@ tags: [built-in functions, unittest]
    #+END_SRC
 
    #+RESULTS:
-   : ...........................................................
+   : .................................................................................
    : ----------------------------------------------------------------------
-   : Ran 59 tests in 0.007s
+   : Ran 81 tests in 0.009s
    : 
    : OK
 

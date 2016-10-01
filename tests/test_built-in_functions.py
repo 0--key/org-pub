@@ -71,7 +71,6 @@ class TestAny(unittest.TestCase):
 
 
 class TestAscii(unittest.TestCase):
-
     def test_list_convertation(self):
         self.assertEqual(ascii(['Several', 'words']),
                          "['Several', 'words']")
@@ -129,7 +128,6 @@ class TestBool(unittest.TestCase):
 
 
 class TestByteArray(unittest.TestCase):
-
     def setUp(self):
         self.seq = bytearray([0x13, 0x00, 0x00, 0x07, 0x08, 0x00])
 
@@ -207,6 +205,12 @@ class TestChr(unittest.TestCase):
         self.assertEqual(chr(105), 'i')
 
 
+
+
+
+    
+
+
 class TestComplex(unittest.TestCase):
 
     def test_summ_two_arguments(self):
@@ -222,7 +226,6 @@ class TestDelattr(unittest.TestCase):
     def setUp(self):
         """Create a mockup object for testing purposes"""
         class Pear():
-
             def __init__(self):
                 self.size = 123
                 self.color = 'green'
@@ -246,7 +249,6 @@ class TestDict(unittest.TestCase):
     def setUp(self):
         """Create a mockup object for testing purposes"""
         class Pear():
-
             def __init__(self):
                 self.size = 123
                 self.color = 'green'
@@ -269,7 +271,6 @@ class TestDir(unittest.TestCase):
     def setUp(self):
         """Create a mockup object for testing purposes"""
         class Pear():
-
             def __init__(self):
                 self.size = 123
                 self.color = 'green'
@@ -317,13 +318,13 @@ class TestEval(unittest.TestCase):
 class TestExec(unittest.TestCase):
 
     def test_code_execution(self):
-        code = 'l = []\nfor i in range(3):\n\tl.append(i)\n'
+        l = []
+        code = 'for i in range(3):\n\tl.append(i)\n'
         exec(code)
-        self.assertTrue(self.l == [0, 1, 2])
+        self.assertTrue(l == [0, 1, 2])
 
     def test_wrong_type_argument(self):
-        """eval() arg 1 must be a string, bytes or code object"""
-        self.assertRaises(TypeError, lambda: eval(2 + 2))
+        self.assertRaises(TypeError, lambda: exec(2 + 2))
 
 
 class TestFilter(unittest.TestCase):
