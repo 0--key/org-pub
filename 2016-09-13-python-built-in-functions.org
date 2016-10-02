@@ -8,6 +8,7 @@ categories: [python, stdlib, TDD, literate programming]
 tags: [built-in functions, unittest]
 ---
 #+END_HTML
+#+STARTUP: showall
 #+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
 
 #+TOC: headlines 3
@@ -874,7 +875,7 @@ tags: [built-in functions, unittest]
               self.assertEqual(hash(self.obj1), hash(self.obj1))
 
           def test_different_objects(self):
-              """Different objects with the equal properties has the different
+              """Different objects with equal properties has different
               hashes"""
               self.assertNotEqual(hash(self.obj1), hash(self.obj2))
 
