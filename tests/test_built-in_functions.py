@@ -384,7 +384,7 @@ class TestFormat(unittest.TestCase):
 
 
 class TestFrozenset(unittest.TestCase):
-    """tuples are immutable lists, frozensets are immutable sets"""
+    """Tuples are immutable lists, frozensets are immutable sets"""
 
     def test_simple_frozen_set(self):
         self.assertEqual(frozenset('def'), set('def'))
@@ -394,7 +394,7 @@ class TestFrozenset(unittest.TestCase):
 
 
 class TestGetattr(unittest.TestCase):
-    """::"""
+    """Get a named attribute from an object"""
 
     def setUp(self):
         """Create a mockup object for testing purposes"""
