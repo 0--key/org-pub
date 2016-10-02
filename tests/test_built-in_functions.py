@@ -414,3 +414,12 @@ class TestGetattr(unittest.TestCase):
 
     def test_default_value(self):
         self.assertEqual(getattr(self.obj, 'shape', 'pyramid'), 'pyramid')
+
+
+class TestGlobals(unittest.TestCase):
+    """Return the dictionary containing the current scope's global
+    variables
+    """
+
+    def test_current_scope_classes(self):
+        self.assertTrue('TestGetattr' and 'TestGlobals' in globals())
