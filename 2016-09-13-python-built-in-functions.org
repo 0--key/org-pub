@@ -886,13 +886,25 @@ tags: [built-in functions, unittest]
 *** help()
     #+NAME: help-test-suite
     #+BEGIN_SRC python
-    
+      class TestHelp(unittest.TestCase):
+
+          def test_help_on_existing_function(self):
+              self.assertIsNone(help(zip))
+
+          def test_help_none_existing_function(self):
+              self.assertRaises(NameError, lambda: help(mod))
     #+END_SRC
 
 *** hex()
     #+NAME: hex-test-suite
     #+BEGIN_SRC python
-    
+      class TestHex(unittest.TestCase):
+
+          def test_integer_argument(self):
+              self.assertEqual(hex(3735928559), '0xdeadbeef')
+
+          def test_float_argument(self):
+              self.assertRaises(TypeError, lambda: hex(2.2))
     #+END_SRC
 
 *** id()
