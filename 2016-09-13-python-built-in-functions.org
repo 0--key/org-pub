@@ -933,13 +933,30 @@ tags: [built-in functions, unittest]
 *** input()
     #+NAME: input-test-suite
     #+BEGIN_SRC python
-    
+      class TestInput(unittest.TestCase):
+          """::"""
+
+          def test_tap(self):
+              """TODO"""
+              self.assertTrue(True)
     #+END_SRC
 
 *** int()
     #+NAME: int-test-suite
     #+BEGIN_SRC python
-    
+      class TestInt(unittest.TestCase):
+
+          def test_integer_argument(self):
+              self.assertEqual(int(3735928559), 3735928559)
+
+          def test_float_argument(self):
+              self.assertEqual(int(2.2), 2)
+
+          def test_float_negative_argument(self):
+              self.assertEqual(int(-2.2), -2)
+
+          def test_string_argument(self):
+              self.assertRaises(ValueError, lambda: int('a'))
     #+END_SRC
     
 *** isinstance()
