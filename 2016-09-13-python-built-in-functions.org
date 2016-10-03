@@ -910,7 +910,24 @@ tags: [built-in functions, unittest]
 *** id()
     #+NAME: id-test-suite
     #+BEGIN_SRC python
-    
+      class TestId(unittest.TestCase):
+
+          def setUp(self):
+              """Create a mockup object for testing purposes"""
+              class Pear():
+
+                  def __init__(self):
+                      self.size = 123
+                      self.color = 'green'
+
+              self.obj1 = Pear()
+              self.obj2 = self.obj3 = Pear()
+
+          def test_different_objects(self):
+              self.assertNotEqual(id(self.obj1), id(self.obj2))
+
+          def test_same_objects(self):
+              self.assertEqual(id(self.obj2), id(self.obj3))
     #+END_SRC
 
 *** input()
