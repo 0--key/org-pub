@@ -962,7 +962,17 @@ tags: [built-in functions, unittest]
 *** isinstance()
     #+NAME: isinstance-test-suite
     #+BEGIN_SRC python
-    
+      class TestIsinstance(unittest.TestCase):
+
+          def test_argument_type(self):
+              self.assertTrue(isinstance('Bob and Alice', str))
+
+          def test_argument_class(self):
+              class Pear():
+                  pass
+
+              self.obj = Pear()
+              self.assertTrue(isinstance(self.obj, Pear))
     #+END_SRC
 
 *** issubclass()
