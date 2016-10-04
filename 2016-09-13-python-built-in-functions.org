@@ -978,7 +978,27 @@ tags: [built-in functions, unittest]
 *** issubclass()
     #+NAME: issubclass-test-suite
     #+BEGIN_SRC python
-    
+      class TestIssubclass(unittest.TestCase):
+
+          def test_the_mock_object_direct_relation(self):
+
+              class Fruit():
+                  pass
+
+              class Pear(Fruit):
+                  pass
+
+              self.assertTrue(issubclass(Pear, Fruit))
+
+          def test_the_mock_object_reverse_relation(self):
+
+              class Fruit():
+                  pass
+
+              class Pear(Fruit):
+                  pass
+
+              self.assertFalse(issubclass(Fruit, Pear))
     #+END_SRC
 
 *** iter()
