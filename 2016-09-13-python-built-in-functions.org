@@ -1031,7 +1031,13 @@ tags: [built-in functions, unittest]
 *** len()
     #+NAME: len-test-suite
     #+BEGIN_SRC python
-    
+      class TestLen(unittest.TestCase):
+
+          def test_lenghth_of_string(self):
+              self.assertEqual(len('Ahab'), 4)
+
+          def test_lenghth_of_list(self):
+              self.assertEqual(len([1, 2, 3]), 3)
     #+END_SRC
 
 *** list()
