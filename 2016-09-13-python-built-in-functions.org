@@ -1004,7 +1004,28 @@ tags: [built-in functions, unittest]
 *** iter()
     #+NAME: iter-test-suite
     #+BEGIN_SRC python
-    
+      class TestIter(unittest.TestCase):
+
+          def setUp(self):
+              self.mockup_list = [1, 2, 3]
+              self.mockup_string = 'This is EOF the test string'
+
+          def test_strict_iteration(self):
+              self.assertTrue(iter(self.mockup_list))
+
+          def test_all_elements_in_sequence(self):
+              l = iter(self.mockup_list)
+              m = []
+              for i in l:
+                  m.append(i)
+              self.assertEqual(m, [1, 2, 3])
+
+          def test_separate_elements_iteration(self):
+              i = iter(self.mockup_list)
+              a = next(i)
+              b = next(i)
+              c = next(i)
+              self.assertTrue(a == 1 and b == 2 and c == 3)
     #+END_SRC
 
 *** len()
