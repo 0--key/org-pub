@@ -1061,7 +1061,26 @@ tags: [built-in functions, unittest]
 *** locals()
     #+NAME: locals-test-suite
     #+BEGIN_SRC python
-    
+      d = {'this': 1, 'is': 2, 'a': 3, 'global': 4, 'variable': 5}
+
+
+      class TestLocals_and_Globals(unittest.TestCase):
+
+          def setUp(self):
+              """Cooke the mixture of objects"""
+              self.d = {'the': 1, 'global': 2, 'dictionary': 3}
+
+          def test_string_as_argument(self):
+              l = "Just a local variable"
+              self.assertEqual(locals()['l'], "Just a local variable")
+
+          def test_reassign_variable(self):
+              d = {'a': 1, 'simple': 2, 'dictionary': 3}
+              self.assertEqual(locals()['d']['a'], 1)
+              self.assertEqual(locals()['d']['simple'], 2)
+
+          def test_global_dict(self):
+              self.assertEqual(globals()['d']['this'], 1)
     #+END_SRC
 
 *** map()
