@@ -1043,7 +1043,19 @@ tags: [built-in functions, unittest]
 *** list()
     #+NAME: list-test-suite
     #+BEGIN_SRC python
-    
+      class TestList(unittest.TestCase):
+
+          def test_simple_list_of_letters(self):
+              self.assertEqual(list('Pear'), ['P', 'e', 'a', 'r'])
+
+          def test_convert_tuple_into_list(self):
+              self.assertEqual(list((1, 2, 3)), [1, 2, 3])
+
+          def test_convert_dictionary_into_list(self):
+              self.assertEqual(list({'a': 1, 'b': 2}), ['b', 'a'])
+
+          def test_not_iterable_argument(self):
+              self.assertRaises(TypeError, lambda: list(123.11))
     #+END_SRC
 
 *** locals()
