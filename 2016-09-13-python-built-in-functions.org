@@ -1123,7 +1123,14 @@ tags: [built-in functions, unittest]
 *** memoryview()
     #+NAME: memoryview-test-suite
     #+BEGIN_SRC python
-    
+      class TestMemoryview(unittest.TestCase):
+
+          def setUp(self):
+              self.v = memoryview(b'abcefg')
+
+          def test_simple_behaviour(self):
+              self.assertTrue(self.v[0] == 97 and
+                              self.v[-1] == 103)
     #+END_SRC
 
 *** min()
