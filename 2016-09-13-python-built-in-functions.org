@@ -1097,7 +1097,27 @@ tags: [built-in functions, unittest]
 *** max()
     #+NAME: max-test-suite
     #+BEGIN_SRC python
-    
+      class TestMax(unittest.TestCase):
+
+          def test_simple_list_of_int(self):
+              self.assertTrue(max([1, 2, 3]) == 3)
+
+          def test_simple_list_of_letters(self):
+              self.assertTrue(max(['a', 'b', 'c']) == 'c')
+
+          def test_list_of_strings(self):
+              self.assertTrue(max('Aaron', 'Bobby', 'Scotty') == 'Scotty')
+
+              def test_string_values_comparison(self):
+                  self.assertTrue(max(['1', '100', '111', '2']) == '2')
+
+          def test_with_key_function(self):
+              self.assertTrue(max(['1', '100', '111', '2'],
+                                  key=lambda x: int(x)) == '111')
+
+          def test_with_key_function_1(self):
+              self.assertTrue(max('Aaron', 'Bobby', 'Scotty',
+                                  key=lambda x: x[2]) == 'Aaron')
     #+END_SRC
 
 *** memoryview()
