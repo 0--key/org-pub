@@ -1086,7 +1086,12 @@ tags: [built-in functions, unittest]
 *** map()
     #+NAME: map-test-suite
     #+BEGIN_SRC python
-    
+      class TestMap(unittest.TestCase):
+
+          def test_map_under_num_seq(self):
+              i = map(lambda x: x * 1.25, [4, 8, 12])
+              self.assertTrue(next(i) == 5 and next(i) == 10 and
+                              next(i) == 15)
     #+END_SRC
 
 *** max()
