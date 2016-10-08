@@ -1152,7 +1152,17 @@ tags: [built-in functions, unittest]
 *** next()
     #+NAME: next-test-suite
     #+BEGIN_SRC python
-    
+      class TestNext(unittest.TestCase):
+
+          def setUp(self):
+              self.i = iter('abcdef')
+
+          def test_iteration(self):
+              self.assertTrue(next(self.i) == 'a' and
+                              next(self.i) == 'b')
+
+          def test_continuous_iteration(self):
+              self.assertFalse(next(self.i) == 'c')
     #+END_SRC
 
 *** object()
