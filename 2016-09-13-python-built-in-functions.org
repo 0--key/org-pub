@@ -1136,7 +1136,17 @@ tags: [built-in functions, unittest]
 *** min()
     #+NAME: min-test-suite
     #+BEGIN_SRC python
-    
+      class TestMin(unittest.TestCase):
+
+          def test_simple_behaviour_with_string_argument(self):
+              self.assertEqual(min('abc'), 'a')
+
+          def test_simple_behaviour_with_list_of_int_argument(self):
+              self.assertEqual(min([2, 3, 1]), 1)
+
+          def test_with_key_function(self):
+              self.assertTrue(min('Aaron', 'Bobby', 'Scotty',
+                                  key=lambda x: x[2]) == 'Bobby')
     #+END_SRC
 
 *** next()
