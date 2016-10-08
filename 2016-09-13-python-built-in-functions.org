@@ -1168,7 +1168,14 @@ tags: [built-in functions, unittest]
 *** object()
     #+NAME: object-test-suite
     #+BEGIN_SRC python
-    
+      class TestObject(unittest.TestCase):
+          """The most base type"""
+
+          def setUp(self):
+              self.obj = object()
+
+          def test_simple_behaviour(self):
+              self.assertTrue(self.obj)
     #+END_SRC
     
 *** oct()
