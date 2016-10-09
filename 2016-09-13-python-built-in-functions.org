@@ -1196,13 +1196,22 @@ tags: [built-in functions, unittest]
 *** open()
     #+NAME: open-test-suite
     #+BEGIN_SRC python
-    
+      class TestOpen(unittest.TestCase):
+
+          def test_simple_behaviour(self):
+              pass
     #+END_SRC
 
 *** ord()
     #+NAME: ord-test-suite
     #+BEGIN_SRC python
-    
+      class TestOrd(unittest.TestCase):
+
+          def test_simple_behaviour(self):
+              self.assertTrue(ord('a') == 97)
+
+          def test_wrong_argument(self):
+              self.assertRaises(TypeError, lambda: ord('ab'))
     #+END_SRC
 
 *** pow()
