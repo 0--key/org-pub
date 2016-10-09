@@ -1181,7 +1181,16 @@ tags: [built-in functions, unittest]
 *** oct()
     #+NAME: oct-test-suite
     #+BEGIN_SRC python
-    
+      class TestOct(unittest.TestCase):
+
+          def test_integer_argument(self):
+              self.assertEqual(oct(11), '0o13')
+
+          def test_negative_argument(self):
+              self.assertEqual(oct(-11), '-0o13')
+
+          def test_string_argument(self):
+              self.assertRaises(TypeError, lambda: oct('a'))
     #+END_SRC
 
 *** open()
