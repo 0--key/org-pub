@@ -1217,7 +1217,16 @@ tags: [built-in functions, unittest]
 *** pow()
     #+NAME: pow-test-suite
     #+BEGIN_SRC python
-    
+      class TestPow(unittest.TestCase):
+
+          def test_simple_behaviour(self):
+              self.assertEqual(pow(2, 2), 4)
+
+          def test_complex_power(self):
+              self.assertAlmostEqual(pow(9, 0.5), 3)
+
+          def test_specific_third_argument(self):
+              self.assertTrue(pow(3, 3, 2) == 1)
     #+END_SRC
 
 *** print()
