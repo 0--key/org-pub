@@ -1232,13 +1232,52 @@ tags: [built-in functions, unittest]
 *** print()
     #+NAME: print-test-suite
     #+BEGIN_SRC python
-    
+      class TestPrint(unittest.TestCase):
+
+          def test_simple_behaviour(self):
+              self.assertIsNone(print('Hellow World'))
     #+END_SRC
 
 *** property()
     #+NAME: property-test-suite
     #+BEGIN_SRC python
-    
+      class TestProperty(unittest.TestCase):
+
+          def setUp(self):
+              """property(fget=None, fset=None, fdel=None, doc=None) ->
+              property attribute"""
+        
+              class C(object):
+                  @property
+                  def x(self):
+                      "I am the 'x' property."
+                      return self._x
+            
+                  @x.setter
+                  def x(self, value):
+                      self._x = value
+                
+                  @x.deleter
+                  def x(self):
+                      del self._x
+
+              class D(object):
+            
+                  def getx(self):
+                      return self._x
+            
+                  def setx(self, value):
+                      self._x = value
+                
+                  def delx(self):
+                      del self._x
+                  x = property(getx, setx, delx, "I'm the 'x' property.")
+
+              self.obj_1 = C()
+              self.obj_2 = D()
+
+          def test_simple_behaviour(self):
+              self.assertEqual(self.obj_1.x, self.obj_2.x)
     #+END_SRC
 
 *** range()
