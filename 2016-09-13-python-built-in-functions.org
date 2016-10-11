@@ -1319,7 +1319,27 @@ tags: [built-in functions, unittest]
 *** repr()
     #+NAME: repr-test-suite
     #+BEGIN_SRC python
-    
+      class TestRepr(unittest.TestCase):
+
+          def setUp(self):
+              class Pear():
+
+                  def __init__(self):
+                      self.size = 124
+                      self.color = 'green'
+
+                  def __repr__(self):
+                      return('This is a particular representation')
+
+              self.obj = Pear()
+
+          def test_simple_behaviour(self):
+              self.assertTrue(repr(123) == '123' and
+                              repr([1, 2, 3]) == '[1, 2, 3]')
+
+          def test_object_representation(self):
+              self.assertTrue(repr(self.obj) ==
+                              'This is a particular representation')
     #+END_SRC
 
 *** reversed()
