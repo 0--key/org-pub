@@ -1283,7 +1283,37 @@ tags: [built-in functions, unittest]
 *** range()
     #+NAME: range-test-suite
     #+BEGIN_SRC python
-    
+      class TestRange(unittest.TestCase):
+
+          def setUp(self):
+              self.A = range(3)
+              self.B = range(3, 10, 2)
+              self.C = range(3, 11, 2)
+              self.D = range(-3, -10, -2)
+
+          def test_simple_behaviour(self):
+              l = []
+              for i in self.A:
+                  l.append(i)
+              self.assertEqual(l, [0, 1, 2])
+
+          def test_with_step(self):
+              l = []
+              for i in self.B:
+                  l.append(i)
+              self.assertEqual(l, [3, 5, 7, 9])
+
+          def test_with_step_and_right_exclude(self):
+              l = []
+              for i in self.C:
+                  l.append(i)
+              self.assertEqual(l, [3, 5, 7, 9])
+
+          def test_negative_range(self):
+              l = []
+              for i in self.D:
+                  l.append(i)
+              self.assertEqual(l, [-3, -5, -7, -9])
     #+END_SRC
 
 *** repr()
