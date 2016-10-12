@@ -1345,7 +1345,20 @@ tags: [built-in functions, unittest]
 *** reversed()
     #+NAME: reversed-test-suite
     #+BEGIN_SRC python
-    
+      class TestReversed(unittest.TestCase):
+          """reversed(sequence) -> reverse iterator over values of the sequence"""
+
+          def setUp(self):
+              self.s = reversed('abc')
+              self.d = reversed([1, 2, 3])
+
+          def test_simple_behaviour(self):
+              self.assertTrue(next(self.s) == 'c' and
+                              next(self.s) == 'b')
+
+          def test_list_as_argument(self):
+              self.assertTrue(next(self.d) == 3 and
+                              next(self.d) == 2)
     #+END_SRC
 
 *** round()
