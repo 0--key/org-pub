@@ -464,9 +464,429 @@ class TestHash(unittest.TestCase):
         self.assertEqual(hash(self.obj1), hash(self.obj1))
 
     def test_different_objects(self):
-        """Different objects with the equal properties has the different
+        """Different objects with equal properties has different
         hashes"""
         self.assertNotEqual(hash(self.obj1), hash(self.obj2))
 
     def test_equal_attributes(self):
         self.assertEqual(hash(self.obj2.size), hash(self.obj1.size))
+
+
+class TestHelp(unittest.TestCase):
+
+    def test_help_on_existing_function(self):
+        self.assertIsNone(help(zip))
+
+    def test_help_none_existing_function(self):
+        self.assertRaises(NameError, lambda: help(mod))
+
+
+class TestHex(unittest.TestCase):
+
+    def test_integer_argument(self):
+        self.assertEqual(hex(3735928559), '0xdeadbeef')
+
+    def test_float_argument(self):
+        self.assertRaises(TypeError, lambda: hex(2.2))
+
+
+class TestId(unittest.TestCase):
+
+    def setUp(self):
+        """Create a mockup object for testing purposes"""
+        class Pear():
+
+            def __init__(self):
+                self.size = 123
+                self.color = 'green'
+
+        self.obj1 = Pear()
+        self.obj2 = self.obj3 = Pear()
+
+    def test_different_objects(self):
+        self.assertNotEqual(id(self.obj1), id(self.obj2))
+
+    def test_same_objects(self):
+        self.assertEqual(id(self.obj2), id(self.obj3))
+
+
+class TestId(unittest.TestCase):
+
+    def setUp(self):
+        """Create a mockup object for testing purposes"""
+        class Pear():
+
+            def __init__(self):
+                self.size = 123
+                self.color = 'green'
+
+        self.obj1 = Pear()
+        self.obj2 = self.obj3 = Pear()
+
+    def test_different_objects(self):
+        self.assertNotEqual(id(self.obj1), id(self.obj2))
+
+    def test_same_objects(self):
+        self.assertEqual(id(self.obj2), id(self.obj3))
+
+
+class TestInput(unittest.TestCase):
+    """::"""
+
+    def test_tap(self):
+        """TODO"""
+        self.assertTrue(True)
+
+
+class TestInt(unittest.TestCase):
+
+    def test_integer_argument(self):
+        self.assertEqual(int(3735928559), 3735928559)
+
+    def test_float_argument(self):
+        self.assertEqual(int(2.2), 2)
+
+    def test_float_negative_argument(self):
+        self.assertEqual(int(-2.2), -2)
+
+    def test_string_argument(self):
+        self.assertRaises(ValueError, lambda: int('a'))
+
+
+class TestIsinstance(unittest.TestCase):
+
+    def test_argument_type(self):
+        self.assertTrue(isinstance('Bob and Alice', str))
+
+    def test_argument_class(self):
+        class Pear():
+            pass
+
+        self.obj = Pear()
+        self.assertTrue(isinstance(self.obj, Pear))
+
+
+class TestIssubclass(unittest.TestCase):
+
+    def test_the_mock_object_direct_relation(self):
+
+        class Fruit():
+            pass
+
+        class Pear(Fruit):
+            pass
+
+        self.assertTrue(issubclass(Pear, Fruit))
+
+    def test_the_mock_object_reverse_relation(self):
+
+        class Fruit():
+            pass
+
+        class Pear(Fruit):
+            pass
+
+        self.assertFalse(issubclass(Fruit, Pear))
+
+
+class TestIter(unittest.TestCase):
+
+    def setUp(self):
+        self.mockup_list = [1, 2, 3]
+        self.mockup_string = 'This is EOF the test string'
+
+    def test_strict_iteration(self):
+        self.assertTrue(iter(self.mockup_list))
+
+    def test_all_elements_in_sequence(self):
+        l = iter(self.mockup_list)
+        m = []
+        for i in l:
+            m.append(i)
+        self.assertEqual(m, [1, 2, 3])
+
+    def test_separate_elements_iteration(self):
+        i = iter(self.mockup_list)
+        a = next(i)
+        b = next(i)
+        c = next(i)
+        self.assertTrue(a == 1 and b == 2 and c == 3)
+
+
+class TestLen(unittest.TestCase):
+
+    def test_lenghth_of_string(self):
+        self.assertEqual(len('Ahab'), 4)
+
+    def test_lenghth_of_list(self):
+        self.assertEqual(len([1, 2, 3]), 3)
+
+
+class TestList(unittest.TestCase):
+
+    def test_simple_list_of_letters(self):
+        self.assertEqual(list('Pear'), ['P', 'e', 'a', 'r'])
+
+    def test_convert_tuple_into_list(self):
+        self.assertEqual(list((1, 2, 3)), [1, 2, 3])
+
+    def test_convert_dictionary_into_list(self):
+        self.assertEqual(list({'a': 1, 'b': 2}), ['b', 'a'])
+
+    def test_not_iterable_argument(self):
+        self.assertRaises(TypeError, lambda: list(123.11))
+
+
+d = {'this': 1, 'is': 2, 'a': 3, 'global': 4, 'variable': 5}
+
+
+class TestLocals_and_Globals(unittest.TestCase):
+
+    def setUp(self):
+        """Cooke the mixture of objects"""
+        self.d = {'the': 1, 'global': 2, 'dictionary': 3}
+
+    def test_string_as_argument(self):
+        l = "Just a local variable"
+        self.assertEqual(locals()['l'], "Just a local variable")
+
+    def test_reassign_variable(self):
+        d = {'a': 1, 'simple': 2, 'dictionary': 3}
+        self.assertEqual(locals()['d']['a'], 1)
+        self.assertEqual(locals()['d']['simple'], 2)
+
+    def test_global_dict(self):
+        self.assertEqual(globals()['d']['this'], 1)
+
+
+class TestMap(unittest.TestCase):
+
+    def test_map_under_num_seq(self):
+        i = map(lambda x: x * 1.25, [4, 8, 12])
+        self.assertTrue(next(i) == 5 and next(i) == 10 and
+                        next(i) == 15)
+
+
+class TestMax(unittest.TestCase):
+
+    def test_simple_list_of_int(self):
+        self.assertTrue(max([1, 2, 3]) == 3)
+
+    def test_simple_list_of_letters(self):
+        self.assertTrue(max(['a', 'b', 'c']) == 'c')
+
+    def test_list_of_strings(self):
+        self.assertTrue(max('Aaron', 'Bobby', 'Scotty') == 'Scotty')
+
+        def test_string_values_comparison(self):
+            self.assertTrue(max(['1', '100', '111', '2']) == '2')
+
+    def test_with_key_function(self):
+        self.assertTrue(max(['1', '100', '111', '2'],
+                            key=lambda x: int(x)) == '111')
+
+    def test_with_key_function_1(self):
+        self.assertTrue(max('Aaron', 'Bobby', 'Scotty',
+                            key=lambda x: x[2]) == 'Aaron')
+
+
+class TestMemoryview(unittest.TestCase):
+
+    def setUp(self):
+        self.v = memoryview(b'abcefg')
+
+    def test_simple_behaviour(self):
+        self.assertTrue(self.v[0] == 97 and
+                        self.v[-1] == 103)
+
+
+class TestMin(unittest.TestCase):
+
+    def test_simple_behaviour_with_string_argument(self):
+        self.assertEqual(min('abc'), 'a')
+
+    def test_simple_behaviour_with_list_of_int_argument(self):
+        self.assertEqual(min([2, 3, 1]), 1)
+
+    def test_with_key_function(self):
+        self.assertTrue(min('Aaron', 'Bobby', 'Scotty',
+                            key=lambda x: x[2]) == 'Bobby')
+
+
+class TestNext(unittest.TestCase):
+
+    def setUp(self):
+        self.i = iter('abcdef')
+
+    def test_iteration(self):
+        self.assertTrue(next(self.i) == 'a' and
+                        next(self.i) == 'b')
+
+    def test_continuous_iteration(self):
+        self.assertFalse(next(self.i) == 'c')
+
+
+class TestObject(unittest.TestCase):
+    """The most base type"""
+
+    def setUp(self):
+        self.obj = object()
+
+    def test_simple_behaviour(self):
+        self.assertTrue(self.obj)
+
+
+class TestOct(unittest.TestCase):
+
+    def test_integer_argument(self):
+        self.assertEqual(oct(11), '0o13')
+
+    def test_negative_argument(self):
+        self.assertEqual(oct(-11), '-0o13')
+
+    def test_string_argument(self):
+        self.assertRaises(TypeError, lambda: oct('a'))
+
+
+class TestOpen(unittest.TestCase):
+
+    def test_simple_behaviour(self):
+        pass
+
+
+class TestOrd(unittest.TestCase):
+
+    def test_simple_behaviour(self):
+        self.assertTrue(ord('a') == 97)
+
+    def test_wrong_argument(self):
+        self.assertRaises(TypeError, lambda: ord('ab'))
+
+
+class TestPow(unittest.TestCase):
+
+    def test_simple_behaviour(self):
+        self.assertEqual(pow(2, 2), 4)
+
+    def test_complex_power(self):
+        self.assertAlmostEqual(pow(9, 0.5), 3)
+
+    def test_specific_third_argument(self):
+        self.assertTrue(pow(3, 3, 2) == 1)
+
+
+class TestPrint(unittest.TestCase):
+
+    def test_simple_behaviour(self):
+        self.assertIsNone(print('Hellow World'))
+
+
+class TestProperty(unittest.TestCase):
+
+    def setUp(self):
+        """property(fget=None, fset=None, fdel=None, doc=None) ->
+        property attribute"""
+
+        class C(object):
+            @property
+            def x(self):
+                "I am the 'x' property."
+                return self._x
+
+            @x.setter
+            def x(self, value):
+                self._x = value
+
+                @x.deleter
+            def x(self):
+                del self._x
+
+        class D(object):
+      
+            def getx(self):
+                return self._x
+      
+            def setx(self, value):
+                self._x = value
+          
+            def delx(self):
+                del self._x
+            x = property(getx, setx, delx, "I'm the 'x' property.")
+
+        self.obj_1 = C()
+        self.obj_2 = D()
+
+    def test_simple_behaviour(self):
+        self.assertEqual(self.obj_1.x, self.obj_2.x)
+
+
+class TestRange(unittest.TestCase):
+
+    def setUp(self):
+        self.A = range(3)
+        self.B = range(3, 10, 2)
+        self.C = range(3, 11, 2)
+        self.D = range(-3, -10, -2)
+
+    def test_simple_behaviour(self):
+        l = []
+        for i in self.A:
+            l.append(i)
+        self.assertEqual(l, [0, 1, 2])
+
+    def test_with_step(self):
+        l = []
+        for i in self.B:
+            l.append(i)
+        self.assertEqual(l, [3, 5, 7, 9])
+
+    def test_with_step_and_right_exclude(self):
+        l = []
+        for i in self.C:
+            l.append(i)
+        self.assertEqual(l, [3, 5, 7, 9])
+
+    def test_negative_range(self):
+        l = []
+        for i in self.D:
+            l.append(i)
+        self.assertEqual(l, [-3, -5, -7, -9])
+
+
+class TestRepr(unittest.TestCase):
+
+    def setUp(self):
+        class Pear():
+
+            def __init__(self):
+                self.size = 124
+                self.color = 'green'
+
+            def __repr__(self):
+                return('This is a particular representation')
+
+        self.obj = Pear()
+
+    def test_simple_behaviour(self):
+        self.assertTrue(repr(123) == '123' and
+                        repr([1, 2, 3]) == '[1, 2, 3]')
+
+    def test_object_representation(self):
+        self.assertTrue(repr(self.obj) ==
+                        'This is a particular representation')
+
+
+class TestReversed(unittest.TestCase):
+    """reversed(sequence) -> reverse iterator over values of the sequence"""
+
+    def setUp(self):
+        self.s = reversed('abc')
+        self.d = reversed([1, 2, 3])
+
+    def test_simple_behaviour(self):
+        self.assertTrue(next(self.s) == 'c' and
+                        next(self.s) == 'b')
+
+    def test_list_as_argument(self):
+        self.assertTrue(next(self.d) == 3 and
+                        next(self.d) == 2)
