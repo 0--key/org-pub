@@ -1,0 +1,67 @@
+#+BEGIN_HTML
+---
+layout: post
+title: Anton S. Kosinov
+tagline: " Keep clear"
+permalink: /cv.html
+categories: [Data Science, Big Data, Artificial Intelligence]
+tags: [CV, Emacs, Literate Programming]
+---
+#+END_HTML
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+
+* Preamble
+
+** Who am I
+
+** What I do
+
+** What I fun for
+
+* Tuition
+
+** Secondary School
+
+** Naval College
+
+** University
+
+* Skills
+
+** Ubuntu
+
+** Python
+
+** JavaScript
+
+** Emacs
+
+** HTML5
+
+** Algorithms
+
+* Techics
+
+** Fluent English
+
+** Model Thinking
+
+** Test-Driven Development
+
+
+* Experience
+
+** Web Crawling
+
+** Data Processing
+
+** Mental Athletics
+
+** Data Visualization
+
+* Payments
+
+* Feedback
+  Feel free to leave any comments below. It all are acceptable by default.
+  
