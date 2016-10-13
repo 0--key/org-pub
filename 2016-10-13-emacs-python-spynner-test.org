@@ -30,9 +30,10 @@ tags: [python3, emacs, spynner, installation, Ubuntu 14.04]
 ** Dependencies
 
 *** Activate your virtual environment
+    The main goal of this article is to install spynner with Python3.
 
 *** Check up current Python version:
-    #+BEGIN_SRC sh
+    #+BEGIN_SRC sh :exports both
     python --version
     #+END_SRC
 
@@ -64,7 +65,7 @@ tags: [python3, emacs, spynner, installation, Ubuntu 14.04]
     #+END_SRC
 
 *** Test it up
-    #+BEGIN_SRC python :results output
+    #+BEGIN_SRC python :results output :exports both
     from PyQt4.QtGui import QImage
     #+END_SRC
 
