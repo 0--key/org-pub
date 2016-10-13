@@ -1,0 +1,26 @@
+#+BEGIN_HTML
+---
+layout: post
+title: Python inside Emacs
+tagline: " dissection with a pure joy"
+permalink: /emacs/tips-and-tricks/Elpy/how-to-pass-region-to-shell.html
+categories: [python, emacs, Elpy, shell]
+tags: [Emacs, tips and tricks]
+---
+#+END_HTML
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+* Preamble
+  In many cases it might be extremely convenient to pass some particular
+  code snippet (function, class or even entire file content) to Python
+  shell and Elpy [[https://elpy.readthedocs.io/en/latest/ide.html#command-elpy-shell-send-region-or-buffer][allows]] you to do this out from the box. *But* python-mode
+  [[https://www.emacswiki.org/emacs/IndentingPython][configured by default]] to use _mixed_ TAB and SPACE indentation and if you're
+  trying send region you're got this error:
+  ~TabError: inconsistent use of tabs and spaces in indentation~
+* Solution
+  Just try to customize =indent-tabs-mode= and set it up to =nil=
+  It's possible by:
+  =C-h v indent-tabs-mode=
+* Conclusion
+  After that customization feel free to mark the region which you want to
+  dissect in the python shell and pass it there by typing =C-c C-c=
