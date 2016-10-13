@@ -154,7 +154,7 @@ tags: [python3, emacs, spynner, installation, Ubuntu 14.04]
       browser = spynner.Browser(debug_level=spynner.DEBUG)
       browser.create_webview()
       browser.show()
-      spynner.Browser(
+      spynner.Browser()
     #+END_SRC
 
     #+RESULTS:
