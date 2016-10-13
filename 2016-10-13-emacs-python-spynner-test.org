@@ -4,8 +4,8 @@ layout: post
 title: Python inside Emacs
 tagline: " emulate web-browser in parallel"
 permalink: /emacs/spynner-installation.html
-categories: [python3, emacs, spynner, installation, Ubuntu 14.04, Maemo5, Nokia n900]
-tags: [Emacs, Literate Programming]
+categories: [Emacs, Literate Programming]
+tags: [python3, emacs, spynner, installation, Ubuntu 14.04]
 ---
 #+END_HTML
 #+STARTUP: showall
@@ -87,17 +87,11 @@ tags: [Emacs, Literate Programming]
     sudo apt-get install cmake
     pip install pyside
     #+END_SRC
-*** Libxml2
-    #+BEGIN_SRC sh
-    python --version
-    #+END_SRC
-
-    #+RESULTS:
-    : Python 3.4.3
+*** Libxml2?
 
 ** Spynner installation
 *** Clone the repository
-    #+BEGIN_SRC sh
+    #+BEGIN_SRC sh 
     cd /usr/local/share/DVCS/
     git clone https://github.com/makinacorpus/spynner.git
     #+END_SRC
@@ -107,7 +101,7 @@ tags: [Emacs, Literate Programming]
     | spynner |      |              |
 
 *** Switch on py3 branch
-    #+BEGIN_SRC sh :results output
+    #+BEGIN_SRC sh :results output :exports both
     cd /usr/local/share/DVCS/spynner
     git checkout py3
     git branch -a
@@ -124,7 +118,7 @@ tags: [Emacs, Literate Programming]
     :   remotes/origin/py3
 
 *** Review the content
-    #+BEGIN_SRC sh
+    #+BEGIN_SRC sh :exports both
     cd ../spynner
     ls
     #+END_SRC
@@ -152,7 +146,7 @@ tags: [Emacs, Literate Programming]
     #+END_SRC
 
 *** Test spynner in general
-    #+BEGIN_SRC python
+    #+BEGIN_SRC python :exports both
       import spynner
       import pyquery
 
@@ -164,22 +158,6 @@ tags: [Emacs, Literate Programming]
 
     #+RESULTS:
     : None
-
-*** Test the patricular Browser
-    #+BEGIN_SRC python
-      import spynner, os, sys
-      def print_contents(browser, dest='~/.browser.html'):
-          """Print the browser contents somewhere for you to see its context
-          in doctest pdb, type print_contents(browser) and that's it, open firefox
-          with file://~/browser.html."""
-          import os
-          open(os.path.expanduser(dest), 'w').write(browser.contents)
-      import time
-      from StringIO import StringIO
-      debug_stream = StringIO()
-      bp = os.path.dirname(spynner.tests.__file__)
-
-    #+END_SRC
 
 *** Create the executable file
     #+BEGIN_SRC python :results output :tangle spynner/myscript.py :noweb yes
@@ -207,7 +185,7 @@ tags: [Emacs, Literate Programming]
     #+RESULTS:
 
 *** Run script without X11
-    #+BEGIN_SRC sh :results output
+    #+BEGIN_SRC sh :results output :exports both
     xvfb-run python spynner/myscript.py
     #+END_SRC
 
