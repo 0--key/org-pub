@@ -4,8 +4,8 @@ layout: post
 title: Anton S. Kosinov
 tagline: " Keep clear"
 permalink: /cv.html
-categories: [Data Science, Big Data, Artificial Intelligence]
-tags: [CV, Emacs, Literate Programming]
+categories: [info, about me]
+tags: [CV, Emacs, Python, Literate Programming]
 ---
 #+END_HTML
 #+STARTUP: showall
