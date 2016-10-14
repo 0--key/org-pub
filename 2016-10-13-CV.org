@@ -14,10 +14,36 @@ tags: [CV, Emacs, Python, Literate Programming]
 * Preamble
 
 ** Who am I
+   First of all I'm happy father, husband and man. I'm like fishing and repair things
+   out from their usual state. In most cases I've succeeded on this. I know how the
+   things work by its autopsy conclusion. There are rules in our Universe and all stuff
+   around us strictly follow these rules. The Gravity, Electricity and Nuclear Reactions
+   are kings and queens in their and our realm simultaneously.
+
+   It's an excellent case for ourselves. We already know:
+    - Natural Law does exist;
+    - Most rules dissected and described.
+
+
+    And, in addition there are a lot of people who know that rules precisely.
 
 ** What I do
 
+   I'm a data-driven person. Unconsciously I'm trying to know much details about my
+   personal environment. It's just my innate hyper-curiosity. It forces me, it inspires
+   me, it is my passion, hobby and my live-style.
+
 ** What I fun for
+
+   In the secondary school I've noticed that machines are much stronger than people.
+   The short introduction about how difficult is to enslave the iron helpers I got
+   when I learned car-driving method. It was awesome.
+
+   But there are long time gone, and now I focused on /programming/ machines to do
+   large amount of job on incredible speed. It's partially a science, but on another
+   side it might be a sport in the same time.
+
+   Hence: *machines, speed, programming* 
 
 * Tuition
 
