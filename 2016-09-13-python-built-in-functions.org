@@ -1381,7 +1381,14 @@ tags: [built-in functions, unittest]
 *** set()
     #+NAME: set-test-suite
     #+BEGIN_SRC python
-    
+      class TestSet(unittest.TestCase):
+
+          def test_simple_behaviour(self):
+              self.assertTrue(set('abaaba') == set('ab'))
+
+          def test_dictionary_as_argument(self):
+              self.assertEqual(set({'a': 1, 'b': 2, 'c': 2, 'b': 3}),
+                               {'a', 'b', 'c'})
     #+END_SRC
 
 *** setattr()
