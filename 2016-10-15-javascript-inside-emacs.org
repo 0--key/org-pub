@@ -1,0 +1,64 @@
+#+BEGIN_HTML
+---
+layout: post
+title: JavaScript inside Emacs
+tagline: " do what you want in the literal manner"
+permalink: /emacs/javascript-intro.html
+categories: [emacs, javascript, nodejs]
+tags: [Emacs, Literate Programming, JavaScript]
+---
+#+END_HTML
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+
+* Prerequisites
+  First of all lets check up does NodeJS already installed on our host:
+  #+BEGIN_SRC sh :exports both
+  nodejs --version
+  #+END_SRC
+
+  #+RESULTS:
+  : v0.10.25
+
+* Activation
+  In order to use JS inside Babel you'll need to activate its support. Find
+  in your =.emacs= or =.init= strings with Babel's supported languages:
+
+  #+BEGIN_SRC emacs-lisp
+    (org-babel-do-load-languages
+     'org-babel-load-languages
+     '((python . t)
+       (emacs-lisp . t)
+       (shell . t)
+       (js . t)
+       (ditaa . t)
+       (plantuml . t)
+       (sqlite . t)
+       ))
+  #+END_SRC
+
+  #+RESULTS:
+  : ((python . t) (emacs-lisp . t) (shell . t) (js . t) (ditaa . t) (plantuml . t) (sqlite . t))
+
+  and ensure that JS is already included. Otherwise you should add the necessary
+  string and evaluate the region by marking it =C-SPC= and execution =M-x eval-region=
+
+* Testing
+  Try to copy and paste code snippet below into your =org= file and evaluate it
+  by yourself. Put the pointer between =#+BEGIN_SRC= and =#+END_SRC=
+  and type =C-c C-c= to get results.
+
+  #+BEGIN_SRC org
+  #+BEGIN_SRC js :cmd "nodejs"
+    console.log("Hello World!");
+  ,#+END_SRC
+
+  #+RESULTS:
+  : Hello World!
+  : undefined
+  
+  #+END_SRC
+
+* Conclusion
+  *Have a fun*
+
