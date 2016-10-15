@@ -76,6 +76,32 @@ tags: [coding, algorithms]
 
 ** Code
 
+*** Visualise the matrix of number's orders
+    #+BEGIN_SRC python :results output :pp :exports both
+      def simple_array():
+       l = []
+       for i in range(10):
+	l.append([i] + [str(i**j)[-1] for j in range(10)])
+       return l
+
+      for i in simple_array():
+       print(i)
+    #+END_SRC
+
+    #+RESULTS:
+    #+begin_example
+    [0, '1', '0', '0', '0', '0', '0', '0', '0', '0', '0']
+    [1, '1', '1', '1', '1', '1', '1', '1', '1', '1', '1']
+    [2, '1', '2', '4', '8', '6', '2', '4', '8', '6', '2']
+    [3, '1', '3', '9', '7', '1', '3', '9', '7', '1', '3']
+    [4, '1', '4', '6', '4', '6', '4', '6', '4', '6', '4']
+    [5, '1', '5', '5', '5', '5', '5', '5', '5', '5', '5']
+    [6, '1', '6', '6', '6', '6', '6', '6', '6', '6', '6']
+    [7, '1', '7', '9', '3', '1', '7', '9', '3', '1', '7']
+    [8, '1', '8', '4', '2', '6', '8', '4', '2', '6', '8']
+    [9, '1', '9', '1', '9', '1', '9', '1', '9', '1', '9']
+#+end_example
+
 ** TestSuite
    #+BEGIN_SRC python :results output :tangle tests/test_toy_samples.py :exports code
      import unittest
