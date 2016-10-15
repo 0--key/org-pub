@@ -23,15 +23,16 @@ tags: [CV, Emacs, Python, Literate Programming]
    It's an excellent case for ourselves. We already know:
     - Natural Law does exist;
     - Most rules dissected and described.
-
-
-    And, in addition there are a lot of people who know that rules precisely.
+   
+   *Happy grows in the mind*
 
 ** What I do
 
    I'm a data-driven person. Unconsciously I'm trying to know much details about my
    personal environment. It's just my innate hyper-curiosity. It forces me, it inspires
    me, it is my passion, hobby and my live-style.
+
+   Thus: *data, data, data*
 
 ** What I fun for
 
