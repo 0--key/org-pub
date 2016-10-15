@@ -1365,7 +1365,17 @@ tags: [built-in functions, unittest]
 *** round()
     #+NAME: round-test-suite
     #+BEGIN_SRC python
-    
+      class TestRound(unittest.TestCase):
+
+          def test_simple_behaviour(self):
+              self.assertTrue(round(4.6) == 5)
+
+          def test_with_ndigits(self):
+              self.assertTrue(round(4.66, 1) == 4.7)
+
+          def test_with_negative_ndigits(self):
+              self.assertTrue(round(4.66, -1) == 0.0)
+              self.assertTrue(round(444.66, -1) == 440.0)
     #+END_SRC
 
 *** set()
