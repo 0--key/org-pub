@@ -1394,7 +1394,31 @@ tags: [built-in functions, unittest]
 *** setattr()
     #+NAME: setattr-test-suite
     #+BEGIN_SRC python
-    
+      class TestSetattr(unittest.TestCase):
+
+          def setUp(self):
+              class Pear():
+
+                  def __init__(self):
+                      self.size = 124
+                      self.color = 'green'
+
+                  def __repr__(self):
+                      return('This is a particular representation')
+
+              self.obj = Pear()
+
+          def test_simple_behaviour(self):
+              self.assertTrue(self.obj.size == 124)
+              setattr(self.obj, 'size', 125)
+              self.assertTrue(self.obj.size == 125)
+
+          def test_inheritance_in_testing(self):
+              self.assertFalse(self.obj.size == 125)
+
+          def test_undefined_attribute(self):
+              setattr(self.obj, 'shape', 'normal')
+              self.assertFalse(self.obj == 'normal')
     #+END_SRC
 
 *** slice()
