@@ -1424,7 +1424,22 @@ tags: [built-in functions, unittest]
 *** slice()
     #+NAME: slice-test-suite
     #+BEGIN_SRC python
-    
+      class TestSlice(unittest.TestCase):
+
+          def setUp(self):
+              self.l = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+          def test_simple_behaviour(self):
+              sl = slice(0, 3)
+              self.assertTrue(self.l[sl] == [1, 2, 3])
+
+          def test_default_start_value(self):
+              sl = slice(3)
+              self.assertTrue(self.l[sl] == [1, 2, 3])
+
+          def test_with_step(self):
+              sl = slice(0, 9, 3)
+              self.assertTrue(self.l[sl] == [1, 4, 7])
     #+END_SRC
 
 *** sorted()
