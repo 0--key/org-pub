@@ -157,6 +157,24 @@ tags: [coding, algorithms]
     #+RESULTS:
     : Tests passed
 
+*** Function generator
+    #+BEGIN_SRC  python :results output :pp :exports both
+      def first(n):
+          return n + 1
+
+      def second(n):
+          return n + 2
+
+      def function_generator(k, n):
+          list_of_functions = [first(n), second(n)]
+          return list_of_functions[k]
+
+      print(function_generator(0, 10))
+    #+END_SRC
+
+    #+RESULTS:
+    : 11
+
 ** TestSuite
    #+BEGIN_SRC python :results output :tangle tests/test_toy_samples.py :exports code
      import unittest
