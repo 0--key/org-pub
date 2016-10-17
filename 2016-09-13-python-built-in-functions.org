@@ -1445,7 +1445,31 @@ tags: [built-in functions, unittest]
 *** sorted()
     #+NAME: sorted-test-suite
     #+BEGIN_SRC python
-    
+      class TestSorted(unittest.TestCase):
+
+          def setUp(self):
+              self.l = [1, 2, 3, 6, 7, 8, 9, 4, 5]
+              self.d = {'a': 1, 'b': 0, 'c': -1}
+
+          def test_simple_behaviour(self):
+              self.assertEqual(sorted(self.l),
+                               [1, 2, 3, 4, 5, 6, 7, 8, 9])
+
+          def test_dict_sorting(self):
+              import operator
+              self.assertTrue(sorted(self.d.items(),
+                                     key=operator.itemgetter(1)) ==
+                              [('c', -1), ('b', 0), ('a', 1)])
+
+          def test_dict_sorting_python3(self):
+              # sinonymous and much neat solution
+              self.assertTrue(sorted(self.d.items(),
+                                     key=lambda x: x[1]) ==
+                              [('c', -1), ('b', 0), ('a', 1)])
+
+          def test_reverse_sorting(self):
+              self.assertEqual(sorted(self.l, reverse=True),
+                               [9, 8, 7, 6, 5, 4, 3, 2, 1])
     #+END_SRC
 
 *** staticmethod()
