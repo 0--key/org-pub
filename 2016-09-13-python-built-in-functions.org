@@ -1475,7 +1475,13 @@ tags: [built-in functions, unittest]
 *** staticmethod()
     #+NAME: staticmethod-test-suite
     #+BEGIN_SRC python
-    
+      class TestStaticmethod(unittest.TestCase):
+
+          def setUp(self):
+              pass
+
+          def test_simple_behaviour(self):
+              self.assertEqual(staticmethod())
     #+END_SRC
 
 *** str()
