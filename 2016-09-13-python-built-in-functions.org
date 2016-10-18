@@ -1487,7 +1487,10 @@ tags: [built-in functions, unittest]
 *** str()
     #+NAME: str-test-suite
     #+BEGIN_SRC python
-    
+      class TestStr(unittest.TestCase):
+
+          def test_simple_behaviour(self):
+              self.assertTrue(str([1, 2, 3]) == '[1, 2, 3]')
     #+END_SRC
 
 *** sum()
