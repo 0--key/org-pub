@@ -201,6 +201,13 @@ tags: [coding, algorithms]
       assert(func_gen(2, 10) == 4)
       print('It works!')
     #+END_SRC
+
+*** Further development
+    Obvious that =seqN()= for other numbers should be similar.
+    Following /DRY/ principle lets take an attempt to cope with it
+    and ...
+
+
 ** TestSuite
    #+BEGIN_SRC python :results output :tangle tests/test_toy_samples.py :exports code
      import unittest
