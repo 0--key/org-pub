@@ -1496,7 +1496,21 @@ tags: [built-in functions, unittest]
 *** sum()
     #+NAME: sum-test-suite
     #+BEGIN_SRC python
-    
+      class TestSum(unittest.TestCase):
+
+          def test_simple_behaviour(self):
+              self.assertTrue(sum([1, 2, 3]) == 6)
+              self.assertTrue(sum([1.1, 2.2, 3.3]) == 6.6)
+
+          def test_start_value(self):
+              self.assertTrue(sum([1, 2, 3], 1) == 7)
+              self.assertTrue(sum([1, 2, 3], 2) == 8)
+
+          def test_string_as_argument(self):
+              self.assertRaises(TypeError, lambda: sum("abc"))
+
+          def test_list_of_strings_as_argument(self):
+              self.assertRaises(TypeError, lambda: sum(['a', 'b', 'c']))
     #+END_SRC
 
 *** super()
