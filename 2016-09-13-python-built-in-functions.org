@@ -1516,7 +1516,26 @@ tags: [built-in functions, unittest]
 *** super()
     #+NAME: super-test-suite
     #+BEGIN_SRC python
-    
+      class TestSuper(unittest.TestCase):
+
+          def test_simple_behaviour(self):
+
+              class Fruit():
+
+                  def sample_method(self):
+                      return "It is a parent class' method"
+
+              class Pear(Fruit):
+
+                  def sample_method(self):
+                      super().sample_method()
+                      # return "This is a native method"
+
+              self.obj = Pear()
+              print(self.obj.sample_method())
+
+              self.assertTrue(self.obj.sample_method() ==
+                              "It is a parent class' method")
     #+END_SRC
 
 *** tuple()
