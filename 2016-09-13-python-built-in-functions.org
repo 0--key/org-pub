@@ -1564,7 +1564,13 @@ tags: [built-in functions, unittest]
 *** type()
     #+NAME: type-test-suite
     #+BEGIN_SRC python
-    
+      class TestType(unittest.TestCase):
+
+          def setUp(self):
+              pass
+
+          def test_simple_behaviour(self):
+              self.assertTrue(type('string'))  # == "<class 'str'>")
     #+END_SRC
 
 *** vars()
