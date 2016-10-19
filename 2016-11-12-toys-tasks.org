@@ -208,19 +208,20 @@ tags: [coding, algorithms]
     and ...
 
 
-** TestSuite
-   #+BEGIN_SRC python :results output :tangle tests/test_toy_samples.py :exports code
-     import unittest
-     from .. toy_tasks import order
 
-     class TestHiddenOrder(unittest.TestCase):
+* TestSuite
+  #+BEGIN_SRC python :results output :tangle tests/test_toy_samples.py :exports code
+    import unittest
+    from .. toy_tasks import order
 
-         def test_simple_behaviour(self):
-             self.assertEqual(order("is2 Thi1s T4est 3a"),
-                              "Thi1s is2 3a T4est")
-   #+END_SRC
+    class TestHiddenOrder(unittest.TestCase):
 
-** TestRunner
+        def test_simple_behaviour(self):
+            self.assertEqual(order("is2 Thi1s T4est 3a"),
+                             "Thi1s is2 3a T4est")
+  #+END_SRC
+
+* TestRunner
    #+BEGIN_SRC sh :results output :exports both
      python -m unittest tests/test_toy_samples.py
 
