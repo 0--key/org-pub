@@ -12,7 +12,7 @@ tags: [coding, algorithms]
 #+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
 #+TOC: headlines 2
 
-* #1
+* #1 Vowels counter
   #+BEGIN_QUOTE
   Return the number (count) of vowels in the given string.
   We will consider a, e, i, o, and u as vowels for this Kata.
@@ -40,7 +40,6 @@ tags: [coding, algorithms]
   #+RESULTS:
   : 9
 
-  
 * #2 Last digit of a large number
   
 ** Description
@@ -52,6 +51,7 @@ tags: [coding, algorithms]
       return   
    #+END_SRC
 
+   #+BEGIN_QUOTE
   that takes in two numbers a and b and returns the last decimal digit of a^b. Note that a and b may be very large!
 
   For example, the last decimal digit of 9^7 is 9, since 9^7 = 4782969. The last decimal digit of (2^200)^(2^300), which has over 10^92 decimal digits, is 6.
@@ -73,6 +73,7 @@ tags: [coding, algorithms]
   lastDigit("10", "10000000000");
 
   The kata is still as hard as the variants for Haskell or Python, don't worry.
+   #+END_QUOTE
 
 ** Code
 
@@ -174,7 +175,6 @@ tags: [coding, algorithms]
 
     #+RESULTS:
     : 11
-
 
 *** Ties these snippets together
     #+BEGIN_SRC python :results output :pp :exports both
