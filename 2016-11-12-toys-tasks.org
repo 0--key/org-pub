@@ -202,6 +202,9 @@ tags: [coding, algorithms]
       print('It works!')
     #+END_SRC
 
+    #+RESULTS:
+    : It works!
+
 *** Further development
     Obvious that =seqN()= for other numbers should be similar.
     Following /DRY/ principle lets take an attempt to cope with it
