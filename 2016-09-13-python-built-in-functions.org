@@ -1541,7 +1541,24 @@ tags: [built-in functions, unittest]
 *** tuple()
     #+NAME: tuple-test-suite
     #+BEGIN_SRC python
-    
+      class TestTuple(unittest.TestCase):
+
+          def setUp(self):
+              self.d = {'a': 1, 'b': 2}
+              self.l = [1, 1, 2, 2, 3]
+
+          def test_simple_behaviour(self):
+              self.assertTrue(tuple('abcd') == ('a', 'b', 'c', 'd'))
+
+          def test_list_as_argument(self):
+              self.assertTrue(tuple(self.l) == (1, 1, 2, 2, 3))
+
+          def test_index_of_tuple(self):
+              self.assertTrue(tuple(self.l)[-1] == 3)
+
+          def test_dictionary_as_argument(self):
+              # dict is an unordered sequence by definition
+              self.assertTrue(tuple(self.d) == ('b', 'a') or ('a', 'b'))
     #+END_SRC
 
 *** type()
