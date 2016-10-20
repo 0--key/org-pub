@@ -1598,13 +1598,21 @@ tags: [built-in functions, unittest]
 *** zip()
     #+NAME: zip-test-suite
     #+BEGIN_SRC python
-    
+      class TestZip(unittest.TestCase):
+
+          def test_simple_behaviour(self):
+              self.assertEqual(next(zip([1, 2, 3], ['a', 'b', 'c'])), (1, 'a'))
     #+END_SRC
 
 *** __import__()
     #+NAME: __import__-test-suite
     #+BEGIN_SRC python
-    
+      class Test__import__(unittest.TestCase):
+          """Note:
+          This is an advanced function
+          that is not needed in everyday Python programming, \
+          unlike importlib.import_module()"""
+          pass
     #+END_SRC
 
 
