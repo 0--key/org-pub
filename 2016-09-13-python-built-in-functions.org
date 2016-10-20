@@ -1576,7 +1576,23 @@ tags: [built-in functions, unittest]
 *** vars()
     #+NAME: vars-test-suite
     #+BEGIN_SRC python
-    
+      class TestVars(unittest.TestCase):
+
+          def setUp(self):
+              class Pear():
+
+                  def __init__(self):
+                      self.size = 124
+                      self.color = 'green'
+
+              self.obj = Pear()
+
+          def test_simple_behaviour(self):
+              s = 'sample string'
+              self.assertTrue(vars()['s'] == 'sample string')
+
+          def test_with_object_as_argument(self):
+              self.assertEqual(vars(self.obj)['size'], 124)
     #+END_SRC
 
 *** zip()
