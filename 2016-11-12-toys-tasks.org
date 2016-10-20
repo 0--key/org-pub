@@ -210,6 +210,44 @@ tags: [coding, algorithms]
     Following /DRY/ principle lets take an attempt to cope with it
     and ...
 
+*** Function itself
+    #+BEGIN_SRC python :results output :pp :exports both
+      def seq0(num):
+          return 0
+
+      def seq1(num):
+          return 1
+
+      def seq2(num):
+          if num > 0:
+              s = [2, 4, 8, 6]
+              if num < 5:
+                  return s[num-1]
+              else:
+                  return s[num % 4 - 1]
+          else:
+              return 1
+
+      def func_gen(k, n):
+          list_of_functions = [seq0(n), seq1(n), seq2(n)]
+          return list_of_functions[k]
+
+      assert(func_gen(2, 10) == 4)
+      print('It works!')
+
+      def last_digit(a, b):
+          last_digit_in_number = int(str(a)[-1])
+          print(last_digit_in_number)
+          last_digit_in_order = int(str(b)[-1])
+          print(last_digit_in_order)
+          return func_gen(last_digit_in_number, last_digit_in_order)
+
+      print(last_digit(2, 11))
+      print(last_digit(1, 10))
+      # print(func_gen(2, 10))
+      # print(func_gen(2, 11))
+      # print('It works! also')
+    #+END_SRC
 
 
 * TestSuite
