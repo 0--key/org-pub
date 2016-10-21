@@ -236,19 +236,22 @@ tags: [coding, algorithms]
       print('It works!')
 
       def last_digit(a, b):
-          last_digit_in_number = int(str(a)[-1])
-          print(last_digit_in_number)
-          last_digit_in_order = int(str(b)[-1])
-          print(last_digit_in_order)
-          return func_gen(last_digit_in_number, last_digit_in_order)
+          # last_digit_in_number = int(str(a)[-1])
+          # print(last_digit_in_number)
+          # last_digit_in_order = int(str(b)[-1])
+          # print(last_digit_in_order)
+          return func_gen(a, b) #last_digit_in_number, last_digit_in_order)
 
-      print(last_digit(2, 11))
-      print(last_digit(1, 10))
+      assert(last_digit(2, 11) == 8)
+      assert(last_digit(1, 10) == 1)
       # print(func_gen(2, 10))
       # print(func_gen(2, 11))
-      # print('It works! also')
+      print('It works! also')
     #+END_SRC
 
+    #+RESULTS:
+    : It works!
+    : It works! also
 
 * TestSuite
   #+BEGIN_SRC python :results output :tangle tests/test_toy_samples.py :exports code
