@@ -268,6 +268,16 @@ tags: [coding, algorithms]
    and the character to find is "o", return 2.
    #+END_QUOTE
 
+** Code
+   #+BEGIN_SRC python :results output :pp :exports both
+     def string_counter(string, char):
+         return string.count(char)
+
+     assert(string_counter('Hello World', 'o') == 2)
+   #+END_SRC
+
+   #+RESULTS:
+
 * TestSuite
   #+BEGIN_SRC python :results output :tangle tests/test_toy_samples.py :exports code
     import unittest
