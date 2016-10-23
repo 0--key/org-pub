@@ -631,7 +631,8 @@ class TestList(unittest.TestCase):
         self.assertEqual(list((1, 2, 3)), [1, 2, 3])
 
     def test_convert_dictionary_into_list(self):
-        self.assertEqual(list({'a': 1, 'b': 2}), ['b', 'a'])
+        # dictionary is an unordered sequence by its definition
+        self.assertTrue(list({'a': 1, 'b': 2}) == ['a', 'b'] or ['b', 'a'])
 
     def test_not_iterable_argument(self):
         self.assertRaises(TypeError, lambda: list(123.11))
