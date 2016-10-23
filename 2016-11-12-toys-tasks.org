@@ -243,6 +243,32 @@ tags: [coding, algorithms]
     : It works!
     : It works! also
 
+*** Final version
+    Seems like all =seqN= functions might be elegantly
+    fit into the one.
+    #+BEGIN_SRC python :results output :pp :exports both
+      def last_digit(num, order):
+          if order > 0:
+              s = [[0, 0], [1, 1], [2, 4, 8, 6],
+                   [3, 9, 7, 1], [4, 6, 4], [5, 5],
+                   [6, 6], [7, 9, 3, 1], [8, 4, 2, 6],
+                   [9, 1]][num]
+              if order < len(s) + 1:
+                  return s[order-1]
+              else:
+                  return s[order % len(s) - 1]
+          else:
+              return 1
+
+      assert(last_digit(2, 10) == 4)
+      assert(last_digit(7, 2) == 9)
+    #+END_SRC
+
+    #+RESULTS:
+
+    
+
+
 * #3 How many times does it contain?
 
 ** Description
