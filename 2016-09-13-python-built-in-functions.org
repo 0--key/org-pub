@@ -566,7 +566,7 @@ tags: [built-in functions, unittest]
               self.assertEqual(chr(105), 'i')
     #+END_SRC
 
-*** classmethod() and staticmethod()
+*** TODO classmethod() and staticmethod()
 
 *** compile()
     #+NAME: compile-test-suite
@@ -1627,21 +1627,27 @@ tags: [built-in functions, unittest]
 
    #+RESULTS:
    #+begin_example
-   ...................................................................................................................................E........
+   ..........................................................................................................................................................E.....F........
    ======================================================================
-   ERROR: test_simple_behaviour (tests.test_built-in_functions.TestProperty)
+   ERROR: test_simple_behaviour (tests.test_built-in_functions.TestStaticmethod)
    ----------------------------------------------------------------------
    Traceback (most recent call last):
-     File "/usr/local/share/DVCS/org-pub/tests/test_built-in_functions.py", line 820, in test_simple_behaviour
-       self.assertEqual(self.obj_1.x, self.obj_2.x)
-     File "/usr/local/share/DVCS/org-pub/tests/test_built-in_functions.py", line 794, in x
-       return self._x
-   AttributeError: 'C' object has no attribute '_x'
+     File "/usr/local/share/DVCS/org-pub/tests/test_built-in_functions.py", line 997, in test_simple_behaviour
+       self.assertEqual(staticmethod())
+   TypeError: staticmethod expected 1 arguments, got 0
+
+   ======================================================================
+   FAIL: test_simple_behaviour (tests.test_built-in_functions.TestSuper)
+   ----------------------------------------------------------------------
+   Traceback (most recent call last):
+     File "/usr/local/share/DVCS/org-pub/tests/test_built-in_functions.py", line 1042, in test_simple_behaviour
+       "It is a parent class' method")
+   AssertionError: False is not true
 
    ----------------------------------------------------------------------
-   Ran 140 tests in 0.107s
+   Ran 169 tests in 0.065s
 
-   FAILED (errors=1)
+   FAILED (failures=1, errors=1)
    Help on class zip in module builtins:
 
    class zip(object)
@@ -1670,6 +1676,7 @@ tags: [built-in functions, unittest]
     |      Return state information for pickling.
 
    Hellow World
+   None
 #+end_example
 
 
