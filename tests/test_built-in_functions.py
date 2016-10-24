@@ -782,43 +782,43 @@ class TestPrint(unittest.TestCase):
         self.assertIsNone(print('Hellow World'))
 
 
-class TestProperty(unittest.TestCase):
+# class TestProperty(unittest.TestCase):
 
-    def setUp(self):
-        """property(fget=None, fset=None, fdel=None, doc=None) ->
-        property attribute"""
+#     def setUp(self):
+#         """property(fget=None, fset=None, fdel=None, doc=None) ->
+#         property attribute"""
 
-        class C(object):
-            @property
-            def x(self):
-                "I am the 'x' property."
-                return self._x
+#         class C(object):
+#             @property
+#             def x(self):
+#                 "I am the 'x' property."
+#                 return self._x
 
-            @x.setter
-            def x(self, value):
-                self._x = value
+#             @x.setter
+#             def x(self, value):
+#                 self._x = value
 
-                @x.deleter
-            def x(self):
-                del self._x
+#             @x.deleter
+#             def x(self):
+#                 del self._x
 
-        class D(object):
-      
-            def getx(self):
-                return self._x
-      
-            def setx(self, value):
-                self._x = value
-          
-            def delx(self):
-                del self._x
-            x = property(getx, setx, delx, "I'm the 'x' property.")
+#         class D(object):
 
-        self.obj_1 = C()
-        self.obj_2 = D()
+#             def getx(self):
+#                 return self._x
 
-    def test_simple_behaviour(self):
-        self.assertEqual(self.obj_1.x, self.obj_2.x)
+#             def setx(self, value):
+#                 self._x = value
+
+#             def delx(self):
+#                 del self._x
+#             x = property(getx, setx, delx, "I'm the 'x' property.")
+
+#         self.obj_1 = C()
+#         self.obj_2 = D()
+
+#     def test_simple_behaviour(self):
+#         self.assertEqual(self.obj_1.x, self.obj_2.x)
 
 
 class TestRange(unittest.TestCase):
@@ -891,3 +891,214 @@ class TestReversed(unittest.TestCase):
     def test_list_as_argument(self):
         self.assertTrue(next(self.d) == 3 and
                         next(self.d) == 2)
+
+
+class TestRound(unittest.TestCase):
+
+    def test_simple_behaviour(self):
+        self.assertTrue(round(4.6) == 5)
+
+    def test_with_ndigits(self):
+        self.assertTrue(round(4.66, 1) == 4.7)
+
+    def test_with_negative_ndigits(self):
+        self.assertTrue(round(4.66, -1) == 0.0)
+        self.assertTrue(round(444.66, -1) == 440.0)
+
+
+class TestSet(unittest.TestCase):
+
+    def test_simple_behaviour(self):
+        self.assertTrue(set('abaaba') == set('ab'))
+
+    def test_dictionary_as_argument(self):
+        self.assertEqual(set({'a': 1, 'b': 2, 'c': 2, 'b': 3}),
+                         {'a', 'b', 'c'})
+
+
+class TestSetattr(unittest.TestCase):
+
+    def setUp(self):
+        class Pear():
+
+            def __init__(self):
+                self.size = 124
+                self.color = 'green'
+
+            def __repr__(self):
+                return('This is a particular representation')
+
+        self.obj = Pear()
+
+    def test_simple_behaviour(self):
+        self.assertTrue(self.obj.size == 124)
+        setattr(self.obj, 'size', 125)
+        self.assertTrue(self.obj.size == 125)
+
+    def test_inheritance_in_testing(self):
+        self.assertFalse(self.obj.size == 125)
+
+    def test_undefined_attribute(self):
+        setattr(self.obj, 'shape', 'normal')
+        self.assertFalse(self.obj == 'normal')
+
+
+class TestSlice(unittest.TestCase):
+
+    def setUp(self):
+        self.l = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+    def test_simple_behaviour(self):
+        sl = slice(0, 3)
+        self.assertTrue(self.l[sl] == [1, 2, 3])
+
+    def test_default_start_value(self):
+        sl = slice(3)
+        self.assertTrue(self.l[sl] == [1, 2, 3])
+
+    def test_with_step(self):
+        sl = slice(0, 9, 3)
+        self.assertTrue(self.l[sl] == [1, 4, 7])
+
+
+class TestSorted(unittest.TestCase):
+
+    def setUp(self):
+        self.l = [1, 2, 3, 6, 7, 8, 9, 4, 5]
+        self.d = {'a': 1, 'b': 0, 'c': -1}
+
+    def test_simple_behaviour(self):
+        self.assertEqual(sorted(self.l),
+                         [1, 2, 3, 4, 5, 6, 7, 8, 9])
+
+    def test_dict_sorting(self):
+        import operator
+        self.assertTrue(sorted(self.d.items(),
+                               key=operator.itemgetter(1)) ==
+                        [('c', -1), ('b', 0), ('a', 1)])
+
+    def test_dict_sorting_python3(self):
+        # sinonymous and much neat solution
+        self.assertTrue(sorted(self.d.items(),
+                               key=lambda x: x[1]) ==
+                        [('c', -1), ('b', 0), ('a', 1)])
+
+    def test_reverse_sorting(self):
+        self.assertEqual(sorted(self.l, reverse=True),
+                         [9, 8, 7, 6, 5, 4, 3, 2, 1])
+
+
+class TestStaticmethod(unittest.TestCase):
+
+    def setUp(self):
+        pass
+
+    def test_simple_behaviour(self):
+        self.assertEqual(staticmethod())
+
+
+class TestStr(unittest.TestCase):
+
+    def test_simple_behaviour(self):
+        self.assertTrue(str([1, 2, 3]) == '[1, 2, 3]')
+
+
+class TestSum(unittest.TestCase):
+
+    def test_simple_behaviour(self):
+        self.assertTrue(sum([1, 2, 3]) == 6)
+        self.assertTrue(sum([1.1, 2.2, 3.3]) == 6.6)
+
+    def test_start_value(self):
+        self.assertTrue(sum([1, 2, 3], 1) == 7)
+        self.assertTrue(sum([1, 2, 3], 2) == 8)
+
+    def test_string_as_argument(self):
+        self.assertRaises(TypeError, lambda: sum("abc"))
+
+    def test_list_of_strings_as_argument(self):
+        self.assertRaises(TypeError, lambda: sum(['a', 'b', 'c']))
+
+
+class TestSuper(unittest.TestCase):
+
+    def test_simple_behaviour(self):
+
+        class Fruit():
+
+            def sample_method(self):
+                return "It is a parent class' method"
+
+        class Pear(Fruit):
+
+            def sample_method(self):
+                super().sample_method()
+                # return "This is a native method"
+
+        self.obj = Pear()
+        print(self.obj.sample_method())
+
+        self.assertTrue(self.obj.sample_method() ==
+                        "It is a parent class' method")
+
+
+class TestTuple(unittest.TestCase):
+
+    def setUp(self):
+        self.d = {'a': 1, 'b': 2}
+        self.l = [1, 1, 2, 2, 3]
+
+    def test_simple_behaviour(self):
+        self.assertTrue(tuple('abcd') == ('a', 'b', 'c', 'd'))
+
+    def test_list_as_argument(self):
+        self.assertTrue(tuple(self.l) == (1, 1, 2, 2, 3))
+
+    def test_index_of_tuple(self):
+        self.assertTrue(tuple(self.l)[-1] == 3)
+
+    def test_dictionary_as_argument(self):
+        # dict is an unordered sequence by definition
+        self.assertTrue(tuple(self.d) == ('b', 'a') or ('a', 'b'))
+
+
+class TestType(unittest.TestCase):
+
+    def setUp(self):
+        pass
+
+    def test_simple_behaviour(self):
+        self.assertTrue(type('string'))  # == "<class 'str'>")
+
+
+class TestVars(unittest.TestCase):
+
+    def setUp(self):
+        class Pear():
+
+            def __init__(self):
+                self.size = 124
+                self.color = 'green'
+
+        self.obj = Pear()
+
+    def test_simple_behaviour(self):
+        s = 'sample string'
+        self.assertTrue(vars()['s'] == 'sample string')
+
+    def test_with_object_as_argument(self):
+        self.assertEqual(vars(self.obj)['size'], 124)
+
+
+class TestZip(unittest.TestCase):
+
+    def test_simple_behaviour(self):
+        self.assertEqual(next(zip([1, 2, 3], ['a', 'b', 'c'])), (1, 'a'))
+
+
+class Test__import__(unittest.TestCase):
+    """Note:
+    This is an advanced function
+    that is not needed in everyday Python programming, \
+    unlike importlib.import_module()"""
+    pass
