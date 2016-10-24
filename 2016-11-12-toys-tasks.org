@@ -248,6 +248,8 @@ tags: [coding, algorithms]
     fit into the one.
     #+BEGIN_SRC python :results output :pp :exports both
       def last_digit(num, order):
+          if num > 9:
+              num = int(str(num)[-1])
           if order > 0:
               s = [[0, 0], [1, 1], [2, 4, 8, 6],
                    [3, 9, 7, 1], [4, 6, 4], [5, 5],
@@ -261,7 +263,10 @@ tags: [coding, algorithms]
               return 1
 
       assert(last_digit(2, 10) == 4)
+      assert(last_digit(12, 10) == 4)
+      assert(last_digit(22, 11) == 8)
       assert(last_digit(7, 2) == 9)
+      assert(last_digit(27, 2) == 9)
     #+END_SRC
 
     #+RESULTS:
