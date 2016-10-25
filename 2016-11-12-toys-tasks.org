@@ -273,6 +273,13 @@ tags: [coding, algorithms]
     #+RESULTS:
 
     
+*** Clever solution
+    #+BEGIN_SRC python :results output :pp :exports both
+      def last_digit(n1, n2):
+          return pow( n1, n2, 10 )
+
+      assert(last_digit(2 ** 200, 2 ** 300) == 6)
+    #+END_SRC
 
 
 * #3 How many times does it contain?
