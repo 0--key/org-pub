@@ -1520,22 +1520,21 @@ tags: [built-in functions, unittest]
 
           def test_simple_behaviour(self):
 
-              class Fruit():
+              class Fruit:
 
-                  def sample_method(self):
-                      return "It is a parent class' method"
+                  def fruit_method(self, arg):
+                      return arg
 
               class Pear(Fruit):
 
-                  def sample_method(self):
-                      super().sample_method()
-                      # return "This is a native method"
+                  def pear_method(self, arg):
+                      return super().fruit_method(arg)
 
-              self.obj = Pear()
-              print(self.obj.sample_method())
+              obj1 = Fruit()
+              obj2 = Pear()
 
-              self.assertTrue(self.obj.sample_method() ==
-                              "It is a parent class' method")
+              self.assertTrue(obj1.fruit_method(1) == 1)
+              self.assertTrue(obj2.pear_method(2) == 2)
     #+END_SRC
 
 *** tuple()
