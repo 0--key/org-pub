@@ -16,138 +16,127 @@ tags: [built-in functions, unittest, staticmethod, classmethod]
   With no doubt the =classmethod= and =staticmethod= are widely spread
   in Python OOP and definitely necessary to implement one or another
   feature inside some particular class.
-
+  #+BEGIN_QUOTE
+  Sometimes, programs need to process data associated with classes instead of instances.
+  Consider keeping track of the number of instances created from a class, or maintaining
+  a list of all of a class’s instances that are currently in memory. This type of information
+  and its processing are associated with the class rather than its instances. That is, the
+  information is usually stored on the class itself and processed in the absence of any
+  instance.
+  #+END_QUOTE
 * Documentation
   At [[https://docs.python.org/3/library/functions.html][official web-site]].
 
 * Fixture
-  Exactly to illustrate the core idea of these built-in functions lets
-  create casual but colorful code snippet in accordion with OOP concept:
-  #+BEGIN_SRC python :results output :session stdlib :exports both
-    """Simple and trivial class to illustrate the core idea"""
 
-
-    class Vehicle:
-        """Naturally it is a vehicle"""
+** Data model
+   Exactly to illustrate the core idea of these built-in functions lets
+   create casual but colorful code snippet in accordion with OOP concept:
+   #+BEGIN_SRC  python :results output :session stdlib :exports code
+     class Vehicle:
+         """Naturally it is a vehicle"""
     
-        counter = 0
+         counter = 0
+    
+         def __init__(self, **kwargs):
+             """by default all cars are black"""
+             Vehicle.counter += 1  # increments the CLASS variable
+             # self.counter += 1 - increments the PARTICULAR ITEM VARIABLE
+             # the variables below are instance variables
+             if kwargs:
+                 self.color = kwargs['color']
+             else:
+                 self.color = 'black'
 
-        def __init__(self, **kwargs):
-            """by default all cars are black"""
-            Vehicle.counter += 1  # increments the CLASS variable
-            # self.counter += 1 - increments the PARTICULAR ITEM VARIABLE
-            # the variables below are instance variables
-            if kwargs:
-                self.color = kwargs['color']
-            else:
-                self.color = 'black'
 
+     class Car(Vehicle):
+         """Naturally it is a car properties definition"""
+    
+         car_counter = 0  # it's a class variable
+    
+         @classmethod
+         def get_num_vehicles(cls):
+             return cls.counter
+    
+         @staticmethod
+         def inc_counter():
+             Car.car_counter += 1
+             
+         def get_num_cars():
+             return Car.car_counter
+   #+END_SRC
 
-    class Car(Vehicle):
-        """Naturally it is a car properties definition"""
+   #+RESULTS:
 
-        counter = 0  # it's a class variable
+** Mockup objects creation
+   #+BEGIN_SRC  python :results none :session stdlib :exports code 
+     my_car = Car(color='red')
+     alice_car = Car(color='white')
+     bob_car = Car()
+   #+END_SRC
+ 
+** Test the classes' properties
+   #+BEGIN_SRC python :results output :session stdlib :exports both
+     print("Number of vehicles = %s" % Car.get_num_vehicles()) # accessed from classmethod
+     print("Parent class counter = %s" % Vehicle.counter) # accessed as a class variable
+     print("%s cars exists." % (Car.car_counter))
+   #+END_SRC
 
-        @classmethod
-        def get_num_cars(cls):
-            return cls.counter
+   #+RESULTS:
+   : Number of vehicles = 3
+   : Parent class counter = 3
+   : 0 cars exists.
 
-        @staticmethod
-        def inc_counter():
-            Car.counter += 1
+** Result analysis
+   Obviously that we've created three ~Car~ objects but our code identified and counted them as
+   ~Vehicles~. Lets try to increment the particular ~car_counter~:
+   #+BEGIN_SRC python :results output :session stdlib :exports both
+     Car.inc_counter()
+     print("Now there is only %s car there" % Car.car_counter)
+     Car.car_counter += 2 # evaluate the counter directly
+     print("Now there are %s cars there" % Car.car_counter)
+   #+END_SRC
 
-    my_car = Car(color='red')
-    alice_car = Car(color='white')
-    your_car = Car()
+   #+RESULTS:
+   : 
+   : Now there is only 1 car there
+   : >>> Now there are 3 cars there
 
-    print("Class car_counter = %s" % Car.get_num_cars()) # accessed from classmethod
-    print("Class vehicle_counter = %s" % Vehicle.counter) # accessed as a class variable
-    print("%s cars exists.\nMy car is %s, \nyour car is %s\nand Alice car is %s" %
-          (Car.counter, my_car.color, your_car.color, alice_car.color))
-    Car.inc_counter()
-    print("Now there are %s cars" % Car.counter)
-  #+END_SRC
+   #+BEGIN_QUOTE
+   In Python 3.*, we need not declare such methods as static if they will be called
+   through a class only, but we must do so in order to call them through an instance.
+   #+END_QUOTE
+   #+BEGIN_SRC python :results output :session stdlib :exports both
+   my_car.inc_counter()
+   print("There are %s cars" % Car.get_num_cars())
+   #+END_SRC
 
-  #+RESULTS:
-  #+begin_example
+   #+RESULTS:
+   : 
+   : There are 4 cars
 
-  'Simple and trivial class to illustrate the core idea'
-  >>> >>> ... ... >>>   File "<stdin>", line 1
-      counter = 0  # it's a class variable
-      ^
-  IndentationError: unexpected indent
-  >>>   File "<stdin>", line 1
-      def __init__(self, **kwargs):
-      ^
-  IndentationError: unexpected indent
-  File "<stdin>", line 1
-      """by default all cars are black"""
-      ^
-  IndentationError: unexpected indent
-  File "<stdin>", line 1
-      Car.counter += 1  # increment the class variable
-      ^
-  IndentationError: unexpected indent
-  ...   File "<stdin>", line 2
-      if kwargs:
-      ^
-  IndentationError: unexpected indent
-  File "<stdin>", line 1
-      self.color = kwargs['color']
-      ^
-  IndentationError: unexpected indent
-  File "<stdin>", line 1
-      else:
-      ^
-  IndentationError: unexpected indent
-  File "<stdin>", line 1
-      self.color = 'black'
-      ^
-  IndentationError: unexpected indent
-  >>>   File "<stdin>", line 1
-      @classmethod
-      ^
-  IndentationError: unexpected indent
-  File "<stdin>", line 1
-      def get_num_cars(cls):
-      ^
-  IndentationError: unexpected indent
-  File "<stdin>", line 1
-      return cls.counter
-      ^
-  IndentationError: unexpected indent
-  >>>   File "<stdin>", line 1
-      @staticmethod
-      ^
-  IndentationError: unexpected indent
-  File "<stdin>", line 1
-      def inc_counter():
-      ^
-  IndentationError: unexpected indent
-  File "<stdin>", line 1
-      Car.counter += 1
-      ^
-  IndentationError: unexpected indent
-  >>> Traceback (most recent call last):
-    File "<stdin>", line 1, in <module>
-  TypeError: object() takes no parameters
-  Traceback (most recent call last):
-    File "<stdin>", line 1, in <module>
-  TypeError: object() takes no parameters
-  >>> >>> Traceback (most recent call last):
-    File "<stdin>", line 1, in <module>
-  AttributeError: type object 'Car' has no attribute 'get_num_cars'
-  Traceback (most recent call last):
-    File "<stdin>", line 1, in <module>
-  AttributeError: type object 'Car' has no attribute 'counter'
-  ... Traceback (most recent call last):
-    File "<stdin>", line 2, in <module>
-  AttributeError: type object 'Car' has no attribute 'counter'
-  Traceback (most recent call last):
-    File "<stdin>", line 1, in <module>
-  AttributeError: type object 'Car' has no attribute 'inc_counter'
-  Traceback (most recent call last):
-    File "<stdin>", line 1, in <module>
-  AttributeError: type object 'Car' has no attribute 'counter'
-#+end_example
+* Conclusion
 
+** Both =staticmethod= and =classmethod=
+   
+*** can be called without the instance
+
+*** =self= instance argument not passes to them
+
+** =staticmethod=
+    #+BEGIN_QUOTE
+    simple functions with no self argument that are nested in a class and are designed to work on class attributes
+    instead of instance attributes. Static methods never receive an automatic self argument,
+    whether called through a class or an instance. They usually keep track of information
+    that spans all instances, rather than providing behavior for instances.    
+    #+END_QUOTE
+
+** =classmethod=
+   #+BEGIN_QUOTE
+   methods of a class that are passed a class object in their first argument instead of an
+   instance, regardless of whether they are called through an instance or a class. Such
+   methods can access class data through their self class argument even if called through
+   an instance. Normal methods (now known in formal circles as instance methods) still
+   receive a subject instance when called; static and class methods do not.
+   #+END_QUOTE
+  
