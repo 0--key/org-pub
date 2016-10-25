@@ -267,6 +267,7 @@ tags: [coding, algorithms]
       assert(last_digit(22, 11) == 8)
       assert(last_digit(7, 2) == 9)
       assert(last_digit(27, 2) == 9)
+      assert(last_digit(2 ** 200, 2 ** 300) == 6)
     #+END_SRC
 
     #+RESULTS:
