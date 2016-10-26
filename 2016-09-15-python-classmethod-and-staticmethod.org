@@ -2,10 +2,10 @@
 ---
 layout: post
 title: Python
-tagline: " staticmethod and classmethod in TDD dissection"
-permalink: /python/stdlib/classmethod-and-staticmethod.html
-categories: [python, stdlib, TDD, literate programming]
-tags: [built-in functions, unittest, staticmethod, classmethod]
+tagline: " staticmethod and classmethod core features brief overview"
+permalink: /python3/stdlib/classmethod-and-staticmethod-overview.html
+categories: [python3, stdlib, literate programming]
+tags: [built-in functions, staticmethod, classmethod]
 ---
 #+END_HTML
 #+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
@@ -13,9 +13,6 @@ tags: [built-in functions, unittest, staticmethod, classmethod]
 #+TOC: headlines 2
 
 * Preamble
-  With no doubt the =classmethod= and =staticmethod= are widely spread
-  in Python OOP and definitely necessary to implement one or another
-  feature inside some particular class.
   #+BEGIN_QUOTE
   Sometimes, programs need to process data associated with classes instead of instances.
   Consider keeping track of the number of instances created from a class, or maintaining
@@ -30,7 +27,7 @@ tags: [built-in functions, unittest, staticmethod, classmethod]
 * Fixture
 
 ** Data model
-   Exactly to illustrate the core idea of these built-in functions lets
+   In order to illustrate the core idea of these built-in functions lets
    create casual but colorful code snippet in accordion with OOP concept:
    #+BEGIN_SRC  python :results output :session stdlib :exports code
      class Vehicle:
