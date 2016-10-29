@@ -1,8 +1,8 @@
 #+BEGIN_HTML
 ---
 layout: post
-title: Python
-tagline: " staticmethod and classmethod core features brief overview"
+title: Python staticmethod and classmethod
+tagline: " core features brief overview"
 permalink: /python3/stdlib/classmethod-and-staticmethod-overview.html
 categories: [python3, stdlib, literate programming]
 tags: [built-in functions, staticmethod, classmethod]
