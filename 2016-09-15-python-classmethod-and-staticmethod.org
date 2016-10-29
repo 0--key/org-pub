@@ -28,7 +28,7 @@ tags: [built-in functions, staticmethod, classmethod]
 
 ** Data model
    In order to illustrate the core idea of these built-in functions lets
-   create casual but colorful code snippet in accordion with OOP concept:
+   create a casual but colorful code snippet in accordion with OOP concept:
    #+BEGIN_SRC  python :results output :session stdlib :exports code
      class Vehicle:
          """Naturally it is a vehicle"""
@@ -44,28 +44,28 @@ tags: [built-in functions, staticmethod, classmethod]
                  self.color = kwargs['color']
              else:
                  self.color = 'black'
+    
+         @classmethod
+         def get_num_vehicles(cls):
+             return cls.counter
 
 
      class Car(Vehicle):
          """Naturally it is a car properties definition"""
     
-         car_counter = 0  # it's a class variable
-    
-         @classmethod
-         def get_num_vehicles(cls):
-             return cls.counter
+         counter = 0  # it's a class variable
     
          @staticmethod
          def inc_counter():
-             Car.car_counter += 1
+             Car.counter += 1
              
          def get_num_cars():
-             return Car.car_counter
+             return Car.counter
    #+END_SRC
 
    #+RESULTS:
-
-** Mockup objects creation
+   
+** Mock-up objects creation
    #+BEGIN_SRC  python :results none :session stdlib :exports code 
      my_car = Car(color='red')
      alice_car = Car(color='white')
@@ -74,12 +74,14 @@ tags: [built-in functions, staticmethod, classmethod]
  
 ** Test the classes' properties
    #+BEGIN_SRC python :results output :session stdlib :exports both
-     print("Number of vehicles = %s" % Car.get_num_vehicles()) # accessed from classmethod
+     print("Number of cars = %s" % Car.get_num_vehicles()) # accessed from classmethod
+     print("Number of vehicles = %s" % Vehicle.get_num_vehicles())
      print("Parent class counter = %s" % Vehicle.counter) # accessed as a class variable
-     print("%s cars exists." % (Car.car_counter))
+     print("%s cars exists." % (Car.counter))
    #+END_SRC
 
    #+RESULTS:
+   : Number of cars = 0
    : Number of vehicles = 3
    : Parent class counter = 3
    : 0 cars exists.
@@ -89,9 +91,9 @@ tags: [built-in functions, staticmethod, classmethod]
    ~Vehicles~. Lets try to increment the particular ~car_counter~:
    #+BEGIN_SRC python :results output :session stdlib :exports both
      Car.inc_counter()
-     print("Now there is only %s car there" % Car.car_counter)
-     Car.car_counter += 2 # evaluate the counter directly
-     print("Now there are %s cars there" % Car.car_counter)
+     print("Now there is only %s car there" % Car.counter)
+     Car.counter += 2 # evaluate the counter directly
+     print("Now there are %s cars there" % Car.counter)
    #+END_SRC
 
    #+RESULTS:
@@ -111,6 +113,7 @@ tags: [built-in functions, staticmethod, classmethod]
    #+RESULTS:
    : 
    : There are 4 cars
+
 
 * Conclusion
 
