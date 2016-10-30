@@ -88,7 +88,7 @@ tags: [built-in functions, staticmethod, classmethod]
 
 ** Result analysis
    Obviously that we've created three ~Car~ objects but our code identified and counted them as
-   ~Vehicles~. Lets try to increment the particular ~car_counter~:
+   ~Vehicles~. Lets try to increment the particular ~counter~ in a straightforward manner:
    #+BEGIN_SRC python :results output :session stdlib :exports both
      Car.inc_counter()
      print("Now there is only %s car there" % Car.counter)
