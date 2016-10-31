@@ -60,6 +60,8 @@ tags: [built-in functions, staticmethod, classmethod]
              Car.counter += 1
              
          def get_num_cars():
+             """Python3.x interprets any function inside a particular class
+             without self argument as a static method"""
              return Car.counter
    #+END_SRC
 
