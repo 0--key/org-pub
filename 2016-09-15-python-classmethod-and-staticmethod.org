@@ -28,7 +28,7 @@ tags: [built-in functions, staticmethod, classmethod]
 
 ** Data model
    In order to illustrate the core idea of these built-in functions lets
-   create a casual but colorful code snippet:
+   create a incidental but lucid code snippet:
    #+BEGIN_SRC  python :results output :session stdlib :exports code
      class Vehicle:
          """Naturally it is a vehicle"""
