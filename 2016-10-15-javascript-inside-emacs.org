@@ -5,7 +5,7 @@ title: JavaScript inside Emacs
 tagline: " do what you want in the literal manner"
 permalink: /emacs/javascript-intro.html
 categories: [emacs, javascript, nodejs]
-tags: [Emacs, Literate Programming, JavaScript]
+tags: [emacs, literate programming, JavaScript]
 ---
 #+END_HTML
 #+STARTUP: showall

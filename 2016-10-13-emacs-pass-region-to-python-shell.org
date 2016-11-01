@@ -1,7 +1,7 @@
 #+BEGIN_HTML
 ---
 layout: post
-title: Python inside Emacs
+title: Treat Python by Elpy 
 tagline: " dissection with a pure joy"
 permalink: /emacs/tips-and-tricks/Elpy/how-to-pass-region-to-shell.html
 categories: [python, emacs, Elpy, shell]

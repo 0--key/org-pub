@@ -1,8 +1,8 @@
 #+BEGIN_HTML
 ---
 layout: post
-title: Python
-tagline: " built-in functions in TDD"
+title: Python built-in functions
+tagline: " dissection by TDD"
 permalink: /python/stdlib/python-built-in-functions.html
 categories: [python, stdlib, TDD, literate programming]
 tags: [built-in functions, unittest]

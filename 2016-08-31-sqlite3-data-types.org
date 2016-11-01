@@ -1,11 +1,11 @@
 #+BEGIN_HTML
 ---
 layout: post
-title: SQLite3
-tagline: " Dynamic typing and Python lists"
+title: SQLite3 dynamic typing
+tagline: " and Python lists"
 permalink: /sqlite3/data_types.html
-categories: [org-mode, Python, SQLite3, lists]
-tags: [tutorial, samples, data types]
+categories: [literate programming, org-mode, Python, SQLite3, lists]
+tags: [tutorial, samples, data types, emacs, babel]
 ---
 #+END_HTML
 #+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t

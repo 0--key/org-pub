@@ -5,7 +5,7 @@ title: Socialize your app
 tagline: " Collect and review feedback"
 permalink: /disqus/how-to-define_disqus_shortname.html
 categories: [disqus]
-tags: [disqus, shortname, settings]
+tags: [disqus shortname, settings]
 ---
 #+END_HTML
 #+OPTIONS: tags:nil toc:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t

@@ -1,11 +1,11 @@
 #+BEGIN_HTML
 ---
 layout: post
-title: Python inside Emacs
-tagline: " emulate web-browser in parallel"
+title: Python emulates web-browser
+tagline: " in Babel"
 permalink: /emacs/spynner-installation.html
-categories: [Emacs, Literate Programming]
-tags: [python3, emacs, spynner, installation, Ubuntu 14.04]
+categories: [emacs, literate programming]
+tags: [python3, emacs, spynner installation, Ubuntu 14.04]
 ---
 #+END_HTML
 #+STARTUP: showall
