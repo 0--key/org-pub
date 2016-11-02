@@ -1,11 +1,11 @@
 #+BEGIN_HTML
 ---
 layout: post
-title: Python
-tagline: " pytest module overview"
+title: Pytest
+tagline: " module overview"
 permalink: /python/testing/pytest-in-babel.html
 categories: [python, pytest, literate programming]
-tags: [tutorial, testing]
+tags: [emacs, babel, tutorial, testing]
 ---
 #+END_HTML
 #+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t

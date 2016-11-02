@@ -1,7 +1,7 @@
 #+BEGIN_HTML
 ---
 layout: post
-title: SQLite3 in Babel
+title: Meet SQLite3 in Babel
 tagline: " Small, fast, reliable!"
 permalink: /python/stdlib/sqlite3/interaction.html
 categories: [org-mode, Python, SQLite3, literate programming]
