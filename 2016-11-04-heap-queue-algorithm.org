@@ -4,8 +4,8 @@ layout: post
 title: Heap queue
 tagline: " algorithm dissection"
 permalink: /python/stdlib/heapq.html
-categories: [emacs, python3, algorithms, heap, literate programming]
-tags: [heap queue, stdlib]
+categories: [emacs, Python, algorithms, heap, literate programming]
+tags: [heap queue, stdlib, heapq]
 ---
 #+END_HTML
 #+STARTUP: showall
@@ -70,18 +70,20 @@ tags: [heap queue, stdlib]
 ** Python implementation
 
 *** Docs
-    Official [[https://docs.python.org/3/library/heapq.html][documentation]] proclaims:
-    #+BEGIN_QUOTE
-    =Heapq.heapyfy(x)= ransform list x into a heap, in-place, in linear time
-    #+END_QUOTE
-    Third-party [[http://www.techrepublic.com/article/python-priority-queues-the-heapq-module/][documentation]]
-    #+BEGIN_SRC 
-    The heap is an integral component in many algorithms — a
-    data structure that keeps elements organised so that it is always
-    easy to /find the smallest value/. We'll show you how you can use
-    the heapq module to implement heaps in Python in just a few lines
-    of code.
-    #+END_SRC
+    
+**** Official [[https://docs.python.org/3/library/heapq.html][documentation]] proclaims:
+     #+BEGIN_QUOTE
+     =Heapq.heapyfy(x)= ransform list x into a heap, in-place, in linear time
+     #+END_QUOTE
+     
+**** Third-party [[http://www.techrepublic.com/article/python-priority-queues-the-heapq-module/][documentation]]
+     #+BEGIN_SRC 
+     The heap is an integral component in many algorithms — a
+     data structure that keeps elements organised so that it is always
+     easy to /find the smallest value/. We'll show you how you can use
+     the heapq module to implement heaps in Python in just a few lines
+     of code.
+     #+END_SRC
     
 *** Code samples
     Lets take an attempt to disclose much unique and useful heapq features.
@@ -140,10 +142,35 @@ tags: [heap queue, stdlib]
      The latter output /looks a bit odd/, but it's a =heap= by
      its definition (!)
 
+     *Note!*
+     -----
+     In the same manner, =nlargest= & =nsmallest=
+     /wouldn't/ work as expected:
+     #+BEGIN_SRC python :results output :session stdlib :exports both
+     from heapq import nlargest, nsmallest, heappush
+
+     print(nlargest(3, h4))
+     # for clarity
+     heappush(h4, 'baby')
+     print(h4)
+     print('\n')
+     print(nsmallest(3, h4))
+     #+END_SRC
+
+     #+RESULTS:
+     : 
+     : >>> ['break', 'border', 'backer']
+     : ... >>> ['baby', 'bachelor', 'baccara', 'break', 'border', 'backer']
+     : 
+     : ['baby', 'baccara', 'bachelor']
+
+     Seems like =nlargest= return the largest values in a descendant order,
+     but =nsmallest= do it in a rising one.
+
 **** Heap of tuples
      
      #+BEGIN_SRC python :results output :session stdlib :exports both
-       from heapq import heappush, heappop
+       from heapq import heappop
 
 
        h = []
@@ -188,4 +215,4 @@ tags: [heap queue, stdlib]
      : (3, 'create tests')
      : [(5, 'write code'), (6, 'test it up'), (7, 'release product')]
      : (5, 'write code')
-
+    
