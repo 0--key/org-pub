@@ -10,8 +10,10 @@ tags: [heap queue, stdlib, heapq]
 #+END_HTML
 #+STARTUP: showall
 #+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 3
 
 * Theory overview
+
 ** 6.006 Introduction to Algorithms Heaps and heap sort 
      
 *** Applied usage as a =Priority Queue=
@@ -63,156 +65,154 @@ tags: [heap queue, stdlib, heapq]
     above the leaves
     #+END_QUOTE
      
-
 ** Other sources
    Wikipedia [[https://en.wikipedia.org/wiki/Heap_%2528data_structure%2529][article]]
 
-** Python implementation
 
-*** Docs
+* Python implementation
+
+** Docs
     
-**** Official [[https://docs.python.org/3/library/heapq.html][documentation]] proclaims:
-     #+BEGIN_QUOTE
-     =Heapq.heapyfy(x)= ransform list x into a heap, in-place, in linear time
-     #+END_QUOTE
+*** Official [[https://docs.python.org/3/library/heapq.html][documentation]] proclaims:
+    #+BEGIN_QUOTE
+    =Heapq.heapyfy(x)= ransform list x into a heap, in-place, in linear time
+    #+END_QUOTE
      
-**** Third-party [[http://www.techrepublic.com/article/python-priority-queues-the-heapq-module/][documentation]]
-     #+BEGIN_SRC 
-     The heap is an integral component in many algorithms — a
-     data structure that keeps elements organised so that it is always
-     easy to /find the smallest value/. We'll show you how you can use
-     the heapq module to implement heaps in Python in just a few lines
-     of code.
-     #+END_SRC
+*** Third-party [[http://www.techrepublic.com/article/python-priority-queues-the-heapq-module/][documentation]]
+    #+BEGIN_QUOTE
+    The heap is an integral component in many algorithms — a
+    data structure that keeps elements organised so that it is always
+    easy to /find the smallest value/. We'll show you how you can use
+    the heapq module to implement heaps in Python in just a few lines
+    of code.
+    #+END_QUOTE
     
-*** Code samples
-    Lets take an attempt to disclose much unique and useful heapq features.
+** Code samples
+   Lets take an attempt to disclose much unique and useful heapq features.
 
-**** Heap and numbers
+*** Heap and numbers
 
-***** Integers
-      #+BEGIN_SRC python :results output :session stdlib :exports both
-        from heapq import heapify
+**** Integers
+     #+BEGIN_SRC python :results output :session stdlib :exports both
+       from heapq import heapify
 
-        h1 = [-1, 3, 5, 7, 9, 2, 4, 6, 8, 0]
-        heapify(h1)
-        print(h1)
-      #+END_SRC
+       h1 = [-1, 3, 5, 7, 9, 2, 4, 6, 8, 0]
+       heapify(h1)
+       print(h1)
+     #+END_SRC
 
-      #+RESULTS:
-      : 
-      : >>> >>> >>> [-1, 0, 2, 6, 3, 5, 4, 7, 8, 9]
+     #+RESULTS:
+     : 
+     : >>> >>> >>> [-1, 0, 2, 6, 3, 5, 4, 7, 8, 9]
 
       
 
-***** Decimal
-      #+BEGIN_SRC python :results output :session stdlib :exports both
-      h2 = [-2.2, 3.8, 1.1, -5]
-      heapify(h2)
-      print(h2)
-      #+END_SRC
-
-      #+RESULTS:
-      : 
-      : >>> [-5, -2.2, 1.1, 3.8]
-
-
-**** Heap of letters
+**** Decimal
      #+BEGIN_SRC python :results output :session stdlib :exports both
-     h3 = ['f', 'd', 'q', 'g', 'b']
-     heapify(h3)
-     print(h3)
+     h2 = [-2.2, 3.8, 1.1, -5]
+     heapify(h2)
+     print(h2)
      #+END_SRC
 
      #+RESULTS:
      : 
-     : >>> ['b', 'd', 'q', 'g', 'f']
+     : >>> [-5, -2.2, 1.1, 3.8]
 
-**** Heap of words
-     #+BEGIN_SRC python :results output :session stdlib :exports both
-     h4 = ['break', 'border', 'backer', 'bachelor', 'baccara']
-     heapify(h4)
-     print(h4)
-     #+END_SRC
+*** Heap of letters
+    #+BEGIN_SRC python :results output :session stdlib :exports both
+    h3 = ['f', 'd', 'q', 'g', 'b']
+    heapify(h3)
+    print(h3)
+    #+END_SRC
 
-     #+RESULTS:
-     : 
-     : >>> ['baccara', 'bachelor', 'backer', 'break', 'border']
+    #+RESULTS:
+    : 
+    : >>> ['b', 'd', 'q', 'g', 'f']
 
-     The latter output /looks a bit odd/, but it's a =heap= by
-     its definition (!)
+*** Heap of words
+    #+BEGIN_SRC python :results output :session stdlib :exports both
+    h4 = ['break', 'border', 'backer', 'bachelor', 'baccara']
+    heapify(h4)
+    print(h4)
+    #+END_SRC
 
-     *Note!*
-     -----
-     In the same manner, =nlargest= & =nsmallest=
-     /wouldn't/ work as expected:
-     #+BEGIN_SRC python :results output :session stdlib :exports both
-     from heapq import nlargest, nsmallest, heappush
+    #+RESULTS:
+    : 
+    : >>> ['baccara', 'bachelor', 'backer', 'break', 'border']
 
-     print(nlargest(3, h4))
-     # for clarity
-     heappush(h4, 'baby')
-     print(h4)
-     print('\n')
-     print(nsmallest(3, h4))
-     #+END_SRC
+    The latter output /looks a bit odd/, but it's a =heap= by
+    its definition (!)
 
-     #+RESULTS:
-     : 
-     : >>> ['break', 'border', 'backer']
-     : ... >>> ['baby', 'bachelor', 'baccara', 'break', 'border', 'backer']
-     : 
-     : ['baby', 'baccara', 'bachelor']
+*** Unexpected results
+    In the same manner, =nlargest= & =nsmallest=
+    /wouldn't/ work as expected:
+    #+BEGIN_SRC python :results output :session stdlib :exports both
+    from heapq import nlargest, nsmallest, heappush
 
-     Seems like =nlargest= return the largest values in a descendant order,
-     but =nsmallest= do it in a rising one.
+    print(nlargest(3, h4))
+    # for clarity
+    heappush(h4, 'baby')
+    print(h4)
+    print('\n')
+    print(nsmallest(3, h4))
+    #+END_SRC
 
-**** Heap of tuples
+    #+RESULTS:
+    : 
+    : >>> ['break', 'border', 'backer']
+    : ... >>> ['baby', 'bachelor', 'baccara', 'break', 'border', 'backer']
+    : 
+    : ['baby', 'baccara', 'bachelor']
+
+    Seems like =nlargest= return the largest values in a descendant order,
+    but =nsmallest= do it in a rising one.
+
+*** Heap of tuples
      
-     #+BEGIN_SRC python :results output :session stdlib :exports both
-       from heapq import heappop
+    #+BEGIN_SRC python :results output :session stdlib :exports both
+      from heapq import heappop
 
 
-       h = []
-       heappush(h, (5, 'write code'))
-       heappush(h, (7, 'release product'))
-       heappush(h, (1, 'write spec'))
-       heappush(h, (3, 'create tests'))
-       print(type(h),'\n', h)
-       heappop(h)
-     #+END_SRC
+      h = []
+      heappush(h, (5, 'write code'))
+      heappush(h, (7, 'release product'))
+      heappush(h, (1, 'write spec'))
+      heappush(h, (3, 'create tests'))
+      print(type(h),'\n', h)
+      heappop(h)
+    #+END_SRC
 
-     #+RESULTS:
-     : 
-     : >>> >>> >>> >>> >>> >>> >>> <class 'list'> 
-     :  [(1, 'write spec'), (3, 'create tests'), (5, 'write code'), (7, 'release product')]
-     : (1, 'write spec')
-
-
-     As you might recon a heap in this particular case is a specific list,
-     which is sorted on the fly.
-
-     #+BEGIN_SRC python :results output :session stdlib :exports both
-     heappush(h, (6, 'test it up'))
-     print('\n', h)
-     #+END_SRC
-
-     #+RESULTS:
-     : 
-     : [(3, 'create tests'), (6, 'test it up'), (5, 'write code'), (7, 'release product')]
+    #+RESULTS:
+    : 
+    : >>> >>> >>> >>> >>> >>> >>> <class 'list'> 
+    :  [(1, 'write spec'), (3, 'create tests'), (5, 'write code'), (7, 'release product')]
+    : (1, 'write spec')
 
 
-     Obviously that order is corrupted, but it is strictly following by the
-     =heap= definition.
+    As you might recon a heap in this particular case is a specific list,
+    which is sorted on the fly.
 
-     #+BEGIN_SRC python :results output :session stdlib :exports both
-     heappop(h)
-     print('\n', h)
-     heappop(h)
-     #+END_SRC
+    #+BEGIN_SRC python :results output :session stdlib :exports both
+    heappush(h, (6, 'test it up'))
+    print('\n', h)
+    #+END_SRC
 
-     #+RESULTS:
-     : (3, 'create tests')
-     : [(5, 'write code'), (6, 'test it up'), (7, 'release product')]
-     : (5, 'write code')
+    #+RESULTS:
+    : 
+    : [(3, 'create tests'), (6, 'test it up'), (5, 'write code'), (7, 'release product')]
+
+
+    Obviously that order is corrupted, but it is strictly following by the
+    =heap= definition.
+
+    #+BEGIN_SRC python :results output :session stdlib :exports both
+    heappop(h)
+    print('\n', h)
+    heappop(h)
+    #+END_SRC
+
+    #+RESULTS:
+    : (3, 'create tests')
+    : [(5, 'write code'), (6, 'test it up'), (7, 'release product')]
+    : (5, 'write code')
     
