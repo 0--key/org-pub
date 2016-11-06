@@ -20,6 +20,10 @@ tags: [heap queue, stdlib, heapq]
     #+BEGIN_QUOTE
     Implements a set =S= of elements, each of elements associated with a key.
     #+END_QUOTE
+    #+CAPTION: Max-heap
+    #+ATTR_HTML: :alt Max-heap :title Max-heap sample :align right
+    https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Max-Heap.svg/501px-Max-Heap.svg.png
+
 
 *** Typical operations
 
