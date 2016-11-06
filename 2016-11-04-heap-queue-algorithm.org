@@ -14,15 +14,16 @@ tags: [heap queue, stdlib, heapq]
 
 * Theory overview
 
+    #+CAPTION: Max-heap
+    #+ATTR_HTML: :alt Max-heap :title Max-heap sample :align right
+    https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Max-Heap.svg/501px-Max-Heap.svg.png
+
 ** 6.006 Introduction to Algorithms Heaps and heap sort 
      
 *** Applied usage as a =Priority Queue=
     #+BEGIN_QUOTE
     Implements a set =S= of elements, each of elements associated with a key.
     #+END_QUOTE
-    #+CAPTION: Max-heap
-    #+ATTR_HTML: :alt Max-heap :title Max-heap sample :align right
-    https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Max-Heap.svg/501px-Max-Heap.svg.png
 
 
 *** Typical operations
@@ -42,9 +43,9 @@ tags: [heap queue, stdlib, heapq]
     - Right(i) = 2i + 1
 
 *** Linear view
-    |  1 |  2 |  3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
-    |----+----+----+---+---+---+---+---+---+----|
-    | 16 | 14 | 10 | 8 | 7 | 9 | 3 | 2 | 4 |  1 |
+    |   1 |  2 |  3 |  4 | 5 |  6 | 7 | 8 | 9 |
+    |-----+----+----+----+---+----+---+---+---|
+    | 100 | 19 | 36 | 17 | 3 | 25 | 1 | 2 | 7 |
 
 *** Max-Heap property
     The key of a node >= the keys of its childen
