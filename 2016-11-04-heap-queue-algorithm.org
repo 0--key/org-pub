@@ -16,7 +16,7 @@ tags: [heap queue, stdlib, heapq]
 
     #+CAPTION: Max-heap
     #+ATTR_HTML: :alt Max-heap :title Max-heap sample :align right
-    https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Max-Heap.svg/501px-Max-Heap.svg.png
+    https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Max-Heap.svg/240px-Max-Heap.svg.png
 
 ** 6.006 Introduction to Algorithms Heaps and heap sort 
      
