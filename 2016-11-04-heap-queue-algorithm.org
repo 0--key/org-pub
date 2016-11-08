@@ -14,10 +14,6 @@ tags: [heap queue, stdlib, heapq]
 
 * Theory overview
 
-    #+CAPTION: Max-heap
-    #+ATTR_HTML: :alt Max-heap :title Max-heap sample :align right
-    https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Max-Heap.svg/240px-Max-Heap.svg.png
-
 ** 6.006 Introduction to Algorithms Heaps and heap sort 
      
 *** Applied usage as a =Priority Queue=
@@ -28,13 +24,17 @@ tags: [heap queue, stdlib, heapq]
 
 *** Typical operations
 
-**** Insert(S, x): insett element x into set =S=
+    - Insert(S, x): insett element x into set =S=
 
-**** Max(S): return element of =S= with a largest key
+    - Max(S): return element of =S= with a largest key
 
-**** Extract_max(S): ^^^ and remove it from =S=
+    - Extract_max(S): ^^^ and remove it from =S=
 
-**** Increase(S, x, k): increase the value of x's key to new value k
+    - Increase(S, x, k): increase the value of x's key to new value k
+
+    #+CAPTION: Max-heap
+    #+ATTR_HTML: :alt Max-heap :title Max-heap sample :align right
+    https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Max-Heap.svg/240px-Max-Heap.svg.png
 
 *** Heap as a Tree
     - Root of tree: first element
@@ -301,12 +301,12 @@ tags: [heap queue, stdlib, heapq]
     - =heappush= new values into it many times
     - detect =nsmallest= after each modification
 
-*** Correct usage
-    Lets restrict
+*** Wrong usage #2
+    Lets restrict our algorithm to =heapify= the data array only once.
 
-    #+BEGIN_SRC python :results output :session stdlib :exports both
+    #+BEGIN_SRC python :results output :session stdlib :exports code
       def custom_heap_algorithm(n, h):
-          """h is prepared heap"""
+          """h is a preliminarily prepared heap"""
           result = []
           for i in range(n):
               heappush(h, randint(0, 100))
@@ -316,7 +316,7 @@ tags: [heap queue, stdlib, heapq]
 
     #+RESULTS:
 
-    #+BEGIN_SRC python :results output :session stdlib :exports code
+    #+BEGIN_SRC python :results output :session stdlib :exports both
     i = time(); time_complexity_analysis(10, numbers, min_10_values_by_native_sort); print(time()-i)
     i = time(); heapify(numbers); custom_heap_algorithm(10, numbers); print(time()-i)
     #+END_SRC
@@ -328,7 +328,7 @@ tags: [heap queue, stdlib, heapq]
     : 0.0005049705505371094
 
 
-    #+BEGIN_SRC python :results output :session stdlib :exports code
+    #+BEGIN_SRC python :results output :session stdlib :exports both
     i = time(); time_complexity_analysis(10**3, numbers, min_10_values_by_native_sort); print(time()-i)
     i = time(); heapify(numbers); custom_heap_algorithm(10**3, numbers); print(time()-i)
     #+END_SRC
