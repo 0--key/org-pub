@@ -223,8 +223,20 @@ tags: [heap queue, stdlib, heapq]
     
 
 ** Time complexity
-    #+BEGIN_QUOTE
-    Task: We have a large list of integers which is appended 1000 times with a single
+   From [[http://stackoverflow.com/questions/24666602/python-heapq-vs-sorted-complexity-and-performance/24668898#24668898][StackOverflow]]
+   #+BEGIN_QUOTE
+   If you use binary heap to pop all elements in order, the thing you do is basically heapsort. It is slower than sort algorightm in sorted function apart from it's implementation is pure python.
+
+   The heapq is faster than sorted in case if you need to add elements on the fly i.e. additions and insertions could come in unspecified order. Adding new element preserving inner order in any heap is faster than resorting array after each insertion.
+   
+   The sorted is faster if you will need to retrieve all elements in order later.
+   
+   The only problem where they can compete - if you need some portion of smallest (or largest) elements from collection. Although there are special algorigthms for that case, whether heapq or sorted will be faster here depends on the size of the initial array and portion you'll need to extract.
+   #+END_QUOTE
+
+   Lets compare how fast they are work
+   #+BEGIN_QUOTE
+    *Comparison Task*: We have a large list of integers which is appended 1000 times with a single
     value during each iteration. Try to extract 10 smallest values out of
     it after every modification. Compare the execution time
     #+END_QUOTE
@@ -236,7 +248,8 @@ tags: [heap queue, stdlib, heapq]
 
     #+RESULTS:
 
-*** Wrong usage
+    Comparison between =heapq= and =sort=
+    
     Lets create a function to detect minimum values in the data-set:
     #+BEGIN_SRC python :results output :session stdlib :exports code
       def min_10_values_by_native_sort(l):
@@ -313,4 +326,16 @@ tags: [heap queue, stdlib, heapq]
     : 0.0002048015594482422
     : [3, 3, 4, 5, 5, 7, 8, 9, 10, 14]
     : 0.0005049705505371094
+
+
+    #+BEGIN_SRC python :results output :session stdlib :exports code
+    i = time(); time_complexity_analysis(10**3, numbers, min_10_values_by_native_sort); print(time()-i)
+    i = time(); heapify(numbers); custom_heap_algorithm(10**3, numbers); print(time()-i)
+    #+END_SRC
+
+    #+RESULTS:
+    : [0, 0, 0, 0, 0, 0, 0, 0, 1, 1]
+    : 0.03959083557128906
+    : [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    : 0.3201744556427002
 
