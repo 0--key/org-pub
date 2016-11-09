@@ -13,8 +13,8 @@ tags: [computation, complexity, analysis]
 #+TOC: headlines 2
 
 * Definition
-  #+CAPTION: TimeComplexity
-  #+ATTR_HTML: :alt Time Complexity :title Graphs of number of operations, N vs input size, n for common complexities, assuming a coefficient of 1 :align right
+  #+CAPTION: Graphs of number of operations, N vs input size, n for common complexities, assuming a coefficient of 1
+  #+ATTR_HTML: :alt Time Complexity :title Time Complexity proportion :align right
   https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Comparison_computational_complexity.svg/250px-Comparison_computational_complexity.svg.png
   #+BEGIN_QUOTE
   In computer science, the /time complexity of an algorithm/ quantifies the
@@ -24,9 +24,9 @@ tags: [computation, complexity, analysis]
   lower order terms. When expressed this way, the time complexity is said to
   be described asymptotically, i.e., as the input size goes to infinity. For
   example, if the time required by an algorithm on all inputs of size n is
-  at most 5n<sup>3</sup> + 3n for any n (bigger than some n0), the asymptotic time
-  complexity is O(n3).
-  \theta
+  at most 5n^3 + 3n for any n (bigger than some n_0), the asymptotic time
+  complexity is O(n^3).
+
   Time complexity is commonly estimated by counting the number of elementary
   operations performed by the algorithm, where an elementary operation takes
   a fixed amount of time to perform. Thus, the amount of time taken and the
