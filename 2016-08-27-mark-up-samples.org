@@ -9,7 +9,7 @@ tags: [html export, mark-up, samples]
 ---
 #+END_HTML
 #+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
-
+#+STARTUP: showall
 #+TOC: headlines 2
 
 * Individual emphasis
