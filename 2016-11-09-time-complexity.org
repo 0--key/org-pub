@@ -1,0 +1,35 @@
+#+BEGIN_HTML
+---
+layout: post
+title: The time complexity
+tagline: " of an algorithm"
+permalink: /algorithms/time-complexity.html
+categories: [algorithms, literate programming]
+tags: [computation, complexity, analysis]
+---
+#+END_HTML
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+
+* Definition
+  #+CAPTION: TimeComplexity
+  #+ATTR_HTML: :alt Time Complexity :title Graphs of number of operations, N vs input size, n for common complexities, assuming a coefficient of 1 :align right
+  https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Comparison_computational_complexity.svg/250px-Comparison_computational_complexity.svg.png
+  #+BEGIN_QUOTE
+  In computer science, the /time complexity of an algorithm/ quantifies the
+  amount of time taken by an algorithm to run as a function of the length of
+  the string representing the input. The time complexity of an algorithm is
+  commonly expressed using *big O* notation, which excludes coefficients and
+  lower order terms. When expressed this way, the time complexity is said to
+  be described asymptotically, i.e., as the input size goes to infinity. For
+  example, if the time required by an algorithm on all inputs of size n is
+  at most 5n<sup>3</sup> + 3n for any n (bigger than some n0), the asymptotic time
+  complexity is O(n3).
+  \theta
+  Time complexity is commonly estimated by counting the number of elementary
+  operations performed by the algorithm, where an elementary operation takes
+  a fixed amount of time to perform. Thus, the amount of time taken and the
+  number of elementary operations performed by the algorithm differ by at
+  most a constant factor.
+  #+END_QUOTE
