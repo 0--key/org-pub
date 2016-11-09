@@ -24,8 +24,8 @@ tags: [computation, complexity, analysis]
   lower order terms. When expressed this way, the time complexity is said to
   be described asymptotically, i.e., as the input size goes to infinity. For
   example, if the time required by an algorithm on all inputs of size n is
-  at most 5n^3 + 3n for any n (bigger than some n_0), the asymptotic time
-  complexity is O(n^3).
+  at most 5n^{3} + 3n for any n (bigger than some n_{0}), the asymptotic time
+  complexity is O(n^{3}).
 
   Time complexity is commonly estimated by counting the number of elementary
   operations performed by the algorithm, where an elementary operation takes
