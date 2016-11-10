@@ -27,9 +27,37 @@ tags: [computation, complexity, analysis]
   at most 5n^{3} + 3n for any n (bigger than some n_{0}), the asymptotic time
   complexity is O(n^{3}).
 
+  The expression *O* is also called =Landau's symbol=.
+
   Time complexity is commonly estimated by counting the number of elementary
   operations performed by the algorithm, where an elementary operation takes
   a fixed amount of time to perform. Thus, the amount of time taken and the
   number of elementary operations performed by the algorithm differ by at
   most a constant factor.
   #+END_QUOTE
+
+  In other words:
+  #+BEGIN_QUOTE
+  The number of (machine) instructions which a program executes during its
+  running time is called its time complexity in computer science.
+  #+END_QUOTE
+
+* Samples
+  
+  | Name        | Running time | Example               |
+  |-------------+--------------+-----------------------|
+  | constant    | O(1)         | statement             |
+  | linear      | O(n)         | single_loop(statement) |
+  | quadratic   | O(n^{2})     | double_loop(statement) |
+  | logarithmic | O(log_{2}n)  | binary search \bull   |
+  | inearithmic | n*O(log_{2}n) | \bull \bull           |
+
+
+  \bull The running time of the algorithm is proportional to the number of
+  times N can be divided by 2. This is because the algorithm divides the
+  working area in half with each iteration.
+  \bull \bull The running time consists of N loops (iterative or recursive)
+  that are logarithmic, thus the algorithm is a combination of linear and
+  logarithmic.
+
+  The full [[https://en.wikipedia.org/wiki/Time_complexity#Table_of_common_time_complexities][list of common time complexities]]  
