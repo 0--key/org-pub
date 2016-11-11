@@ -1,7 +1,7 @@
 #+BEGIN_HTML
 ---
 layout: post
-title: Debug Python
+title: Debug Python programs
 tagline: " by means of Emacs' toolbox"
 permalink: /tips-and-tricks/debug-python-with-emacs.html
 categories: [literate programming, Python, debugging, emacs]
