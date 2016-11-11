@@ -44,19 +44,20 @@ tags: [computation, complexity, analysis]
 
 * Samples
   
-  | Name        | Running time | Example               |
-  |-------------+--------------+-----------------------|
-  | constant    | O(1)         | statement             |
-  | linear      | O(n)         | single_loop(statement) |
-  | quadratic   | O(n^{2})     | double_loop(statement) |
-  | logarithmic | O(log_{2}n)  | binary search \bull   |
-  | inearithmic | n*O(log_{2}n) | \bull \bull           |
+  | Name         | Running time | Example                |
+  |--------------+--------------+------------------------|
+  | constant     | O(1)         | statement              |
+  | linear       | O(n)         | single_loop(statement) |
+  | quadratic    | O(n^{2})     | double_loop(statement) |
+  | logarithmic  | O(log_{2}n)  | binary search \alpha   |
+  | linearithmic | n*O(log_{2}n) | \beta                  |
 
 
-  \bull The running time of the algorithm is proportional to the number of
+  \alpha The running time of the algorithm is proportional to the number of
   times N can be divided by 2. This is because the algorithm divides the
   working area in half with each iteration.
-  \bull \bull The running time consists of N loops (iterative or recursive)
+  
+  \beta The running time consists of N loops (iterative or recursive)
   that are logarithmic, thus the algorithm is a combination of linear and
   logarithmic.
 
