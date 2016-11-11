@@ -1,0 +1,18 @@
+#+BEGIN_HTML
+---
+layout: post
+title: Debug Python
+tagline: " by means of Emacs' toolbox"
+permalink: /tips-and-tricks/debug-python-with-emacs.html
+categories: [literate programming, Python, debugging, emacs]
+tags: [pdb, ipdb, GDB, GUD]
+---
+#+END_HTML
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+
+* Preamble
+* Test fixture
+* Sample usage
+* Conclusion
