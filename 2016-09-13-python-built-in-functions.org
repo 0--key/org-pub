@@ -1472,7 +1472,7 @@ tags: [built-in functions, unittest]
                                [9, 8, 7, 6, 5, 4, 3, 2, 1])
     #+END_SRC
 
-*** staticmethod()
+*** TODO staticmethod()
     #+NAME: staticmethod-test-suite
     #+BEGIN_SRC python
       class TestStaticmethod(unittest.TestCase):
@@ -1481,7 +1481,8 @@ tags: [built-in functions, unittest]
               pass
 
           def test_simple_behaviour(self):
-              self.assertEqual(staticmethod())
+              pass
+              # self.assertEqual(staticmethod())
     #+END_SRC
 
 *** str()
