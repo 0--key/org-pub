@@ -1,0 +1,118 @@
+#+BEGIN_HTML
+---
+layout: post
+title: Debug Python programs
+tagline: " by means of Emacs' toolbox"
+permalink: /tips-and-tricks/debug-python-with-emacs.html
+categories: [literate programming, Python, debugging, emacs]
+tags: [pdb, ipdb, GDB, GUD]
+---
+#+END_HTML
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+
+* #1
+  #+BEGIN_QUOTE
+  Return the number (count) of vowels in the given string.
+
+  We will consider a, e, i, o, and u as vowels for this Kata.
+  #+END_QUOTE
+
+  #+BEGIN_SRC python :results output
+    import unittest
+
+    def getCount(inputStr):
+        num_vowels = 0
+        # your code here
+        for letter in inputStr:
+            list_of_vowels = ['a', 'e', 'i', 'o', 'u']
+            if letter in list_of_vowels:
+                num_vowels += 1
+                #print(letter)
+                #print(num_vowels)
+        return num_vowels
+
+    input_string = 'John the dully boy write this book'
+
+    print(getCount(input_string))
+
+    unittest.TestCase.assertEqual(getCount("abracadabra"), 5)
+
+    class TestNumVowels(unittest.TestCase):
+
+        def test_simple_input(self):
+            self.assertEqual(getCount("abracadabra"), 4)
+
+    print(TestNumVowels())
+  #+END_SRC
+
+  #+RESULTS:
+
+  #+BEGIN_SRC python
+    import unittest
+
+    def fun(x):
+        return x + 1
+
+    class MyTest(unittest.TestCase):
+        def test(self):
+            self.assertEqual(fun(3), 4)
+  #+END_SRC
+
+  #+RESULTS:
+  : None
+
+  
+* #2
+  
+** Description
+   /toys/
+
+** Code
+
+** TestSuite
+   #+BEGIN_SRC python :results output :tangle tests/test_toy_samples.py :exports code
+     import unittest
+     from .. toy_tasks import order
+
+     class TestHiddenOrder(unittest.TestCase):
+
+         def test_simple_behaviour(self):
+             self.assertEqual(order("is2 Thi1s T4est 3a"),
+                              "Thi1s is2 3a T4est")
+   #+END_SRC
+
+** TestRunner
+   #+BEGIN_SRC sh :results output :exports both
+     python -m unittest tests/test_toy_samples.py
+
+   #+END_SRC
+
+   #+RESULTS:
+   #+begin_example
+   Traceback (most recent call last):
+     File "/usr/lib/python3.4/runpy.py", line 170, in _run_module_as_main
+       "__main__", mod_spec)
+     File "/usr/lib/python3.4/runpy.py", line 85, in _run_code
+       exec(code, run_globals)
+     File "/usr/lib/python3.4/unittest/__main__.py", line 18, in <module>
+       main(module=None)
+     File "/usr/lib/python3.4/unittest/main.py", line 92, in __init__
+       self.parseArgs(argv)
+     File "/usr/lib/python3.4/unittest/main.py", line 139, in parseArgs
+       self.createTests()
+     File "/usr/lib/python3.4/unittest/main.py", line 146, in createTests
+       self.module)
+     File "/usr/lib/python3.4/unittest/loader.py", line 146, in loadTestsFromNames
+       suites = [self.loadTestsFromName(name, module) for name in names]
+     File "/usr/lib/python3.4/unittest/loader.py", line 146, in <listcomp>
+       suites = [self.loadTestsFromName(name, module) for name in names]
+     File "/usr/lib/python3.4/unittest/loader.py", line 105, in loadTestsFromName
+       module = __import__('.'.join(parts_copy))
+     File "/usr/local/share/DVCS/org-pub/tests/test_toy_samples.py", line 2, in <module>
+       from .. toy_tasks import order
+   ValueError: attempted relative import beyond top-level package
+#+end_example
+
+
