@@ -49,13 +49,12 @@ tags: [emacs, literate programming, JavaScript]
   and type =C-c C-c= to get results.
 
   #+BEGIN_SRC org
-  #+BEGIN_SRC js :cmd "nodejs"
+  #+BEGIN_SRC js :cmd "nodejs" :results output
     console.log("Hello World!");
   ,#+END_SRC
 
   #+RESULTS:
   : Hello World!
-  : undefined
   
   #+END_SRC
 
