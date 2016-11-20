@@ -32,23 +32,13 @@ tags: [coding, algorithms]
 
     input_string = 'John the dully boy write this book'
 
-    print(getCount(input_string))
+    print getCount(input_string)
+    assert(getCount(input_string) == 9)
 
-  #+END_SRC
-
-  #+BEGIN_SRC python
-    import unittest
-
-    def fun(x):
-        return x + 1
-
-    class MyTest(unittest.TestCase):
-        def test(self):
-            self.assertEqual(fun(3), 4)
   #+END_SRC
 
   #+RESULTS:
-  : None
+  : 9
 
   
 * #2
