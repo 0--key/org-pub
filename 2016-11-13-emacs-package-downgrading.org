@@ -1,0 +1,44 @@
+#+BEGIN_HTML
+---
+layout: post
+title: How-To force Emacs to work
+tagline: " habitually"
+permalink: /how-to/downgrade-emacs-package.html
+categories: [how-to, emacs, package]
+tags: [debugging, roll-back]
+---
+#+END_HTML
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+
+* Preamble
+  Sometimes somewhere in Emacs your well-known function abruptly ceases working.
+  It is absolutely trivial situation in the World of Free Software.
+  It's complex and knotty realm, and you want to return to valid state.
+  With no doubt it is possible to do by roll-back the average package.
+* Delete a bug's cause
+  First of all try to detect what is the cause of deny of service. In
+  most cases it might occur /after your manipulation with packages/.
+  Open the embedded package manager =M-x package-list-pakages= and take
+  an attempt to determine the root of problem. Already installed
+  packages are at the bottom of this list thus it would be prudently to
+  review the newest ones =M->= from the bottom up to the top of the list.
+
+  After than you find out the most matching candidate for downgrading -
+  just mark it by typing =d= key. After that =x= should implement a particular
+  package removal.
+* Restart Emacs
+  Suppose it should be easy by =C-x C-c=. Or feel free to try the next
+  step without restarting. It might be /necessary later/, after an older candidate
+  installation.
+* Find an appropriate solution
+  Look for matching replacement at [[http://elpa.gnu.org/packages/][Elpa]] site. Copy a necessary link to =.tar=
+  archive.
+* Install it
+  Activate =M-x url-handler-mode= and =M-x package-install-file= and
+  paste /a link to the old .tar archive/ there. =Enter= should launch the
+  installation process.
+* Test it up
+  Does bug really disappear?
+* Roll-back deeper in the past
