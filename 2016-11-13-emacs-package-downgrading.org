@@ -4,7 +4,7 @@ layout: post
 title: How-To force Emacs to work
 tagline: " habitually"
 permalink: /how-to/downgrade-emacs-package.html
-categories: [how-to, emacs, package]
+categories: [how-to, emacs, package, time machine]
 tags: [debugging, roll-back]
 ---
 #+END_HTML
