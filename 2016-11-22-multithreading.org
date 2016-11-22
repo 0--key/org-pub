@@ -1,0 +1,13 @@
+#+BEGIN_HTML
+---
+layout: post
+title: Write Python programs
+tagline: " by means of Emacs' toolbox"
+permalink: /python/multithreading.html
+categories: [literate programming, Python, multithreading, emacs]
+tags: [coding, algorithms]
+---
+#+END_HTML
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
