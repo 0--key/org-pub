@@ -5,7 +5,7 @@ title: Write Python programs
 tagline: " by means of Emacs' toolbox"
 permalink: /python/multithreading.html
 categories: [literate programming, Python, multithreading, emacs]
-tags: [coding, algorithms]
+tags: [coding, algorithms, stdlib]
 ---
 #+END_HTML
 #+STARTUP: showall
