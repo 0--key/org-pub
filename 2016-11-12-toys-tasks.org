@@ -372,24 +372,27 @@ tags: [coding, algorithms]
    #+END_QUOTE
 
 ** Solution
-   #+BEGIN_SRC  python :results output :pp :exports both
-     def encode_str(strng, shift):
-         # your code
-         pass
 
-     def decode(arr):
-         #your code
-         pass
+*** Appropriate view and test suite
+    #+BEGIN_SRC  python :results output :pp :exports both
+      def encode_str(strng, shift):
+          # your code
+          pass
+
+      def decode(arr):
+          #your code
+          pass
 
 
-     u = "I should have known that you would have a perfect answer for me!!!"
-     v = ["ijJ tipvme ibw", "f lopxo uibu z", "pv xpvme ibwf ", "b qfsgfdu botx", "fs gps nf!!!"]
-     assert(encode_str(u, 1) == v)
+      u = "I should have known that you would have a perfect answer for me!!!"
+      v = ["ijJ tipvme ibw", "f lopxo uibu z", "pv xpvme ibwf ", "b qfsgfdu botx", "fs gps nf!!!"]
+      assert(encode_str(u, 1) == v)
 
-     u = "O CAPTAIN! my Captain! our fearful trip is done;"
-     v = ["opP DBQUBJ", "O! nz Dbqu", "bjo! pvs g", "fbsgvm usj", "q jt epof;"]
-     assert(encode_str(u, 1) == v)
-   #+END_SRC
+      u = "O CAPTAIN! my Captain! our fearful trip is done;"
+      v = ["opP DBQUBJ", "O! nz Dbqu", "bjo! pvs g", "fbsgvm usj", "q jt epof;"]
+      assert(encode_str(u, 1) == v)
+    #+END_SRC
+
 * TestSuite
   #+BEGIN_SRC python :results output :tangle tests/test_toy_samples.py :exports code
     import unittest
