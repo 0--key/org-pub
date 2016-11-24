@@ -393,6 +393,12 @@ tags: [coding, algorithms]
       assert(encode_str(u, 1) == v)
     #+END_SRC
 
+*** Task set dissection
+    - Shift value determiner;
+    - Cyclic shift for letters;
+    - Cyclic shift for capital letters;
+    - Entire message split technique.
+
 * TestSuite
   #+BEGIN_SRC python :results output :tangle tests/test_toy_samples.py :exports code
     import unittest
