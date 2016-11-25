@@ -407,6 +407,17 @@ tags: [coding, algorithms]
 
       assert(gauge_shift("jk Jack") == 1)
     #+END_SRC
+*** Shift letter task
+    #+BEGIN_SRC python :results output :pp :exports both
+      letters = [chr(i) for i in range(97, 123)]
+      cap_letters = [chr(i) for i in range(65, 91)]
+
+      assert(letters[0] == 'a')
+      assert(letters[-1] == 'z')
+      assert(cap_letters[0] == 'A')
+      assert(cap_letters[-1] == 'Z')
+    #+END_SRC
+
 * TestSuite
   #+BEGIN_SRC python :results output :tangle tests/test_toy_samples.py :exports code
     import unittest
