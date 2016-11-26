@@ -422,6 +422,12 @@ tags: [coding, algorithms]
                   return letters[letters.index(symbol) + shift]
           else:
               return symbol
+
+      assert(shift_symbol('z', 28) == 'b')
+      assert(shift_symbol('z', 2) == 'b')
+      assert(shift_symbol('a', 1) == 'b')
+      assert(shift_symbol('A', 1) == 'B')
+      assert(shift_symbol('%', 22) == '%')
       assert(letters[0] == 'a')
       assert(letters[-1] == 'z')
       assert(cap_letters[0] == 'A')
