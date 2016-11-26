@@ -409,8 +409,8 @@ tags: [coding, algorithms]
     #+END_SRC
 *** Shift letter task
     #+BEGIN_SRC python :results output :pp :exports both
-      letters = [chr(i) for i in range(97, 123)]
-      cap_letters = [chr(i) for i in range(65, 91)]
+      letters = [chr(i) for i in range(97, 123)] * 2
+      cap_letters = [chr(i) for i in range(65, 91)] * 2
 
       assert(letters[0] == 'a')
       assert(letters[-1] == 'z')
