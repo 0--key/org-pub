@@ -399,7 +399,6 @@ tags: [coding, algorithms]
     - Cyclic shift for capital letters;
     - Entire message split technique.
 
-
 *** Gauge the shift value
     #+BEGIN_SRC python :results output :pp :exports both
       def gauge_shift(first_message):
