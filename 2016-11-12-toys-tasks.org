@@ -516,7 +516,17 @@ tags: [coding, algorithms]
 
 ** Solution
 
+*** Appropriate view
     #+BEGIN_SRC python
+      def done_or_not(board): #board[i][j]
+          # your solution here
+          # ..
+          # return 'Finished!'
+          # ..
+          # or return 'Try again!'
+    #+END_SRC
+*** Test suite
+    #+BEGIN_SRC python :session sudoku
       valid = [
           [1, 3, 2, 5, 7, 9, 4, 6, 8],
           [4, 9, 8, 2, 6, 1, 3, 7, 5],
