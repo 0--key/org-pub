@@ -465,7 +465,6 @@ tags: [coding, algorithms]
 
     #+RESULTS:
 
-
 * #5 Did I Finish my Sudoku?
 
 ** Description
@@ -517,7 +516,6 @@ tags: [coding, algorithms]
 
 ** Solution
 
-*** Test suite
     #+BEGIN_SRC python
       valid = [
           [1, 3, 2, 5, 7, 9, 4, 6, 8],
