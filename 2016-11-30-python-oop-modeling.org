@@ -1,0 +1,43 @@
+#+BEGIN_HTML
+---
+layout: post
+title: Write Python programs
+tagline: " in OOP manner"
+permalink: /python/oop-modeling.html
+categories: [literate programming, Python, objec-oriented-programming, emacs]
+tags: [coding, algorithms, oop]
+---
+#+END_HTML
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+
+* It is a contemporary and effective craft-writing
+  But, for a little while as much of stuff around us. As a corner case of object-oriented programming
+  it would be nice to define where it is evil to use it.
+
+** It is silly
+   - To take challenge and write in OOP manner for 10 or less objects.
+   - In addition you restricted to consider about the number of iteration your code snippet.
+     Sometimes it might be conscious and sober to try just /prototype/ your function. Even
+     it is obvious - the raw model should disclose many of hidden niceties about how things
+     work separately.
+
+
+** The good practice
+   - Long-run projects with active code evolution. If it is a true development it is obligation
+     to following through scalability path only. And OOP itself allows you to forget about limits
+     in computation. There are millions items inside your Python are the real number for large
+     application.
+   - Strict and narrow object's relations is a huge necessary component. Branches, trees and even
+     leaves are typical reproducible structures.
+
+
+* Samples
+
+** Grocery store
+
+** Pine forest
+
+* Conclusion
+   
