@@ -553,3 +553,12 @@ tags: [coding, algorithms]
       assert(done_or_not(corrupted) == 'Try again!');
     #+END_SRC
 
+    #+RESULTS:
+
+*** Common values
+    #+BEGIN_SRC python :session sudoku
+    gauge = [i for i in range(1, 10)]
+    #+END_SRC
+
+    #+RESULTS:
+
