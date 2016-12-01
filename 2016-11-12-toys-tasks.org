@@ -596,3 +596,20 @@ tags: [coding, algorithms]
 
      #+RESULTS:
 
+**** Columns
+     #+BEGIN_SRC python :results output :session sudoku
+       def check_columns(ll):
+           for i in range(9):
+               nine = []
+               for j in ll:
+                   nine.append(j[i])
+               if not check_the_nine(nine):
+                   return False
+           return True
+
+       assert(check_columns(valid) == True)
+       assert(check_columns(corrupted) == False)
+     #+END_SRC
+
+     #+RESULTS:
+
