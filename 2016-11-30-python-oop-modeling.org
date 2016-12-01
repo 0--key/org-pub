@@ -38,25 +38,49 @@ tags: [coding, algorithms, oop]
 ** Grocery store
    
 *** Persons
-    #+BEGIN_SRC python :session oop :results output
-      class Person(object):
-          def __init__(self, name):
-              self.name = name
 
-      class Customer(Person):
-          def __init__(self, name, deposit):
-              super(Customer, self).__init__(name)
-              self.deposit = deposit
+**** Primitive sample with strict inheritance
+     #+BEGIN_SRC python :session oop :results output
+       class Person(object):
+           def __init__(self, name):
+               self.name = name
+
+       class Customer(Person):
+           def __init__(self, name, deposit):
+               super(Customer, self).__init__(name)
+               self.deposit = deposit
 
 
-      a = Customer(name='John', deposit=123)
-      print '\n', a.deposit, a.name
-    #+END_SRC
+       a = Customer(name='John', deposit=123)
+       print '\n', a.deposit, a.name
+     #+END_SRC
 
-    #+RESULTS:
-    : 
-    : ... ... ... >>> ... ... ... ... >>> >>> >>> 
-    : 123 John
+     #+RESULTS:
+     : 
+     : ... ... ... >>> ... ... ... ... >>> >>> >>> 
+     : 123 John
+
+**** Complicated sample with fluid inheritance
+     #+BEGIN_SRC python :session oop :results output
+       class Person(object):
+           def __init__(self, name):
+               self.name = name
+
+       class Customer(Person):
+           def __init__(self, name, deposit):
+               super(Customer, self).__init__(name)
+               self.deposit = deposit
+
+
+       a = Customer(name='John', deposit=123)
+       print '\n', a.deposit, a.name
+     #+END_SRC
+
+     #+RESULTS:
+     : 
+     : >>> >>> ... ... ... >>> ... ... ... ... >>> >>> >>> 
+     : 123 John
+
 
 *** Meal
 
