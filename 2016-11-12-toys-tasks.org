@@ -577,3 +577,22 @@ tags: [coding, algorithms]
 
     #+RESULTS:
 
+*** Compose nine elements
+
+**** Rows
+     #+BEGIN_SRC python :results output :session sudoku
+       def check_rows(ll):
+           for i in ll:
+               if check_the_nine(i):
+                   continue
+               else:
+                   return False
+           else:
+               return True
+
+       assert(check_rows(valid) == True)
+       assert(check_rows(corrupted) == True)
+     #+END_SRC
+
+     #+RESULTS:
+
