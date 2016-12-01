@@ -562,3 +562,18 @@ tags: [coding, algorithms]
 
     #+RESULTS:
 
+*** Check the nine elements
+    #+BEGIN_SRC python :session sudoku :results output
+      def check_the_nine(nine):
+          if set(nine) == set(gauge):
+              return True
+          else:
+              return False
+
+      assert(check_the_nine([1, 2, 3, 4, 5, 6, 7, 8, 9]) == True)
+      assert(check_the_nine([1, 2, 3, 4, 5, 6, 7, 2, 9]) == False)
+
+    #+END_SRC
+
+    #+RESULTS:
+
