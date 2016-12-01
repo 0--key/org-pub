@@ -66,5 +66,11 @@ tags: [coding, algorithms, oop]
 
 ** Pine forest
 
+*** Trees
+
+*** Area
+
+*** Population
+
 * Conclusion
    
