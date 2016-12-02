@@ -35,6 +35,46 @@ tags: [coding, algorithms, oop]
 
 * Samples
 
+** Inheritance from the parent class general sample:
+   #+BEGIN_SRC python :results output
+     class InitialClass(object):
+
+         def __init__(self):
+             self.attr1 = 'one'
+             self.attr2 = 'two'
+
+     class InheritedClass(InitialClass):
+
+         def __init__(self):
+             self.attr3 = 'three'
+             # strict inheritance
+             # InitialClass.__init__(self)
+             # relative inheritance
+             super(InheritedClass, self).__init__()
+
+
+         @staticmethod
+         def somemethod():
+             """It's just for illustration"""
+             print('the method')
+
+
+     a = InheritedClass()
+
+     for each in a.__dict__:
+         print(each)
+     a.somemethod()
+   #+END_SRC
+
+   #+RESULTS:
+   : attr2
+   : attr1
+   : attr3
+   : the method
+
+   As you might noticed several attributes ~a~ inherited out from two
+   classes. And in general case it allows you to extend your initial
+   class by addition some new attributes or even functions.
 ** Grocery store
    
 *** Persons
