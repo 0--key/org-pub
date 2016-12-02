@@ -629,3 +629,10 @@ tags: [coding, algorithms]
 
       #+RESULTS:
 
+***** After that lets iterate all corners in this matrix
+      #+BEGIN_SRC python :results output :session sudoku
+        def check_corners():
+            for i in range(0, 9, 3):
+                for j in range(0, 9, 3):
+                    print(i, j)
+      #+END_SRC
