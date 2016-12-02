@@ -75,9 +75,13 @@ tags: [coding, algorithms, oop]
    As you might noticed several attributes ~a~ inherited out from two
    classes. And in general case it allows you to extend your initial
    class by addition some new attributes or even functions.
+
 ** Grocery store
-   
-*** Persons
+   For educational purposes it would be huge explicitly to check-up
+   all existing OOP features. Lets compose our dissection around a
+   much trivial and perhaps naive sample out of our routine life. Hope you
+   are rarely buy something useful in the grocery on the corner, thus
+   it is just a working sample how it might described in the new definitions.
 
 **** Primitive sample with strict inheritance
      #+BEGIN_SRC python :session oop :results output
