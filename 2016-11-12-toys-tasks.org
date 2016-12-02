@@ -613,3 +613,19 @@ tags: [coding, algorithms]
 
      #+RESULTS:
 
+**** Rectangles 3 X 3
+***** Extract these rectangles by its leftmost upper corner
+      #+BEGIN_SRC python :results output :session sudoku
+        def extract_rectangle(ll, x, y):
+            l = []
+            for i in range(x, x+3):
+                for j in range(y, y+3):
+                    l.append(ll[i][j])
+            return l
+
+        assert(extract_rectangle(valid, 0, 0) == [1, 3, 2, 4, 9, 8, 7, 5, 6])
+        assert(extract_rectangle(valid, 3, 3) == [1, 5, 8, 7, 9, 3, 4, 2, 6])
+      #+END_SRC
+
+      #+RESULTS:
+
