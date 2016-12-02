@@ -4,7 +4,7 @@ layout: post
 title: Write Python programs
 tagline: " in OOP manner"
 permalink: /python/oop-modeling.html
-categories: [literate programming, Python, objec-oriented-programming, emacs]
+categories: [literate programming, Python, object-oriented-programming, emacs]
 tags: [coding, algorithms, oop]
 ---
 #+END_HTML
