@@ -123,26 +123,38 @@ tags: [coding, algorithms, oop]
      #+RESULTS:
      : 123 John
 
-**** Complicated sample with fluid inheritance
-     #+BEGIN_SRC python :session oop :results output
+**** Complicated sample with *args, **kwargs inheritance
+     As you're noticed now it is possible to pass arguments directly
+     from the child-class object to its parent. It is a great thing to
+     do and most of your job around OOP should be around passing the
+     arguments in this direction. The previous code snippet do it in
+     a bit over-explicit way: it just pass them by theirs names.
+
+     *But* what if you're decided to simplify your task and pass /all arguments/
+     in a butch manner?
+     
+     This is a full-fledged sample thus the most of complex OOP solutions
+     are implemented in this manner:
+     #+BEGIN_SRC python :results output
        class Person(object):
-           def __init__(self, name):
-               self.name = name
+
+           def __init__(self, *args, **kwargs):
+               self.interval = [args[0], args[1]]
+               self.name = kwargs['name']
 
        class Customer(Person):
-           def __init__(self, name, deposit):
-               super(Customer, self).__init__(name)
-               self.deposit = deposit
+
+           def __init__(self, *args, **kwargs):
+               super(Customer, self).__init__(*args, **kwargs)
+               self.deposit = kwargs['deposit']
 
 
-       a = Customer(name='John', deposit=123)
-       print '\n', a.deposit, a.name
+       a = Customer(7, 22, name='John', deposit=123)
+       print(a.deposit, a.name, a.interval)
      #+END_SRC
 
      #+RESULTS:
-     : 
-     : >>> >>> ... ... ... >>> ... ... ... ... >>> >>> >>> 
-     : 123 John
+     : 123 John [7, 22]
 
 
 *** Meal
