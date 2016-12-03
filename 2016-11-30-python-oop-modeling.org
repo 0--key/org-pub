@@ -83,25 +83,44 @@ tags: [coding, algorithms, oop]
    are rarely buy something useful in the grocery on the corner, thus
    it is just a working sample how it might described in the new definitions.
 
-**** Primitive sample with strict inheritance
-     #+BEGIN_SRC python :session oop :results output
+*** Persons
+    Of cause they are. And if we started to talk about them, we restricted
+    to describe their attributes and functions as precise as it possible
+    to do.
+
+**** Primitive sample with relative inheritance
+     Our first code snippet demonstrates a /general concept/ of extension
+     by inheritance. The task of OOP modeling in that case was completed
+     by utilizing the /strict inheritance/ feature, when ~child~ inherited
+     the particular method out from particular named class. It works perfectly
+     and sometimes it would be replaced with /relative inheritance/ which
+     based on /relative position/ of classes, not on their names.
+
+     It is handy to do sometimes if you want to simplify your task in
+     code re-factoring.
+
+     As you might choose already, this feature solved using ~super()~
+     built-in function.
+     #+BEGIN_SRC python :results output
        class Person(object):
+
            def __init__(self, name):
                self.name = name
 
        class Customer(Person):
            def __init__(self, name, deposit):
-               super(Customer, self).__init__(name)
+               # the old-fashion manner
+               # super(Customer, self).__init__(name)
+               # *Python3* approach
+               super().__init__(name)
                self.deposit = deposit
 
 
        a = Customer(name='John', deposit=123)
-       print '\n', a.deposit, a.name
+       print(a.deposit, a.name)
      #+END_SRC
 
      #+RESULTS:
-     : 
-     : ... ... ... >>> ... ... ... ... >>> >>> >>> 
      : 123 John
 
 **** Complicated sample with fluid inheritance
