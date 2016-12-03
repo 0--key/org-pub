@@ -628,14 +628,24 @@ tags: [coding, algorithms]
       #+END_SRC
 
       #+RESULTS:
-
+      
 ***** After that lets iterate all corners in this matrix
       #+BEGIN_SRC python :results output :session sudoku
-        def check_corners():
+        def define_corners():
+            corners = []
             for i in range(0, 9, 3):
                 for j in range(0, 9, 3):
-                    print(i, j)
+                    corners.append([i, j])
+            return corners
+
+        print('\n', define_corners())
       #+END_SRC
+
+      #+RESULTS:
+      : 
+      : ... ... ... ... ... >>> 
+      :  [[0, 0], [0, 3], [0, 6], [3, 0], [3, 3], [3, 6], [6, 0], [6, 3], [6, 6]]
+
 * #6 Vigenère Autokey Cipher Helper
 
 ** Description
