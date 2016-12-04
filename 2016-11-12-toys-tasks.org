@@ -824,3 +824,17 @@ tags: [coding, algorithms]
     : ... >>> codewars
     : ... jshxxal
 
+*** Test a particular case with equal lenght pass and message
+    #+BEGIN_SRC python :results output :session vig
+      alphabet = 'abcdefghijklmnopqrstuvwxyz' * 2
+      key = 'password'
+      message = 'codewars'
+      assert(alphabet[alphabet.index(message[0]) + alphabet.index(key[0])] == 'r')
+      assert(alphabet[alphabet.index(message[1]) + alphabet.index(key[1])] == 'o')
+      assert(alphabet[alphabet.index(message[2]) + alphabet.index(key[2])] == 'v')
+      assert(alphabet[alphabet.index(message[4]) + alphabet.index(key[4])] == 's')
+      #assert(encode('codewars') == 'rovwsoiv')
+    #+END_SRC
+
+    #+RESULTS:
+
