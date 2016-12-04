@@ -848,3 +848,8 @@ tags: [coding, algorithms]
 
     #+RESULTS:
 
+*** Dynamic shift satellite array
+    Lets create the list with len(message) which contains the nunmbers
+    corresponding shift value for every single symbol in the message.
+    But when some particular symbol isn't in the alphabet, the shift
+    is zero and this symbol not changed at all.
