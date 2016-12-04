@@ -800,3 +800,27 @@ tags: [coding, algorithms]
 
     #+RESULTS:
 
+*** Test suite
+    #+BEGIN_SRC python :results output :session vig
+      # creates a cipher helper with each letter substituted
+      # by the corresponding character in the key
+      c = VigenereCipher(key, alphabet)
+      print(c.encode('codewars')) # returns 'rovwsoiv'
+      #.decode('laxxhsj' )   returns 'waffles'
+      print(c.decode('laxxhsj'))
+      # returns 'pmsrebxoy rev lvynmylatcwu dkvzyxi bjbsaib'
+      # c.encode('amazingly few discotheques provide jukeboxes')
+
+      # # returns 'amazingly few discotheques provide jukeboxes'
+      # c.decode('pmsrebxoy rev lvynmylatcwu dkvzyxi bjbsaib')
+      # Any character not in the alphabet should be left alone.
+
+      # c.encode('CODEWARS') # returns 'CODEWARS'
+
+    #+END_SRC
+
+    #+RESULTS:
+    : 
+    : ... >>> codewars
+    : ... jshxxal
+
