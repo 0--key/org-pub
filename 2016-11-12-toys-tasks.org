@@ -778,4 +778,25 @@ tags: [coding, algorithms]
    Any character not in the alphabet should be left alone.
   
    c.encode('CODEWARS') # returns 'CODEWARS'
+
    #+END_QUOTE
+
+** Solution
+
+*** Appropriate form
+    #+BEGIN_SRC python :results output :session vig
+      alphabet = 'abcdefghijklmnopqrstuvwxyz'
+      key = 'password'
+      class VigenereCipher(object):
+          def __init__(self, key, alphabet):
+              self.key = key
+              self.alphabet = alphabet
+          def encode(self, message):
+              return message
+          def decode(self, message):
+              return message[::-1]
+
+    #+END_SRC
+
+    #+RESULTS:
+
