@@ -156,7 +156,36 @@ tags: [coding, algorithms, oop]
      #+RESULTS:
      : 123 John [7, 22]
 
+**** Particular case of complete overwritten method
+     and _no inheritance at all_. Sometimes the child class /must have/ a
+     completely different attributes or even behavior. In this case
+     you'll just omit the ~super()~ built-in function like on example
+     below:
+     #+BEGIN_SRC python :results output
+       class Person(object):
+           def __init__(self, **kwargs):
+               self.name = kwargs['name']
+               self.deposit = kwargs['deposit']
 
+       class Customer(Person):
+           def __init__(self, **kwargs):
+               # super(Customer, self).__init__(**kwargs)
+               self.age = kwargs['age']
+
+
+       a = Customer(name='John', deposit=123, age=22)
+       print(a.age)
+       try:
+           print(a.deposit)
+       except AttributeError:
+           print("Deposit not inherited form the person's class")
+     #+END_SRC
+
+     #+RESULTS:
+     : 22
+     : Deposit not inherited form the person's class
+
+     
 *** Meal
 
 *** Basket
