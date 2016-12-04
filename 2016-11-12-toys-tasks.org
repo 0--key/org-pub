@@ -838,3 +838,13 @@ tags: [coding, algorithms]
 
     #+RESULTS:
 
+*** Decoding sample
+    #+BEGIN_SRC python :results output :session vig
+      cipher = 'laxxhsj'
+      rev_alphabet  = alphabet[::-1]
+      assert(rev_alphabet[rev_alphabet.index(cipher[0]) + alphabet.index(key[0])] == 'w')
+      assert(rev_alphabet[rev_alphabet.index(cipher[1]) + alphabet.index(key[1])] == 'a')
+    #+END_SRC
+
+    #+RESULTS:
+
