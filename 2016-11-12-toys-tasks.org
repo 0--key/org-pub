@@ -791,6 +791,14 @@ tags: [coding, algorithms]
           def __init__(self, key, alphabet):
               self.key = key
               self.alphabet = alphabet
+          def special_zip(message, satellite):
+              # shift the lerrer implementation with
+              # additional array of values
+              pass
+          def satellite(self, message):
+              # compose a satellite array with shift values
+              # for each symbol in the input message
+              pass
           def encode(self, message):
               result = special_zip(message, sattelite())
               return result
