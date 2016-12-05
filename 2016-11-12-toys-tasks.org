@@ -791,7 +791,7 @@ tags: [coding, algorithms]
           def __init__(self, key, alphabet):
               self.key = key
               self.alphabet = alphabet
-          def special_zip(message, satellite):
+          def special_zip(self, message, satellite):
               # shift the lerrer implementation with
               # additional array of values
               pass
@@ -804,7 +804,6 @@ tags: [coding, algorithms]
               return result
           def decode(self, message):
               return message[::-1]
-          def special_zip(self, message, sattelite):
 
     #+END_SRC
 
