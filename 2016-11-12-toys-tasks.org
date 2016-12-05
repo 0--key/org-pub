@@ -792,9 +792,11 @@ tags: [coding, algorithms]
               self.key = key
               self.alphabet = alphabet
           def encode(self, message):
-              return message
+              result = special_zip(message, sattelite())
+              return result
           def decode(self, message):
               return message[::-1]
+          def special_zip(self, message, sattelite):
 
     #+END_SRC
 
