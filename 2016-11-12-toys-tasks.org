@@ -800,7 +800,7 @@ tags: [coding, algorithms]
               # for each symbol in the input message
               pass
           def encode(self, message):
-              result = special_zip(message, satellite(message))
+              result = self.special_zip(message, self.satellite(message))
               return result
           def decode(self, message):
               return message[::-1]
@@ -830,7 +830,7 @@ tags: [coding, algorithms]
 
     #+RESULTS:
     : 
-    : ... >>> codewars
+    : ... >>> None
     : ... jshxxal
 
 *** Test a particular case with equal lenght pass and message
