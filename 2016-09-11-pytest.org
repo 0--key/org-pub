@@ -220,3 +220,7 @@ tags: [emacs, babel, tutorial, testing]
    1
 #+end_example
 
+** Conclusion
+   These samples illustrate how to use =pytest= out from the =shell=.
+   But this approach is pertinent for testing file content and not
+   suitable for literate programming itself.
