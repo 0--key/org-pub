@@ -1,0 +1,95 @@
+#+BEGIN_HTML
+---
+layout: post
+title: How-To force Emacs to work
+tagline: " habitually"
+permalink: /how-to/downgrade-emacs-package.html
+categories: [how-to, emacs, package, time machine]
+tags: [debugging, roll-back]
+---
+#+END_HTML
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+
+* Preamble
+
+** Auto testing failure
+   Sometimes when you're trying to run test suite for recently cloned
+   =Git= repository and found that =Elpy= can't properly define project's
+   stem and when you're ~C-c C-t~ to test it up you got:
+   #+BEGIN_SRC elisp
+     -*- mode: compilation; default-directory: "/usr/local/share/DVCS/" -*-
+     Compilation started at Tue Dec  6 11:03:03
+
+     python -m unittest discover
+     EEEEEEEEEEEpython: can't open file 'behavioral/strategy.py': [Errno 2] No such file or directory
+     E
+     ======================================================================
+   #+END_SRC
+
+** Manual test discover
+   Meanwhile the manual test discoverer works pretty well:
+   #+BEGIN_SRC sh :results output :exports both
+   cd ../python-patterns
+   python -m unittest discover
+   #+END_SRC
+
+   #+RESULTS:
+   #+begin_example
+   ............................................................
+   ----------------------------------------------------------------------
+   Ran 60 tests in 0.558s
+
+   OK
+   We have a lovely <MagicMock name='get_pet()' id='139637554442648'>
+   It says <MagicMock name='get_pet().speak()' id='139637553041760'>
+   We also have <MagicMock name='get_food()' id='139637553058032'>
+   We have a lovely <MagicMock name='get_pet()' id='139637553103032'>
+   It says <MagicMock name='get_pet().speak()' id='139637553135744'>
+   We also have <MagicMock name='get_food()' id='139637553136584'>
+   renaming /usr/local/share/DVCS/python-patterns/tests/test_command/foo.txt to /usr/local/share/DVCS/python-patterns/tests/test_command/bar.txt
+   renaming /usr/local/share/DVCS/python-patterns/tests/test_command/bar.txt to /usr/local/share/DVCS/python-patterns/tests/test_command/baz.txt
+   renaming /usr/local/share/DVCS/python-patterns/tests/test_command/baz.txt to /usr/local/share/DVCS/python-patterns/tests/test_command/bar.txt
+   renaming /usr/local/share/DVCS/python-patterns/tests/test_command/bar.txt to /usr/local/share/DVCS/python-patterns/tests/test_command/foo.txt
+   DecimalViewer: Subject New Data Name has data 20
+   HexViewer: Subject New Data Name has data 0x14
+   Scanning... Station is 1380 AM
+   Scanning... Station is 1510 AM
+   Scanning... Station is 1250 AM
+   Switching to FM
+   Switching to AM
+ #+end_example
+
+* Why it is so?
+
+** Idea
+   As =Elpy= author [[https://github.com/jorgenschaefer/elpy/issues/963][said]] about the compilation directory:
+   #+BEGIN_QUOTE
+   Elpy runs tests in the library root.
+   If your current directory has an __init__.py file,
+   Elpy assumes this directory is a package and moves
+   up one directory. Does this help?
+   #+END_QUOTE
+
+** Verification
+   #+BEGIN_SRC sh :exports both
+   cd ../python-patterns
+   ls
+   #+END_SRC
+
+   #+RESULTS:
+   | append_output.sh |
+   | behavioral       |
+   | creational       |
+   | fundamental      |
+   | __init__.py      |
+   | other            |
+   | __pycache__      |
+   | README.md        |
+   | run_all.sh       |
+   | structural       |
+   | tests            |
+
+* Solution
+  Just remove __init__.py out from repository main folder.
