@@ -1,11 +1,11 @@
 #+BEGIN_HTML
 ---
 layout: post
-title: How-To force Emacs to work
-tagline: " habitually"
-permalink: /how-to/downgrade-emacs-package.html
-categories: [how-to, emacs, package, time machine]
-tags: [debugging, roll-back]
+title: How-To test your Python
+tagline: " automatically"
+permalink: /how-to/elpy-compilation-default-directory.html
+categories: [how-to, emacs, niceties]
+tags: [debugging, elpy, autotesting]
 ---
 #+END_HTML
 #+STARTUP: showall
