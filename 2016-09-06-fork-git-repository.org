@@ -27,11 +27,49 @@ tags: [tutorial, clone, remotes, fork]
     to merge your improvements with the main code/
 
 * Documentation
-  The definitive guide how-to do all meta-tasks above are the official
-  Git documentation site:
-  - 
+  The definitive guide how-to do all meta-tasks above are at the official
+  =Git= [[https://help.github.com/articles/fork-a-repo/][documentation site]].
 
 * Fixtures
+
+** Fork itself
+   Just by pushing the button on useful project
+     page. It's enough to get its fork in your
+     repo.
+
+** Clone the fork
+   For illustration purposes lets fork the [[https://github.com/mikeckennedy/talk-python-transcripts][sample project]] in my own repo
+   and create the local version of it:
+   #+BEGIN_SRC sh :results output :exports both
+   cd /usr/local/share/DVCS/
+   pwd
+   ls -la
+   git clone https://github.com/0--key/talk-python-transcripts.git
+   ls -la
+   #+END_SRC
+
+   #+RESULTS:
+   #+begin_example
+   /usr/local/share/DVCS
+   total 28
+   drwxrwsrwx 7 root   staff 4096 Dec 18 16:19 .
+   drwxrwsr-x 9 root   staff 4096 Dec  7 09:50 ..
+   drwxrwxrwx 9 antony staff 4096 Dec  7 09:57 0--key.github.io
+   drwxr-sr-x 9 antony staff 4096 Dec  7 09:55 lib
+   drwxr-sr-x 7 antony staff 4096 Jan  4 15:54 org-pub
+   drwxr-sr-x 6 antony staff 4096 Dec 18 16:19 venv2
+   drwxr-sr-x 5 antony staff 4096 Dec 19 20:54 venv3
+   Cloning into 'talk-python-transcripts'...
+   total 32
+   drwxrwsrwx 8 root   staff 4096 Jan  4 15:58 .
+   drwxrwsr-x 9 root   staff 4096 Dec  7 09:50 ..
+   drwxrwxrwx 9 antony staff 4096 Dec  7 09:57 0--key.github.io
+   drwxr-sr-x 9 antony staff 4096 Dec  7 09:55 lib
+   drwxr-sr-x 7 antony staff 4096 Jan  4 15:54 org-pub
+   drwxr-sr-x 5 antony staff 4096 Jan  4 15:58 talk-python-transcripts
+   drwxr-sr-x 6 antony staff 4096 Dec 18 16:19 venv2
+   drwxr-sr-x 5 antony staff 4096 Dec 19 20:54 venv3
+ #+end_example
 
 * Results
 
