@@ -5,7 +5,7 @@ title: Git fork
 tagline: " a valuable project"
 permalink: /git/tips/how-to-fork-repository.html
 categories: [git, literate programming]
-tags: [tutorial, clone, remotes, emacs, babel]
+tags: [tutorial, clone, remotes, fork]
 ---
 #+END_HTML
 #+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
