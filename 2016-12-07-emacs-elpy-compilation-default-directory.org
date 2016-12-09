@@ -18,7 +18,7 @@ tags: [debugging, elpy, autotesting]
    Sometimes when you're trying to run test suite for recently cloned
    =Git= repository and found that =Elpy= can't properly define project's
    stem and when you're ~C-c C-t~ to test it up you got:
-   #+BEGIN_SRC elisp
+   #+BEGIN_SRC sh
      -*- mode: compilation; default-directory: "/usr/local/share/DVCS/" -*-
      Compilation started at Tue Dec  6 11:03:03
 
@@ -67,13 +67,13 @@ tags: [debugging, elpy, autotesting]
    As =Elpy= author [[https://github.com/jorgenschaefer/elpy/issues/963][said]] about the compilation directory:
    #+BEGIN_QUOTE
    Elpy runs tests in the library root.
-   If your current directory has an __init__.py file,
+   If your current directory has an =__init__.py= file,
    Elpy assumes this directory is a package and moves
    up one directory. Does this help?
    #+END_QUOTE
 
 ** Verification
-   #+BEGIN_SRC sh :exports both
+   #+BEGIN_SRC sh :results output :exports both
    cd ../python-patterns
    ls
    #+END_SRC
@@ -90,6 +90,6 @@ tags: [debugging, elpy, autotesting]
    | run_all.sh       |
    | structural       |
    | tests            |
-
+-----
 * Solution
-  Just remove __init__.py out from repository main folder.
+  Just remove =__init__.py= out from repository main folder.
