@@ -94,6 +94,52 @@ tags: [tutorial, clone, remotes, fork]
    : upstream	https://github.com/mikeckennedy/talk-python-transcripts.git (fetch)
    : upstream	https://github.com/mikeckennedy/talk-python-transcripts.git (push)
 
+** Up-to-date local version
+   #+BEGIN_SRC sh :results output :exports both
+   cd /usr/local/share/DVCS/talk-python-transcripts
+   git fetch upstream
+   #+END_SRC
+
+   #+RESULTS:
+   : From https://github.com/mikeckennedy/talk-python-transcripts
+   :  * [new branch]      master     -> upstream/master
+
+** Merge the local branches
+   #+BEGIN_SRC sh :results output :exports both
+   cd /usr/local/share/DVCS/talk-python-transcripts
+   git merge upstream/master
+   #+END_SRC
+
+   #+RESULTS:
+   #+begin_example
+   Updating 1285b80..a3be58a
+   Fast-forward
+    transcripts/007.txt |   2 +-
+    transcripts/009.txt | 173 ++++++++++++++++++-
+    transcripts/016.txt | 405 ++++++++++++++++++++++++++++++++++++++++++++-
+    transcripts/039.txt | 170 ++++++++++++++++++-
+    transcripts/041.txt | 155 ++++++++++++++++-
+    transcripts/060.txt |   2 +-
+    transcripts/061.txt |   2 +-
+    transcripts/072.txt |   1 +
+    transcripts/073.txt | 263 +++++++++++++++++++++++++++++
+    transcripts/074.txt | 304 ++++++++++++++++++++++++++++++++++
+    transcripts/075.txt |   1 +
+    transcripts/076.txt | 404 +++++++++++++++++++++++++++++++++++++++++++++
+    transcripts/077.txt | 468 ++++++++++++++++++++++++++++++++++++++++++++++++++++
+    transcripts/078.txt | 276 +++++++++++++++++++++++++++++++
+    transcripts/079.txt |   1 +
+    15 files changed, 2620 insertions(+), 7 deletions(-)
+    create mode 100644 transcripts/072.txt
+    create mode 100644 transcripts/073.txt
+    create mode 100644 transcripts/074.txt
+    create mode 100644 transcripts/075.txt
+    create mode 100644 transcripts/076.txt
+    create mode 100644 transcripts/077.txt
+    create mode 100644 transcripts/078.txt
+    create mode 100644 transcripts/079.txt
+#+end_example
+
 * Results
 
 * Conclusion
