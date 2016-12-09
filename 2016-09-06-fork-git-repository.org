@@ -71,6 +71,29 @@ tags: [tutorial, clone, remotes, fork]
    drwxr-sr-x 5 antony staff 4096 Dec 19 20:54 venv3
  #+end_example
 
+** Check the remotes
+   #+BEGIN_SRC sh :results output :exports both
+   cd /usr/local/share/DVCS/talk-python-transcripts
+   git remote -v
+   #+END_SRC
+
+   #+RESULTS:
+   : origin	https://github.com/0--key/talk-python-transcripts.git (fetch)
+   : origin	https://github.com/0--key/talk-python-transcripts.git (push)
+
+** Add upstream
+   #+BEGIN_SRC sh :results output :exports both
+   cd /usr/local/share/DVCS/talk-python-transcripts
+   git remote add upstream https://github.com/mikeckennedy/talk-python-transcripts.git
+   git remote -v
+   #+END_SRC
+
+   #+RESULTS:
+   : origin	https://github.com/0--key/talk-python-transcripts.git (fetch)
+   : origin	https://github.com/0--key/talk-python-transcripts.git (push)
+   : upstream	https://github.com/mikeckennedy/talk-python-transcripts.git (fetch)
+   : upstream	https://github.com/mikeckennedy/talk-python-transcripts.git (push)
+
 * Results
 
 * Conclusion
