@@ -647,66 +647,65 @@ tags: [coding, algorithms]
       : ... ... ... ... ... >>> 
       :  [[0, 0], [0, 3], [0, 6], [3, 0], [3, 3], [3, 6], [6, 0], [6, 3], [6, 6]]
 
-**** Final solution
-     #+BEGIN_SRC python :results output :session sudoku
-       gauge = [i for i in range(1, 10)]
+** Final solution
+   #+BEGIN_SRC python :results output :session sudoku
+     gauge = [i for i in range(1, 10)]
 
-       def check_the_nine(nine):
-           if set(nine) == set(gauge):
-               return True
-           else:
-               return False
+     def check_the_nine(nine):
+         if set(nine) == set(gauge):
+             return True
+         else:
+             return False
 
-       def check_rows(ll):
-           for i in ll:
-               if check_the_nine(i):
-                   continue
-               else:
-                   return False
-           else:
-               return True
+     def check_rows(ll):
+         for i in ll:
+             if check_the_nine(i):
+                 continue
+             else:
+                 return False
+         else:
+             return True
 
-       def check_columns(ll):
-           for i in range(9):
-               nine = []
-               for j in ll:
-                   nine.append(j[i])
-               if not check_the_nine(nine):
-                   return False
-           return True
+     def check_columns(ll):
+         for i in range(9):
+             nine = []
+             for j in ll:
+                 nine.append(j[i])
+             if not check_the_nine(nine):
+                 return False
+         return True
 
-       def extract_rectangle(ll, x, y):
-           l = []
-           for i in range(x, x+3):
-               for j in range(y, y+3):
-                   l.append(ll[i][j])
-           return l
+     def extract_rectangle(ll, x, y):
+         l = []
+         for i in range(x, x+3):
+             for j in range(y, y+3):
+                 l.append(ll[i][j])
+         return l
 
-       def define_corners():
-           corners = []
-           for i in range(0, 9, 3):
-               for j in range(0, 9, 3):
-                   corners.append([i, j])
-           return corners
+     def define_corners():
+         corners = []
+         for i in range(0, 9, 3):
+             for j in range(0, 9, 3):
+                 corners.append([i, j])
+         return corners
 
-       def done_or_not(board):
-           result = True
-           for i in define_corners():
-               if not check_the_nine(extract_rectangle(board, i[0], i[1])):
-                   result = False
-           if check_columns(board) == False or check_rows(board) == False:
-               result = False
-           if result:
-               return 'Finished!'
-           else:
-               return 'Try again!'
+     def done_or_not(board):
+         result = True
+         for i in define_corners():
+             if not check_the_nine(extract_rectangle(board, i[0], i[1])):
+                 result = False
+         if check_columns(board) == False or check_rows(board) == False:
+             result = False
+         if result:
+             return 'Finished!'
+         else:
+             return 'Try again!'
 
-       assert(done_or_not(valid) == 'Finished!')
-       assert(done_or_not(corrupted) == 'Try again!')
-     #+END_SRC
+     assert(done_or_not(valid) == 'Finished!')
+     assert(done_or_not(corrupted) == 'Try again!')
+   #+END_SRC
 
-     #+RESULTS:
-
+   #+RESULTS:
 
 
 * #6 Vigenère Autokey Cipher Helper
