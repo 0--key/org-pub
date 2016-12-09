@@ -141,5 +141,19 @@ tags: [tutorial, clone, remotes, fork]
 #+end_example
 
 * Results
+  Now we have a local version of our forked repository.
+  It is up-to-dated with upstream repository but not synced yet
+  with the origin.
+   #+BEGIN_SRC sh :results output :exports both
+   cd /usr/local/share/DVCS/talk-python-transcripts
+   git status
+   #+END_SRC
+
+   #+RESULTS:
+   : On branch master
+   : Your branch is ahead of 'origin/master' by 19 commits.
+   :   (use "git push" to publish your local commits)
+   : nothing to commit, working directory clean
+
 
 * Conclusion
