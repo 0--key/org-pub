@@ -134,7 +134,7 @@ tags: [coding, algorithms, oop]
      in a butch manner?
      
      This is a full-fledged sample thus the most of complex OOP solutions
-     are implemented in this manner:
+     are implemented with ~super()~ built-in:
      #+BEGIN_SRC python :results output
        class Person(object):
 
