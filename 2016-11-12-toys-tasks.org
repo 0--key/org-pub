@@ -281,7 +281,6 @@ tags: [coding, algorithms]
       assert(last_digit(2 ** 200, 2 ** 300) == 6)
     #+END_SRC
 
-
 * #3 How many times does it contain?
 
 ** Description
@@ -464,7 +463,6 @@ tags: [coding, algorithms]
     #+END_SRC
 
     #+RESULTS:
-
 
 * #5 Did I Finish my Sudoku?
 
@@ -707,7 +705,6 @@ tags: [coding, algorithms]
 
    #+RESULTS:
 
-
 * #6 Vigenère Autokey Cipher Helper
 
 ** Description
@@ -863,7 +860,7 @@ tags: [coding, algorithms]
     But when some particular symbol isn't in the alphabet, the shift
     is zero and this symbol not changed at all.
 
-* Human readable duration format
+* #7 Human readable duration format
 
 ** Description
    #+BEGIN_QUOTE
@@ -911,7 +908,7 @@ tags: [coding, algorithms]
    For the purpose of this Kata, a year is 365 days and a day is 24 hours.
    #+END_QUOTE
 
-* Battleship field validator
+* #8 Battleship field validator
 
 ** Description
    #+BEGIN_QUOTE
