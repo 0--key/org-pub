@@ -990,6 +990,16 @@ tags: [coding, algorithms]
 
 ** Appropriate solution format
    #+BEGIN_SRC python :results output :session runoff :exports both
+     def first_place_leader_check(bulletins):
+         leaders = [i[0] for i in bulletins]
+         if len(set(leaders)) <= len(bulletins) // 2 + 1:
+             # leader exists already
+             return True
+         else:
+             # no leader there
+             return False
+
+
      def runoff(voters):
          pass
 
@@ -998,6 +1008,7 @@ tags: [coding, algorithms]
                ["ind", "dem", "rep"],
                ["ind", "rep", "dem"]]
 
+     assert(first_place_leader_check(voters) == True)
      # Test.assert_equals(runoff(voters), "ind")
 
      voters = [["a", "c", "d", "e", "b"],
@@ -1006,4 +1017,8 @@ tags: [coding, algorithms]
                ["c", "e", "d", "b", "a"],
                ["b", "e", "a", "c", "d"]];
      # Test.assert_equals(runoff(voters), None);
+     assert(first_place_leader_check(voters) == False)
    #+END_SRC
+
+   #+RESULTS:
+
