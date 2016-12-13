@@ -998,12 +998,12 @@ tags: [coding, algorithms]
                ["ind", "dem", "rep"],
                ["ind", "rep", "dem"]]
 
-     Test.assert_equals(runoff(voters), "ind")
+     # Test.assert_equals(runoff(voters), "ind")
 
      voters = [["a", "c", "d", "e", "b"],
                ["e", "b", "d", "c", "a"],
                ["d", "e", "c", "a", "b"],
                ["c", "e", "d", "b", "a"],
                ["b", "e", "a", "c", "d"]];
-     Test.assert_equals(runoff(voters), None);
+     # Test.assert_equals(runoff(voters), None);
    #+END_SRC
