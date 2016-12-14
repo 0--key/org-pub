@@ -999,6 +999,14 @@ tags: [coding, algorithms]
              # no leader there
              return False
 
+     def count_each_candidate(bulletins):
+         # join list of lists together:
+         all_candidates = [j for i in bulletins for j in i]
+         candidates = set(all_candidates)
+         counter = {}
+         for i in candidates:
+             counter[i] = all_candidates.count(i)
+         return counter
 
      def runoff(voters):
          pass
@@ -1008,6 +1016,7 @@ tags: [coding, algorithms]
                ["ind", "dem", "rep"],
                ["ind", "rep", "dem"]]
 
+     assert(count_each_candidate(voters) == {"dem": 4, "ind": 4, "rep": 4})
      assert(first_place_leader_check(voters) == True)
      # Test.assert_equals(runoff(voters), "ind")
 
