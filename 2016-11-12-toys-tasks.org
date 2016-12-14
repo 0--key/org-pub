@@ -993,7 +993,7 @@ tags: [coding, algorithms]
      def first_place_leader_check(bulletins):
          leaders = [i[0] for i in bulletins]
          if len(set(leaders)) <= len(bulletins) // 2 + 1:
-             # leader exists already
+             # leader(s) exist(s) already
              return True
          else:
              # no leader there
