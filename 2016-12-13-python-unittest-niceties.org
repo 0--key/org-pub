@@ -1,0 +1,20 @@
+#+BEGIN_HTML
+---
+layout: post
+title: Python
+tagline: " as a test driver"
+permalink: /python/stdlib/unittest-niceties.html
+categories: [python, stdlib, TDD, literate programming]
+tags: [built-in functions, unittest]
+---
+#+END_HTML
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+
+#+TOC: headlines 3
+
+* Preamble
+
+* Documentation 
+
+* Samples
