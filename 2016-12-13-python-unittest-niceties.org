@@ -14,7 +14,12 @@ tags: [built-in functions, unittest]
 #+TOC: headlines 3
 
 * Preamble
+  Nowadays =TDD= is a contemporary approach in software
+  development serving as its catalyst, propeller and
+  precise gauge in a single bottle. Lets take an attempt
+  to unveil =unittest= core features.
 
-* Documentation 
+* Documentation
+  At the official [[https://docs.python.org/3/library/unittest.html][website]].
 
 * Samples
