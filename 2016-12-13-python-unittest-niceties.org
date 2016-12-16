@@ -23,3 +23,24 @@ tags: [built-in functions, unittest]
   At the official [[https://docs.python.org/3/library/unittest.html][website]].
 
 * Samples
+  
+** Simple test template
+   #+BEGIN_SRC python
+     import unittest
+
+     def fun(x):
+         return x + 1
+
+     class SampleTest(unittest.TestCase):
+
+         def test_equality(self):
+             self.assertEqual(fun(3), 4)
+
+         def test_inequality(self):
+             self.assertNotEqual(fun(3), 5)
+
+     unittest.main(SampleTest())
+   #+END_SRC
+
+   #+RESULTS:
+
