@@ -88,6 +88,32 @@ tags: [coding, algorithms, oop]
     to describe their attributes and functions as precise as it possible
     to do.
 
+**** What an inheritance is?
+     In general terms it is a feature that permits children to have several
+     properties common with theirs parent.
+     #+BEGIN_SRC python :results output
+       class Tree(object):
+
+           def __init__(self, name):
+               self.name = name
+               self.min_age = 2
+
+
+       class FruitTree(Tree):
+
+           @property
+           def product(self):
+               return 'fruits'
+
+       tree = Tree('birch')
+       apple_tree = FruitTree('apple')
+       print('%s are a product of %s tree' %
+             (apple_tree.product, apple_tree.name))
+     #+END_SRC
+
+     #+RESULTS:
+     : fruits are a product of apple tree
+
 **** Primitive sample with relative inheritance
      Our first code snippet demonstrates a /general concept/ of extension
      by inheritance. The task of OOP modeling in that case was completed
