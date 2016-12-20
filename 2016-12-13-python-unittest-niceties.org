@@ -44,3 +44,40 @@ tags: [built-in functions, unittest]
 
    #+RESULTS:
 
+** Fixture preparation
+
+** Mock dissection
+
+   #+BEGIN_SRC python :session mock
+   from unittest.mock import Mock, call
+   mock = Mock()
+   mock.x
+   #+END_SRC
+
+   #+RESULTS:
+   : <Mock name='mock.x' id='139992039642336'>
+
+   #+BEGIN_SRC python :session mock :results output
+   mock.x
+   mock.x('Reassign a property', 11, 13)
+   mock.x('Reassign a property', 11, 13)
+   #+END_SRC
+
+   #+RESULTS:
+   : <Mock name='mock.x' id='139992039642336'>
+   : <Mock name='mock.x()' id='139992039547120'>
+   : <Mock name='mock.x()' id='139992039547120'>
+
+   #+BEGIN_SRC python :session mock :results output
+   mock.x('Attempt to reassign a property', 22, 31)
+   # but
+   mock.x('Complete reassigning is impossible', 22, 31)
+   #+END_SRC
+
+   #+RESULTS:
+   : <Mock name='mock.x()' id='139992039547120'>
+   : ... <Mock name='mock.x()' id='139992039547120'>
+
+** Mock-up complex objects
+
+* Conclusion
