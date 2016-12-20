@@ -1069,13 +1069,29 @@ tags: [coding, algorithms]
 
 ** Appropriate solution format
    #+BEGIN_SRC python
+     def converter(order, symbol):
+         s = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
+         number = s.index(symbol)
+         return number * 64 ** order
+
      def base64_to_base10(str):
-         # Your code here
+         sigma = 0
+         for order, symbol in enumerate(str[::-1]):
+             sigma += converter(order, symbol)
+         return sigma
 
-
-     test.assert_equals(base64_to_base10("A"  ), 0)
-     test.assert_equals(base64_to_base10("/"  ), 63)
-     test.assert_equals(base64_to_base10("BA" ), 64)
-     test.assert_equals(base64_to_base10("//" ), 4095)
-     test.assert_equals(base64_to_base10("WIN"), 90637)
+     assert(converter(0, 'A') == 0)
+     assert(converter(1, 'B') == 64)
+     assert(base64_to_base10("A") == 0)
+     assert(base64_to_base10("/") == 63)
+     assert(base64_to_base10("BA") == 64)
+     assert(base64_to_base10("//") == 4095)
+     assert(base64_to_base10("WIN") == 90637)
    #+END_SRC
+
+   #+RESULTS:
+   : None
+
+** General considerations
+   For any /positional/ numeric system with base b:
+   xyz = x*b**2 + y*b**1 + z*b**0
