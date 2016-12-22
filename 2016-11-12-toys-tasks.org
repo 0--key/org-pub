@@ -1140,6 +1140,7 @@ tags: [coding, algorithms]
      Test.assert_equals(solve("123 457\n123 456\n654 312\n999 000\n123 457"), "1 carry operations\nNo carry operation\nNo carry operation\nNo carry operation\n1 carry operations","Try this one: (123 - 457 | 123 - 456 | 654 - 312 | 999 - 000 | 123 - 457)")
      Test.assert_equals(solve("1 9\n123456789 111111101\n01 09\n11 09\n123 457"), "1 carry operations\n1 carry operations\n1 carry operations\n1 carry operations\n1 carry operations", "Try this one: (1 - 9 | 123456789 - 111111101 | 01 - 09 | 11 - 09 | 123 - 457)")
    #+END_SRC
+
 * #12 Valid Parentheses
   
 ** Description
@@ -1157,3 +1158,14 @@ tags: [coding, algorithms]
    All input strings will be nonempty, and will only consist of open parentheses '(' and/or closed parentheses ')'
    #+END_QUOTE
 
+** Appropriate solution format
+   #+BEGIN_SRC python :results output
+     def valid_parentheses(string):
+             #your code here
+
+     assert(valid_parentheses("  (") == False)
+     assert(valid_parentheses(")test") == False)
+     assert(valid_parentheses("") == True)
+     assert(valid_parentheses("hi())(") == False)
+     assert(valid_parentheses("hi(hi)()") == True)
+   #+END_SRC
