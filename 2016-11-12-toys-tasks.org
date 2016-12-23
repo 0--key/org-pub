@@ -1160,9 +1160,43 @@ tags: [coding, algorithms]
 
 ** Appropriate solution format
    #+BEGIN_SRC python :results output
-     def valid_parentheses(string):
-             #your code here
+     def extract_parentheses(string):
+         if string:
+             return [i for i in string if i in '[]{}()']
+         else:
+             return False
 
+     def pair(parentheses):
+         if parentheses == ')':
+             return '('
+         elif parentheses == ']':
+             return '['
+         elif parentheses == '}':
+             return '{'
+         else:
+             return False
+
+     def valid_parentheses(string):
+         opening = []
+         closing = []
+         parentheses = extract_parentheses(string)
+         if parentheses and len(parentheses) % 2 == 0:
+             for i in parentheses:
+                 if not pair(i):
+                     opening.append(i)
+                     print("this is an opening sequence: ", opening)
+                 else:
+                     if opening[-1] == i:
+                         # annihilate them both
+                         opening.pop()
+                     else:
+                         break
+         if opening == [] and closing == []:
+             return True
+         else:
+             return False
+
+     assert(extract_parentheses(")test") == [')'])
      assert(valid_parentheses("  (") == False)
      assert(valid_parentheses(")test") == False)
      assert(valid_parentheses("") == True)
