@@ -1177,24 +1177,30 @@ tags: [coding, algorithms]
              return False
 
      def valid_parentheses(string):
-         opening = []
-         closing = []
-         parentheses = extract_parentheses(string)
-         if parentheses and len(parentheses) % 2 == 0:
-             for i in parentheses:
-                 if not pair(i):
-                     opening.append(i)
-                     print("this is an opening sequence: ", opening)
-                 else:
-                     if opening[-1] == i:
-                         # annihilate them both
-                         opening.pop()
-                     else:
-                         break
-         if opening == [] and closing == []:
+         if string == "":
              return True
          else:
-             return False
+             opening = []
+             closing = []
+             parentheses = extract_parentheses(string)
+             if parentheses and len(parentheses) % 2 == 0:
+                 for i in parentheses:
+                     if not pair(i):
+                         opening.append(i)
+                         print("this is an opening sequence: ", opening)
+                     else:
+                         if opening[-1] == i:
+                             # annihilate them both
+                             opening.pop()
+                         else:
+                             break
+                 if opening == [] and closing == []:
+                     return True
+                 else:
+                     return False
+             else:
+                 return False
+
 
      assert(extract_parentheses(")test") == [')'])
      assert(valid_parentheses("  (") == False)
@@ -1203,7 +1209,6 @@ tags: [coding, algorithms]
      assert(valid_parentheses("hi())(") == False)
      assert(valid_parentheses("hi(hi)()") == True)
    #+END_SRC
-
 * #13 Coordinates Validator
   
 ** Description
