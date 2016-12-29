@@ -1239,11 +1239,21 @@ tags: [coding, algorithms]
 ** Appropriate solution
    #+BEGIN_SRC python :results output
      def is_valid_coordinates(coordinates):
-         return True  # do your thing
+         if 'e' not in coordinates and\
+            'E' not in coordinates:
+             try:
+                 lat, lon = map(float, coordinates.split(','))
+             except:
+                 return False
+         else:
+             return False
+         print(lat, lon)
+         if lat < -90 or lat > 90:
+             return False
+         if lon < -180 or lon > 180:
+             return False
+         return True
 
-     Test.describe("Example Test Cases")
-
-     Test.it("should return true for valid coordinates")
      valid_coordinates = [
          "-23, 25",
          "4, -3",
