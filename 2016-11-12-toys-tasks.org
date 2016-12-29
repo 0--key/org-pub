@@ -1262,10 +1262,9 @@ tags: [coding, algorithms]
          "43.91343345, 143"]
 
      for coordinate in valid_coordinates:
-         test.expect(is_valid_coordinates(coordinate),
-                     "%s validation failed." % coordinate)
+         assert is_valid_coordinates(coordinate) == True,\
+             "%s validation failed." % coordinate
 
-     Test.it("should return false for invalid coordinates")
      invalid_coordinates = [
          "23.234, - 23.4234",
          "2342.43536, 34.324236",
@@ -1277,8 +1276,8 @@ tags: [coding, algorithms]
          "23.245, 1e1"]
 
      for coordinate in invalid_coordinates:
-         test.expect(not is_valid_coordinates(coordinate),
-                     "%s validation failed." % coordinate)
+         assert is_valid_coordinates(coordinate) == False,\
+             "%s validation failed." % coordinate
    #+END_SRC
 * #14 Pete, the baker
 ** Description
