@@ -1193,22 +1193,29 @@ tags: [coding, algorithms]
                              # annihilate them both
                              opening.pop()
                          else:
-                             break
+                             print("The closing parentheses mismatch")
+                             return False
                  if opening == [] and closing == []:
                      return True
                  else:
+                     print('Mismatch in parentheses order')
                      return False
              else:
                  return False
 
-
+     print(valid_parentheses("hi())("))
      assert(extract_parentheses(")test") == [')'])
+     assert(pair(')') == '(')
      assert(valid_parentheses("  (") == False)
      assert(valid_parentheses(")test") == False)
      assert(valid_parentheses("") == True)
+     assert(valid_parentheses("()()") == True)
      assert(valid_parentheses("hi())(") == False)
      assert(valid_parentheses("hi(hi)()") == True)
    #+END_SRC
+
+   #+RESULTS:
+
 * #13 Coordinates Validator
   
 ** Description
