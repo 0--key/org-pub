@@ -1,0 +1,30 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: Org-Jekyll
+tagline: " export with color highlighting"
+permalink: /emacs/org/export/jekyll/color-src-highlight.html
+categories: [literate programming, emacs, org]
+tags: [Jekyll, src hightlighting, html-export]
+---
+#+END_EXPORT
+
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+HTML_HEAD: <link href="/assets/themes/org.css" rel="stylesheet"> 
+#+TOC: headlines 2
+
+* Caveat
+  By default settings =Org= exports /src-blocks/ with in-line
+  syntax highlighting by =css= It seems a bit wierd and old-fashion,
+  thus lets take an attempt to elaborate more neat solution.
+
+* Define html export variables
+  #+BEGIN_SRC elisp :results none
+  (setq org-html-htmlize-output-type 'css)
+  (setq org-html-htmlize-font-prefix "org-")
+  #+END_SRC
+
+* Define CSS style
+
+* Modificate Hooligan theme
