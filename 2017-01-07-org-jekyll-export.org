@@ -11,7 +11,6 @@ tags: [Jekyll, src hightlighting, html-export]
 
 #+STARTUP: showall
 #+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
-#+HTML_HEAD: <link href="/assets/themes/org.css" rel="stylesheet"> 
 #+TOC: headlines 2
 
 * Caveat
