@@ -28,3 +28,5 @@ tags: [Jekyll, src hightlighting, html-export]
   #+INCLUDE: "/usr/local/share/DVCS/0--key.io/assets/themes/css/org.css" src css
 
 * Modificate Hooligan theme
+  Add to =/_includes/themes/hooligan/default.html= *head*
+  string ~<link href="/assets/themes/css/org.css" rel="stylesheet" type="text/css" media="all">~
