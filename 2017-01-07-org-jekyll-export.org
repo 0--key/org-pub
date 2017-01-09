@@ -25,5 +25,6 @@ tags: [Jekyll, src hightlighting, html-export]
   #+END_SRC
 
 * Define CSS style
+  #+INCLUDE: "/usr/local/share/DVCS/0--key.io/assets/themes/css/org.css" src css
 
 * Modificate Hooligan theme
