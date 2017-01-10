@@ -30,3 +30,19 @@ tags: [Jekyll, src hightlighting, html-export]
 * Modificate Hooligan theme
   Add to =/_includes/themes/hooligan/default.html= *head*
   string ~<link href="/assets/themes/css/org.css" rel="stylesheet" type="text/css" media="all">~
+
+* Python scr block highlighting test
+  #+BEGIN_SRC python
+    def order(string):
+        mixed_string_words = []
+        for word in string.split():
+            mixed_string_words.append(detect_number(word))
+        pure_words = []
+        for i in sorted(mixed_string_words, key=lambda x: x[1]):
+            #print(i, i[0])
+            pure_words.append(i[0])
+        return ' '.join(pure_words)
+  #+END_SRC
+
+* Python include file highlighting test
+  #+INCLUDE: "/usr/local/share/DVCS/org-pub/toy_tasks.py" src python
