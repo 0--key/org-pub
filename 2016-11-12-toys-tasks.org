@@ -1384,6 +1384,11 @@ tags: [coding, algorithms]
      test.describe("Your own tests")
      # Add more tests here
    #+END_SRC
+** Best practice
+   #+BEGIN_SRC python
+     def decodeMorse(morseCode):
+         return ' '.join(''.join(MORSE_CODE[letter] for letter in word.split(' ')) for word in morseCode.strip().split('   '))
+   #+END_SRC
 * Next bigger number with the same digits
 ** Description
    #+BEGIN_QUOTE
