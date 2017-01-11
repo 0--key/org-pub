@@ -21,7 +21,9 @@ tags: [Jekyll, src hightlighting, html-export]
 * Define html export variables
   #+BEGIN_SRC elisp :results none
   (setq org-html-htmlize-output-type 'css)
+  ;; (setq org-html-htmlize-output-type 'inline-css) ;; default
   (setq org-html-htmlize-font-prefix "org-")
+  ;; (setq org-html-htmlize-font-prefix "") ;; default
   #+END_SRC
 
 * Define CSS style
