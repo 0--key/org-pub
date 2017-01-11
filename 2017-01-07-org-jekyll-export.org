@@ -48,3 +48,12 @@ tags: [Jekyll, src hightlighting, html-export]
 
 * Python include file highlighting test
   #+INCLUDE: "/usr/local/share/DVCS/org-pub/toy_tasks.py" src python
+
+* Corollary
+
+** Pros
+   HTML code which produced as an export out from =org= file is
+   clearly much dense and terse, hence - becomes much readable.
+** Cons
+   Inentation highlighting (wich is a perfect feature in =EWW=)
+   disappeared.
