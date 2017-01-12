@@ -388,18 +388,29 @@ tags: [tutorial, elisp, intro]
     #+RESULTS:
     : 15
 
+*** A bit wierd sample
+   #+BEGIN_SRC elisp
+   (+ (+ 3 5) (* 3 3))
+   #+END_SRC
 
-    #+RESULTS:
-    : 
-    : "hi: %d"
+   #+RESULTS:
+   : 17
 
-*** 
-    #+BEGIN_SRC elisp
-    (+ (+ 3 5) (* 3 3))
+
+** Ariphmetic
+
+*** Functions
+    #+BEGIN_SRC elisp :exports code
+    (assert (eq (+ 4 5 1) 10))
+    (assert (eq (- 9 2 3) 4))
+    (assert (eq (/ 7 2) 3))     ; integer part of quotinent
+    (assert (= (/ 7 2.0) 3.5))  ; but
+    (assert (not (eq (/ 7 2.0) 3.5)))
+    (assert (eq (% 7 4) 3))     ; mod, remainder
+    (assert (eq (expt 2 3) 8))  ; power, exponential
     #+END_SRC
 
     #+RESULTS:
-    : 17
 
 
 ** String substitution for print
