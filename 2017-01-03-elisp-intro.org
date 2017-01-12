@@ -16,6 +16,15 @@ tags: [tutorial, elisp, intro]
 
 * Primitive
 
+** Ouput test
+   #+BEGIN_SRC elisp
+   (current-buffer)
+   #+END_SRC
+
+   #+RESULTS:
+   : #<buffer 2017-01-03-elisp-intro.org>
+
+
 ** Brief overview
    Copied from [[https://emacs-doctor.com/learn-emacs-lisp-in-15-minutes.html][here]]
    #+BEGIN_SRC elisp :results none :exports code :eval never-export
@@ -367,15 +376,9 @@ tags: [tutorial, elisp, intro]
 
    
    
-** Ouput test
-   #+BEGIN_SRC elisp
-   (current-buffer)
-   #+END_SRC
-
-   #+RESULTS:
-   : #<buffer 2017-01-03-elisp-intro.org>
-
-** Ariphmetic and notation
+** Prefix notation
+   Lucidly that spaces delimit operators and operands and the first
+   preceded.
 
 *** [[https://en.wikipedia.org/wiki/Polish_notation][Prefix notation]] at glance:
     #+BEGIN_SRC elisp
@@ -385,13 +388,6 @@ tags: [tutorial, elisp, intro]
     #+RESULTS:
     : 15
 
-*** String substitution for print
-    #+BEGIN_SRC elisp :results output
-      (progn (print "hi: %d"))
-      ;; (print(progn (/ 12 4)))
-      ;; (format "An atom: ~S~%and a list: ~S~%and an integer: ~D~%"
-      ;;           nil (list 5) 6)
-    #+END_SRC
 
     #+RESULTS:
     : 
@@ -405,8 +401,19 @@ tags: [tutorial, elisp, intro]
     #+RESULTS:
     : 17
 
-    Lucidly that spaces delimit operators and operands and the first
-    preceded.
+
+** String substitution for print
+   #+BEGIN_SRC elisp :results output
+     (progn (print "hi: %d"))
+     ;; (print(progn (/ 12 4)))
+     ;; (format "An atom: ~S~%and a list: ~S~%and an integer: ~D~%"
+     ;;           nil (list 5) 6)
+   #+END_SRC
+
+   #+RESULTS:
+   : 
+   : "hi: %d"
+
 
 ** Boolean
    #+BEGIN_SRC elisp
