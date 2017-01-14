@@ -50,98 +50,98 @@ tags: [sotfware development, emacs, Python, learning]
 
   #+END_QUOTE
 
+** Brief prelude                                                    :prelude:
 
-* Emacs
-** Tips
+   #+BEGIN_QUOTE
+   Any science is an experience which forged and enveloped in some
+   skill. Data science by its nature built on data.
 
-** Literate Programming
+   There are several levels of data acquisition:
+   - Read-only access is an initial proves possession over some
+     particular data.
+   - There are several much precise tools to compose quires and get
+     much informative data out of array. It's the second flow on data
+     processing functions list.
+   - The third one might be data integrity checking strategy on duty to
+     prevent any data corruption and lost.
+   - And as a final stage in data cooking it might be data visualisation.
+   #+END_QUOTE
 
-** elisp
+** General description                                          :description:
 
-* Python
+   There are infinite number of wrong approaches and the best path to
+   achieve some skill is to learn it by doing. For example it's
+   completely impossible to play basketball with no ideas about the
+   rules of this dexterity demonstration. As another premise of
+   apprenticeship it might be noticed about Ancient Greek samples of
+   great thinkers, who ponder about most of our modern science in the
+   same way. All they was scholars and learn all life long.
 
-** stdlib
+** Preamble
 
-** how-to
+   #+BEGIN_QUOTE
+   Of cause learning by doing is an uttermost level of human creativity.
+   It requires a lot of passion, huge amount of time and the hardships
+   happen certainly. And it is a peculiar time machine. There is one
+   way further, and a plethora of noways there.
+   #+END_QUOTE
 
-* SQLite3
-** Innate shell
+*** Short description
 
-** [[http://0--key.github.io/sqlite3/data_types.html][Data types]]
+    #+BEGIN_QUOTE
+    Python 3.4.1 under the detailed scrutiny by unittest module.   
+    #+END_QUOTE
 
-** [[http://0--key.github.io/python/stdlib/sqlite3/interaction.html][Python interaction]]
+*** Description
 
-* Postgres
+    #+BEGIN_QUOTE
+    Literate programming book for wide range of learners by reading
+    and typing. A little bit of primitive mathematics used for
+    self-explanatory clarity in proves. All language's features hooks and
+    idioms are available to test on Emacs frame.
+    #+END_QUOTE
 
-** Innate shell
+** Prerequisites
 
-** Data types
+*** Ubuntu 14/16.04
 
-** Python interaction
+*** Python3
 
-* Git
+*** Emacs 24.4
 
-** Tips
+* Toolset overview
+** Emacs
+*** Tips
+
+*** Literate Programming
+
+*** elisp
+
+** Python
+
+*** stdlib
+
+*** how-to
+
+** SQLite3
+*** Innate shell
+
+*** [[http://0--key.github.io/sqlite3/data_types.html][Data types]]
+
+*** [[http://0--key.github.io/python/stdlib/sqlite3/interaction.html][Python interaction]]
+
+** Postgres
+
+*** Innate shell
+
+*** Data types
+
+*** Python interaction
+
+** Git
+
+*** Tips
    
-* Brief prelude							    :prelude:
-
-  #+BEGIN_QUOTE
-  Any science is an experience which forged and enveloped in some
-  skill. Data science by its nature built on data.
-
-  There are several levels of data acquisition:
-  - Read-only access is an initial proves possession over some
-    particular data.
-  - There are several much precise tools to compose quires and get
-    much informative data out of array. It's the second flow on data
-    processing functions list.
-  - The third one might be data integrity checking strategy on duty to
-    prevent any data corruption and lost.
-  - And as a final stage in data cooking it might be data visualisation.
-  #+END_QUOTE
-
-* General description						:description:
-
-  There are infinite number of wrong approaches and the best path to
-  achieve some skill is to learn it by doing. For example it's
-  completely impossible to play basketball with no ideas about the
-  rules of this dexterity demonstration. As another premise of
-  apprenticeship it might be noticed about Ancient Greek samples of
-  great thinkers, who ponder about most of our modern science in the
-  same way. All they was scholars and learn all life long.
-
-* Preamble
-
-  #+BEGIN_QUOTE
-  Of cause learning by doing is a uttermost stage of human creativity.
-  It requires a lot of passion, huge amount of time and the hardships
-  happen certainly. And it is a peculiar time machine. There is one
-  way further, and a plethora of noways there.
-  #+END_QUOTE
-
-** Short description
-
-   #+BEGIN_QUOTE
-   Python 3.4.1 under the detailed scrutiny by unittest module.   
-   #+END_QUOTE
-
-** Description
-
-   #+BEGIN_QUOTE
-   Literate programming book for wide range of learners by reading
-   and typing. A little bit of primitive mathematics used for
-   self-explanatory clarity in proves. All language's features hooks and
-   idioms are available to test on Emacs frame.
-   #+END_QUOTE
-
-* Prerequisites
-
-** Ubuntu 14/16.04
-
-** Python3
-
-** Emacs 24.4
-
 * Methodology
 
 
