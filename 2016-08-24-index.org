@@ -8,7 +8,9 @@ categories: [emacs, literate programming, data science]
 tags: [sotfware development, emacs, Python, learning]
 ---
 #+END_HTML
+#+STARTUP: showall
 #+OPTIONS: tags:nil toc:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
 
 * Short intro							      :intro:
 
