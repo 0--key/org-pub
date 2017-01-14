@@ -412,6 +412,14 @@ tags: [tutorial, elisp, intro]
 
     #+RESULTS:
 
+*** Boolean
+    #+BEGIN_SRC elisp
+      (assert (eq (and t t t) t))
+      (assert (eq (or t nil nil) t))
+    #+END_SRC
+
+    #+RESULTS:
+
 
 ** String substitution for print
    #+BEGIN_SRC elisp :results output
@@ -426,12 +434,4 @@ tags: [tutorial, elisp, intro]
    : "hi: %d"
 
 
-** Boolean
-   #+BEGIN_SRC elisp
-     (and t t t)
-     (or t nil nil)
-   #+END_SRC
-
-   #+RESULTS:
-   : t
 
