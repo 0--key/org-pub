@@ -37,6 +37,7 @@ tags: [sotfware development, emacs, Python, learning]
   #+END_RIGHT
   #+END_QUOTE
 
+  #+BEGIN_QUOTE
   As the TDD approach became a standard option in software development
   therefore it is very time to wrap all code you're studied already in
   this modern envelop. /It is not just a modern quirk/, it effectively
@@ -68,7 +69,6 @@ tags: [sotfware development, emacs, Python, learning]
   #+BEGIN_HTML
   <p align="right">Anton S. Kosinov</p>
   #+END_HTML
-
   #+END_QUOTE
 
 ** Brief prelude                                                    :prelude:
