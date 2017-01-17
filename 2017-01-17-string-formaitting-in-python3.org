@@ -1,0 +1,39 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: Python3
+tagline: " new string formatting approach"
+permalink: /python3/string/formatting.html
+categories: [literate programming, emacs, Python3]
+tags: [strings, formatting]
+---
+#+END_EXPORT
+
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both
+
+* PEP 3101 -- Advanced String Formatting
+  [[https://www.python.org/dev/peps/pep-3101/][link]]
+
+* Abstract
+  #+BEGIN_QUOTE
+      This PEP proposes a new system for built-in string formatting
+    operations, intended as a replacement for the existing '%' string
+    formatting operator.
+  #+END_QUOTE
+
+* Samples
+  #+BEGIN_SRC python
+    a = 'Python'
+    b = 'Emacs'
+    d = 'Babel'
+    print("The story of {0}, {1}, and {c}".format(a, b, c=d))
+    # or
+    print(format(10.0, "7.3g"))
+  #+END_SRC
+
+  #+RESULTS:
+  : The story of Python, Emacs, and Babel
+  :      10
