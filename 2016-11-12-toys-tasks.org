@@ -1445,3 +1445,17 @@ tags: [coding, algorithms]
 
    Make sure not to modify the input of your function in-place, it is a bad practice.
    #+END_QUOTE
+** Solution
+   #+BEGIN_SRC python :results output
+     def mixed_fraction(s):
+         return None
+
+     # Test.assert_equals(mixed_fraction('42/9'), '4 2/3')
+     # Test.assert_equals(mixed_fraction('6/3'), '2')
+     # Test.assert_equals(mixed_fraction('4/6'), '2/3')
+     # Test.assert_equals(mixed_fraction('0/18891'), '0')
+     # Test.assert_equals(mixed_fraction('-10/7'), '-1 3/7')
+     # Test.assert_equals(mixed_fraction('-22/-7'), '3 1/7')
+     # Test.expect_error("Must raise ZeroDivisionError", lambda: mixed_fraction(0, 0))
+     # Test.expect_error("Must raise ZeroDivisionError", lambda: mixed_fraction(3, 0))
+   #+END_SRC
