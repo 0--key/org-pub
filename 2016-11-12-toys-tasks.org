@@ -1447,15 +1447,55 @@ tags: [coding, algorithms]
    #+END_QUOTE
 ** Solution
    #+BEGIN_SRC python :results output
-     def mixed_fraction(s):
-         return None
+     def gcd(a, b):
+         while(b):
+             a, b = b, a % b
+         return a
 
-     # Test.assert_equals(mixed_fraction('42/9'), '4 2/3')
-     # Test.assert_equals(mixed_fraction('6/3'), '2')
-     # Test.assert_equals(mixed_fraction('4/6'), '2/3')
-     # Test.assert_equals(mixed_fraction('0/18891'), '0')
-     # Test.assert_equals(mixed_fraction('-10/7'), '-1 3/7')
+     def simplify(n, d):
+         g = gcd(n, d)
+         if g > 1:
+             return str(n//g) + '/' + str(d//g)
+         else:
+             return str(n) + '/' + str(d)
+
+     def mixed_fraction(s):
+         n, d = map(int, s.split('/'))
+         if n != 0:
+             if d != 0:
+                 if abs(n) < d:
+                     return simplify(n, d)
+                 else:
+                     # for positive argiments olny!
+                     integer_part = n // d
+                     ratio = n % d # * integer_part
+                     if ratio:
+                         return str(integer_part) + ' ' + simplify(ratio, d)
+                     else:
+                         return str(integer_part)
+             else:
+                 1 / 0
+         else:
+             return '0'
+
+     print(mixed_fraction('-10/7'))
+     print(mixed_fraction('-22/-7'))
+     assert(simplify(8, 12) == '2/3')
+     assert(simplify(-8, 12) == '-2/3')
+     assert(gcd(2, 3) == 1)
+     assert(gcd(14, 21) == 7)
+     assert(gcd(-14, 21) == 7)
+     assert(gcd(12, 144) == 12)
+     assert(mixed_fraction('42/9') == '4 2/3')
+     assert(mixed_fraction('6/3') == '2')
+     assert(mixed_fraction('4/6') == '2/3')
+     assert(mixed_fraction('0/18891') == '0')
+     # assert(mixed_fraction('-10/7') == '-1 3/7')
      # Test.assert_equals(mixed_fraction('-22/-7'), '3 1/7')
      # Test.expect_error("Must raise ZeroDivisionError", lambda: mixed_fraction(0, 0))
      # Test.expect_error("Must raise ZeroDivisionError", lambda: mixed_fraction(3, 0))
    #+END_SRC
+
+   #+RESULTS:
+   : -2 4/7
+
