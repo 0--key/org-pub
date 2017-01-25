@@ -1521,6 +1521,18 @@ tags: [coding, algorithms]
    #+END_QUOTE
 ** Solution
    #+BEGIN_SRC python :results output
+     def gcd (a,b):
+         if (b == 0):
+             return a
+         else:
+              return gcd (b, a % b)
+
+     def gcdl(L):
+         result = L[0]
+         for i in L[1::]:
+             result = gcd(result, i)
+         return result
+
      def convertFracts(lst):
          pass
 
