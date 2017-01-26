@@ -1532,6 +1532,21 @@ tags: [coding, algorithms]
 
      def convertFracts(lst):
          pass
+         # divisors = [i[1] for i in lst]
+         # numerators = [i[0] for i in lst]
+         # if gcdl(divisors) == 1:
+         #     common_divisor = 1  # reduce(lambda x, y: x*y, divisors)
+         #     for i in divisors:
+         #         common_divisor *= i
+         #     result = []
+         #     for n, d in zip(numerators, divisors):
+         #         print(n, d, common_divisor)
+         #         result.append([n * common_divisor / d, common_divisor])
+         #     print(result)
+         #     return result
+         # else:
+         #     pass
+
 
      # assert(convertFracts([(1, 2), (1, 3), (1, 4)]) ==
      #        [(6, 12), (4, 12), (3, 12)])
