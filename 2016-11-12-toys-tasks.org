@@ -1445,6 +1445,34 @@ tags: [coding, algorithms]
 
    Make sure not to modify the input of your function in-place, it is a bad practice.
    #+END_QUOTE
+** Fraction stdlib module
+   #+BEGIN_SRC python :results output
+     from fractions import Fractions, gcd
+     """
+     >>> a = Fraction()
+     >>> a + Fraction(1, 2)
+     Fraction(1, 2)
+     >>> a +=  Fraction(1, 2)
+     >>> a
+     Fraction(1, 2)
+     >>> Fraction(42, 9)
+     Fraction(14, 3)
+     >>> Fraction(-10, 7)
+     Fraction(-10, 7)
+     >>> Fraction(42, 9).__floor__()
+     4
+     >>> Fraction(42, 9).__ceil__()
+     5
+     >>> Fraction(0, 7)
+     Fraction(0, 1)
+     >>> Fraction(0, 7).__ceil__()
+     0
+     >>> Fraction(1, 7).__ceil__()
+     1
+     >>> Fraction(-1, 7).__ceil__()
+     0
+     """
+   #+END_SRC
 ** Solution
    #+BEGIN_SRC python :results output
      def gcd(a, b):
