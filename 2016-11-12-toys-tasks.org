@@ -1525,7 +1525,9 @@ tags: [coding, algorithms]
      # assert(gcd(-14, 21) == 7)
      # assert(gcd(12, 144) == 12)
      assert(mixed_fraction('42/9') == '4 2/3')
+     assert(mixed_fraction('-42/9') == '-4 2/3')
      assert(mixed_fraction('6/3') == '2')
+     assert(mixed_fraction('-6/3') == '-2')
      assert(mixed_fraction('4/6') == '2/3')
      assert(mixed_fraction('-4/6') == '-2/3')
      assert(mixed_fraction('0/18891') == '0')
@@ -1537,7 +1539,6 @@ tags: [coding, algorithms]
    #+END_SRC
 
    #+RESULTS:
-   : -2 4/7
 * Common denominator
 ** Description
    #+BEGIN_QUOTE
