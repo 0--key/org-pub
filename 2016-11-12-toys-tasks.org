@@ -1475,7 +1475,7 @@ tags: [coding, algorithms]
    #+END_SRC
 ** Solution
    #+BEGIN_SRC python :results output
-     from fractions import Fraction, gcd
+     from fractions import Fraction
 
 
      def mixed_fraction(s):
@@ -1486,24 +1486,33 @@ tags: [coding, algorithms]
                      signature = True
                  else:
                      signature = False
-                 F = Fraction(n, d)
-                 if abs(n) < abs(d):
-                     return str(F.numerator) + '/' + str(F.denominator)
-                 else:  # integer part exists
+                 F = Fraction(abs(n), abs(d))
+                 n = F.numerator
+                 d = F.denominator
+                 if n < d:
                      if signature:
-                         integer_part = F.__floor__()
-                         fraction_part = F.numerator - F.denominator * integer_part
-                         if fraction_part == 0:
+                         return str(n) + '/' + str(d)
+                     else:
+                         return '-' + str(n) + '/' + str(d)
+                 else:  # integer part exists
+                     integer_part = F.__floor__()
+                     fraction_part = n - d * integer_part
+                     if fraction_part == 0:
+                         if signature:
                              return str(integer_part)
-                         else:  # fraction part exists also
-                             fraction_part = Fraction(fraction_part, F.denominator)
-                             return str(integer_part) + ' ' + \
-                                 str(fraction_part.numerator) + \
-                                 '/' + str(fraction_part.denominator)
-                     else:  # negative result composition
-                         pass
+                         else:
+                             return '-' + str(integer_part)
+                     else:  # fraction part exists also
+                         fraction_part = Fraction(fraction_part, d)
+                         result =  str(integer_part) + ' ' + \
+                             str(fraction_part.numerator) + \
+                             '/' + str(fraction_part.denominator)
+                         if signature:
+                             return result
+                         else:
+                             return '-' + result
              else:
-                 1 / 0
+                 raise Exception("Must raise ZeroDivisionError")
          else:
              return '0'
 
