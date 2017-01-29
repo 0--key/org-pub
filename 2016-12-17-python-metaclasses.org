@@ -24,13 +24,37 @@ tags: [metaclass, gist, oop]
     Python Guru Tim Peters
     </p>
     #+END_HTML
-
+    -----
+    Python rightfully prides itself as a relatively straightforward language without a
+    lot of "magic" hiding in its workings and features. Sometimes, however, to make
+    interesting abstractions possible, one can dig deep in Python's more dusty and obscure
+    corners to find language constructs that are a bit more magical than usual.
+    Metaclasses are one such feature.
+    #+BEGIN_HTML
+    <p align="right">
+    <a href="http://eli.thegreenplace.net/2011/08/14/python-metaclasses-by-example/">
+    Eli Bendersky</a>
+    </p>
+    #+END_HTML
+    -----
     A metaclass is most commonly used as a class-factory.
   #+END_QUOTE
 
-* Samples
+* Classes are obects too
+
+* The class of a class
+
+* Metaclass
+
+* Metaclass's __new__ and __init__
+
+* Metaclass's __call__
+
+* Examples
 
 ** Trivial
+
+*** string.Template
 
 ** Sophisticated
 
