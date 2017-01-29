@@ -1619,7 +1619,25 @@ tags: [coding, algorithms]
    stripUrlParams('www.codewars.com', ['b']) // returns 'www.codewars.com'
    #+END_QUOTE
 ** Solution
+   - Split into header and arguments
+   - Split arguments into key=value pairs
+   - Iterate each pair
    #+BEGIN_SRC python :results output
      def strip_url_params(url, params_to_strip = []):
-         pass
+         try:
+             header, tail = url.split('?')
+         except ValueError:
+             return url
+         arguments = tail.split('&')
+         result_arguments = []
+         keys = []
+         for i in arguments:
+             key, value = i.split('=')
+             if key not in keys and key not in params_to_strip:
+                 keys.append(key)
+                 result_arguments.append(i)
+             else:
+                 continue
+         return header + '?' + '&'.join(result_arguments)
+
    #+END_SRC
