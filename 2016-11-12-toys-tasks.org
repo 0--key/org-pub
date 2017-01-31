@@ -1673,3 +1673,32 @@ tags: [coding, algorithms]
    result = solution("apples, pears # and bananas\ngrapes\nbananas !apples", ["#", "!"])
    # result should == "apples, pears\ngrapes\nbananas"
    #+END_QUOTE
+** Solution
+   #+BEGIN_SRC python :results output
+     def find_true_marker(s, markers):
+         for i in markers:
+             new_marker = s.find(i)
+             if new_marker > -1 and new_marker < marker:
+                 marker = new_marker
+         return '#'
+
+     def solution(txt, markers):
+         try:
+             strings = txt.split('\n')
+         except:  # one string only
+             strings = [] + [txt]
+         # result = []
+         # for i in strings:
+         #     stop_points = []
+         #     for j in markers:
+         #         try:
+         #             point = i.find(j)
+         #             pass 
+            
+        
+
+
+     assert(find_true_marker('Abcd@#, !, $', ['!', '$', '#']) == '#')
+     # assert(solution("apples, pears # and bananas\ngrapes\nbananas !apples", ["#", "!"]) == "apples, pears\ngrapes\nbananas")
+     # assert(solution("a #b\nc\nd $e f g", ["#", "$"]) == "a\nc\nd")
+   #+END_SRC
