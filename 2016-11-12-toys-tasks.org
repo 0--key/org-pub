@@ -1737,13 +1737,32 @@ tags: [coding, algorithms]
    #+END_QUOTE
 ** Solution
    #+BEGIN_SRC python :results output
+     def convert_value(n):
+         """
+         from 0 to 255
+         """
+         if n < 0:
+             return '00'
+         elif n > 255:
+             return 'FF'
+         else:
+             result = hex(n)[2:].upper()
+             if n > 15:
+                 return result
+             else:
+                 return '0' + result
+
      def rgb(r, g, b):
+         norm_rgb = map(convert_value, [r, g, b])
          #your code here :)
+         return ''.join(norm_rgb)
 
-
-     # assert(rgb(0,0,0) == "000000")
-     # assert(rgb(1,2,3) == "010203")
-     # assert(rgb(255,255,255) == "FFFFFF")
-     # assert(rgb(254,253,252) == "FEFDFC")
-     # assert(rgb(-20,275,125) == "00FF7D")
+     assert(convert_value(-1) == '00')
+     assert(convert_value(255) == 'FF')
+     assert(convert_value(300) == 'FF')
+     assert(rgb(0,0,0) == "000000")
+     assert(rgb(1,2,3) == "010203")
+     assert(rgb(255,255,255) == "FFFFFF")
+     assert(rgb(254,253,252) == "FEFDFC")
+     assert(rgb(-20,275,125) == "00FF7D")
    #+END_SRC
