@@ -41,13 +41,41 @@ tags: [metaclass, gist, oop]
   #+END_QUOTE
 
 * Classes are obects too
+  And it is possible to generate them on the fly:
+  #+BEGIN_SRC python :results silent :session meta :exports both
+    def make_sample_class(**kw):
+        return type('DemoClass', (object,), dict(**kw))
+  #+END_SRC
+
+  Built-in function =type= produce a ~DemoClass~ blueprint. Lets
+  compose the class itself:
+
+  #+BEGIN_SRC python :results output :session meta :exports both
+    sample_class = make_sample_class(a=1, b=2)
+    print(type(sample_class))
+    #+END_SRC
+
+  #+RESULTS:
+  : 
+  : <class 'type'>
+
+  And now it is time to generate a particular instance:
+  
+  #+BEGIN_SRC python :results output :session meta :exports both
+    instance = sample_class()
+    print(type(instance))
+    print("This is an instance's properties a: %s and b: %s " % 
+          (instance.a, instance.b))
+  #+END_SRC
+
+  #+RESULTS:
+  : 
+  : <class '__main__.DemoClass'>
+  : ... This is an instance's properties a: 1 and b: 2
 
 * The class of a class
-
 * Metaclass
-
 * Metaclass's __new__ and __init__
-
 * Metaclass's __call__
 
 * Examples
