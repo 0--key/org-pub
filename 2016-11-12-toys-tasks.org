@@ -1888,3 +1888,13 @@ tags: [coding, algorithms]
    Note that brackets may be round, square or curly and can also be nested.
    Index after the braces is optional.
    #+END_QUOTE
+** Solution
+   #+BEGIN_SRC python :results output
+     def parse_molecule (formula):
+         pass
+
+
+     assert(parse_molecule("H2O") == {'H': 2, 'O' : 1})
+     assert(parse_molecule("Mg(OH)2") == {'Mg': 1, 'O' : 2, 'H': 2})
+     assert(parse_molecule("K4[ON(SO3)2]2") == {'K': 4,  'O': 14,  'N': 2,  'S': 4})
+   #+END_SRC
