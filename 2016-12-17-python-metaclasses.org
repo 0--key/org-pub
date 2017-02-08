@@ -1,4 +1,4 @@
-#+BEGIN_HTML
+#+BEGIN_EXPORT html
 ---
 layout: post
 title: Python metaclass
@@ -7,7 +7,8 @@ permalink: /python/metaclass.html
 categories: [literate programming, Python, object-oriented-programming, emacs]
 tags: [metaclass, gist, oop]
 ---
-#+END_HTML
+#+END_EXPORT
+
 #+STARTUP: showall
 #+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
 #+TOC: headlines 2
@@ -19,30 +20,30 @@ tags: [metaclass, gist, oop]
     If you wonder whether you need them, you don't (the people who actually
     need them know with certainty that they need them, and don't need an
     explanation about why).
-    #+BEGIN_HTML
+    #+BEGIN_EXPORT html
     <p align="right">
     Python Guru Tim Peters
     </p>
-    #+END_HTML
+    #+END_EXPORT
     -----
     Python rightfully prides itself as a relatively straightforward language without a
     lot of "magic" hiding in its workings and features. Sometimes, however, to make
     interesting abstractions possible, one can dig deep in Python's more dusty and obscure
     corners to find language constructs that are a bit more magical than usual.
     Metaclasses are one such feature.
-    #+BEGIN_HTML
+    #+BEGIN_EXPORT html
     <p align="right">
     <a href="http://eli.thegreenplace.net/2011/08/14/python-metaclasses-by-example/">
     Eli Bendersky</a>
     </p>
-    #+END_HTML
+    #+END_EXPORT
     -----
     A metaclass is most commonly used as a class-factory.
   #+END_QUOTE
 
 * Classes are obects too
   And it is possible to generate them on the fly:
-  #+BEGIN_SRC python :results silent :session meta :exports both
+  #+BEGIN_SRC python :results silent :session meta
     def make_sample_class(**kw):
         return type('DemoClass', (object,), dict(**kw))
   #+END_SRC
@@ -74,7 +75,66 @@ tags: [metaclass, gist, oop]
   : ... This is an instance's properties a: 1 and b: 2
 
 * The class of a class
+  #+BEGIN_QUOTE
+  Every object (including built-ins) in Python has a class. We've
+  just seen that classes are objects too, so classes must also have a
+  class, right? Exactly. Python lets us examine the class of an
+  object with the __class__ attribute. Let's see this in action:
+    #+BEGIN_EXPORT html
+    <p align="right">
+    <a href="http://eli.thegreenplace.net/2011/08/14/python-metaclasses-by-example/">
+    Eli Bendersky</a>
+    </p>
+    #+END_EXPORT
+  #+END_QUOTE
+  #+BEGIN_SRC python :results output :session meta :exports both
+  class SampleClass(object): pass
+  
+  sample_object = SampleClass()
+  sample_object.__class__
+  SampleClass.__class__
+  #+END_SRC
+
+  #+RESULTS:
+  : 
+  : >>> >>> <class '__main__.SampleClass'>
+  : <class 'type'>
+  
 * Metaclass
+  #+BEGIN_QUOTE
+  A metaclass is defined as "the class of a class". Any class whose
+  instances are themselves classes, is a metaclass. So, according to
+  what we've seen above, this makes =type= a metaclass - in fact, the
+  most commonly used metaclass in Python, since it's the default
+  metaclass of all classes.
+    #+BEGIN_EXPORT html
+    <p align="right">
+    <a href="http://eli.thegreenplace.net/2011/08/14/python-metaclasses-by-example/">
+    Eli Bendersky</a>
+    </p>
+    #+END_EXPORT
+  #+END_QUOTE
+  #+BEGIN_SRC python :results output :pp :session meta :exports both
+    class Meta(object):
+        meta_variable = 'zero'
+
+    class ExtClass(object):
+        __metaclass__ = Meta
+        ext_variable = 'infinity'
+
+
+    print(ExtClass.__metaclass__)
+    dumb_objext = ExtClass()
+    print(dumb_objext.ext_variable)
+    print(dumb_objext.__metaclass__.meta_variable)
+  #+END_SRC
+
+  #+RESULTS:
+  : 
+  : ... >>> ... ... ... >>> >>> <class '__main__.Meta'>
+  : >>> infinity
+  : zero
+
 * Metaclass's __new__ and __init__
 * Metaclass's __call__
 
