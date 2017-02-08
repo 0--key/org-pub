@@ -1,4 +1,4 @@
-#+BEGIN_HTML
+#+BEGIN_EXPORT html
 ---
 layout: post
 title: Write Python programs
@@ -7,7 +7,7 @@ permalink: /coding/codewars-toy-tasks.html
 categories: [literate programming, Python, CodeWars, emacs]
 tags: [coding, algorithms]
 ---
-#+END_HTML
+#+END_EXPORT
 #+STARTUP: showall
 #+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
 #+TOC: headlines 2
