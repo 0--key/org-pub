@@ -32,7 +32,7 @@ tags: [coding, algorithms]
 
     input_string = 'John the dully boy write this book'
 
-    print getCount(input_string)
+    print(getCount(input_string))
     assert(getCount(input_string) == 9)
 
   #+END_SRC
