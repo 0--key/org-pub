@@ -54,7 +54,13 @@ tags: [color, theme, init, default.el]
 * Conclusion
   Now you should get a much pretty and clear view for your source code.
   Hope it would be something like this:
-      #+CAPTION: emacs desktop in colors
-      #+ATTR_HTML: :alt Emacs sample desktop:title Color matters :align center
-      [[http://0--key.github.io/assets/img/emacs_colorful.png]]
-  
+
+** Magit in color
+       #+CAPTION: Emacs frame with Magit buffer in colors
+       #+ATTR_HTML: :alt Emacs frame :title Color matters :align center
+       [[http://0--key.github.io/assets/img/emacs_colorful.png]]
+
+** Python in color
+       #+CAPTION: Python and Elpy inside Emacs in lucid colors
+       #+ATTR_HTML: :alt Emacs frame :title Color matters :align center
+       [[http://0--key.github.io/assets/img/python_in_colors.png]]
