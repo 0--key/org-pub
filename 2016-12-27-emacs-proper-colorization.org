@@ -1,0 +1,60 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: Emacs is beautiful
+tagline: " and colorful"
+permalink: /emacs/color-theme.html
+categories: [emacs, color-theme]
+tags: [color, theme, init, default.el]
+---
+#+END_EXPORT
+
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+* Preamble
+  No need to argue about meaning colors. It is, and lets try to use
+  this feature by adjusting and revival Emacs' desktop view.
+
+  A plethora of arbitrary colorization plugins already exists and
+  =color-theme= is one an old-school and large library of colorization
+  solutions.
+
+* Solution
+
+** Installation
+   As trivial as it ever possible for Emacs package.
+
+** Customizing
+   It is possible to do this by extending the =init.el= file, /but/
+   it cause the color corruption in result. Hence I [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Init-File.html][would suggest]] to
+   create =default.el= and put it somewhere in the =load-path=
+
+   I'm allocate it at =/usr/local/share/emacs/site-lisp=:
+   #+BEGIN_SRC elisp
+     ;; all customization processed after init.el are there
+     ;; colorization
+     (require 'color-theme)
+     (eval-after-load "color-theme"
+       '(progn
+          (color-theme-initialize)
+          (color-theme-lawrence)
+          (color-theme-euphoria)))
+
+     (global-set-key (kbd "C-c 1") 'color-theme-clarity)
+     (global-set-key (kbd "C-c 2") 'color-theme-ld-dark)
+     (global-set-key (kbd "C-c 3") 'color-theme-hober)
+     (global-set-key (kbd "C-c 4") 'color-theme-oswald)
+     (global-set-key (kbd "C-c 5") 'color-theme-tty-dark)
+     (global-set-key (kbd "C-c 6") 'color-theme-taming-mr-arneson)
+     (global-set-key (kbd "C-c 7") 'color-theme-euphoria)
+     (global-set-key (kbd "C-c 8") 'color-theme-lawrence)
+   #+END_SRC
+
+* Conclusion
+  Now you should get a much pretty and clear view for your source code.
+  Hope it would be something like this:
+      #+CAPTION: emacs desktop in colors
+      #+ATTR_HTML: :alt Emacs sample desktop:title Color matters :align center
+      [[http://0--key.github.io/assets/img/emacs_colorful.png]]
+  
