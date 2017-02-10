@@ -1,11 +1,11 @@
 #+BEGIN_EXPORT html
 ---
 layout: post
-title: Write Python programs
-tagline: " by means of Emacs' toolbox"
-permalink: /coding/codewars-toy-tasks.html
-categories: [literate programming, Python, CodeWars, emacs]
-tags: [coding, algorithms]
+title: Cover Python programs
+tagline: " by soft&curly tests"
+permalink: /tdd/test-coverage.html
+categories: [literate programming, Python, coverage]
+tags: [TDD, testing]
 ---
 #+END_EXPORT
 #+STARTUP: showall
