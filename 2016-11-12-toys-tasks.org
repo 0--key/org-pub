@@ -1925,3 +1925,14 @@ tags: [coding, algorithms]
    next_bigger(111)==-1
    next_bigger(531)==-1
    #+END_QUOTE
+** Solution
+   #+BEGIN_SRC python :results output :exports both
+     def next_bigger(n):
+         pass
+
+     assert(next_bigger(12) == 21)
+     assert(next_bigger(513) == 531)
+     assert(next_bigger(2017) == 2071)
+     assert(next_bigger(414) == 441)
+     assert(next_bigger(144) == 414)
+   #+END_SRC
