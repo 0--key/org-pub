@@ -144,4 +144,4 @@ def convertFracts(lst):
         lst[i][1] = min_denom
     return lst
 
-print(convertFracts([ [1, 2], [1, 3], [1, 4] ]))
+print(convertFracts([[1, 2], [1, 3], [1, 4]]))

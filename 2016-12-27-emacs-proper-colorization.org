@@ -63,4 +63,4 @@ tags: [color, theme, init, default.el]
 ** Python in color
        #+CAPTION: Python and Elpy inside Emacs in lucid colors
        #+ATTR_HTML: :alt Emacs frame :title Color matters :align center
-       [[http://0--key.github.io/assets/img/python_in_colors.png]]
+       [[http://0--key.github.io/assets/img/python_in_color.png]]
