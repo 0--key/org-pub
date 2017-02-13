@@ -1927,15 +1927,31 @@ tags: [coding, algorithms]
    #+END_QUOTE
 ** Solution
    #+BEGIN_SRC python :results output :exports both
+     def regr(digits):
+         greatest = digits[0]
+         for i in digits[1:]:
+             if i > greatest:
+                 return True
+         return False
+
+     assert(regr([5, 3, 1]) == False)
+     assert(regr([1, 1, 1]) == False)
+     assert(regr([5, 3, 7, 1]) == True)
+     assert(regr([5, 3, 1, 2]) == True)  # !!!
+
      def argument_valid(num):
          if num > 11:
              digits = [int(i) for i in str(num)]
              if len(set(digits)) == 1:
                  return False
-             else:
+             elif regr(digits):
                  return True
          else:
-             return False 
+             return False
+         return False
+
+     assert(argument_valid(5371))
+     #assert(argument_valid(5312))
 
      def next_bigger(n):
          if argument_valid(n):
