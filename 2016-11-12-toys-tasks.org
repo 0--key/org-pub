@@ -11,6 +11,7 @@ tags: [coding, algorithms]
 #+STARTUP: showall
 #+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
 #+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both
 
 * #1 Vowels counter
   #+BEGIN_QUOTE

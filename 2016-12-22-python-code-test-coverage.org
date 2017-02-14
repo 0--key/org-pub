@@ -11,6 +11,7 @@ tags: [TDD, testing]
 #+STARTUP: showall
 #+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
 #+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both
 
 * Theory
 
@@ -90,17 +91,14 @@ tags: [TDD, testing]
 * Code coverage
 
 ** installation
-   #+BEGIN_SRC sh :results output
+   #+BEGIN_SRC sh
    pip install coverage
    pip freeze | grep coverage
    # pip install --upgrade pip
    #+END_SRC
 
    #+RESULTS:
-   : Collecting coverage
-   :   Downloading coverage-4.3.4-cp34-cp34m-manylinux1_i686.whl (189kB)
-   : Installing collected packages: coverage
-   : Successfully installed coverage-4.3.4
+   : Requirement already satisfied: coverage in /usr/local/share/DVCS/lib/Python/venv/lib/python3.4/site-packages
    : coverage==4.3.4
 
 ** Test launch
