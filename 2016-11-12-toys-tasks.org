@@ -1927,18 +1927,22 @@ tags: [coding, algorithms]
    next_bigger(531)==-1
    #+END_QUOTE
 ** Solution
-   #+BEGIN_SRC python :results output :exports both
+   #+BEGIN_SRC python
      def regr(digits):
-         greatest = digits[0]
+         previous = digits[0]
          for i in digits[1:]:
-             if i > greatest:
+             if i > previous:
                  return True
+             else:
+                 previous = i
          return False
 
      assert(regr([5, 3, 1]) == False)
      assert(regr([1, 1, 1]) == False)
      assert(regr([5, 3, 7, 1]) == True)
-     assert(regr([5, 3, 1, 2]) == True)  # !!!
+     assert(regr([5, 3, 1, 2]) == True)
+     assert(regr([9, 7, 5, 4, 6]) == True)
+     assert(regr([9, 7, 4, 5, 6]) == True)
 
      def argument_valid(num):
          if num > 11:
