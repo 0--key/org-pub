@@ -2028,3 +2028,24 @@ tags: [coding, algorithms]
    You should only ever output 0, 1, or 2.
    #+END_QUOTE
 
+** Solution
+   #+BEGIN_SRC python
+     def is_interesting(number, awesome_phrases):
+         pass
+
+     test.describe("Basic inputs")
+     test.it("should work, dangit!")
+     tests = [
+             {'n': 3, 'interesting': [1337, 256], 'expected': 0},
+             {'n': 1336, 'interesting': [1337, 256], 'expected': 1},
+             {'n': 1337, 'interesting': [1337, 256], 'expected': 2},
+             {'n': 11208, 'interesting': [1337, 256], 'expected': 0},
+             {'n': 11209, 'interesting': [1337, 256], 'expected': 1},
+             {'n': 11211, 'interesting': [1337, 256], 'expected': 2},
+     ]
+     for t in tests:
+             test.assert_equals(is_interesting(t['n'], t['interesting']), t['expected'])
+   #+END_SRC
+
+   #+RESULTS:
+   : HI there
