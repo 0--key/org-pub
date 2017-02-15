@@ -1,0 +1,79 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: Python's
+tagline: " warning control"
+permalink: /python/warnings.html
+categories: [literate programming, Python, warnings]
+tags: [python3, warnings]
+---
+#+END_EXPORT
+
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :session warn
+* Definition
+  #+BEGIN_QUOTE
+  Warning messages are typically issued in situations where it is
+  useful to alert the user of some condition in a program, where that
+  condition (normally) doesn’t warrant raising an exception and
+  terminating the program. For example, one might want to issue a
+  warning when a program uses an obsolete module.
+
+  The warnings module was introduced in [[https://www.python.org/dev/peps/pep-0230/][PEP 230]] as a way to warn
+  programmers about changes in language or library features in
+  anticipation of backwards incompatible changes coming with Python
+  3.0. Since warnings are not fatal, a program may encounter the same
+  warn-able situation many times in the course of running. The
+  warnings module suppresses repeated warnings from the same source to
+  cut down on the annoyance of seeing the same message over and over.
+  You can control the messages printed on a case-by-case basis using
+  the -W option to the interpreter or by calling functions found in
+  warnings from your code.
+  #+END_QUOTE
+
+  #+BEGIN_QUOTE
+  Warning messages are normally written to sys.stderr, but their
+  disposition can be changed flexibly, from ignoring all warnings to
+  turning them into exceptions.
+  #+END_QUOTE
+
+* Categories and Filtering 
+* Generating Warnings
+** Silent warnings by default
+   Normally warnings are printed to =sys.stderr= only once thus they are
+   invisible in Babel output at the second evaluation:
+   #+BEGIN_SRC python
+     import warnings
+
+     print('Before the warning')
+     warnings.warn('This is a warning message')
+     warnings.warn('This is another message')
+     print('After the warning')
+   #+END_SRC
+
+   #+RESULTS:
+   : 
+   : >>> Before the warning
+   : >>> >>> After the warning
+
+
+** Warnings aloud
+   #+BEGIN_SRC python
+     import sys
+     from io import StringIO
+
+     # out = StringIO()
+     # with sys.stdout as out:
+         
+     #     print('Before the warning')
+     #     warnings.warn('This is a warning message')
+     #     print('After the warning')
+   #+END_SRC
+
+* Filtering with Patterns 
+* Repeated Warnings 
+* Alternate Message Delivery Functions 
+* Formatting 
+* Stack Level in Warnings 
