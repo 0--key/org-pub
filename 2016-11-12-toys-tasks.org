@@ -1186,16 +1186,25 @@ tags: [coding, algorithms]
              parentheses = extract_parentheses(string)
              if parentheses and len(parentheses) % 2 == 0:
                  for i in parentheses:
+                     print(opening, closing)
                      if not pair(i):
                          opening.append(i)
                          print("this is an opening sequence: ", opening)
                      else:
-                         if opening[-1] == i:
-                             # annihilate them both
-                             opening.pop()
-                         else:
-                             print("The closing parentheses mismatch")
+                         try:
+                             opening[-1]
+                         except IndexError:
                              return False
+                         if opening[-1] == pair(i):
+                             # annihilate them both
+                             try:
+                                 opening.pop()
+                             except IndexError:
+                                 return False
+                         else:
+                             # print("The closing parentheses mismatch")
+                             # return False
+                             closing.append(i)
                  if opening == [] and closing == []:
                      return True
                  else:
@@ -1204,8 +1213,8 @@ tags: [coding, algorithms]
              else:
                  return False
 
-     print(valid_parentheses("hi())("))
-     assert(extract_parentheses(")test") == [')'])
+     # print(valid_parentheses("hi())("))
+     # assert(extract_parentheses(")test") == [')'])
      assert(pair(')') == '(')
      assert(valid_parentheses("  (") == False)
      assert(valid_parentheses(")test") == False)
