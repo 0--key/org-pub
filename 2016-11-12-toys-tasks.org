@@ -1344,7 +1344,7 @@ tags: [coding, algorithms]
      # test.assert_equals(cakes(recipe, available), 0, 'Wrong result for example #2')
      assert(cakes(recipe, available) == 0)
    #+END_SRC
-* # Decode the Morse code
+* #15 Decode the Morse code
 ** Description
    #+BEGIN_QUOTE
    In this kata you have to write a simple Morse code decoder. While
@@ -1417,7 +1417,7 @@ tags: [coding, algorithms]
      def decodeMorse(morseCode):
          return ' '.join(''.join(MORSE_CODE[letter] for letter in word.split(' ')) for word in morseCode.strip().split('   '))
    #+END_SRC
-* Next bigger number with the same digits
+* #16 Next bigger number with the same digits
 ** Description
    #+BEGIN_QUOTE
    You have to create a function that takes a positive integer number
@@ -1443,7 +1443,7 @@ tags: [coding, algorithms]
      Test.assert_equals(next_bigger(414),441)
      Test.assert_equals(next_bigger(144),414)
    #+END_SRC
-* Simple fraction to mixed number converter
+* #17 Simple fraction to mixed number converter
 ** Description
    #+BEGIN_QUOTE
    Given a string representing a simple fraction x/y, your function must return a string
@@ -1567,7 +1567,7 @@ tags: [coding, algorithms]
    #+END_SRC
 
    #+RESULTS:
-* Common denominator
+* #18 Common denominator
 ** Description
    #+BEGIN_QUOTE
     You will have a list of rationals in the form
@@ -1632,7 +1632,7 @@ tags: [coding, algorithms]
      assert(gcdl([1, 2, 3]) == 1)
      assert(gcdl([361560, 681200, 45240, 510900]) == 20)
    #+END_SRC
-* Strip Url Params
+* #19 Strip Url Params
 ** Description
    #+BEGIN_QUOTE
    Complete the method so that it does the following:
@@ -1676,7 +1676,7 @@ tags: [coding, algorithms]
    #+END_SRC
 
    #+RESULTS:
-* Strip Comments
+* #20 Strip Comments
 ** Description
    #+BEGIN_QUOTE
    Complete the solution so that it strips all text that follows any of a set of comment
@@ -1748,7 +1748,7 @@ tags: [coding, algorithms]
      # assert(solution("apples, pears # and bananas\ngrapes\nbananas !apples", ["#", "!"]) == "apples, pears\ngrapes\nbananas")
      # assert(solution("a #b\nc\nd $e f g", ["#", "$"]) == "a\nc\nd")
    #+END_SRC
-* RGB To Hex Conversion
+* #21 RGB To Hex Conversion
 ** Description
    #+BEGIN_QUOTE
    The rgb() method is incomplete. Complete the method so that passing in RGB
@@ -1794,7 +1794,7 @@ tags: [coding, algorithms]
      assert(rgb(254,253,252) == "FEFDFC")
      assert(rgb(-20,275,125) == "00FF7D")
    #+END_SRC
-* Calculator
+* #22 Calculator
 ** Description
    #+BEGIN_QUOTE
    Create a simple calculator that given a string of operators (+ - * and /)
@@ -1822,7 +1822,7 @@ tags: [coding, algorithms]
    #+END_SRC
 
    #+RESULTS:
-* Twice linear
+* #23 Twice linear
 ** Description
    #+BEGIN_QUOTE
   Consider a sequence u where u is defined as follows:
@@ -1902,7 +1902,7 @@ tags: [coding, algorithms]
 
    #+RESULTS:
    : [1, 3, 4, 5, 7, 7, 10, 9, 13, 11, 16, 13, 19, 15, 22, 17, 25, 19, 28]
-* Molecule to atoms
+* #24 Molecule to atoms
 ** Description
    #+BEGIN_QUOTE
    For a given chemical formula represented by a string, count the number
@@ -1937,7 +1937,7 @@ tags: [coding, algorithms]
      assert(parse_molecule("Mg(OH)2") == {'Mg': 1, 'O' : 2, 'H': 2})
      assert(parse_molecule("K4[ON(SO3)2]2") == {'K': 4,  'O': 14,  'N': 2,  'S': 4})
    #+END_SRC
-* Next bigger number with the same digits
+* #25 Next bigger number with the same digits
 ** Description
    #+BEGIN_QUOTE
    You have to create a function that takes a positive integer number and returns the
@@ -2004,7 +2004,7 @@ tags: [coding, algorithms]
 
    #+RESULTS:
 
-* Catching Car Mileage Numbers
+* #26 Catching Car Mileage Numbers
 
 ** Description
    #+BEGIN_QUOTE
