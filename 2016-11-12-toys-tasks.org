@@ -1225,6 +1225,24 @@ tags: [coding, algorithms]
    #+END_SRC
 
    #+RESULTS:
+   #+begin_example
+   [] []
+   this is an opening sequence:  ['(']
+   ['('] []
+   [] []
+   this is an opening sequence:  ['(']
+   ['('] []
+   [] []
+   this is an opening sequence:  ['(']
+   ['('] []
+   [] []
+   [] []
+   this is an opening sequence:  ['(']
+   ['('] []
+   [] []
+   this is an opening sequence:  ['(']
+   ['('] []
+#+end_example
 
 * #13 Coordinates Validator
   
