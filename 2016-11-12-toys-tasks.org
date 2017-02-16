@@ -2063,12 +2063,29 @@ tags: [coding, algorithms]
    #+BEGIN_SRC python
      def is_interesting(number, awesome_phrases):
          if number > 99:
-             pass
+             for i in awesome_phrases:
+                 if number == i:
+                     return 2
+                 elif number + 1 == i:
+                     return 1
          else:
              return 0
+         return 0
 
+     # >>> False and False
+     # False
+     # >>> False and True
+     # False
+     # >>> False ^ True
+     # True
+     # >>> False ^ False
+     # False
+     # >>> True ^ True
+     # False
 
      assert(is_interesting(3, [1337, 256]) == 0)
+     assert(is_interesting(1336, [1337, 256]) == 1)
+     assert(is_interesting(1337, [1337, 256]) == 2)
      # test.describe("Basic inputs")
      # test.it("should work, dangit!")
      # tests = [
