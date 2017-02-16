@@ -2112,3 +2112,17 @@ tags: [coding, algorithms]
    Following these rules and looking at the example above the earliest time
    for a 60 minutes meeting would be 12:15.
    #+END_QUOTE
+** Solution
+   #+BEGIN_SRC python
+     def get_start_time(schedules, duration):
+         pass
+
+     # Example from description
+     schedules = [
+       [['09:00', '11:30'], ['13:30', '16:00'], ['16:00', '17:30'], ['17:45', '19:00']],
+       [['09:15', '12:00'], ['14:00', '16:30'], ['17:00', '17:30']],
+       [['11:30', '12:15'], ['15:00', '16:30'], ['17:45', '19:00']]
+     ]
+     assert(get_start_time(schedules, 60) == '12:15')
+     assert(get_start_time(schedules, 90) == None)
+   #+END_SRC
