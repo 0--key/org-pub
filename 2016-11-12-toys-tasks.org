@@ -2061,6 +2061,10 @@ tags: [coding, algorithms]
 
 ** Solution
    #+BEGIN_SRC python
+
+     def num_checker(n):
+         conditions = [c1,]
+
      def is_interesting(number, awesome_phrases):
          if number > 99:
              if awesome_phrases:
