@@ -2061,6 +2061,14 @@ tags: [coding, algorithms]
 
 ** Solution
    #+BEGIN_SRC python
+     def zero_check(n):
+         """
+         Any digit followed by all zeros: 100, 90000
+         """
+         if set(str(n)[1:]) == set('0'):
+             return True
+         else:
+             return False
 
      def num_checker(n):
          conditions = [c1,]
@@ -2090,6 +2098,10 @@ tags: [coding, algorithms]
      # >>> True ^ True
      # False
 
+     assert(zero_check(310) == False)
+     assert(zero_check(300) == True)
+     # assert(is_interesting(330, []) == 2)
+     assert(is_interesting(331, []) == 0)
      assert(is_interesting(3, [1337, 256]) == 0)
      assert(is_interesting(1336, [1337, 256]) == 1)
      assert(is_interesting(1337, [1337, 256]) == 2)
@@ -2121,6 +2133,8 @@ tags: [coding, algorithms]
    #+END_SRC
 
    #+RESULTS:
+
+
 * #27 Finding an appointment
 ** Description
    #+BEGIN_QUOTE
