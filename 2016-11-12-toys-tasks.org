@@ -2063,11 +2063,14 @@ tags: [coding, algorithms]
    #+BEGIN_SRC python
      def is_interesting(number, awesome_phrases):
          if number > 99:
-             for i in awesome_phrases:
-                 if number == i:
-                     return 2
-                 elif number + 1 == i:
-                     return 1
+             if awesome_phrases:
+                 for i in awesome_phrases:
+                     if number == i:
+                         return 2
+                     elif number + 1 == i:
+                         return 1
+             # elif num_checker(number):
+             #     return 2
          else:
              return 0
          return 0
