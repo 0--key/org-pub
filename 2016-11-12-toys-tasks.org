@@ -2119,8 +2119,10 @@ tags: [coding, algorithms]
                          return 2
                      elif number + 1 == i:
                          return 1
-             # elif num_checker(number):
-             #     return 2
+             if num_checker(number):
+                 return 2
+             if num_checker(number + 1):
+                 return 1
          else:
              return 0
          return 0
@@ -2137,11 +2139,12 @@ tags: [coding, algorithms]
      assert(single_num_check(1011) == False)
      assert(zero_check(310) == False)
      assert(zero_check(300) == True)
-     # assert(is_interesting(330, []) == 2)
+     assert(is_interesting(330, []) == 0)
      assert(is_interesting(331, []) == 0)
      assert(is_interesting(3, [1337, 256]) == 0)
      assert(is_interesting(1336, [1337, 256]) == 1)
      assert(is_interesting(1337, [1337, 256]) == 2)
+     assert(is_interesting(11211, [1337, 256]) == 2)
      # test.describe("Basic inputs")
      # test.it("should work, dangit!")
      # tests = [
