@@ -2070,8 +2070,13 @@ tags: [coding, algorithms]
          else:
              return False
 
-     def num_checker(n):
-         conditions = [c1,]
+     def single_num_check(n):
+         """
+         Every digit is the same number: 1111
+         """
+         if len(set(str(n))) == 1: return True
+         else: return False
+
 
      def is_interesting(number, awesome_phrases):
          if number > 99:
@@ -2088,6 +2093,8 @@ tags: [coding, algorithms]
          return 0
 
 
+     assert(single_num_check(1111) == True)
+     assert(single_num_check(1011) == False)
      assert(zero_check(310) == False)
      assert(zero_check(300) == True)
      # assert(is_interesting(330, []) == 2)
