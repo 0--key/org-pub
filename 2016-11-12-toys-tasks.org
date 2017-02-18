@@ -2061,6 +2061,13 @@ tags: [coding, algorithms]
 
 ** Solution
    #+BEGIN_SRC python
+     def num_checker(n):
+         check_list = [zero_check, single_num_check, incrementing_seq_check,
+                       decrementing_seq_check, palindrome_check]
+         for f in check_list:
+             if f(n): return True
+         return False
+
      def zero_check(n):
          """
          Any digit followed by all zeros: 100, 90000
@@ -2119,6 +2126,8 @@ tags: [coding, algorithms]
          return 0
 
 
+     assert(num_checker(87654) == True)
+     assert(num_checker(12321) == True)
      assert(palindrome_check(12321) == True)
      assert(decrementing_seq_check(9875) == False)
      assert(decrementing_seq_check(987) == True)
