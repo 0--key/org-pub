@@ -2077,6 +2077,16 @@ tags: [coding, algorithms]
          if len(set(str(n))) == 1: return True
          else: return False
 
+     def incrementing_seq_check(n):
+         """
+         The digits are sequential, incementing†: 1234
+         For incrementing sequences, 0 should come after 9, 
+         and not before 1, as in 7890.
+         """
+         seq = '1234567890'
+         if str(n) in seq: return True
+         else: return False
+
 
      def is_interesting(number, awesome_phrases):
          if number > 99:
@@ -2093,6 +2103,8 @@ tags: [coding, algorithms]
          return 0
 
 
+     assert(incrementing_seq_check(123457) == False)
+     assert(incrementing_seq_check(12345) == True)
      assert(single_num_check(1111) == True)
      assert(single_num_check(1011) == False)
      assert(zero_check(310) == False)
