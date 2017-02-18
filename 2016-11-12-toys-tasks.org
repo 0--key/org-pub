@@ -2087,16 +2087,6 @@ tags: [coding, algorithms]
              return 0
          return 0
 
-     # >>> False and False
-     # False
-     # >>> False and True
-     # False
-     # >>> False ^ True
-     # True
-     # >>> False ^ False
-     # False
-     # >>> True ^ True
-     # False
 
      assert(zero_check(310) == False)
      assert(zero_check(300) == True)
