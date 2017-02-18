@@ -2097,6 +2097,12 @@ tags: [coding, algorithms]
          if str(n) in seq: return True
          else: return False
 
+     def palindrome_check(n):
+         """
+         The digits are a palindrome: 1221 or 73837
+         """
+         if str(n) == str(n)[::-1]: return True
+         else: return False
 
      def is_interesting(number, awesome_phrases):
          if number > 99:
@@ -2113,6 +2119,7 @@ tags: [coding, algorithms]
          return 0
 
 
+     assert(palindrome_check(12321) == True)
      assert(decrementing_seq_check(9875) == False)
      assert(decrementing_seq_check(987) == True)
      assert(incrementing_seq_check(123457) == False)
