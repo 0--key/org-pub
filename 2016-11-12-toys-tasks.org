@@ -2087,6 +2087,16 @@ tags: [coding, algorithms]
          if str(n) in seq: return True
          else: return False
 
+     def decrementing_seq_check(n):
+         """
+         The digits are sequential, decrementing‡: 4321
+         For decrementing sequences, 0 should come after 1, 
+         and not before 9, as in 3210
+         """
+         seq = '9876543210'
+         if str(n) in seq: return True
+         else: return False
+
 
      def is_interesting(number, awesome_phrases):
          if number > 99:
@@ -2103,6 +2113,8 @@ tags: [coding, algorithms]
          return 0
 
 
+     assert(decrementing_seq_check(9875) == False)
+     assert(decrementing_seq_check(987) == True)
      assert(incrementing_seq_check(123457) == False)
      assert(incrementing_seq_check(12345) == True)
      assert(single_num_check(1111) == True)
