@@ -1222,6 +1222,7 @@ tags: [coding, algorithms]
      assert(valid_parentheses("()()") == True)
      assert(valid_parentheses("hi())(") == False)
      assert(valid_parentheses("hi(hi)()") == True)
+     assert(valid_parentheses("[(])") == False)
    #+END_SRC
 
    #+RESULTS:
@@ -1242,6 +1243,13 @@ tags: [coding, algorithms]
    [] []
    this is an opening sequence:  ['(']
    ['('] []
+   [] []
+   this is an opening sequence:  ['[']
+   ['['] []
+   this is an opening sequence:  ['[', '(']
+   ['[', '('] []
+   ['[', '('] [']']
+   Mismatch in parentheses order
 #+end_example
 
 * #13 Coordinates Validator
