@@ -2255,3 +2255,14 @@ tags: [coding, algorithms]
    Performance needs to be considered
    #+END_QUOTE
 
+** Solution
+   #+BEGIN_SRC python
+     def scramble(s1,s2):
+         #your code here
+
+     assert(scramble('rkqodlw','world') == True)
+     assert(scramble('cedewaraaossoqqyt','codewars') == True)
+     assert(scramble('katas','steak') == False)
+     assert(scramble('scriptjava','javascript') == True)
+     assert(scramble('scriptingjava','javascript') == 'True)
+   #+END_SRC
