@@ -2279,3 +2279,17 @@ tags: [coding, algorithms]
    Examples of invalid inputs: 1.2.3 1.2.3.4.5 123.456.78.90 123.045.067.089
    #+END_QUOTE
 
+** Solution
+   #+BEGIN_SRC python
+     def is_valid_IP(strng):
+         return None
+
+     assert(is_valid_IP('12.255.56.1') == True)
+     assert(is_valid_IP('') == False)
+     assert(is_valid_IP('abc.def.ghi.jkl') == False)
+     assert(is_valid_IP('123.456.789.0') == False)
+     assert(is_valid_IP('12.34.56') == False)
+     assert(is_valid_IP('12.34.56 .1') == False)
+     assert(is_valid_IP('12.34.56.-1') == False)
+     assert(is_valid_IP('123.045.067.089') == False)
+   #+END_SRC
