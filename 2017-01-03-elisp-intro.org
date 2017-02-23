@@ -1,0 +1,64 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: Elisp 
+tagline: " is Emacs Lisp"
+permalink: /elisp/introduction.html
+categories: [literate programming, elisp, emacs]
+tags: [tutorial, elisp, intro]
+---
+#+END_EXPORT
+
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results value :exports both
+
+* Primitive
+
+** Ouput test
+   #+BEGIN_SRC elisp
+   (current-buffer)
+   #+END_SRC
+
+   #+RESULTS:
+   : #<buffer 2017-01-03-elisp-intro.org>
+
+** Ariphmetic and notation
+
+*** [[https://en.wikipedia.org/wiki/Polish_notation][Prefix notation]] at glance:
+    #+BEGIN_SRC elisp
+    (- 22 7)
+    #+END_SRC
+
+    #+RESULTS:
+    : 15
+
+*** Chain evaluation by =progn= operator
+    #+BEGIN_SRC elisp
+    (progn (* 3 4) (/ 12 4))
+    #+END_SRC
+
+    #+RESULTS:
+    : 3
+
+*** 
+    #+BEGIN_SRC elisp
+    (+ (+ 3 5) (* 3 3))
+    #+END_SRC
+
+    #+RESULTS:
+    : 17
+
+    Lucidly that spaces delimit operators and operands and the first
+    preceded.
+
+** Boolean
+   #+BEGIN_SRC elisp
+     (and t t t)
+     (or t nil nil)
+   #+END_SRC
+
+   #+RESULTS:
+   : t
+
