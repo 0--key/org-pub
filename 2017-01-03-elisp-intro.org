@@ -34,13 +34,17 @@ tags: [tutorial, elisp, intro]
     #+RESULTS:
     : 15
 
-*** Chain evaluation by =progn= operator
-    #+BEGIN_SRC elisp
-    (progn (* 3 4) (/ 12 4))
+*** String substitution for print
+    #+BEGIN_SRC elisp :results output
+      (progn (print "hi: %d"))
+      ;; (print(progn (/ 12 4)))
+      ;; (format "An atom: ~S~%and a list: ~S~%and an integer: ~D~%"
+      ;;           nil (list 5) 6)
     #+END_SRC
 
     #+RESULTS:
-    : 3
+    : 
+    : "hi: %d"
 
 *** 
     #+BEGIN_SRC elisp
