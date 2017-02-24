@@ -2257,15 +2257,25 @@ tags: [coding, algorithms]
 
 ** Solution
    #+BEGIN_SRC python
-     def scramble(s1,s2):
-         #your code here
+     def scramble(s1, s2):
+         l = list(s1)
+         for i in s2:
+             try:
+                 l.pop(l.index(i))
+             except:
+                 return False
+         else:
+             return True
+
 
      assert(scramble('rkqodlw','world') == True)
      assert(scramble('cedewaraaossoqqyt','codewars') == True)
      assert(scramble('katas','steak') == False)
      assert(scramble('scriptjava','javascript') == True)
-     assert(scramble('scriptingjava','javascript') == 'True)
+     assert(scramble('scriptingjava','javascript') == True)
    #+END_SRC
+
+   #+RESULTS:
 
 * #29 IP Validation
 
