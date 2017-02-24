@@ -1640,7 +1640,7 @@ tags: [coding, algorithms]
      assert(gcdl([1, 2, 3]) == 1)
      assert(gcdl([361560, 681200, 45240, 510900]) == 20)
    #+END_SRC
-* #19 Strip Url Params
+* DONE #19 Strip Url Params
 ** Description
    #+BEGIN_QUOTE
    Complete the method so that it does the following:
@@ -1684,7 +1684,7 @@ tags: [coding, algorithms]
    #+END_SRC
 
    #+RESULTS:
-* #20 Strip Comments
+* DONE #20 Strip Comments
 ** Description
    #+BEGIN_QUOTE
    Complete the solution so that it strips all text that follows any of a set of comment
@@ -1756,7 +1756,7 @@ tags: [coding, algorithms]
      # assert(solution("apples, pears # and bananas\ngrapes\nbananas !apples", ["#", "!"]) == "apples, pears\ngrapes\nbananas")
      # assert(solution("a #b\nc\nd $e f g", ["#", "$"]) == "a\nc\nd")
    #+END_SRC
-* #21 RGB To Hex Conversion
+* DONE #21 RGB To Hex Conversion
 ** Description
    #+BEGIN_QUOTE
    The rgb() method is incomplete. Complete the method so that passing in RGB
@@ -1802,7 +1802,7 @@ tags: [coding, algorithms]
      assert(rgb(254,253,252) == "FEFDFC")
      assert(rgb(-20,275,125) == "00FF7D")
    #+END_SRC
-* #22 Calculator
+* DONE #22 Calculator
 ** Description
    #+BEGIN_QUOTE
    Create a simple calculator that given a string of operators (+ - * and /)
@@ -1945,7 +1945,7 @@ tags: [coding, algorithms]
      assert(parse_molecule("Mg(OH)2") == {'Mg': 1, 'O' : 2, 'H': 2})
      assert(parse_molecule("K4[ON(SO3)2]2") == {'K': 4,  'O': 14,  'N': 2,  'S': 4})
    #+END_SRC
-* #25 Next bigger number with the same digits
+* TODO #25 Next bigger number with the same digits
 ** Description
    #+BEGIN_QUOTE
    You have to create a function that takes a positive integer number and returns the
