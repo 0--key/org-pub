@@ -1994,14 +1994,22 @@ tags: [coding, algorithms]
      assert(argument_valid(5312))
      assert(argument_valid(5661))
 
-     def rev_str_from_number(n):
-         return str(n)[::-1]
+     def palindrome(n):
+         return int(str(n)[::-1])
 
-     assert(rev_str_from_number(321) == '123')
+     assert(palindrome(321) == 123)
 
      def next_bigger(n):
          if argument_valid(n):
-             return 1
+             """
+             swap on the edge
+             """
+             N = str(palindrome(n))
+             k = int(N[0])
+             for i in N[1:]:
+                 if k > int(i):
+                     # detect the peak
+                     return (k, int(i))
          else:
              return -1
 
