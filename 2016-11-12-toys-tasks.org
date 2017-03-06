@@ -1837,7 +1837,7 @@ tags: [coding, algorithms]
    #+END_SRC
 
    #+RESULTS:
-* #23 Twice linear
+* TODO #23 Twice linear
 ** Description
    #+BEGIN_QUOTE
   Consider a sequence u where u is defined as follows:
@@ -1917,7 +1917,7 @@ tags: [coding, algorithms]
 
    #+RESULTS:
    : [1, 3, 4, 5, 7, 7, 10, 9, 13, 11, 16, 13, 19, 15, 22, 17, 25, 19, 28]
-* #24 Molecule to atoms
+* TODO #24 Molecule to atoms
 ** Description
    #+BEGIN_QUOTE
    For a given chemical formula represented by a string, count the number
@@ -2034,7 +2034,7 @@ tags: [coding, algorithms]
 
    #+RESULTS:
 
-* #26 Catching Car Mileage Numbers
+* DONE #26 Catching Car Mileage Numbers
 
 ** Description
    #+BEGIN_QUOTE
@@ -2204,7 +2204,7 @@ tags: [coding, algorithms]
 
    #+RESULTS:
 
-* #27 Finding an appointment
+* TODO #27 Finding an appointment
 ** Description
    #+BEGIN_QUOTE
    The businesspeople among you will know that it's often not easy to find
@@ -2251,7 +2251,7 @@ tags: [coding, algorithms]
      assert(get_start_time(schedules, 90) == None)
    #+END_SRC
 
-* #28 Scramblies
+* DONE #28 Scramblies
 
 ** Description
    #+BEGIN_QUOTE
@@ -2290,7 +2290,7 @@ tags: [coding, algorithms]
 
    #+RESULTS:
 
-* #29 IP Validation
+* TODO #29 IP Validation
 
 ** Description
    #+BEGIN_QUOTE
