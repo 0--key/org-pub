@@ -14,4 +14,4 @@ tags: [OOP, design, patterns]
 #+TOC: headlines 2
 #+PROPERTY:header-args :results output :exports both
 
-#+INCLUDE: "/usr/local/share/DVCS/python-patterns/pydepatt/patterns/README.org"
+#+INCLUDE: "../python-patterns/pydepatt/patterns/README.org"
