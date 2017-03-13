@@ -1,0 +1,17 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: Python3 OOP design
+tagline: " patterns overview"
+permalink: /python3/design/patterns/creational/factory.html
+categories: [literate programming, emacs, Python3]
+tags: [OOP, design, patterns, creational, factory]
+---
+#+END_EXPORT
+
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both
+
+#+INCLUDE: "../python-patterns/pydepatt/patterns/creational/factory/README.org"
