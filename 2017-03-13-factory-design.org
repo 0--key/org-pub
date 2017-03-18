@@ -14,8 +14,7 @@ tags: [OOP, design, patterns, creational, factory]
 #+TOC: headlines 2
 #+PROPERTY:header-args :results output :exports both
 
-* Pattern overview
-  Hope [[https://github.com/0--key/pydepatt/tree/master/patterns/creational/factory][this page]] could elucidate the same issue in a bit different
-  manner.
+Hope [[https://github.com/0--key/pydepatt/tree/master/patterns/creational/factory][this page]] could elucidate the same issue in a bit different
+manner.
 
 #+INCLUDE: "../python-patterns/pydepatt/patterns/creational/factory/README.org" :lines "12-"
