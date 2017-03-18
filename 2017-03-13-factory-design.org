@@ -1,8 +1,8 @@
 #+BEGIN_EXPORT html
 ---
 layout: post
-title: Python3 OOP design
-tagline: " patterns overview"
+title: Factory design
+tagline: " pattern in Python3"
 permalink: /python3/design/patterns/creational/factory.html
 categories: [literate programming, emacs, Python3]
 tags: [OOP, design, patterns, creational, factory]
