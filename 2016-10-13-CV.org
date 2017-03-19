@@ -1,4 +1,4 @@
-#+BEGIN_HTML
+#+BEGIN_EXPORT html
 ---
 layout: post
 title: Anton S. Kosinov
@@ -7,7 +7,8 @@ permalink: /cv.html
 categories: [info, about me]
 tags: [CV, Emacs, Python, Literate Programming]
 ---
-#+END_HTML
+#+END_EXPORT
+
 #+STARTUP: showall
 #+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
 
