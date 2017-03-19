@@ -11,7 +11,41 @@ tags: [CV, Emacs, Python, Literate Programming]
 
 #+STARTUP: showall
 #+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
 
+
+* Dense and terse overview
+  #+BEGIN_SRC python
+    class Engineer():
+        """General problem solver"""
+
+        def review_challenge(self, issue):
+            """Take a close look on the challenge"""
+            return corollary
+
+        def divide_and_conquer(self, corollary):
+            """Split entire challenge into a list of 
+            relatively simple tasks"""
+            return challenge_decomposed
+
+        def resolve_challenge(self, challenge_decomposed):
+            """ """
+            return solution
+
+    class SoftwareEngineer(Engineer):
+        """
+        Software-specific problem-solver
+        Inherits all general-purpose engineer's
+        functions and has the specific ones:
+        """
+
+        def guess_algorithm(self, issue):
+            return pertinent_algorithm
+
+        def complexity_control(self, software):
+            pass
+
+  #+END_SRC
 * Preamble
 
 ** Who am I
