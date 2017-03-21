@@ -40,6 +40,41 @@ tags: [metaclass, gist, oop]
     #+END_EXPORT
     -----
     A metaclass is most commonly used as a class-factory.
+    -----
+    *What Is a Metaclass?*
+
+    Metaclasses do not mean “deep, dark black magic”. When you execute any
+    class statement, Python performs the following steps:
+
+    - Remember the class name as a string, say n , and the class bases
+      as a tuple, say b
+    - Execute the body of the class, recording all names that the
+      body binds as keys in a new dictionary d , each with its associated
+      value (e.g., each statement such as def f(self) just sets d['f'] to
+      the function object the def statement builds).
+    - Determine the appropriate metaclass, say M , by inheritance or by
+      looking for name
+    =__metaclass__= in d and in the globals: if '__metaclass__' in d: M =
+    d['__metaclass__'] elif b: M = type(b[0]) elif '__metaclass__' in
+    globals( ): M = globals( )['__metaclass__'] else: M = types.ClassType
+    types.ClassType is the metaclass of old-style classes, so this code
+    implies that a class without bases is old style if the name
+    '__metaclass__' is not set in the class body nor among the global
+    variables of the current module. 4. Call M(n, b, d) and record the
+    result as a variable with name n in whatever scope the class statement
+    executed. So, some metaclass M is always involved in the execution of
+    any class statement. The metaclass is normally type for new-style
+    classes, types.ClassType for old-style classes. You can set it up to
+    use your own custom metaclass (normally a subclass of type ), and that
+    is where you may reasonably feel that things are getting a bit too
+    advanced. How- ever, understanding that a class statement, such as:
+    class Someclass(Somebase): __metaclass__ = type x = 23 is exactly
+    equivalent to the assignment statement: Someclass = type('Someclass',
+    (Somebase,), {'x': 23}) does help a lot in understanding the exact
+    semantics of the class statement.
+
+    http://shop.oreilly.com/product/9780596007973.do
+
   #+END_QUOTE
 
 * Classes are obects too
