@@ -1,0 +1,17 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: Abstract factory
+tagline: " design pattern"
+permalink: /python3/design/patterns/abstract-factory.html
+categories: [literate programming, emacs, Python3]
+tags: [OOP, design, patterns, creational, abstract-factory]
+---
+#+END_EXPORT
+
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both
+
+#+INCLUDE: "../python-patterns/pydepatt/patterns/creational/abstract_factory/README.org"
