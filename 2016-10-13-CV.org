@@ -16,8 +16,31 @@ tags: [CV, Emacs, Python, Literate Programming]
 
 * Dense and terse overview
   #+BEGIN_SRC python
-    class Engineer():
-        """General problem solver"""
+    class Person(object):
+
+        def __init__(self):
+            self.name = "Anton Kosinov"
+            self.birth_date = "1978-02-23"
+            self.father = "nuclear phisicist"
+            self.mother = "chemical engineer"
+            self.ant = "physics teacher"
+            self.grandmother = "Russian literature teacher"
+
+        def schooling(self):
+            self.succeed = "City knowledge championship in physics winner"
+
+    class Engineer(Person):
+        """Technical taks solver"""
+
+        def naval_college(self):
+            self.education =  # not only a self-education, of cause
+            ["area of study" : "nuclear power plants",
+             "specialize on" : "technological processes automation",
+             "achievement" : "English language championship winner"]
+
+        def nuclear_power_plant(self):
+            self.job =  # as an initial experience
+            ["" : "",]
 
         def review_challenge(self, issue):
             """Take a close look on the challenge"""
