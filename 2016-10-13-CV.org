@@ -72,17 +72,17 @@ tags: [CV, Emacs, Python, Literate Programming]
 * Preamble
 
 ** Who am I
-   First of all I'm happy father and husband. I'm like fishing and
-   repair things out from their usual state. In most cases I've
-   succeeded on this. I know how the things work by its autopsy
-   conclusion. There are rules in our Universe and all stuff around us
-   strictly follows these rules. The Gravity, Electricity and Nuclear
-   Reactions are kings and queens in their and our realm
-   simultaneously.
+   First of all I'm happy father and husband. The second one is my
+   innate hyper-curiousity. In most cases I've succeeded on this by my
+   solid patience and immutable humor sense. 
 
-   It's an excellent case for ourselves. We already know:
-    - Natural Law does exist;
-    - Most rules dissected and described.
+   And the third and last about me:
+
+   #+BEGIN_QUOTE
+   There are rules in our Universe and all stuff around us strictly
+   follows these rules. The Gravity, Electricity and Nuclear Reactions
+   are kings and queens in their realm and our world simultaneously.   
+   #+END_QUOTE
    
    *Happy grows in the mind*
 
