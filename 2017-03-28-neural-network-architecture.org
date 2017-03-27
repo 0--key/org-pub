@@ -31,6 +31,10 @@ An overview of the main types of neural network architecture
   or loops in the network.
   #+END_QUOTE
 
+  #+CAPTION: Feed-forward neural network
+  #+ATTR_HTML: :alt Feed-forward neural network :title Feed-forward neural network :align right
+  https://upload.wikimedia.org/wikipedia/en/5/54/Feed_forward_neural_net.gif
+
   These are the commonest type of neural network in practical
   applications.
 
@@ -45,11 +49,6 @@ An overview of the main types of neural network architecture
     function of the activities in the layer below.
   
 
-  #+CAPTION: Feed-forward neural network
-  #+ATTR_HTML: :alt Feed-forward neural network :title Feed-forward neural network :align right
-  https://upload.wikimedia.org/wikipedia/en/5/54/Feed_forward_neural_net.gif
-
-
 * Recurrent networks
   #+BEGIN_QUOTE
   A recurrent neural network (RNN) is a class of artificial neural network
@@ -61,6 +60,10 @@ An overview of the main types of neural network architecture
   recognition or speech recognition.
   #+END_QUOTE
 
+  #+CAPTION: Max-heap
+  #+ATTR_HTML: :alt Max-heap :title Max-heap sample :align right
+  http://cdn.information-management.com/media/newspics/021208_jones_fig2_M.gif
+
   These have directed cycles in their connection graph.
 
   - That means you can sometimes get back to where you started by
@@ -71,11 +74,6 @@ An overview of the main types of neural network architecture
 
   Recurrent nets with multiple hidden layers are just a special case
   that has some of the hidden \to hidden connections missing.
-
-  #+CAPTION: Max-heap
-  #+ATTR_HTML: :alt Max-heap :title Max-heap sample :align right
-  http://cdn.information-management.com/media/newspics/021208_jones_fig2_M.gif
-
 
 * Recurrent neural networks for modeling sequences
   Recurrent neural networks are a very natural way to model sequential
