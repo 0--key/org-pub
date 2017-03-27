@@ -47,7 +47,7 @@ An overview of the main types of neural network architecture
 
   #+CAPTION: Feed-forward neural network
   #+ATTR_HTML: :alt Feed-forward neural network :title Feed-forward neural network :align right
-  https://en.wikipedia.org/wiki/File:Feed_forward_neural_net.gif
+  https://upload.wikimedia.org/wikipedia/en/5/54/Feed_forward_neural_net.gif
 
 
 * Recurrent networks
