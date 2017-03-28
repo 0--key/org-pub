@@ -229,7 +229,7 @@ An overview of the main types of neural network architecture
 ** Weight-space
    #+CAPTION: Weight space
    #+ATTR_HTML: :alt neural network :title Neural network representation :align right
-   #+ATTR_HTML: width="50%" height="50%"
+   #+ATTR_HTML: :width 50% :height 50%
    https://i.stack.imgur.com/nzHSl.jpg
 
    This space has one dimension per weight.
