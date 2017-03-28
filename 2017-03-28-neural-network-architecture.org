@@ -214,67 +214,48 @@ An overview of the main types of neural network architecture
 
 ** Warning!
    For non-mathematicians, this is going to be tougher than the previous
- material.
+   material.
+
    - You may have to spend a long time studying the next two parts.
+
    If you are not used to thinking about hyper-planes in high-dimensional
- spaces, now is the time to learn.
+   spaces, now is the time to learn.
    To deal with hyper-planes in a 14-dimensional space, visualize a 3-D
- space and say “fourteen” to yourself very loudly. Everyone does it.
-   But remember that going from 13-D to 14-D creates as much
- extra complexity as going from 2-D to 3-D.Weight-space
+   space and say “fourteen” to yourself very loudly. Everyone does it.
+
+   - But remember that going from 13-D to 14-D creates as much extra
+     complexity as going from 2-D to 3-D.
+
+** Weight-space
+   #+CAPTION: Weight space
+   #+ATTR_HTML: :alt neural network :title Neural network representation :align right
+   #+ATTR_HTML: width="50%" height="50%"
+   https://i.stack.imgur.com/nzHSl.jpg
+
    This space has one dimension per weight.
+
    A point in the space represents a particular setting of all the weights.
+
    Assuming that we have eliminated the threshold, each training case
- can be represented as a hyperplane through the origin.
+   can be represented as a hyperplane through the origin.
+
    - The weights must lie on one side of this hyper-plane to get the
- answer correct .Weight space
-   Each training case defines a plane
- (shown as a black line)
-   - The plane goes through the origin
- and is perpendicular to the input
- vector.
-   - On one side of the plane the
- output is wrong because the
- scalar product of the weight
- vector with the input vector has
- the wrong sign.
- an input
- vector with
- correct
- answer=1
- good
- weight
- vector
- right side
- wrong sid
- bad
- weight
- vector
- e
- o
- the
- originWeight space
-   Each training case defines a plane
- (shown as a black line)
-   - The plane goes through the origin
- and is perpendicular to the input
- vector.
-   - On one side of the plane the
- output is wrong because the
- scalar product of the weight
- vector with the input vector has
- the wrong sign .
- bad
- weights
- good
- weights
- o
- the
- origin
- an input
- vector with
- correct
- answer=0The cone of feasible solutions
+     answer correct .Weight space
+   Each training case defines a plane (shown as a black line)
+   - The plane goes through the origin and is perpendicular to the
+     input vector.
+   - On one side of the plane the output is wrong because the scalar
+     product of the weight vector with the input vector has the wrong
+     sign.
+
+   Each training case defines a plane (shown as a black line)
+   - The plane goes through the origin and is perpendicular to the
+     input vector.
+   - On one side of the plane the output is wrong because the scalar
+     product of the weight vector with the input vector has the wrong
+     sign
+
+** 0The cone of feasible solutions
    To get all training cases right we need
  to find a point on the right side of all the
  planes.
