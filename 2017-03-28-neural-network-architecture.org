@@ -255,7 +255,7 @@ An overview of the main types of neural network architecture
      product of the weight vector with the input vector has the wrong
      sign
 
-** 0The cone of feasible solutions
+** The cone of feasible solutions
    To get all training cases right we need
  to find a point on the right side of all the
  planes.
