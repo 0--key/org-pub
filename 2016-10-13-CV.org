@@ -48,10 +48,14 @@ tags: [CV, Emacs, Python, Literate Programming]
 
 
 * \gamma Current state
-  Following the concept of /knowledge chain reaction/ I'm in conveying
-  my own skills to my family: my wife and sonny.
+  Following the concept of /knowledge chain reaction/\trade I'm in conveying
+  my own skills to my family: my patient, wise&cute wife and to my
+  astute sonny. 
 
 * \Delta Desired role
+  - A team catalyst, accelerator and propeller. Who next will fall in
+    love with Emacs?
+  - 
 
 
 * Appropriate solution                                             :noexport:
