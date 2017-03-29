@@ -16,14 +16,43 @@ tags: [CV, Emacs, Python, Literate Programming]
 * Img                                                              :noexport:
   #+ATTR_LATEX: :height 5cm :float wrap
   [[./Portrait.jpg]]
+* \alpha Brief introduction
+  #+BEGIN_QUOTE
+  Synergy \to the interaction or cooperation of two or more organizations,
+  substances, or other agents to produce a combined effect greater than
+  the sum of their separate effects
+  #+END_QUOTE
+  I'm an avid knowledge gatherer as soon as I remember myself.
+  Generally speaking the acts speak much louder than words, thus to
+  avoid an idle hand-waving (typing in this case, of cause), the most
+  prominent and distinct properties list:
+  - Coursera certificates:
+    + Learning to Learn
+    + Model Thinking
+    + Introduction in Data Science
+  - My accounts on:
+    - Git
+    - StackOverflow
+    - UpWork
+    - LinkedIn
+  - Org-Jekyll blog
 
-* Brief introduction
-  As soon as acts speak much louder than words:
-  - My Git account;
-  - My blog;
-  - My UpWork account;
+* \beta Skills overview
+  
+** Emacs and a plethora of satellite packages
 
-* Skills
+** Python cooked gently in Emacs:
+   - Built-in functions test suite
+   - Cookbook in a TDD dissection
+   - OOP design patterns
+
+
+* \gamma Current state
+  Following the concept of /knowledge chain reaction/ I'm in conveying
+  my own skills to my family: my wife and sonny.
+
+* \Delta Desired role
+
 
 * Appropriate solution                                             :noexport:
 
