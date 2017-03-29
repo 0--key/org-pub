@@ -10,9 +10,12 @@ tags: [CV, Emacs, Python, Literate Programming]
 #+END_EXPORT
 #+AUTHOR:    Anton S. Kosinov
 #+TITLE:     Mental Athlete Curriculum Vitae
-#+SUBTITLE:  Unleash your team synergy
+#+SUBTITLE:  Would you unleash the team synergy
 #+EMAIL:     a.s.kosinov@gmail.com
 #+LANGUAGE: en
+* Img                                                              :noexport:
+  #+ATTR_LATEX: :height 5cm :float wrap
+  [[./Portrait.jpg]]
 
 * Brief introduction
   As soon as acts speak much louder than words:
