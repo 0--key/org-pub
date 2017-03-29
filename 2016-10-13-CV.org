@@ -27,20 +27,21 @@ tags: [CV, Emacs, Python, Literate Programming]
             self.grandmother = "Russian literature teacher"
 
         def schooling(self):
-            self.succeed = "Republican Physics Olympiad winner"
+            self.succeed = ["Republican Physics Olympiad winner",]
 
     class Engineer(Person):
-        """Technical tasks solver"""
+        """The technical tasks solver"""
 
         def naval_college(self):
-            self.education =  # not only a self-education, of cause
-            ["area of study" : "nuclear power plants",
-             "specialize on" : "technological processes automation",
-             "achievement" : "English language Olympiad winner"]
+            self.education = {  # not only a self-education, of cause
+                "area of study" : "nuclear power plants",
+                "specialize on" : "technological processes automation"}
+            self.succeed += ["English language Olympiad winner",
+                             "Bachelor degree in automation"]
 
         def nuclear_power_plant(self):
-            self.first_job =  # as an initial experience
-            ["" : "",]
+            self.first_job = {
+                "" : ""}
 
         def review_challenge(self, issue):
             """Take a close look on the challenge"""
