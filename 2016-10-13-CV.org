@@ -8,69 +8,21 @@ categories: [info, about me]
 tags: [CV, Emacs, Python, Literate Programming]
 ---
 #+END_EXPORT
+#+AUTHOR:    Anton S. Kosinov
+#+TITLE:     Mental Athlete Curriculum Vitae
+#+SUBTITLE:  Unleash your team synergy
+#+EMAIL:     a.s.kosinov@gmail.com
+#+LANGUAGE: en
 
-#+STARTUP: showall
-#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
-#+TOC: headlines 2
+* Brief introduction
+  As soon as acts speak much louder than words:
+  - My Git account;
+  - My blog;
+  - My UpWork account;
 
+* Skills
 
-* Dense and terse overview
-  #+BEGIN_SRC python
-    class Person(object):
-
-        def __init__(self):
-            self.name = "Anton Kosinov"
-            self.birth_date = "1978-02-23"
-            self.father = "nuclear phisicist"
-            self.mother = "chemical engineer"
-            self.ant = "physics teacher"
-            self.grandmother = "Russian literature teacher"
-
-        def schooling(self):
-            self.succeed = ["Republican Physics Olympiad winner",]
-
-    class Engineer(Person):
-        """The technical tasks solver"""
-
-        def naval_college(self):
-            self.education = {  # not only a self-education, of cause
-                "area of study" : "nuclear power plants",
-                "specialize on" : "technological processes automation"}
-            self.succeed += ["English language Olympiad winner",
-                             "Bachelor degree in automation"]
-
-        def nuclear_power_plant(self):
-            self.first_job = {
-                "" : ""}
-
-        def review_challenge(self, issue):
-            """Take a close look on the challenge"""
-            return corollary
-
-        def divide_and_conquer(self, corollary):
-            """Split entire challenge into a list of 
-            relatively simple tasks"""
-            return challenge_decomposed
-
-        def resolve_challenge(self, challenge_decomposed):
-            """ """
-            return solution
-
-    class SoftwareEngineer(Engineer):
-        """
-        Software-specific problem-solver
-        Inherits all general-purpose engineer's
-        functions and has the specific ones:
-        """
-
-        def guess_algorithm(self, issue):
-            return pertinent_algorithm
-
-        def complexity_control(self, software):
-            pass
-
-  #+END_SRC
-* Preamble
+* Appropriate solution                                             :noexport:
 
 ** Who am I
    First of all I'm happy father and husband. The second one is my
@@ -110,89 +62,92 @@ tags: [CV, Emacs, Python, Literate Programming]
 
    Hence: *machines, speed, programming*
 
-* Tuition
+** Tuition
 
-** Secondary School
+*** Secondary School
 
-** Naval College
+*** Naval College
 
-** University
+*** University
 
-* Skills
+** Skills
 
-** Ubuntu
+*** Ubuntu
 
-** Python
+*** Python
 
-** JavaScript
+*** JavaScript
 
-** Emacs
+*** Emacs
 
-** HTML5
+*** HTML5
 
-** Algorithms
+*** Algorithms
 
-* Techics
+** Techics
 
-** Fluent English
+*** Fluent English
 
-** Model Thinking
+*** Model Thinking
 
-** Test-Driven Development
+*** Test-Driven Development
 
+** Experience
 
-* Experience
+*** Web Crawling
 
-** Web Crawling
+*** Data Processing
 
-** Data Processing
+*** Mental Athletics
 
-** Mental Athletics
+*** Data Visualization
 
-** Data Visualization
+** Payments
 
-* Payments
-
-* Feedback
-  Feel free to leave any comments below. It all are acceptable by
-  default.
+** Feedback
+   Feel free to leave any comments below. It all are acceptable by
+   default.
   
-* Anton Kosinov
 
-Role: Senior Python developer
+** Anton Kosinov
 
-Applied technology: Mental Athletics
+ Role: Senior Python developer
 
-Key achievements: I started to program in 1992 for scientific digital
-calculator MK-61. It was 104 directives sequence but it's in charge to
-calculate 100! in a couple hours. And even the Moon landing simulator
-was there; Soon I assembled a graphical cluster of memory ZX Spectrum;
-i486 was extraordinary fast and I met initially Borland’s dBase; In
-1995 fall I started to studying Data Science and Automation Technology
-in the naval college classes; In 2000 I found there are no support for
-OS Windows in my country; In 2005 I bought Athlon i686 and installed
-Red Hat Linux on it. It caused a seismic shift in my mind. Open Source
-works(!); By sequential studying bash, HTML, CSS, Emacs, Python2,
-MySQL and BigTable in 2008 I deployed my first web application on
-Google App Engine. And jQuery was there also; In 2009 I started to
-work as a freelancer at oDesk with Scrapy 0.10 In 2012 I dissected
-PostgreSQL, Amazon Web Services and started to utilize their power and
-flexibility; 2013 NoSQL was discovered. It’s just an unstructured
-storage ;-) 2014 I’ve upgrade my skill-set by Coursera’s MOOCs:
-Learning to Learn Model Thinking 2015 Quora reading and deep thinking
-about everything. 2016 : Python3 treatment and migration Git with
-Magit functional access essential training OOP design principles
-scrutiny TDD concepts and approaches study Literate programming with
-Emacs Babel Blogging with Jekyll Quora reading as natural English
-source Computer algorithms studying Coding skills honing with CodeWars
-Tutoring and conveying these skills to my wife
+ Applied technology: Mental Athletics
+  
+** Beginning
+   I started to write programs in 1992 for scientific calculator MK-61.
+   It was 104 directives sequence but it was in charge to calculate 100!
+   in a couple hours. And even the Moon landing simulator was there.
+   Soon I assembled a graphical cluster of memory ZX Spectrum.
 
-Employment:
+ Key achievements: ;
+ i486 was extraordinary fast and I met initially Borland’s dBase; In
+ 1995 fall I started to studying Data Science and Automation Technology
+ in the naval college classes; In 2000 I found there are no support for
+ OS Windows in my country; In 2005 I bought Athlon i686 and installed
+ Red Hat Linux on it. It caused a seismic shift in my mind. Open Source
+ works(!); By sequential studying bash, HTML, CSS, Emacs, Python2,
+ MySQL and BigTable in 2008 I deployed my first web application on
+ Google App Engine. And jQuery was there also; In 2009 I started to
+ work as a freelancer at oDesk with Scrapy 0.10 In 2012 I dissected
+ PostgreSQL, Amazon Web Services and started to utilize their power and
+ flexibility; 2013 NoSQL was discovered. It’s just an unstructured
+ storage ;-) 2014 I’ve upgrade my skill-set by Coursera’s MOOCs:
+ Learning to Learn Model Thinking 2015 Quora reading and deep thinking
+ about everything. 2016 : Python3 treatment and migration Git with
+ Magit functional access essential training OOP design principles
+ scrutiny TDD concepts and approaches study Literate programming with
+ Emacs Babel Blogging with Jekyll Quora reading as natural English
+ source Computer algorithms studying Coding skills honing with CodeWars
+ Tutoring and conveying these skills to my wife
 
-2009 – 2016 freelance full stack Python web application developer
+ Employment:
 
-Personal skills:
+ 2009 – 2016 freelance full stack Python web application developer
 
-capable to learn joyfully and fast persistence and patience
+ Personal skills:
 
-Personal: reading-addicted
+ capable to learn joyfully and fast persistence and patience
+
+ Personal: reading-addicted
