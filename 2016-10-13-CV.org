@@ -157,3 +157,42 @@ tags: [CV, Emacs, Python, Literate Programming]
   Feel free to leave any comments below. It all are acceptable by
   default.
   
+* Anton Kosinov
+
+Role: Senior Python developer
+
+Applied technology: Mental Athletics
+
+Key achievements: I started to program in 1992 for scientific digital
+calculator MK-61. It was 104 directives sequence but it's in charge to
+calculate 100! in a couple hours. And even the Moon landing simulator
+was there; Soon I assembled a graphical cluster of memory ZX Spectrum;
+i486 was extraordinary fast and I met initially Borland’s dBase; In
+1995 fall I started to studying Data Science and Automation Technology
+in the naval college classes; In 2000 I found there are no support for
+OS Windows in my country; In 2005 I bought Athlon i686 and installed
+Red Hat Linux on it. It caused a seismic shift in my mind. Open Source
+works(!); By sequential studying bash, HTML, CSS, Emacs, Python2,
+MySQL and BigTable in 2008 I deployed my first web application on
+Google App Engine. And jQuery was there also; In 2009 I started to
+work as a freelancer at oDesk with Scrapy 0.10 In 2012 I dissected
+PostgreSQL, Amazon Web Services and started to utilize their power and
+flexibility; 2013 NoSQL was discovered. It’s just an unstructured
+storage ;-) 2014 I’ve upgrade my skill-set by Coursera’s MOOCs:
+Learning to Learn Model Thinking 2015 Quora reading and deep thinking
+about everything. 2016 : Python3 treatment and migration Git with
+Magit functional access essential training OOP design principles
+scrutiny TDD concepts and approaches study Literate programming with
+Emacs Babel Blogging with Jekyll Quora reading as natural English
+source Computer algorithms studying Coding skills honing with CodeWars
+Tutoring and conveying these skills to my wife
+
+Employment:
+
+2009 – 2016 freelance full stack Python web application developer
+
+Personal skills:
+
+capable to learn joyfully and fast persistence and patience
+
+Personal: reading-addicted
