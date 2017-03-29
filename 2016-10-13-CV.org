@@ -55,7 +55,11 @@ tags: [CV, Emacs, Python, Literate Programming]
 * \Delta Desired role
   - A team catalyst, accelerator and propeller. Who next will fall in
     love with Emacs?
-  - 
+  - Synergy in the team is not just only a sum of knowledge, our goal
+    is its product literally: *\sum knowledge \to \prod knowledge*
+  - Right now for professional growth I'm crucially need in /knowledge
+    exchange/: who knows something fascinating and would share it with
+    me, please?
 
 
 * Appropriate solution                                             :noexport:
