@@ -1,0 +1,66 @@
+#+AUTHOR:    Anton S. Kosinov
+#+TITLE:     Mental Athlete Diary
+#+SUBTITLE:  How to cope with yourself
+#+EMAIL:     a.s.kosinov@gmail.com
+#+LANGUAGE: en
+#+TOC: headlines 2
+
+
+#+INCLUDE: "2016-10-13-CV.org" :lines "16-"
+
+* Dense and terse overview
+  #+BEGIN_SRC python
+    class Person(object):
+
+        def __init__(self):
+            self.name = "Anton Kosinov"
+            self.birth_date = "1978-02-23"
+            self.father = "nuclear phisicist"
+            self.mother = "chemical engineer"
+            self.ant = "physics teacher"
+            self.grandmother = "Russian literature teacher"
+
+        def schooling(self):
+            self.succeed = ["Republican Physics Olympiad winner",]
+
+    class Engineer(Person):
+        """The technical tasks solver"""
+
+        def naval_college(self):
+            self.education = {  # not only a self-education, of cause
+                "area of study" : "nuclear power plants",
+                "specialize on" : "technological processes automation"}
+            self.succeed += ["English language Olympiad winner",
+                             "Bachelor degree in automation"]
+
+        def nuclear_power_plant(self):
+            self.first_job = {
+                "" : ""}
+
+        def review_challenge(self, issue):
+            """Take a close look on the challenge"""
+            return corollary
+
+        def divide_and_conquer(self, corollary):
+            """Split entire challenge into a list of 
+            relatively simple tasks"""
+            return challenge_decomposed
+
+        def resolve_challenge(self, challenge_decomposed):
+            """ """
+            return solution
+
+    class SoftwareEngineer(Engineer):
+        """
+        Software-specific problem-solver
+        Inherits all general-purpose engineer's
+        functions and has the specific ones:
+        """
+
+        def guess_algorithm(self, issue):
+            return pertinent_algorithm
+
+        def complexity_control(self, software):
+            pass
+
+  #+END_SRC
