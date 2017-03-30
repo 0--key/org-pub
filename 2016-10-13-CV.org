@@ -18,7 +18,9 @@ tags: [CV, Emacs, Python, Literate Programming]
 * Img                                                              :noexport:
   #+ATTR_LATEX: :height 5cm :float wrap
   [[./Portrait.jpg]]
-* \alpha Brief introduction
+
+
+* \alpha Brief Introduction
   #+BEGIN_QUOTE
   Synergy \to the interaction or cooperation of two or more organizations,
   substances, or other agents to produce a combined effect greater than
