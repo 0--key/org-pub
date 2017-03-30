@@ -13,7 +13,13 @@ tags: [CV, Emacs, Python, Literate Programming]
 #+SUBTITLE:  Would you like to unleash the team synergy?
 #+EMAIL:     a.s.kosinov@gmail.com
 #+LANGUAGE: en
-#+OPTIONS: toc:nil
+#+OPTIONS: toc:nil num:nil
+#+LaTeX_HEADER: \usepackage[T1]{fontenc}
+#+LaTeX_HEADER: \usepackage{mathpazo}
+#+LaTeX_HEADER: \linespread{1.05}
+#+LaTeX_HEADER: \usepackage[scaled]{helvet}
+#+LaTeX_HEADER: \usepackage{courier}
+
 
 * Img                                                              :noexport:
   #+ATTR_LATEX: :height 5cm :float wrap
