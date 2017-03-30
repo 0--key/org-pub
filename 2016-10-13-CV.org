@@ -28,16 +28,12 @@ tags: [CV, Emacs, Python, Literate Programming]
   Generally speaking the acts speak much louder than words, thus, to
   avoid the idle hand-waving (typing in this case, of cause), this is
   the most prominent and distinct properties of myself:
-  - Coursera certificates:
-    + Learning to Learn
-    + Model Thinking
-    + Introduction in Data Science
-  - My accounts on:
-    - Git
-    - StackOverflow
-    - UpWork
-    - LinkedIn
-  - Org-Jekyll blog
+  | Certificates                 | Accounts      | Blog           |
+  |------------------------------+---------------+----------------|
+  | Learning to Learn            | Git           | Cooking Python |
+  | Model Thinking               | UpWork        |                |
+  | Introduction to Data Science | StackOverFlow |                |
+  |                              | LinkedIn      |                |
 
 * \beta Skills overview
   
