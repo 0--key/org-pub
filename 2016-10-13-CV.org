@@ -10,9 +10,11 @@ tags: [CV, Emacs, Python, Literate Programming]
 #+END_EXPORT
 #+AUTHOR:    Anton S. Kosinov
 #+TITLE:     Mental Athlete Curriculum Vitae
-#+SUBTITLE:  Would you unleash the team synergy
+#+SUBTITLE:  Would you like to unleash the team synergy?
 #+EMAIL:     a.s.kosinov@gmail.com
 #+LANGUAGE: en
+#+OPTIONS: toc:nil
+
 * Img                                                              :noexport:
   #+ATTR_LATEX: :height 5cm :float wrap
   [[./Portrait.jpg]]
