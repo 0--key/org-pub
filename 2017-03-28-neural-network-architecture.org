@@ -256,81 +256,60 @@ An overview of the main types of neural network architecture
      sign
 
 ** The cone of feasible solutions
-   To get all training cases right we need
- to find a point on the right side of all the
- planes.
+
+   To get all training cases right we need to find a point on the
+   right side of all the planes.
+
    - There may not be any such point!
-   If there are any weight vectors that get
- the right answer for all cases, they lie in
- a hyper-cone with its apex at the origin.
-   - So the average of two good weight
- vectors is a good weight vector.
+
+   If there are any weight vectors that get the right answer for all
+   cases, they lie in a hyper-cone with its apex at the origin.
+
+   - So the average of two good weight vectors is a good weight
+     vector.
+
    The problem is convex.
- good
- weights
- an input
- vector with
- correct
- answer=1
- right
- wrong
- an input
- vector with
- correct
- answer=0
- bad
- weights
- o
- the originNeural Networks for Machine Learning
- Lecture 2d
- Why the learning works
- Geoffrey Hinton
- with
- Nitish Srivastava
- Kevin SwerskyWhy the learning procedure works (first attempt)
- 2
- 2
- d
- +
- d
-   Consider the squared distance a
- b between any feasible
- weight vector and the current weight vector.
-   - Hopeful claim: Every time the perceptron makes a mistake, the
- learning algorithm moves the current weight vector closer to all
- feasible weight vectors.
- d b 2
- Problem case: The weight
- vector may not get closer to
- this feasible vector!
- d a 2
- feasible
- right
- g
- wron
- currentWhy the learning procedure works
-   So consider “generously feasible” weight vectors that lie within the
- feasible region by a margin at least as great as the length of the input
- vector that defines each constraint plane.
+
+
+* Why the learning works
+
+** Why the learning procedure works (first attempt)
+
+   Consider the squared distance d_a^2 + d_b^2 between any feasible
+   weight vector and the current weight vector.
+
+   - /Hopeful claim/: Every time the perceptron makes a mistake, the
+   learning algorithm moves the current weight vector closer to all
+   feasible weight vectors.
+
+   Problem case: The weight vector may not get closer to this feasible
+   vector!
+
+** Why the learning procedure works
+   So consider “generously feasible” weight vectors that lie within
+   the feasible region by a margin at least as great as the length of
+   the input vector that defines each constraint plane.
+
    - Every time the perceptron makes a mistake, the squared distance
- to all of these generously feasible weight vectors is always
- decreased by at least the squared length of the update vector.
- right
- g
- wronInformal sketch of proof of convergence
-   Each time the perceptron makes a mistake, the current weight
- vector moves to decrease its squared distance from every weight
- vector in the “generously feasible” region.
+     to all of these generously feasible weight vectors is always
+     decreased by at least the squared length of the update vector.
+
+** Informal sketch of proof of convergence
+
+   Each time the perceptron makes a mistake, the current weight vector
+   moves to decrease its squared distance from every weight vector in
+   the “generously feasible” region.
+
    The squared distance decreases by at least the squared length of
- the input vector.
-   So after a finite number of mistakes, the weight vector must lie in the
- feasible region if this region exists.Neural Networks for Machine Learning
- Lecture 2e
- What perceptrons can’t do
- Geoffrey Hinton
- with
- Nitish Srivastava
- Kevin SwerskyThe limitations of Perceptrons
+   the input vector.
+
+   So after a finite number of mistakes, the weight vector must lie in
+   the feasible region if this region exists.Neural Networks for
+   Machine Learning
+
+* What perceptrons can’t do
+
+** The limitations of Perceptrons
    If you are allowed to choose the features by hand and if you use
  enough features, you can do almost anything.
    - For binary input vectors, we can have a separate feature unit for
