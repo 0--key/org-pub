@@ -23,9 +23,9 @@ tags: [CV, Emacs, Python, Literate Programming]
   the sum of their separate effects
   #+END_QUOTE
   I'm an avid knowledge gatherer as soon as I remember myself.
-  Generally speaking the acts speak much louder than words, thus to
-  avoid an idle hand-waving (typing in this case, of cause), the most
-  prominent and distinct properties list:
+  Generally speaking the acts speak much louder than words, thus, to
+  avoid the idle hand-waving (typing in this case, of cause), this is
+  the most prominent and distinct properties of myself:
   - Coursera certificates:
     + Learning to Learn
     + Model Thinking
@@ -44,7 +44,7 @@ tags: [CV, Emacs, Python, Literate Programming]
 ** Python cooked gently in Emacs:
    - Built-in functions test suite
    - Cookbook in a TDD dissection
-   - OOP design patterns
+   - OOP design patterns scrutiny
 
 
 * \gamma Current state
@@ -54,9 +54,9 @@ tags: [CV, Emacs, Python, Literate Programming]
 
 * \Delta Desired role
   - A team catalyst, accelerator and propeller. Who next will fall in
-    love with Emacs?
+    love with Emacs and Python simultaneously?
   - Synergy in the team is not just only a sum of knowledge, our goal
-    is its product literally: *\sum knowledge \to \prod knowledge*
+    is to obtain its product literally: *\sum knowledge_{i} \to \prod knowledge_{i}*
   - Right now for professional growth I'm crucially need in /knowledge
     exchange/: who knows something fascinating and would share it with
     me, please?
