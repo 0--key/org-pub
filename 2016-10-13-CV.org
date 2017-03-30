@@ -32,10 +32,11 @@ tags: [CV, Emacs, Python, Literate Programming]
   substances, or other agents to produce a combined effect greater than
   the sum of their separate effects
   #+END_QUOTE
-  I'm an avid knowledge gatherer as soon as I remember myself.
-  Generally speaking the acts speak much louder than words, thus, to
-  avoid the idle hand-waving (typing in this case, of cause), this is
-  the most prominent and distinct properties of myself:
+  I'm an avid knowledge gatherer as long as I can remember myself. The
+  acts speak much louder than words, thus, to avoid the idle
+  hand-waving (typing in this case, of cause), this is the most
+  prominent and distinct properties of myself:
+
   | Certificates                 | Accounts      | Blog           |
   |------------------------------+---------------+----------------|
   | Learning to Learn            | Git           | Cooking Python |
