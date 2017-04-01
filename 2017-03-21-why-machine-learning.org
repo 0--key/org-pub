@@ -20,6 +20,12 @@ Why do we need machine learning?
 #+END_QUOTE
 
 * What is Machine Learning?
+   #+CAPTION: ML distinction
+   #+ATTR_HTML: :alt Different approach :title ML concept :align right
+   #+ATTR_HTML: :width 30%
+   https://dmm613.files.wordpress.com/2014/09/figure1.png
+
+
   It is very hard to write programs that solve problems like recognizing a
   three-dimensional object from a novel viewpoint in new lighting
   conditions in a cluttered scene.
