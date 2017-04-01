@@ -18,6 +18,7 @@ tags: [architecture, overview]
 #+BEGIN_QUOTE
 An overview of the main types of neural network architecture
 #+END_QUOTE
+
 * An overview of the main types of neural network architecture
 
 ** Feed-forward neural networks
@@ -209,6 +210,7 @@ An overview of the main types of neural network architecture
      vector from the weight vector.
    This is guaranteed to find a set of weights that gets the right
    answer for all the training cases if any such set exists.Neural
+
 
 * A geometrical view of perceptrons
 
