@@ -44,6 +44,7 @@ tags: [CV, Emacs, Python, Literate Programming]
   | Introduction to Data Science | StackOverFlow |                |
   |                              | LinkedIn      |                |
 
+
 * \Sigma{}kills overview
   
 ** Emacs and a plethora of satellite packages
@@ -53,7 +54,21 @@ tags: [CV, Emacs, Python, Literate Programming]
    - Cookbook in a TDD dissection
    - OOP design patterns scrutiny
 
+** Dense and terse overview
+   #+BEGIN_SRC python
+     class Person(object):
 
+         def __init__(self):
+             self.name = "Anton Kosinov"
+             self.birth_date = "1978-02-23"
+             self.father = "nuclear phisicist"
+             self.mother = "chemical engineer"
+             self.ant = "physics teacher"
+             self.grandmother = "Russian literature teacher"
+
+         def schooling(self):
+             self.succeed = ["Republican Physics Olympiad winner",]
+   #+END_SRC
 * \zeta{}urrent state
   Following the concept of /knowledge chain reaction/\trade I'm in conveying
   my own skills to my family: my patient, wise&cute wife and to my
