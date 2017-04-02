@@ -332,14 +332,15 @@ An overview of the main types of neural network architecture
    A binary threshold output unit cannot even tell if two single bit
    features are the same!
 
-   Positive cases (same): (1,1) \to 1; (0,0) \to 1
-   Negative cases (different): (1,0) \to 0; (0,1) \to 0
+   - Positive cases (same): (1,1) \to 1; (0,0) \to 1
+   - Negative cases (different): (1,0) \to 0; (0,1) \to 0
+
    The four input-output pairs give four inequalities that are impossible to
    satisfy:
-   w_1 + w_2 ≥ θ ,
-   w_1 < θ ,
+   w_{1} + w_{2} ≥ θ ,
+   w_{1} < θ ,
    0 ≥ θ
-   w_2 < θ
+   w_{2} < θ
 
 ** A geometric view of what binary threshold neurons cannot do
 
