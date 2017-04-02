@@ -312,44 +312,48 @@ An overview of the main types of neural network architecture
 * What perceptrons can’t do
 
 ** The limitations of Perceptrons
+
    If you are allowed to choose the features by hand and if you use
- enough features, you can do almost anything.
+   enough features, you can do almost anything.
    - For binary input vectors, we can have a separate feature unit for
- each of the exponentially many binary vectors and so we can
- make any possible discrimination on binary input vectors.
-   This type of table look-up won’t generalize.
+     each of the exponentially many binary vectors and so we can make
+     any possible discrimination on binary input vectors.
+     - This type of table look-up won’t generalize.
    But once the hand-coded features have been determined, there are
- very strong limitations on what a perceptron can learn.What binary threshold neurons cannot do
-   A binary threshold output unit cannot even tell if two single bit features are
- the same!
- Positive cases (same):
- (1,1) à 1;
- (0,0) à 1
- Negative cases (different): (1,0) à 0;
- (0,1) à 0
+   very strong limitations on what a perceptron can learn.
+
+** What binary threshold neurons cannot do
+
+   #+CAPTION: Binary threshold neurons
+   #+ATTR_HTML: :alt Perceptron schema :title Graphical representation :align right
+   #+ATTR_HTML: :width 30%
+   [[http://0--key.github.io/assets/img/neural_networks/perceptron_representation.png]]
+
+   A binary threshold output unit cannot even tell if two single bit
+   features are the same!
+
+   Positive cases (same): (1,1) \to 1; (0,0) \to 1
+   Negative cases (different): (1,0) \to 0; (0,1) \to 0
    The four input-output pairs give four inequalities that are impossible to
- satisfy:
- w 1 + w 2 ≥ θ ,
- w 1 < θ ,
- 0 ≥ θ
- w 2 < θ
- − θ
- 1
- w 1
- x 1
- w 2
- x 2A geometric view of what binary threshold neurons cannot do
-   Imagine “data-space” in which the
- axes correspond to components of an
- input vector.
-   - Each input vector is a point in this
- space.
-   - A weight vector defines a plane in
- data-space.
-   - The weight plane is perpendicular
- to the weight vector and misses
- the origin by a distance equal to
- the threshold.
+   satisfy:
+   w_1 + w_2 ≥ θ ,
+   w_1 < θ ,
+   0 ≥ θ
+   w_2 < θ
+
+** A geometric view of what binary threshold neurons cannot do
+
+   #+CAPTION: Binary threshold neurons limits
+   #+ATTR_HTML: :alt Perceptron limitation :title Geometric view :align right
+   #+ATTR_HTML: :width 40%
+   [[http://0--key.github.io/assets/img/neural_networks/perceptron_limitation.png]]
+
+   Imagine “data-space” in which the axes correspond to components of
+   an input vector.
+   - Each input vector is a point in this space.
+   - A weight vector defines a plane in data-space.
+   - The weight plane is perpendicular to the weight vector and misses
+     the origin by a distance equal to the threshold.
  1,1
  0,1
  weigh
