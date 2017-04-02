@@ -277,7 +277,7 @@ An overview of the main types of neural network architecture
 
 ** Why the learning procedure works (first attempt)
 
-   Consider the squared distance d_a^2 + d_b^2 between any feasible
+   Consider the squared distance d_{a}^{2} + d_{b}^{2} between any feasible
    weight vector and the current weight vector.
 
    - /Hopeful claim/: Every time the perceptron makes a mistake, the
