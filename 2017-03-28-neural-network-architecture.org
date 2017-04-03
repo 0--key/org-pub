@@ -360,7 +360,7 @@ An overview of the main types of neural network architecture
 
    #+CAPTION: Simple patterns discrimination
    #+ATTR_HTML: :alt Perceptron limitation :title Sketch view :align right
-   #+ATTR_HTML: :width 50%
+   #+ATTR_HTML: :width 30%
    [[http://0--key.github.io/assets/img/neural_networks/simple_patterns.png]]
 
    Suppose we just use pixels as the features. Can a binary threshold
