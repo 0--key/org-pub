@@ -75,39 +75,51 @@ tags: [linear neuron, neuron's weights]
 
 ** A toy example to illustrate the iterative method
 
- •  Each day you get lunch at the cafeteria.
+   • Each day you get lunch at the cafeteria.
 
- –  Your diet consists of fish, chips, and ketchup.
- –  You get several portions of each.
+   –  Your diet consists of fish, chips, and ketchup. You get several
+   –  portions of each.
 
- •  The cashier only tells you the total price of the meal
- –  After several days, you should be able to figure out the price of
- each portion.
- •  The iterative approach: Start with random guesses for the prices and
- then adjust them to get a better fit to the observed prices of whole
- meals.Solving the equations iteratively
- •  Each meal price gives a linear constraint on the prices of the
- portions:
- price = x fish w fish + x chips w chips + x ketchup w ketchup
- •  The prices of the portions are like the weights in of a linear neuron.
- w = (w fish , w chips , w ketchup )
- •  We will start with guesses for the weights and then adjust the
- guesses slightly to give a better fit to the prices given by the cashier.The true weights used by the cashier
- Price of meal = 850 = target
- linear
- neuron
- 150
- 2
- portions
- of fish
- 50
- 100
- 5
- portions
- of chips
- 3
- portions of
- ketchupA model of the cashier with arbitrary initial weights
+   • The cashier only tells you the total price of the meal
+
+   – After several days, you should be able to figure out the price of
+   each portion.
+
+   • The iterative approach: Start with random guesses for the prices
+   and then adjust them to get a better fit to the observed prices of
+   whole meals.
+
+** Solving the equations iteratively
+
+   • Each meal price gives a linear constraint on the prices of the
+   portions:
+
+   price = x_{fish}w_{fish} + x_{chips}w_{chips} +
+   x_{ketchup}w_{ketchup}
+
+   • The prices of the portions are like the weights in of a linear
+   neuron.
+
+   w = (w_{fish} , w_{chips} , w_{ketchup})
+
+   • We will start with guesses for the weights and then adjust the
+   guesses slightly to give a better fit to the prices given by the
+   cashier.
+
+** The true weights used by the cashier
+
+   #+CAPTION: Graphical representation
+   #+ATTR_HTML: :alt Cafeteria task :title Iterative approach :align center
+   #+ATTR_HTML: :width 80%
+   [[http://0--key.github.io/assets/img/neural_networks/cafeteria_task.png]]
+
+** A model of the cashier with arbitrary initial weights
+
+   #+CAPTION: First iteration
+   #+ATTR_HTML: :alt Cafeteria task :title Schema :align right
+   #+ATTR_HTML: :width 40%
+   [[http://0--key.github.io/assets/img/neural_networks/first_iteration.png]]
+
  •  Residual error = 350
  •  The “delta-rule” for learning is:
  price of meal = 500
