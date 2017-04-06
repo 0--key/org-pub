@@ -1,0 +1,17 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: Builder design pattern
+tagline: " wrapped with Python3"
+permalink: /python3/design/patterns/creational/builder.html
+categories: [literate programming, emacs, Python3]
+tags: [OOP, design, patterns, creational, builder]
+---
+#+END_EXPORT
+
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both
+
+#+INCLUDE: "../python-patterns/pydepatt/patterns/creational/builder/README.org"
