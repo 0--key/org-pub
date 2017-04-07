@@ -87,8 +87,13 @@ tags: [CV, Emacs, Python, Literate Programming]
     me, please?
 
 
-* Test
+* Test #1
    #+HTML_MATHJAX: \left [ – \frac{\hbar^2}{2 m} \frac{\partial^2}{\partial x^2} + V \right ] \Psi = i \hbar \frac{\partial}{\partial t} \Psi
+
+\begin{equation}
+x=\sqrt{b}
+\left [ – \frac{\hbar^2}{2 m} \frac{\partial^2}{\partial x^2} + V \right ] \Psi = i \hbar \frac{\partial}{\partial t} \Psi
+\end{equation}
 
 
 
