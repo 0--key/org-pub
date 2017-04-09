@@ -14,4 +14,7 @@ tags: [OOP, design, patterns, creational, builder]
 #+TOC: headlines 2
 #+PROPERTY:header-args :results output :exports both
 
-#+INCLUDE: "../python-patterns/pydepatt/patterns/creational/builder/README.org"
+Hope [[https://github.com/0--key/pydepatt/tree/master/patterns/creational/builder][this page]] might elucidate this pattern in a bit explicit
+manner.
+
+#+INCLUDE: "../python-patterns/pydepatt/patterns/creational/builder/README.org" :lines "11-"
