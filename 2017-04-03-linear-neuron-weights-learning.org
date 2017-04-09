@@ -120,58 +120,63 @@ tags: [linear neuron, neuron's weights]
    #+ATTR_HTML: :width 40%
    [[http://0--key.github.io/assets/img/neural_networks/first_iteration.png]]
 
- •  Residual error = 350
- •  The “delta-rule” for learning is:
- price of meal = 500
- Δw i = ε x i (t − y)
- 50
- 2
- portions
- of fish
- 50
- 5
- portions
- of chips
- 50
- 3
- portions of
- ketchup
- •  With a learning rate ε of 1/35,
- the weight changes are
- +20, +50, +30
- •  This gives new weights of
- 70, 100, 80.
- –  Notice that the weight for
- chips got worse!Deriving the delta rule
- •  Define the error as the squared
- residuals summed over all
- training cases:
- •  Now differentiate to get error
- derivatives for weights
- •  The batch delta rule changes
- the weights in proportion to
- their error derivatives summed
- over all training cases
- E =
- 1
- 2
- ∑
- (t n − y n ) 2
- n∈training
- ∂E 1 ∂y n dE n
- = 2 ∑
- n
- ∂w i
- ∂w
- dy
- i
- n
- = − ∑ x in (t n − y n )
- n
- Δw i = − ε
- ∂E
- = ∑ ε x in (t n − y n )
- ∂w i nBehaviour of the iterative learning procedure
+   •  Residual error = 350
+   •  The “delta-rule” for learning is:
+
+   price of meal = 500
+   Δw i = ε x i (t − y)
+   50
+   2
+   portions
+   of fish
+   50
+   5
+   portions
+   of chips
+   50
+   3
+   portions of
+   ketchup
+
+   • With a learning rate ε of 1/35, the weight changes are +20, +50,
+   +30
+
+   •  This gives new weights of 70, 100, 80.
+
+   –  Notice that the weight for chips got worse!
+
+** Deriving the delta rule
+
+   • Define the error as the squared residuals summed over all
+   training cases:
+
+   • Now differentiate to get error derivatives for weights
+
+   • The batch delta rule changes the weights in proportion to their
+   error derivatives summed over all training cases
+
+   E =
+   1
+   2
+   ∑
+   (t n − y n ) 2
+   n∈training
+   ∂E 1 ∂y n dE n
+   = 2 ∑
+   n
+   ∂w i
+   ∂w
+   dy
+   i
+   n
+   = − ∑ x in (t n − y n )
+   n
+   Δw i = − ε
+   ∂E
+   = ∑ ε x in (t n − y n )
+   ∂w i n
+
+** Behaviour of the iterative learning procedure
  •  Does the learning procedure eventually get the right answer?
  –  There may be no perfect answer.
  –  By making the learning rate small enough we can get as close as we
