@@ -87,15 +87,15 @@ tags: [CV, Emacs, Python, Literate Programming]
     me, please?
 
 
-* Test #1
+* Test #1                                                          :noexport:
    #+HTML_MATHJAX: \left [ – \frac{\hbar^2}{2 m} \frac{\partial^2}{\partial x^2} + V \right ] \Psi = i \hbar \frac{\partial}{\partial t} \Psi
 
-\begin{equation}
-x=\sqrt{b}
-\left [ – \frac{\hbar^2}{2 m} \frac{\partial^2}{\partial x^2} + V \right ] \Psi = i \hbar \frac{\partial}{\partial t} \Psi
-\end{equation}
+   \begin{equation}
+   x=\sqrt{b}
+   \left [ – \frac{\hbar^2}{2 m} \frac{\partial^2}{\partial x^2} + V \right ] \Psi = i \hbar \frac{\partial}{\partial t} \Psi
+   \end{equation}
 
-* Test #2
+* Test #2                                                          :noexport:
 
   If $a^2=b$ and \( b=2 \), then the solution must be
   either $$ a=+\sqrt{2} $$ or \[ a=-\sqrt{2} \].
