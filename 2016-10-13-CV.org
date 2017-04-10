@@ -61,6 +61,8 @@ tags: [CV, Emacs, Python, Literate Programming]
          def __init__(self):
              self.name = "Anton Kosinov"
              self.birth_date = "1978-02-23"
+
+         def boast_of_ancestry(self):
              self.father = "nuclear phisicist"
              self.mother = "chemical engineer"
              self.ant = "physics teacher"
@@ -85,6 +87,7 @@ tags: [CV, Emacs, Python, Literate Programming]
   - In other words the desired aim should be a /knowledge
     multiplication/: sustainable state of continuous intellectual
     progress each team member in particular.
+  - A team of professionals with mostly contiguous skills.
   - Right now for professional growth I'm crucially need in /knowledge
     exchange/: who knows something fascinating and would share it with
     me, please?
