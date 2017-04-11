@@ -173,54 +173,46 @@ tags: [linear neuron, neuron's weights]
    and the learning rate.
 
    – So we have to choose a learning rate. This is annoying.
+
 * The error surface for a linear neuron
-Geoffrey Hinton
-with
-Nitish Srivastava
-Kevin SwerskyThe error surface in extended weight space
-•  The error surface lies in a space with a
-horizontal axis for each weight and one
-vertical axis for the error.
-–  For a linear neuron with a squared
-error, it is a quadratic bowl.
-–  Vertical cross-sections are
-parabolas.
-–  Horizontal cross-sections are
-ellipses.
-•  For multi-layer, non-linear nets the error
-surface is much more complicated.
-E
-w1
-w2Online versus batch learning
-•  The simplest kind of batch
-learning does steepest descent
-on the error surface.
-•  The simplest kind of online
-learning zig-zags around the
-direction of steepest descent:
-–  This travels perpendicular to
-constraint from
-the contour lines.
-training case 1
-w1
-w1
-w2
-constraint from
-training case 2
-w2Why learning can be slow
-•  If the ellipse is very elongated, the
-direction of steepest descent is almost
-perpendicular to the direction towards
-the minimum!
-–  The red gradient vector has a large
-component along the short axis of
-the ellipse and a small component
-along the long axis of the ellipse.
-–  This is just the opposite of what we
-want.
-w1
-w2Neural Networks for Machine Learning
-Lecture 3c
+
+** The error surface in extended weight space
+   • The error surface lies in a space with a horizontal axis for each
+   weight and one vertical axis for the error.
+
+   – For a linear neuron with a squared error, it is a quadratic bowl.
+
+   – Vertical cross-sections are parabolas.
+
+   – Horizontal cross-sections are ellipses.
+
+   • For multi-layer, non-linear nets the error surface is much more
+   complicated. E w1 w2
+
+** Online versus batch learning
+
+   • The simplest kind of batch learning does steepest descent on the
+   error surface.
+
+   • The simplest kind of online learning zig-zags around the
+   direction of steepest descent:
+
+   – This travels perpendicular to constraint from the contour lines.
+
+   training case 1 w1 w1 w2 constraint from training case 2 w2
+
+** Why learning can be slow
+
+   • If the ellipse is very elongated, the direction of steepest
+   descent is almost perpendicular to the direction towards the
+   minimum!
+
+   – The red gradient vector has a large component along the short
+   axis of the ellipse and a small component along the long axis of
+   the ellipse.
+
+   – This is just the opposite of what we want.
+
 * Learning the weights of a logistic output neuron
 Geoffrey Hinton
 with
