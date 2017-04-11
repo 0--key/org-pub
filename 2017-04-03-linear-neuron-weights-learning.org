@@ -214,125 +214,47 @@ tags: [linear neuron, neuron's weights]
    – This is just the opposite of what we want.
 
 * Learning the weights of a logistic output neuron
-Geoffrey Hinton
-with
-Nitish Srivastava
-Kevin SwerskyLogistic neurons
-•  These give a real-valued
-output that is a smooth
-and bounded function of
-their total input.
-–  They have nice
-derivatives which
-make learning easy.
-y =
-z = b + ∑ x i w i
-1 + e
-i
-1
-y 0.5
-0
-1
-0
-z
-−zThe derivatives of a logistic neuron
-•  The derivatives of the logit, z,
-with respect to the inputs and
-the weights are very simple:
-z = b + ∑ x i w i
-i
-∂z
-= x i
-∂w i
-•  The derivative of the output with
-respect to the logit is simple if
-you express it in terms of the
-output:
-1
-y =
-1 + e
-∂z
-= w i
-∂x i
-−z
-dy
-= y ( 1 − y)
-dzThe derivatives of a logistic neuron
-y =
-1
-1 + e
-−z
-= ( 1 + e −z ) −1
-" 1
-% " e −z %
-dy
-− 1 (−e −z )
-' = y(1− y)
-=
-= $
-' $$
-'
-−z
-2
-−z
-−z
-dz
-#
-&
-( 1 + e )
-1 + e
-# 1 + e &
-e −z
-(1+ e −z ) −1
-(1+ e −z ) −1
-=
-=
-= 1− y
-because
-−z
-−z
-−z 1 + e −z
-1 + e
-1 + e
-1 + eUsing the chain rule to get the derivatives needed
-for learning the weights of a logistic unit
-•  To learn the weights we need the derivative of the output with
-respect to each weight:
-∂y
-∂z dy
-=
-= x i y (1− y)
-∂w i
-∂w i dz
-delta-rule
-∂E
-=
-∂w i
-∑
-n
-∂y n ∂E
-n n
-n
-n
-n
-=
-−
-x
-y
-(1−
-y
-)
-(t
-−
-y
-)
-∑
-i
-n
-∂w i ∂y
-n
-extra term = slope of logisticNeural Networks for Machine Learning
-Lecture 3d
+
+** Logistic neurons
+
+ • These give a real-valued output that is a smooth and bounded
+ function of their total input.
+
+ – They have nice derivatives which make learning easy.
+
+ y = z = b + ∑ x i w i 1 + e i 1 y 0.5 0 1 0 z −z
+
+** The derivatives of a logistic neuron
+
+ • The derivatives of the logit, z, with respect to the inputs and the
+ weights are very simple:
+
+ z = b + ∑ x i w i
+
+ i ∂z = x i ∂w i
+
+ • The derivative of the output with respect to the logit is simple if
+ you express it in terms of the output:
+
+ 1 y = 1 + e ∂z = w i ∂x i −z dy = y ( 1 − y) dzThe derivatives of a
+ logistic neuron y = 1 1 + e −z = ( 1 + e −z ) −1 " 1 % " e −z % dy −
+ 1 (−e −z ) ' = y(1− y) = = $ ' $$ ' −z 2 −z −z dz
+ #
+ & ( 1 + e ) 1 + e
+ # 1 + e &
+ e −z (1+ e −z ) −1 (1+ e −z ) −1 = = = 1− y because −z −z −z 1 + e −z
+ 1 + e 1 + e 1 + e
+
+** Using the chain rule 
+
+to get the derivatives needed for learning the weights of a logistic
+ unit
+
+ • To learn the weights we need the derivative of the output with
+ respect to each weight: ∂y ∂z dy = = x i y (1− y) ∂w i ∂w i dz
+ delta-rule ∂E = ∂w i ∑ n ∂y n ∂E n n n n n = − x y (1− y ) (t − y ) ∑
+ i n ∂w i ∂y n extra term = slope of logistic
+
 * The backpropagation algorithm
 Geoffrey Hinton
 with
