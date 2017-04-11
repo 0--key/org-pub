@@ -142,26 +142,10 @@ tags: [linear neuron, neuron's weights]
    • The batch delta rule changes the weights in proportion to their
    error derivatives summed over all training cases
 
-   E =
-   1
-   2
-   ∑
-   (t n − y n ) 2
-   n∈training
-   ∂E 1 ∂y n dE n
-   = 2 ∑
-   n
-   ∂w i
-   ∂w
-   dy
-   i
-   n
-   = − ∑ x in (t n − y n )
-   n
-   Δw i = − ε
-   ∂E
-   = ∑ ε x in (t n − y n )
-   ∂w i n
+   E = 1 2 ∑ (t n − y n ) 2 n∈training ∂E 1 ∂y n dE n = 2 ∑ n ∂w i ∂w
+   dy i n = − ∑ x in (t n − y n ) n Δw i = − ε ∂E = ∑ ε x in (t n − y
+   n ) ∂w i n
+
 
 ** Behaviour of the iterative learning procedure
  •  Does the learning procedure eventually get the right answer?
