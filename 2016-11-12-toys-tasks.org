@@ -2385,9 +2385,15 @@ tags: [coding, algorithms]
      def lcs(long_string, short_string):
          if short_string in long_string:
              return short_string
+         result = []
+         for symbol in short_string:
+             if symbol in long_string:
+                 result.append(symbol)
+         return "".join(result)
 
      assert(lcs("abcdef" , "abc") == "abc")
-     # assert(lcs( "abcdef" , "acf") == "acf"
-     # assert(lcs("132535365" , "123456789") =="12356"
-
+     assert(lcs( "abcdef" , "acf") == "acf")
+     assert(lcs("132535365" , "123456789") =="12356")
+     assert(lcs('a', 'b') == "")
+     # 'notatest' should equal 'nottest'
    #+END_SRC
