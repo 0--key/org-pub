@@ -2380,3 +2380,14 @@ tags: [coding, algorithms]
    strings, and will also have randomized tests (any longest common
    subsequence will be valid).
 
+** Solution
+   #+BEGIN_SRC python :results output
+     def lcs(long_string, short_string):
+         if short_string in long_string:
+             return short_string
+
+     assert(lcs("abcdef" , "abc") == "abc")
+     # assert(lcs( "abcdef" , "acf") == "acf"
+     # assert(lcs("132535365" , "123456789") =="12356"
+
+   #+END_SRC
