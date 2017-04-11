@@ -148,23 +148,31 @@ tags: [linear neuron, neuron's weights]
 
 
 ** Behaviour of the iterative learning procedure
- •  Does the learning procedure eventually get the right answer?
- –  There may be no perfect answer.
- –  By making the learning rate small enough we can get as close as we
- desire to the best answer.
- •  How quickly do the weights converge to their correct values?
- –  It can be very slow if two input dimensions are highly correlated. If you
- almost always have the same number of portions of ketchup and chips,
- it is hard to decide how to divide the price between ketchup and chips.The relationship between the online delta-rule
- and the learning rule for perceptrons
- •  In perceptron learning, we increment or decrement the weight vector
- by the input vector.
- –  But we only change the weights when we make an error.
- •  In the online version of the delta-rule we increment or decrement the
- weight vector by the input vector scaled by the residual error and the
- learning rate.
- –  So we have to choose a learning rate. This is annoying.Neural Networks for Machine Learning
- Lecture 3b
+   • Does the learning procedure eventually get the right answer?
+
+   –  There may be no perfect answer. By making the learning rate
+   small enough we can get as close as we desire to the best
+   answer.
+
+   • How quickly do the weights converge to their correct values?
+
+   – It can be very slow if two input dimensions are highly
+   correlated. If you almost always have the same number of portions
+   of ketchup and chips, it is hard to decide how to divide the price
+   between ketchup and chips.
+
+** The relationship between the online delta-rule and the learning rule for perceptrons
+
+   • In perceptron learning, we increment or decrement the weight
+   vector by the input vector.
+
+   – But we only change the weights when we make an error.
+
+   • In the online version of the delta-rule we increment or decrement
+   the weight vector by the input vector scaled by the residual error
+   and the learning rate.
+
+   – So we have to choose a learning rate. This is annoying.
 * The error surface for a linear neuron
 Geoffrey Hinton
 with
