@@ -256,118 +256,87 @@ to get the derivatives needed for learning the weights of a logistic
  i n ∂w i ∂y n extra term = slope of logistic
 
 * The backpropagation algorithm
-Geoffrey Hinton
-with
-Nitish Srivastava
-Kevin SwerskyLearning with hidden units (again)
-•  Networks without hidden units are very limited in the input-output
-mappings they can model.
-•  Adding a layer of hand-coded features (as in a perceptron) makes
-them much more powerful but the hard bit is designing the features.
-–  We would like to find good features without requiring insights into the
-task or repeated trial and error where we guess some features and see
-how well they work.
-•  We need to automate the loop of designing features for a particular
-task and seeing how well they work.Learning by perturbing weights
-(this idea occurs to everyone who knows about evolution)
-•  Randomly perturb one weight and see if
-it improves performance. If so, save the
-change.
-–  This is a form of reinforcement learning.
-–  Very inefficient. We need to do multiple
-forward passes on a representative set
-of training cases just to change one
-weight. Backpropagation is much better.
-–  Towards the end of learning, large
-weight perturbations will nearly always
-make things worse, because the weights
-need to have the right relative values.
-output units
-hidden units
-input unitsLearning by using perturbations
-•  We could randomly perturb all the weights in parallel
-and correlate the performance gain with the weight
-changes.
-–  Not any better because we need lots of trials on each
-training case to “see” the effect of changing one
-weight through the noise created by all the changes to
-other weights.
-•  A better idea: Randomly perturb the activities of the
-hidden units.
-–  Once we know how we want a hidden activity to
-change on a given training case, we can compute how
-to change the weights.
-–  There are fewer activities than weights, but
-backpropagation still wins by a factor of the number of
-neurons.The idea behind backpropagation
-•  We don’t know what the hidden units ought to do, but we can
-compute how fast the error changes as we change a hidden activity.
-–  Instead of using desired activities to train the hidden units, use
-error derivatives w.r.t. hidden activities.
-–  Each hidden activity can affect many output units and can
-therefore have many separate effects on the error. These effects
-must be combined.
-•  We can compute error derivatives for all the hidden units efficiently at
-the same time.
-–  Once we have the error derivatives for the hidden activities, its
-easy to get the error derivatives for the weights going into a
-hidden unit.Sketch of the backpropagation algorithm on a single case
-•  First convert the discrepancy
-between each output and its target
-value into an error derivative.
-•  Then compute error derivatives in
-each hidden layer from error
-derivatives in the layer above.
-•  Then use error derivatives w.r.t.
-activities to get error derivatives
-w.r.t. the incoming weights.
-E =
-1
-2
-(t j − y j ) 2
-∑
-j∈output
-∂E
-= −(t j − y j )
-∂y j
-∂E
-∂y j
-∂E
-∂y iBackpropagating dE/dy
-y j
-j
-z j
-y i
-i
-dy j ∂E
-∂E
-∂E
-=
-= y j (1− y j )
-∂z j
-dz j ∂y j
-∂y j
-∂E
-=
-∂y i
-dz j ∂E
-∑ dy ∂z =
-i
-j
-j
-∑ w ij
-j
-∂z j ∂E
-∂E
-∂E
-=
-= y i
-∂w ij
-∂w ij ∂z j
-∂z j
-∂E
-∂z jNeural Networks for Machine Learning
-Lecture 3e
+
+** Learning with hidden units (again)
+
+
+   • Networks without hidden units are very limited in the
+   input-output mappings they can model.
+
+
+   • Adding a layer of hand-coded features (as in a perceptron) makes
+   them much more powerful but the hard bit is designing the features.
+
+   – We would like to find good features without requiring insights
+   into the task or repeated trial and error where we guess some
+   features and see how well they work.
+
+   • We need to automate the loop of designing features for a
+   particular task and seeing how well they work.Learning by
+   perturbing weights (this idea occurs to everyone who knows about
+   evolution)
+
+   • Randomly perturb one weight and see if it improves performance.
+   If so, save the change. – This is a form of reinforcement learning.
+
+   – Very inefficient. We need to do multiple forward passes on a
+   representative set of training cases just to change one weight.
+   Backpropagation is much better.
+
+   – Towards the end of learning, large weight perturbations will
+   nearly always make things worse, because the weights need to have
+   the right relative values. output units hidden units input
+   unitsLearning by using perturbations
+
+   • We could randomly perturb all the weights in parallel and
+   correlate the performance gain with the weight changes.
+
+   – Not any better because we need lots of trials on each training
+   case to “see” the effect of changing one weight through the noise
+   created by all the changes to other weights.
+
+   • A better idea: Randomly perturb the activities of the hidden
+   units.
+
+   – Once we know how we want a hidden activity to change on a given
+   training case, we can compute how to change the weights.
+
+   – There are fewer activities than weights, but backpropagation
+   still wins by a factor of the number of neurons.The idea behind
+   backpropagation
+
+   • We don’t know what the hidden units ought to do, but we can
+   compute how fast the error changes as we change a hidden activity.
+
+   – Instead of using desired activities to train the hidden units,
+   use error derivatives w.r.t. hidden activities.
+
+   – Each hidden activity can affect many output units and can
+   therefore have many separate effects on the error. These effects
+   must be combined.
+
+   • We can compute error derivatives for all the hidden units
+   efficiently at the same time.
+
+   – Once we have the error derivatives for the hidden activities, its
+   easy to get the error derivatives for the weights going into a
+   hidden unit.
+
+** Sketch of the backpropagation algorithm on a single case
+
+   • First convert the discrepancy between each output and its target
+   value into an error derivative.
+
+   • Then compute error derivatives in each hidden layer from error
+   derivatives in the layer above.
+
+   • Then use error derivatives w.r.t. activities to get error
+   derivatives w.r.t. the incoming weights. E = 1 2 (t j − y j ) 2 ∑
+   j∈output ∂E = −(t j − y j ) ∂y j ∂E ∂y j ∂E ∂y iBackpropagating
+   dE/dy y j j z j y i i dy j ∂E ∂E ∂E = = y j (1− y j ) ∂z j dz j ∂y
+   j ∂y j ∂E = ∂y i dz j ∂E ∑ dy ∂z = i j j ∑ w ij j ∂z j ∂E ∂E ∂E = =
+   y i ∂w ij ∂w ij ∂z j ∂z j ∂E ∂z j
+
 * How to use the derivatives computed by the backpropagation algorithm
 Geoffrey Hinton
 with
