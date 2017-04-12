@@ -8,19 +8,13 @@ categories: [info, about me]
 tags: [CV, Emacs, Python, Literate Programming]
 ---
 #+END_EXPORT
-#+BEGIN_EXPORT html
-#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
-#+TOC: headlines 2
-#+END_EXPORT
-
-#+OPTIONS: toc:nil num:nil tex:t author:nil title:nil date:nil
 
 #+AUTHOR:    Anton S. Kosinov
 #+TITLE:     Mental Athlete Curriculum Vitae
 #+SUBTITLE:  Would you like to unleash the team synergy?
 #+EMAIL:     a.s.kosinov@gmail.com
 #+LANGUAGE: en
-
+#+OPTIONS: toc:nil num:nil tex:t author:nil title:nil date:nil
 #+LaTeX_HEADER: \usepackage[T1]{fontenc}
 #+LaTeX_HEADER: \usepackage{mathpazo}
 #+LaTeX_HEADER: \linespread{1.05}
@@ -30,8 +24,13 @@ tags: [CV, Emacs, Python, Literate Programming]
 
 * \alpha Dense Text
 
+  #+CAPTION: Anton S. Kosinov
+  #+ATTR_HTML: :title Looking for solution :align left :float wrap
+  #+ATTR_HTML: :width 25%
   #+ATTR_LATEX: :float wrap :width 5cm
-  [[./Portrait.jpg]]
+  #+ATTR_LATEX: [[./Portrait.jpg]]
+  [[http://0--key.github.io/assets/Portrait.jpg]]
+
 
   I'm an avid knowledge gatherer as long as I can remember myself. The
   acts speak much louder than words, thus, this is the very gist out
