@@ -45,6 +45,29 @@ tags: [CV, Emacs, Python, Literate Programming]
   hand-waving (typing in this case, of cause), this is the most
   prominent and distinct properties of myself:
 
+
+* GenReq                                                           :noexport:
+    - Strong python experience. 
+    - Experience designing, implementing, and maintaining scalable web
+      applications.
+    - Extensive experience with at least one python web framework.
+      Flask, Django, or others.
+    - Experience with both relational and NoSQL databases. PostgreSQL
+      or MySQL. MongoDB or others.
+    - Experience with asynchronous design and queueing patterns and
+      tools.
+    - At least 5 years of experience focused on building commercial
+      enterprise web applications deployed either as packaged or SaaS
+      software, with a total of at least 8 years of overall web
+      application development.
+    - Familiarity using code quality tools, continuous integration,
+      automation, and various best practices to ensure high quality in
+      the long-term
+    - Experience with key DevOps tools, processes, and practices 
+    - Strong team player 
+    - Strong written and verbal communication skills 
+
+
   | Certificates                 | Accounts      | Blog           |
   |------------------------------+---------------+----------------|
   | Learning to Learn            | Git           | Cooking Python |
