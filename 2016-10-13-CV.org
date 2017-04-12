@@ -28,22 +28,50 @@ tags: [CV, Emacs, Python, Literate Programming]
 #+LaTeX_HEADER: \usepackage{courier}
 #+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
 
+* \alpha Dense Text
 
-* Img                                                              :noexport:
-  #+ATTR_LATEX: :height 5cm :float wrap
+  #+ATTR_LATEX: :float wrap :width 5cm
   [[./Portrait.jpg]]
 
+  I'm an avid knowledge gatherer as long as I can remember myself. The
+  acts speak much louder than words, thus, this is the very gist out
+  of my professional skills: Leaning to Learn, Data Science, Model
+  Thinking, Ovivo, Pythonanywhere, 0--key, oDesk, FastFresh,
+  Py-Org-Cookbook, Perceptron in OOP Python3, Python Design Patterns
+  Catalogue, StackOverflow.
 
-* \alpha Brief Introduction
-  #+BEGIN_QUOTE
+  In 2017 I've begun to dissect an Artificial Intelligent solution for
+  data classification, Elisp, NumPy, SciPy, GNU Octave and enrolled
+  into [[https://www.coursera.org/learn/neural-networks/home][Neural Networks for Machine Learning]].
+ 
+* \mu{}otto
+
   Synergy \to the interaction or cooperation of two or more organizations,
   substances, or other agents to produce a combined effect greater than
-  the sum of their separate effects
-  #+END_QUOTE
-  I'm an avid knowledge gatherer as long as I can remember myself. The
-  acts speak much louder than words, thus, to avoid the idle
-  hand-waving (typing in this case, of cause), this is the most
-  prominent and distinct properties of myself:
+  the sum of their separate effects:
+
+  $\displaystyle\sum_{n=1}^{team}\sum_{k=1}^{skill}\to\prod_{n=1}^{team}\sum_{k=1}^{skill}$  
+
+
+* \xi{}macs Literate Programming
+  is a pivotal tool to forge a team synergy.
+
+* \Delta{}esired role
+  - A team catalyst, accelerator and propeller. Who next will fall in
+    love with Emacs and Python simultaneously?
+  - A synergy among the team is not just only a sum of knowledge, our
+    goal is to obtain its product literally:
+    #+BEGIN_QUOTE
+    $\displaystyle\sum_{n=1}^{team}\sum_{k=1}^{skill}\to\prod_{n=1}^{team}\sum_{k=1}^{skill}$
+    #+END_QUOTE
+  - In other words the desired aim should be a /knowledge
+    multiplication/: sustainable state of continuous intellectual
+    advancements for each collaborator in particular.
+  - A team of professionals with mostly contiguous skills.
+  - Right now for professional growth I'm crucially need in /knowledge
+    exchange/: who knows something fascinating and would share it with
+    me, please?
+
 
 
 * GenReq                                                           :noexport:
@@ -75,8 +103,7 @@ tags: [CV, Emacs, Python, Literate Programming]
   | Introduction to Data Science | StackOverFlow |                |
   |                              | LinkedIn      |                |
 
-
-* \Sigma{}kills overview
+* \Sigma{}kills overview                                           :noexport:
   
 ** Emacs and a plethora of satellite packages
 
@@ -102,26 +129,11 @@ tags: [CV, Emacs, Python, Literate Programming]
          def schooling(self):
              self.succeed = ["Republican Physics Olympiad winner",]
    #+END_SRC
-* \zeta{}urrent state
+* \zeta{}urrent state                                              :noexport:
   Following the concept of /knowledge chain reaction/\trade I'm in conveying
   my own skills to my family: my patient, wise&cute wife and to my
   astute sonny. 
 
-* \Delta{}esired role
-  - A team catalyst, accelerator and propeller. Who next will fall in
-    love with Emacs and Python simultaneously?
-  - A synergy among the team is not just only a sum of knowledge, our
-    goal is to obtain its product literally:
-    #+BEGIN_QUOTE
-    $\displaystyle\sum_{n=1}^{team}\sum_{k=1}^{skill}\to\prod_{n=1}^{team}\sum_{k=1}^{skill}$
-    #+END_QUOTE
-  - In other words the desired aim should be a /knowledge
-    multiplication/: sustainable state of continuous intellectual
-    progress each team member in particular.
-  - A team of professionals with mostly contiguous skills.
-  - Right now for professional growth I'm crucially need in /knowledge
-    exchange/: who knows something fascinating and would share it with
-    me, please?
 
 
 * Test #1                                                          :noexport:
