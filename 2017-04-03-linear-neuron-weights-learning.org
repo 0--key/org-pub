@@ -338,59 +338,94 @@ to get the derivatives needed for learning the weights of a logistic
    y i ∂w ij ∂w ij ∂z j ∂z j ∂E ∂z j
 
 * How to use the derivatives computed by the backpropagation algorithm
-Geoffrey Hinton
-with
-Nitish Srivastava
-Kevin SwerskyConverting error derivatives into a learning procedure
-•  The backpropagation algorithm is an efficient way of computing the
-error derivative dE/dw for every weight on a single training case.
-•  To get a fully specified learning procedure, we still need to make a lot
-of other decisions about how to use these error derivatives:
-–  Optimization issues: How do we use the error derivatives on
-individual cases to discover a good set of weights? (lecture 6)
-–  Generalization issues: How do we ensure that the learned weights
-work well for cases we did not see during training? (lecture 7)
-•  We now have a very brief overview of these two sets of issues.Optimization issues in using the weight derivatives
-•  How often to update the weights
-–  Online: after each training case.
-–  Full batch: after a full sweep through the training data.
-–  Mini-batch: after a small sample of training cases.
-•  How much to update (discussed further in lecture 6)
-–  Use a fixed learning rate?
-–  Adapt the global learning rate?
-–  Adapt the learning rate on each connection
-separately?
-–  Don’t use steepest descent?
-w1
-w2Overfitting: The downside of using powerful models
-•  The training data contains information about the regularities in the
-mapping from input to output. But it also contains two types of noise.
-–  The target values may be unreliable (usually only a minor worry).
-–  There is sampling error. There will be accidental regularities just
-because of the particular training cases that were chosen.
-•  When we fit the model, it cannot tell which regularities are real and
-which are caused by sampling error.
-–  So it fits both kinds of regularity.
-–  If the model is very flexible it can model the sampling error really
-well. This is a disaster .A simple example of overfitting
-input = x
-Which output value should
-you predict for this test input?
-•  Which model do you trust?
-–  The complicated model fits the
-data better.
-–  But it is not economical.
-•  A model is convincing when it fits a
-lot of data surprisingly well.
-–  It is not surprising that a
-complicated model can fit a
-small amount of data well.Ways to reduce overfitting
-•  A large number of different methods have been developed.
-–  Weight-decay
-–  Weight-sharing
-–  Early stopping
-–  Model averaging
-–  Bayesian fitting of neural nets
-–  Dropout
-–  Generative pre-training
-•  Many of these methods will be described in lecture 7.
+
+** Converting error derivatives into a learning procedure
+
+   • The backpropagation algorithm is an efficient way of computing
+   the error derivative dE/dw for every weight on a single training
+   case.
+
+   • To get a fully specified learning procedure, we still need to
+   make a lot of other decisions about how to use these error
+   derivatives: – Optimization issues: How do we use the error
+   derivatives on individual cases to discover a good set of weights?
+   (lecture 6)
+
+   – Generalization issues: How do we ensure that the learned weights
+   work well for cases we did not see during training? (lecture 7)
+
+   • We now have a very brief overview of these two sets of
+   issues.Optimization issues in using the weight derivatives
+
+   • How often to update the weights
+
+   – Online: after each training case.
+
+   – Full batch: after a full sweep through the training data.
+
+   – Mini-batch: after a small sample of training cases.
+
+   • How much to update (discussed further in lecture 6)
+
+   – Use a fixed learning rate?
+
+   – Adapt the global learning rate?
+
+   – Adapt the learning rate on each connection separately?
+
+   – Don’t use steepest descent? w1 w2
+
+** Overfitting: The downside of using powerful models
+
+   • The training data contains information about the regularities in
+   the mapping from input to output. But it also contains two types of
+   noise.
+
+   – The target values may be unreliable (usually only a minor worry).
+
+   – There is sampling error. There will be accidental regularities
+   just because of the particular training cases that were chosen.
+
+   • When we fit the model, it cannot tell which regularities are real
+   and which are caused by sampling error.
+
+   – So it fits both kinds of regularity.
+
+   – If the model is very flexible it can model the sampling error
+   really well. This is a disaster .
+
+** A simple example of overfitting
+   input = x Which output value should you predict for this test
+   input?
+
+   • Which model do you trust?
+
+   – The complicated model fits the data better.
+
+   – But it is not economical.
+
+   • A model is convincing when it fits a lot of data surprisingly
+   well.
+
+   – It is not surprising that a complicated model can fit a small
+   amount of data well.
+
+** Ways to reduce overfitting
+
+   • A large number of different methods have been developed.
+
+   – Weight-decay
+
+   – Weight-sharing
+
+   – Early stopping
+
+   – Model averaging
+
+   – Bayesian fitting of neural nets
+
+   – Dropout
+
+   – Generative pre-training
+
+   • Many of these methods will be described in lecture 7.
