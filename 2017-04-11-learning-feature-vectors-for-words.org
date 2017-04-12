@@ -18,6 +18,7 @@ tags: [feature vector,]
 
 * Learning to predict the next word
 
+
 ** A simple example of relational information
    Christopher = Penelope Margaret = Arthur Andrew = Christine
    Victoria = James Colin Charlotte Roberto = Maria Gina = Emilio
@@ -114,10 +115,11 @@ tags: [feature vector,]
    terms as input and predict the probability that the fact is
    correct.
 
-   – To train such a net we need a good source of false facts.Neural
-   Networks for Machine Learning Lecture 4b
+   – To train such a net we need a good source of false facts.
+
 
 * A brief diversion into cognitive science
+
 
 ** What the family trees example tells us about concepts
 
@@ -171,11 +173,11 @@ tags: [feature vector,]
 
    – But many neurons are probably used for each concept and each
    neuron is probably involved in many concepts. This is called a
-   “distributed representation”.Neural Networks for Machine Learning
-   Lecture 4c
+   “distributed representation”.
+
 
 * Another diversion: The softmax output function
-  Geoffrey Hinton with Nitish Srivastava Kevin Swersky
+
 
 ** Problems with squared error
 
@@ -211,10 +213,11 @@ tags: [feature vector,]
 
    – The steepness of dC/dy exactly balances the flatness of dy/dz C =
    − ∑ t j log y j j target value ∂C ∂C ∂y j = ∑ = y i − t i ∂z i ∂y j
-   ∂z i jNeural Networks for Machine Learning Lecture 4d
+   ∂z i j
+
 
 * Neuro-probabilistic language models
-  Geoffrey Hinton with Nitish Srivastava Kevin Swersky
+  
 
 ** A basic problem in speech recognition
 
@@ -299,10 +302,13 @@ tags: [feature vector,]
    • Is there a better way to deal with such a large number of
    outputs?Neural Networks for Machine Learning Lecture 4e
 
+
 * Ways to deal with the large number
   of possible outputs in neuro-probabilistic language models Geoffrey
 
   Hinton with Nitish Srivastava Kevin Swersky
+  of possible outputs in neuro-probabilistic language models 
+
 
 ** A serial architecture
    Try all candidate next words one at a time. logit score for the
