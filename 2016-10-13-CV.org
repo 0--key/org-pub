@@ -268,3 +268,137 @@ tags: [CV, Emacs, Python, Literate Programming]
  capable to learn joyfully and fast persistence and patience
 
  Personal: reading-addicted
+
+* src                                                              :noexport:
+
+** Continuum Analytics 
+
+*** About This Job
+
+    As a technical lead and integral part of our product development
+    team, you’ll be responsible for maintaining and extending one of
+    Continuum’s flagship products, the Anaconda Repository. This product
+    is unique in that it allows enterprises to truly adopt the power of
+    open data science safely, securely, and at scale. It also exists as
+    a Software as a Service application, Anaconda Cloud
+    (www.anaconda.org), which serves millions. You will collaborate with
+    other developers focused on this product and the entire platform,
+    but will be the point person for ensuring its long-term quality and
+    technical success. Finally, you’ll work in our downtown Austin, TX
+    office, collaborating with a set of awesome peers that cut across
+    product, design, development, subject matter experts, and marketing
+    among others.
+
+*** Main Responsibilities
+
+    - Work with product management and members of the product
+      architecture team to translate high-level business objectives,
+      functional and nonfunctional requirements into designs and code
+      forming a consistent, coherent, scalable, and secure platform
+      component
+    - Avoid technical debt by contributing to and implementing the
+      absolute best expression of our design specifications, making any
+      appropriate tradeoffs along the way
+    - Deeply understand and own the deployment and code-level operations
+      of Anaconda Cloud, and take a keen interest in its performance
+      from a development perspective, working with our Operations team
+    - Act as a key member and regularly participate and interact as part
+      of a cross-functional product development team including working
+      with existing and potential customers
+    - Working with members of the design team and other product teams,
+      occasionally participate in product development team analysis and
+      collaborative feature design sessions
+    - Provide mentorship and guidance to other team members 
+
+
+*** Requirements and Position Qualifications
+
+    - Strong python experience. 
+    - Experience designing, implementing, and maintaining scalable web
+      applications.
+    - Extensive experience with at least one python web framework.
+      Flask, Django, or others.
+    - Experience with both relational and NoSQL databases. PostgreSQL
+      or MySQL. MongoDB or others.
+    - Experience with asynchronous design and queueing patterns and
+      tools.
+    - At least 5 years of experience focused on building commercial
+      enterprise web applications deployed either as packaged or SaaS
+      software, with a total of at least 8 years of overall web
+      application development.
+    - Familiarity using code quality tools, continuous integration,
+      automation, and various best practices to ensure high quality in
+      the long-term
+    - Experience with key DevOps tools, processes, and practices 
+    - Strong team player 
+    - Strong written and verbal communication skills 
+    - Must be based in the Austin, TX area or willing to relocate 
+
+
+*** Desired Qualifications
+
+    - Enterprise security experience (experience with OAUTH, LDAP/AD,
+      SAML, Kerberos, etc.)
+    - Experience with conda
+    - Experience building high-quality, packaged enterprise
+      applications that are deployed in ways that make it a challenge
+      to provide fast updates (e.g. air gapped environments)
+    - Domain knowledge either building or integrating with repository
+      applications such as JFrog Artifactory, Sonatype Nexus,
+      PyPi/devpi, or Anaconda Cloud
+    - Experience with cloud service providers such as AWS, Google
+      Cloud Platform, and Azure.
+    - Experience and/or desire to contribute to the “full-stack” of
+      our applications
+    - Domain experience with data science/machine learning
+      applications
+
+
+*** Our Values
+
+      Continuum fosters a culture of the following primary values that
+      energize and engage our team members:
+
+    - Passionate CONTRIBUTION – engaging deeply as community builders
+    - Spirit of CRAFTSMANSHIP – taking an ownership and pride in our
+      work, tools and continual improvement
+    - Continuous LEARNING – listening, learning, and when appropriate
+      teaching, both internally and externally
+    - TEAM-Based Results – proactively working well together to
+      produce amazing results with each individual being humble,
+      hungry, and smart (especially about people). All have a voice in
+      appropriate channels, but decisions are based on specialization
+      and accountability structure.
+    - CUSTOMER-Driven Action 
+
+
+*** Help Us Shape the Future of Data
+
+      Continuum is seeking people who want to play a role in shaping the
+      future of data, analytics, and visualization. Candidates for
+      technical roles should be knowledgeable and capable, but always
+      eager to learn more and to teach others. Overall, we strive to
+      create a culture that is both relaxed and focused, and we stress
+      empathy and collaboration with our customers, open source users,
+      and with each other. Our primary employee perk is that we are
+      actively working on things that have a global impact, whether it's
+      modeling risk and detecting fraud in the financial markets, or
+      accelerating cancer research, or fighting human trafficking and
+      terrorism. We are part of a global community on the cutting edge
+      of open source analytics, and our employees gain exposure and
+      participate in all that.
+
+      Continuum Analytics develops Anaconda, the leading modern open
+      source analytics platform powered by Python. More than two million
+      users have adopted the Anaconda platform in less than three years,
+      and growth continues to accelerate. Customers include more than
+      200 of the Fortune 500, 19 of the Fortune 25 and 8,000
+      universities around the world. Boeing, Procter & Gamble, Pepsi,
+      Schlumberger, the U.S. Department of the Treasury and the
+      Securities and Exchange Commission are among current industry
+      leaders who rely on Anaconda.
+
+      We have recently secured a $24 million Series A funding round led
+      by General Catalyst Partners and BuildGroup, bringing total
+      funding to-date to $34 million. We’re growing fast and looking for
+      A Players to take us to the next phase of our business.
