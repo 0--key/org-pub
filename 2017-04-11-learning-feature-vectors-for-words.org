@@ -245,9 +245,9 @@ tags: [feature vector,]
 
    • Take a huge amount of text and count the frequencies of all
    triples of words. Use these frequencies to make bets on the
-   relative probabilities of words given the previous two words: p ( w
-   3 = c | w 2 = b , w 1 = a ) count ( abc ) = p ( w 3 = d | w 2 = b ,
-   w 1 = a ) count ( abd )
+   relative probabilities of words given the previous two words:
+
+   $\frac{p(w_3 = c | w_2 =  b, w_1 = a)}{p(w_3 = d | w_2 =  b, w_1 = a)} = \frac{count(abc)}{count(abd)}$
 
    • Until very recently this was the state-of-the-art.
 
