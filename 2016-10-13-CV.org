@@ -49,7 +49,7 @@ tags: [CV, Emacs, Python, Literate Programming]
   substances, or other agents to produce a combined effect greater than
   the sum of their separate effects:
 
-  $\displaystyle\sum_{n=1}^{team}\sum_{k=1}^{skill}\to\prod_{n=1}^{team}\sum_{k=1}^{skill}$  
+  $\displaystyle\sum_{n=1}^{team}\sum_{k=1}^{skill}\xRightarrow[\text{emacs}]{\text{org-mode}}\prod_{n=1}^{team}\sum_{k=1}^{skill}$
 
 
 * \xi{}macs Literate Programming
