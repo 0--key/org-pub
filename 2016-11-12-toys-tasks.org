@@ -2451,3 +2451,21 @@ tags: [coding, algorithms]
 
    Here are some resources on DFAs (the automaton this Kata asks you
    to create.)
+
+** Solution
+   #+BEGIN_SRC python :results output
+     class Automaton(object):
+
+         def __init__(self):
+             self.states = []
+
+         def read_commands(self, commands):
+             # Return True if we end in our accept state, False otherwise
+
+     my_automaton = Automaton()
+     # Do anything necessary to set up your automaton's states, q1, q2, and
+     # q3.
+
+     assert(my_automaton.read_commands(["1"]))
+     assert(my_automaton.read_commands(["1", "0", "0", "1"]))
+   #+END_SRC
