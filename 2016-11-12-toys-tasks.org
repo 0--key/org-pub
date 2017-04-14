@@ -2528,3 +2528,31 @@ tags: [coding, algorithms]
    2, 2, 2, 3] does not. In case of a plateau-peak, please only return
    the position and value of the beginning of the plateau. For
    example: PickPeaks([1, 2, 2, 2, 1]) returns {Pos: [1], Peaks: [2]}
+
+** Solution
+   #+BEGIN_SRC python :results output
+     def pick_peaks(arr):
+         #your code here
+
+
+     ## ('should support finding peaks')
+     assert(pick_peaks([1,2,3,6,4,1,2,3,2,1]) == {"pos":[3,7],
+                                                  "peaks":[6,3]})
+
+     ## ('should support finding peaks, but should ignore peaks on the edge
+     ## of the array')
+     assert(pick_peaks([3,2,3,6,4,1,2,3,2,1,2,3]) == {"pos":[3,7], "peaks":[6,3]})
+
+     ## ('should support finding peaks; if the peak is a plateau, it should
+     ## only return the position of the first element of the plateau')
+     assert(pick_peaks([3,2,3,6,4,1,2,3,2,1,2,2,2,1]) == {"pos":[3,7,10],
+                                                          "peaks":[6,3,2]})
+
+     ## ('should support finding peaks; if the peak is a plateau, it should
+     ## only return the position of the first element of the plateau')
+     assert(pick_peaks([2,1,3,1,2,2,2,2,1]) == {"pos":[2,4], "peaks":[3,2]})
+
+     ## ('should support finding peaks, but should ignore peaks on the edge
+     ## of the array')
+     assert(pick_peaks([2,1,3,1,2,2,2,2]) == {"pos":[2], "peaks":[3]})    
+   #+END_SRC
