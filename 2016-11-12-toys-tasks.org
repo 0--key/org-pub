@@ -2344,7 +2344,7 @@ tags: [coding, algorithms]
 
    #+RESULTS:
 
-* TODO Longest common subsequence
+* Longest common subsequence
   
 ** Description
    Write a function called LCS that accepts two sequences, and returns
