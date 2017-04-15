@@ -34,12 +34,12 @@ tags: [CV, Emacs, Python, Literate Programming]
 
   I'm an avid knowledge gatherer as long as I can remember myself. The
   acts speak much louder than words, thus, this is the very gist out
-  of my professional skills: Leaning to Learn, Data Science, Model
-  Thinking, Ovivo, Pythonanywhere, 0--key, oDesk, FastFresh,
-  Py-Org-Cookbook, Perceptron in OOP Python3, Python Design Patterns
-  Catalogue, StackOverflow.
+  of my professional skills: [[http://bit.ly/2nPfOXR][Leaning to Learn]], [[http://bit.ly/2nSSGJQ][Introduction to Data
+  Science]], [[http://bit.ly/1lk9C7p][Model Thinking]], [[http://bit.ly/2nP3uqx][Ovivo]], Pythonanywhere, 0--key, [[http://bit.ly/211LI1k][oDesk]],
+  FastFresh, Py-Org-Cookbook, Perceptron in OOP Python3, Python Design
+  Patterns Catalogue, StackOverflow.
 
-  In 2017 I've begun to dissect an Artificial Intelligent solution for
+  In 2017 I've begun to dissect an Artificial Intelligent approach for
   data classification, Elisp, NumPy, SciPy, GNU Octave and enrolled
   into [[https://www.coursera.org/learn/neural-networks/home][Neural Networks for Machine Learning]].
  
