@@ -2531,6 +2531,14 @@ tags: [coding, algorithms]
 
 ** Solution
    #+BEGIN_SRC python :results output
+     def plateau(arr):
+         previous = arr[0]
+         for i in arr[1:]:
+             if i < previous:
+                 return True
+             previous = i
+         return False
+
      def pick_peaks(arr):
          peaks = {"pos":[], "peaks":[]}
          if len(arr) > 2:
@@ -2543,6 +2551,11 @@ tags: [coding, algorithms]
         
 
 
+
+     assert(plateau([2, 2, 2, 1]))
+     assert(plateau([2, 3, 4, 6, 5]) == False)
+     assert(plateau([2, 2, 2, 2]) == False)
+     print(pick_peaks([1,2,3,6,4,1,2,3,2,1]))
      ## ('should support finding peaks')
      assert(pick_peaks([1,2,3,6,4,1,2,3,2,1]) == {"pos":[3,7],
                                                   "peaks":[6,3]})
