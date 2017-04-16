@@ -2532,23 +2532,24 @@ tags: [coding, algorithms]
 ** Solution
    #+BEGIN_SRC python :results output
      def plateau(arr):
-         previous = arr[0]
-         for i in arr[1:]:
-             if i < previous:
+         pre_previous = arr[0]
+         previous = arr[1]
+         for i in arr[2:]:
+             if i < previous and previous == pre_previous:
                  return True
-             previous = i
+             pre_previous = previous
+             previous = 1
          return False
 
      def pick_peaks(arr):
          peaks = {"pos":[], "peaks":[]}
          if len(arr) > 2:
              for i in range(1, len(arr) - 1):
-                 if arr[i] > arr[i+1] and \
-                    arr[i] > arr[i-1]:
+                 if arr[i] > arr[i+1] and arr[i] > arr[i-1]:
                      peaks["pos"].append(i)
                      peaks["peaks"].append(arr[i])
                      continue
-                 if arr[i] > arr[i-1] and plateau(arr[i:]):
+                 if arr[i] > arr[i-1] and arr[i] == arr[i+1] and plateau(arr[i:]):
                      peaks["pos"].append(i)
                      peaks["peaks"].append(arr[i])
          return peaks
