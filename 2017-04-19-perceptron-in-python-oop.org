@@ -14,6 +14,9 @@ tags: [perceptron, oop]
 #+TOC: headlines 2
 #+PROPERTY:header-args :results output :exports both
 
+#+INCLUDE: motto.org::perceptron
+
+
 #+BEGIN_SRC python :eval noexport
   #!/usr/bin/env python
   # -*- coding: utf-8 -*-
