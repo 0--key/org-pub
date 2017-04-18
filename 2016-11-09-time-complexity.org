@@ -63,3 +63,27 @@ tags: [computation, complexity, analysis]
   logarithmic.
 
   The full [[https://en.wikipedia.org/wiki/Time_complexity#Table_of_common_time_complexities][list of common time complexities]]  
+
+* Timing technique
+  #+BEGIN_SRC python :eval noexport :exports both :results output
+    import timeit
+
+    def merge_dicts(*dict_args):
+        """
+        Given any number of dicts, shallow copy and merge into a new dict,
+        precedence goes to key value pairs in latter dicts.
+        """
+        result = {}
+        for dictionary in dict_args:
+            result.update(dictionary)
+        return result
+
+    x = {'a': 1, 'b': 2}
+    y = {'b': 3, 'c': 4}
+    print(min(timeit.repeat(lambda: merge_dicts(x, y), number=100)))
+
+    # min(timeit.repeat(lambda: {**x, **y})) ==> for Python 3.5
+  #+END_SRC
+
+  #+RESULTS:
+  : 0.00025340499996673316
