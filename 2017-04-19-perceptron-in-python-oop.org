@@ -14,93 +14,9 @@ tags: [perceptron, oop]
 #+TOC: headlines 2
 #+PROPERTY:header-args :results output :exports both :eval noexport
 
-#+INCLUDE: motto.org::perceptron
 
 
-#+BEGIN_SRC python :eval noexport
-  #!/usr/bin/env python
-  # -*- coding: utf-8 -*-
-  """
-  Single layer neural network
-  """
 
 
-  class Inlet(object):
-      """Input signal into dendron"""
-
-      def __init__(self):
-          pass
-
-      def modulate(self, signal):
-          self.signal = signal
 
 
-  class Dendron(object):
-      """Convey signal to neuron"""
-
-      def __init__(self, perceptron, inlet, weight=0.1):
-          self.perceptron = perceptron
-          self.weight = weight
-          self.inlet = inlet
-
-
-  class Perceptron(object):
-      """Processing module itself"""
-
-      def __init__(self, df=lambda x: x):  # sigmoidal
-          self.df = df
-          self.dendrons = []
-          self.output = 0
-
-      def calculate_output(self):
-          for dendron in self.dendrons:
-              self.output += self.df(
-                  dendron.weight *
-                  dendron.inlet.signal)
-
-
-  class NeuralNetwork(object):
-      """Ties all classes above together"""
-
-      def __init__(self, swing):
-          """Creates network with swing inlets and equal number of
-          perceptrons connected eachone inlet with all perseptrons"""
-          self.network_swing = swing
-          self.inlets = []
-          self.perceptrons = []
-          self.dendrons = []
-          for i in range(swing):
-              self.inlets.append(Inlet())
-              self.perceptrons.append(Perceptron())
-              for j in range(swing):
-                  self.dendrons.append(
-                      Dendron(self.perceptrons[-1],
-                              self.inlets[-1]))
-                  self.perceptrons[-1].dendrons.append(self.dendrons[-1])
-
-      def eval_input(self, input_array):
-          for i in range(self.network_swing):
-              self.inlets[i].modulate(input_array[i])
-          for i in self.perceptrons:
-              i.calculate_output()
-
-      def update_weights(self, weights_array):
-          for i in range(self.network_swing ** 2):
-              self.dendrons[i].weight = weights_array[i]
-
-  NN = NeuralNetwork(2)
-  NN.update_weights([0.1, 0.2, 0.3, 0.4])
-  for i in NN.dendrons:
-      print(i.weight)
-  NN.eval_input([1, 1])
-  for i in NN.perceptrons:
-      print(i.output)
-#+END_SRC
-
-#+RESULTS:
-: 0.1
-: 0.2
-: 0.3
-: 0.4
-: 0.30000000000000004
-: 0.7
