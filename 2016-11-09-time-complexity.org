@@ -84,8 +84,12 @@ tags: [computation, complexity, analysis]
     print(min(timeit.repeat(lambda: merge_dicts(x, y))))
 
     # min(timeit.repeat(lambda: {**x, **y})) ==> for Python 3.5
+
+    # dictionary item overwrite caveat illustration
+    z = {'c': 1}
+    assert(merge_dicts(x, y, z)['c'] == 1)
   #+END_SRC
 
   #+RESULTS:
-  : 0.00025340499996673316
+  : 0.0002650470000844507
   : 2.314010903000053
