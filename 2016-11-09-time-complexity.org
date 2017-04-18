@@ -81,9 +81,11 @@ tags: [computation, complexity, analysis]
     x = {'a': 1, 'b': 2}
     y = {'b': 3, 'c': 4}
     print(min(timeit.repeat(lambda: merge_dicts(x, y), number=100)))
+    print(min(timeit.repeat(lambda: merge_dicts(x, y))))
 
     # min(timeit.repeat(lambda: {**x, **y})) ==> for Python 3.5
   #+END_SRC
 
   #+RESULTS:
   : 0.00025340499996673316
+  : 2.314010903000053
