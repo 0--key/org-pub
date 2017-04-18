@@ -17,6 +17,15 @@ tags: [perceptron, oop]
 
 
 
+** What is neuron?
+   #+CAPTION: Neuron anatomy
+   #+ATTR_HTML: :alt How it looks like :title A raw sketch :align right
+   #+ATTR_HTML: :width 40%
+   [[http://0--key.github.io/assets/img/neural_networks/neuron_anatomy.jpg]]
 
+   Nerve Cell: Dendrites receive messages from other neurons. The
+   message then moves through the axon to the other end of the neuron,
+   then to the tips of the axon and then into the space between
+   neurons. From there the message can move to the next neuron.
 
 
