@@ -37,3 +37,5 @@ tags: [perceptron, oop]
    neurons. From there the message can move to the next neuron.
 
 
+* Implementation
+  #+INCLUDE: motto.org::perceptron
