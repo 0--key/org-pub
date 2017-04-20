@@ -21,10 +21,15 @@ tags: [perceptron, oop]
    a computer system modelled on the human /brain/ and nervous system
    #+END_QUOTE
 
-** What is neuron?
+** What is brain?
+   With no doubt it is a giant nebula (10^{}14) of nervous cells
+   #+CAPTION: Interconnections
+   #+ATTR_HTML: :alt How it looks like :title A raw sketch
+   [[http://0--key.github.io/assets/img/neural_networks/white_matter.jpg]]
+
+** What is a neuron?
    #+CAPTION: Neuron anatomy
-   #+ATTR_HTML: :alt How it looks like :title A raw sketch :align right
-   #+ATTR_HTML: :width 40%
+   #+ATTR_HTML: :alt How it looks like :title A raw sketch
    [[http://0--key.github.io/assets/img/neural_networks/neuron_anatomy.jpg]]
 
    Nerve Cell: Dendrites receive messages from other neurons. The
