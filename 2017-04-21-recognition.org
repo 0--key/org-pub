@@ -1,0 +1,146 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: Neural network
+tagline: " and object recognition"
+permalink: /machine-learning/neural-network/object_recognition.html
+categories: [machine learning, neural networks]
+tags: [object recognition]
+---
+#+END_EXPORT
+
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both
+
+
+#+BEGIN_QUOTE
+Why object recognition is difficult
+#+END_QUOTE
+
+* Things that make it hard to recognize object
+
+** Segmentation:
+   Real scenes are cluttered with other objects:
+   - It's hard to tell which pieces go together as parts of the same
+     object.
+   - Parts of an object can be hidden behind other objects
+
+
+** Lighting:
+   The intensities of the pixels are determined as much by the
+   lighting as by the object.
+
+** Deformation:
+   Object can deform in a variety of non-affine ways:
+   - e.g. a hand-written 2 can have a large loop or just a cusp.
+
+
+** Affordances:
+   Object classes are often defined by how they are used:
+   - Chairs are things designed for sitting on so they have a wide
+     variety of physical shapes.
+
+
+** More things that make it hard to recognize objects
+
+*** Viewpoint:
+    Changes in viewpoint cause changes in images that standard learning
+    methods cannot cope with.
+    - Information hops between input dimensions (i.e. pixels)
+
+
+
+    Imagine a medical database in which the age of a patient sometimes
+    hops to the input dimension that normally codes for weight!
+    - To apply machine learning we would first want to eliminate this
+      dimension-hoping.
+
+
+* Ways to achieve viewpoint invariance
+
+** Some ways to achieve viewpoint invariance
+
+   We are so good at viewpoint invariance that it is hard to
+   appreciate how difficult it is.
+   - It's one of the main difficulties in making computers perceive.
+   - We still don't have generally accepted solutions.
+
+
+   There are several different approaches:
+   - Use redundant invariant features.
+   - Put a box around the object and use normalized pixels.
+   - Use replicated features with pooling. This is called
+     /convolutional neural nets/
+   - Use a hierarchy of parts that have explicit poses ralative to the
+     camera.
+
+
+** The invariant feature approach
+   Extract a large, redundant set of features that are invariant under
+   transformation.
+
+   - e.g. pair of roughly parallel lines with a red dot between them.
+   - This what baby herrings gulls use to know where to peck for food.
+
+
+
+   With enough invariant features, there is only one way to assemble
+   them into an object.
+
+   - We don't need to represent the relationships between features
+     directly because they are captured by other features.
+
+   But for recognition, we must avoid forming features from parts of
+   different objects.
+
+** The judicious normalization approach
+
+   Put a box around the object and use it as a coordinate frame for a
+   set of normalized pixels.
+
+   - This solves the dimension-hopping problem. If we choose the box
+     correctly, the same part of an object always occurs on the same
+     normalized pixels.
+   - The box can provide invariance to many degrees of freedom:
+     /translation, rotation, scale, shear, stretch.../
+
+
+   But choosing the box is difficult because of:
+
+   - Segmentation errors, occlusion, unusual orientation.
+
+
+   We need to recognize the shape to get the box right!
+
+** The brute force normalization approach
+   When training the recognizer, use well-segmented, upright images to
+   fit the correct box. At test time try all possible boxes in a range
+   of positions and scales.
+
+   - this approach is widely used for detecting upright things like
+     faces and hose numbers in unsegmented images.
+   - It is much more efficient inf the recognizer can cope with some
+     variation in position and scale so that we can use a coarse grid
+     when trying all possible boxes.
+
+
+* Convolutional neural networks for hand-written digit recognition
+
+** The replicated feature approach
+   (currently the dominant approach for neural networks) Use many
+   different copies of the same feature detector with different
+   positions.
+   - Could also replicate across scale and orientation (tricky and
+     expensive)
+   - Replication greatly reduces the number of free parameters to be
+     learned.
+
+   Use several different feature types, each with its own map of
+   replicated detectors.
+
+   - Allows each patch of image to be represented in several ways.
+
+
+** Backpropogation with weight constraints
