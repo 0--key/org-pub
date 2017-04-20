@@ -2601,3 +2601,20 @@ tags: [coding, algorithms]
    The order of the permutations doesn't matter.
    #+END_QUOTE
 
+** Solution
+   #+BEGIN_SRC python :results output :eval noexport
+     def permutations(string):
+         pass
+
+
+     assert(sorted(permutations('a')) == ['a']);
+     assert(sorted(permutations('ab')) == ['ab', 'ba'])
+     assert(sorted(permutations('aabb')) == ['aabb',
+                                             'abab',
+                                             'abba',
+                                             'baab',
+                                             'baba',
+                                             'bbaa'])
+   #+END_SRC
+
+   #+RESULTS:
