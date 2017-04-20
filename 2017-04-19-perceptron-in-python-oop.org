@@ -22,7 +22,8 @@ tags: [perceptron, oop]
    #+END_QUOTE
 
 ** What is brain?
-   With no doubt it is a giant nebula (10^{}14) of nervous cells
+   With no doubt it is a giant nebula (10^{14}) of nervous cells
+   interconnected by 1.7 * 10^{8} meters of bound tissue.
    #+CAPTION: Interconnections
    #+ATTR_HTML: :alt How it looks like :title A raw sketch
    [[http://0--key.github.io/assets/img/neural_networks/white_matter.jpg]]
