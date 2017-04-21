@@ -34,6 +34,7 @@ Modeling sequences: A brief overview
   and unsupervised learning.
   –  It uses methods designed for supervised learning, but it doesn’t require a
   separate teaching signal.Memoryless models for sequences
+
   •  Autoregressive models
   w t −1
   w t −2
@@ -42,6 +43,7 @@ Modeling sequences: A brief overview
   input(t-2)
   input(t-1)
   previous terms using “delay taps”.
+
   •  Feed-forward neural nets
   These generalize autoregressive
   models by using one or more
@@ -53,9 +55,11 @@ Modeling sequences: A brief overview
   input(t-2)
   input(t-1)
   input(t)Beyond memoryless models
-  •  If we give our generative model some hidden state, and if we give this
-  hidden state its own internal dynamics, we get a much more interesting
-  kind of model.
+
+  • If we give our generative model some hidden state, and if we give
+  this hidden state its own internal dynamics, we get a much more
+  interesting kind of model.
+
   –  It can store information in its hidden state for a long time.
   –  If the dynamics is noisy and the way it generates outputs from its
   hidden state is noisy, we can never know its exact hidden state.
