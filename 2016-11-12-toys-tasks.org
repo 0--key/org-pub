@@ -2603,11 +2603,17 @@ tags: [coding, algorithms]
 
 ** Solution
    #+BEGIN_SRC python :results output :eval noexport
-     def permutations(string):
-         pass
+     result = []
+     def permutations(head, tail=''):
+         if len(head) == 0: result.append(tail)
+         else:
+             for i in range(len(head)):
+                 permutations(head[0:i] + head[i+1:], tail+head[i])
+         return result
 
 
-     assert(sorted(permutations('a')) == ['a']);
+     #print(permutations('a'))
+     assert(permutations('a') == ['a'])
      assert(sorted(permutations('ab')) == ['ab', 'ba'])
      assert(sorted(permutations('aabb')) == ['aabb',
                                              'abab',
