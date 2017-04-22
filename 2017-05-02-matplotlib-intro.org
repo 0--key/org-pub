@@ -1,0 +1,98 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: MatPlotLib
+tagline: " is innate Python"
+permalink: /data-visualization/matplotlib/intro.html
+categories: [data vizsualization]
+tags: [matplotlib]
+---
+#+END_EXPORT
+
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval noexport
+
+* GNU Octave meets Python
+
+** Data importing
+   #+BEGIN_SRC python :results none :session perc
+     import numpy as np
+     import scipy.io
+
+
+     def read_dataset(filename):
+         """Reads data from .mat binary file."""
+         data = scipy.io.loadmat(filename)
+         return [data[k] for k in ('neg_examples_nobias',
+                                   'pos_examples_nobias',
+                                   'w_init', 'w_gen_feas')]
+   #+END_SRC
+
+
+   #+BEGIN_SRC python :results output :session perc
+     (nen, pen, wi, wg) = read_dataset('dataset1.mat')
+     print(nen, '\n\n', pen, '\n\n', wi, '\n\n', wg)
+     print(type(nen))
+   #+END_SRC
+
+   #+RESULTS:
+   #+begin_example
+
+   [[-0.80857143  0.8372093 ]
+    [ 0.35714286  0.85049834]
+    [-0.75142857 -0.73089701]
+    [-0.3         0.12624585]] 
+
+    [[ 0.87142857  0.62458472]
+    [-0.02       -0.92358804]
+    [ 0.36285714 -0.31893688]
+    [ 0.88857143 -0.87043189]] 
+
+    [[-0.62170147]
+    [ 0.76091527]
+    [ 0.77187205]] 
+
+    [[ 4.3496526 ]
+    [-2.60997235]
+    [-0.69414749]]
+   <class 'numpy.ndarray'>
+#+end_example
+
+** Data visualization
+   #+BEGIN_SRC python :results file :session perc
+     import matplotlib.pyplot as plt
+     plt.plot([1,2,3,4], [1,4,9,16], 'ro')
+     plt.axis([0, 6, 0, 20])
+     plt.savefig('img/plt/first_test.png')
+   #+END_SRC
+
+   #+RESULTS:
+   [[file:[0, 6, 0, 20]]]
+
+
+   
+   #+BEGIN_SRC python :results file :session perc
+     import matplotlib.pyplot as plt
+     f = plt.figure(figsize=(15,10))
+     f.clf()
+
+     for i in nen:
+         xs = 3
+         ys = 4
+         # print(type(xs), xs, ys)
+         plt.scatter(xs, ys, c='red')
+     plt.savefig('test_nen.png')
+   #+END_SRC
+
+   #+RESULTS:
+
+   #+BEGIN_SRC python :results file :session perc
+     plt.scatter([2, 2.5, 3], [4, 4.5, 5], c='blue')
+     plt.savefig('test_single.png')
+     plt
+   #+END_SRC
+
+   #+RESULTS:
+   [[file:<matplotlib.collections.PathCollection object at 0x7f38092e6da0>]]
