@@ -32,7 +32,7 @@ tags: [matplotlib]
 
 
    #+BEGIN_SRC python :results output :session perc
-     (nen, pen, wi, wg) = read_dataset('dataset1.mat')
+     (nen, pen, wi, wg) = read_dataset('data/dataset1.mat')
      print(nen, '\n\n', pen, '\n\n', wi, '\n\n', wg)
      print(type(nen))
    #+END_SRC
