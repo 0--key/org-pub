@@ -178,7 +178,7 @@ Why do we need machine learning?
  (>>5,870 hrs)
 
 ** Transcript
-   #+BEGIN_QUOTE
+
    Hello.
    Welcome to the Coursera course on Neural Networks for Machine
    Learning.
@@ -382,7 +382,7 @@ Why do we need machine learning?
    percent and the error rate is still falling. And in the latest
    Android, if you do voice search, it's using one of these deep
    neurall networks in order to do very good speech recognition.
-   #+END_QUOTE
+
 * What are neural networks?
 
 ** Reasons to study neural computation
