@@ -61,38 +61,53 @@ tags: [matplotlib]
 #+end_example
 
 ** Data visualization
-   #+BEGIN_SRC python :results file :session perc
-     import matplotlib.pyplot as plt
-     plt.plot([1,2,3,4], [1,4,9,16], 'ro')
-     plt.axis([0, 6, 0, 20])
-     plt.savefig('img/plt/first_test.png')
-   #+END_SRC
 
-   #+RESULTS:
-   [[file:[0, 6, 0, 20]]]
+*** Simple
+    #+BEGIN_SRC python :results file :session perc
+      import matplotlib.pyplot as plt
+      plt.plot([1,2,3,4], [1,4,9,16], 'ro')
+      plt.axis([0, 6, 0, 20])
+      plt.savefig('img/plt/first_test.png')
+    #+END_SRC
+
+    #+RESULTS:
+    [[file:[0, 6, 0, 20]]]
+
+*** Colorization
+    #+BEGIN_SRC python :results file :session perc
+      ax = plt.gca()
+      ax.set_axis_bgcolor('black')
+      # ax.set_axis_bgcolor((1, 0, 0))
+      plt.plot([1,2,3,4], [1,4,9,16], 'b^')
+      plt.axis([0, 6, 0, 20])
+      plt.savefig('img/plt/second_test.png')
+    #+END_SRC
+
+    #+RESULTS:
+    [[file:[0, 6, 0, 20]]]
 
 
    
-   #+BEGIN_SRC python :results file :session perc
-     import matplotlib.pyplot as plt
-     f = plt.figure(figsize=(15,10))
-     f.clf()
+    #+BEGIN_SRC python :results file :session perc
+      import matplotlib.pyplot as plt
+      f = plt.figure(figsize=(15,10))
+      f.clf()
 
-     for i in nen:
-         xs = 3
-         ys = 4
-         # print(type(xs), xs, ys)
-         plt.scatter(xs, ys, c='red')
-     plt.savefig('test_nen.png')
-   #+END_SRC
+      for i in nen:
+          xs = 3
+          ys = 4
+          # print(type(xs), xs, ys)
+          plt.scatter(xs, ys, c='red')
+      plt.savefig('test_nen.png')
+    #+END_SRC
 
-   #+RESULTS:
+    #+RESULTS:
 
-   #+BEGIN_SRC python :results file :session perc
-     plt.scatter([2, 2.5, 3], [4, 4.5, 5], c='blue')
-     plt.savefig('test_single.png')
-     plt
-   #+END_SRC
+    #+BEGIN_SRC python :results file :session perc
+      plt.scatter([2, 2.5, 3], [4, 4.5, 5], c='blue')
+      plt.savefig('test_single.png')
+      plt
+    #+END_SRC
 
-   #+RESULTS:
-   [[file:<matplotlib.collections.PathCollection object at 0x7f38092e6da0>]]
+    #+RESULTS:
+    [[file:<matplotlib.collections.PathCollection object at 0x7f38092e6da0>]]
