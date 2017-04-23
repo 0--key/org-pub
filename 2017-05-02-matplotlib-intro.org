@@ -63,7 +63,7 @@ tags: [matplotlib]
 ** Data visualization
 
 *** Simple
-    #+BEGIN_SRC python :results file :session perc
+    #+BEGIN_SRC python :results file :session perc :exports code
       import matplotlib.pyplot as plt
       plt.plot([1,2,3,4], [1,4,9,16], 'ro')
       plt.axis([0, 6, 0, 20])
@@ -73,8 +73,10 @@ tags: [matplotlib]
     #+RESULTS:
     [[file:[0, 6, 0, 20]]]
 
+    [[http://0--key.github.io/assets/img/plt/first_test.png]]
+
 *** Colorization
-    #+BEGIN_SRC python :results file :session perc
+    #+BEGIN_SRC python :results file :session perc :exports code
       ax = plt.gca()
       ax.set_axis_bgcolor('black')
       # ax.set_axis_bgcolor((1, 0, 0))
@@ -86,6 +88,7 @@ tags: [matplotlib]
     #+RESULTS:
     [[file:[0, 6, 0, 20]]]
 
+    [[http://0--key.github.io/assets/img/plt/second_test.png]]
 
    
     #+BEGIN_SRC python :results file :session perc
