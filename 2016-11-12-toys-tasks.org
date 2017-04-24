@@ -2633,3 +2633,11 @@ tags: [coding, algorithms]
    used at least once), and the code length should less than: python
    55 characters javascript 62 characters
 
+** Solution
+   #+BEGIN_SRC python :results output :eval noexport
+     def palindrome(n, c):
+         pass
+
+     assert(palindrome(3, ['a', 'b']) == 'aba')
+     assert(palindrome(4, ['a', 'b']) == 'abba')
+   #+END_SRC
