@@ -462,8 +462,8 @@ tags: [architecture, overview, recurrent network]
    - So if the weights started off satisfying the constraints, they
      will continue to satisfy them.
 
-   To constrain : w_1 = w_2
-   we need : \delta{}w_1 = \delta{}w_2
+   To constrain : w_{1} = w_{2}
+   we need : \delta{}w_{1} = \delta{}w_{2}
    compute :
    use
    ∂ E
