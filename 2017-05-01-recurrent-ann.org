@@ -15,6 +15,7 @@ tags: [architecture, overview, recurrent network]
 #+PROPERTY:header-args :results output :exports both
 
 * Modeling sequences: A brief overview
+
 ** Getting targets when modeling sequences
    When applying machine learning to sequences, we often want to turn
    an input sequence into an output sequence that lives in a different
@@ -37,7 +38,7 @@ tags: [architecture, overview, recurrent network]
 
 ** Memoryless models for sequences
 
-   •  Autoregressive models
+   Autoregressive models
    w t −1
    w t −2
    Predict the next term in a
@@ -46,7 +47,7 @@ tags: [architecture, overview, recurrent network]
    input(t-1)
    previous terms using “delay taps”.
 
-   •  Feed-forward neural nets
+   Feed-forward neural nets
    These generalize autoregressive
    models by using one or more
    layers of non-linear hidden units.
@@ -69,7 +70,7 @@ tags: [architecture, overview, recurrent network]
      hidden state is noisy, we can never know its exact hidden state.
    - The best we can do is to infer a probability distribution over the
      space of hidden state vectors.
-   •  This inference is only tractable for two types of hidden state model.
+   This inference is only tractable for two types of hidden state model.
 
    - The next three slides are mainly intended for people who already
      know about these two types of hidden state model. They show how
@@ -115,7 +116,7 @@ tags: [architecture, overview, recurrent network]
 
 ** A fundamental limitation of HMMs
 
-   •  Consider what happens when a hidden Markov model generates data.
+   Consider what happens when a hidden Markov model generates data.
 
    - At each time step it must select one of its hidden states. So with
      N hidden states it can only remember log(N) bits about what it
@@ -154,7 +155,7 @@ tags: [architecture, overview, recurrent network]
      states given the observed data so far is a deterministic function
      of the data.
 
-   •  Recurrent neural networks are deterministic.
+   Recurrent neural networks are deterministic.
 
    - So think of the hidden state of an RNN as the equivalent of the
      deterministic probability distribution over hidden states in a
@@ -162,7 +163,7 @@ tags: [architecture, overview, recurrent network]
 
 ** Recurrent neural networks
 
-   •  What kinds of behaviour can RNNs exhibit?
+   What kinds of behaviour can RNNs exhibit?
 
    - They can oscillate. Good for motor control?
    - They can settle to point attractors. Good for retrieving memories?
@@ -171,7 +172,7 @@ tags: [architecture, overview, recurrent network]
      that each capture a nugget of knowledge and run in parallel,
      interacting to produce very complicated effects.
 
-   •  But the computational power of RNNs makes them very hard to train.
+   But the computational power of RNNs makes them very hard to train.
 
    - For many years we could not exploit the computational power of
      RNNs despite some heroic efforts (e.g. Tony Robinson’s speech
@@ -179,7 +180,7 @@ tags: [architecture, overview, recurrent network]
 
 
 ** Transcript
-   #+BEGIN_QUOTE
+
    In this video, I am going to give an overview of various types of
    models that have been used for sequences. I'll start with the
    simplest kinds of model, which is ultra aggressive models, that
@@ -434,8 +435,6 @@ tags: [architecture, overview, recurrent network]
    parallel computer built out of transputers. And it was only
    recently that people managed to produce recurrent neural networks
    that outperformed Tony Robinson's
-   #+END_QUOTE
-
 
 * Training RNNs with backpropagation
 
@@ -449,20 +448,13 @@ tags: [architecture, overview, recurrent network]
    #+ATTR_HTML: :alt RNN representation :title RNN :align right
    [[http://0--key.github.io/assets/img/neural_networks/rnn_flat_repr.png]]
 
-   Assume that there is a time
-   delay of 1 in using each
-   connection.
-   The recurrent net is just a
-   layered net that keeps
-   reusing the same weights.
-
-** Reminder: Backpropagation with weight
-   constraints
-   •  It is easy to modify the backprop
-   algorithm to incorporate linear
-   constraints between the
+   Assume that there is a time delay of 1 in using each connection.
+   The recurrent net is just a layered net that keeps reusing the same
    weights.
-   •  We compute the gradients as
+
+** Reminder: Backpropagation with weight constraints
+   It is easy to modify the backprop algorithm to incorporate linear constraints between the weights.
+   We compute the gradients as
    usual, and then modify the
    gradients so that they satisfy the
    constraints.
@@ -483,21 +475,21 @@ tags: [architecture, overview, recurrent network]
    ∂ E
    ∂ w 2
    for w 1 and w 2Backpropagation through time
-   •  We can think of the recurrent net as a layered, feed-forward
+   We can think of the recurrent net as a layered, feed-forward
    net with shared weights and then train the feed-forward net
    with weight constraints.
-   •  We can also think of this training algorithm in the time domain:
+   We can also think of this training algorithm in the time domain:
    - The forward pass builds up a stack of the activities of all
    the units at each time step.
    - The backward pass peels activities off the stack to
    compute the error derivatives at each time step.
    - After the backward pass we add together the derivatives at
    all the different times for each weight.An irritating extra issue
-   •  We need to specify the initial activity state of all the hidden and output
+   We need to specify the initial activity state of all the hidden and output
    units.
-   •  We could just fix these initial states to have some default value like 0.5.
-   •  But it is better to treat the initial states as learned parameters.
-   •  We learn them in the same way as we learn the weights.
+   We could just fix these initial states to have some default value like 0.5.
+   But it is better to treat the initial states as learned parameters.
+   We learn them in the same way as we learn the weights.
    - Start off with an initial random guess for the initial states.
    - At the end of each training sequence, backpropagate through time
    all the way to the initial states to get the gradient of the error function
@@ -506,7 +498,7 @@ tags: [architecture, overview, recurrent network]
    w 1
    w 2
    w 3 w 4
-   •  We can specify inputs in several
+   We can specify inputs in several
    ways:
    - Specify the initial states of all
    the units.
@@ -515,26 +507,26 @@ tags: [architecture, overview, recurrent network]
    - Specify the states of the same
    subset of the units at every time
    step.
-   •  This is the natural way to
+   This is the natural way to
    model most sequential data.
    w 1
    w 2 w 3 w 4
    w 1
    w 2 w 3 w 4
    timeTeaching signals for recurrent networks
-   •  We can specify targets in several
+   We can specify targets in several
    ways:
    - Specify desired final activities of
    all the units
    - Specify desired activities of all
    units for the last few steps
-   •  Good for learning attractors
-   •  It is easy to add in extra error
+   Good for learning attractors
+   It is easy to add in extra error
    derivatives as we
    backpropagate.
    - Specify the desired activity of a
    subset of the units.
-   •  The other units are input or
+   The other units are input or
    hidden units.
    w 1
    w 2 w 3 w 4
@@ -549,7 +541,7 @@ tags: [architecture, overview, recurrent network]
    Kevin Swersky
    Tijmen Tieleman
    Abdel-rahman MohamedA good toy problem for a recurrent network
-   •  We can train a feedforward net to do
+   We can train a feedforward net to do
    binary addition, but there are obvious
    regularities that it cannot capture
    efficiently.
@@ -562,7 +554,7 @@ tags: [architecture, overview, recurrent network]
    number because
    it uses different
    weights.
-   •  As a result, feedforward nets do not
+   As a result, feedforward nets do not
    generalize well on the binary addition
    task.
    11001100
@@ -608,11 +600,11 @@ tags: [architecture, overview, recurrent network]
    This is a finite state automaton. It decides what transition to make by looking at the next
    column. It prints after making the transition. It moves from right to left over the two input
    numbers.A recurrent net for binary addition
-   •  The network has two input units
+   The network has two input units
    and one output unit.
-   •  It is given two input digits at each
+   It is given two input digits at each
    time step.
-   •  The desired output at each time
+   The desired output at each time
    step is the output for the column
    that was provided as input two time
    steps ago.
@@ -626,7 +618,7 @@ tags: [architecture, overview, recurrent network]
    0 1 0 0 1 1 0 1
    1 0 0 0 0 0 0 1
    timeThe connectivity of the network
-   •  The 3 hidden units are fully
+   The 3 hidden units are fully
    interconnected in both
    directions.
    - This allows a hidden
@@ -634,12 +626,12 @@ tags: [architecture, overview, recurrent network]
    time step to vote for the
    hidden activity pattern at
    the next time step.
-   •  The input units have
+   The input units have
    feedforward connections that
    allow then to vote for the
    next hidden activity pattern.
    3 fully interconnected hidden unitsWhat the network learns
-   •  It learns four distinct patterns of •  A recurrent network can emulate
+   It learns four distinct patterns of A recurrent network can emulate
    a finite state automaton, but it is
    activity for the 3 hidden units.
    exponentially more powerful. With
@@ -673,12 +665,12 @@ tags: [architecture, overview, recurrent network]
    Kevin Swersky
    Tijmen Tieleman
    Abdel-rahman MohamedThe backward pass is linear
-   •  There is a big difference between the
+   There is a big difference between the
    forward and backward passes.
-   •  In the forward pass we use squashing
+   In the forward pass we use squashing
    functions (like the logistic) to prevent the
    activity vectors from exploding.
-   •  The backward pass, is completely linear. If
+   The backward pass, is completely linear. If
    you double the error derivatives at the final
    layer, all the error derivatives will double.
    - The forward pass determines the slope
@@ -710,9 +702,9 @@ tags: [architecture, overview, recurrent network]
    many time-steps ago.
    - So RNNs have difficulty dealing
    with long-range dependencies.Why the back-propagated gradient blows up
-   •  If we start a trajectory within an attractor, small changes in where we
+   If we start a trajectory within an attractor, small changes in where we
    start make no difference to where we end up.
-   •  But if we start almost exactly on the boundary, tiny changes can make a
+   But if we start almost exactly on the boundary, tiny changes can make a
    huge difference.Four effective ways to learn an RNN
    • 
    • 
@@ -751,20 +743,20 @@ tags: [architecture, overview, recurrent network]
    Kevin Swersky
    Tijmen Tieleman
    Abdel-rahman MohamedLong Short Term Memory (LSTM)
-   •  Hochreiter & Schmidhuber
+   Hochreiter & Schmidhuber
    (1997) solved the problem of
    getting an RNN to remember
    things for a long time (like
    hundreds of time steps).
-   •  They designed a memory cell
+   They designed a memory cell
    using logistic and linear units
    with multiplicative interactions.
-   •  Information gets into the cell
+   Information gets into the cell
    whenever its “write” gate is on.
-   •  The information stays in the
+   The information stays in the
    cell so long as its “keep” gate
    is on.
-   •  Information can be read from
+   Information can be read from
    the cell by turning on its “read”
    gate.  To preserve information for a long time in
    the activities of an RNN, we use a circuit
@@ -815,15 +807,15 @@ tags: [architecture, overview, recurrent network]
    write
    0
    1.7Reading cursive handwriting
-   •  This is a natural task for an
+   This is a natural task for an
    RNN.
-   •  The input is a sequence of
+   The input is a sequence of
    (x,y,p) coordinates of the tip of
    the pen, where p indicates
    whether the pen is up or down.
-   •  The output is a sequence of
+   The output is a sequence of
    characters.
-   •  Graves & Schmidhuber (2009)
+   Graves & Schmidhuber (2009)
    showed that RNNs with LSTM
    are currently the best systems
    for reading cursive writing.
@@ -832,14 +824,14 @@ tags: [architecture, overview, recurrent network]
    rather than pen
    coordinates.A demonstration of online handwriting recognition by an
    RNN with Long Short Term Memory (from Alex Graves)
-   •  The movie that follows shows several different things:
-   •  Row 1: This shows when the characters are recognized.
+   The movie that follows shows several different things:
+   Row 1: This shows when the characters are recognized.
    - It never revises its output so difficult decisions are more delayed.
-   •  Row 2: This shows the states of a subset of the memory cells.
+   Row 2: This shows the states of a subset of the memory cells.
    - Notice how they get reset when it recognizes a character.
-   •  Row 3: This shows the writing. The net sees the x and y coordinates.
+   Row 3: This shows the writing. The net sees the x and y coordinates.
    - Optical input actually works a bit better than pen coordinates.
-   •  Row 4: This shows the gradient backpropagated all the way to the x and
+   Row 4: This shows the gradient backpropagated all the way to the x and
    y inputs from the currently most active character.
    - This lets you see which bits of the data are influencing the decision.
 
