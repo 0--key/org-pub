@@ -453,17 +453,17 @@ tags: [architecture, overview, recurrent network]
    weights.
 
 ** Reminder: Backpropagation with weight constraints
-   It is easy to modify the backprop algorithm to incorporate linear constraints between the weights.
-   We compute the gradients as
-   usual, and then modify the
-   gradients so that they satisfy the
-   constraints.
-   - So if the weights started off
-   satisfying the constraints,
-   they will continue to satisfy
-   them.
-   To constrain : w 1 = w 2
-   we need : Δ w 1 = Δ w 2
+   It is easy to modify the backprop algorithm to incorporate linear
+   constraints between the weights.
+
+   We compute the gradients as usual, and then modify the gradients so
+   that they satisfy the constraints.
+
+   - So if the weights started off satisfying the constraints, they
+     will continue to satisfy them.
+
+   To constrain : w_1 = w_2
+   we need : \delta{}w_1 = \delta{}w_2
    compute :
    use
    ∂ E
