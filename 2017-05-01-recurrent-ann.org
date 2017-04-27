@@ -440,11 +440,11 @@ tags: [architecture, overview, recurrent network]
 
 ** The equvalence between feedforward nets and recurrent nets
    #+CAPTION: Recurrent Neural Network
-   #+ATTR_HTML: :alt RNN :title RNN
+   #+ATTR_HTML: :alt RNN :title RNN :align left
    #+ATTR_HTML: :width 40%
    [[http://0--key.github.io/assets/img/neural_networks/rnn_gen_view.png]]
 
-   #+CAPTION: Recurrent Neural Network in Flat Repr
+   #+CAPTION: Recurrent Neural Network in Unwrapped Representation
    #+ATTR_HTML: :alt RNN representation :title RNN :align right
    [[http://0--key.github.io/assets/img/neural_networks/rnn_flat_repr.png]]
 
