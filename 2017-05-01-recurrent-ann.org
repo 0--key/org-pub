@@ -465,16 +465,12 @@ tags: [architecture, overview, recurrent network]
    To constrain : w_{1} = w_{2}
    we need : \Delta{}w_{1} = \Delta{}w_{2}
    compute :
-   use
-   \partial{}E
-   ∂ w 1
-   ∂ E ∂ E
-   +
-   ∂ w 1 ∂ w 2
-   and
-   ∂ E
-   ∂ w 2
-   for w 1 and w 2Backpropagation through time
+
+   $\frac{\partial{}E}{\partial{}w_{1}} and \frac{\partial{}E}{\partial{}w_{2}}
+
+   use $\frac{\partial{}E}{\partial{}w_{1}} + \frac{\partial{}E}{\partial{}w_{2}}
+   for w_{1} and w_{2}
+
    We can think of the recurrent net as a layered, feed-forward
    net with shared weights and then train the feed-forward net
    with weight constraints.
