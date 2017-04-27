@@ -463,10 +463,10 @@ tags: [architecture, overview, recurrent network]
      will continue to satisfy them.
 
    To constrain : w_{1} = w_{2}
-   we need : \delta{}w_{1} = \delta{}w_{2}
+   we need : \Delta{}w_{1} = \Delta{}w_{2}
    compute :
    use
-   ∂ E
+   \partial{}E
    ∂ w 1
    ∂ E ∂ E
    +
