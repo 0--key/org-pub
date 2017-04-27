@@ -471,18 +471,22 @@ tags: [architecture, overview, recurrent network]
    use $\frac{\partial{}E}{\partial{}w_{1}} + \frac{\partial{}E}{\partial{}w_{2}}
    for w_{1} and w_{2}
 
+** Backpropagation through time
    We can think of the recurrent net as a layered, feed-forward
    net with shared weights and then train the feed-forward net
    with weight constraints.
    We can also think of this training algorithm in the time domain:
-   - The forward pass builds up a stack of the activities of all
-   the units at each time step.
-   - The backward pass peels activities off the stack to
-   compute the error derivatives at each time step.
-   - After the backward pass we add together the derivatives at
-   all the different times for each weight.An irritating extra issue
-   We need to specify the initial activity state of all the hidden and output
-   units.
+
+   - The forward pass builds up a stack of the activities of all the
+     units at each time step.
+   - The backward pass peels activities off the stack to compute the
+     error derivatives at each time step.
+   - After the backward pass we add together the derivatives at all
+     the different times for each weight.
+
+
+** An irritating extra issue
+   We need to specify the initial activity state of all the hidden and output units.
    We could just fix these initial states to have some default value like 0.5.
    But it is better to treat the initial states as learned parameters.
    We learn them in the same way as we learn the weights.
