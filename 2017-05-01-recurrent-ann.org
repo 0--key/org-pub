@@ -466,9 +466,10 @@ tags: [architecture, overview, recurrent network]
    we need : \Delta{}w_{1} = \Delta{}w_{2}
    compute :
 
-   $\frac{\partial{}E}{\partial{}w_{1}} and \frac{\partial{}E}{\partial{}w_{2}}$
-   use
-   $\frac{\partial{}E}{\partial{}w_{1}} + \frac{\partial{}E}{\partial{}w_{2}} for w_{1} and w_{2}$
+   $\frac{\partial{}E}{\partial{}w_{1}} and
+   \frac{\partial{}E}{\partial{}w_{2}}$ use
+   $\frac{\partial{}E}{\partial{}w_{1}} +
+   \frac{\partial{}E}{\partial{}w_{2}}$ for w_{1} and w_{2}
 
 ** Backpropagation through time
    We can think of the recurrent net as a layered, feed-forward
