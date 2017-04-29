@@ -118,26 +118,3 @@ tags: [matplotlib]
 
     [[http://0--key.github.io/assets/img/plt/dark_test.png]]
    
-    #+BEGIN_SRC python :results file :session perc
-      import matplotlib.pyplot as plt
-      f = plt.figure(figsize=(15,10))
-      f.clf()
-
-      for i in nen:
-          xs = 3
-          ys = 4
-          # print(type(xs), xs, ys)
-          plt.scatter(xs, ys, c='red')
-      plt.savefig('test_nen.png')
-    #+END_SRC
-
-    #+RESULTS:
-
-    #+BEGIN_SRC python :results file :session perc
-      plt.scatter([2, 2.5, 3], [4, 4.5, 5], c='blue')
-      plt.savefig('test_single.png')
-      plt
-    #+END_SRC
-
-    #+RESULTS:
-    [[file:<matplotlib.collections.PathCollection object at 0x7f38092e6da0>]]
