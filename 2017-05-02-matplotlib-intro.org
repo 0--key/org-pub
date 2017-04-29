@@ -91,7 +91,7 @@ tags: [matplotlib]
     [[http://0--key.github.io/assets/img/plt/second_test.png]]
 
 *** Full-fledged dark theme
-    #+BEGIN_SRC python :results file :exports code
+    #+BEGIN_SRC python :results file :exports code :eval noexport
       import numpy as np
       import matplotlib.pyplot as plt
 
