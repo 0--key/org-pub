@@ -140,3 +140,33 @@ tags: [matplotlib]
 
     [[http://0--key.github.io/assets/img/plt/simple_scatter.png]]
 
+*** All together
+    #+BEGIN_SRC python :results file :exports code :eval noexport
+      import matplotlib.pyplot as plt
+
+      plt.style.use('dark_background')
+      data_neg = [[-0.80857143, 0.8372093],
+                  [ 0.35714286, 0.85049834],
+                  [-0.75142857, -0.73089701],
+                  [-0.3, 0.12624585]]
+
+      data_pos = [[0.87142857, 0.62458472],
+                  [-0.02, -0.92358804],
+                  [0.36285714, -0.31893688],
+                  [ 0.88857143, -0.87043189]]
+
+      for i in data_neg:
+          plt.scatter(i[0], i[1], color='y')
+
+      for i in data_pos:
+          plt.scatter(i[0], i[1], color='r')
+
+
+      plt.xlabel('x')
+      plt.ylabel('y')
+      plt.title('Data scattering')
+      plt.savefig('img/plt/data_scatter.png')
+    #+END_SRC
+
+    #+RESULTS:
+    [[file:]]
