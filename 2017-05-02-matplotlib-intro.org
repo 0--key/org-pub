@@ -118,3 +118,25 @@ tags: [matplotlib]
 
     [[http://0--key.github.io/assets/img/plt/dark_test.png]]
    
+*** Scattering
+    #+BEGIN_SRC python :results file :exports code :eval noexport
+      import matplotlib.pyplot as plt
+
+      plt.style.use('dark_background')
+
+      x = [1, 2, 3, 4, 5]
+      y = [6, 7, 8, 9, 11]
+
+      plt.scatter(x, y, color='y')
+
+      plt.xlabel('x')
+      plt.ylabel('y')
+      plt.title('Simple scattering')
+      plt.savefig('img/plt/simple_scatter.png')
+    #+END_SRC
+
+    #+RESULTS:
+    [[file:]]
+
+    [[http://0--key.github.io/assets/img/plt/simple_scatter.png]]
+
