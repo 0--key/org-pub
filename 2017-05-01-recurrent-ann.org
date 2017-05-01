@@ -194,7 +194,7 @@ tags: [architecture, overview, recurrent network]
    of that kind. When we're using machine learning to model sequences,
    we often want to turn one sequence into another sequence. For
    example, we might want to turn English words into French words or
-   we might want to take a sequence of sand pressures and turn it into
+   we might want to take a sequence of sound pressures and turn it into
    a sequence of word identities which is what's happening in speech
    recognition. Sometimes we don't have a separate target sequence,
    and in that case we can get a teaching signal by trying to predict
