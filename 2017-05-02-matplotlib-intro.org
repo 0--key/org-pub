@@ -170,3 +170,26 @@ tags: [matplotlib]
 
     #+RESULTS:
     [[file:]]
+
+*** Sigmoidal function
+    #+BEGIN_SRC python :results file :exports code :eval noexport
+      import numpy as np
+      from math import exp
+      import matplotlib.pyplot as plt
+
+
+      def custom_function(x):  # sigmoid(x):
+          return x * x  # 1. / (1 + exp(-x))
+
+
+      x = np.array(range(-10, 11))
+      y = custom_function(x)  #sigmoid(x)
+      plt.style.use('dark_background')
+      plt.plot(x, y)
+      plt.savefig('img/plt/sigmoidal_f.png')
+    #+END_SRC
+
+    #+RESULTS:
+    [[file:]]
+
+    [[http://0--key.github.io/assets/img/plt/sigmoidal_f.png]]
