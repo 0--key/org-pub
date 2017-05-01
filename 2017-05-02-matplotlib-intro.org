@@ -76,7 +76,7 @@ tags: [matplotlib]
     [[http://0--key.github.io/assets/img/plt/first_test.png]]
 
 *** Colorization
-    #+BEGIN_SRC python :results file :session perc :exports code
+    #+BEGIN_SRC python :results file :session perc :exports code :eval noexport
       ax = plt.gca()
       ax.set_axis_bgcolor('black')
       # ax.set_axis_bgcolor((1, 0, 0))
