@@ -171,7 +171,7 @@ tags: [matplotlib]
     #+RESULTS:
     [[file:]]
 
-*** Sigmoidal function
+*** Parabola
     #+BEGIN_SRC python :results file :exports code :eval noexport
       import numpy as np
       from math import exp
@@ -192,4 +192,4 @@ tags: [matplotlib]
     #+RESULTS:
     [[file:]]
 
-    [[http://0--key.github.io/assets/img/plt/sigmoidal_f.png]]
+    [[http://0--key.github.io/assets/img/plt/parabola.png]]
