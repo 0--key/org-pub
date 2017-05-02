@@ -489,6 +489,7 @@ tags: [architecture, overview, recurrent network]
    \frac{\partial{}E}{\partial{}w_{2}}$ for w_{1} and w_{2}
 
 ** Backpropagation through time
+
    We can think of the recurrent net as a layered, feed-forward
    net with shared weights and then train the feed-forward net
    with weight constraints.
@@ -503,6 +504,7 @@ tags: [architecture, overview, recurrent network]
 
 
 ** An irritating extra issue
+
    We need to specify the initial activity state of all the hidden and output units.
    We could just fix these initial states to have some default value like 0.5.
    But it is better to treat the initial states as learned parameters.
