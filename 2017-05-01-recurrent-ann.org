@@ -314,127 +314,144 @@ tags: [architecture, overview, recurrent network]
    that uses discrete distributions rather than Gaussian
    distributions, is a hidden Markov model. And because it's based on
    discrete mathematics, computer scientists love these ones. In a
-   hidden Markov model, the hidden state consists of a one of N.
-   Choice. So there a number of things called states. And the system
+   hidden Markov model, the hidden state consists of a one of N
+   choice. So there a number of things called states. And the system
    is always in exactly one of those states. The transitions between
    states are probabilistic. They're controlled by a transition matrix
    which is simply a bunch of probabilities that say, if you're in
    state one at time one, What's the probability of you going to state
-   three at time two? The output model is also stochastic. So, the
-   state that the system is in doesn't completely determine what
-   output it produces. There's some variation in the output that each
-   state can produce. Because of that, we can't be sure which state
-   produced a given output. In a sense, the states are hidden behind
-   this probabilistic veil, and that's why they're called hidden.
-   Historically the reason hidden units in a neural network are called
-   hidden, is because I like this term. It sounded mysterious, so I
-   stole it from neural networks. It is easy to represent the
-   probability distribution across n states with n numbers. So, the
-   nice thing about a hidden Markov model, is we can represent the
-   probability distribution across its discreet states. So, even
-   though we don't know what it, what state it's in for sure, we can
-   easily represent the probability distribution. And to predict the
-   next output from a hidden Markov model, we need to infer what
-   hidden state it's probably in. And so we need to get our hands on
-   that probability distribution. It turns out there's an easy method
-   based on dynamic programming that allows us to take the
-   observations we've made and from those compute the probability
-   distribution across the hidden states. Once we have that
-   distribution, there is a nice elegant learning algorithm hidden
-   Markov models, and that's what made them so appropriate for speech.
-   And in the 1970s, they took over speech recognition. There's a
-   fundamental limitation of HMMs. It's easiest to understand this
-   limitation, if we consider what happens when a hidden Markov model
-   generates data. At each time step when it's generating, it selects
-   one of its hidden states. So if it's got n hidden states, the
-   temporal information stored in the hidden state is at most logn) n
-   bits. So that's all it knows about what it's done so far. So now
-   let's consider how much information a hidden Markov model can
-   convey to the second half of an utterance it produces from the
-   first half. So imagine it's already produced the first half of an
-   utterance. And now it's going to have to produce the second half.
-   And remember, its memory of what it said for the first half is in
-   which of the n states it's in. So its memory only has log n bits of
-   information in it. To produce the second half that's compatible
-   with the first half, we must make the syntax fit. So for example,
-   the number intend must agree. It also needs to make the semantics
-   fit. It can't have the second half of the sentence be about
-   something totally different from the first half. Also the
+   three at time two? The output model is also stochastic.
+
+   So, the state that the system is in doesn't completely determine
+   what output it produces. There's some variation in the output that
+   each state can produce. Because of that, we can't be sure which
+   state produced a given output. In a sense, the states are hidden
+   behind this probabilistic veil, and that's why they're called
+   hidden. Historically the reason hidden units in a neural network
+   are called hidden, is because I like this term. It sounded
+   mysterious, so I stole it from neural networks.
+
+   It is easy to represent the probability distribution across n
+   states with n numbers. So, the nice thing about a hidden Markov
+   model, is we can represent the probability distribution across its
+   discreet states. So, even though we don't know what it, what state
+   it's in for sure, we can easily represent the probability
+   distribution. And to predict the next output from a hidden Markov
+   model, we need to infer what hidden state it's probably in. And so
+   we need to get our hands on that probability distribution. It turns
+   out there's an easy method based on dynamic programming that allows
+   us to take the observations we've made and from those compute the
+   probability distribution across the hidden states.
+
+   Once we have that distribution, there is a nice elegant learning
+   algorithm hidden Markov models, and that's what made them so
+   appropriate for speech. And in the 1970s, they took over speech
+   recognition. There's a fundamental limitation of HMMs. It's easiest
+   to understand this limitation, if we consider what happens when a
+   hidden Markov model generates data. At each time step when it's
+   generating, it selects one of its hidden states. So if it's got *N*
+   hidden states, the temporal information stored in the hidden state
+   is at most log(N) n bits.
+
+   So that's all it knows about what it's done so far. So now let's
+   consider how much information a hidden Markov model can convey to
+   the second half of an utterance it produces from the first half. So
+   imagine it's already produced the first half of an utterance. And
+   now it's going to have to produce the second half. And remember,
+   its memory of what it said for the first half is in which of the n
+   states it's in. So its memory only has log(N) bits of information in
+   it. To produce the second half that's compatible with the first
+   half, we must make the syntax fit.
+
+   So for example, the number intend must agree. It also needs to make
+   the semantics fit. It can't have the second half of the sentence be
+   about something totally different from the first half. Also the
    intonation needs to fit so it would look very silly if the,
    intonation contour completely changed halfway through the sentence.
    There's a lot of other things that also have to fit. The accent of
    the speaker, The rate they're speaking at, How loudly they're
-   speaking. And the vocal tract characteristics of the speaker. All
-   of those things must fit between the second half of the sentence
-   and the first half. And so if you wanted a hidden Markov model to
-   actually generate a sentence, the hidden state has to be able to
-   convey all that information from the first half to the second half.
-   Now the problem is that all of those aspects could easily come to a
-   hundred bits of information. So the first half of the sentence
-   needs to convey a hundred bits of information to the second half
-   and that means that the hidden Markov model needs two to the
-   hundreds states and that's just too many. So that brings us to
-   recurrence your own networks. They have a much more efficient way
-   of remembering information. They're very powerful because they
-   combine two properties that have distributed hidden state. That
-   means, several different units can be active at once. So they can
-   remember several different things at once. They don't just have one
-   active unit. They're also nonlinear. You see, a linear dynamical
-   system has a whole hidden state vector. So it's got more than one
-   value at a time, but those values are constrained to act in a
-   linear way so as to make inference easy, and in a recurrent neural
-   network we allow the dynamics to be much more complicated. With
-   enough neurons and enough time, a recurring neuron network can
+   speaking. And the vocal tract characteristics of the speaker.
+
+   All of those things must fit between the second half of the
+   sentence and the first half. And so if you wanted a hidden Markov
+   model to actually generate a sentence, the hidden state has to be
+   able to convey all that information from the first half to the
+   second half. Now the problem is that all of those aspects could
+   easily come to a hundred bits of information. So the first half of
+   the sentence needs to convey a hundred bits of information to the
+   second half and that means that the hidden Markov model needs two
+   to the hundreds states and that's just too many.
+
+   So that brings us to recurrence your own networks. They have a much
+   more efficient way of remembering information. They're very
+   powerful because they combine two properties that have distributed
+   hidden state. That means, several different units can be active at
+   once. So they can remember several different things at once. They
+   don't just have one active unit. They're also nonlinear. You see, a
+   linear dynamical system has a whole hidden state vector. So it's
+   got more than one value at a time, but those values are constrained
+   to act in a linear way so as to make inference easy, and in a
+   recurrent neural network we allow the dynamics to be much more
+   complicated.
+
+   With enough neurons and enough time, a recurring neuron network can
    compute anything that can be computed by your computer. It's a very
-   powerful device. So linear dynamical systems and hidden mark off
+   powerful device. So linear dynamical systems and hidden Markov
    models are both stochastic models. That is the dynamics and the
    production of observations from the underlying state both involve
-   intrinsic noise. And the question is do models need to be like
-   that. Well one thing to notice is that the posterior probability
-   distribution over hidden states in either a limited anomical system
-   or hidden markoff model is a deterministic function of the data
-   that you've seen so far. That is the inference algorithm for these
-   systems ends up with a probability distribution, and that
-   probability distribution is just a bunch of numbers, and those
-   numbers are a deterministic version of the data so far. In a
-   recurrent neural network, you get a bunch of numbers that are a
-   deterministic function of the data so far. And it might be a good
+   intrinsic noise.
+
+   And the question is do models need to be like that. Well one thing
+   to notice is that the posterior probability distribution over
+   hidden states in either a limited anomical system or hidden Markov
+   model is a deterministic function of the data that you've seen so
+   far. That is the inference algorithm for these systems ends up with
+   a probability distribution, and that probability distribution is
+   just a bunch of numbers, and those numbers are a deterministic
+   version of the data so far.
+
+   In a recurrent neural network, you get a bunch of numbers that are
+   a deterministic function of the data so far. And it might be a good
    idea to think of those numbers that constitute the hidden state of
    a recurrent neural network. They're very like the probability
-   distribution for these simple stocastic models. So what kinds of
-   behavior can recur at your own networks exhibit? Well, they can
-   oscillate. That's obviously good for things like motion control,
-   where when you're walking, for example, you want to know regular
-   oscillation, which is your stride. They can settle to point
+   distribution for these simple stochastic models.
+
+   So what kinds of behavior can recurrent networks exhibit? Well,
+   they can oscillate. That's obviously good for things like motion
+   control, where when you're walking, for example, you want to know
+   regular oscillation, which is your stride. They can settle to point
    attractors. That might be good for retrieving memories. And later
    on in the course we'll look at Hopfield nets where they use the
-   settling to point attractors to store memories. So the idea is you
-   have a sort of rough idea of what you're trying to retrieve. You
-   then let the system settle down to a stable point and those stable
-   points correspond to the things you know about. And so by settling
-   to that stable point you retrieve a memory. They can also behave
-   chaotically if you set the weights in the appropriate regime.
-   Often, chaotic behavior is bad for information processing, because
-   in information processing, you want to be able to behave reliably.
-   You want to achieve something. There are some circumstances where
-   it's a good idea. If you're up against a much smarter adversary,
-   you probably can't outwit them, so it might be a good idea just to
-   behave randomly. And one way to get the appearance of randomness is
-   to behave chaotically. One nice thing about R and N's, which, a
-   long time ago, I thought was gonna make them very powerful, is that
-   an R and N could learn to implement lots of little programs, using
-   different subsets of its hidden state. And each of these little
-   programs could capture a nugget of knowledge. And all of these
-   things could run in parallel, and interact with each other in
-   complicated ways. Unfortunately the computational power of
-   recurrent neural networks makes them very hard to train. For many
-   years, we couldn't exploit the computational power of recurrent
-   neural networks. It was some heroic efforts. For example, Tony
-   Robinson managed to make quite a good speech recognizer using
-   recurrent nets. He had to do a lot of work implementing them on a
-   parallel computer built out of transputers. And it was only
-   recently that people managed to produce recurrent neural networks
-   that outperformed Tony Robinson's
+   settling to point attractors to store memories.
+
+   So the idea is you have a sort of rough idea of what you're trying
+   to retrieve. You then let the system settle down to a stable point
+   and those stable points correspond to the things you know about.
+   And so by settling to that stable point you retrieve a memory. They
+   can also behave chaotically if you set the weights in the
+   appropriate regime. Often, chaotic behavior is bad for information
+   processing, because in information processing, you want to be able
+   to behave reliably if you want to achieve something.
+
+   There are some circumstances where it's a good idea. If you're up
+   against a much smarter adversary, you probably can't outwit them,
+   so it might be a good idea just to behave randomly. And one way to
+   get the appearance of randomness is to behave chaotically. One nice
+   thing about RNN's, which, a long time ago, I thought was gonna
+   make them very powerful, is that an RNN could learn to
+   implement lots of little programs, using different subsets of its
+   hidden state. And each of these little programs could capture a
+   nugget of knowledge. And all of these things could run in parallel,
+   and interact with each other in complicated ways.
+
+   Unfortunately the computational power of recurrent neural networks
+   makes them very hard to train. For many years, we couldn't exploit
+   the computational power of recurrent neural networks. It was some
+   heroic efforts. For example, Tony Robinson managed to make quite a
+   good speech recognizer using recurrent nets. He had to do a lot of
+   work implementing them on a parallel computer built out of
+   transputers. And it was only recently that people managed to
+   produce recurrent neural networks that outperformed Tony Robinson's
 
 * Training RNNs with backpropagation
 
