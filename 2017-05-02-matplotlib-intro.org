@@ -170,6 +170,8 @@ tags: [matplotlib]
 
     #+RESULTS:
     [[file:]]
+    
+    [[http://0--key.github.io/assets/img/plt/data_scatter.png]]
 
 *** Parabola
     #+BEGIN_SRC python :results file :exports code :eval noexport
