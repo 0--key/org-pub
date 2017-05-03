@@ -811,180 +811,80 @@ tags: [architecture, overview, recurrent network]
    square the number of binary vector states that it has.
 
 * Why it is difficult to train an RNN
-  Geoffrey Hinton
-  Nitish Srivastava,
-  Kevin Swersky
-  Tijmen Tieleman
-  Abdel-rahman MohamedThe backward pass is linear
-  There is a big difference between the
-  forward and backward passes.
-  In the forward pass we use squashing
-  functions (like the logistic) to prevent the
-  activity vectors from exploding.
-  The backward pass, is completely linear. If
-  you double the error derivatives at the final
-  layer, all the error derivatives will double.
-  - The forward pass determines the slope
-  of the linear function used for
-  backpropagating through each neuron.The problem of exploding or vanishing gradients
-  • 
-  • 
-  What happens to the magnitude of the
-  gradients as we backpropagate
-  through many layers?
-  - If the weights are small, the
-  gradients shrink exponentially.
-  - If the weights are big the gradients
-  grow exponentially.
-  Typical feed-forward neural nets can
-  cope with these exponential effects
-  because they only have a few hidden
-  layers.
-  • 
-  • 
-  In an RNN trained on long sequences
-  (e.g. 100 time steps) the gradients
-  can easily explode or vanish.
-  - We can avoid this by initializing
-  the weights very carefully.
-  Even with good initial weights, its very
-  hard to detect that the current target
-  output depends on an input from
-  many time-steps ago.
-  - So RNNs have difficulty dealing
-  with long-range dependencies.Why the back-propagated gradient blows up
-  If we start a trajectory within an attractor, small changes in where we
-  start make no difference to where we end up.
-  But if we start almost exactly on the boundary, tiny changes can make a
-  huge difference.Four effective ways to learn an RNN
-  • 
-  • 
-  Long Short Term Memory
-  Make the RNN out of little
-  modules that are designed to
-  remember values for a long time.
-  Hessian Free Optimization: Deal
-  with the vanishing gradients
-  problem by using a fancy
-  optimizer that can detect
-  directions with a tiny gradient but
-  even smaller curvature.
-  - The HF optimizer ( Martens &
-  Sutskever, 2011) is good at
-  this.
-  • 
-  • 
-  Echo State Networks: Initialize the
-  inputàhidden and hiddenàhidden and
-  outputàhidden connections very
-  carefully so that the hidden state has a
-  huge reservoir of weakly coupled
-  oscillators which can be selectively driven
-  by the input.
-  - ESNs only need to learn the
-  hiddenàoutput connections.
-  Good initialization with momentum
-  Initialize like in Echo State Networks, but
-  then learn all of the connections using
-  momentum.Neural Networks for Machine Learning
-  Lecture 7e
-  Long term short term memory
-  Geoffrey Hinton
-  Nitish Srivastava,
-  Kevin Swersky
-  Tijmen Tieleman
-  Abdel-rahman MohamedLong Short Term Memory (LSTM)
-  Hochreiter & Schmidhuber
-  (1997) solved the problem of
-  getting an RNN to remember
-  things for a long time (like
-  hundreds of time steps).
-  They designed a memory cell
-  using logistic and linear units
-  with multiplicative interactions.
-  Information gets into the cell
-  whenever its “write” gate is on.
-  The information stays in the
-  cell so long as its “keep” gate
-  is on.
-  Information can be read from
-  the cell by turning on its “read”
-  gate.  To preserve information for a long time in
-  the activities of an RNN, we use a circuit
-  that implements an analog memory cell.
-  - A linear unit that has a self-link with a
-  weight of 1 will maintain its state.
-  - Information is stored in the cell by
-  activating its write gate.
-  - Information is retrieved by activating
-  the read gate.
-  - We can backpropagate through this
-  circuit because logistics are have nice
-  derivatives.
-  keep
-  gate
-  1.73
-  write
-  gate
-  input from
-  rest of RNN
-  read
-  gate
-  output to
-  rest of RNNBackpropagation through a memory cell
-  keep
-  0
-  keep
-  1
-  keep
-  1
-  1.7
-  1.7
-  read
-  0
-  write
-  1
-  1.7
-  keep
-  0
-  1.7
-  read
-  0
-  write
-  0
-  time à
-  read
-  1
-  write
-  0
-  1.7Reading cursive handwriting
-  This is a natural task for an
-  RNN.
-  The input is a sequence of
-  (x,y,p) coordinates of the tip of
-  the pen, where p indicates
-  whether the pen is up or down.
-  The output is a sequence of
-  characters.
-  Graves & Schmidhuber (2009)
-  showed that RNNs with LSTM
-  are currently the best systems
-  for reading cursive writing.
-  - They used a sequence of
-  small images as input
-  rather than pen
-  coordinates.A demonstration of online handwriting recognition by an
-  RNN with Long Short Term Memory (from Alex Graves)
-  The movie that follows shows several different things:
-  Row 1: This shows when the characters are recognized.
-  - It never revises its output so difficult decisions are more delayed.
-  Row 2: This shows the states of a subset of the memory cells.
-  - Notice how they get reset when it recognizes a character.
-  Row 3: This shows the writing. The net sees the x and y coordinates.
-  - Optical input actually works a bit better than pen coordinates.
-  Row 4: This shows the gradient backpropagated all the way to the x and
-  y inputs from the currently most active character.
-  - This lets you see which bits of the data are influencing the decision.
+
+** The backward pass is linear
+
+   #+CAPTION: RNN backward pass
+   #+ATTR_HTML: :alt Backward pass :title Functional schema :align right
+   #+ATTR_HTML: :width 40%
+   [[http://0--key.github.io/assets/img/neural_networks/rnn_back_pass.png]]
+
+   There is a big difference between the forward and backward passes.
+   In the forward pass we use squashing functions (like the logistic)
+   to prevent the activity vectors from exploding. The backward pass,
+   is completely /linear/. If you double the error derivatives at the
+   final layer, all the error derivatives will double.
+
+   - The forward pass determines the slope of the linear function used
+     for back-propagating through each neuron.
+
+** The problem of exploding or vanishing gradients
+
+   What happens to the magnitude of the gradients as we back-propagate
+   through many layers?
+
+   - If the weights are small, the gradients shrink exponentially.
+   - If the weights are big the gradients grow exponentially.
+
+   Typical feed-forward neural nets can cope with these exponential
+   effects because they only have a few hidden layers.
+
+
+   In an RNN trained on long sequences (e.g. 100 time steps) the
+   gradients can easily explode or vanish.
+
+   - We can avoid this by initializing the weights very carefully.
+
+   Even with good initial weights, its very hard to detect that the
+   current target output depends on an input from many time-steps ago.
+
+   - So RNNs have difficulty dealing with long-range dependencies.
+
+** Why the back-propagated gradient blows up
+
+   If we start a trajectory within an attractor, small changes in where we
+   start make no difference to where we end up.
+   But if we start almost exactly on the boundary, tiny changes can make a
+   huge difference.
+
+** Four effective ways to learn an RNN
+
+
+*** Long Short Term Memory
+
+    Make the RNN out of little modules that are designed to remember
+    values for a long time.
+
+*** Hessian Free Optimization:
+
+    Deal with the vanishing gradients problem by using a fancy
+    optimizer that can detect directions with a tiny gradient but even
+    smaller curvature.
+    - The HF optimizer ( Martens & Sutskever, 2011) is good at this.
+
+*** Echo State Networks:
+
+    Initialize the input \to hidden and hidden \to hidden and output
+    \to hidden connections very carefully so that the hidden state has
+    a huge reservoir of weakly coupled oscillators which can be
+    selectively driven by the input.
+    - ESNs only need to learn the hidden \to output connections.
+
+*** Good initialization with momentum
+    Initialize like in Echo State Networks, but
+    then learn all of the connections using
+    momentum.
+
 
 
 ** Transcript
