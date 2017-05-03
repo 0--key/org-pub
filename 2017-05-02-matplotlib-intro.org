@@ -78,6 +78,22 @@ tags: [matplotlib]
     : 
     : -0.3 0.126245847176 <class 'numpy.float64'>
 
+*** Converted
+    #+BEGIN_SRC python :results output :exports both :eval noexport :session perc
+      for i in nen.tolist():
+          print(i[0], i[1], type(i[1]), '\n')
+    #+END_SRC
+
+    #+RESULTS:
+    : 
+    : ... -0.8085714285714286 0.8372093023255818 <class 'float'> 
+    : 
+    : 0.3571428571428572 0.8504983388704321 <class 'float'> 
+    : 
+    : -0.7514285714285714 -0.7308970099667773 <class 'float'> 
+    : 
+    : -0.2999999999999999 0.1262458471760799 <class 'float'>
+
 ** Data visualization
 
 *** Simple
