@@ -407,3 +407,39 @@ tags: [matplotlib]
    >>> <matplotlib.text.Text object at 0x7f13e0b3b978>
    <matplotlib.text.Text object at 0x7f13e0b5da90>
    <matplotlib.text.Text object at 0x7f13e0afe860>]]
+
+** Scatter several datasets on one image
+   #+BEGIN_SRC python :results file :exports code :eval noexport
+     import scipy.io
+     import matplotlib.pyplot as plt
+
+
+     def read_dataset(filename):
+         """Reads data from .mat binary file."""
+         data = scipy.io.loadmat(filename)
+         return [data[k] for k in ('neg_examples_nobias',
+                                   'pos_examples_nobias',
+                                   'w_init', 'w_gen_feas')]
+
+
+     datasets = ['data/dataset1.mat', 'data/dataset2.mat',
+                 'data/dataset3.mat', 'data/dataset4.mat']
+
+     plt.style.use('dark_background')
+     fig = plt.figure()
+
+     for i, data in enumerate(datasets):
+         (data_neg, data_pos, wi, wg) = read_dataset(data)
+         s1 = fig.add_subplot(2, 2, i+1)
+         for i in data_neg:
+             s1.scatter(i[0], i[1], color='y')
+         for i in data_pos:
+             s1.scatter(i[0], i[1], color='r')
+
+     plt.savefig('img/plt/four_datasets.png')
+   #+END_SRC
+
+   #+RESULTS:
+   [[file:]]
+
+   [[http://0--key.github.io/assets/img/plt/four_datasets.png]]
