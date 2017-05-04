@@ -341,31 +341,69 @@ tags: [matplotlib]
     []
  #+end_example
 
+** Scatter NumPy array
+   #+BEGIN_SRC python :results file :exports code :eval noexport :session perc
+     import matplotlib.pyplot as plt
+
+     plt.style.use('dark_background')
+     (data_neg, data_pos, wi, wg) = read_dataset('data/dataset1.mat')
+
+     for i in data_neg:
+         plt.scatter(i[0], i[1], color='y')
+
+     for i in data_pos:
+         plt.scatter(i[0], i[1], color='r')
 
 
+     plt.xlabel('x')
+     plt.ylabel('y')
+     plt.title('NumPy scattering')
+     plt.savefig('img/plt/ndarray_scatter.png')
+   #+END_SRC
 
-  [[-0.86571429 -0.39202658]
-   [-0.78571429 -0.17275748]
-   [-0.55714286  0.24584718]
-   [-0.28857143  0.52491694]
-   [-0.12857143  0.52491694]
-   [ 0.08285714  0.33222591]
-   [ 0.18        0.10631229]
-   [ 0.25428571 -0.16611296]
-   [ 0.32857143 -0.35215947]] 
-
-   [[-0.08857143  0.23255814]
-   [ 0.00857143 -0.06644518]
-   [ 0.12857143 -0.3255814 ]
-   [ 0.28857143 -0.52491694]
-   [ 0.59714286 -0.46511628]
-   [ 0.71714286 -0.1461794 ]
-   [ 0.86        0.15946844]
-   [ 0.94571429  0.44518272]] 
-
-   [[-0.03182596]
-   [-0.25511273]
-   [-0.00710252]] 
-
-   []
-#+end_example
+   #+RESULTS:
+   [[file:
+   >>> >>> >>> >>> ... ... <matplotlib.collections.PathCollection object at 0x7f13e0906978>
+   <matplotlib.collections.PathCollection object at 0x7f13e0923be0>
+   <matplotlib.collections.PathCollection object at 0x7f13e092f860>
+   <matplotlib.collections.PathCollection object at 0x7f13e0942f28>
+   ... ... <matplotlib.collections.PathCollection object at 0x7f13e0942e48>
+   <matplotlib.collections.PathCollection object at 0x7f13e08c7f28>
+   <matplotlib.collections.PathCollection object at 0x7f13e0ae16a0>
+   <matplotlib.collections.PathCollection object at 0x7f13e0923ac8>
+   >>> <matplotlib.text.Text object at 0x7f13e0b3b978>
+   <matplotlib.text.Text object at 0x7f13e0b5da90>
+   <matplotlib.text.Text object at 0x7f13e0afe860>]]
+   >>> >>> ... ... ... ... >>> ... ... ... ... >>> >>> ... ... <matplotlib.collections.PathCollection object at 0x7f13e09069e8>
+   <matplotlib.collections.PathCollection object at 0x7f13e097a3c8>
+   <matplotlib.collections.PathCollection object at 0x7f13e0923da0>
+   <matplotlib.collections.PathCollection object at 0x7f13e0929550>
+   ... ... <matplotlib.collections.PathCollection object at 0x7f13e09290f0>
+   <matplotlib.collections.PathCollection object at 0x7f13e0923c18>
+   <matplotlib.collections.PathCollection object at 0x7f13e092fe10>
+   <matplotlib.collections.PathCollection object at 0x7f13e092ff28>
+   >>> <matplotlib.text.Text object at 0x7f13e0b3b978>
+   <matplotlib.text.Text object at 0x7f13e0b5da90>
+   <matplotlib.text.Text object at 0x7f13e0afe860>]]
+   >>> >>> ... ... ... ... >>> ... ... ... ... >>> >>> ... ... <matplotlib.collections.PathCollection object at 0x7f13e0ac67b8>
+   <matplotlib.collections.PathCollection object at 0x7f13e09560b8>
+   <matplotlib.collections.PathCollection object at 0x7f13e0adb0f0>
+   <matplotlib.collections.PathCollection object at 0x7f13e0968f28>
+   ... ... <matplotlib.collections.PathCollection object at 0x7f13e0968e48>
+   <matplotlib.collections.PathCollection object at 0x7f13e096ef28>
+   <matplotlib.collections.PathCollection object at 0x7f13e094dbe0>
+   <matplotlib.collections.PathCollection object at 0x7f13e0956a58>
+   >>> <matplotlib.text.Text object at 0x7f13e0b3b978>
+   <matplotlib.text.Text object at 0x7f13e0b5da90>
+   <matplotlib.text.Text object at 0x7f13e0afe860>]]
+   ... ... ... ... >>> ... ... ... ... >>> >>> ... ... <matplotlib.collections.PathCollection object at 0x7f13e0b20b70>
+   <matplotlib.collections.PathCollection object at 0x7f13e0b30748>
+   <matplotlib.collections.PathCollection object at 0x7f13e0b30eb8>
+   <matplotlib.collections.PathCollection object at 0x7f13e0b30dd8>
+   ... ... <matplotlib.collections.PathCollection object at 0x7f13e0abeeb8>
+   <matplotlib.collections.PathCollection object at 0x7f13e0abe710>
+   <matplotlib.collections.PathCollection object at 0x7f13e0b68240>
+   <matplotlib.collections.PathCollection object at 0x7f13e0abedd8>
+   >>> <matplotlib.text.Text object at 0x7f13e0b3b978>
+   <matplotlib.text.Text object at 0x7f13e0b5da90>
+   <matplotlib.text.Text object at 0x7f13e0afe860>]]
