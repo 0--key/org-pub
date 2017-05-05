@@ -361,52 +361,7 @@ tags: [matplotlib]
      plt.savefig('img/plt/ndarray_scatter.png')
    #+END_SRC
 
-   #+RESULTS:
-   [[file:
-   >>> >>> >>> >>> ... ... <matplotlib.collections.PathCollection object at 0x7f13e0906978>
-   <matplotlib.collections.PathCollection object at 0x7f13e0923be0>
-   <matplotlib.collections.PathCollection object at 0x7f13e092f860>
-   <matplotlib.collections.PathCollection object at 0x7f13e0942f28>
-   ... ... <matplotlib.collections.PathCollection object at 0x7f13e0942e48>
-   <matplotlib.collections.PathCollection object at 0x7f13e08c7f28>
-   <matplotlib.collections.PathCollection object at 0x7f13e0ae16a0>
-   <matplotlib.collections.PathCollection object at 0x7f13e0923ac8>
-   >>> <matplotlib.text.Text object at 0x7f13e0b3b978>
-   <matplotlib.text.Text object at 0x7f13e0b5da90>
-   <matplotlib.text.Text object at 0x7f13e0afe860>]]
-   >>> >>> ... ... ... ... >>> ... ... ... ... >>> >>> ... ... <matplotlib.collections.PathCollection object at 0x7f13e09069e8>
-   <matplotlib.collections.PathCollection object at 0x7f13e097a3c8>
-   <matplotlib.collections.PathCollection object at 0x7f13e0923da0>
-   <matplotlib.collections.PathCollection object at 0x7f13e0929550>
-   ... ... <matplotlib.collections.PathCollection object at 0x7f13e09290f0>
-   <matplotlib.collections.PathCollection object at 0x7f13e0923c18>
-   <matplotlib.collections.PathCollection object at 0x7f13e092fe10>
-   <matplotlib.collections.PathCollection object at 0x7f13e092ff28>
-   >>> <matplotlib.text.Text object at 0x7f13e0b3b978>
-   <matplotlib.text.Text object at 0x7f13e0b5da90>
-   <matplotlib.text.Text object at 0x7f13e0afe860>]]
-   >>> >>> ... ... ... ... >>> ... ... ... ... >>> >>> ... ... <matplotlib.collections.PathCollection object at 0x7f13e0ac67b8>
-   <matplotlib.collections.PathCollection object at 0x7f13e09560b8>
-   <matplotlib.collections.PathCollection object at 0x7f13e0adb0f0>
-   <matplotlib.collections.PathCollection object at 0x7f13e0968f28>
-   ... ... <matplotlib.collections.PathCollection object at 0x7f13e0968e48>
-   <matplotlib.collections.PathCollection object at 0x7f13e096ef28>
-   <matplotlib.collections.PathCollection object at 0x7f13e094dbe0>
-   <matplotlib.collections.PathCollection object at 0x7f13e0956a58>
-   >>> <matplotlib.text.Text object at 0x7f13e0b3b978>
-   <matplotlib.text.Text object at 0x7f13e0b5da90>
-   <matplotlib.text.Text object at 0x7f13e0afe860>]]
-   ... ... ... ... >>> ... ... ... ... >>> >>> ... ... <matplotlib.collections.PathCollection object at 0x7f13e0b20b70>
-   <matplotlib.collections.PathCollection object at 0x7f13e0b30748>
-   <matplotlib.collections.PathCollection object at 0x7f13e0b30eb8>
-   <matplotlib.collections.PathCollection object at 0x7f13e0b30dd8>
-   ... ... <matplotlib.collections.PathCollection object at 0x7f13e0abeeb8>
-   <matplotlib.collections.PathCollection object at 0x7f13e0abe710>
-   <matplotlib.collections.PathCollection object at 0x7f13e0b68240>
-   <matplotlib.collections.PathCollection object at 0x7f13e0abedd8>
-   >>> <matplotlib.text.Text object at 0x7f13e0b3b978>
-   <matplotlib.text.Text object at 0x7f13e0b5da90>
-   <matplotlib.text.Text object at 0x7f13e0afe860>]]
+   [[http://0--key.github.io/assets/img/plt/ndarray_scatter.png]]
 
 ** Scatter several datasets on one image
    #+BEGIN_SRC python :results file :exports code :eval noexport
