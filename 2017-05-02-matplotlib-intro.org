@@ -12,7 +12,7 @@ tags: [matplotlib]
 #+STARTUP: showall
 #+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
 #+TOC: headlines 2
-#+PROPERTY:header-args :results output :exports both :eval noexport
+#+PROPERTY:header-args :results output :exports both :eval no-export
 
 * GNU Octave meets Python
 
@@ -63,7 +63,7 @@ tags: [matplotlib]
 ** NdArray manipulations
 
 *** Directly
-    #+BEGIN_SRC python :results output :session perc :pp :eval noexport
+    #+BEGIN_SRC python :results output :session perc :pp :eval no-export
       for i in nen:
           print(i[0], i[1], type(i[1]), '\n')
     #+END_SRC
@@ -79,7 +79,7 @@ tags: [matplotlib]
     : -0.3 0.126245847176 <class 'numpy.float64'>
 
 *** Converted
-    #+BEGIN_SRC python :results output :exports both :eval noexport :session perc
+    #+BEGIN_SRC python :results output :exports both :eval no-export :session perc
       for i in nen.tolist():
           print(i[0], i[1], type(i[1]), '\n')
     #+END_SRC
@@ -110,7 +110,7 @@ tags: [matplotlib]
     [[http://0--key.github.io/assets/img/plt/first_test.png]]
 
 *** Colorization
-    #+BEGIN_SRC python :results file :session perc :exports code :eval noexport
+    #+BEGIN_SRC python :results file :session perc :exports code :eval no-export
       ax = plt.gca()
       ax.set_axis_bgcolor('black')
       # ax.set_axis_bgcolor((1, 0, 0))
@@ -125,7 +125,7 @@ tags: [matplotlib]
     [[http://0--key.github.io/assets/img/plt/second_test.png]]
 
 *** Full-fledged dark theme
-    #+BEGIN_SRC python :results file :exports code :eval noexport
+    #+BEGIN_SRC python :results file :exports code :eval no-export
       import numpy as np
       import matplotlib.pyplot as plt
 
@@ -153,7 +153,7 @@ tags: [matplotlib]
     [[http://0--key.github.io/assets/img/plt/dark_test.png]]
    
 *** Scattering
-    #+BEGIN_SRC python :results file :exports code :eval noexport
+    #+BEGIN_SRC python :results file :exports code :eval no-export
       import matplotlib.pyplot as plt
 
       plt.style.use('dark_background')
@@ -175,7 +175,7 @@ tags: [matplotlib]
     [[http://0--key.github.io/assets/img/plt/simple_scatter.png]]
 
 *** All together
-    #+BEGIN_SRC python :results file :exports code :eval noexport
+    #+BEGIN_SRC python :results file :exports code :eval no-export
       import matplotlib.pyplot as plt
 
       plt.style.use('dark_background')
@@ -208,7 +208,7 @@ tags: [matplotlib]
     [[http://0--key.github.io/assets/img/plt/data_scatter.png]]
 
 *** Parabola
-    #+BEGIN_SRC python :results file :exports code :eval noexport
+    #+BEGIN_SRC python :results file :exports code :eval no-export
       import numpy as np
       from math import exp
       import matplotlib.pyplot as plt
@@ -234,7 +234,7 @@ tags: [matplotlib]
 * Four datasets on one picture
 
 ** Iterate the dataset
-   #+BEGIN_SRC python :results output :session perc :eval noexport
+   #+BEGIN_SRC python :results output :session perc :eval no-export
      datasets = ['data/dataset1.mat', 'data/dataset2.mat',
                  'data/dataset3.mat', 'data/dataset4.mat']
      for i in datasets:
@@ -342,7 +342,7 @@ tags: [matplotlib]
  #+end_example
 
 ** Scatter NumPy array
-   #+BEGIN_SRC python :results file :exports code :eval noexport :session perc
+   #+BEGIN_SRC python :results file :exports code :eval no-export :session perc
      import matplotlib.pyplot as plt
 
      plt.style.use('dark_background')
@@ -364,7 +364,7 @@ tags: [matplotlib]
    [[http://0--key.github.io/assets/img/plt/ndarray_scatter.png]]
 
 ** Scatter several datasets on one image
-   #+BEGIN_SRC python :results file :exports code :eval noexport
+   #+BEGIN_SRC python :results file :exports code :eval no-export
      import scipy.io
      import matplotlib.pyplot as plt
 
