@@ -2602,25 +2602,29 @@ tags: [coding, algorithms]
    #+END_QUOTE
 
 ** Solution
-   #+BEGIN_SRC python :results output :eval noexport
-     result = []
-     def permutations(head, tail=''):
-         if len(head) == 0: result.append(tail)
-         else:
-             for i in range(len(head)):
-                 permutations(head[0:i] + head[i+1:], tail+head[i])
-         return result
+   #+BEGIN_SRC python :results output :exports code
+     # result = []
+     # def permutations(head, tail=''):
+     #     if len(head) == 0: result.append(tail)
+     #     else:
+     #         for i in range(len(head)):
+     #             permutations(head[0:i] + head[i+1:], tail+head[i])
+     #     return result
 
+     def cyclic_shift(s):
+         l = list(s)
+         tail = l.pop()
+         return tail + ''.join(l)
 
-     #print(permutations('a'))
-     assert(permutations('a') == ['a'])
-     assert(sorted(permutations('ab')) == ['ab', 'ba'])
-     assert(sorted(permutations('aabb')) == ['aabb',
-                                             'abab',
-                                             'abba',
-                                             'baab',
-                                             'baba',
-                                             'bbaa'])
+     assert(cyclic_shift('abc') == 'cab')
+     # assert(permutations('a') == ['a'])
+     # assert(sorted(permutations('ab')) == ['ab', 'ba'])
+     # assert(sorted(permutations('aabb')) == ['aabb',
+     #                                         'abab',
+     #                                         'abba',
+     #                                         'baab',
+     #                                         'baba',
+     #                                         'bbaa'])
    #+END_SRC
 
    #+RESULTS:
