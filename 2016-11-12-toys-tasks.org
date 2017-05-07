@@ -2635,7 +2635,14 @@ tags: [coding, algorithms]
          tail = l.pop()
          return tail + ''.join(l)
 
+
+     assert(leap_shift('abc') == ['abc', 'acb', 'bac', 'bca',
+                                  'cab'])
+     assert(leap_shift('abcd') == ['abcd', 'abdc', 'acbd', 'acdb',
+                                   'adbc', 'bacd', 'bcad', 'bcda',
+                                   'cabd', 'dabc'])
      assert(cyclic_shift('abc') == 'cab')
+
      # assert(permutations('a') == ['a'])
      # assert(sorted(permutations('ab')) == ['ab', 'ba'])
      # assert(sorted(permutations('aabb')) == ['aabb',
