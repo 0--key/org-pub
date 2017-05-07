@@ -80,6 +80,12 @@ An overview of the main types of neural network architecture
    that has some of the hidden \to hidden connections missing.
 
 ** Recurrent neural networks for modeling sequences
+
+   #+CAPTION: RNN unfold view
+   #+ATTR_HTML: :alt RNN :title Unfold view
+   #+ATTR_HTML: :width 80%
+   [[http://0--key.github.io/assets/img/neural_networks/rnn.jpg]]
+
    Recurrent neural networks are a very natural way to model sequential
    data:
 
