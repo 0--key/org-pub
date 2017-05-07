@@ -114,15 +114,18 @@ An overview of the main types of neural network architecture
      distribution.
    - The next slide shows an example of the kind of text it generates.
 
-   Notice how much it knows!Some text generated one character at a time
-   by Ilya Sutskever’s recurrent neural network In 1974 Northern Denver
-   had been overshadowed by CNL, and several Irish intelligence agencies
-   in the Mediterranean region. However, on the Victoria, Kings Hebrew
-   stated that Charles decided to escape during an alliance. The mansion
-   house was completed in 1882, the second in its bridge are omitted,
-   while closing is the proton reticulum composed below it aims, such
-   that it is the blurring of appearing on any well-paid type of box
-   printer.
+   Notice how much it knows!
+
+** Some text generated one character at a time
+   /by Ilya Sutskever’s recurrent neural network/
+
+   In 1974 Northern Denver had been overshadowed by CNL, and several
+   Irish intelligence agencies in the Mediterranean region. However,
+   on the Victoria, Kings Hebrew stated that Charles decided to escape
+   during an alliance. The mansion house was completed in 1882, the
+   second in its bridge are omitted, while closing is the proton
+   reticulum composed below it aims, such that it is the blurring of
+   appearing on any well-paid type of box printer.
 
 ** Symmetrically connected networks
 
@@ -131,12 +134,12 @@ An overview of the main types of neural network architecture
 
    - John Hopfield (and others) realized that symmetric networks are
      much easier to analyze than recurrent networks.
-   - They are also more restricted in what they can do. because they
+   - They are also more restricted in what they can do because they
      obey an energy function.
 
    For example, they cannot model cycles.
    Symmetrically connected nets without hidden units are called
-   “Hopfield nets”.
+   /Hopfield nets/.
 
 ** Symmetrically connected networks with hidden units
 
