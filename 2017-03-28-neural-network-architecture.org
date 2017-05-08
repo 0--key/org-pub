@@ -320,7 +320,7 @@ An overview of the main types of neural network architecture
       (plus a bias).
    - Then output a 1 if the weighted sum exceeds zero.
 
-   $z = /displaystyleb + /sum_{i} x_{i}w_{i}$
+   $\displaystyle z = b + \sum_{i} x_{i}w_{i}$
 
 ** How to learn biases using the same rule as we use for learning weights
    #+CAPTION: Binary Threshold Neuron – Training Biases
