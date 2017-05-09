@@ -324,9 +324,10 @@ An overview of the main types of neural network architecture
    $\begin {cases} 1 \text { if } z \ge 0\\ 0 \text { otherwise }  \end {cases}$
 
 ** How to learn biases using the same rule as we use for learning weights
-   #+CAPTION: Binary Threshold Neuron – Training Biases
-   #+ATTR_HTML: :alt  :title Binary Threshold Neuron – Training Biases :align right
-   http://www.what2web.com/wp-content/uploads/2017/01/binary-threshold-neuron-bias-training-300x255.jpg
+   #+CAPTION: Binary threshold neurons 
+   #+ATTR_HTML: :alt Perceptron :title Schematic representation
+   [[http://0--key.github.io/assets/img/neural_networks/perceptron.png]]
+
    A threshold is equivalent to having a negative bias. We can avoid
    having to figure out a separate learning rule for the bias by using
    a trick:
