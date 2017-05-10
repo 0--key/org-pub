@@ -12,7 +12,7 @@ tags: [perceptron, oop]
 #+STARTUP: showall
 #+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
 #+TOC: headlines 2
-#+PROPERTY:header-args :results output :exports both :eval noexport
+#+PROPERTY:header-args :results output :exports code :eval no-export
 
 * Definition
 
