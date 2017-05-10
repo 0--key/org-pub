@@ -41,6 +41,16 @@ tags: [perceptron, oop]
 
 * Implementation
 
+** Inlet
+   #+BEGIN_SRC python :session nn
+     class Inlet(object):
+         """Input signal into dendron"""
+         def __init__(self):
+             pass
+         def modulate(self, signal):
+             self.signal = signal
+   #+END_SRC
+
 
 * Scratches                                                        :noexport:
   In an initial form the perceptron is a single-layer neural
