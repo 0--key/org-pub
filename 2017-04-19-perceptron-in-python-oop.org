@@ -40,7 +40,7 @@ tags: [perceptron, oop]
 
 
 * Implementation
-  #+INCLUDE: motto.org::perceptron
+
 
 * Scratches                                                        :noexport:
   In an initial form the perceptron is a single-layer neural
