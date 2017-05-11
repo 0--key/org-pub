@@ -774,7 +774,7 @@ An overview of the main types of neural network architecture
 
 * What perceptrons can’t do
 
-** The limitations of Perceptrons
+** The limitations of perceptrons
 
    If you are allowed to choose the features by hand and if you use
    enough features, you can do almost anything.
@@ -849,7 +849,6 @@ An overview of the main types of neural network architecture
    provide more input to the decision unit than every single case of
    pattern B.
    - This is impossible if the sums over cases are the same.
-
 
 ** Why this result is devastating for Perceptrons
 
