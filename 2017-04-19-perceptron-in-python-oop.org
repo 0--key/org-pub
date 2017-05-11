@@ -80,6 +80,37 @@ tags: [perceptron, oop]
 
    #+RESULTS:
 
+** Neural Network
+   #+BEGIN_SRC python :session nn
+     class NeuralNetwork(object):
+         """Ties all classes above together"""
+         def __init__(self, swing):
+             """Creates network with swing number of inlets and equal number of
+             neurons interconnected by dendrons
+
+             """
+             self.network_swing = swing
+             self.inlets = []
+             self.neurons = []
+             self.dendrons = []
+             for i in range(swing):
+                 self.inlets.append(Inlet())
+                 self.neurons.append(Neuron())
+                 for j in range(swing):
+                     self.dendrons.append(
+                         Dendron(self.neurons[-1],
+                                 self.inlets[-1]))
+                     self.neurons[-1].dendrons.append(self.dendrons[-1])
+         def eval_input(self, input_array):
+             for i in range(self.network_swing):
+                 self.inlets[i].modulate(input_array[i])
+             for i in self.neurons:
+                 i.calculate_output()
+         def update_weights(self, weights_array):
+             for i in range(self.network_swing ** 2):
+                 self.dendrons[i].weight = weights_array[i]
+   #+END_SRC
+
 
 * Scratches                                                        :noexport:
   In an initial form the perceptron is a single-layer neural
