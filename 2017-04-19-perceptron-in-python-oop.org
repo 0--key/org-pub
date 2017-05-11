@@ -51,6 +51,18 @@ tags: [perceptron, oop]
              self.signal = signal
    #+END_SRC
 
+** Dendron
+   #+BEGIN_SRC python :session nn
+     class Dendron(object):
+         """Convey signal to neuron"""
+         def __init__(self, neuron, inlet, weight=0.1):
+             self.neuron = neuron
+             self.weight = weight
+             self.inlet = inlet
+   #+END_SRC
+
+   #+RESULTS:
+
 
 * Scratches                                                        :noexport:
   In an initial form the perceptron is a single-layer neural
