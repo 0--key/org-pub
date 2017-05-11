@@ -63,6 +63,23 @@ tags: [perceptron, oop]
 
    #+RESULTS:
 
+** Soma
+   #+BEGIN_SRC python :session nn
+     class Neuron(object):
+         """Processing module itself"""
+         def __init__(self, df=lambda x: x):  # sigmoidal
+             self.df = df
+             self.dendrons = []
+             self.output = 0
+         def calculate_output(self):
+             for dendron in self.dendrons:
+                 self.output += self.df(
+                     dendron.weight *
+                     dendron.inlet.signal)
+   #+END_SRC
+
+   #+RESULTS:
+
 
 * Scratches                                                        :noexport:
   In an initial form the perceptron is a single-layer neural
