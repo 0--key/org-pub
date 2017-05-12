@@ -1,0 +1,21 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: Bayes's theorem
+tagline: " in examples"
+permalink: /bayes/overview.html
+categories: [math]
+tags: [Bayes, theorem]
+---
+#+END_EXPORT
+
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both
+
+* Definition
+
+* Explanation
+
+* Examples
