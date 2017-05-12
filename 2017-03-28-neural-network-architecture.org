@@ -517,10 +517,13 @@ An overview of the main types of neural network architecture
    A point in the space represents a particular setting of all the weights.
 
    Assuming that we have eliminated the threshold, each training case
-   can be represented as a hyperplane through the origin.
+   can be represented as a hyper-plane through the origin.
 
    - The weights must lie on one side of this hyper-plane to get the
-     answer correct .Weight space
+     answer correct.
+
+     Weight space
+
    Each training case defines a plane (shown as a black line)
    - The plane goes through the origin and is perpendicular to the
      input vector.
@@ -575,7 +578,7 @@ An overview of the main types of neural network architecture
    is the space that has one dimension for each weight in the
    perceptron. A point in the space represents a particular setting of
    all the weights. Assuming we've eliminated the threshold, we can
-   represent every training case as a hyperplane through the origin in
+   represent every training case as a hyper-plane through the origin in
    weight space. So, points in the space correspond to weight vectors
    and training cases correspond to planes. And, for a particular
    training case, the weights must lie on one side of that hyperplane,
