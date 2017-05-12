@@ -321,3 +321,28 @@ tags: [nlp]
 
    0 directories, 10 files
 #+end_example
+
+* Meet Jenkins on Debian
+
+** Download =.deb=
+   [[https://pkg.jenkins.io/debian/][from]]
+
+** Install =.deb=
+   #+BEGIN_SRC sh
+   sudo apt-get install daemon
+   sudo dpkg -i ~/Downloads/jenkins<TAB>
+   #+END_SRC
+
+** Download =.war=
+   [[http://mirrors.jenkins.io/war-stable/latest/jenkins.war][from]]
+
+** Launch =.war=
+   in terminal:
+
+   #+BEGIN_SRC sh
+   java -jar jenkins.war
+   #+END_SRC
+
+
+** Open Jenkins
+   in a new [[http://localhost:8080/][tab]]
