@@ -26,6 +26,8 @@ tags: [Bayes, theorem]
   before getting the evidence and the probability *P(H|E)* of the
   hypothesis after getting the evidence is:
 
+  $P(H|E) = \frac{P(E|H)}{P(E)}P(H)$
+
 * Explanation
 
 * Examples
