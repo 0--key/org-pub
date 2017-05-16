@@ -12,7 +12,51 @@ tags: [python, decorator]
 #+STARTUP: showall
 #+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
 #+TOC: headlines 2
-#+PROPERTY:header-args :results output :exports both
+#+PROPERTY:header-args :results output :exports both :eval no-export
+
+* Prelude
+  
+  It's undoubtly a tough task and a final point in Python functions
+  scrutiny. But persistence and attention to details should eliminate
+  most of headache.
+
+  
+* Simple function
+  #+BEGIN_SRC python
+    def primitive_function(arg_1, arg_2):
+        """Multiply arguments and return result"""
+        return arg_1 * arg_2
+
+    assert(primitive_function(2, 2) == 4)
+  #+END_SRC
+
+  #+RESULTS:
+
+* Nested function
+
+  But what if we put the arbitrary function inside?
+  #+BEGIN_SRC python
+    def parent_function(arg_1, arg_2):
+        """Evaluates all nested functions"""
+
+        def first_nested_function(*args):
+            """Converts positional argument"""
+            # args[0] += 1
+            print(args)
+
+        def second_nested_function(**kwargs):
+            """Converts named argument"""
+            kwargs['b'] += 1
+
+        first_nested_function()
+        #second_nested_function()
+        #return args[0] + kwargs['b']
+        pass
+
+    # assert(parent_function(4, b=7) == 13)
+  #+END_SRC
+
+  #+RESULTS:
 
 * Syncactic shugar
 
