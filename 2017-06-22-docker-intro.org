@@ -132,3 +132,255 @@ tags: [docker, intro]
 
    #+RESULTS:
    : I'm a busybox!
+
+* Simple local webapp
+
+** Nginx launching
+   
+   #+BEGIN_SRC sh
+   docker run -p 8000:80 nginx
+   #+END_SRC
+
+   And ensure in a [[http://localhost:8000][browser]]
+
+** Processes
+
+   Now when you're got nginx logs in a terminal tab, lets open a new
+   one and type into it:
+   #+BEGIN_SRC sh
+   docker ps
+   #+END_SRC
+
+   #+RESULTS:
+   : CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                  NAMES
+   : f546a68edb8d        nginx               "nginx -g 'daemon ..."   17 minutes ago      Up 17 minutes       0.0.0.0:8000->80/tcp   compassionate_stallman
+
+   Notice that container identificator begins from ~f546~
+   
+** Instance close-up
+
+   Use the container ID for its meticulous inspection:
+   #+BEGIN_SRC sh
+   docker inspect f546
+   #+END_SRC
+
+   #+RESULTS:
+   #+begin_example
+   [
+       {
+           "Id": "f546a68edb8d6e240d52c1ea630d2b0474b0e5350fde3364cef4b0454d934339",
+           "Created": "2017-06-24T06:41:55.894731265Z",
+           "Path": "nginx",
+           "Args": [
+               "-g",
+               "daemon off;"
+           ],
+           "State": {
+               "Status": "running",
+               "Running": true,
+               "Paused": false,
+               "Restarting": false,
+               "OOMKilled": false,
+               "Dead": false,
+               "Pid": 5872,
+               "ExitCode": 0,
+               "Error": "",
+               "StartedAt": "2017-06-24T06:41:56.457862595Z",
+               "FinishedAt": "0001-01-01T00:00:00Z"
+           },
+           "Image": "sha256:958a7ae9e56979be256796dabd5845c704f784cd422734184999cf91f24c2547",
+           "ResolvConfPath": "/var/lib/docker/containers/f546a68edb8d6e240d52c1ea630d2b0474b0e5350fde3364cef4b0454d934339/resolv.conf",
+           "HostnamePath": "/var/lib/docker/containers/f546a68edb8d6e240d52c1ea630d2b0474b0e5350fde3364cef4b0454d934339/hostname",
+           "HostsPath": "/var/lib/docker/containers/f546a68edb8d6e240d52c1ea630d2b0474b0e5350fde3364cef4b0454d934339/hosts",
+           "LogPath": "/var/lib/docker/containers/f546a68edb8d6e240d52c1ea630d2b0474b0e5350fde3364cef4b0454d934339/f546a68edb8d6e240d52c1ea630d2b0474b0e5350fde3364cef4b0454d934339-json.log",
+           "Name": "/compassionate_stallman",
+           "RestartCount": 0,
+           "Driver": "aufs",
+           "MountLabel": "",
+           "ProcessLabel": "",
+           "AppArmorProfile": "",
+           "ExecIDs": null,
+           "HostConfig": {
+               "Binds": null,
+               "ContainerIDFile": "",
+               "LogConfig": {
+                   "Type": "json-file",
+                   "Config": {}
+               },
+               "NetworkMode": "default",
+               "PortBindings": {
+                   "80/tcp": [
+                       {
+                           "HostIp": "",
+                           "HostPort": "8000"
+                       }
+                   ]
+               },
+               "RestartPolicy": {
+                   "Name": "no",
+                   "MaximumRetryCount": 0
+               },
+               "AutoRemove": false,
+               "VolumeDriver": "",
+               "VolumesFrom": null,
+               "CapAdd": null,
+               "CapDrop": null,
+               "Dns": [],
+               "DnsOptions": [],
+               "DnsSearch": [],
+               "ExtraHosts": null,
+               "GroupAdd": null,
+               "IpcMode": "",
+               "Cgroup": "",
+               "Links": null,
+               "OomScoreAdj": 0,
+               "PidMode": "",
+               "Privileged": false,
+               "PublishAllPorts": false,
+               "ReadonlyRootfs": false,
+               "SecurityOpt": null,
+               "UTSMode": "",
+               "UsernsMode": "",
+               "ShmSize": 67108864,
+               "Runtime": "runc",
+               "ConsoleSize": [
+                   0,
+                   0
+               ],
+               "Isolation": "",
+               "CpuShares": 0,
+               "Memory": 0,
+               "NanoCpus": 0,
+               "CgroupParent": "",
+               "BlkioWeight": 0,
+               "BlkioWeightDevice": null,
+               "BlkioDeviceReadBps": null,
+               "BlkioDeviceWriteBps": null,
+               "BlkioDeviceReadIOps": null,
+               "BlkioDeviceWriteIOps": null,
+               "CpuPeriod": 0,
+               "CpuQuota": 0,
+               "CpuRealtimePeriod": 0,
+               "CpuRealtimeRuntime": 0,
+               "CpusetCpus": "",
+               "CpusetMems": "",
+               "Devices": [],
+               "DiskQuota": 0,
+               "KernelMemory": 0,
+               "MemoryReservation": 0,
+               "MemorySwap": 0,
+               "MemorySwappiness": -1,
+               "OomKillDisable": null,
+               "PidsLimit": 0,
+               "Ulimits": null,
+               "CpuCount": 0,
+               "CpuPercent": 0,
+               "IOMaximumIOps": 0,
+               "IOMaximumBandwidth": 0
+           },
+           "GraphDriver": {
+               "Name": "aufs",
+               "Data": null
+           },
+           "Mounts": [],
+           "Config": {
+               "Hostname": "f546a68edb8d",
+               "Domainname": "",
+               "User": "",
+               "AttachStdin": false,
+               "AttachStdout": true,
+               "AttachStderr": true,
+               "ExposedPorts": {
+                   "80/tcp": {}
+               },
+               "Tty": false,
+               "OpenStdin": false,
+               "StdinOnce": false,
+               "Env": [
+                   "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                   "NGINX_VERSION=1.13.1-1~stretch",
+                   "NJS_VERSION=1.13.1.0.1.10-1~stretch"
+               ],
+               "Cmd": [
+                   "nginx",
+                   "-g",
+                   "daemon off;"
+               ],
+               "ArgsEscaped": true,
+               "Image": "nginx",
+               "Volumes": null,
+               "WorkingDir": "",
+               "Entrypoint": null,
+               "OnBuild": null,
+               "Labels": {},
+               "StopSignal": "SIGTERM"
+           },
+           "NetworkSettings": {
+               "Bridge": "",
+               "SandboxID": "2a56aa540231508a5ae0447c0be9f1d1bd50c641b02627971958ce7391c8a416",
+               "HairpinMode": false,
+               "LinkLocalIPv6Address": "",
+               "LinkLocalIPv6PrefixLen": 0,
+               "Ports": {
+                   "80/tcp": [
+                       {
+                           "HostIp": "0.0.0.0",
+                           "HostPort": "8000"
+                       }
+                   ]
+               },
+               "SandboxKey": "/var/run/docker/netns/2a56aa540231",
+               "SecondaryIPAddresses": null,
+               "SecondaryIPv6Addresses": null,
+               "EndpointID": "95ecd07b285893afb44dcbf05c2d4612520af5fa4fe7f0ab6db51fc635d0d3b0",
+               "Gateway": "172.17.0.1",
+               "GlobalIPv6Address": "",
+               "GlobalIPv6PrefixLen": 0,
+               "IPAddress": "172.17.0.2",
+               "IPPrefixLen": 16,
+               "IPv6Gateway": "",
+               "MacAddress": "02:42:ac:11:00:02",
+               "Networks": {
+                   "bridge": {
+                       "IPAMConfig": null,
+                       "Links": null,
+                       "Aliases": null,
+                       "NetworkID": "7bc9f6c5809afb954741056586c3406bc468be3da03b8c8b7af5a39da48f62a8",
+                       "EndpointID": "95ecd07b285893afb44dcbf05c2d4612520af5fa4fe7f0ab6db51fc635d0d3b0",
+                       "Gateway": "172.17.0.1",
+                       "IPAddress": "172.17.0.2",
+                       "IPPrefixLen": 16,
+                       "IPv6Gateway": "",
+                       "GlobalIPv6Address": "",
+                       "GlobalIPv6PrefixLen": 0,
+                       "MacAddress": "02:42:ac:11:00:02"
+                   }
+               }
+           }
+       }
+   ]
+#+end_example
+
+** Ping the container
+
+   Now, when we know ~container ip~ it is possible to ping it:
+   #+BEGIN_SRC sh
+   ping -c 5 172.17.0.2
+   #+END_SRC
+
+   #+RESULTS:
+   #+begin_example
+   PING 172.17.0.2 (172.17.0.2) 56(84) bytes of data.
+   64 bytes from 172.17.0.2: icmp_seq=1 ttl=64 time=0.111 ms
+   64 bytes from 172.17.0.2: icmp_seq=2 ttl=64 time=0.166 ms
+   64 bytes from 172.17.0.2: icmp_seq=3 ttl=64 time=0.199 ms
+   64 bytes from 172.17.0.2: icmp_seq=4 ttl=64 time=0.180 ms
+   64 bytes from 172.17.0.2: icmp_seq=5 ttl=64 time=0.168 ms
+
+   --- 172.17.0.2 ping statistics ---
+   5 packets transmitted, 5 received, 0% packet loss, time 3998ms
+   rtt min/avg/max/mdev = 0.111/0.164/0.199/0.033 ms
+#+end_example
+** Container halt
+
+   By typing =C-c C-c=
