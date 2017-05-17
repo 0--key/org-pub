@@ -65,18 +65,21 @@ tags: [python, decorator]
 
 * Primitive example
 
-  #+BEGIN_SRC python
-    def decorator(any_function_as_an_argument):
-        """Do nothing, just returning an input function"""
-        return any_function_as_an_argument
+  Just to illustrate how it works:
+
+** Return function in innate state
+   #+BEGIN_SRC python
+     def decorator(any_function_as_an_argument):
+         """Do nothing, just returning an input function"""
+         return any_function_as_an_argument
 
 
-    @decorator
-    def sample_function(a, b):
-        return a + b
+     @decorator
+     def sample_function(a, b):
+         return a + b
 
-    assert(sample_function(2, 3) == 5)
-  #+END_SRC
+     assert(sample_function(2, 3) == 5)
+   #+END_SRC
 
-  #+RESULTS:
-  : None
+   #+RESULTS:
+
