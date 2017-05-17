@@ -83,3 +83,23 @@ tags: [python, decorator]
 
    #+RESULTS:
 
+** Unintrusively mutate finction
+   #+BEGIN_SRC python
+     def decorator(any_function_as_an_argument):
+         """Modify argument arguments"""
+
+         def modificator(*args, **kwargs):
+             args = list(args)
+             args[0] += 1
+             args[1] += 2
+             args = tuple(args)
+
+         return modificator
+
+
+     @decorator
+     def sample_function(a, b):
+         return a + b
+
+     assert(sample_function(2, 3) == 8)   
+   #+END_SRC
