@@ -41,19 +41,18 @@ tags: [python, decorator]
 
         def first_nested_function(*args):
             """Converts positional argument"""
-            # args[0] += 1
+            args[0] += 1
             print(args)
 
         def second_nested_function(**kwargs):
             """Converts named argument"""
-            kwargs['b'] += 1
+            kwargs['b'] = 'reassigned value'
+            print(kwargs)
 
-        first_nested_function()
-        #second_nested_function()
-        #return args[0] + kwargs['b']
-        pass
+        first_nested_function('first_positional_argument')
+        second_nested_function(b='b_value')
 
-    # assert(parent_function(4, b=7) == 13)
+    parent_function(2, 3)
   #+END_SRC
 
   #+RESULTS:
