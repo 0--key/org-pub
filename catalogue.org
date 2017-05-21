@@ -1,0 +1,60 @@
+#+AUTHOR:    Anton S. Kosinov
+#+TITLE:     Web Log Catalogue
+#+SUBTITLE:  Category <-> Tags relations
+#+EMAIL:     a.s.kosinov@gmail.com
+#+LANGUAGE: en
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
+
+* Emacs
+
+** Installation
+
+** Settings
+
+** Literate Programming
+
+*** Babel
+
+** Customizing
+
+** Extension
+
+*** Elpy
+
+
+* Python
+
+** Python2
+
+** Python3
+
+** Virtual Environment
+
+* Maemo
+
+* Debian
+
+* Docker
+
+* Kubernetes
+
+* SQLite3
+
+* TDD
+
+* CI
+
+* CD
+
+* Elisp
+
+* Shell
+
+* JavaScript
+
+* AWS
+
+* GCP
