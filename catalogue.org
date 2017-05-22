@@ -16,35 +16,37 @@
 
 * Learning Technology
 
-** Anki
+** anki
 
-*** Installation
+*** installation
+
+*** spaced repetition
 
 
 * Emacs
 
-** Installation
+** installation
 
-** Settings
+** settings
 
-** Literate Programming
+** literate programming
 
-*** Babel
+*** babel
 
-** Customizing
+** customizing
 
-** Extension
+** extension
 
-*** Elpy
+*** elpy
 
 
 * Python
 
-** Python2
+** python2
 
-** Python3
+** python3
 
-** Virtual Environment
+** virtual environment
 
 * Maemo
 
