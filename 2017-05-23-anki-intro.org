@@ -4,8 +4,8 @@ layout: post
 title: Anki
 tagline: " at the frist glance"
 permalink: /anki/intro.html
-categories: [Learning Technology, Literate Programming]
-tags: [Anki, intro, installation, ]
+categories: [Learning Technology, Debian]
+tags: [anki, intro, installation]
 ---
 #+END_EXPORT
 
