@@ -1,0 +1,67 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: Anki
+tagline: " at the frist glance"
+permalink: /anki/intro.html
+categories: [Learning Technology, Literate Programming]
+tags: [Anki, intro, installation, ]
+---
+#+END_EXPORT
+
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
+
+* Prelude
+  As it indtroduced at its [[https://apps.ankiweb.net/index.html][site]]:
+  #+BEGIN_QUOTE
+  Anki is a program which makes remembering things easy. Because it's
+  a lot more efficient than traditional study methods, you can either
+  greatly decrease your time spent studying, or greatly increase the
+  amount you learn.
+  #+END_QUOTE
+
+  Doesn't sound challenging?
+
+
+* Installation
+  There are [[https://apps.ankiweb.net/][several options to install]] =Anki= and I've focus on a
+  ~.deb~ one:
+
+** Download the =.deb= package
+   #+BEGIN_SRC sh
+   cd ~/Downloads
+   wget https://apps.ankiweb.net/downloads/current/anki_2.0.45_all.deb
+   #+END_SRC
+
+** Install =Anki's= dependencies
+   #+BEGIN_SRC sh
+   sudo apt-get install python-qt4 mplayer2 lame libportaudio2 python-sqlalchemy
+   # sudo apt --fix-broken install
+   #+END_SRC
+
+** Install it into ~Debian9~
+   #+BEGIN_SRC sh
+   cd ~/Downloads
+   # ls -la
+   sudo dpkg -i anki_2.0.45_all.deb
+   #+END_SRC
+
+
+* Configuring
+  For =Gnome= users only to allow =Anki= to pick up the current theme
+  from it:
+  
+  #+BEGIN_SRC sh
+  theme=$(gsettings get org.gnome.desktop.interface gtk-theme)
+  echo "gtk-theme-name=$theme" >> ~/.gtkrc-2.0
+  echo "export GTK2_RC_FILES=$HOME/.gtkrc-2.0" >> ~/.profile
+  #+END_SRC
+
+
+* Testing
+  
+** Log out and log back
+   into your session
