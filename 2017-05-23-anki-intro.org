@@ -27,7 +27,7 @@ tags: [anki, intro, installation]
 
 
 * Installation
-  There are [[https://apps.ankiweb.net/][several options to install]] =Anki= and I've focus on a
+  There are [[https://apps.ankiweb.net/][several options to install]] =Anki= and I'm pay an attention on a
   ~.deb~ one:
 
 ** Download the =.deb= package
