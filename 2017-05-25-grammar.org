@@ -3,7 +3,7 @@
 layout: post
 title: Grammar check
 tagline: " in Emacs"
-permalink: /emacs/grammar.html
+permalink: /emacs/grammar_checker.html
 categories: [Literate Programming, Emacs]
 tags: [grammar]
 ---
@@ -19,7 +19,7 @@ tags: [grammar]
   This article covers an additional grammar check inside any Emacs
   buffer. Full manual is at this [[https://github.com/mhayashi1120/Emacs-langtool][site]].
 
-* Installation
+* Prerequisites
 
 ** Check up Java
    #+BEGIN_SRC sh
@@ -61,15 +61,15 @@ tags: [grammar]
    #+RESULTS:
    : /home/antony/.emacs.d/elpa/contrib/scripts/ditaa.jar
 
-
 ** Download languagetool
 
-   in zip archive from this [[https://languagetool.org/download/][site.]]
-   For our Java 7 version 
+   in zip archive from this [[https://languagetool.org/download/][site.]] /2.8 version/ seems compatible with
+   Java 7 version installed on our host. Choose it and download ~zip~
+   archive.
 
 ** Extract it
 
-   into Java lib folder, in this particular case into
+   into ~Java lib~ folder, in this particular case into
    =/usr/local/java/=
 
 ** Ensure yourself
