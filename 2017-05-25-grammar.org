@@ -1,0 +1,123 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: Grammar check
+tagline: " in Emacs"
+permalink: /emacs/grammar.html
+categories: [Literate Programming, Emacs]
+tags: [grammar]
+---
+#+END_EXPORT
+
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
+
+* Intro
+
+  This article covers an additional grammar check inside any Emacs
+  buffer. Full manual is at this [[https://github.com/mhayashi1120/Emacs-langtool][site]].
+
+* Installation
+
+** Check up Java
+   #+BEGIN_SRC sh
+   java -version
+   #+END_SRC
+
+   #+RESULTS:
+   : java version "1.7.0_131"
+   : OpenJDK Runtime Environment (IcedTea 2.6.9) (7u131-2.6.9-2~deb8u1)
+   : OpenJDK 64-Bit Server VM (build 24.131-b00, mixed mode)
+
+** Check up Java libs
+   #+BEGIN_SRC sh
+   which java
+   #+END_SRC
+
+   #+RESULTS:
+   : /usr/bin/java
+
+   #+BEGIN_SRC sh
+   ls /usr/local/java
+   #+END_SRC
+
+   #+RESULTS:
+   : ditaa0_9.jar
+
+   #+BEGIN_SRC elisp :results value
+       (expand-file-name
+       "ditaa.jar"
+       (file-name-as-directory
+       (expand-file-name
+       "scripts"
+       (file-name-as-directory
+       (expand-file-name
+       "../contrib"
+       (file-name-directory (org-find-library-dir "org")))))))   
+   #+END_SRC
+
+   #+RESULTS:
+   : /home/antony/.emacs.d/elpa/contrib/scripts/ditaa.jar
+
+
+** Download languagetool
+
+   in zip archive from this [[https://languagetool.org/download/][site.]]
+   For our Java 7 version 
+
+** Extract it
+
+   into Java lib folder, in this particular case into
+   =/usr/local/java/=
+
+** Ensure yourself
+   
+   #+BEGIN_SRC sh
+   ls /usr/local/java/LanguageTool-2.8/
+   #+END_SRC
+
+   #+RESULTS:
+   #+begin_example
+   CHANGES.txt
+   COPYING.txt
+   languagetool-commandline.jar
+   languagetool.jar
+   languagetool-server.jar
+   libs
+   META-INF
+   org
+   README.txt
+   testrules.bat
+   testrules.sh
+   third-party-licenses
+#+end_example
+
+
+* Install Emacs plugin
+
+  #+BEGIN_SRC elisp
+  (package-install 'langtool)
+  #+END_SRC
+
+  #+RESULTS:
+
+* Configure Emacs
+
+  Add these strings into your Emacs config
+  #+BEGIN_SRC elisp
+    (require 'langtool)
+    (setq langtool-language-tool-jar "/usr/local/java/LanguageTool-2.8/languagetool-commandline.jar")
+
+    (global-set-key "\C-x4w" 'langtool-check)
+    (global-set-key "\C-x4W" 'langtool-check-done)
+    (global-set-key "\C-x4l" 'langtool-switch-default-language)
+    (global-set-key "\C-x44" 'langtool-show-message-at-point)
+    (global-set-key "\C-x4c" 'langtool-correct-buffer)
+
+    (setq langtool-default-language "en-US")
+    ;;(setq langtool-java-bin "/usr/bin/java")
+  #+END_SRC
+
+  #+RESULTS:
