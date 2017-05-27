@@ -89,7 +89,6 @@ tags: [grammar]
    third-party-licenses
 #+end_example
 
-
 * Install Emacs plugin
 
   #+BEGIN_SRC elisp
