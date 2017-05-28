@@ -51,6 +51,16 @@
 * Maemo
 
 * Debian
+  
+** packages
+
+** building
+
+** checkinstall
+
+** sources
+
+** installation
 
 * Docker
 
