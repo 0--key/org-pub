@@ -1,0 +1,43 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: Arbitrary documentation
+tagline: " inside Emacs buffer"
+permalink: /emacs/embedded-documentation.html
+categories: [literate programming, emacs]
+tags: [documentation, tex]
+---
+#+END_EXPORT
+
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
+
+* Initial premises
+
+  With no doubt =Emacs= is an incredibly pertinent tool for software
+  development. It contains all necessary functions out of the box,
+  easily customizible by its =open source= nature and get rid of the
+  lion's share of headache during all stages of arbitrary program
+  evolution.
+
+  But during development process it might be handy to take in hands
+  all sorts of documentation:
+  - about Emacs itself;
+  - about the particular programming language;
+  - about some useful framework;
+  - etc.
+
+
+* Wheel is invented already
+
+  The most admirable feature of old =open source= products is their
+  current state. They have a large history of improvements, thus, in
+  the current state most of the obvious questions have been
+  successfully resolved earlier. All that remains to do is just to
+  study documentation and utilize the maximum of useful features.
+
+* Directory
+
+  It's sensible to 
