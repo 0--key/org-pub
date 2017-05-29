@@ -14,66 +14,94 @@ tags: [concept, overview]
 
 * Short intro							      :intro:
 
-  #+BEGIN_QUOTE
-  Believe i t or not, any course in computer programming covers /all/ the tools strictly 
-  necessary to solve any problem that can be solved with a computer. A very famous 
-  computer scientist named Alan Turing conjectured, and it is now widely accepted, 
-  that any problem solvable with computers requires only the basic statements that all 
-  computer programming languages include: decision statements (e.g. , if), looping 
-  statements (e.g. , for and while) and the ability to store and retrieve data. Since 
-  you already know about these, you may wonder what else there is to learn. That's 
-  a good question.
+** What is Literate Programming?
+
+   #+BEGIN_QUOTE
+   Let us change our traditional attitude to the construction of
+   programs: Instead of imagining that our main task is to instruct a
+   computer what to do, let us concentrate rather on explaining to
+   human beings what we want a computer to do.
+
+   The practitioner of literate programming can be regarded as an
+   essayist, whose main concern is with exposition and excellence of
+   style. Such an author, with thesaurus in hand, chooses the names of
+   variables carefully and explains what each variable means. He or
+   she strives for a program that is comprehensible because its
+   concepts have been introduced in an order that is best for human
+   understanding, using a mixture of formal and informal methods that
+   reinforce each other.
+
+   #+HTML: <p align="right">
+   – Donald Knuth
+   #+HTML: </p>
+   #+END_QUOTE
+
+   -----
+** What is programming?
+
+   #+BEGIN_QUOTE
+   Believe it or not, any course in computer programming covers /all/
+   the tools strictly necessary to solve any problem that can be solved
+   with a computer. A very famous computer scientist named Alan Turing
+   conjectured, and it is now widely accepted, that any problem
+   solvable with computers requires only the basic statements that all
+   computer programming languages include: decision statements (e.g. ,
+   if), looping statements (e.g. , for and while) and the ability to
+   store and retrieve data. Since you already know about these, you may
+   wonder what else there is to learn. That's a good question.
   
-  If you think of computer programming as a process similar to constructing a building, 
-  right now you have the knowledge equivalent to how to use a few tools such as a 
-  hammer, screwdriver, saw, and drill. Those might be all the tools necessary to build 
-  a house, but that does not mean you can build yourself a habitable home, let alone 
-  one that meets modern building codes. That's not to say that you can't do some 
-  useful things. You are probably capable of building benches or birdhouses, you're 
-  just not yet ready for the challenges that come with a larger project. 
-  In programming, just as in house construction, tackling bigger projects requires 
-  additional knowledge, techniques, and skills.
-  #+BEGIN_HTML
-  <p align="right">
-  <a href="https://www.amazon.com/Data-Structures-Algorithms-Using-Python/dp/1590282337">
-  Data Structures and Algorithms Using Python and C++</a>
-  </p>
-  #+END_HTML
-  #+END_QUOTE
-  -----
-  #+BEGIN_QUOTE
-  As the TDD approach became a standard option in software development
-  therefore it is very time to wrap all code you're studied already in
-  this modern envelop. /It is not just a modern quirk/, it effectively
-  used to enhance your general coding skill simultaneously tying:
+   If you think of computer programming as a process similar to
+   constructing a building, right now you have the knowledge equivalent
+   to how to use a few tools such as a hammer, screwdriver, saw, and
+   drill. Those might be all the tools necessary to build a house, but
+   that does not mean you can build yourself a habitable home, let
+   alone one that meets modern building codes. That's not to say that
+   you can't do some useful things. You are probably capable of
+   building benches or birdhouses, you're just not yet ready for the
+   challenges that come with a larger project. In programming, just as
+   in house construction, tackling bigger projects requires additional
+   knowledge, techniques, and skills.
+   #+BEGIN_HTML
+   <p align="right">
+   <a href="https://www.amazon.com/Data-Structures-Algorithms-Using-Python/dp/1590282337">
+   Data Structures and Algorithms Using Python and C++</a>
+   </p>
+   #+END_HTML
+   #+END_QUOTE
+   -----
+   #+BEGIN_QUOTE
+   As the TDD approach became a standard option in software development
+   therefore it is very time to wrap all code you're studied already in
+   this modern envelop. /It is not just a modern quirk/, it effectively
+   used to enhance your general coding skill simultaneously tying:
 
-  - initial idea clarification;
-  - acceptance criteria definition;
-  - frequent and steady code quality testing;
-  - source code purification;
-  - bug detection on their infant age;
-  - simplify software development process as a whole;
-  - /grant to you ability/ to do your job ten times faster.
+   - initial idea clarification;
+   - acceptance criteria definition;
+   - frequent and steady code quality testing;
+   - source code purification;
+   - bug detection on their infant age;
+   - simplify software development process as a whole;
+   - /grant to you ability/ to do your job ten times faster.
 
-  Next would be as a *literate programming tutorial* designed exactly
-  for lucid execution on your host. In addition it might serve to you
-  as a gauge and a start point, or even to encourage you in your
-  journey across the realm of knowledge. Exactly to rectify your
-  personal programming skill all code samples should be run easily,
-  hence it is possible to modify, improve or rearrange its content on
-  your own taste.
+   Next would be as a *literate programming tutorial* designed exactly
+   for lucid execution on your host. In addition it might serve to you
+   as a gauge and a start point, or even to encourage you in your
+   journey across the realm of knowledge. Exactly to rectify your
+   personal programming skill all code samples should be run easily,
+   hence it is possible to modify, improve or rearrange its content on
+   your own taste.
 
-  For experienced users I might suggest to fork this project source
-  code on [[https://github.com/0--key/org-pub][Github]] and evaluate it for your personal usage. It might be
-  curious to you to substitute your own variables, or, in many cases
-  to re-write one or another chunk of code. On my point of view it
-  should be a very /comprehensive method to learn programming by
-  active reading/.
+   For experienced users I might suggest to fork this project source
+   code on [[https://github.com/0--key/org-pub][Github]] and evaluate it for your personal usage. It might be
+   curious to you to substitute your own variables, or, in many cases
+   to re-write one or another chunk of code. On my point of view it
+   should be a very /comprehensive method to learn programming by
+   active reading/.
 
-  #+BEGIN_HTML
-  <p align="right">Anton S. Kosinov</p>
-  #+END_HTML
-  #+END_QUOTE
+   #+BEGIN_HTML
+   <p align="right">Anton S. Kosinov</p>
+   #+END_HTML
+   #+END_QUOTE
 
 ** Brief prelude                                                    :prelude:
 
