@@ -37,6 +37,16 @@ tags: [anki, intro, installation]
    #+END_SRC
 
 ** Install =Anki's= dependencies
+
+   Thus it should be installed into main system environment lets
+   deactivate =Python venv= inside Emacs:
+
+   #+BEGIN_SRC elisp
+   (pyvenv-deactivate)
+   #+END_SRC
+
+   Now it is time for installation itself:
+   
    #+BEGIN_SRC sh
    sudo apt-get install python-qt4 mplayer2 lame libportaudio2 python-sqlalchemy
    # sudo apt --fix-broken install
@@ -49,6 +59,17 @@ tags: [anki, intro, installation]
    sudo dpkg -i anki_2.0.45_all.deb
    #+END_SRC
 
+** Unfortunately
+
+   it is impossible to launch this application:
+
+   #+BEGIN_EXAMPLE
+   File "/usr/share/anki/aqt/qt.py", line 22, in <module>
+   from PyQt4.QtWebKit import QWebPage, QWebView, QWebSettings
+   No module named QtWebKit
+   #+END_EXAMPLE
+
+   and I'll build =.deb= package out from app's sources.
 
 * Configuring
   For =Gnome= users only to allow =Anki= to pick up the current theme
