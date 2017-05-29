@@ -40,4 +40,125 @@ tags: [documentation, tex]
 
 * Directory
 
-  It's sensible to 
+  It's sensible to allocate all existing documentation in a share
+  directory and that is:
+  #+BEGIN_SRC sh
+  ls -la /usr/share/info/
+  #+END_SRC
+
+  #+RESULTS:
+  #+begin_example
+  total 1084
+  drwxr-xr-x   5 root root   4096 Jul 16 18:40 .
+  drwxr-xr-x 297 root root  12288 Jul 11 17:16 ..
+  -rw-r--r--   1 root root 218669 Feb 22 14:23 coreutils.info.gz
+  -rw-r--r--   1 root root  61097 Jan 10  2017 diffutils.info.gz
+  -rw-r--r--   1 root root  12250 Jul 16 18:44 dir
+  -rw-r--r--   1 root root    781 Jul 16 17:52 dir.old
+  drwxr-xr-x   2 root root   4096 Jul 16 18:04 emacs-25
+  -rw-r--r--   1 root root  92043 Feb 18 17:37 find.info.gz
+  -rw-r--r--   1 root root  23649 Feb 18 17:37 find-maint.info.gz
+  -rw-r--r--   1 root root  14730 Feb 14 02:29 gnupg-card-architecture.png
+  -rw-r--r--   1 root root  90906 Feb 14 02:29 gnupg.info-1.gz
+  -rw-r--r--   1 root root  57247 Feb 14 02:29 gnupg.info-2.gz
+  -rw-r--r--   1 root root   2761 Feb 14 02:29 gnupg.info.gz
+  -rw-r--r--   1 root root  36868 Feb 14 02:29 gnupg-module-overview.png
+  -rw-r--r--   1 root root  28572 Jan 23 20:18 grep.info.gz
+  -rw-r--r--   1 root root  30648 Feb 11 17:09 grub-dev.info.gz
+  -rw-r--r--   1 root root  87920 Feb 11 17:09 grub.info.gz
+  -rw-r--r--   1 root root  14828 Mar 14  2016 gzip.info.gz
+  -rw-r--r--   1 root root  16206 Jan 11  2017 nano.info.gz
+  drwxr-xr-x   2 root root   4096 Jul 16 18:42 python3.4
+  -rw-r--r--   1 root root  24906 May 15 23:00 rluserman.info.gz
+  drwxr-xr-x   2 root root   4096 Jul 16 18:27 scrapy
+  -rw-r--r--   1 root root  52265 Feb  4 17:16 sed.info.gz
+  -rw-r--r--   1 root root   2407 Mar  6 00:13 spd-say.info.gz
+  -rw-r--r--   1 root root  58177 Mar  6 00:13 speech-dispatcher.info.gz
+  -rw-r--r--   1 root root  32815 Mar  6 00:13 ssip.info.gz
+  -rw-r--r--   1 root root   5323 Jul 21  2015 time.info.gz
+  -rw-r--r--   1 root root  69925 Mar 18 16:12 wget.info.gz
+#+end_example
+
+* Software
+
+  =UNIX= innate utility ~install-info~:
+  #+BEGIN_SRC sh
+  install-info --version
+  #+END_SRC
+
+  #+RESULTS:
+  : install-info (GNU texinfo) 6.3
+  : 
+  : Copyright (C) 2016 Free Software Foundation, Inc.
+  : License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+  : This is free software: you are free to change and redistribute it.
+  : There is NO WARRANTY, to the extent permitted by law.
+
+* Info paths
+
+  There are several lists which define them:
+
+** Default
+
+   It's Emacs innate:
+   #+BEGIN_SRC elisp :result value
+   (print Info-default-directory-list)
+   #+END_SRC
+
+   #+RESULTS:
+   : 
+   : ("/usr/share/info/emacs-25" "/usr/share/info/" "/usr/share/info/")
+
+** Joined
+
+   The innate =info-list= concatenated with installed packages
+   documentation:
+   #+BEGIN_SRC elisp :pp
+   (print Info-directory-list)
+   #+END_SRC
+
+   #+RESULTS:
+   : 
+   : ("/home/alioth/.emacs.d/elpa/ivy-20170703.2350" "/home/alioth/.emacs.d/elpa/magit-20170710.2201" "/home/alioth/.emacs.d/elpa/magit-popup-20170709.510" "/home/alioth/.emacs.d/elpa/org-20170710" "/home/alioth/.emacs.d/elpa/with-editor-20170707.1401" "/usr/share/info/emacs-25" "/usr/share/info/" "/usr/share/info/")
+
+** Additional
+
+   It's purpose to extend the default ones by adding custom
+   documentation folders:
+   #+BEGIN_SRC elisp
+   (print Info-additional-directory-list)
+   #+END_SRC
+
+   #+RESULTS:
+   : 
+   : ("/usr/share/info/scrapy/" "/usr/share/info/python3.4/")
+
+* Technology
+
+** Put
+
+   your documentation on a right place
+   #+BEGIN_SRC sh
+   sudo mkdir /usr/share/info/python3.4
+   sudo scp -r antony@192.168.0.107:/usr/share/info/python3.4.2/* ./python3.4
+   #+END_SRC
+
+** Extend
+
+   additional info-path =C-h v Info-additional-directory-list=, insert
+   particular directory, move to ~Apply and Save~, press *RETURN*
+
+** Evaluate
+
+   =install-info=
+   #+BEGIN_SRC sh
+   sudo install-info python3.4/python.info dir
+   #+END_SRC
+
+* Check-up
+
+  After all these manipulations desired =info= should appear at Emacs
+  =*info*= buffer.
+
+  - =C-h i=
+  - =C-s python=
