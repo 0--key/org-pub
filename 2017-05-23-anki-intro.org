@@ -71,6 +71,40 @@ tags: [anki, intro, installation]
 
    and I'll build =.deb= package out from app's sources.
 
+** Install from sources
+
+   From official site:
+   - [[https://apps.ankiweb.net/downloads/current/anki-2.0.45-i386.tar.bz2][i386]]
+   - [[https://apps.ankiweb.net/downloads/current/anki-2.0.45-amd64.tar.bz2][x64]]
+
+   #+BEGIN_SRC sh
+   cd ~/Downloads
+   # tar xjf anki-2.0.45-i386.tar.bz2
+   # rm anki-2.0.45-i386.tar.bz2
+   cd anki-2.0.45
+   ls
+   #+END_SRC
+
+   #+RESULTS:
+   : anki.1
+   : anki.desktop
+   : anki.png
+   : anki.xml
+   : anki.xpm
+   : bin
+   : Makefile
+   : README
+
+   #+BEGIN_SRC sh
+   sudo make install
+   #+END_SRC
+
+** Uninstall
+   Later it would be possible to uninstall just by:
+   #+BEGIN_SRC sh
+   sudo make uninstall
+   #+END_SRC
+
 * Configuring
   For =Gnome= users only to allow =Anki= to pick up the current theme
   from it:
