@@ -38,7 +38,7 @@ tags: [concept, overview]
    #+END_QUOTE
 
    -----
-** What is programming?
+** What is programming challenge?
 
    #+BEGIN_QUOTE
    Believe it or not, any course in computer programming covers /all/
