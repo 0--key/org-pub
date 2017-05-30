@@ -18,25 +18,24 @@ tags: [documentation, tex]
 
   With no doubt =Emacs= is an incredibly pertinent tool for software
   development. It contains all necessary functions out of the box,
-  easily customizible by its =open source= nature and get rid of the
-  lion's share of headache during all stages of arbitrary program
-  evolution.
+  easily customizible by its =open source= nature and in charge to
+  expel the lion's share of headache during casual programmer's tasks.
 
-  But during development process it might be handy to take in hands
-  all sorts of documentation:
+  But during development process it is extremely useful to take in
+  hands all sorts of documentation:
   - about Emacs itself;
   - about the particular programming language;
   - about some useful framework;
   - etc.
 
 
-* Wheel is invented already
+* A wheel has long been invented
 
-  The most admirable feature of old =open source= products is their
-  current state. They have a large history of improvements, thus, in
-  the current state most of the obvious questions have been
-  successfully resolved earlier. All that remains to do is just to
-  study documentation and utilize the maximum of useful features.
+  The most admirable feature of /old/ =open source= products is their
+  contemporary state. Each one have a large history of improvements,
+  thus, nowadays most of the obvious questions have been successfully
+  resolved earlier. All that remains to do is just to study
+  documentation and utilize the maximum of useful features.
 
 * Directory
 
