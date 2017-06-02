@@ -62,14 +62,15 @@ tags: [concept, overview]
    challenges that come with a larger project. In programming, just as
    in house construction, tackling bigger projects requires additional
    knowledge, techniques, and skills.
-   #+BEGIN_HTML
-   <p align="right">
-   <a href="https://www.amazon.com/Data-Structures-Algorithms-Using-Python/dp/1590282337">
-   Data Structures and Algorithms Using Python and C++</a>
-   </p>
-   #+END_HTML
+   
+   #+HTML: <p align="right">
+   #+HTML: <a href="https://www.amazon.com/Data-Structures-Algorithms-Using-Python/dp/1590282337">
+   #+HTML: Data Structures and Algorithms Using Python and C++</a>
+   #+HTML: </p>
    #+END_QUOTE
    -----
+** Why Test Driven Development Is Such Effective?
+
    #+BEGIN_QUOTE
    As the TDD approach became a standard option in software development
    therefore it is very time to wrap all code you're studied already in
@@ -99,9 +100,9 @@ tags: [concept, overview]
    should be a very /comprehensive method to learn programming by
    active reading/.
 
-   #+BEGIN_HTML
+   #+BEGIN_EXPORT html
    <p align="right">Anton S. Kosinov</p>
-   #+END_HTML
+   #+END_EXPORT
    #+END_QUOTE
 
 ** Brief prelude                                                    :prelude:
