@@ -27,14 +27,16 @@ tags: [anki, intro, installation]
 
 
 * Installation
-  There are [[https://apps.ankiweb.net/][several options to install]] =Anki= and I'm pay an attention on a
-  ~.deb~ one:
+  There are [[https://apps.ankiweb.net/][several options to install]] =Anki= and I'm pay an attention
+  on suggestions there:
 
-** Download the =.deb= package
-   #+BEGIN_SRC sh
-   cd ~/Downloads
-   wget https://apps.ankiweb.net/downloads/current/anki_2.0.45_all.deb
-   #+END_SRC
+  #+BEGIN_QUOTE
+  We recommend the compiled version for most users running a Linux
+  distribution released in 2012 or later
+  #+END_QUOTE
+
+  about manual installation and get rid out of scope ~.deb~ version
+  installation (it not works on ~Debian9~)
 
 ** Install =Anki's= dependencies
 
@@ -52,24 +54,6 @@ tags: [anki, intro, installation]
    # sudo apt --fix-broken install
    #+END_SRC
 
-** Install it into ~Debian9~
-   #+BEGIN_SRC sh
-   cd ~/Downloads
-   # ls -la
-   sudo dpkg -i anki_2.0.45_all.deb
-   #+END_SRC
-
-** Unfortunately
-
-   it is impossible to launch this application:
-
-   #+BEGIN_EXAMPLE
-   File "/usr/share/anki/aqt/qt.py", line 22, in <module>
-   from PyQt4.QtWebKit import QWebPage, QWebView, QWebSettings
-   No module named QtWebKit
-   #+END_EXAMPLE
-
-   and I'll build =.deb= package out from app's sources.
 
 ** Install from sources
 
@@ -100,7 +84,7 @@ tags: [anki, intro, installation]
    #+END_SRC
 
 ** Uninstall
-   Later it would be possible to uninstall just by:
+   Later it would be possible to uninstall it just by:
    #+BEGIN_SRC sh
    sudo make uninstall
    #+END_SRC
