@@ -109,5 +109,5 @@ tags: [anki, intro, installation]
 
    #+CAPTION: Anki window
    #+ATTR_HTML: :alt Looks pretty :title User-Friendly :align center
-   #+ATTR_HTML: :width 80%
+   #+ATTR_HTML: :width 50%
    [[http://0--key.github.io/assets/img/anki/main_window.png]]
