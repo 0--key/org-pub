@@ -1,0 +1,25 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: Debian 9 post-installation
+tagline: " arrangement automation"
+permalink: /debian/post-installation.html
+categories: [Debian, DevEnv]
+tags: [post-installation, arrangement, automation]
+---
+#+END_EXPORT
+
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
+
+* Goal definition
+
+* Software installation
+
+* FileTree extension
+
+* Software development environment configuring
+
+* Testing
