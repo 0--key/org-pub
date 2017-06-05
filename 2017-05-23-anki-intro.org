@@ -111,3 +111,14 @@ tags: [anki, intro, installation]
    #+ATTR_HTML: :alt Looks pretty :title User-Friendly :align center
    #+ATTR_HTML: :width 50%
    [[http://0--key.github.io/assets/img/anki/main_window.png]]
+
+* Extension
+  
+** Night mode
+
+   Default color scheme is a bit vivid thus I installed a night mode
+   theme from this [[https://ankiweb.net/shared/info/1496166067][site]]. Now =Anki= window looks much pretty:
+   #+CAPTION: Anki night mode
+   #+ATTR_HTML: :alt Looks pretty :title User-Friendly :align center
+   #+ATTR_HTML: :width 50%
+   [[http://0--key.github.io/assets/img/anki/night_mode.png]]
