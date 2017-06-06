@@ -16,7 +16,7 @@ tags: [post-installation, arrangement, automation]
 
 * Goal definition
 
-  When you're dive into depth of software development with =Debian= as
+  When you're dived in depth of software development with =Debian= as
   a main operational system sometimes it might emerge the urge to
   install it on a new host. As the current environment is homely and
   handy to use the aim is ~just~ to replicate it.
