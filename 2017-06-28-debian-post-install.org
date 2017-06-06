@@ -56,6 +56,15 @@ tags: [post-installation, arrangement, automation]
 
 ** Check-up user groups
 
+   By default convention the user don't have wright access onto
+   =/usr/local/=, [[https://wiki.debian.org/SystemGroups][but]] staff group is a special case:
+   #+BEGIN_QUOTE
+   staff: Allows users to add local modifications to the system
+   (/usr/local) without needing root privileges...
+   #+END_QUOTE
+
+   Initially there are no users in it:
+
    #+BEGIN_SRC sh
    groups | grep staff
    echo "---"
@@ -65,45 +74,51 @@ tags: [post-installation, arrangement, automation]
    #+RESULTS:
    : ---
 
-** Add user to group ~staff~
+*** Add user to group ~staff~
 
-   #+BEGIN_EXAMPLE
-   # usermod -aG staff alioth
-   #+END_EXAMPLE
+    #+BEGIN_EXAMPLE
+    # usermod -aG staff alioth
+    #+END_EXAMPLE
 
-** *Re-login*
+    *or* equivalent:
 
-   To up-to-date group permissions.
+    #+BEGIN_EXAMPLE
+    # adduser alioth staff
+    #+END_EXAMPLE
 
-** And check groups now:
+*** *Re-login*
+
+    To up-to-date group permissions.
+
+*** And check groups now:
    
-   #+BEGIN_SRC sh
-   groups | grep staff
-   echo "==="
-   groups alioth | grep staff
-   #+END_SRC
+    #+BEGIN_SRC sh
+    groups | grep staff
+    echo "==="
+    groups alioth | grep staff
+    #+END_SRC
 
-   #+RESULTS:
-   : alioth cdrom floppy sudo audio dip video plugdev staff netdev bluetooth scanner
-   : ===
-   : alioth : alioth cdrom floppy sudo audio dip video plugdev staff netdev bluetooth scanner
+    #+RESULTS:
+    : alioth cdrom floppy sudo audio dip video plugdev staff netdev bluetooth scanner
+    : ===
+    : alioth : alioth cdrom floppy sudo audio dip video plugdev staff netdev bluetooth scanner
 
-** Testing
+*** Testing
 
-   Is it possible to touch file in ~/usr/local/share/~ right now?
+    Is it possible to touch file in ~/usr/local/share/~ right now?
    
-   #+BEGIN_SRC sh
-   cd /usr/local/share/
-   touch test.file.txt
-   ls -la | grep test
-   rm test.file.txt
-   echo "++++"
-   ls -la | grep test
-   #+END_SRC
+    #+BEGIN_SRC sh
+    cd /usr/local/share/
+    touch test.file.txt
+    ls -la | grep test
+    rm test.file.txt
+    echo "++++"
+    ls -la | grep test
+    #+END_SRC
 
-   #+RESULTS:
-   : -rw-r--r--  1 alioth staff     0 Aug  2 18:39 test.file.txt
-   : ++++
+    #+RESULTS:
+    : -rw-r--r--  1 alioth staff     0 Aug  2 18:39 test.file.txt
+    : ++++
 
 
 * Software development environment configuring
