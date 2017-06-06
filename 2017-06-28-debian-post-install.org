@@ -32,25 +32,78 @@ tags: [post-installation, arrangement, automation]
   On my point of view the most convenient place to put some shared
   data on your ~Debian 9~ host is =/usr/local/share/=
 
-  #+BEGIN_SRC sh
-  ls -la /usr/local/share/
-  #+END_SRC
+** Check the existing folders
+   #+BEGIN_SRC sh
+   ls -la /usr/local/share/
+   #+END_SRC
 
-  #+RESULTS:
-  #+begin_example
-  total 52
-  drwxrwsr-x 13 root   staff  4096 Jul 21 12:04 .
-  drwxrwsr-x 10 root   staff  4096 Jul 10 15:22 ..
-  drwxr-sr-x  3 root   staff  4096 Jul 21 12:04 anki
-  drwxr-sr-x  2 root   staff  4096 Aug  2 06:31 applications
-  drwxrwsr-x  2 root   staff  4096 Jun 20 04:18 ca-certificates
-  drwxrwsr-x  4 root   staff  4096 Jul 10 17:23 emacs
-  drwxrwsr-x  2 root   staff  4096 Jun 20 04:18 fonts
-  drwxrwsr-x  3 root   staff  4096 Jul 21 12:04 man
-  drwxr-sr-x  2 root   staff  4096 Jul 21 12:04 pixmaps
-  drwxrwsr-x  7 root   staff  4096 Jul 10 15:22 sgml
-  drwxrwsr-x  6 root   staff  4096 Jul 10 15:22 xml
-#+end_example
+   #+RESULTS:
+   #+begin_example
+   total 52
+   drwxrwsr-x 13 root   staff  4096 Jul 21 12:04 .
+   drwxrwsr-x 10 root   staff  4096 Jul 10 15:22 ..
+   drwxr-sr-x  3 root   staff  4096 Jul 21 12:04 anki
+   drwxr-sr-x  2 root   staff  4096 Aug  2 06:31 applications
+   drwxrwsr-x  2 root   staff  4096 Jun 20 04:18 ca-certificates
+   drwxrwsr-x  4 root   staff  4096 Jul 10 17:23 emacs
+   drwxrwsr-x  2 root   staff  4096 Jun 20 04:18 fonts
+   drwxrwsr-x  3 root   staff  4096 Jul 21 12:04 man
+   drwxr-sr-x  2 root   staff  4096 Jul 21 12:04 pixmaps
+   drwxrwsr-x  7 root   staff  4096 Jul 10 15:22 sgml
+   drwxrwsr-x  6 root   staff  4096 Jul 10 15:22 xml
+ #+end_example
+
+** Check-up user groups
+
+   #+BEGIN_SRC sh
+   groups | grep staff
+   echo "---"
+   groups alioth | grep staff
+   #+END_SRC
+
+   #+RESULTS:
+   : ---
+
+** Add user to group ~staff~
+
+   #+BEGIN_EXAMPLE
+   # usermod -aG staff alioth
+   #+END_EXAMPLE
+
+** *Re-login*
+
+   To up-to-date group permissions.
+
+** And check groups now:
+   
+   #+BEGIN_SRC sh
+   groups | grep staff
+   echo "==="
+   groups alioth | grep staff
+   #+END_SRC
+
+   #+RESULTS:
+   : alioth cdrom floppy sudo audio dip video plugdev staff netdev bluetooth scanner
+   : ===
+   : alioth : alioth cdrom floppy sudo audio dip video plugdev staff netdev bluetooth scanner
+
+** Testing
+
+   Is it possible to touch file in ~/usr/local/share/~ right now?
+   
+   #+BEGIN_SRC sh
+   cd /usr/local/share/
+   touch test.file.txt
+   ls -la | grep test
+   rm test.file.txt
+   echo "++++"
+   ls -la | grep test
+   #+END_SRC
+
+   #+RESULTS:
+   : -rw-r--r--  1 alioth staff     0 Aug  2 18:39 test.file.txt
+   : ++++
+
 
 * Software development environment configuring
 
