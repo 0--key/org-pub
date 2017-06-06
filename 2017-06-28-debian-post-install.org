@@ -23,6 +23,10 @@ tags: [post-installation, arrangement, automation]
 
 * Software installation
 
+  #+BEGIN_SRC sh
+  apt-get install -y htop emacs25 gkrellm openssh-server virtualenv
+  #+END_SRC
+
 * FileTree extension
 
   On my point of view the most convenient place to put some shared
