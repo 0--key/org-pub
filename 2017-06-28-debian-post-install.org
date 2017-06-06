@@ -19,12 +19,13 @@ tags: [post-installation, arrangement, automation]
   When you're dived in depth of software development with =Debian= as
   a main operational system sometimes it might emerge the urge to
   install it on a new host. As the current environment is homely and
-  handy to use the aim is ~just~ to replicate it.
+  handy to use thus the aim is ~just to replicate~ it.
 
 * Software installation
 
   #+BEGIN_SRC sh
-  apt-get install -y htop emacs25 gkrellm openssh-server virtualenv
+    apt-get install -y htop emacs25 gkrellm openssh-server virtualenv \
+    sqlite3 mariadb-client mariadb-server
   #+END_SRC
 
 * FileTree extension
