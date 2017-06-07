@@ -120,6 +120,35 @@ tags: [post-installation, arrangement, automation]
     : -rw-r--r--  1 alioth staff     0 Aug  2 18:39 test.file.txt
     : ++++
 
+** Additional folders
+
+   Now, when you're added into ~staff~ group it would be possible to
+   execute all necessary commands as a current user. Let's create
+   several additional folders for books, courses and repositories:
+
+   #+BEGIN_SRC sh
+   cd /usr/local/share/
+   ls -la
+   # mkdir books courses DVCS
+   #+END_SRC
+
+   #+RESULTS:
+   #+begin_example
+   total 52
+   drwxrwsr-x 13 root   staff  4096 Aug  2 18:39 .
+   drwxrwsr-x 10 root   staff  4096 Jul 10 15:22 ..
+   drwxr-sr-x  3 root   staff  4096 Jul 21 12:04 anki
+   drwxr-sr-x  2 root   staff  4096 Aug  2 06:31 applications
+   drwxr-sr-x  2 alioth alioth 4096 Jul 10 18:20 books
+   drwxrwsr-x  2 root   staff  4096 Jun 20 04:18 ca-certificates
+   drwxr-sr-x  7 alioth alioth 4096 Jul 26 18:31 DVCS
+   drwxrwsr-x  4 root   staff  4096 Jul 10 17:23 emacs
+   drwxrwsr-x  2 root   staff  4096 Jun 20 04:18 fonts
+   drwxrwsr-x  3 root   staff  4096 Jul 21 12:04 man
+   drwxr-sr-x  2 root   staff  4096 Jul 21 12:04 pixmaps
+   drwxrwsr-x  7 root   staff  4096 Jul 10 15:22 sgml
+   drwxrwsr-x  6 root   staff  4096 Jul 10 15:22 xml
+#+end_example
 
 * Software development environment configuring
 
