@@ -107,31 +107,102 @@ tags: [post-installation, arrangement, automation]
     sqlite3 mariadb-client mariadb-server
   #+END_SRC
 
+
 * FileTree extension
 
-  On my point of view the most convenient place to put some shared
-  data on your ~Debian 9~ host is =/usr/local/share/=
+  A =tree= utility is an extremely handy tool in file-system
+  dissection.
+
+  #+BEGIN_EXAMPLE
+  # apt-get install tree
+  #+END_EXAMPLE
 
 ** Check the existing folders
+
+   As I'm expect to store my data locally and I'm a =user= in generic
+   sense of this word, lets check-up =/usr/local/= directory as a
+   potential storage for my data.
+
+   
    #+BEGIN_SRC sh
-   ls -la /usr/local/share/
+   tree -L 1 /usr/local/
    #+END_SRC
 
    #+RESULTS:
    #+begin_example
-   total 52
-   drwxrwsr-x 13 root   staff  4096 Jul 21 12:04 .
-   drwxrwsr-x 10 root   staff  4096 Jul 10 15:22 ..
-   drwxr-sr-x  3 root   staff  4096 Jul 21 12:04 anki
-   drwxr-sr-x  2 root   staff  4096 Aug  2 06:31 applications
-   drwxrwsr-x  2 root   staff  4096 Jun 20 04:18 ca-certificates
-   drwxrwsr-x  4 root   staff  4096 Jul 10 17:23 emacs
-   drwxrwsr-x  2 root   staff  4096 Jun 20 04:18 fonts
-   drwxrwsr-x  3 root   staff  4096 Jul 21 12:04 man
-   drwxr-sr-x  2 root   staff  4096 Jul 21 12:04 pixmaps
-   drwxrwsr-x  7 root   staff  4096 Jul 10 15:22 sgml
-   drwxrwsr-x  6 root   staff  4096 Jul 10 15:22 xml
- #+end_example
+   /usr/local/
+   ├── bin
+   ├── etc
+   ├── games
+   ├── include
+   ├── lib
+   ├── man -> share/man
+   ├── sbin
+   ├── share
+   └── src
+
+   9 directories, 0 files
+#+end_example
+
+   #+BEGIN_SRC sh
+   tree -L 2 /usr/local/lib/
+   #+END_SRC
+
+   #+RESULTS:
+   : /usr/local/lib/
+   : ├── python2.7
+   : │   ├── dist-packages
+   : │   └── site-packages
+   : └── python3.5
+   :     └── dist-packages
+   : 
+   : 5 directories, 0 files
+
+   #+BEGIN_SRC sh
+   tree -L 2 /usr/local/share/
+   #+END_SRC
+
+   #+RESULTS:
+   #+begin_example
+   /usr/local/share/
+   ├── anki
+   │   ├── anki.xml
+   │   ├── bin
+   │   ├── Makefile
+   │   └── README
+   ├── applications
+   │   ├── anki.desktop
+   │   └── mimeinfo.cache
+   ├── ca-certificates
+   ├── emacs
+   │   ├── 25.1
+   │   └── site-lisp
+   ├── fonts
+   ├── man
+   │   └── man1
+   ├── pixmaps
+   │   ├── anki.png
+   │   └── anki.xpm
+   ├── sgml
+   │   ├── declaration
+   │   ├── dtd
+   │   ├── entities
+   │   ├── misc
+   │   └── stylesheet
+   └── xml
+       ├── declaration
+       ├── entities
+       ├── misc
+       └── schema
+
+   22 directories, 5 files
+#+end_example
+
+** Conclusion
+   
+   On my point of view the most convenient place to put some shared
+   data on your ~Debian 9~ host is =/usr/local/share/=, 
+
 
 ** Check-up user groups
 
