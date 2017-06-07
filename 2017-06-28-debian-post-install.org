@@ -70,8 +70,34 @@ tags: [post-installation, arrangement, automation]
 
 * Kernel modules
 
+
 * HDD health check-up
 
+  *For notebook's HDD with ferromagnetic disks only*
+  *Not suitable for SSD*
+
+  The main issue with it is a ~number of load cycles~. It is a [[https://superuser.com/questions/840851/how-much-load-cycle-count-can-my-hard-drive-hypotethically-sustain][count]]
+  of times when magnetic heads hided into the stress-safe position.
+  This event is enough noisy usually, but to ensure that your drive
+  works properly:
+
+  - Install:
+    #+BEGIN_EXAMPLE
+    # apt-get install smartmontools
+    #+END_EXAMPLE
+  - Overview your =/dev/sdx=:
+    #+BEGIN_EXAMPLE
+    # smartctl -i /dev/sda
+    # smartctl -A /dev/sda
+    #+END_EXAMPLE
+  - Check-up number:
+    #+BEGIN_EXAMPLE
+    # smartctl -A /dev/sda | grep Load
+    #+END_EXAMPLE
+
+
+  In case when this number grows dramatically fast, follow this link,
+  please, to fix this issue.
   
 
 * Software installation
