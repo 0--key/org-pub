@@ -21,9 +21,58 @@ tags: [post-installation, arrangement, automation]
   install it on a new host. As the current environment is homely and
   handy to use thus the aim is ~just to replicate~ it.
 
+
+* Test launch
+  
+  First operation after successful installation is a test launch with
+
+  #+BEGIN_EXAMPLE
+  # dmesg -w
+  #+END_EXAMPLE
+
+  as an insurance procedure. As you might guess this is a ~debug
+  messages~ output which allows to detect all kind of deviation at the
+  early stages.
+
+  And, as you might expect, if something goes wrong it should be
+  written in to logs:
+
+  #+BEGIN_EXAMPLE
+  # ls -la /var/log/
+  total 70024
+  drwxr-xr-x  7 root              root           4096 Aug  5 00:05 .
+  drwxr-xr-x 11 root              root           4096 Jul 10 15:27 ..
+  -rw-r--r--  1 root              root              0 Aug  1 07:16 alternatives.log
+  drwxr-xr-x  2 root              root           4096 Aug  3 13:31 apt
+  -rw-r-----  1 root              adm        14083418 Aug  5 11:33 auth.log
+  -rw-r--r--  1 root              root          50838 Jun 20 04:14 bootstrap.log
+  -rw-rw----  1 root              utmp       21596928 Aug  5 11:33 btmp
+  -rw-r-----  1 root              adm          251415 Aug  5 11:14 daemon.log
+  -rw-r-----  1 root              adm           41298 Aug  5 09:51 debug
+  -rw-r--r--  1 root              root          52316 Aug  3 13:32 dpkg.log
+  -rw-r--r--  1 root              root          24072 Jul 11 17:56 faillog
+  -rw-r--r--  1 root              root           7249 Jun 20 04:30 fontconfig.log
+  drwx--x--x  2 root              Debian-gdm     4096 Jun  6 21:17 gdm3
+  drwxr-xr-x  3 root              root           4096 Jul 10 15:31 installer
+  -rw-r-----  1 root              adm          304134 Aug  5 11:16 kern.log
+  -rw-rw-r--  1 root              utmp         292876 Aug  5 11:14 lastlog
+  -rw-r-----  1 root              adm         2358943 Aug  5 11:16 messages
+  drwx------  2 speech-dispatcher root           4096 Mar  6 00:13 speech-dispatcher
+  -rw-r-----  1 root              adm           65851 Aug  5 11:17 syslog
+  drwxr-x---  2 root              adm            4096 Aug  1 07:16 unattended-upgrades
+  -rw-r-----  1 root              adm         2103293 Aug  5 10:07 user.log
+  -rw-rw-r--  1 root              utmp          18048 Aug  5 11:14 wtmp
+  -rw-r--r--  1 root              root            279 Jul 31 07:41 wvdialconf.log
+  #+END_EXAMPLE
+
+  Thus it would easy to catch a bug by tracing it through ~Debian 9~ logs.
+
+
 * Kernel modules
 
 * HDD health check-up
+
+  
 
 * Software installation
 
