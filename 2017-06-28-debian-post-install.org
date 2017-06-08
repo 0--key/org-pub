@@ -313,4 +313,13 @@ tags: [post-installation, arrangement, automation]
 
 * Software development environment configuring
 
+** Cloning repositories
+   
+   #+BEGIN_SRC sh
+   cd /usr/local/git/
+   git clone https://github.com/0--key/lib.git
+   git clone https://github.com/0--key/org-pub.git
+   git clone https://github.com/0--key/0--key.github.io.git
+   #+END_SRC
+  
 * Testing
