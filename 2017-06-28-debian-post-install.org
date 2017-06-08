@@ -322,4 +322,12 @@ tags: [post-installation, arrangement, automation]
    git clone https://github.com/0--key/0--key.github.io.git
    #+END_SRC
   
+** Emacs' settings linkage
+   #+BEGIN_SRC sh
+   ln -s -T /usr/local/git/lib/Emacs/default.lenovo.el \
+   /usr/local/share/emacs/site-lisp/default.el
+   ln -s -T /usr/local/git/lib/Emacs/init_generic.el \
+   ~/.emacs.d/init.el
+   #+END_SRC
+
 * Testing
