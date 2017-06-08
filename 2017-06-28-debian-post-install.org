@@ -330,4 +330,18 @@ tags: [post-installation, arrangement, automation]
    ~/.emacs.d/init.el
    #+END_SRC
 
+** Info generation
+
+   It's easy:
+
+   #+BEGIN_EXAMPLE
+   # apt-get install install-info
+   #+END_EXAMPLE
+
+   Now just type =C-h i= and enjoy!
+
+*** Note
+    /emacs25-common-non-dfsg contains all necessary info files and
+    should be installed preliminary/
+
 * Testing
