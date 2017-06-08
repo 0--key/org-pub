@@ -104,7 +104,7 @@ tags: [post-installation, arrangement, automation]
 
   #+BEGIN_SRC sh
     apt-get install -y htop emacs25 gkrellm openssh-server virtualenv \
-    sqlite3 mariadb-client mariadb-server
+    sqlite3 mariadb-client mariadb-server git
   #+END_SRC
 
 
