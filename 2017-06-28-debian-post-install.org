@@ -300,6 +300,17 @@ tags: [post-installation, arrangement, automation]
    drwxrwsr-x  6 root   staff  4096 Jul 10 15:22 xml
 #+end_example
 
+** Git
+
+*** Settings
+    #+BEGIN_SRC sh
+    mkdir /usr/local/git/
+    git config --global user.email "a.s.kosinov@gmail.com"
+    git config --global user.name "Anton S. Kosinov"
+    git config --global credential.helper 'cache --timeout=3600'
+    #+END_SRC
+
+
 * Software development environment configuring
 
 * Testing
