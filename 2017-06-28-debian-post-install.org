@@ -335,6 +335,19 @@ tags: [post-installation, arrangement, automation]
    ~/.emacs.d/init.el
    #+END_SRC
 
+** Emacs' packages sync
+
+   It's a trivial task, thus there is a simple and native solution.
+
+   - Find out ~custom-set-variables~ section in your =init.el=
+   - Evaluate it by ~M-x eval-region~
+   - Now look on ~package-selected-packages~ variable
+   - ~C-h v package-selected-packages~
+   - Ensure ~package-selected-packages~ is fulfilled (not nil)
+   - ~package-install-selected-packages~
+   - DONE
+
+
 ** Info generation
 
    It's easy:
