@@ -361,6 +361,21 @@ tags: [post-installation, arrangement, automation]
    - DONE
 
 
+*** Redundant files deletion
+
+    To force =Org= work properly after installation you should delete
+    all *.elc files out from its source folder. E.g.
+
+    #+BEGIN_SRC sh
+    rm ~/.emacs.d/elpa//org-20170731/*.elc
+    #+END_SRC
+
+    *and* restart ~Emacs~ by =C-x C-c=:
+
+    #+BEGIN_SRC elisp
+    (save-buffers-kill-terminal)
+    #+END_SRC
+
 ** Info generation
 
    It's easy:
