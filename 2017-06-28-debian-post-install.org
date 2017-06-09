@@ -199,21 +199,26 @@ tags: [post-installation, arrangement, automation]
 #+end_example
 
 ** Conclusion
+
+   Seems like the best place to put any data on ~UNIX~ host is
+   =/usr/local/= that have =lib= and =share= folders which are the
+   pertinent place for shared data and some library-like one.
    
    On my point of view the most convenient place to put some shared
-   data on your ~Debian 9~ host is =/usr/local/share/=, 
+   data on your ~Debian 9~ host is =/usr/local/share/=
 
 
 ** Check-up user groups
 
-   By default convention the user don't have wright access onto
+   By default convention the user don't allowed to write into
    =/usr/local/=, [[https://wiki.debian.org/SystemGroups][but]] staff group is a special case:
+   
    #+BEGIN_QUOTE
    staff: Allows users to add local modifications to the system
    (/usr/local) without needing root privileges...
    #+END_QUOTE
 
-   Initially there are no users in it:
+   Initially it is an empty group, there are no users in it:
 
    #+BEGIN_SRC sh
    groups | grep staff
