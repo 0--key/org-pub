@@ -70,6 +70,19 @@ tags: [post-installation, arrangement, automation]
 
 * Kernel modules
 
+** Deviation detection
+
+   In several (mostly rare) cases =Linux kernel= can't work correctly
+   with your hardware and point on this by messages (=dmesg= and
+   =/var/log/= also). The general concept is:
+
+   #+BEGIN_QUOTE
+   If something goes wrong it must do it loudly!
+   #+END_QUOTE
+
+   thus, in incorrect work case =kernel= fills the log with the ~ERROR~
+   messages and it should easily detected by user.
+
 
 * HDD health check-up
 
