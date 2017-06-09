@@ -116,8 +116,8 @@ tags: [post-installation, arrangement, automation]
 * Software installation
 
   #+BEGIN_SRC sh
-    apt-get install -y htop emacs25 gkrellm openssh-server virtualenv \
-    sqlite3 mariadb-client mariadb-server git
+    apt-get install -y htop emacs25 emacs25-common-non-dfsg gkrellm \
+    openssh-server virtualenv sqlite3 mariadb-client mariadb-server git \
   #+END_SRC
 
 
