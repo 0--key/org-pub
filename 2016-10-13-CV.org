@@ -72,6 +72,28 @@ tags: [CV, Emacs, Python, Literate Programming]
     me, please?
 
 
+* Patches
+  contrarian, a snap judgment about real power of machines, owing to
+  my innate curiosity and perseverance, I've brooded about lack of
+  skills that restrained, damp down the rush around these points, To
+  avert the brain withering, to enshrine the versatile skills in one
+  place, to choose an eligible approach to disclose the topic in a
+  much attractive and explicit manner, austerely overview the
+  customary of writing books about programming languages it might be
+  sufficient to found its basement, suppose it is at whole a slightly
+  primitive novel in English which thoroughly endeavor to shed the
+  light on another language niceties.
+
+  In any case the author is entangled among only two languages: the
+  programming one and a straight English.
+
+  The core idea is to grant to the reader chance to swoop up the gist
+  from the text.
+
+  Let's take an attempt to judge that approach to a nicetiy.
+
+  
+
 
 * GenReq                                                           :noexport:
     - Strong python experience. 
