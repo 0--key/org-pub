@@ -1,0 +1,77 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: Containers
+tagline: " brief intro"
+permalink: /docker/containers_overview.html
+categories: [CI, CD]
+tags: [docker, container]
+---
+#+END_EXPORT
+
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both
+
+* What is a Container?
+
+  Containers are a solution to the problem of how to get software to
+  run reliably when moved from one computing environment to another.
+
+  This could be from a developer's laptop to a test environment, from
+  a staging environment into production and perhaps from a physical
+  machine in a data center to a virtual machine in a private or public
+  cloud.
+
+* Why Use Containers - The Issue
+
+  Problems arise when the supportiing software environment is not identical.
+
+  *Example*: You're going to test using Python 2.7, and then it's
+  going to run on Python 3 in production and something weird will
+  happen. Or you'll rely on the behavior of a certaing version of an
+  SSL llibrary and another one will be installed.
+
+  The network topology might be different, or the security polices and
+  storage might be different but the software has to run on it.
+
+* How Containers Solve Problems?
+
+  A container consists of an entire runtime environment: an
+  application, plus all its dependencies, libraries and other
+  binaries, and configuration files needed to run it, bundled into one
+  package.
+
+  By containerizing the application platform and its dependecies,
+  differeces in OS distributions and underlying infrastructure are
+  abstracted away.
+
+* Benefits of Containers
+
+** Reduce complexity
+   through container abstraction
+
+** All dependencies
+   are preliminary satisfied
+
+** Interface is crucially simplified
+
+** Sandard way \trade
+   to divide applications into distributed objects or containers
+
+** Breaking applications up this way
+   offers the ability to place them on different physical and virtual
+   machines, in the cloud or not.
+
+** This flexibility offers more advantages
+   around workload management and provides the ability make
+   fault-tolerant sustems.
+
+** Also, this the use of /clustering/, /scheduling/, and /orchestration/
+   technology, developers can ensure that applications that exist
+   inside of containers can scale and are resilient.
+
+** These tools can /manage groups of containers/
+   using well-defined container management layer that provides these
+   capabilities.
