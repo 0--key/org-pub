@@ -1,0 +1,33 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: Docker
+tagline: " brief intro"
+permalink: /docker/intro.html
+categories: [CI, CD]
+tags: [docker, container, intro]
+---
+#+END_EXPORT
+
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both
+
+* Provides an additional layer of abstraction
+
+  and automation of operating-system-level virtualization on Windows
+  and Linux.
+
+* Isolates an application's view
+
+  of the operating environment, including process trees, network, user
+  IDs and mounted file systems, while the kernel's cgroups provide
+  resource limiting, including the CPU, memory, block I/O, and
+  network.
+
+* Incentive
+
+  #+BEGIN_QUOTE
+  Shipping code to the server is too hard
+  #+END_QUOTE
