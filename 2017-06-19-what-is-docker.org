@@ -16,6 +16,11 @@ tags: [docker, container, intro]
 
 * Provides an additional layer of abstraction
 
+  #+CAPTION: Docker Logo
+  #+ATTR_HTML: :alt Looks pretty :title User-Friendly :align center
+  #+ATTR_HTML: :width 80%
+  [[http://0--key.github.io/assets/img/docker/logo_big.png]]
+
   and automation of operating-system-level virtualization on Windows
   and Linux.
 
@@ -31,3 +36,4 @@ tags: [docker, container, intro]
   #+BEGIN_QUOTE
   Shipping code to the server is too hard
   #+END_QUOTE
+
