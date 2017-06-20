@@ -39,3 +39,16 @@ tags: [docker, container, intro]
   Shipping code to the server is too hard
   #+END_QUOTE
 
+** Deployment and Delivery Challenges
+
+   - Lots of small changes
+   - Heterogeneous platforms and languages
+   - Environments (Development, Production)
+   - Zero downtime
+   - Rollback
+   - Monitoring
+   - Infrastructure as Code
+   - Continuous Delivery
+   - Infrastructure and Application Metrics
+
+
