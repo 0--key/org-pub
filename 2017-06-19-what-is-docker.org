@@ -16,13 +16,14 @@ tags: [docker, container, intro]
 
 * Provides an additional layer of abstraction
 
+  and automation of operating-system-level virtualization on Windows
+  and Linux.
+
   #+CAPTION: Docker Logo
   #+ATTR_HTML: :alt Looks pretty :title User-Friendly :align center
   #+ATTR_HTML: :width 80%
   [[http://0--key.github.io/assets/img/docker/logo_big.png]]
 
-  and automation of operating-system-level virtualization on Windows
-  and Linux.
 
 * Isolates an application's view
 
@@ -30,6 +31,7 @@ tags: [docker, container, intro]
   IDs and mounted file systems, while the kernel's cgroups provide
   resource limiting, including the CPU, memory, block I/O, and
   network.
+
 
 * Incentive
 
