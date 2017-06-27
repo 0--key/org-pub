@@ -583,11 +583,37 @@ tags: [post-installation, arrangement, automation]
 
    #+RESULTS:
 
-
-
    E.g. two our users would place the individual version of ~venvs~ in
    separate folders.
 
+   Suppose you're alerady installed ~virtualenv~ on your system. Thus:
+
+   #+BEGIN_SRC sh
+   python --version
+   virtualenv -p /usr/bin/python3 /usr/local/share/DVCS/alioth/venv3
+   #+END_SRC
+
+   #+RESULTS:
+   : Python 2.7.13
+   : Already using interpreter /usr/bin/python3
+   : Using base prefix '/usr'
+   : New python executable in /usr/local/share/DVCS/alioth/venv3/bin/python3
+   : Also creating executable in /usr/local/share/DVCS/alioth/venv3/bin/python
+   : Installing setuptools, pkg_resources, pip, wheel...done.
+
+   Try to overview your venv:
+
+   #+BEGIN_SRC sh
+   tree -L 1 /usr/local/share/DVCS/alioth/venv3/
+   #+END_SRC
+
+   #+RESULTS:
+   : /usr/local/share/DVCS/alioth/venv3/
+   : ├── bin
+   : ├── lib
+   : └── share
+   : 
+   : 3 directories, 0 files
 *** Tip                                                                 :tip:
     It is cool feature to switch /virtual environment/ inside Emacs.
     Just try to utilize ~pyvenv~:
