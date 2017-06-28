@@ -614,6 +614,41 @@ tags: [post-installation, arrangement, automation]
    : └── share
    : 
    : 3 directories, 0 files
+
+
+   Seems like all jobe is done and let's activate our ~venv~:
+
+   #+BEGIN_SRC elisp
+   (pyvenv-activate "/usr/local/share/DVCS/alioth/venv3/")
+   #+END_SRC
+
+   #+RESULTS:
+
+   Check-up results:
+
+   #+BEGIN_SRC sh
+   python --version
+   #+END_SRC
+
+   #+RESULTS:
+   : Python 3.5.3
+
+   And let's return into innate state:
+
+   #+BEGIN_SRC elisp
+   (pyvenv-deactivate)
+   #+END_SRC
+
+   #+RESULTS:
+
+
+   #+BEGIN_SRC sh
+   python --version
+   #+END_SRC
+
+   #+RESULTS:
+   : Python 2.7.13
+
 *** Tip                                                                 :tip:
     It is cool feature to switch /virtual environment/ inside Emacs.
     Just try to utilize ~pyvenv~:
