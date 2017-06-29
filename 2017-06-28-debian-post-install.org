@@ -451,6 +451,23 @@ tags: [post-installation, arrangement, automation]
     git config --global credential.helper 'cache --timeout=3600'
     #+END_SRC
 
+*** Persistent connection
+
+    In case when you would use your ~Debian~ as ~ssh~ host, which by
+    default settings just drop out all /suspended/ connections. In
+    intention to prevent this, just add these stirngs at the bottom of
+    =/etc/ssh/sshd_config=:
+
+    #+BEGIN_EXAMPLE
+    ClientAliveInterval 120
+    ClientAliveCountMax 720
+    #+END_EXAMPLE
+
+    and reboot the daemon:
+
+    #+BEGIN_EXAMPLE
+    # service sshd restart
+    #+END_EXAMPLE
 
 * Software development environment configuring
 
