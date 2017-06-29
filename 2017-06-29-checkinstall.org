@@ -1,0 +1,57 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: Build software 
+tagline: " out from sources"
+permalink: /debian/build-software.html
+categories: [Debian]
+tags: [software, sources, building, deb, packages, checkinstall, anki]
+---
+#+END_EXPORT
+
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
+
+* Prelude
+
+  The oldest, native /UNIX/ thus frightening for newcomers approach
+  for software installation is to build it out from sources.
+
+* Checkinstall
+
+  It is a tool for creating /packages/ which allow to manage software
+  in a bit convenient manner. Just install it by:
+
+  #+BEGIN_SRC sh
+  sudo apt-get install checkinstall
+  #+END_SRC
+
+  And all packages which required for software building on your
+  =localhost= would be installed simultaneously.
+
+  Now it's a time to review =checkinstall= manual:
+
+  #+BEGIN_QUOTE
+  checkinstall is a program that monitors an installation procedure
+  (such as make install, install.sh ), and creates a standard package
+  for your dis‐ tribution (currently deb, rpm and tgz packages are
+  supported) that you can install through your distribution's package
+  management system (dpkg, rpm or installpkg).
+  #+END_QUOTE
+
+  
+* Build =.deb= out from ~Anki~ sources
+
+** Download source archive
+
+   From official site:
+   - [[https://apps.ankiweb.net/downloads/current/anki-2.0.45-i386.tar.bz2][i386]]
+   - [[https://apps.ankiweb.net/downloads/current/anki-2.0.45-amd64.tar.bz2][x64]]
+
+** Unpack it
+   
+
+** Review the content
+   
