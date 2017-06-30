@@ -50,8 +50,28 @@ tags: [software, sources, building, deb, packages, checkinstall, anki]
    - [[https://apps.ankiweb.net/downloads/current/anki-2.0.45-i386.tar.bz2][i386]]
    - [[https://apps.ankiweb.net/downloads/current/anki-2.0.45-amd64.tar.bz2][x64]]
 
-** Unpack it
-   
+** Unpack it and review the content
+   #+BEGIN_SRC sh
+   cd ~/Downloads
+   # tar xjf anki-2.0.45-i386.tar.bz2
+   # rm anki-2.0.45-i386.tar.bz2
+   cd anki-2.0.45
+   ls
+   #+END_SRC
 
-** Review the content
+   #+RESULTS:
+   : anki.1
+   : anki.desktop
+   : anki.png
+   : anki.xml
+   : anki.xpm
+   : bin
+   : Makefile
+   : README
+
+** Unleash =checkinstall=
+
+   #+BEGIN_SRC sh
+   
+   #+END_SRC
    
