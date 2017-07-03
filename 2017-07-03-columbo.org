@@ -1,0 +1,36 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Columbo
+tagline: The first season transcript
+permalink: /columbo/first_season.html
+categories: [Learning Technology]
+tags: [hearing]
+---
+#+END_EXPORT
+
+#+STARTUP: showall
+#+OPTIONS: tags:nil toc:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+
+* Season 1
+
+** Murder by the Book
+   #+BEGIN_QUOTE
+   #+INCLUDE: "/usr/local/git/0--key/lib/txt/Columbo.S01E01.DVDRip.ST.en.srt" 
+   #+END_QUOTE
+
+** Death Lends a Hand
+   #+BEGIN_QUOTE
+   #+INCLUDE: "/usr/local/git/0--key/lib/txt/Columbo.S01E02.DVDRip.ST.en.srt" 
+   #+END_QUOTE
+
+** Dead Weight
+   #+BEGIN_QUOTE
+   #+INCLUDE: "/usr/local/git/0--key/lib/txt/Columbo.S01E03.DVDRip.ST.en.srt" 
+   #+END_QUOTE
+
+** Suitable for Framing
+   #+BEGIN_QUOTE
+   #+INCLUDE: "/usr/local/git/0--key/lib/txt/Columbo.S01E04.DVDRip.ST.en.srt" 
+   #+END_QUOTE
