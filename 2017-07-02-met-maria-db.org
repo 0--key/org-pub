@@ -1,0 +1,21 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: Maria DB
+tagline: " at the first glance"
+permalink: /maria-db/init-configuration.html
+categories: [MariaDB, literate programming]
+tags: [post-installation, configuration]
+---
+#+END_EXPORT
+
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
+
+* Overview
+
+* Test DB creation
+
+* Test user priviledges granting
