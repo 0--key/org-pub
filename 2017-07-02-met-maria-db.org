@@ -18,4 +18,6 @@ tags: [post-installation, configuration]
 
 * Test DB creation
 
+* Dumb DB user creation
+
 * Test user priviledges granting
