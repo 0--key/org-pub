@@ -34,3 +34,13 @@ tags: [hearing]
    #+BEGIN_QUOTE
    #+INCLUDE: "/usr/local/git/0--key/lib/txt/Columbo.S01E04.DVDRip.ST.en.srt" 
    #+END_QUOTE
+
+* Season 2
+
+* Season 3
+
+** Publish or Perish
+   #+BEGIN_QUOTE
+   #+INCLUDE: "/usr/local/git/0--key/lib/txt/Columbo.S03E05.DVDRip.ST.en.srt" 
+   #+END_QUOTE
+
