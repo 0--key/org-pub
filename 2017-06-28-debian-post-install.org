@@ -350,11 +350,19 @@ tags: [post-installation, arrangement, automation]
 
 ** Emacs' packages sync
 
-   It's a trivial task, thus there is a simple and native solution.
+   It's a routine task, thus there is a simple and native solution.
 
    - Find out ~custom-set-variables~ section in your =init.el=
    - Evaluate it by ~M-x eval-region~
    - Now look on ~package-selected-packages~ variable
+     #+BEGIN_SRC elisp
+     (print package-selected-packages)
+     #+END_SRC
+
+     #+RESULTS:
+     : 
+     : (org bookmark+ color-theme elfeed elpy google-translate howdoi key-chord magit marshal org-bullets org-pomodoro pcache travis voca-builder ereader docker)
+
    - ~C-h v package-selected-packages~
    - Ensure ~package-selected-packages~ is fulfilled (not nil)
    - ~package-install-selected-packages~
