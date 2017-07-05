@@ -17,6 +17,15 @@ tags: [post-installation, configuration]
 * Overview
 
   #+BEGIN_EXAMPLE
+  ~# mariadb
+  Welcome to the MariaDB monitor.  Commands end with ; or \g.
+  Your MariaDB connection id is 8
+  Server version: 10.1.23-MariaDB-9+deb9u1 Debian 9.0
+  
+  Copyright (c) 2000, 2017, Oracle, MariaDB Corporation Ab and others.
+  
+  Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
   MariaDB [(none)]> show databases;
   +--------------------+
   | Database           |
