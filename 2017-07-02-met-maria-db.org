@@ -67,6 +67,22 @@ tags: [post-installation, configuration]
   Query OK, 0 rows affected (0.09 sec)
   #+END_EXAMPLE
 
+* Installation
+
+  MariaDB included into official =Debian= repository, hence its
+  installation as usual is a string as ~root~:
+  #+BEGIN_EXAMPLE
+  ~# apt-get install mariadb-server mariadb-client
+  #+END_EXAMPLE
+
+  Installation success check is possible for ordinary user also:
+  #+BEGIN_SRC sh 
+  mariadb --version
+  #+END_SRC
+
+  #+RESULTS:
+  : mariadb  Ver 15.1 Distrib 10.1.23-MariaDB, for debian-linux-gnu (x86_64) using readline 5.2
+
 * Test DB creation
 
 * Dumb DB user creation
