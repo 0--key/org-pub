@@ -121,6 +121,30 @@ tags: [post-installation, arrangement, automation]
      openssh-server virtualenv sqlite3 mariadb-client mariadb-server git \
    #+END_SRC
 
+** Jenkins
+   Jenkins is an open source continuous integration tool written in
+   Java and released under the MIT License. It is a server-based system
+   running in a servlet container such as Apache Tomcat.
+
+   *LTS  version*
+
+   #+BEGIN_EXAMPLE
+   # wget -q -O - http://pkg.jenkins-ci.org/debian-stable/jenkins-ci.org.key | apt-key add -
+   # echo "deb http://pkg.jenkins-ci.org/debian-stable binary/" | tee -a /etc/apt/sources.list
+
+   # apt-get update
+   # apt-get install jenkins -y
+   #+END_EXAMPLE
+
+   After that it would be feasible to login to =Jenkins= at
+   ~localhost:8080~ For secure necessity you'll be owe to enter
+   password allocated in file with ~root~ access only.
+
+   #+BEGIN_EXAMPLE
+   # nano /var/lib/jenkins/secrets/initialAdminPassword
+   #+END_EXAMPLE
+
+   [[http://blog.programster.org/debian-8-install-jenkins/][Source]]
 
 * FileTree extension
 
