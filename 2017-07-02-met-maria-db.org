@@ -16,6 +16,19 @@ tags: [post-installation, configuration]
 
 * Overview
 
+  *What is MariaDB*
+
+  - A /branch/ of MySQL
+    - MariaDB is a backward compatible, drop-in replacement for the
+      MySQL Database Server
+  - Open Source
+    - The source code for MariaDB is publicly available from Launchpad
+    - All code in MariaDB is open source
+    - Open bugs database
+
+
+  *Thus, just open-source MySQL*  
+
   #+BEGIN_EXAMPLE
   ~# mariadb
   Welcome to the MariaDB monitor.  Commands end with ; or \g.
