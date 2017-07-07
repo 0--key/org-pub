@@ -116,10 +116,34 @@ tags: [post-installation, arrangement, automation]
 * Software installation
 
 ** General purpose
+
    #+BEGIN_SRC sh
      apt-get install -y htop emacs25 emacs25-common-non-dfsg gkrellm \
      openssh-server virtualenv sqlite3 mariadb-client mariadb-server git \
    #+END_SRC
+
+** Docker
+
+   #+BEGIN_EXAMPLE
+     # apt-get remove docker docker-engine docker.io
+     # apt-get update
+     # apt-get install apt-transport-https /
+       ca-certificates curl gnupg2 software-properties-common
+     # curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
+     # apt-key fingerprint 0EBFCD88
+     # add-apt-repository    "deb [arch=amd64] https://download.docker.com/linux/debian \
+			      $(lsb_release -cs) \
+			      stable"
+     # apt-get update
+     # apt-get install docker-ce
+   #+END_EXAMPLE
+
+   #+BEGIN_SRC sh
+   docker --version
+   #+END_SRC
+
+   #+RESULTS:
+   : Docker version 17.06.0-ce, build 02c1d87
 
 ** Jenkins
    Jenkins is an open source continuous integration tool written in
