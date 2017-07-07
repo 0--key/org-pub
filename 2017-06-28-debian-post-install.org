@@ -170,6 +170,18 @@ tags: [post-installation, arrangement, automation]
 
    [[http://blog.programster.org/debian-8-install-jenkins/][Source]]
 
+** VirtualBox
+   
+   #+BEGIN_SRC sh
+     touch /etc/apt/sources.list.d/virtualbox.list
+     echo "deb http://download.virtualbox.org/virtualbox/debian stretch contrib" | tee -a /etc/apt/sources.list.d/virtualbox.list
+     curl -O https://www.virtualbox.org/download/oracle_vbox_2016.asc
+     apt-key add oracle_vbox_2016.asc
+     apt-get update
+     apt-get install virtualbox-5.1
+   #+END_SRC
+
+   
 * FileTree extension
 
   A =tree= utility is an extremely handy tool in file-system
