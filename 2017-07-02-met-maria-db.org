@@ -83,8 +83,14 @@ tags: [post-installation, configuration]
   #+RESULTS:
   : mariadb  Ver 15.1 Distrib 10.1.23-MariaDB, for debian-linux-gnu (x86_64) using readline 5.2
 
-* Test DB creation
+* Initial steps
 
-* Dumb DB user creation
+  In the most cases =MariaDB= treatments are /identical/ with =MySQL=,
+  thus there are several steps how to permit ordinary ~UNIX user~ to
+  interact with SQL server on localhost.
 
-* Test user priviledges granting
+** Test DB creation
+
+** Dumb DB user creation
+
+** Test user priviledges granting
