@@ -1,0 +1,29 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: Maria DB
+tagline: " at the first glance"
+permalink: /postgres/first-steps.html
+categories: [Postgres, Debian9, literate programming]
+tags: [post-installation, configuration]
+---
+#+END_EXPORT
+
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
+
+* Intro
+* Installation
+
+  =Debian= has a straightforward policy in OS administration: all
+  secure or /unsecure/ operations are prohibited for ordinary user and
+  allowed for ~root~ only. Thus all ~Postgres~ post-installation (it's
+  a pun, but it is :) procedures should be accomplished as ~root~.
+
+  #+BEGIN_EXAMPLE
+  # 
+  #+END_EXAMPLE
+
+* First Steps
