@@ -4,7 +4,7 @@ layout: post
 title: Maria DB
 tagline: " at the first glance"
 permalink: /maria-db/init-configuration.html
-categories: [MariaDB, literate programming]
+categories: [MariaDB, Debian9, literate programming]
 tags: [post-installation, configuration]
 ---
 #+END_EXPORT
