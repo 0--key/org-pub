@@ -1,0 +1,37 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: Porteus
+tagline: " be free anywhere"
+permalink: /porteus/post-installation.html
+categories: [Porteus, DevEnv]
+tags: [post-installation, configuration]
+---
+#+END_EXPORT
+
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
+
+* Intro
+
+* Steps
+
+** Set all stuff on the places
+
+** Open =root= terminal session
+
+** Mount partition with ~Porteus~
+
+** Generate:
+
+   #+BEGIN_EXAMPLE
+   # save-changes /mnt/sdc1/porteus/optional/extension_001.xzm
+   #+END_EXAMPLE
+
+** Edit config:
+
+   #+BEGIN_EXAMPLE
+   # nano /mnt/sdc1/boot/syslinux/porteus.cfg
+   #+END_EXAMPLE
