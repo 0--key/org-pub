@@ -3,9 +3,9 @@
 layout: post
 title: Porteus
 tagline: " be free anywhere"
-permalink: /porteus/post-installation.html
+permalink: /porteus/load-to-ram-config.html
 categories: [Porteus, DevEnv]
-tags: [post-installation, configuration]
+tags: [live USB, load to RAM, configuration]
 ---
 #+END_EXPORT
 
