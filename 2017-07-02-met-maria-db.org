@@ -78,6 +78,40 @@ tags: [post-installation, configuration]
 
 ** Test DB creation
 
+   But our aim is to compose environment that allows an ordinary user
+   to play with relational algebra equations in =MariaDB=. First of
+   all we're need to create a dumb DB. Check up the existing ones:
+
+   #+BEGIN_EXAMPLE
+  MariaDB [(none)]> show databases;
+  +--------------------+
+  | Database           |
+  +--------------------+
+  | information_schema |
+  | mysql              |
+  | performance_schema |
+  +--------------------+
+  3 rows in set (0.06 sec)
+   #+END_EXAMPLE
+
+   These tables serve managerial role and you should aware to modify
+   them. Lets create a particular DB as illustration of DB creation
+   and for our educational and test purposes.
+   #+BEGIN_EXAMPLE
+   MariaDB [(none)]> create database fujitsu_db;
+   Query OK, 1 row affected (0.02 sec)
+
+   MariaDB [(none)]> show databases;
+   +--------------------+
+   | Database           |
+   +--------------------+
+   | fujitsu_db         |
+   | information_schema |
+   | mysql              |
+   | performance_schema |
+   +--------------------+
+   4 rows in set (0.00 sec)
+   #+END_EXAMPLE
 ** Dumb DB user creation
 
 ** Test user priviledges granting
