@@ -51,6 +51,31 @@ tags: [post-installation, configuration]
   thus there are several steps how to permit ordinary ~UNIX user~ to
   interact with SQL server on localhost.
 
+  It should to been noticed here that in accordion with =Debian=
+  security policy by defauld /only root/ is preliminary granted to
+  resolve any DB administration issues. Thus all initial operations
+  below should be executed /as root/, e.g. in separate terminal window
+  after than you're switched user to root by *su root*.
+
+** Connect to MariaDB server
+
+   #+BEGIN_EXAMPLE
+   ~# mariadb
+   Welcome to the MariaDB monitor.  Commands end with ; or \g.
+   Your MariaDB connection id is 8
+   Server version: 10.1.23-MariaDB-9+deb9u1 Debian 9.0
+   
+   Copyright (c) 2000, 2017, Oracle, MariaDB Corporation Ab and others.
+   
+   Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+   
+   MariaDB [(none)]>   
+   #+END_EXAMPLE
+
+   The last string /MariaDB [(none)]>/ welcomed you to input any
+   command by typing and I might suggest to type /help/ and overview
+   its response.
+
 ** Test DB creation
 
 ** Dumb DB user creation
