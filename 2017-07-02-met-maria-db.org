@@ -112,6 +112,20 @@ tags: [post-installation, configuration]
    +--------------------+
    4 rows in set (0.00 sec)
    #+END_EXAMPLE
+
 ** Dumb DB user creation
+
+   Now, when an educational DB successfully created we restricted by
+   security policy organize interaction with it from
+   /non-administrative user/. It's a trivial secure trick which
+   effectively resolve a huge amount of secure problem. The general
+   concept implies user's access control: each user has a definitely
+   limited access to some particular data, and only =root= has an
+   unlimited access to all available data.
+
+   #+BEGIN_EXAMPLE
+   MariaDB [(none)]> CREATE USER 'alioth'@'localhost' IDENTIFIED BY 'mypass';
+   Query OK, 0 rows affected (0.62 sec)
+   #+END_EXAMPLE
 
 ** Test user priviledges granting
