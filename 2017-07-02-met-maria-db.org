@@ -129,3 +129,11 @@ tags: [post-installation, configuration]
    #+END_EXAMPLE
 
 ** Test user priviledges granting
+
+   After when we're created a test DB and an =dumb= user it's time to
+   tie these objects together.
+
+   #+BEGIN_EXAMPLE
+   MariaDB [(none)]> GRANT ALL ON fujitsu_db.* TO 'alioth'@'localhost';
+   Query OK, 0 rows affected (0.09 sec)
+   #+END_EXAMPLE
