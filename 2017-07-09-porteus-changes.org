@@ -16,6 +16,45 @@ tags: [live USB, load to RAM, configuration]
 
 * Intro
 
+** Distinct features
+   
+   As you might expected there are few considerable incentives to use
+   ~Porteus~ as your ~DevEnv~:
+
+   - It is portable;
+   - It might be launched on any host;
+   - It is a lightweight version of ~Linux~;
+   - It might be loaded directly into RAM (!)
+
+
+   Of course it is not a /silver bullet/, but sometimes it is useful to
+   utilize its peculiar advantages.
+
+   This article might shed a light on a much /attractive/ ~Porteus'~
+   feature: its capability to load into RAM of your PC when all data
+   on your HD stay detached. It might be defined as completely
+   _non-intrusive installation_ of *UNIX* OS.
+
+** Comparison with other live-USB distributions
+
+   There is an abundance of similar by main features live-USB Linux
+   distributions, but the *Load to RAM* is a killer one:
+
+   - OS allocates in RAM, thus:
+     - it allows to do all what you want to do on incredible speed;
+     - it prevents USB-stick damage by writing incremental changes;
+     - it grant you permission to modify it manually.
+
+   As an opposite exerience I have had ~Ubuntu~ USB-stick which was
+   similar by functionality and it was completely ruined after ~70
+   PC's boot-ing. Seems like /incremental changes writing/ demolished
+   it. And in addition it are unavoidable there.
+
+** Conclusion
+   
+   Suppose it is enough to ensure you to make your own ~Porteus~
+   live-USB and take a challenge of total portability.
+
 * Steps
 
 ** Set all stuff on the places
