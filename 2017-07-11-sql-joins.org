@@ -1,0 +1,23 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: Joins that
+tagline: " might harness an elephant"
+permalink: /postgres/joins-in-explicit-manner.html
+categories: [Postgres, Emacs]
+tags: [literate programming, joins, explicit]
+---
+#+END_EXPORT
+
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
+
+* Definition
+
+* Illustration
+
+* Samples
+
+* Appropriate usage
