@@ -684,6 +684,16 @@ tags: [post-installation, arrangement, automation]
     Please, choose any command with no interruption on Emacs'
     work-flow.
 
+
+** Python packages installation
+
+   It is a good idea to utilize the isolated =DevEnv= for =Python= and
+   it demands to install several handy packages into each =DevEnv=.
+
+   #+BEGIN_SRC sh
+   pip install jedi yapf flake8 autopep8
+   #+END_SRC
+
 * Grammar
 
   The main target is in creation of grammatically correct textes, even
