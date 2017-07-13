@@ -185,7 +185,12 @@ tags: [post-installation, arrangement, automation]
      apt-get install virtualbox-5.1
    #+END_SRC
 
+** Skype
+
+   Easy peasy.
    
+   [[https://wiki.debian.org/skype][Source]]
+
 * FileTree extension
 
   A =tree= utility is an extremely handy tool in file-system
