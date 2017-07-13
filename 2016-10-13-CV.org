@@ -84,6 +84,15 @@ tags: [CV, Emacs, Python, Literate Programming]
   primitive novel in English which thoroughly endeavor to shed the
   light on another language niceties.
 
+  Emerging unit testing in the early 2000 produced a sismic shift in
+  software development, but still be totally ignored by the writers.
+
+  In these circumstances the inset test suites should serve a
+  lucrative role in learning: they just vividly illustrate the core
+  features in a functional dissection, sufficiently aleviate a
+  headache and pain, facilitating fast and easy comprehension what is
+  all this stuff purpose.
+
   In any case the author is entangled among only two languages: the
   programming one and a straight English.
 
