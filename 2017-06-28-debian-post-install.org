@@ -191,6 +191,20 @@ tags: [post-installation, arrangement, automation]
    
    [[https://wiki.debian.org/skype][Source]]
 
+** HangOuts
+
+   Unfortunately it is impossible to install it as a single app, but
+   /only as Google Chrome plugin/. To do so:
+
+   #+BEGIN_EXAMPLE
+   # wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+   # dpkg -i google-chrome-stable_current_amd64.deb
+   #+END_EXAMPLE
+
+   After that you should download and install
+   ~google-talkplugin_current_amd64.deb~
+
+
 * FileTree extension
 
   A =tree= utility is an extremely handy tool in file-system
