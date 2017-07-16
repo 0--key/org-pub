@@ -523,6 +523,24 @@ tags: [post-installation, arrangement, automation]
     /emacs25-common-non-dfsg contains all necessary info files and
     should be installed preliminary/
 
+
+* Grammar
+
+  The main target is in creation of grammatically correct textes, even
+  though /Emacs/ has an advanced grammar-checker, lets extend it
+  ability by external plug-in.
+
+  #+BEGIN_SRC sh
+  java -version
+  ls -la /usr/local/java/
+  #+END_SRC
+
+  #+RESULTS:
+  : openjdk version "1.8.0_151"
+  : OpenJDK Runtime Environment (build 1.8.0_151-8u151-b12-1~deb9u1-b12)
+  : OpenJDK 64-Bit Server VM (build 25.151-b12, mixed mode)
+  : ls: cannot access '/usr/local/java/': No such file or directory
+
 * Testing
 
 * VirtualBox
