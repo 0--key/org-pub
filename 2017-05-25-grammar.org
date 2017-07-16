@@ -30,9 +30,9 @@ tags: [grammar]
    #+END_SRC
 
    #+RESULTS:
-   : java version "1.7.0_131"
-   : OpenJDK Runtime Environment (IcedTea 2.6.9) (7u131-2.6.9-2~deb8u1)
-   : OpenJDK 64-Bit Server VM (build 24.131-b00, mixed mode)
+   : openjdk version "1.8.0_151"
+   : OpenJDK Runtime Environment (build 1.8.0_151-8u151-b12-1~deb9u1-b12)
+   : OpenJDK 64-Bit Server VM (build 25.151-b12, mixed mode)
 
    /Java 7/ is installed already
 ** Check up Java libs
@@ -46,6 +46,35 @@ tags: [grammar]
    #+RESULTS:
    : /usr/bin/java
 
+** Default folder for Java packages
+
+   it is ~/usr/local/java/~, but in most cases it is absent in a file
+   tree after when you're successfuly re-installing OS.
+   
+   #+BEGIN_SRC sh
+   ls -la /usr/local/java/
+   #+END_SRC
+
+   #+RESULTS:
+   : ls: cannot access '/usr/local/java/': No such file or directory
+
+   Lets create it:
+   #+BEGIN_SRC sh
+   mkdir /usr/local/java
+   ls -la /usr/local/java/
+   #+END_SRC
+
+   #+RESULTS:
+   : mkdir: cannot create directory ‘/usr/local/java’: File exists
+   : total 8
+   : drwxr-sr-x  2 alioth staff 4096 Nov 20 12:59 .
+   : drwxrwsr-x 12 root   staff 4096 Nov 20 12:59 ..
+
+   Now, when we're already prepared our system it is very time for the
+   next step further.
+   
+** Put Java package on place
+   
    Perfect, now it's time to determine an appropriate place to
    allocate your /Java/ packages.
    
@@ -54,12 +83,11 @@ tags: [grammar]
    #+END_SRC
 
    #+RESULTS:
-   : ditaa0_9.jar
 
 ** Download languagetool
 
-   in zip archive from this [[https://languagetool.org/download/][site.]] /2.8 version/ seems compatible with
-   Java 7 version installed on our host. Choose it and download ~zip~
+   in zip archive from this [[https://languagetool.org/download/][site.]] /3.6 version/ seems compatible with
+   Java 8 version installed on our host. Choose it and download ~zip~
    archive.
 
 ** Extract it
@@ -70,11 +98,12 @@ tags: [grammar]
 ** Ensure yourself
    
    #+BEGIN_SRC sh
-   ls /usr/local/java/LanguageTool-2.8/
+   ls /usr/local/java/LanguageTool-3.6/
    #+END_SRC
 
    #+RESULTS:
    #+begin_example
+   CHANGES.md
    CHANGES.txt
    COPYING.txt
    languagetool-commandline.jar
@@ -83,11 +112,11 @@ tags: [grammar]
    libs
    META-INF
    org
-   README.txt
+   README.md
    testrules.bat
    testrules.sh
    third-party-licenses
-#+end_example
+   #+end_example
 
 * Install Emacs plugin
 
@@ -102,7 +131,7 @@ tags: [grammar]
   Add these strings into your Emacs config
   #+BEGIN_SRC elisp
     (require 'langtool)
-    (setq langtool-language-tool-jar "/usr/local/java/LanguageTool-2.8/languagetool-commandline.jar")
+    (setq langtool-language-tool-jar "/usr/local/java/LanguageTool-3.6/languagetool-commandline.jar")
 
     (global-set-key "\C-x4w" 'langtool-check)
     (global-set-key "\C-x4W" 'langtool-check-done)
