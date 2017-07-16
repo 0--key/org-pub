@@ -415,20 +415,35 @@ tags: [post-installation, arrangement, automation]
 
 * Software development environment configuring
 
+  Any contemporary software development inevitably tied with /version
+  control systems/ there ~Git~ and ~Mercurial~ play the lead role.
+  Thus it would be a wise decision to emulate these VCS locally on
+  your HD:
+
+  #+BEGIN_SRC sh
+  mkdir /usr/local/git/ /usr/local/hg/
+  #+END_SRC
+
+  After that it might be easily cloned some particular content there.
+
 ** Cloning repositories
    
    #+BEGIN_SRC sh
-   cd /usr/local/git/
+   mkdir /usr/local/git/0--key/
+   cd /usr/local/git/0--key/
    git clone https://github.com/0--key/lib.git
    git clone https://github.com/0--key/org-pub.git
    git clone https://github.com/0--key/0--key.github.io.git
    #+END_SRC
   
 ** Emacs' settings linkage
+
+   As I'm prefer to store my Emacs' settings in the =Git= cloud.
+
    #+BEGIN_SRC sh
-   ln -s -T /usr/local/git/lib/Emacs/default.lenovo.el \
+   ln -s -T /usr/local/git/0--key/lib/Emacs/default.lenovo.el \
    /usr/local/share/emacs/site-lisp/default.el
-   ln -s -T /usr/local/git/lib/Emacs/init_generic.el \
+   ln -s -T /usr/local/git/0--key/lib/Emacs/init_generic.el \
    ~/.emacs.d/init.el
    #+END_SRC
 
