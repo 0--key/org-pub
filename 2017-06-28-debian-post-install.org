@@ -425,8 +425,12 @@ tags: [post-installation, arrangement, automation]
   #+END_SRC
 
   After that it might be easily cloned some particular content there.
+  And let call this schema =folder per VCS=
 
 ** Cloning repositories
+
+   Exactly for clarity purpose it would be useful to utilize
+   =folder per user= schema, with inner repositories allocation.
    
    #+BEGIN_SRC sh
    mkdir /usr/local/git/0--key/
