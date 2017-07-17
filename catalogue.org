@@ -11,18 +11,19 @@
 
 * General Concepts
 
-  - Categories begin from capital letter;
-  - Tags does not
+  - Categories do begin only from any capital letter;
+  - Tags do not so.
 
 * Learning Technology
 
-** anki
+** Spaced repetition
+*** anki
 
-*** installation
+**** installation
 
-*** spaced repetition
+**** spaced repetition
 
-** DONE org-drill
+*** DONE org-drill
 
 
 * Emacs
