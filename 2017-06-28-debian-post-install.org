@@ -376,32 +376,53 @@ tags: [post-installation, arrangement, automation]
 ** Additional folders
 
    Now, when you're added into ~staff~ group it would be possible to
-   execute all necessary commands as a current user. Let's create
-   several additional folders for books, courses and repositories:
+   execute any secure command from current user. Let's create in
+   ~/usr/local/~ several additional folders for books, courses and
+   repositories:
 
-   #+BEGIN_SRC sh
-   cd /usr/local/share/
-   ls -la
-   # mkdir books courses DVCS
-   #+END_SRC
+*** Target directory overview
 
-   #+RESULTS:
-   #+begin_example
-   total 52
-   drwxrwsr-x 13 root   staff  4096 Aug  2 18:39 .
-   drwxrwsr-x 10 root   staff  4096 Jul 10 15:22 ..
-   drwxr-sr-x  3 root   staff  4096 Jul 21 12:04 anki
-   drwxr-sr-x  2 root   staff  4096 Aug  2 06:31 applications
-   drwxr-sr-x  2 alioth alioth 4096 Jul 10 18:20 books
-   drwxrwsr-x  2 root   staff  4096 Jun 20 04:18 ca-certificates
-   drwxr-sr-x  7 alioth alioth 4096 Jul 26 18:31 DVCS
-   drwxrwsr-x  4 root   staff  4096 Jul 10 17:23 emacs
-   drwxrwsr-x  2 root   staff  4096 Jun 20 04:18 fonts
-   drwxrwsr-x  3 root   staff  4096 Jul 21 12:04 man
-   drwxr-sr-x  2 root   staff  4096 Jul 21 12:04 pixmaps
-   drwxrwsr-x  7 root   staff  4096 Jul 10 15:22 sgml
-   drwxrwsr-x  6 root   staff  4096 Jul 10 15:22 xml
-#+end_example
+    #+BEGIN_SRC sh
+    ls -la /usr/local/
+    ls -la /usr/local/lib/
+    ls -la /usr/local/share/
+    # mkdir books courses
+    #+END_SRC
+
+    #+RESULTS:
+    #+begin_example
+    total 44
+    drwxrwsr-x 11 root   staff 4096 Aug 25 09:39 .
+    drwxr-xr-x 11 root   root  4096 Aug 15 03:54 ..
+    drwxrwsr-x  2 root   staff 4096 Aug  2 19:24 bin
+    drwxrwsr-x  2 root   staff 4096 Jul 23 06:13 etc
+    drwxrwsr-x  2 root   staff 4096 Jul 23 06:13 games
+    drwxr-sr-x  5 alioth staff 4096 Aug  5 16:37 git
+    drwxrwsr-x  2 root   staff 4096 Jul 23 06:13 include
+    drwxrwsr-x  4 root   staff 4096 Jul 31 20:19 lib
+    lrwxrwxrwx  1 root   staff    9 Jul 31 20:19 man -> share/man
+    drwxrwsr-x  2 root   staff 4096 Jul 23 06:13 sbin
+    drwxrwsr-x 12 root   staff 4096 Aug  3 19:22 share
+    drwxrwsr-x  2 root   staff 4096 Jul 23 06:13 src
+    total 16
+    drwxrwsr-x  4 root staff 4096 Jul 31 20:19 .
+    drwxrwsr-x 11 root staff 4096 Aug 25 09:39 ..
+    drwxrwsr-x  4 root staff 4096 Jul 31 20:19 python2.7
+    drwxrwsr-x  3 root staff 4096 Jul 31 20:19 python3.5
+    total 48
+    drwxrwsr-x 12 root   staff 4096 Aug  3 19:22 .
+    drwxrwsr-x 11 root   staff 4096 Aug 25 09:39 ..
+    drwxr-sr-x  3 root   staff 4096 Aug  2 19:24 anki
+    drwxr-sr-x  2 root   staff 4096 Aug 17 16:09 applications
+    drwxr-sr-x  4 alioth staff 4096 Aug  3 19:24 arch
+    drwxrwsr-x  2 root   staff 4096 Jul 23 06:20 ca-certificates
+    drwxrwsr-x  4 root   staff 4096 Aug  2 19:23 emacs
+    drwxrwsr-x  2 root   staff 4096 Jul 23 06:20 fonts
+    drwxrwsr-x  3 root   staff 4096 Aug  2 19:24 man
+    drwxr-sr-x  2 root   staff 4096 Aug  2 19:24 pixmaps
+    drwxrwsr-x  7 root   staff 4096 Jul 31 20:19 sgml
+    drwxrwsr-x  6 root   staff 4096 Jul 31 20:19 xml
+ #+end_example
 
 ** Git
 
