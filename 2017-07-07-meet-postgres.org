@@ -23,7 +23,8 @@ tags: [post-installation, configuration]
   a pun, but it is :) procedures should be accomplished as ~root~.
 
   #+BEGIN_EXAMPLE
-  # 
+  # apt-get install postgresql-doc postgresql postgresql-client
+  # apt-get install pgadmin3 pgadmin3-data
   #+END_EXAMPLE
 
 * First Steps
