@@ -15,6 +15,16 @@ tags: [post-installation, configuration]
 #+PROPERTY:header-args :results output :exports both :eval no-export
 
 * Intro
+
+  From the /official documentation/:
+
+  #+BEGIN_QUOTE
+  PostgreSQL is an object-relational database management system
+  (ORDBMS) based on POSTGRES, Version 4.2, developed at the University
+  of California at Berkeley Computer Science Department. POSTGRES
+  pioneered many concepts that only became available in some
+  commercial database systems much later.
+  #+END_QUOTE
 * Installation
 
   =Debian= has a straightforward policy in OS administration: all
