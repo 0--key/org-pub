@@ -38,3 +38,46 @@ tags: [post-installation, configuration]
   #+END_EXAMPLE
 
 * First Steps
+
+** Init DB and customary user
+   
+   Exactly for /security purpose/ we'll allow any OS user to connect
+   with =Postgres= server locally without ~password~. We trust our
+   logged users :)
+   First of all log-in as *root* and:
+  
+   #+BEGIN_EXAMPLE
+   ~# su - postgres
+   ~$ psql
+   postgres=# \du //check-up already existing users
+  				 List of roles
+   Role name |                         Attributes                         | Member of 
+   -----------+------------------------------------------------------------+-----------
+   postgres  | Superuser, Create role, Create DB, Replication, Bypass RLS | {}
+
+   // create a new one:
+   postgres=# CREATE USER <user_name> CREATEDB;
+   postgres=# \du
+  				 List of roles
+   Role name  |                         Attributes                         | Member of 
+   -----------+------------------------------------------------------------+-----------
+   <user_name>| Create DB                                                  | {}
+   postgres   | Superuser, Create role, Create DB, Replication, Bypass RLS | {}
+   #+END_EXAMPLE
+
+   Now =Postgres= knows about <user_name>. It's time to log-in as a
+   <user_name>, and create DB with <user_name>:
+
+   #+BEGIN_EXAMPLE
+   ~$ createdb
+   #+END_EXAMPLE
+
+   After these preparations it would feasible to connect to =Postgres=
+   server from localhost for log-in users without a specific password:
+
+   #+BEGIN_EXAMPLE
+   ~$ psql
+   psql (9.6.4)
+   Type "help" for help.
+   user_name=>
+   #+END_EXAMPLE
