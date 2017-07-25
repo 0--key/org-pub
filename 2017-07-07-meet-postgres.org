@@ -81,3 +81,14 @@ tags: [post-installation, configuration]
    Type "help" for help.
    user_name=>
    #+END_EXAMPLE
+
+** Emacs re-configuring
+
+   Now, when you're able to connect your =Postgres= client with
+   /server/ it is time to tune in your =Emacs= on SQL verse. There are
+   several comprehensive tutorials below:
+
+   - Brief intro [[https://www.emacswiki.org/emacs/SqlMode][into SQLmode]];
+   - Must-read [[http://home.fnal.gov/~neilsen/notebook/orgExamples/org-examples.html][sample for Org-mode]] in scientific research;
+   - SQL in Babel [[http://orgmode.org/worg/org-contrib/babel/languages/ob-doc-sql.html][introduction]]
+
