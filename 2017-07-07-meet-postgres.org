@@ -92,3 +92,57 @@ tags: [post-installation, configuration]
    - Must-read [[http://home.fnal.gov/~neilsen/notebook/orgExamples/org-examples.html][sample for Org-mode]] in scientific research;
    - SQL in Babel [[http://orgmode.org/worg/org-contrib/babel/languages/ob-doc-sql.html][introduction]]
 
+* Literate Programming
+
+** Table creation
+   
+   #+BEGIN_SRC sql :engine postgresql
+     CREATE TABLE weather (
+	 city            varchar(80),
+	 temp_lo         int,           -- low temperature
+	 temp_hi         int,           -- high temperature
+	 prcp            real,          -- precipitation
+	 date            date
+     );
+
+     CREATE TABLE cities (
+	 name            varchar(80),
+	 location        point
+     );
+   #+END_SRC
+
+   #+RESULTS:
+   : CREATE TABLE
+   : CREATE TABLE
+
+** Check existing tables
+
+   #+BEGIN_SRC sql :engine postgresql
+   \d
+   #+END_SRC
+
+   #+RESULTS:
+   : List of relations
+   : Schema	Name	Type	Owner
+   : public	cities	table	alioth
+   : public	weather	table	alioth
+
+** Tables deletion
+
+   #+BEGIN_SRC sql :engine postgresql
+     DROP TABLE weather;
+     DROP TABLE cities;
+   #+END_SRC
+
+   #+RESULTS:
+   : DROP TABLE
+   : DROP TABLE
+
+** Check existing tables
+
+   #+BEGIN_SRC sql :engine postgresql
+   \d
+   #+END_SRC
+
+   #+RESULTS:
+   : No relations found.
