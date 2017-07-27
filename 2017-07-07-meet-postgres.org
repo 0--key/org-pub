@@ -1,7 +1,7 @@
 #+BEGIN_EXPORT html
 ---
 layout: post
-title: Maria DB
+title: A cramped elephant
 tagline: " at the first glance"
 permalink: /postgres/first-steps.html
 categories: [Postgres, Debian9, literate programming]
