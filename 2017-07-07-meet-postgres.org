@@ -25,6 +25,29 @@ tags: [post-installation, configuration]
   pioneered many concepts that only became available in some
   commercial database systems much later.
   #+END_QUOTE
+
+  Where /object-relational database management system/:
+
+  #+BEGIN_QUOTE
+  An object-relational database (ORD), or object-relational database
+  management system (ORDBMS), is a database management system (DBMS)
+  similar to a relational database, but with an object-oriented
+  database model: objects, classes and inheritance are directly
+  supported in database schemas and in the query language. In
+  addition, just as with pure relational systems, it supports
+  extension of the data model with custom data-types and methods.
+  #+END_QUOTE
+
+  And several penetratingly accurate remarks from Jayadevan Maymala:
+
+  #+BEGIN_QUOTE
+  PostgreSQL is an incredibly flexible and dependable open source
+  relational database. Harnessing its power will make your
+  applications more reliable and extensible without increasing costs.
+  Using PostgreSQL's advanced features will save you work and increase
+  performance, once you've discovered how to set it up.
+  #+END_QUOTE
+
 * Installation
 
   =Debian= has a straightforward policy in OS administration: all
