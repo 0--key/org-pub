@@ -115,7 +115,29 @@ tags: [post-installation, configuration]
    - Must-read [[http://home.fnal.gov/~neilsen/notebook/orgExamples/org-examples.html][sample for Org-mode]] in scientific research;
    - SQL in Babel [[http://orgmode.org/worg/org-contrib/babel/languages/ob-doc-sql.html][introduction]]
 
-* Literate Programming
+   After then you're red these articles it might be not difficult to:
+
+   1. Activate ~SQL mode~ in your ~init.el~;
+   2. Restart =Emacs=
+
+
+   After these manipulations feel free to open an embed ~SQL mode~
+   documentation: =M-s sql-help=
+
+** Interactive mode
+
+   It's seems /a standard way/ to do the business with =Postgres=
+   inside =Emacs=.
+
+   Just type =M-x sql-postgres= and /three times/ <RETURN> as an
+   agreement to /default/ connection options.
+
+  #+CAPTION: Postgres client's interactive window
+  #+ATTR_HTML: :alt Nice and dice :title Postgres in Emacs :align left
+  [[http://0--key.github.io/assets/img/SQL/Postgres_in_Emacs.png]]
+
+
+* Postgres Testing as a Literate Programming
 
 ** Table creation
    
