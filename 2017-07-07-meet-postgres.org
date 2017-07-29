@@ -172,6 +172,38 @@ tags: [post-installation, configuration]
    : public	cities	table	alioth
    : public	weather	table	alioth
 
+** Populating tables with data
+
+   #+BEGIN_SRC sql :engine postgresql
+   -- Direct and blind approach
+   INSERT INTO weather VALUES
+   ('San Francisco', 46, 50, 0.25, '1994-11-27');
+   INSERT INTO cities VALUES ('San Francisco', '(-194.0, 53.0)');
+   -- Direct and straightforward method
+   INSERT INTO weather (city, temp_lo, temp_hi, prcp, date)
+    VALUES ('San Francisco', 43, 57, 0.0, '1994-11-29');
+    INSERT INTO weather (date, city, temp_hi, temp_lo)
+    VALUES ('1994-11-29', 'Hayward', 54, 37);
+   #+END_SRC
+
+   #+RESULTS:
+   : INSERT 0 1
+   : INSERT 0 1
+   : INSERT 0 1
+   : INSERT 0 1
+
+** Retrieving data
+   
+   #+BEGIN_SRC sql :engine postgresql :results output
+   SELECT city, temp_lo, temp_hi, prcp, date FROM weather;
+   #+END_SRC
+
+   #+RESULTS:
+   : city	temp_lo	temp_hi	prcp	date
+   : San Francisco	46	50	0.25	1994-11-27
+   : San Francisco	43	57	0	1994-11-29
+   : Hayward	37	54		1994-11-29
+
 ** Tables deletion
 
    #+BEGIN_SRC sql :engine postgresql
