@@ -29,6 +29,38 @@ tags: [post-installation, configuration]
   Where /object-relational database management system/:
 
   #+BEGIN_QUOTE
+  Object-Relational database (ORDBMS) is the third type of database
+  common today. ORDBMS are systems that “attempt to extend relational
+  database systems with the functionality necessary to support a
+  broader class of applications and, in many ways, provide a bridge
+  between the relational and object-oriented paradigms.”
+
+  ORDBMS was created to handle new types of data such as audio, video,
+  and image files that relational databases were not equipped to
+  handle. In addition, its development was the result of increased
+  usage of object-oriented programming languages, and a large mismatch
+  between these and the DBMS software.
+
+  One advantage of ORDBMS is that it allows organizations to continue
+  using their existing systems, without having to make major changes.
+  A second advantage is that it allows users and programmers to start
+  using object-oriented systems in parallel.
+
+  There are challenges in implementing an ORDBMS. The first is storage
+  and access methods. The second is query processing, and the third is
+  query optimization.
+
+  #+BEGIN_EXPORT html
+  <p align="right">
+  <a href="https://www.aspfree.com/c/a/database/introduction-to-rdbms-oodbms-and-ordbms/">
+  Source</a>
+  </p>
+  #+END_EXPORT
+  #+END_QUOTE
+
+  At another point of view:
+
+  #+BEGIN_QUOTE
   An object-relational database (ORD), or object-relational database
   management system (ORDBMS), is a database management system (DBMS)
   similar to a relational database, but with an object-oriented
