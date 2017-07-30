@@ -39,7 +39,13 @@
 
 *** elpy
 
+* RDBMS
 
+** Theory
+
+*** 12 rules
+
+*** Relational algebra
 * Python
 
 ** python2
