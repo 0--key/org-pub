@@ -137,3 +137,22 @@ tags: [post-installation, configuration]
    MariaDB [(none)]> GRANT ALL ON fujitsu_db.* TO 'alioth'@'localhost';
    Query OK, 0 rows affected (0.09 sec)
    #+END_EXAMPLE
+
+* Emacs meets MariaDB
+
+** Interactive mode
+   Now, when we are freely capable to connect =MariaDB= client with
+   server it's very moment to embed all this features into Emacs IDE.
+
+   Firstly it is worth to be noticed a =Emacs'= standard approach to
+   ~SQL~: =M-x sql-mysql= after than you're add =SQL= support in your
+   ~init.el~ and re-launch =Emacs=.
+
+  As a result you'll would get this window for treat your =MariaDB=
+  interactively:
+
+  #+CAPTION: MariaDB client's interactive window
+  #+ATTR_HTML: :alt Nice and dice :title MariaDB in Emacs :align left
+  [[http://0--key.github.io/assets/img/SQL/MariaDB_in_Emacs.png]]
+
+  
