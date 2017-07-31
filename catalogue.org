@@ -22,6 +22,8 @@
 
 *** spaced repetition
 
+** DONE org-drill
+
 
 * Emacs
 
@@ -46,6 +48,11 @@
 *** 12 rules
 
 *** Relational algebra
+
+** Practice
+*** SQLite3
+*** Postgres
+*** MySQL
 * Python
 
 ** python2
@@ -71,8 +78,6 @@
 * Docker
 
 * Kubernetes
-
-* SQLite3
 
 * TDD
 
