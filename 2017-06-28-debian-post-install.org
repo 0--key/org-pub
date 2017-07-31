@@ -524,3 +524,13 @@ tags: [post-installation, arrangement, automation]
     should be installed preliminary/
 
 * Testing
+
+* VirtualBox
+
+** Installation
+** USB access
+   #+BEGIN_EXAMPLE
+   # usermod -aG vboxusers alioth
+   #+END_EXAMPLE
+
+   After this you *must to re-login* to savor these changes.
