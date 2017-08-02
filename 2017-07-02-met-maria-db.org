@@ -146,9 +146,14 @@ tags: [post-installation, configuration]
 
    Firstly it is worth to be noticed a =Emacs'= standard approach to
    ~SQL~: =M-x sql-mysql= after than you're add =SQL= support in your
-   ~init.el~ and re-launch =Emacs=.
+   ~init.el~ and re-launch =Emacs=. If description above can't
+   eliminate your questions around =MariaDB= as a particular =SQL=
+   host you might try to dismantle these knotty issues by reading:
 
-  As a result you'll would get this window for treat your =MariaDB=
+   - Brief intro [[https://www.emacswiki.org/emacs/SqlMode][into SQLmode]];
+   - SQL in Babel [[http://orgmode.org/worg/org-contrib/babel/languages/ob-doc-sql.html][introduction]]
+
+  As a result you'll should get this window for tame your =MariaDB=
   interactively:
 
   #+CAPTION: MariaDB client's interactive window
