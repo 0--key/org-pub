@@ -1,0 +1,21 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: Elpy
+tagline: " is an inevitable tool to treat Python"
+permalink: /emacs/elpy.html
+categories: [Emacs, DevEnv]
+tags: [post-installation, config]
+---
+#+END_EXPORT
+
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
+
+* The Main Purpose
+
+* Core features
+
+* Usage Cases
