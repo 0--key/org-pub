@@ -58,6 +58,9 @@
 *** SQLite3
 *** Postgres
 *** MySQL
+
+* NoSQL
+
 * Python
 
 ** python2
