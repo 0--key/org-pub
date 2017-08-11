@@ -65,12 +65,26 @@ tags: [live USB, load to RAM, configuration]
 
 ** Generate:
 
+   ~Porteus~ saves incremental changes in =.xzm= format.
+
    #+BEGIN_EXAMPLE
    # save-changes /mnt/sdc1/porteus/optional/extension_001.xzm
    #+END_EXAMPLE
+
+   Where =/mnt/sdc1/porteus/optional/= is a path to your ~Porteus~
+   Live-USB, and =extension_001.xzm= is a filename itself.
 
 ** Edit config:
 
    #+BEGIN_EXAMPLE
    # nano /mnt/sdc1/boot/syslinux/porteus.cfg
    #+END_EXAMPLE
+
+* Test
+
+  Try to configure <CapsLock> as an additional <Ctrl>:
+  
+  #+BEGIN_SRC sh
+  /usr/bin/setxkbmap -option "ctrl:nocaps"
+  /usr/bin/setxkbmap -option "caps:ctrl_modifier"
+  #+END_SRC
