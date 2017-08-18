@@ -83,6 +83,23 @@ tags: [post-installation, arrangement, automation]
    thus, in incorrect work case =kernel= fills the log with the ~ERROR~
    messages and it should easily detected by user.
 
+** Causation
+
+   It's easy, as a day: hardware incompatibility - sometimes arbitrary
+   piece of your PC might be equipped by ~proprietary~ hardware (e.g.
+   Wi-Fi card from Atheros, or Bluetooth adapter from unknown
+   manufacturer). That's it - it just deny to serve as expected by the
+   /Kernel/. All you might need a set of /proprietary drivers/ on your
+   device.
+
+** Blacklisting as a cure
+
+   In flip side: when you're got a tons of ~Error~ messages and device
+   is stubborn as a mule, it is /unavoidable/.
+
+   There are a lot of approaches how to blacklist, and the /stem idea/
+   is to expel erroneous modules out from usage by the /Kernel/.
+
 
 * HDD health check-up
 
