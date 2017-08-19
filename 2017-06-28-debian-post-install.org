@@ -475,6 +475,9 @@ tags: [post-installation, arrangement, automation]
    mkdir /usr/local/git/0--key/ /usr/local/git/annelida/
    #+END_SRC
 
+   Now, when you're prepared place where to allocate your forks or
+   clones - it's very time to clone it there.
+
 ** Cloning repositories
 
    Exactly for clarity purpose it would be useful to utilize
@@ -487,6 +490,24 @@ tags: [post-installation, arrangement, automation]
    git clone https://github.com/0--key/org-pub.git
    git clone https://github.com/0--key/0--key.github.io.git
    #+END_SRC
+
+   as a result you should get something around this:
+
+   #+BEGIN_SRC sh
+   tree -L 2 /usr/local/git/
+   #+END_SRC
+
+   #+RESULTS:
+   #+begin_example
+   /usr/local/git/
+   ├── 0--key
+   │   ├── 0--key.github.io
+   │   ├── lib
+   │   ├── nltk
+   │   ├── org-pub
+       └── talk-python-transcripts
+
+   #+end_example
   
 ** Emacs' settings linkage
 
