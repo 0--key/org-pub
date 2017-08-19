@@ -454,17 +454,26 @@ tags: [post-installation, arrangement, automation]
 
 * Software development environment configuring
 
-  Any contemporary software development inevitably tied with /version
-  control systems/ there ~Git~ and ~Mercurial~ play the lead role.
-  Thus it would be a wise decision to emulate these VCS locally on
-  your HD:
+** Version control systems
 
-  #+BEGIN_SRC sh
-  mkdir /usr/local/git/ /usr/local/hg/
-  #+END_SRC
+   Any contemporary software development inevitably tied with /version
+   control systems/ there ~Git~ and ~Mercurial~ deserve to be noticed.
+   Thus it would be a wise decision to provide ~folder separation~ for
+   these VCS locally on your HD:
 
-  After that it might be easily cloned some particular content there.
-  And let call this schema =folder per VCS=
+   #+BEGIN_SRC sh
+   mkdir /usr/local/git/ /usr/local/hg/
+   #+END_SRC
+
+   After that it might be easily cloned some particular content there.
+   And let call this schema =folder per VCS=
+
+   /User separation/ might avert any mess when there are several
+   users. Respectively it might be accomplishing in our case by:
+
+   #+BEGIN_SRC sh
+   mkdir /usr/local/git/0--key/ /usr/local/git/annelida/
+   #+END_SRC
 
 ** Cloning repositories
 
