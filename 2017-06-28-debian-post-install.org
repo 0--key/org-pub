@@ -570,6 +570,20 @@ tags: [post-installation, arrangement, automation]
     /emacs25-common-non-dfsg contains all necessary info files and
     should be installed preliminary/
 
+** Virtual Environment
+
+   Is a cool feature to use in daily work /for each developer/. Thus it
+   is necessary to assign a _semantically_ pertinent path to allocate
+   all theirs ~venvs~ in some particular folder:
+
+   #+BEGIN_SRC sh
+   mkdir -p /usr/local/share/DVCS/alioth
+   mkdir -p /usr/local/share/DVCS/vikky
+   #+END_SRC
+
+   #+RESULTS:
+
+
 
 * Grammar
 
