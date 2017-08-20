@@ -585,6 +585,27 @@ tags: [post-installation, arrangement, automation]
 
 
 
+   E.g. two our users would place the individual version of ~venvs~ in
+   separate folders.
+
+*** Tip                                                                 :tip:
+    It is cool feature to switch /virtual environment/ inside Emacs.
+    Just try to utilize ~pyvenv~:
+
+    #+BEGIN_CENTER
+    M-x pyvenv[TAB]
+    #+END_CENTER
+
+    #+BEGIN_QUOTE
+    Possible completions are:
+    pyvenv-activate 	pyvenv-deactivate 	pyvenv-menu
+    pyvenv-mode 	pyvenv-restart-python 	pyvenv-tracking-mode
+    pyvenv-workon
+    #+END_QUOTE
+
+    Please, choose any command with no interruption on Emacs'
+    work-flow.
+
 * Grammar
 
   The main target is in creation of grammatically correct textes, even
