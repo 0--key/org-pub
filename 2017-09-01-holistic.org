@@ -1,0 +1,48 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Goal Definition
+tagline: 'Cook it consciously._/\/\/^\/\/\/-<8<'
+permalink: /holistic_view/index.html
+categories: [Emacs, Data Science, Learning Technology]
+tags: [concept, overview]
+---
+#+END_EXPORT
+
+#+STARTUP: showall
+#+OPTIONS: tags:nil toc:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+
+* Short intro							      :intro:
+
+** Motto
+
+   For life-long learners only.
+
+** Dense concept only
+
+   Human Life is so short. Could you try to learn programming from
+   start to finish in a couple years, please?
+
+** Core incentive
+
+   There are abundance texts about programming languages. /All/ they,
+   with a measly exeption are *wrong* written.
+
+   If you'll inerested it is possible to dissect austerely the average
+   book about programming.
+
+
+   Let's take an endeavour to comb these facts as an incentive and
+   deduct a pertinent cure by ourselves. Of course it is shouldn't be
+   a defiant and vigorous ignoring of existing plight in this area, as
+   if it is dissection of decripit debris, I'm insist on an objective
+   and sober scrutiny of initial idea of any text about programming
+   language, with further comparing it with the existing state of
+   things.
+   
+   
+   And this hugely retard your learning
+   process.
+
+** A couple words about method
