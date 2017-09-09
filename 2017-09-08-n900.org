@@ -1,0 +1,25 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: Nokia n900
+tagline: " is a bit old-fashion but absolutely pythonic"
+permalink: /nokia/n900/preparations.html
+categories: [n900, Emacs, DevEnv]
+tags: [mobile]
+---
+#+END_EXPORT
+
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
+
+* Preamble
+
+* Secure Connection
+
+** Automation
+
+   Naturally it's the way to connect to your remote host securely and
+   avoid tedious typing also. This technology utilizes private/public
+   keys encription and well descripted at [[https://www.thegeekstuff.com/2008/11/3-steps-to-perform-ssh-login-without-password-using-ssh-keygen-ssh-copy-id/][this page]].
