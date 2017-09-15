@@ -1,0 +1,24 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: Your workspace
+tagline: " should be a cosy and noiseless place"
+permalink: /time-management/workspace.html
+categories: [Time Management]
+tags: [workspace, config]
+---
+#+END_EXPORT
+
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
+
+
+* Preamble
+
+* Distraction reducing
+
+* Bookmarks management
+
+* Task switching
