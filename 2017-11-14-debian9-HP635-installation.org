@@ -1,0 +1,85 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: Debian 9 HP635 installation
+tagline: " arrangement automation"
+permalink: /debian/installation.html
+categories: [Debian, DevEnv]
+tags: [post-installation, arrangement, automation]
+---
+#+END_EXPORT
+
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
+
+* Goal definition
+** Advantages of Linux over Windows
+   - Open Source Nature;
+   - Reliability
+     If you are using Linux, you will not have to worry
+     about re-installing it just to experience a faster and a smoother
+     system. Linux helps your system run smooth for a longer period.
+     Also, with Windows, you will have to adapt to a habit where you keep
+     on rebooting the system for just about everything.
+   - Free to Use
+     Linux is accessible to the public for free. However,
+     that is not the case with Windows.
+   - Variety Of Distributions
+     You can choose to install any of the available Linux distributive
+     according to your requirements.
+   - Customization;
+   - Software updates;
+   - Perfect for programmers;
+   - Secure.
+     Linux is not as vulnerable as Windows.
+* Debian 9
+* Live USB stick
+  You need:
+  - A machine with linux installed;
+  - A FAT formatted usb flash drive of 4 GB (2GB will do since the
+    image is 1.1 GB but this leaves little free space for persistence);
+  - Connect your USB drive to the computer running Linux and make sure
+    that it is determined by the Linux kernel:
+
+    #+BEGIN_SRC sh :results output
+    dmesg
+    #+END_SRC
+
+    #+RESULTS:
+    
+  - Downloading the boot image file (boot.img.gz) from http://http.us.debian.org
+    for the USB device;
+  - Preparing the USB drive for downloading:
+    
+    #+BEGIN_SRC sh :results output
+    zcat boot.img.gz > /dev/sdX
+    #+END_SRC
+
+    sdX - name of our USB device
+
+    You can check the success of this step by running the following
+    commands:
+
+    #+BEGIN_SRC sh :results output
+    mount /dev/sdX /mnt/
+    ls /mnt
+    #+END_SRC
+
+    and you should see installation files such as syslinux.cfg,
+    setup.exe, and so on.
+
+  - Download netinstall or business CD image
+    from where: https://www.debian.org/CD/netinst/#netinst-stable
+
+  - Copying an ISO image to a USB drive
+    
+    #+BEGIN_SRC sh :results output
+    mount /dev/sdX /mnt
+    cp <path/to/iso/image> /mnt
+    umount /dev/sdX
+    #+END_SRC
+
+
+* FirmWare
