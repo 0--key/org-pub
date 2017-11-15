@@ -34,6 +34,10 @@ tags: [post-installation, arrangement, automation]
    - Perfect for programmers;
    - Secure.
      Linux is not as vulnerable as Windows.
+
+* PC architecture check-up
+
+
 * Debian 9
 * Live USB stick
   You need:
