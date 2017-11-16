@@ -39,7 +39,20 @@ tags: [post-installation, arrangement, automation]
 
 
 * Debian 9
-* Live USB stick
+
+  Seems like it is a newest and most =iconic= Linux distro with a
+  plethora of peculiar niceties which might emphasize its free nature.
+
+
+* Vanilla Debian-Live USB stick creation
+
+  For your own risk you could test a vanilla version of Debian distro.
+  I mean a completely open-source version with no any proprietary
+  drivers there. Of course in most cases it should be work with some
+  qurks, therefore I'm not suggest this version for real-world PC
+  installation, but it absolutely pertinent for all kind of remote
+  installation.
+
   You need:
   - A machine with linux installed;
   - A FAT formatted usb flash drive of 4 GB (2GB will do since the
