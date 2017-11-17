@@ -100,3 +100,32 @@ tags: [post-installation, arrangement, automation]
 
 
 * FirmWare
+
+  In contrast, for Linux installation on some physical host like a
+  laptop or even an old-fashion tower-PC with rich set of proprietary
+  peripheral devices like Wi-Fi cards or Bluetooth adapters.
+
+  Just take a look at [[https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/current-live/amd64/iso-hybrid/][this page]] for clarification.
+
+
+** Download the pertinent image
+
+   #+BEGIN_SRC sh :eval no
+   nohup wget https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/9.3.0-live+nonfree/amd64/iso-hybrid/debian-live-9.3.0-amd64-gnome+nonfree.iso &
+   #+END_SRC
+
+** USB-stick check
+
+   I might suggest to insert an USB-stick and run =Disks= utility.
+
+** LiveUSB stick creation
+
+   This procedure was taken from [[https://www.debian.org/CD/faq/#write-usb][this manual]]. Naturally it is allowed
+   for ~root only~ and might endure several minutes.
+
+   #+BEGIN_EXAMPLE
+   # dd if=/home/alioth/Desktop/debian-live-9.3.0-amd64-gnome+nonfree.iso of=/dev/sdb bs=4M; sync
+   650+1 records in
+   650+1 records out
+   2726690816 bytes (2.7 GB, 2.5 GiB) copied, 526.374 s, 5.2 MB/s
+   #+END_EXAMPLE
