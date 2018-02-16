@@ -90,4 +90,11 @@ tags: [org, agenda, icalendar]
    E.g. =Google Calendar= capable to share a personal agenda among
    team members.
 
-* 
+
+* Composing agenda file(s)
+
+* Exporting agenda file(s)
+
+* Preparing a peculiar Google Calendar
+
+* Importing .ics file
