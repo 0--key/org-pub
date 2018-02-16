@@ -1,0 +1,23 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Google Calendar
+tagline: 'meets with org-agenda'
+permalink: /emacs/org-agenda/google-calendar.html
+categories: [Emacs, Learning Technology, Time Management]
+tags: [org, agenda, icalendar]
+---
+#+END_EXPORT
+
+#+STARTUP: showall
+#+OPTIONS: tags:nil toc:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+* Introduction
+
+  Without any doubt ~time management~ is a cornerstone of
+  productivity. Hence lets take a closer look at this technique:
+
+  #+BEGIN_QUOTE
+  
+  #+END_QUOTE
+* Overview
