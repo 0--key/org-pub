@@ -15,9 +15,17 @@ tags: [org, agenda, icalendar]
 * Introduction
 
   Without any doubt ~time management~ is a cornerstone of
-  productivity. Hence lets take a closer look at this technique:
+  productivity. Hence lets take a closer look at [[https://en.wikipedia.org/wiki/Time_management][this technique]]:
 
   #+BEGIN_QUOTE
-  
+  Time management is the process of planning and exercising conscious
+  control of time spent on specific activities, especially to increase
+  effectiveness, efficiency or productivity. It is a juggling act of
+  various demands of study, social life, employment, family, and
+  personal interests and commitments with the finiteness of time.
   #+END_QUOTE
+
+  The scope of this article is ~time management~ in =Emacs=, thus take
+  a look on existent toolbox inside it.
+
 * Overview
