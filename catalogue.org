@@ -25,6 +25,8 @@
 
 *** DONE org-drill
 
+** Time management
+
 
 * Emacs
 
@@ -41,6 +43,8 @@
 ** extension
 
 *** elpy
+
+** agenda
 
 * RDBMS
 
