@@ -29,3 +29,57 @@ tags: [org, agenda, icalendar]
   a look on existent toolbox inside it.
 
 * Overview
+
+** Emacs' side
+
+   As expected =Emacs= has a set of prepared tools to manage your time.
+
+*** Diary
+
+    Is an innate =Emacs'= feature:
+
+    #+BEGIN_QUOTE
+    The Emacs diary keeps track of appointments or other events on a
+    daily basis, in conjunction with the calendar. To use the diary
+    feature, you must first create a diary file containing a list of
+    events and their dates. Then Emacs can automatically pick out and
+    display the events for today, for the immediate future, or for any
+    specified date.
+    #+END_QUOTE
+
+*** Agenda
+
+    Is =Org= feature and it might be combined with the =Diary=
+
+    Seems like it is the most suitable form to compose your personal
+    time-schedule. Just write some significant points into the file in
+    accordion with special rules and using some peculiar attributes.
+
+    [[https://www.gnu.org/software/emacs/manual/html_node/org/Agenda-Views.html][Full specification]]
+
+** Google Calendar
+
+   Is an extremely powerful, flexible and convenient tool to have in
+   the hands.
+
+   #+BEGIN_QUOTE
+   Google Calendar allows users to create and edit events. Reminders
+   can be enabled for events, with options available for type and
+   time. Event locations can also be added, and other users can be
+   invited to events.
+
+   ...
+
+   Users can invite other people to events; for other Google Calendar
+   users, the event becomes visible in their calendar, and for
+   non-Google Calendar users, an email will have options for "Yes",
+   "No", or "Maybe". Privacy settings allow the user to define the
+   levels of public visibility of the entire calendar or individual
+   events. Although the calendar defaults to showing users event times
+   in their local time, users can specify a different time zone for an
+   event. Users can enable or disable the visibility of special
+   calendars, including a Birthdays calendar, that automatically
+   retrieves dates of births from a user's Google contacts and
+   displays the dates on a yearly basis, and a Holidays calendar, a
+   country-specific calendar featuring dates of special occasions.
+   #+END_QUOTE
