@@ -28,6 +28,9 @@ tags: [org, agenda, icalendar]
   The scope of this article is ~time management~ in =Emacs=, thus take
   a look on existent toolbox inside it.
 
+  The aim of this article is to show how-to compose your personal
+  agenda in =Emacs'= =Org-mode= and share it with Google Calendar.
+
 * Overview
 
 ** Emacs' side
@@ -83,3 +86,8 @@ tags: [org, agenda, icalendar]
    displays the dates on a yearly basis, and a Holidays calendar, a
    country-specific calendar featuring dates of special occasions.
    #+END_QUOTE
+
+   E.g. =Google Calendar= capable to share a personal agenda among
+   team members.
+
+* 
