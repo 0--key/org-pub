@@ -93,7 +93,135 @@ tags: [org, agenda, icalendar]
 
 * Composing agenda file(s)
 
+  Nothing especial and habitually precise defined in the official
+  documentation.
+
 * Exporting agenda file(s)
+
+  Just try to evaluate export through interactive export menu bu
+  typing: =C-c C-e c f= and get a pristine =.ics= file.
+
+  #+BEGIN_SRC sh :results output
+  cat ../lib/org/agenda/main.ics
+  #+END_SRC
+
+  #+RESULTS:
+  : BEGIN:VCALENDAR
+  : VERSION:2.0
+  : X-WR-CALNAME:main
+  : PRODID:-//Anton S. Kosinov//Emacs with Org mode//EN
+  : X-WR-TIMEZONE:EET
+  : X-WR-CALDESC:Mental Athlete ToDo List
+  : CALSCALE:GREGORIAN
+  : END:VCALENDAR
+
+  It is absolutely normal - an empty template with no events at all.
+  With purpose to catch all unfinished events and cramp it in our
+  =.ics= file you need to modify =org-icalendar-include-todo=
+  variable.
+
+  It is not a rocket science:
+  =C-h v org-icalendar-include-todo=
+
+  Following =Emacs= customization procedure I choose ~t include tasks
+  that are not in DONE state.~
+
+  Now it is time to test our customisation settings: =C-c C-e c f= and
+  review the content of =.ics= file:
+
+  #+BEGIN_SRC sh :results output
+  cat ../lib/org/agenda/main.ics
+  #+END_SRC
+
+  #+RESULTS:
+  #+begin_example
+  BEGIN:VCALENDAR
+  VERSION:2.0
+  X-WR-CALNAME:main
+  PRODID:-//Anton S. Kosinov//Emacs with Org mode//EN
+  X-WR-TIMEZONE:EET
+  X-WR-CALDESC:Mental Athlete ToDo List
+  CALSCALE:GREGORIAN
+  BEGIN:VTODO
+  UID:TODO-2a126636-8cbc-4065-a723-67b4782e0c3a
+  DTSTAMP:20180220T160118Z
+  DTSTART:20180220T180100
+  DUE:20180215T130000
+  SUMMARY:Past tenses
+  DESCRIPTION:Elaborate an initial [org-drill]\n(file:/usr/local/git/0--key/l
+   ib/org/eng_grammar.org::*Past%20simple)
+  CATEGORIES:main
+  SEQUENCE:1
+  PRIORITY:5
+  STATUS:NEEDS-ACTION
+  END:VTODO
+  BEGIN:VTODO
+  UID:TODO-9f4809fc-2266-4b84-bfae-3b885405a6aa
+  DTSTAMP:20180220T160118Z
+  DTSTART:20180209T082000
+  SUMMARY:Calendar
+  CATEGORIES:main
+  SEQUENCE:1
+  PRIORITY:5
+  STATUS:COMPLETED
+  END:VTODO
+  BEGIN:VTODO
+  UID:TODO-c7600f16-4bc0-4d1d-8eec-c68ab54cf4d4
+  DTSTAMP:20180220T160118Z
+  DTSTART:20180216T160000
+  SUMMARY:Agenda rigorous dissection
+  DESCRIPTION:• Export int .ics\n• Import into specific Google Calendar
+  CATEGORIES:main
+  SEQUENCE:1
+  PRIORITY:5
+  STATUS:NEEDS-ACTION
+  END:VTODO
+  BEGIN:VTODO
+  UID:TODO-5497d2b0-3e83-45d3-b5f1-4f62c2d5cf82
+  DTSTAMP:20180220T160118Z
+  DTSTART:20180216T170000
+  SUMMARY:Capture
+  DESCRIPTION:Make capture for org-drill items generation with minimal interr
+   uption
+  CATEGORIES:main
+  SEQUENCE:1
+  PRIORITY:5
+  STATUS:NEEDS-ACTION
+  END:VTODO
+  BEGIN:VTODO
+  UID:TODO-33c7d5ac-d8a1-474f-b4ce-a2a09fb95c04
+  DTSTAMP:20180220T160118Z
+  DTSTART:20180217T123000
+  SUMMARY:Macros
+  DESCRIPTION:To convert `voca-builder' item into `Drill'
+  CATEGORIES:main
+  SEQUENCE:1
+  PRIORITY:5
+  STATUS:NEEDS-ACTION
+  END:VTODO
+  BEGIN:VTODO
+  UID:TODO-9af7d91f-b31c-435b-8411-91d144d7a50b
+  DTSTAMP:20180220T160118Z
+  DTSTART:20180213T083000
+  SUMMARY:Introduction
+  CATEGORIES:main
+  SEQUENCE:1
+  PRIORITY:5
+  STATUS:NEEDS-ACTION
+  END:VTODO
+  BEGIN:VTODO
+  UID:TODO-d0502a28-505b-4639-b7db-d7b264dc1019
+  DTSTAMP:20180220T160118Z
+  DTSTART:20180217T133000
+  SUMMARY:Extract the binary terminology
+  CATEGORIES:main
+  SEQUENCE:1
+  PRIORITY:5
+  STATUS:NEEDS-ACTION
+  END:VTODO
+  END:VCALENDAR
+  #+end_example
+
 
 * Preparing a peculiar Google Calendar
 
