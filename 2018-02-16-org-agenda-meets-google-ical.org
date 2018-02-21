@@ -126,6 +126,28 @@ tags: [org, agenda, icalendar]
   Following =Emacs= customization procedure I choose ~t include tasks
   that are not in DONE state.~
 
+  #+BEGIN_SRC elisp :results value
+  org-icalendar-include-todo
+  #+END_SRC
+
+  #+RESULTS:
+  : t
+
+  #+BEGIN_SRC elisp :results value
+  org-icalendar-use-scheduled
+  #+END_SRC
+
+  #+RESULTS:
+  | event-if-todo |
+
+
+  #+BEGIN_SRC elisp :results value
+  org-icalendar-use-deadline
+  #+END_SRC
+
+  #+RESULTS:
+  | event-if-not-todo | todo-due |
+
   Now it is time to test our customisation settings: =C-c C-e c f= and
   review the content of =.ics= file:
 
@@ -222,6 +244,9 @@ tags: [org, agenda, icalendar]
   END:VCALENDAR
   #+end_example
 
+** Attention
+
+   If your calendar is outdated you're never seen any events
 
 * Preparing a peculiar Google Calendar
 
