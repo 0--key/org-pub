@@ -15,6 +15,23 @@ tags: [post-installation, config]
 #+PROPERTY:header-args :results output :exports both :eval no-export
 
 * The Main Purpose
+  =Elpy= is Emacs' package which allows you to automate your routine
+  tasks at ~Python~ projects.
+
+* Post-install configuration
+
+  #+BEGIN_SRC elisp
+  elpy-config
+  #+END_SRC
+
+  If something is out-dated this command should display
+  incompatibilities.
+
+  Usually it might requre to up-to-date some Pythonic packages in some
+  particular =venv= by:
+  #+BEGIN_SRC sh
+  python -m pip install --upgrade autopep8 yapf elpy
+  #+END_SRC
 
 * Core features
 
