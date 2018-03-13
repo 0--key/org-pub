@@ -1,0 +1,23 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: How to harness
+tagline: " all your cores"
+permalink: /python/processes.html
+categories: [Python]
+tags: [concurrent computation]
+---
+#+END_EXPORT
+
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
+
+* The Main Purpose
+  Is to unvail all subtleties about how-to utilize the power of CPU
+  and avert its overloading simultaneously.
+
+* Core features
+
+* Usage Cases
