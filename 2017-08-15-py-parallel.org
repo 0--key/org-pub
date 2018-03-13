@@ -18,6 +18,15 @@ tags: [concurrent computation]
   Is to unvail all subtleties about how-to utilize the power of CPU
   and avert its overloading simultaneously.
 
+* Incentives
+  #+BEGIN_QUOTE
+  A context switch may happen on a core every fixed amount of time (a
+  time slice) because the CPU automatically runs some kernel code
+  periodically to permit preemption. Depending on the scheduler's
+  rules, a task can be run for many time slices. A context switch can
+  also occur when a thread calls functions that makes it unrunnable
+  (eg. waiting for IO).
+  #+END_QUOTE
 * Core features
 
 * Usage Cases
