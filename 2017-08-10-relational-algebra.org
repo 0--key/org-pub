@@ -1,0 +1,25 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: Postgres
+tagline: " as algebraic tool"
+permalink: /postgres/relational_algebra.html
+categories: [Emacs, DevEnv, Postgres]
+tags: [relational algebra, theory]
+---
+#+END_EXPORT
+
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
+
+* The Main Purpose
+  As all other theories the ~relational algebra~ subsumes all
+  knowledge around relational data, elicit several general rules and
+  unvail a bit of usage cases and possible limitations, thresholds,
+  caveats.
+
+* Core features
+
+* Usage Cases
