@@ -137,7 +137,8 @@ tags: [post-installation, arrangement, automation]
    #+BEGIN_SRC sh
      apt-get install -y htop emacs25 emacs25-common-non-dfsg gkrellm \
      openssh-server virtualenv sqlite3 mariadb-client mariadb-server git \
-     postgresql-doc postgresql postgresql-client pgadmin3 pgadmin3-data
+     postgresql-doc postgresql postgresql-client pgadmin3 pgadmin3-data \
+     mercurial
    #+END_SRC
 
 ** Docker
