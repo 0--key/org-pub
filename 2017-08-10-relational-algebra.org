@@ -14,12 +14,45 @@ tags: [relational algebra, theory]
 #+TOC: headlines 2
 #+PROPERTY:header-args :results output :exports both :eval no-export
 
-* The Main Purpose
-  As all other theories the ~relational algebra~ subsumes all
-  knowledge around relational data, elicit several general rules and
-  unvail a bit of usage cases and possible limitations, thresholds,
-  caveats.
+* Goal Definition
 
-* Core features
+  The aim of this article is a revealing ~relational algebra~ core
+  features by usage of ~Postgres~.
+
+* The Definitions
+
+  It's neccessary to introduce several important /objects of study/ in
+  this particular volume:
+
+** Data model
+
+   The core object in this volume is the ~relational data model~ that
+   is a well-known data stored in the tables. Therefore this type of
+   data has several peculiar properties:
+
+   - /Tables/ − In relational data model, relations are saved in the
+     format of ~Tables~. This format stores the relation among entities.
+     A table has rows and columns, where rows represents records and
+     columns represent the attributes.
+   - /Tuple/ − A single row of a table, which contains a single record
+     for that relation is called a tuple.
+   - /Relation instance/ − A finite set of tuples in the relational
+     database system represents relation instance. Relation instances
+     do not have duplicate tuples.
+   - /Relation schema/ − A relation schema describes the relation name
+     (table name), attributes, and their names.
+   - /Relation key/ − Each row has one or more attributes, known as
+     relation key, which can identify the row in the relation (table)
+     uniquely.
+   - /Attribute domain/ − Every attribute has some pre-defined value
+     scope, known as attribute domain.
+
+
+** Relational Algebra
+
+   As all other theories the ~relational algebra~ subsumes all
+   knowledge around /relational data/, elicits a plethora of general
+   rules and unvails a bit of usage cases and possible limitations,
+   thresholds, caveats etc.
 
 * Usage Cases
