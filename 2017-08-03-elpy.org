@@ -15,8 +15,20 @@ tags: [post-installation, config]
 #+PROPERTY:header-args :results output :exports both :eval no-export
 
 * The Main Purpose
+
   =Elpy= is Emacs' package which allows you to automate your routine
   tasks at ~Python~ projects.
+
+* An empty =venv= creation
+
+  It might be convenient to use a blank =venv= to test the innate
+  =Elpy= features, thus create a couple ones:
+
+  #+BEGIN_SRC sh
+  rmdir /usr/local/share/pyVenvs/alioth/elpy3/
+  #+END_SRC
+
+  #+RESULTS:
 
 * Post-install configuration
 
