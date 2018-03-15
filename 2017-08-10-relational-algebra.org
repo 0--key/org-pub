@@ -55,7 +55,7 @@ tags: [relational algebra, theory]
    rules and unvails a bit of usage cases and possible limitations,
    thresholds, caveats etc.
 
-* Prerequsites
+* Prerequisites
 
   As you might expect exactly to achieve our aim we restricted to
   manually create a test dataset with several tables (relations) there
