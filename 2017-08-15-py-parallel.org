@@ -30,6 +30,15 @@ tags: [concurrent computation]
   (eg. waiting for IO).
   #+END_QUOTE
 
+  I.e. =Linux= kernel spreads load automatically across all cores
+  /sequentially/ and *not* uniformly. E.g. if some particular process
+  demands a lot of computation it should be /sequentially executed/ at
+  all CPU's cores one by one.
+
+  Of course it's absolutely normal for habitual usage, but what if
+  we'll take an attempt to spread some process across all CPU's cores
+  /simultaneously/?
+
 * Core features
 
 * Usage Cases
