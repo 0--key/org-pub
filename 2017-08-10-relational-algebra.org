@@ -62,9 +62,27 @@ tags: [relational algebra, theory]
   and a few interconnections among them.
 
 ** Sample database creation
+   #+BEGIN_SRC sh
+   createdb relalgebra
+   #+END_SRC
+
+   #+RESULTS:
 
 ** Main table
 
+   #+BEGIN_SRC sql :engine postgresql :database relalgebra
+     CREATE TABLE person (
+	    id int,
+	    name varchar(80),
+	    address varchar(150),
+	    hobby varchar(25)
+	    );
+   #+END_SRC
+
+   #+RESULTS:
+   : CREATE TABLE
+
+   Batch insert:
 ** Satellite tables
 
 * The core operations set
