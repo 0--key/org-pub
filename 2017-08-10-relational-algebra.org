@@ -93,6 +93,35 @@ tags: [relational algebra, theory]
 
    #+RESULTS:
    : INSERT 0 4
+
+** Project operator
+
+   Produces table containging subset of columns of argument table
+
+   #+BEGIN_SRC sql :engine postgresql :database relalgebra :results value
+   SELECT * FROM person;  -- entire dataset
+   #+END_SRC
+
+   #+RESULTS:
+   |   id | name | address    | hobby  |
+   |------+------+------------+--------|
+   | 1123 | John | 123 Main   | stamps |
+   | 1123 | John | 123 Main   | coins  |
+   | 5556 | Mary | 7 Lake Dr. | hiking |
+   | 9876 | Bart | 5 Pine St. | stamps |
+
+   #+BEGIN_SRC sql :engine postgresql :database relalgebra :results value
+   SELECT name, hobby FROM person;  -- projection
+   #+END_SRC
+
+   #+RESULTS:
+   | name | hobby  |
+   |------+--------|
+   | John | stamps |
+   | John | coins  |
+   | Mary | hiking |
+   | Bart | stamps |
+
 ** Satellite tables
 
 * The core operations set
