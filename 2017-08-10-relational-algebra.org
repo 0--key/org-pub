@@ -83,6 +83,16 @@ tags: [relational algebra, theory]
    : CREATE TABLE
 
    Batch insert:
+   #+BEGIN_SRC sql :engine postgresql :database relalgebra
+     INSERT INTO person VALUES
+	    (1123, 'John', '123 Main', 'stamps'),
+	    (1123, 'John', '123 Main', 'coins'),
+	    (5556, 'Mary', '7 Lake Dr.', 'hiking'),
+	    (9876, 'Bart', '5 Pine St.', 'stamps');
+   #+END_SRC
+
+   #+RESULTS:
+   : INSERT 0 4
 ** Satellite tables
 
 * The core operations set
