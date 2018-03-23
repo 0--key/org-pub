@@ -39,6 +39,18 @@ tags: [concurrent computation]
   we'll take an attempt to spread some process across all CPU's cores
   /simultaneously/?
 
-* Core features
+* Average approach
 
-* Usage Cases
+  Exactly to demonstrate /threads/ and /processeses/ behaviour on the
+  multi-core CPU lets sequentially create:
+
+  - one infinite computational /process/;
+  - one finite computational /process/;
+  - split the latter onto several /threads/;
+  - spread the latter onto several cores.
+
+
+  As result we should load /all/ cores with some particular
+  computation and measure its duration.
+
+* Single infinite computational process
