@@ -1,0 +1,29 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: How-to evaluate Emacs
+tagline: " regardless your needs"
+permalink: /emacs/customization.html
+categories: [Emacs]
+tags: [config, customizing]
+---
+#+END_EXPORT
+
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
+
+
+* Preamble
+
+  When you're using Emacs at the daily basics it might be helpful to
+  organize a persistent storage for all your macros for convenient
+  usage later.
+
+* Load Path
+  
+
+* Bookmarks management
+
+* Task switching
