@@ -22,8 +22,53 @@ tags: [config, customizing]
   usage later.
 
 * Load Path
-  
 
-* Bookmarks management
+  Is a list of all folders on your host which are ~visible~ for
+  =Emacs= by default.
 
-* Task switching
+  #+BEGIN_SRC elisp
+  (print load-path)
+  #+END_SRC
+
+  #+RESULTS:
+  | /home/alioth/.emacs.d/elpa/bookmark+-20170731.1658 | /home/alioth/.emacs.d/elpa/color-theme-20080305.34 | /home/alioth/.emacs.d/elpa/docker-20180222.717 | /home/alioth/.emacs.d/elpa/docker-tramp-20170206.1925 | /home/alioth/.emacs.d/elpa/elfeed-20180222.746 | /home/alioth/.emacs.d/elpa/elpy-20180302.2001 | /home/alioth/.emacs.d/elpa/company-20180228.1550 | /home/alioth/.emacs.d/elpa/ereader-20170809.2201 | /home/alioth/.emacs.d/elpa/find-file-in-project-20180224.2103 | /home/alioth/.emacs.d/elpa/google-translate-20170713.119 | /home/alioth/.emacs.d/elpa/highlight-indentation-20171218.137 | /home/alioth/.emacs.d/elpa/howdoi-20150203.1643 | /home/alioth/.emacs.d/elpa/htmlize-20171017.141 | /home/alioth/.emacs.d/elpa/ivy-20180225.744 | /home/alioth/.emacs.d/elpa/json-mode-20170719.2205 | /home/alioth/.emacs.d/elpa/json-reformat-20160212.53 | /home/alioth/.emacs.d/elpa/json-snatcher-20150511.2047 | /home/alioth/.emacs.d/elpa/key-chord-20160227.438 | /home/alioth/.emacs.d/elpa/langtool-20170917.2154 | /home/alioth/.emacs.d/elpa/magit-20180304.1221 | /home/alioth/.emacs.d/elpa/git-commit-20180202.321 | /home/alioth/.emacs.d/elpa/ghub-20180303.1225 | /home/alioth/.emacs.d/elpa/let-alist-1.0.5 | /home/alioth/.emacs.d/elpa/magit-popup-20180217.910 | /home/alioth/.emacs.d/elpa/marshal-20180124.439 | /home/alioth/.emacs.d/elpa/ht-20180129.1434 | /home/alioth/.emacs.d/elpa/org-20180305 | /home/alioth/.emacs.d/elpa/org-bullets-20171127.526 | /home/alioth/.emacs.d/elpa/org-pomodoro-20171108.1314 | /home/alioth/.emacs.d/elpa/alert-20180122.1242 | /home/alioth/.emacs.d/elpa/log4e-20170401.604 | /home/alioth/.emacs.d/elpa/gntp-20141024.1950 | /home/alioth/.emacs.d/elpa/pcache-20170105.1414 | /home/alioth/.emacs.d/elpa/pyvenv-20180304.712 | /home/alioth/.emacs.d/elpa/tablist-20170219.1935 | /home/alioth/.emacs.d/elpa/travis-20150825.438 | /home/alioth/.emacs.d/elpa/request-20170131.1747 | /home/alioth/.emacs.d/elpa/pkg-info-20150517.443 | /home/alioth/.emacs.d/elpa/epl-20180205.1249 | /home/alioth/.emacs.d/elpa/s-20180227.51 | /home/alioth/.emacs.d/elpa/voca-builder-20161101.945 | /home/alioth/.emacs.d/elpa/popup-20160709.729 | /home/alioth/.emacs.d/elpa/with-editor-20180217.548 | /home/alioth/.emacs.d/elpa/async-20180119.533 | /home/alioth/.emacs.d/elpa/xml+-20170727.1651 | /home/alioth/.emacs.d/elpa/dash-20180206.2124 | /home/alioth/.emacs.d/elpa/yasnippet-20180304.1607 | /etc/emacs25 | /etc/emacs | /usr/local/share/emacs/25.1/site-lisp | /usr/local/share/emacs/site-lisp | /usr/share/emacs25/site-lisp/dictionaries-common | /usr/share/emacs/25.1/site-lisp | /usr/share/emacs/25.1/site-lisp/dictionaries-common | /usr/share/emacs/site-lisp | /usr/share/emacs/25.1/lisp | /usr/share/emacs/25.1/lisp/vc | /usr/share/emacs/25.1/lisp/url | /usr/share/emacs/25.1/lisp/textmodes | /usr/share/emacs/25.1/lisp/progmodes | /usr/share/emacs/25.1/lisp/play | /usr/share/emacs/25.1/lisp/org | /usr/share/emacs/25.1/lisp/nxml | /usr/share/emacs/25.1/lisp/net | /usr/share/emacs/25.1/lisp/mh-e | /usr/share/emacs/25.1/lisp/mail | /usr/share/emacs/25.1/lisp/leim | /usr/share/emacs/25.1/lisp/language | /usr/share/emacs/25.1/lisp/international | /usr/share/emacs/25.1/lisp/gnus | /usr/share/emacs/25.1/lisp/eshell | /usr/share/emacs/25.1/lisp/erc | /usr/share/emacs/25.1/lisp/emulation | /usr/share/emacs/25.1/lisp/emacs-lisp | /usr/share/emacs/25.1/lisp/cedet | /usr/share/emacs/25.1/lisp/calendar | /usr/share/emacs/25.1/lisp/calc | /usr/share/emacs/25.1/lisp/obsolete |
+
+* Choose the right path
+
+  Seems like for our purposes (with shared access for all users)
+  =/usr/local/share/emacs/site-lisp/= is the most pertinent place to put all
+  your existing macros. Lets create the separate file for this purpose:
+
+  #+BEGIN_SRC sh
+  ls -la /usr/local/share/emacs/site-lisp/
+  #+END_SRC
+
+  #+RESULTS:
+  | total      | 152 |        |       |        |     |    |       |              |    |                                            |
+  | drwxrwsr-x |   2 | root   | staff |   4096 | Aug | 30 |  2017 | 0            |    |                                            |
+  | drwxrwsr-x |   4 | root   | staff |   4096 | Oct |  4 | 07:33 | ..           |    |                                            |
+  | lrwxrwxrwx |   1 | alioth | staff |     42 | Aug | 30 |  2017 | default.el   | -> | /usr/local/git/0--key/lib/Emacs/defalut.el |
+  | -rw-r--r-- |   1 | alioth | staff | 136859 | Nov | 13 |  2016 | org-drill.el |    |                                            |
+  | -rw-r--r-- |   1 | alioth | staff |   6061 | Jul | 22 |  2017 | org-learn.el |    |                                            |
+
+
+  *Tip*
+  This operation requires the /write access/
+
+  #+BEGIN_SRC sh
+  touch /usr/local/share/emacs/site-lisp/custom-macros.el
+  #+END_SRC
+
+  #+RESULTS:
+
+  #+BEGIN_SRC sh
+  ls /usr/local/share/emacs/site-lisp/
+  #+END_SRC
+
+  #+RESULTS:
+  | custom-macros.el |
+  | default.el       |
+  | org-drill.el     |
+  | org-learn.el     |
+
+* Put your macros there
