@@ -72,3 +72,26 @@ tags: [config, customizing]
   | org-learn.el     |
 
 * Put your macros there
+
+* Put special string
+  at the bottom of your file:
+  #+BEGIN_EXAMPLE
+  (provide 'custom-macros)
+  #+END_EXAMPLE
+
+* Create symlink
+  It might be helpful to allocate all your customizations under the
+  *VC* system, so:
+  #+BEGIN_SRC sh
+  # mv /usr/local/share/emacs/site-lisp/custom-macros.el /usr/local/git/0--key/lib/Emacs/
+  ln -s /usr/local/git/0--key/lib/Emacs/custom-macros.el /usr/local/share/emacs/site-lisp/
+  ls /usr/local/share/emacs/site-lisp/
+  #+END_SRC
+
+  #+RESULTS:
+  | custom-macros.el |
+  | default.el       |
+  | org-drill.el     |
+  | org-learn.el     |
+
+* Add =custom-macros= to your =init= file
