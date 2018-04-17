@@ -31,6 +31,11 @@ tags: [coding, algorithms]
    only if n is an happy number.
    #+END_QUOTE
 ** Solution
+
+   Obviously that any repetition in sequence imply an infinite loop.
+   Therefore it should be easily detected as a signal of
+   =unhappiness=.
+
    #+BEGIN_SRC python
      def is_happy(n):
 	 if n in [1, 7]:
