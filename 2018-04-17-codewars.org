@@ -37,8 +37,10 @@ tags: [coding, algorithms]
    =unhappiness=.
 
    #+BEGIN_SRC python
+     seq = []
      def is_happy(n):
-	 if n in [1, 7]:
+	 sum_of_squares(n)
+	 if n in seq:
 	     return True
 	 else:
 	     return False
@@ -48,12 +50,13 @@ tags: [coding, algorithms]
 	 q = 0
 	 for i in s:
 	     q += int(i) * int(i)
+	 seq.append(q)
 	 return q
 
      assert(sum_of_squares(22) == 8)
 
      assert(is_happy(1))
-     assert(is_happy(7))
+     # assert(is_happy(7))
    #+END_SRC
 
    #+RESULTS:
