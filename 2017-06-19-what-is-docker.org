@@ -71,7 +71,7 @@ tags: [docker, container, intro]
    over. In a microservice architecture, it’s possible to only scale
    the resources required for a particular service, focusing on the
    bottlenecks in the system. In a monolith, it’s scale everything or
-   noth‐ ing, resulting in wasted resources.
+   nothing, resulting in wasted resources.
 
    In terms of complexity, microservices are a double-edged sword.
    Each individual microservice should be easy to understand and modify.
