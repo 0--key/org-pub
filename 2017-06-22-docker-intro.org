@@ -160,7 +160,7 @@ tags: [docker, intro]
    #+RESULTS:
    : I'm a busybox!
 
-* Simple local webapp
+* Simple local webapp                                              :noexport:
 
 ** Nginx launching
    
@@ -412,7 +412,7 @@ tags: [docker, intro]
 
    By typing =C-c C-c=
 
-* Redis official image
+* Redis official image                                             :noexport:
 
 ** Search
    #+BEGIN_SRC sh
