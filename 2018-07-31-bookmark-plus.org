@@ -1,0 +1,66 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: Bookmarking everything
+tagline: " by means of Emacs' toolbox"
+permalink: /emacs/bookmark-plus.html
+categories: [literate programming, emacs]
+tags: [Bookmark+, manual+]
+---
+#+END_EXPORT
+
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
+* Preface
+
+  =Bookmark+= is such sophisticated Emacs' extension thus it might be
+  unavoidable to use it on the daily basic ASAP. Of course as all
+  useful packages it is a bit knotty documented which implicate
+  difficulties in its taming. This article is a demure attempt to
+  dismantle a hidden power of =Bookmark+= by rigorous dissection all
+  its features, functions and even quirks.
+* Distinct features
+
+  #+BEGIN_QUOTE
+  Richer bookmarks. They record more. They are more accurate.
+  #+END_QUOTE
+** An optional annotation
+*** Any file, URL or bookmark as annotation
+** Sophisticated tagging
+*** Any tag might be even an attribute
+** Multitude bookmarks with the same name
+   but distinct by their content
+** Meta-data about bookmark
+*** Counting number of visits
+** A sequence of bookmarks as a chain
+   it is possible to tie together several bookmarks
+** The region of text as bookmark
+** An adaptive relocation
+   much precise when text nearby your bookmark was changed
+
+
+* Additional features
+
+** Autofile
+
+** Dired
+
+** Dired-tree
+
+** Bookmark-list
+
+** Bookmark-file
+
+** Desktop
+
+** Gnus
+
+** Non-file (buffer)
+
+** Function
+
+** Sequence (composite)
+
+ C-x p M-w
