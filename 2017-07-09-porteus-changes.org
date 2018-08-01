@@ -47,8 +47,8 @@ tags: [live USB, load to RAM, configuration]
 
    As an opposite experience I have had ~Ubuntu~ USB-stick which was
    similar by functionality and it was completely ruined after ~70
-   PC's boot-ing. Seems like /incremental changes writing/ demolished
-   it. And in addition it is unavoidable there.
+   PC's boot-ing. Seems like an /incremental changes writing/
+   demolished it. And in addition it is unavoidable there.
 
 ** Conclusion
    
@@ -61,7 +61,12 @@ tags: [live USB, load to RAM, configuration]
 
 ** Open =root= terminal session
 
+   Open a =super-user= terminal session through
+   ~Menu->Sustem->SuperUser~
+
 ** Mount partition with ~Porteus~
+
+   In most cases it would be a ~double-click~ on desktop icon.
 
 ** Generate:
 
@@ -74,7 +79,7 @@ tags: [live USB, load to RAM, configuration]
    Where =/mnt/sdc1/porteus/optional/= is a path to your ~Porteus~
    Live-USB, and =extension_001.xzm= is a filename itself.
 
-** Edit config:
+** Edit the config file:
 
    #+BEGIN_EXAMPLE
    # nano /mnt/sdc1/boot/syslinux/porteus.cfg
