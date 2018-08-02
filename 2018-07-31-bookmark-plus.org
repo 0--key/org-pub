@@ -63,4 +63,29 @@ tags: [Bookmark+, manual+]
 
 ** Sequence (composite)
 
- C-x p M-w
+** Keyboard-macro set
+
+** Set of ~Lisp~ variables
+
+** Snippet
+
+* Installation
+
+  Seems it is an absolutely trivial procedure even for inexperienced
+  ~Emacs~ user in particular :-) All what you need to do is to do it
+  by your package manager.
+
+  1. Open ~Emacs~ package manager: =M-x packages-list-packages=;
+  2. Find ~Bookmark+~ there: =C-s kmark=;
+  3. Choose it for installation by typing =i=;
+  4. Execute your choice by typing =x=;
+  5. Have a ~fun~
+
+
+* Helpful help
+
+  Naturally it would be extremely tough task to grasp all these
+  features at once, thus it is considerably easy to try to do this
+  by studying ~Bookmark+~ embedded documentation.
+
+C-x p M-w
