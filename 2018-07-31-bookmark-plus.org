@@ -84,6 +84,24 @@ tags: [Bookmark+, manual+]
    5. Have a ~fun~
 
 
+** Current state of things
+
+   Nowadays the current state of things shifted significantly and
+   you'll restricted to install ~Bookmark+~ from its sources, because
+   for unknown reason this package was expelled out from ~Emacs~
+   official repositories. Habitually there are several steps to
+   accomplish:
+
+   1. Download all necessary files;
+   2. Put it together somewhere you're allocated ~Emacs~ lisp;
+   3. Add this folder to ~load-path~:
+      #+BEGIN_SRC elisp
+      (add-to-list 'load-path "/usr/local/share/emacs/site-lisp/bookmark-plus/")
+      #+END_SRC
+   4. Allow to ~Emacs~ launch this pacage at start by putting:
+      #+BEGIN_SRC elisp
+      requre 'bookmark+
+      #+END_SRC
 
 * Helpful help
 
