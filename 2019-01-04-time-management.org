@@ -1,0 +1,19 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: Manage your life
+tagline: " by means of Emacs' toolbox"
+permalink: /emacs/time-management.html
+categories: [Learning Technology, Emacs]
+tags: [agenda, time-management]
+---
+#+END_EXPORT
+
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
+* Intro
+* Brief Overview
+* Prerequisites
+* Initial Approach
