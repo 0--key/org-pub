@@ -116,7 +116,7 @@ tags: [Bookmark+, manual+]
 * Test launch
 
   I'm absolutely sure that you already have several bookmarks, hence
-  it would be great to look at them in a bit different point fo view.
+  it would be curious to look at them in a bit different point fo view.
   ~Bookmark+~ pervectly compatible with vanilla version of
   ~bookmarks~, thus all that require to do is just type =C-x p e= and
   take a peep at the same object at completlely new angle.
