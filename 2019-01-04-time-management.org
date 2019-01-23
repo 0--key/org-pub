@@ -13,7 +13,22 @@ tags: [agenda, time-management]
 #+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
 #+TOC: headlines 2
 #+PROPERTY:header-args :results output :exports both :eval no-export
-* Intro
+* Intro 
+
+  The time itself is a such devious matter thus in most cases bipedal
+  avoid managing it at all. Actually it is so easy just to follow the
+  mainstream and check the time once a year. At another hand the time
+  and its amount is a huge crucial part of every productive deed:
+  there are tons of time-related chores, habits and activities.
+
+
+
 * Brief Overview
 * Prerequisites
+** Circadian rhythm
+** Sunrise */* Sunset
+** Moon phases
+** Moonrise */* Moonset
+** Seasons of the year
+
 * Initial Approach
