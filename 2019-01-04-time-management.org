@@ -16,20 +16,19 @@ tags: [agenda, time-management]
 * Intro 
 
   The time itself is a such devious matter thus in most cases bipedal
-  blithely avoid to manage it at all. Actually it is so easy just to
+  blithely avoid managing it at all. Actually it is so easy just to
   follow the mainstream and check the time once at the New Year party.
   At another hand the time and its amount is a huge crucial part of
-  every /productive/ deed: there are tons of time-related chores, habits
-  and activities.
+  every /productive/ deed: there are tons of time-related chores,
+  habits and activities.
 
 * Brief Overview
 
-  For clarity purpose let's imagine two opposite approach to some
+  For clarity purpose let's imagine three opposite approach to some
   particular time management:
 
-  - 7-days (5/2  9 - 5) rythm;
+  - 7-days (5/2  9 - 5) rhythm;
   - 28-day New Moon cycle;
-  - 96-day three-cycle.
   - 96-day three-cycle or a quorter of the year.
   
 ** A trivial week
