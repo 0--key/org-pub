@@ -47,10 +47,28 @@ tags: [agenda, time-management]
 
 
 * Prerequisites
+
+  Zero prefious experience in time-management and whatsoever.
+
+* Predicates
 ** Circadian rhythm
+
+   Natural and regular relation among cognitive ability and part of
+   the day. Obiously, that its has a peack in the morning, and a
+   couple waves in the afternoon.
+
 ** Sunrise */* Sunset
+
+   We talk now about the innate bipedals inclination to behave
+   themselves depending of the phases of our Sun. There are lurks and
+   owls in particular, and them has specific idiosyncrasies related
+   with time of the day.
+
 ** Moon phases
+
+   
 ** Moonrise */* Moonset
 ** Seasons of the year
+
 
 * Initial Approach
