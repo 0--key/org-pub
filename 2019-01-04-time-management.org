@@ -13,19 +13,20 @@ tags: [agenda, time-management]
 #+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
 #+TOC: headlines 2
 #+PROPERTY:header-args :results output :exports both :eval no-export
+
 * Intro 
 
   The time itself is a such devious matter thus in most cases bipedal
   blithely avoid managing it at all. Actually it is so easy just to
-  follow the mainstream and check the time once at the New Year party.
-  At another hand the time and its amount is a huge crucial part of
-  every /productive/ deed: there are tons of time-related chores,
-  habits and activities.
+  follow the mainstream and check the time just once at the New Year
+  party. At another hand the time and its amount is a huge crucial
+  part of every /productive/ deed: there are tons of time-related
+  chores, habits and activities.
 
-  Productivity by its definition relates on time: in general it is the
-  amount of your efforts along a some time. It's not surprise at all
-  that is a speed, consistency and some times even a rapture to
-  produce some unique and ingenious.
+  /Productivity/ by its definition relates on time: in general it is
+  the amount of your efforts along a some time. It's not surprise at
+  all that is a speed, consistency and sometimes even a rapture to
+  produce some unique and ingenious stuff.
 
   Reasonable to emphasize that relation depending on the main aim of
   your activity - high hopes require a lot of time. So, what if try to
@@ -35,7 +36,7 @@ tags: [agenda, time-management]
 
 * Brief Overview
 
-  For clarity purpose let's imagine three opposite approach to some
+  For clarity purpose let's imagine three opposite approaches to some
   particular time management:
 
   - 7-days (5/2  9 - 5) rhythm;
@@ -50,18 +51,13 @@ tags: [agenda, time-management]
 
 ** A single Moon cycle
 
-   Well-known as a women cycle.
+   Well-known as a women cycle. 
 
 ** A moon quarter
 
    As it might be obvious - just free Moon's months in the sequence.
 
-
-* Prerequisites
-
-  Zero prefious experience in time-management and whatsoever.
-
-
+   
 * Predicates
 ** Circadian rhythm
 
@@ -81,6 +77,13 @@ tags: [agenda, time-management]
    
 ** Moonrise */* Moonset
 ** Seasons of the year
+
+
+* Prerequisites
+
+  Zero prefious experience in time-management and whatsoever.
+
+
 
 
 * Initial Approach
