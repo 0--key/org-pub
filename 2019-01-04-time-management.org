@@ -32,6 +32,7 @@ tags: [agenda, time-management]
   tame your personal time-table and define it on several hundreds of
   days ahead with a much achievable clarity and order.
 
+
 * Brief Overview
 
   For clarity purpose let's imagine three opposite approach to some
@@ -59,6 +60,7 @@ tags: [agenda, time-management]
 * Prerequisites
 
   Zero prefious experience in time-management and whatsoever.
+
 
 * Predicates
 ** Circadian rhythm
