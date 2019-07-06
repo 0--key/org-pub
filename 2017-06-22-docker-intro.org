@@ -158,6 +158,14 @@ tags: [docker, intro]
    #+END_SRC
 
    #+RESULTS:
+   : Unable to find image 'busybox:latest' locally
+   : latest: Pulling from library/busybox
+   : 8e674ad76dce: Pulling fs layer
+   : 8e674ad76dce: Verifying Checksum
+   : 8e674ad76dce: Download complete
+   : 8e674ad76dce: Pull complete
+   : Digest: sha256:c94cf1b87ccb80f2e6414ef913c748b105060debda482058d2b8d0fce39f11b9
+   : Status: Downloaded newer image for busybox:latest
    : I'm a busybox!
 
 * Simple local webapp                                              :noexport:
