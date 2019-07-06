@@ -16,6 +16,9 @@ tags: [docker, intro]
 
 * Concept description
 
+  The purpose of following below is to unveil few questions about
+  =Docker= Eco-system.
+
 * Installation
 
   Seems like all you need is to follow up through the comprehensive
