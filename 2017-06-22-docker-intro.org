@@ -18,6 +18,9 @@ tags: [docker, intro]
 
 * Installation
 
+  Seems like all you need is to follow up through the comprehensive
+  manual from [[https://docs.docker.com/install/linux/docker-ce/#set-up-the-repository][the official site]].
+
 * Check-up
 
 ** Version
