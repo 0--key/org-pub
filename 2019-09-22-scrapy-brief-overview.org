@@ -1,0 +1,12 @@
+#+BEGIN_HTML
+---
+layout: post
+title: Gathering Big Data
+tagline: " in Babel"
+permalink: /scrapy/intro.html
+categories: [scrapy, emacs, literate programming]
+tags: [python3, emacs, scrapy overview]
+---
+#+END_HTML
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
