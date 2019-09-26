@@ -1,0 +1,31 @@
+layout: post
+title: Gathering Big Data
+tagline: " from dynamic pages"
+permalink: /spynner/initial_installation_with_python2.html
+categories: [spynner, emacs, literate programming]
+tags: [python2, emacs, spynner installation]
+---
+#+END_HTML
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+* Installation Preparation
+  ~Spynner~ is a large and complex package and requres several
+  additional packages to be install in a system-wide manner:
+  
+    #+BEGIN_SRC sh :results output :eval never-export
+    sudo apt-get install python-dev python-pip libxml2-dev libxslt1-dev zlib1g-dev libffi-dev libssl-dev
+    sudo apt-get install python3 python3-dev python3-venv
+    #+END_SRC
+
+* Virtual Environment
+    #+BEGIN_SRC sh :results output :eval never-export
+    virtualenv /usr/local/share/pyVenvs/alioth/spy2nner
+    ls -la /usr/local/share/pyVenvs/alioth/ | grep spy2nner
+    #+END_SRC
+
+    #+RESULTS:
+    : New python executable in /usr/local/share/pyVenvs/alioth/spy2nner/bin/python2
+    : Also creating executable in /usr/local/share/pyVenvs/alioth/spy2nner/bin/python
+    : Installing setuptools, pkg_resources, pip, wheel...done.
+    : Running virtualenv with interpreter /usr/bin/python2
+    : drwxr-sr-x  7 alioth staff 4096 Sep 26 11:28 spy2nner
