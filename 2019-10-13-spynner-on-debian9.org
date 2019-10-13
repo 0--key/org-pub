@@ -1,0 +1,30 @@
+#+BEGIN_HTML
+---
+layout: post
+title: Python emulates web-browser
+tagline: " in Babel"
+permalink: /emacs/spynner-on-Debian9.html
+categories: [emacs, literate programming]
+tags: [python3, emacs, spynner, installation, Debian9]
+---
+#+END_HTML
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+
+* Preamble
+  From the [[https://github.com/makinacorpus/spynner][official repository]]
+  #+BEGIN_QUOTE
+  Spynner is a stateful programmatic web browser module for Python. It is based upon PyQT and WebKit.
+  It supports Javascript, AJAX, and every other technology that !WebKit is able to handle (Flash, SVG, ...).
+  Spynner takes advantage of JQuery. a powerful Javascript library that makes the interaction with pages
+  and event simulation really easy.
+
+  Using Spynner you would able to simulate a web browser with no GUI (though a browsing window can be
+  opened for debugging purposes), so it may be used to implement crawlers or acceptance testing tools.
+
+  See usage [[https://github.com/makinacorpus/spynner/tree/master/src/spynner/tests/spynner.rst][here]]
+  #+END_QUOTE
+
+  The main goal of this article is to install spynner with Python3 on
+  your local host with =Debian9= OS.
+
