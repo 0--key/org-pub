@@ -29,3 +29,38 @@ tags: [python2, emacs, spynner installation]
     : Installing setuptools, pkg_resources, pip, wheel...done.
     : Running virtualenv with interpreter /usr/bin/python2
     : drwxr-sr-x  7 alioth staff 4096 Sep 26 11:28 spy2nner
+
+* Activate ~venv~:
+    #+BEGIN_SRC elisp :eval never-export
+    (pyvenv-activate "/usr/local/share/pyVenvs/alioth/spy2nner")
+    #+END_SRC
+
+    #+RESULTS:
+
+* UpGrade ~pip~
+    #+BEGIN_SRC sh :results output :eval never-export
+    pip install --upgrade pip
+    #+END_SRC
+
+    #+RESULTS:
+    : DEPRECATION: Python 2.7 will reach the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 won't be maintained after that date. A future version of pip will drop support for Python 2.7. More details about Python 2 support in pip, can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support
+    : Requirement already up-to-date: pip in /usr/local/share/pyVenvs/alioth/spy2nner/lib/python2.7/site-packages (19.2.3)
+
+
+* Installing dependencies
+    #+BEGIN_SRC sh :results output :eval never-export
+    pip install sip
+    #+END_SRC
+
+    #+RESULTS:
+    : DEPRECATION: Python 2.7 will reach the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 won't be maintained after that date. A future version of pip will drop support for Python 2.7. More details about Python 2 support in pip, can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support
+    : Requirement already satisfied: sip in /usr/local/share/pyVenvs/alioth/spy2nner/lib/python2.7/site-packages (4.19.13)
+
+* Testing
+    #+BEGIN_SRC python :results output :eval never-export
+    import spynner
+    #+END_SRC
+
+    #+RESULTS:
+
+
