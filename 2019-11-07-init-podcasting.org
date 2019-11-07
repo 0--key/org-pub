@@ -1,0 +1,12 @@
+#+BEGIN_HTML
+---
+layout: post
+title: Podcasting as a social intelligence tool
+tagline: " pronounce it for yourself first"
+permalink: /social_intelligence/podcasting_intro.html
+categories: [social_intelligence, podcast]
+tags: [pronounce, thinking, audio, transcript]
+---
+#+END_HTML
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
