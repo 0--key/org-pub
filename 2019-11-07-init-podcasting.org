@@ -12,6 +12,20 @@ tags: [pronounce, thinking, audio, transcript]
 #+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
 * Intro
 
+  Japanese proverb about sudden pedestrian whisper in the ear.
+
+  Our world over-fulfilled by noisees, and, in opposite lack of
+  information. Thus, narrowly speaking, there are an ambudance of
+  distorted or even wrong approaches to learning.
+
+
+  The best one is obvious - be diligent in your studying. Naturally it
+  is hard and painstaking chore, but... Just be patient.
+
+  The second best is all around your attention. You should immerse
+  your mind in the subject, wiping out all disractions.
+
+  And the third is the last one - just think by your own wit.
 
 
 * Average usage
