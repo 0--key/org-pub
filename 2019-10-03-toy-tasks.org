@@ -8,3 +8,18 @@ tags: [python2, emacs, spynner installation]
 #+END_HTML
 #+STARTUP: showall
 #+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+* Clock's hands function
+
+  Hi, here's your problem today. This problem was recently asked by
+  Microsoft:`
+
+  Given a time in the format of hour and minute, calculate the angle of
+  the hour and minute hand on a clock.
+
+def calcAngle(h, m):
+# Fill this in.
+
+print calcAngle(3, 30)
+# 75
+print calcAngle(12, 30)
+# 165
