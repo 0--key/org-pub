@@ -10,3 +10,23 @@ tags: [pronounce, thinking, audio, transcript]
 #+END_HTML
 #+STARTUP: showall
 #+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+* Intro
+
+
+
+* Average usage
+
+* Acoustic requrements
+
+* Repetition technique
+
+* Core idea
+
+# All stuff above should be less than 30 seconds
+
+* Marina
+
+** Just think by your own English
+
+   Nothing at all, just to try do it by yourself several times, perhaps 10 minutes long. Doesn't sound fun?
+   Of cause it shouldn't happen in a single night. It might be elaborated and cultivated continuously.
