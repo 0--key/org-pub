@@ -1,0 +1,33 @@
+#+BEGIN_HTML
+---
+layout: post
+title: Alpha-radioactive isotope detection
+tagline: " in ventilation air on a nuclear power plant"
+permalink: /ukraine/zaporizhzha-nuclear-power-plant/alpha-radioactivity.html
+categories: [PWR, ZNPP]
+tags: [nuclear_thechnology]
+---
+#+END_HTML
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+
+* Incident description
+
+  Registration of low alpha radioactivity on the surface of aerosol
+  analytic filter after transmission of 0.288E+02 cubical meters of
+  outlet ventilation air through it.
+
+* Instruments
+
+  - Automatized system of radioactivity monitoring;
+  - Alpha-detectors from the set of 3 different radiometers;
+
+
+* Method description
+
+* Results
+
+* Analysis
+
+
+0.864E+05 seconds
