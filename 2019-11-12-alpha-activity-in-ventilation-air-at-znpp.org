@@ -25,9 +25,28 @@ tags: [nuclear_thechnology]
 
 * Method description
 
+  Aeroslols aspiratation of outlet ventilation air on an analytical
+  filter 0.2E-04 square meters in diameter with a constant flow 20
+  L/minute during 24 hours with further registration of its surface
+  pollution by scintillation alpha-detectors.
+
 * Results
 
+
+  Each sample has initially alpha radioactivity in the range from
+  0.8E+00 Bq to 0.17E+01 Bq;
+  
+  Alpha-radioactivity of each sample has decreased twice in a
+  half-hour time.
+
+  Alpha-radioactivity has ceased after 2 days for every sample. 
+
 * Analysis
+
+  Therefore all these measurments are implemented by the set of 3
+  different radiometers and they are almost identical in value, it
+  might be assumed that it is truly detection of alpha-particles. 
+
 
 
 0.864E+05 seconds
