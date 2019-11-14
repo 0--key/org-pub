@@ -39,13 +39,15 @@ tags: [nuclear_thechnology]
   Alpha-radioactivity of each sample has decreased twice in a
   half-hour time.
 
-  Alpha-radioactivity has ceased after 2 days for every sample. 
+  Alpha-radioactivity becomes completely undetectable after 2 days for
+  every sample.
 
 * Analysis
 
   Therefore all these measurments are implemented by the set of 3
   different radiometers and they are almost identical in value, it
-  might be assumed that it is truly detection of alpha-particles. 
+  might be considered that this observed phenomenon is truly detection
+  of alpha-particles.
 
 
 
