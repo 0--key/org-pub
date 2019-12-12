@@ -25,10 +25,10 @@ tags: [nuclear_thechnology]
 
 * Method description
 
-  Aeroslols aspiratation of outlet ventilation air on an analytical
-  filter 0.2E-04 square meters in diameter with a constant flow 20
-  L/minute during 24 hours with further registration of its surface
-  pollution by scintillation alpha-detectors.
+  An outlet ventilation air aeroslols sedimentation on the surface of
+  analytical filter 0.2E-04 square meters in diameter with a constant
+  flow 20 L/minute during 24 hours and further measurment of its
+  surface pollution by scintillation alpha-detectors.
 
 * Results
 
@@ -36,8 +36,8 @@ tags: [nuclear_thechnology]
   Each sample has initially alpha radioactivity in the range from
   0.8E+00 Bq to 0.17E+01 Bq;
   
-  Alpha-radioactivity of each sample has decreased twice in a
-  half-hour time.
+  Alpha-radioactivity of each sample has decreased twice in an one
+  hour.
 
   Alpha-radioactivity becomes completely undetectable after 2 days for
   every sample.
@@ -49,6 +49,16 @@ tags: [nuclear_thechnology]
   might be considered that this observed phenomenon is truly detection
   of alpha-particles.
 
+  As any free source of information doesn't contain any relevant
+  information about that particular observations, it might be
+  perceived as a new, initially detected phenomenon.
+
+  Bear in mind that air in the points of aspiration is a mixture of
+  all outlet ventilation systems of each power unit and fact that most
+  of that systems don't contain alpha-radioactive isotopes in a
+  measurable amount, it might be concluded that on average exist
+  several sources of alpha-active radionucliedes exhausting in several
+  particular points.
 
 
-0.864E+05 seconds
+ 0.864E+05 seconds
