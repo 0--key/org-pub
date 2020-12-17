@@ -1,0 +1,18 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: Python
+tagline: " inside out dissection"
+permalink: /python/first_book.html
+categories: [Learning Technology, Python]
+tags: [testing]
+---
+#+END_EXPORT
+
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
+
+* Intro
+  This is a simple export test!
