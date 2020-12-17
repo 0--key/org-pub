@@ -15,4 +15,24 @@ tags: [testing]
 #+PROPERTY:header-args :results output :exports both :eval no-export
 
 * Intro
-  This is a simple export test!
+
+** Gestation
+
+*** Core ideas:
+
+    - Black (Pandorra) Box approach;
+    - Programming languages genealygy:
+      + Atavisms:
+	+ 72 char per string;
+    - Codex as a phenomena disclosure;
+    - Related material allocation on two pages at once;
+    - Conversion into a fiction book;
+    - Pomodoro technique realization;
+
+*** Primary material gathering;
+
+*** Indexing as an ordered sequence;
+
+*** Wrapping and extension.
+
+
