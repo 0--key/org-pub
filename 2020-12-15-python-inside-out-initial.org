@@ -1,10 +1,10 @@
 #+BEGIN_EXPORT html
 ---
 layout: post
-title: Python
-tagline: " inside out dissection"
+title: Dissecting Python
+tagline: " inside out"
 permalink: /python/book/introduction.html
-categories: [Python Inside Out]
+categories: [Python Dissection]
 tags: [book, intro]
 ---
 #+END_EXPORT
@@ -28,6 +28,14 @@ tags: [book, intro]
    - Pomodoro technique realization;
 
 ** Primary material gathering;
+
+*** Books
+
+*** Quotes
+
+*** Snippets
+
+*** Thoughts
 
 ** Indexing as an ordered sequence;
 
