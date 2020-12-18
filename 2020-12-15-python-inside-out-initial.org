@@ -55,6 +55,21 @@ tags: [book, intro]
 
 *** Thoughts
 
+**** General observations:
+     
+     - Cognitive dissonance and size of manuals;
+     - An average age of readers;
+     - Avoidance of source code reading (escapism); 
+     - Testing as an innate tool to learn for humans;
+     - Testing in CS is a comparatively young concept;
+     - Einstellung effect in writing book about programming;
+     - Debugging is a major task for a typical programmer and often it
+       consumes up to 90% of their efforts to develop and maintain
+       software nowadays;
+
+
+
+    
 ** Indexing as an ordered sequence;
 
 ** Wrapping and extension.
