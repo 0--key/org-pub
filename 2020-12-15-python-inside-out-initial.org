@@ -55,6 +55,25 @@ tags: [book, intro]
 
 *** Thoughts
 
+    Why computer programming is a such tough task for humans? There
+    are several plain predicatives to deem that is just overthinked.
+
+**** 5 basic concepts of any programming language:
+
+     - Variables;
+     - Data structures;
+     - Control structures;
+     - Syntax;
+     - Tools;
+
+
+     
+**** Major paradigms of programming:
+
+     - Imperative;
+     - Logical;
+     - Functional;
+     - Object-oriented;
 **** General observations:
      
      - Cognitive dissonance and size of manuals;
