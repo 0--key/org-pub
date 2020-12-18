@@ -33,6 +33,24 @@ tags: [book, intro]
 
 *** Quotes
 
+    - "Programs must be written for people to read, and only incidentally  
+     for machines to execute."
+
+     Abelson & Sussman, SICP, preface to the first edition
+
+    - "Short words are best and the old words when short are best of all."
+
+      Winston Churchill
+
+    - “The glass is neither half empty nor half full. It’s simply
+      larger than it needs to be.”
+
+      Grace Hopper
+
+    - “Manage things. Lead people.”
+
+      Grace Hopper
+
 *** Snippets
 
 *** Thoughts
