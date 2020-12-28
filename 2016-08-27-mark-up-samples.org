@@ -117,7 +117,7 @@ tags: [html export, mark-up, samples]
       #+CAPTION: This is a table with lines around and between cells
       #+ATTR_HTML: :border 2 :rules all :frame border
 
-      | Firts row | Second row | Third row |
+      | First row | Second row | Third row |
       |-----------+------------+-----------|
       | this      | is         | a test    |
 
@@ -127,14 +127,14 @@ tags: [html export, mark-up, samples]
       #+ATTR_HTML: :alt four figures image :title Color test :align right  
    #+END_EXAMPLE
    Some arbitrary text to unveil ~align~ property in *html5* attribute.
-   Seems like it might look nice and pretty with no any unnecessary
+   Seems like it might look nice and pretty without any unnecessary
    complications.
       #+CAPTION: An image with color samples
       #+ATTR_HTML: :alt four figures image :title Color test :align right
       [[http://0--key.github.io/assets/img/color_test.png]]
 
 * Horizontal line
-  line at least of 5 dashes
+  Composed at least of 5 dashes
 #+BEGIN_EXAMPLE
   ------
 #+END_EXAMPLE
