@@ -112,7 +112,8 @@ tags: [book, intro]
   Even if any book can't be pretentious, this one doesn't. It is
   exactly the essense out of learning how to program machines to
   execute yours and only yours orders in a most effective way of
-  studying: by sequentially testing its features.
+  studying: by sequentially, from the elementary ones to most complex,
+  testing its features.
 
 
   The main paradigm of writing are clarity and density, so I take an
