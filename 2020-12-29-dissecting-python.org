@@ -81,30 +81,39 @@ tags: [book, template]
     
 ** Indexing as an ordered sequence;
 
-
 ** Wrapping and extension.
 
 
 * Intro
+
+  The paramount goal of writing is absolute clarity and density, so it
+  might sound a quite strange. In reality it is much complex task than
+  it seems and a plethora of already written manuals about programming
+  is a strict evidence to interpret this as a _spoiled approach_.
+  Unconciously people do things in a some particular way and it seems
+  a queer mistake. Seldom it is convenient to look backward and find
+  your reactive behaviour as your own error.
+
+  Why you can't ask yourself: "Why it is so difficult to read any book
+  about programming?" Easy and habitual way to take it as granted. But
+  for me it is a usual challenge. May be I am personally excessively
+  curious and persistent to digging up to core of matter. And I have
+  to say something about programming.
+
+  Programming is easy by its nature and overcomplicated by the men. It is
+  just something wrong with approach to study it. As you might notice
+  casual programming handbook often dismantle programming wrong.
+  Absolutely wrong. It uses English as a stem language, and
+  programming language itself dissected by large set of
+  _pseudo-tests_ -
 
   Even if any book can't be pretentious, this one doesn't. It is
   exactly the essense out of learning how to program machines to
   execute yours and only yours orders in a most effective way of
   studying: by sequentially, from the elementary ones to most complex,
   testing its features.
+	  
 
-
-  The main paradigm of writing are clarity and density, so I take an
-  attempt to unvail the TOC, wich is intentionally composed in a
-  self-disclosure manner:
-
-
-  TOC:
-  - Intro
-  - Quotes
-  - General observations
-	
-  
 * Quotes
     #+BEGIN_QUOTE
     Programs must be written for people to read, and only incidentally
