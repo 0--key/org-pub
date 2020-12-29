@@ -27,9 +27,13 @@ tags: [book, intro]
    - Conversion into a fiction book;
    - Pomodoro technique realization;
 
+
 ** Primary material gathering;
 
 *** Books
+
+    - "Learning Python" & "Python Pocket Reference" by Mark Lutz
+    - 
 
 *** Quotes
 
@@ -74,6 +78,13 @@ tags: [book, intro]
      - Logical;
      - Functional;
      - Object-oriented;
+
+       
+
+     So, at the first glance all these concepts seem clear, dense and
+     terse.
+
+     
 **** General observations:
      
      - Cognitive dissonance and size of manuals;
@@ -90,6 +101,7 @@ tags: [book, intro]
 
     
 ** Indexing as an ordered sequence;
+
 
 ** Wrapping and extension.
 
