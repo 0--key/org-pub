@@ -139,5 +139,44 @@ tags: [book, intro]
     - Enter the Object
 	
   
+* Quotes
+    #+BEGIN_QUOTE
+    Programs must be written for people to read, and only incidentally
+      for machines to execute."
+   #+HTML: <p align="right">
+   - Abelson & Sussman, SICP, preface to the first edition
+   #+HTML: </p>   
+   #+END_QUOTE
+
+   -----
+   #+BEGIN_QUOTE
+    "Short words are best and the old words when short are best of
+      all."
+   #+HTML: <p align="right">
+   - Winston Churchill
+   #+HTML: </p>   
+   #+END_QUOTE
+
+   -----
+
+    #+BEGIN_QUOTE
+    “The glass is neither half empty nor half full. It’s simply larger
+      than it needs to be.”
+   #+HTML: <p align="right">
+   - Grace Hopper
+   #+HTML: </p>   
+   #+END_QUOTE
+
+   -----
+
+   #+BEGIN_QUOTE
+    “Manage things. Lead people.”
+   #+HTML: <p align="right">
+   - Grace Hopper
+   #+HTML: </p>   
+   #+END_QUOTE
+
+   -----
+
 
 
