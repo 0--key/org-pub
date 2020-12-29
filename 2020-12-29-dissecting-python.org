@@ -17,17 +17,6 @@ tags: [book, intro]
 * Gestation                                                        :noexport:
 
 ** General observations:
-** Core ideas:
-
-   - Conversion a boring manual into a fiction book;
-   - Black (Pandorra) Box approach;
-   - Programming languages genealogy:
-     + Atavisms:
-       + 72 char per string;
-   - Codex as a phenomena disclosure;
-   - Related material allocation on two pages at once;
-   - Pomodoro technique realization;
-
 
 ** Primary material gathering;
 
@@ -86,17 +75,6 @@ tags: [book, intro]
      terse.
 
      
-**** General observations:
-     
-     - Cognitive dissonance and size of manuals;
-     - An average age of readers;
-     - Avoidance of source code reading (escapism); 
-     - Testing as an innate tool to learn for humans;
-     - Testing in CS is a comparatively young concept;
-     - Einstellung effect in writing book about programming;
-     - Debugging is a major task for a typical programmer and often it
-       consumes up to 90% of their efforts to develop and maintain
-       software nowadays;
 
 
 
@@ -125,18 +103,6 @@ tags: [book, intro]
   - Intro
   - Quotes
   - General observations
-  - Predicatives
-    - Why Python
-    - Why pure Python
-  - Synthesis
-    - Testing as a tool of ology
-    - A dumb testing set (test the test itself)
-    - Testing Python innate constants
-      - Boolean operations
-      - Ariphmetics
-    - Innate types of data testing
-    - Enter the Function
-    - Enter the Object
 	
   
 * Quotes
@@ -179,4 +145,76 @@ tags: [book, intro]
    -----
 
 
+* General observations:
+     
 
+** Debugging is a major task
+
+
+   for a typical programmer and often it consumes up to 90% of their
+   efforts to develop and maintain software nowadays;
+
+
+** Cognitive dissonance and size of manuals
+
+   There are tons of material and most of it represents ~programming
+   language~ in an imperative style.
+
+
+** An average age of readers
+
+   
+** Testing as an innate tool to learn for humans;
+   - Testing in CS is a comparatively young concept;
+
+
+** Einstellung effect in writing book about programming;
+
+
+** Reading as a tourture 
+
+   Avoidance of source code reading (escapism);
+
+
+* Several acid notations
+
+
+* Predicatives
+
+** Why Python
+
+** Why pure Python
+
+
+* Deduction
+
+  - Conversion a boring manual into a fiction book;
+  - Black (Pandorra) Box approach;
+  - Programming languages genealogy:
+    + Atavisms:
+      + 72 char per string;
+  - Codex as a phenomena disclosure;
+  - Related material allocation on two pages at once;
+  - Pomodoro technique realization;
+
+
+* Testing as a tool of ology
+
+
+** A dumb testing set (test the test itself)
+
+
+** Testing Python innate constants
+
+*** Boolean operations
+
+*** Arithmetics
+
+
+* Innate datatypes testing
+
+
+* Enter the Function
+
+
+* Enter the Object
