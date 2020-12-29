@@ -185,6 +185,8 @@ tags: [book, template]
 
 ** Why pure Python
 
+** Already existing solutions overview
+
 
 * Deduction
 
