@@ -36,7 +36,7 @@ tags: [book, intro]
     - "Learning Python" & "Python Pocket Reference" by Mark Lutz
     - 
 
-*** Quotes
+*** DONE Quotes
 
     - "Programs must be written for people to read, and only incidentally  
      for machines to execute."
