@@ -16,15 +16,16 @@ tags: [book, intro]
 
 * Gestation                                                        :noexport:
 
+** General observations:
 ** Core ideas:
 
+   - Conversion a boring manual into a fiction book;
    - Black (Pandorra) Box approach;
-   - Programming languages genealygy:
+   - Programming languages genealogy:
      + Atavisms:
        + 72 char per string;
    - Codex as a phenomena disclosure;
    - Related material allocation on two pages at once;
-   - Conversion into a fiction book;
    - Pomodoro technique realization;
 
 
