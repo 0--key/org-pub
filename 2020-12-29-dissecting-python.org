@@ -16,8 +16,6 @@ tags: [book, template]
 
 * Gestation                                                        :noexport:
 
-** General observations:
-
 ** Primary material gathering;
 
 *** Books
