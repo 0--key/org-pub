@@ -109,4 +109,34 @@ tags: [book, intro]
 
 * Intro
 
-  The _noexport_ tag test
+  Even if any book can't be pretentious, this one doesn't. It is
+  exactly the essense out of learning how to program machines to
+  execute yours and only yours orders in a most effective way of
+  studying: by sequentially testing its features.
+
+
+  The main paradigm of writing are clarity and density, so I take an
+  attempt to unvail the TOC, wich is intentionally composed in a
+  self-disclosure manner:
+
+
+  TOC:
+  - Intro
+  - Quotes
+  - General observations
+  - Predicatives
+    - Why Python
+    - Why pure Python
+  - Synthesis
+    - Testing as a tool of ology
+    - A dumb testing set (test the test itself)
+    - Testing Python innate constants
+      - Boolean operations
+      - Ariphmetics
+    - Innate types of data testing
+    - Enter the Function
+    - Enter the Object
+	
+  
+
+
