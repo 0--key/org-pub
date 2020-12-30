@@ -82,7 +82,7 @@ tags: [book, template]
 ** Wrapping and extension.
 
 
-* Intro
+* Harsh overture
 
   The paramount goal of writing is absolute clarity and density, so it
   might sound a quite strange. In reality it is much complex task than
@@ -112,7 +112,7 @@ tags: [book, template]
   testing its features.
 	  
 
-* Quotes
+* Relevant quotes
     #+BEGIN_QUOTE
     Programs must be written for people to read, and only incidentally
       for machines to execute."
@@ -186,7 +186,13 @@ tags: [book, template]
 * Several acid notations
 
 
-* Predicatives
+* Defining predicatives intentionally
+
+It's naturally to draw the boundaries around your invention. It's
+neither a silver bullet nor panacea for learners. Cognition demands a
+lot of time for reading and digesting each chapter. Nothing
+misterious.
+
 
 ** Why Python
 
@@ -195,7 +201,7 @@ tags: [book, template]
 ** Already existing solutions overview
 
 
-* Deduction
+* Thurther deduction
 
   - Conversion a boring manual into a fiction book;
   - Black (Pandorra) Box approach;
@@ -207,7 +213,7 @@ tags: [book, template]
   - Pomodoro technique realization;
 
 
-* Testing as a tool of ology
+* Testing as a nodal ology tool
 
 
 ** A dumb testing set (test the test itself)
