@@ -13,32 +13,33 @@ tags: [concept, overview]
 #+OPTIONS: tags:nil toc:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
 #+TOC: headlines 2
 
-* Short intro							      :intro:
 
-** What is Literate Programming?
+* What Literate Programming is?
 
-   #+BEGIN_QUOTE
-   Let us change our traditional attitude to the construction of
-   programs: Instead of imagining that our main task is to instruct a
-   computer what to do, let us concentrate rather on explaining to
-   human beings what we want a computer to do.
+  A paragon of clarity with the aim to reveal some concept, written in
+  any programming language.
 
-   The practitioner of literate programming can be regarded as an
-   essayist, whose main concern is with exposition and excellence of
-   style. Such an author, with thesaurus in hand, chooses the names of
-   variables carefully and explains what each variable means. He or
-   she strives for a program that is comprehensible because its
-   concepts have been introduced in an order that is best for human
-   understanding, using a mixture of formal and informal methods that
-   reinforce each other.
+  #+BEGIN_QUOTE
+  Let us change our traditional attitude to the construction of
+  programs: Instead of imagining that our main task is to instruct a
+  computer what to do, let us concentrate rather on explaining to
+  human beings what we want a computer to do.
 
-   #+HTML: <p align="right">
-   – Donald Knuth
-   #+HTML: </p>
-   #+END_QUOTE
+  The practitioner of literate programming can be regarded as an
+  essayist, whose main concern is with exposition and excellence of
+  style. Such an author, with thesaurus in hand, chooses the names of
+  variables carefully and explains what each variable means. He or
+  she strives for a program that is comprehensible because its
+  concepts have been introduced in an order that is best for human
+  understanding, using a mixture of formal and informal methods that
+  reinforce each other.
 
-   -----
-** What is programming challenge?
+  – *Donald Knuth*
+
+  #+END_QUOTE
+
+  -----
+** What is programming challenge?                                  :noexport:
 
    #+BEGIN_QUOTE
    Believe it or not, any course in computer programming covers /all/
