@@ -16,7 +16,7 @@ tags: [book, template]
 
 * Gestation                                                        :noexport:
 
-** Primary material gathering;
+** TODO Primary material gathering;
 
 *** Books
 
@@ -43,9 +43,11 @@ tags: [book, template]
 
       Grace Hopper
 
-*** Snippets
+*** TODO Snippets
+    - Docs about testing;
+    - Docs about working with source code in Babel;
 
-*** Thoughts
+*** TODO Thoughts
 
     Why computer programming is a such tough task for humans? There
     are several plain predicatives to deem that is just overthinked.
