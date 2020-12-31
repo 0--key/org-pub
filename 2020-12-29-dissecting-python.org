@@ -84,6 +84,10 @@ tags: [book, template]
 
 * Harsh overture
 
+      #+CAPTION: An image with color samples
+      #+ATTR_HTML: :alt four figures image :title Color test :align right
+      [[http://0--key.github.io/assets/img/color_test.png]]
+
   The paramount goal of writing is absolute clarity and density, so it
   might sound a quite strange. In reality, it is much complex task
   than it seems and a plethora of already written manuals about
@@ -214,6 +218,10 @@ misterious.
 
 
 * Testing as a nodal ology tool
+
+      #+CAPTION: An image with color samples
+      #+ATTR_HTML: :alt An infant :title Infant building a tower
+      [[http://0--key.github.io/assets/img/pydes/infant-building-a-tower.jpeg]]
 
 If you're observed an infant behavior strictly enough you might
 notice that it is a /silent (they can't talk yet) testing how things
