@@ -94,7 +94,52 @@ tags: [book, template]
   might sound a quite strange. In reality, it is much complex task
   than it seems and a plethora of already written manuals about
   programming is a strict evidence to interpret this as a _spoiled
-  approach_. Unconsciously people do things in a some particular way
+  approach_. In contrary: “Why men avoid reading and study some common
+  things as programming in just one book? Is it /really/ so boring?”
+
+  My grandma told me “Eugene Onegin” in just three evenings. She knew
+  each string in the poem's sequence(!) It was so astounding and 40
+  years later I still remember it. Not the poem itself! The
+  remembrance of no-limit boundaies for human mind. Now I'm can
+  conclude that only natural language is so complex and
+  overcomplicated to transmit such long message for a such long time.
+
+  30 years ago, in 1991 I became a programmer. My tool was a quite
+  advanced micro-calculator programmed manually in a psudo-hexadecimal
+  directives. It was incredibly precise, and it definitely were games
+  there! “The fly of a bumblebee” named one.
+
+  Further where were many programming languages studied by the manual
+  testing, and in 2016 I push my head in to the wall. After sufficient
+  time any piece of my programs became unreadable and seem so knotty
+  like some aliens do it by his left toe. The same observation is True
+  for programs written not by me. What the crap is going on!
+
+  “Why we spawn such degenerative programs?”: I asked myself and seeking
+  for clue 4 years in deep contemplation.
+
+  And now I definitely know why it is so ugly with writing programs
+  now. Not a secret at all. The clue to this puzzle is the nature of
+  humans, a large set of caveats in their cognitive thinking:
+
+  - =Do anything and anytime like others do=
+
+    If all you know about did something successfully, all what you
+    need to do is to mimic them. In other words it is ~heard style~.
+
+  - =If it is so old - it is True by the age=
+
+    A misconseption from our young childhood. Based on ~All adults are
+    genious because they're old.~
+
+  - =You can't change it as you like=
+
+    Naturally if a man following his prejudices a long time anough to
+    do nothing at all in the shame to do something wrong. ~Yes, he just
+    can't do it. Period.~
+  
+
+  Unconsciously people do things in a some particular way
   and it seems a queer mistake. It is not common to find your reactive
   behavior as your own error looking backward.
 
