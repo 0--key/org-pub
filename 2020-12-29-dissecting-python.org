@@ -74,6 +74,27 @@ tags: [book, template]
      So, at the first glance all these concepts seem clear, dense and
      terse.
 
+**** Wrong approach in studying
+
+     Let's make a brisk glance on the history of programming
+     languages. In the most cases it would shade the light on
+     question: “How does it ever happen?”
+
+     It is not secret that coding and computing by electronic
+     macnihens is a relatevely fossil lore for humans. I suppose it
+     was 1940s as an early begining. It was a straightforward coding
+     due to absence of high-level programming languages.
+
+
+     In 1950s Grace Hopper achived success and implement on practive
+     her idea of compilation human-written programs into
+     machine-readable set of precise instructions. The gestation of
+     high-level programming languges started.
+     
+     The plehora of new and modern human-readable hight-level
+     programming languages was announced in 1970s due to widely
+     spreaded idea to compile the programm into the source code
+     (mostly unreadable by humans).
      
 
 
