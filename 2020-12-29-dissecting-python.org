@@ -49,8 +49,15 @@ tags: [book, template]
 
 *** TODO Thoughts
 
-    Why computer programming is a such tough task for humans? There
-    are several plain predicatives to deem that is just overthinked.
+**** Footnotes with new words meaning
+
+**** __main__ in thef footer
+
+     as a sign of uncompetence - run a =Python= program in your
+     terminal doesn't seem a good idea. At all. 
+
+     Why computer programming is a such tough task for humans? There
+     are several plain predicatives to deem that is just overthinked.
 
 **** 5 basic concepts of any programming language:
 
