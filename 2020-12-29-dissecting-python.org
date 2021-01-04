@@ -103,9 +103,11 @@ tags: [book, template]
      spreaded idea to compile the programm into the source code
      (mostly unreadable by humans).
      
+**** Separate folder with tests
 
-
-
+     It will serve as an yeast for your further usage as a backbone
+     for Python development
+    
     
 ** Indexing as an ordered sequence;
 
