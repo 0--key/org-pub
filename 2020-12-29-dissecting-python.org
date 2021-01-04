@@ -108,6 +108,14 @@ tags: [book, template]
      It will serve as an yeast for your further usage as a backbone
      for Python development
     
+**** Python actual version
+
+     There are two =Python= branches and the youngest one will serve us
+     as a subject of our deductive dissection. Dow you heard about
+     ~Black Box https://www.guru99.com/black-box-testing.html~ approach
+     in study? Yes, it is so old by the nature, and innovative nowadays
+     in software testing only. Not in learning practice once again due
+     the stunt prejudice about the age of practicioqneer.
     
 ** Indexing as an ordered sequence;
 
