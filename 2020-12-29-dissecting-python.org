@@ -93,12 +93,13 @@ tags: [book, template]
      In 1950s Grace Hopper achived success and implement on practive
      her idea of compilation human-written programs into
      machine-readable set of precise instructions. The gestation of
-     high-level programming languges started.
+     high-level programming languges started since.
      
      The plehora of new and modern human-readable hight-level
      programming languages was announced in 1970s due to widely
-     spreaded idea to compile the programm into the source code
-     (mostly unreadable by humans).
+     spreaded idea to write programs as a human-friendly text and
+     compile it later into the source code (mostly unreadable by
+     humans) executable by machines at least.
      
 **** Separate folder with tests
 
