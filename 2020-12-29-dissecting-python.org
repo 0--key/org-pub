@@ -49,8 +49,6 @@ tags: [book, template]
 
 *** TODO Thoughts
 
-**** Footnotes with new words meaning
-
 **** __main__ in thef footer
 
      as a sign of uncompetence - run a =Python= program in your
@@ -68,7 +66,6 @@ tags: [book, template]
      - Tools;
 
 
-     
 **** Major paradigms of programming:
 
      - Imperative;
@@ -117,11 +114,15 @@ tags: [book, template]
      in software testing only. Not in learning practice once again due
      the stunt prejudice about the age of practicioqneer.
     
+
+**** DONE Footnotes with new words meaning
+
 ** Indexing as an ordered sequence;
 
 ** Wrapping and extension.
 
 
+   
 * Harsh overture
 
       #+CAPTION: An image with color samples
@@ -301,7 +302,8 @@ misterious.
   - Related material allocation on two pages at once;
   - Pomodoro technique realization;
 
-
+[fn:Nodal: denoting a point in a network or diagram at which lines or
+pathways intersect or branch.]
 * Testing as a nodal ology tool
 
       #+CAPTION: An image with color samples
