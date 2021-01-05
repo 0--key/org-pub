@@ -18,31 +18,6 @@ tags: [book, template]
 
 ** TODO Primary material gathering;
 
-*** Books
-
-    - "Learning Python" & "Python Pocket Reference" by Mark Lutz
-    - 
-
-*** DONE Quotes
-
-    - "Programs must be written for people to read, and only incidentally  
-     for machines to execute."
-
-     Abelson & Sussman, SICP, preface to the first edition
-
-    - "Short words are best and the old words when short are best of all."
-
-      Winston Churchill
-
-    - “The glass is neither half empty nor half full. It’s simply
-      larger than it needs to be.”
-
-      Grace Hopper
-
-    - “Manage things. Lead people.”
-
-      Grace Hopper
-
 *** TODO Snippets
     - Docs about testing;
     - Docs about working with source code in Babel;
@@ -116,7 +91,34 @@ tags: [book, template]
      the stunt prejudice about the age of practicioqneer.
     
 
-**** DONE Footnotes with new words meaning
+**** DONE False Footnotes with new words meaning
+
+     Inappropriate veiw and feel.
+
+*** DONE Quotes
+
+    - "Programs must be written for people to read, and only incidentally  
+     for machines to execute."
+
+     Abelson & Sussman, SICP, preface to the first edition
+
+    - "Short words are best and the old words when short are best of all."
+
+      Winston Churchill
+
+    - “The glass is neither half empty nor half full. It’s simply
+      larger than it needs to be.”
+
+      Grace Hopper
+
+    - “Manage things. Lead people.”
+
+      Grace Hopper
+
+*** Books
+
+    - "Learning Python" & "Python Pocket Reference" by Mark Lutz
+    - 
 
 ** Indexing as an ordered sequence;
 
