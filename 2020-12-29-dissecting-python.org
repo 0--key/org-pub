@@ -129,7 +129,8 @@ tags: [book, template]
 * Harsh overture
 
       #+CAPTION: Test failure
-      #+ATTR_HTML: :alt Animals also test :title Unconscious testing
+      #+ATTR_HTML: :class rounded float-left :alt Animals also test
+      #+ATTR_HTML: :title Unconscious testing
       [[http://0--key.github.io/assets/img/pydes/monkey.jpeg]]
 
   The paramount goal of writing is absolute clarity and density, so it
