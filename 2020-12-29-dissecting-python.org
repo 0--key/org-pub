@@ -308,7 +308,7 @@ misterious.
 
 * Testing as a nodal ology tool
 
-      #+CAPTION: An image with color samples
+      #+CAPTION: An infant conducting test
       #+ATTR_HTML: :alt An infant :title Infant building a tower
       [[http://0--key.github.io/assets/img/pydes/infant-building-a-tower.jpeg]]
 
