@@ -128,9 +128,9 @@ tags: [book, template]
    
 * Harsh overture
 
-      #+CAPTION: An image with color samples
-      #+ATTR_HTML: :alt four figures image :title Color test :align right
-      [[http://0--key.github.io/assets/img/color_test.png]]
+      #+CAPTION: Test failure
+      #+ATTR_HTML: :alt Animals also test :title Unconscious testing
+      [[http://0--key.github.io/assets/img/pydes/monkey.jpeg]]
 
   The paramount goal of writing is absolute clarity and density, so it
   might sound a quite strange. In reality, it is much complex task
