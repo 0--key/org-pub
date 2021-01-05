@@ -303,8 +303,7 @@ misterious.
   - Related material allocation on two pages at once;
   - Pomodoro technique realization;
 
-[fn:Nodal: denoting a point in a network or diagram at which lines or
-pathways intersect or branch.]
+
 * Testing as a nodal ology tool
 
       #+CAPTION: An image with color samples
