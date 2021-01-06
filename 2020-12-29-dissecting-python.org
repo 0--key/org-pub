@@ -97,6 +97,15 @@ tags: [book, template]
      hope, as an yeast for your further usage as a backbone for Python
      development. Just pull my repository and launch the set of tests
      on your local environment.
+
+      As I can imagine it would be something
+      ==/0--key/0-py/tests/blackbox/
+
+      - Innate constants (True, False, None)
+      - Operators:
+	- Assignment
+	- Comparison (==, <, >, != etc.)
+
     
 **** Python actual version
 
