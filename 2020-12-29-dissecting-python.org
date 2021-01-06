@@ -93,8 +93,10 @@ tags: [book, template]
      
 **** Separate folder with tests
 
-     It will serve as an yeast for your further usage as a backbone
-     for Python development
+     It will serve as an essence of studying material and later, I
+     hope, as an yeast for your further usage as a backbone for Python
+     development. Just pull my repository and launch the set of tests
+     on your local environment.
     
 **** Python actual version
 
