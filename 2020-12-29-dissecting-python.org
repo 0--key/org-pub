@@ -56,7 +56,6 @@ tags: [book, template]
      - Syntax;
      - Tools;
 
-
 **** Major paradigms of programming:
 
      - Imperative;
@@ -110,6 +109,8 @@ tags: [book, template]
 **** DONE False Footnotes with new words meaning
 
      Inappropriate veiw and feel.
+
+**** DONE Align img in bootstrap
 
 *** DONE Quotes
 
