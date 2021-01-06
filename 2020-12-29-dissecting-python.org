@@ -34,6 +34,12 @@ tags: [book, template]
      - The bedrock for /high-level/ programming languages;
      - Unit-testing as a /separate approach/ in programming was
        introduced in 90s;
+
+**** Cognition inertia
+**** Appollo 11 computer
+
+     Verb --> noun approach
+
 **** __main__ in thef footer
 
      as a sign of uncompetence - run a =Python= program in your
