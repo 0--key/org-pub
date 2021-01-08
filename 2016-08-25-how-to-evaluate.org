@@ -1,4 +1,4 @@
-#+BEGIN_HTML
+#+BEGIN_EXPORT html
 ---
 layout: post
 title: Bake code inside emacs
@@ -7,48 +7,51 @@ permalink: /emacs/how-to-evaluate-code-inside-emacs.html
 categories: [emacs, literate programming, practice]
 tags: [emacs, org-mode, babel]
 ---
-#+END_HTML
+#+END_EXPORT
 #+OPTIONS: tags:nil toc:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
 
-* Prerequisites
-  
-** Emacs
-   Type in your terminal:
-     #+BEGIN_SRC sh :results output :exports both
-     emacs --version
-     #+END_SRC
 
-     #+RESULTS:
-     : GNU Emacs 27.1
-     : Copyright (C) 2020 Free Software Foundation, Inc.
-     : GNU Emacs comes with ABSOLUTELY NO WARRANTY.
-     : You may redistribute copies of GNU Emacs
-     : under the terms of the GNU General Public License.
-     : For more information about these matters, see the file named COPYING.
+* Preamble
+
+  =Org-mode= allows you to write =org= files with /live code snippets/
+  inside, evaluate them as you like and even allocate their output.
+
+* Emacs
+  Type in your terminal:
+    #+BEGIN_SRC sh :results output :exports both
+    emacs --version
+    #+END_SRC
+
+    #+RESULTS:
+    : GNU Emacs 27.1
+    : Copyright (C) 2020 Free Software Foundation, Inc.
+    : GNU Emacs comes with ABSOLUTELY NO WARRANTY.
+    : You may redistribute copies of GNU Emacs
+    : under the terms of the GNU General Public License.
+    : For more information about these matters, see the file named COPYING.
 
    
-** Org-mode
+* Org-mode
 
-   Type =M-x org-version=
-     #+BEGIN_SRC elisp :exports both
-     org-version
-     #+END_SRC
+  Type =M-x org-version=
+    #+BEGIN_SRC elisp :exports both
+    org-version
+    #+END_SRC
 
-     #+RESULTS:
-     : 9.4.4
+    #+RESULTS:
+    : 9.4.4
 
-** Language support
 
-   Check source code support languages accessible in babel. Evaluate
-   this statement in emacs:
-     #+BEGIN_SRC elisp :exports both
-     (print org-babel-load-languages)
-     #+END_SRC
+* Language support
 
-     #+RESULTS:
-     : ((python . t) (emacs-lisp . t) (shell . t) (js . t) (ditaa . t) (plantuml . t))
+  Check source code support languages accessible in babel. Evaluate
+  this statement in emacs:
+    #+BEGIN_SRC elisp :exports both
+    (print org-babel-load-languages)
+    #+END_SRC
 
-* Settings
+    #+RESULTS:
+    : ((python . t) (emacs-lisp . t) (shell . t) (js . t) (ditaa . t) (plantuml . t))
 
-* Evaluation
   
