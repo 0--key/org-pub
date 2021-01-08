@@ -1,4 +1,4 @@
-#+BEGIN_HTML
+#+BEGIN_EXPORT html
 ---
 layout: page
 title: Make a stress on words
@@ -7,7 +7,7 @@ permalink: /org-mode/mark-up-samples.html
 categories: [emacs, mark-up, org-mode, literate programming]
 tags: [html export, mark-up, samples]
 ---
-#+END_HTML
+#+END_EXPORT
 #+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
 #+STARTUP: showall
 #+TOC: headlines 2
