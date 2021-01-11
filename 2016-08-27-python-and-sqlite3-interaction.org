@@ -14,7 +14,7 @@ tags: [tutorial, samples, babel, emacs]
 
 * Definition
   The main aim of this page is to discover SQLite3 features its general
-  functionality. All tests implemented in venv with:
+  functionality. All tests implemented in =venv= with:
 
   #+BEGIN_SRC org
   #+BEGIN_SRC sh :results output :exports both
@@ -119,8 +119,9 @@ sqlite>
    to review it in a much precise manner. This interaction through
    native SQLite3 shell allows you all possible operations in a manual
    mode, but our goal is to reach much literate level of interaction.
-   We take an attempt to include and intersect emacs org-mode
-   documents, SQLite3 tables and Python flexibility.
+
+   We take an attempt to include and intersect =Emacs' org-mode=
+   documents, =SQLite3= tables and =Python= flexibility.
 -----
 #+BEGIN_QUOTE
 *Tip* To evaluate code in the snippet below you need to activate
@@ -151,8 +152,8 @@ sqlite>
 
     Now, when it is clear that SQLite3 and Python3 are installed
     properly on our host and accessible in terminal it's time to pull
-    it inside emacs org file. First of all you need ensure in
-    supported languages inside org-mode.
+    it inside emacs org file. First you need ensure in supported
+    languages inside org-mode.
 
     #+BEGIN_SRC org
     #+BEGIN_SRC elisp :results output :exports both
