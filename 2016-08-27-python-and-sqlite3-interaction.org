@@ -1,4 +1,4 @@
-#+BEGIN_HTML
+#+BEGIN_EXPORT html
 ---
 layout: post
 title: Meet SQLite3 in Babel
@@ -7,9 +7,8 @@ permalink: /python/stdlib/sqlite3/interaction.html
 categories: [org-mode, Python, SQLite3, literate programming]
 tags: [tutorial, samples, babel, emacs]
 ---
-#+END_HTML
+#+END_EXPORT
 #+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
-
 #+TOC: headlines 2
 
 * Definition
