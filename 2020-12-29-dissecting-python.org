@@ -171,14 +171,15 @@ tags: [book, template]
   My grandma told me “Eugene Onegin” in just three evenings. She knew
   each string in the poem's sequence(!) It was so astounding and 40
   years later I still remember it. Not the poem itself! The
-  remembrance of no-limit boundaies for human mind. Now I'm can
-  conclude that only natural language is so complex and
-  overcomplicated to transmit such long message for a such long time.
+  remembrance of no-limit boundaries for human mind. Now I'm can
+  conclude that only natural language is enough complex and
+  complicated to transmit such long message for a such long time.
 
   30 years ago, in 1991 I became a programmer. My tool was a quite
-  advanced micro-calculator programmed manually in a psudo-hexadecimal
-  directives. It was incredibly precise, and it definitely were games
-  there! “The fly of a bumblebee” named one.
+  advanced micro-calculator programmed manually in a
+  pseudo-hexadecimal directives. It was incredibly precise, fast as a
+  blizzard and it definitely were games there! “The fly of a
+  bumblebee” named one.
 
   Further where were many programming languages studied by the manual
   testing, and in 2016 I push my head in to the wall. After sufficient
@@ -342,7 +343,7 @@ misterious.
       [[http://0--key.github.io/assets/img/pydes/infant-building-a-tower.jpeg]]
 
 If you're observed an infant behavior strictly enough you might
-notice that it is a /silent (they can't talk yet) testing how things
+notice that it is /a silent (they can't talk yet) testing how things
 work/. With brisk ingenuity baby implements the series of conscious acts
 and it should be interpreted as experiments to examine the nature of
 events. Bear in mind its inborn origin, because every child do it
