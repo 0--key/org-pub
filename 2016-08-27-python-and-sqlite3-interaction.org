@@ -17,7 +17,7 @@ tags: [tutorial, samples, babel, emacs]
 
   #+BEGIN_SRC org
   #+BEGIN_SRC sh :results output :exports both
-  python --version
+  python3 --version
   # sqlite installed by default
   sqlite3 --version
   # host description
@@ -25,9 +25,8 @@ tags: [tutorial, samples, babel, emacs]
   ,#+END_SRC
 
   #+RESULTS:
-  : Python 3.4.3
-  : 3.8.2 2013-12-06 14:53:30 27392118af4c38c5203a04b8013e1afdb1cebd0d
-  : Linux antony-ThinkPad 3.13.0-93-generic #140-Ubuntu SMP Mon Jul 18 21:20:08 UTC 2016 i686 i686 i686 GNU/Linux
+  : Python 3.8.5
+  : Linux alioth-fujitsu 5.4.0-58-generic #64-Ubuntu SMP Wed Dec 9 08:16:25 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
   #+END_SRC
 
   #+BEGIN_QUOTE
