@@ -29,8 +29,9 @@ tags: [book, template]
      - Coding in a modern sense of it was born in 40s. It was
        something in the middle of lore and mistery;
      - The idea of /compiler/ as a middleware between humans and
-       machines was on the tip of the thong but implemented by Grace
-       Hopper titanic efforts only a decade later;
+       machines was on the tip of the tongue but implemented by Grace
+       Hopper titanic efforts and phenomenal persistence only a decade
+       later;
      - The bedrock for /high-level/ programming languages;
      - Unit-testing as a /separate approach/ in programming was
        introduced in 90s;
@@ -40,7 +41,7 @@ tags: [book, template]
 
      Verb --> noun approach
 
-**** __main__ in thef footer
+**** __main__ in their footer
 
      as a sign of uncompetence - run a =Python= program in your
      terminal doesn't seem a good idea. At all. 
