@@ -153,6 +153,10 @@ tags: [book, template]
 
 ** Wrapping and extension.
 
+* Dedication
+
+  For my tiny family
+
 
    
 * Harsh overture
