@@ -117,7 +117,6 @@ tags: [book, template]
      in software testing only. Not in learning practice once again due
      the stunt prejudice about the age of practicioqneer.
     
-
 **** DONE False Footnotes with new words meaning
 
      Inappropriate veiw and feel.
@@ -305,10 +304,10 @@ tags: [book, template]
 * General observations:
      
 
-** Debugging is a major task
+** Debugging is a major time-consuming task
 
 
-   for a typical programmer and often it consumes up to 90% of their
+   for a casual programmer and often it consumes up to 90% of their
    efforts to develop and maintain software nowadays;
 
 
@@ -382,6 +381,11 @@ compatibility of humans and testing approach for study.
 
 
 ** Testing Python innate constants
+
+   The bedrock of testing a programming language.
+
+*** Assertion and assignment
+*** True, False, None, == and = comparison, != and Not
 
 *** Boolean operations
 
