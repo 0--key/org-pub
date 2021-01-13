@@ -409,6 +409,22 @@ compatibility of humans and testing approach for study.
    import unittest
    #+END_SRC
 
+   #+NAME: true-assertion
+   #+BEGIN_SRC python
+     class TestTrue(unittest.TestCase):
+
+	 def test_true(self):
+	     self.assertTrue(True)
+   #+END_SRC
+
+   #+NAME: false-assertion
+   #+BEGIN_SRC python
+     class TestFalse(unittest.TestCase):
+
+	 def test_false(self):
+	     self.assertFalse(False)
+   #+END_SRC
+
 
 *** Assertion and assignment
 *** True, False, None, == and = comparison, != and Not

@@ -1,5 +1,6 @@
 """
-Lets discover special values and testing methods one by one
+Lets discover built-in constants True, False, None and already
+existing testing methods one by one
 
 | Method                    | Checks that          |
 |---------------------------+----------------------+
@@ -15,5 +16,18 @@ Lets discover special values and testing methods one by one
 | assertNotIn(a, b)         | a not in b           |
 | assertIsInstance(a, b)    | isinstance(a, b)     |
 | assertNotIsInstance(a, b) | not isinstance(a, b) |
+
 """
 import unittest
+
+
+class TestTrue(unittest.TestCase):
+
+    def test_true(self):
+	self.assertTrue(True)
+
+
+class TestFalse(unittest.TestCase):
+
+    def test_false(self):
+	self.assertFalse(False)
