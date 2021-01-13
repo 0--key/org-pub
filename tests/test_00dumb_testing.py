@@ -16,3 +16,4 @@ Lets discover special values and testing methods one by one
 | assertIsInstance(a, b)    | isinstance(a, b)     |
 | assertNotIsInstance(a, b) | not isinstance(a, b) |
 """
+import unittest

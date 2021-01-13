@@ -400,9 +400,15 @@ compatibility of humans and testing approach for study.
      """
    #+END_SRC
 
-** Testing Python innate constants
+* Testing Python innate constants
 
-   The bedrock of testing a programming language.
+  The bedrock of testing a programming language.
+
+   #+NAME: import-header
+   #+BEGIN_SRC python
+   import unittest
+   #+END_SRC
+
 
 *** Assertion and assignment
 *** True, False, None, == and = comparison, != and Not
