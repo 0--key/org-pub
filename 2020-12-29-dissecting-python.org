@@ -153,7 +153,17 @@ tags: [book, template]
     - "Learning Python" & "Python Pocket Reference" by Mark Lutz
     - 
 
-** Indexing as an ordered sequence;
+** Indexing as an ordered sequence
+
+*** DONE Dedication
+
+*** TODO Preface
+
+    Main incentives
+    Major aim for writing
+    Minor target
+    Satellite achievements
+    Average readers audience
 
 ** Wrapping and extension.
 
