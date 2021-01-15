@@ -404,8 +404,17 @@ compatibility of humans and testing approach for study.
      | assertNotIn(a, b)         | a not in b           |
      | assertIsInstance(a, b)    | isinstance(a, b)     |
      | assertNotIsInstance(a, b) | not isinstance(a, b) |
+
      """
+     <<import-header>>
+
+
+     <<true-assertion>>
+
+
+     <<false-assertion>>
    #+END_SRC
+
 
 * Testing Python innate constants
 
