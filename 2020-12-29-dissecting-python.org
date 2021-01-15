@@ -412,17 +412,20 @@ compatibility of humans and testing approach for study.
    #+NAME: true-assertion
    #+BEGIN_SRC python
      class TestTrue(unittest.TestCase):
-
-	 def test_true(self):
-	     self.assertTrue(True)
+    
+         def test_does_true_exist(self):  # <-- an atomic test case itself
+             self.assertTrue(True)  # <-- straight assertion
    #+END_SRC
 
    #+NAME: false-assertion
    #+BEGIN_SRC python
      class TestFalse(unittest.TestCase):
-
-	 def test_false(self):
-	     self.assertFalse(False)
+         """
+         If True does exist, what about the opposite?
+         """
+    
+         def test_does_false_exist(self):
+             self.assertFalse(False)  # the same assertion as above
    #+END_SRC
 
 

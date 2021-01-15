@@ -23,11 +23,14 @@ import unittest
 
 class TestTrue(unittest.TestCase):
 
-    def test_true(self):
-	self.assertTrue(True)
+    def test_does_true_exist(self):  # <-- an atomic test case itself
+        self.assertTrue(True)  # <-- straight assertion
 
 
 class TestFalse(unittest.TestCase):
+    """
+    If True does exist, what about the opposite?
+    """
 
-    def test_false(self):
-	self.assertFalse(False)
+    def test_does_false_exist(self):
+        self.assertFalse(False)  # the same assertion as above
