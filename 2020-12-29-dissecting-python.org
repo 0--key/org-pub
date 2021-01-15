@@ -24,6 +24,11 @@ tags: [book, template]
 
 *** TODO Thoughts
 
+**** Thesis and antithesis
+     Thesis – a statement or theory that is put forward as a premise
+     to be maintained or. proved. Antithesis – the negation or
+     contradiction of the thesis. Synthesis – the resolution of the
+     conflict between thesis and antithesis.
 **** Retrospecive analysis
 
      - Coding in a modern sense of it was born in 40s. It was
