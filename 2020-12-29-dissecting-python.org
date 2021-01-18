@@ -398,7 +398,8 @@ compatibility of humans and testing approach for study.
 
    #+BEGIN_SRC python :noweb yes :tangle tests/test_00dumb_testing.py
      """
-     Lets discover special values and testing methods one by one
+     Lets discover built-in constants True, False, None and already
+     existing testing methods one by one
 
      | Method                    | Checks that          |
      |---------------------------+----------------------+
