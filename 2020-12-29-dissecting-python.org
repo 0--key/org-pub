@@ -413,7 +413,12 @@ compatibility of humans and testing approach for study.
 
    #+NAME: import-header
    #+BEGIN_SRC python
-   import unittest
+     import unittest
+
+     """
+     This is a large comment's block of code. And it is absolutely
+     necessary.
+     """
    #+END_SRC
 
    #+NAME: true-assertion
@@ -451,7 +456,7 @@ compatibility of humans and testing approach for study.
          """
          If True does exist, what about the opposite?
          """
-    
+
          def test_does_false_exist(self):
              self.assertFalse(False)  # the same assertion as above
    #+END_SRC
