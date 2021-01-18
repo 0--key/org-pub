@@ -396,7 +396,7 @@ compatibility of humans and testing approach for study.
 
 * A dumb testing set (test the test itself)                        :noexport:
 
-   #+BEGIN_SRC python :noweb yes :tangle tests/test_00dumb_testing.py :exports none
+   #+BEGIN_SRC python :noweb yes :tangle tests/test_00dumb_testing.py
      """
      Lets discover special values and testing methods one by one
 
