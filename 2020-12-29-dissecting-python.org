@@ -423,7 +423,7 @@ compatibility of humans and testing approach for study.
 
    #+NAME: true-assertion
    #+BEGIN_SRC python
-     class TestTrue(unittest.TestCase):
+     class TestLanguageBasemet(unittest.TestCase):
 
          """
          Lets discover built-in constants True, False, None and already
@@ -446,8 +446,20 @@ compatibility of humans and testing approach for study.
 
          """
 
-         def test_does_true_exist(self):  # <-- an atomic test case itself
+         def test_does_true_ever_exist(self):  # <-- an atomic test case itself
              self.assertTrue(True)  # <-- straight assertion
+
+         def test_does_false_ever_exist(self):  #
+             self.assertFalse(False)  #
+
+         def test_does_none_ever_exist(self):  #
+             self.assertNone(None)  #
+
+         """ Now it became obious that three built-in values are well-defined
+         out of the box.  It is time to compare them against each other
+         """
+
+
    #+END_SRC
 
    #+NAME: false-assertion
