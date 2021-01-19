@@ -416,8 +416,13 @@ compatibility of humans and testing approach for study.
      import unittest
 
      """
-     This is a large comment's block of code. And it is absolutely
-     necessary.
+     By its purpose all programming languages should allow the reader to
+     understand what exactly this particular text do in a much explicit
+     manner. The real state of things requires a literate reader with a huge
+     experience exactly in reading programs and comprehension. Noticeable
+     that nowadays most programs demand from reader such proficiency that
+     it made it truly readable for the true geeks only.
+
      """
    #+END_SRC
 
