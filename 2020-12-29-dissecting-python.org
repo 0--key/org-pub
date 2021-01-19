@@ -426,6 +426,8 @@ compatibility of humans and testing approach for study.
      """
    #+END_SRC
 
+   #+RESULTS: import-header
+
    #+NAME: true-assertion
    #+BEGIN_SRC python :session test
      class TestLanguageBasemet(unittest.TestCase):
@@ -463,9 +465,9 @@ compatibility of humans and testing approach for study.
          """ Now it became obious that three built-in values are well-defined
          out of the box.  It is time to compare them against each other
          """
-
-
    #+END_SRC
+
+   #+RESULTS: true-assertion
 
    #+NAME: false-assertion
    #+BEGIN_SRC python :session test
@@ -477,6 +479,8 @@ compatibility of humans and testing approach for study.
          def test_does_false_exist(self):
              self.assertFalse(False)  # the same assertion as above
    #+END_SRC
+
+   #+RESULTS: false-assertion
 
 
 *** Assertion and assignment
