@@ -412,7 +412,7 @@ compatibility of humans and testing approach for study.
   The bedrock of testing a programming language.
 
    #+NAME: import-header
-   #+BEGIN_SRC python
+   #+BEGIN_SRC python :session test
      import unittest
 
      """
@@ -427,7 +427,7 @@ compatibility of humans and testing approach for study.
    #+END_SRC
 
    #+NAME: true-assertion
-   #+BEGIN_SRC python
+   #+BEGIN_SRC python :session test
      class TestLanguageBasemet(unittest.TestCase):
 
          """
@@ -468,7 +468,7 @@ compatibility of humans and testing approach for study.
    #+END_SRC
 
    #+NAME: false-assertion
-   #+BEGIN_SRC python
+   #+BEGIN_SRC python :session test
      class TestFalse(unittest.TestCase):
          """
          If True does exist, what about the opposite?
