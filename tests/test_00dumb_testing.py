@@ -1,12 +1,17 @@
 import unittest
 
 """
-This is a large comment's block of code. And it is absolutely
-necessary.
+By its purpose all programming languages should allow the reader to
+understand what exactly this particular text do in a much explicit
+manner. The real state of things requires a literate reader with a huge
+experience exactly in reading programs and comprehension. Noticeable
+that nowadays most programs demand from reader such proficiency that
+it made it truly readable for the true geeks only.
+
 """
 
 
-class TestTrue(unittest.TestCase):
+class TestLanguageBasemet(unittest.TestCase):
 
     """
     Lets discover built-in constants True, False, None and already
@@ -29,8 +34,18 @@ class TestTrue(unittest.TestCase):
 
     """
 
-    def test_does_true_exist(self):  # <-- an atomic test case itself
+    def test_does_true_ever_exist(self):  # <-- an atomic test case itself
         self.assertTrue(True)  # <-- straight assertion
+
+    def test_does_false_ever_exist(self):  #
+        self.assertFalse(False)  #
+
+    def test_does_none_ever_exist(self):  #
+        self.assertNone(None)  #
+
+    """ Now it became obious that three built-in values are well-defined
+    out of the box.  It is time to compare them against each other
+    """
 
 
 class TestFalse(unittest.TestCase):
