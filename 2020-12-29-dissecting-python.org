@@ -489,13 +489,16 @@ compatibility of humans and testing approach for study.
 
    #+NAME: none-false-true-comparison-assertion
    #+BEGIN_SRC python :session test
-     class TestFalse(unittest.TestCase):
-         """
-         If True does exist, what about the opposite?
+     class TestCompareFundamentals(unittest.TestCase):
+
+         """Now, when we ensure in existence of None, False and Ture constants,
+         it is very time to compare them with its own derivatives as zero
+         (0), one (1), the letter('A')
+
          """
 
-         def test_does_false_exist(self):
-             self.assertFalse(False)  # the same assertion as above
+         def test_does_zero_really_boolean_false(self):
+             self.assertFalse(0)  #
    #+END_SRC
 
    #+RESULTS: false-assertion
