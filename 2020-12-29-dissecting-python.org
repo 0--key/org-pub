@@ -400,10 +400,10 @@ compatibility of humans and testing approach for study.
      <<import-header>>
 
 
-     <<true-assertion>>
+     <<none-false-true-assertion>>
 
 
-     <<false-assertion>>
+     <<none-false-true-comparison-assertion>>
    #+END_SRC
 
 
@@ -440,7 +440,7 @@ compatibility of humans and testing approach for study.
 
    #+RESULTS: import-header
 
-   #+NAME: true-assertion
+   #+NAME: none-false-true-assertion
    #+BEGIN_SRC python :session test
      class TestLanguageBasemet(unittest.TestCase):
 
@@ -487,7 +487,7 @@ compatibility of humans and testing approach for study.
 
    #+RESULTS: true-assertion
 
-   #+NAME: false-assertion
+   #+NAME: none-false-true-comparison-assertion
    #+BEGIN_SRC python :session test
      class TestFalse(unittest.TestCase):
          """
