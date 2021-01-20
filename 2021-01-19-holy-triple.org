@@ -1,0 +1,37 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: Holy Triple
+tagline: " inside out"
+permalink: /holy-triple.html
+categories: [article, computation]
+tags: [holy, triple]
+---
+#+END_EXPORT
+
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
+
+* Retrospective analisys
+
+** History
+
+** Contemp
+
+
+* Intro
+
+
+* Triple algebra
+
+
+* Networks
+
+** Newrons
+
+** Axons
+
+
+* Learning
