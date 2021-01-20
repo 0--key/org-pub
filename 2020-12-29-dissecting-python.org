@@ -467,22 +467,26 @@ compatibility of humans and testing approach for study.
          """
 
          def test_does_true_ever_exist(self):  # <-- an atomic test case itself
+             # and the sample of in-line comment
+             # self-explanatory name of the test case to focus attention
              self.assertTrue(True)  # <-- straight assertion
+             # True really exists.
+             # if this test do pass with success.
 
-         def test_does_false_ever_exist(self):  #
-             self.assertFalse(False)  #
+         def test_does_false_ever_exist(self):  # No comments
+             self.assertFalse(False)  # False also exists
 
-         def test_does_none_ever_exist(self):  #
-             self.assertIsNone(None)  #
+         def test_does_none_ever_exist(self):  # no comments
+             self.assertIsNone(None)  # None also predefined by the language
 
-         """ Now it became obious that three built-in values are well-defined
+         """ Now it became obious that three built-in constants are well-defined
          out of the box.  It is very time to compare them against each other.
          """
 
          def test_none_fasle_true_comparison(self):
-             self.assertIsNotNone(True)  # Naturally, niever False
+             self.assertIsNotNone(True)  # Naturally, neiver False
              self.assertIsNotNone(False)  # nor True are not None
-             self.assertFalse(None)  # !! None is a Boolean False
+             self.assertFalse(None)  # !! None has a Boolean False
    #+END_SRC
 
    #+RESULTS: true-assertion
