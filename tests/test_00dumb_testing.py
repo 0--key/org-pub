@@ -62,7 +62,7 @@ class TestLanguageBasemet(unittest.TestCase):
 
     def test_none_fasle_true_comparison(self):
         self.assertIsNotNone(True)  # Naturally, niever False
-        self.assertIsNotNone(False) # nor True are not None
+        self.assertIsNotNone(False)  # nor True are not None
         self.assertFalse(None)  # !! None is a Boolean False
 
 
