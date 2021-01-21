@@ -23,7 +23,10 @@ source code even for professionals. Naturally it is abnormal.
 """
 
 
-class TestLanguageBasemet(unittest.TestCase):
+class TestLanguageBase(unittest.TestCase):  # <-- class definition
+    # begins this reserved word /class/ following by the /name of
+    # class/ and its /parent class/ in the ellipsys. On first steps it
+    # might be like a magic mantra to enter the /test suite/.
 
     """The first and foremost taks for testing is to ensure how testing
     tools work. In our case lets begit from the simplest things ever -
@@ -48,22 +51,72 @@ class TestLanguageBasemet(unittest.TestCase):
     """
 
     def test_does_true_ever_exist(self):  # <-- an atomic test case itself
+        # and the sample of in-line comment
+        # sel-explanatory name of the test case to focus attention
         self.assertTrue(True)  # <-- straight assertion
+        # True really exists.
+        # if this test do pass with success.
 
-    def test_does_false_ever_exist(self):  #
-        self.assertFalse(False)  #
+    def test_does_false_ever_exist(self):  # No comments
+        self.assertFalse(False)  # False also exists
 
-    def test_does_none_ever_exist(self):  #
-        self.assertIsNone(None)  #
+    def test_does_none_ever_exist(self):  # no comments
+        self.assertIsNone(None)  # None also predefined by the language
 
-    """ Now it became obious that three built-in values are well-defined
+    """ Now it became obious that three built-in constants are well-defined
     out of the box.  It is very time to compare them against each other.
     """
 
     def test_none_fasle_true_comparison(self):
-        self.assertIsNotNone(True)  # Naturally, niever False
+        self.assertIsNotNone(True)  # Naturally, neiver False
         self.assertIsNotNone(False)  # nor True are not None
-        self.assertFalse(None)  # !! None is a Boolean False
+        self.assertFalse(None)  # !! None has a Boolean False
+        #
+        self.assertIs(True, True)  #
+        self.assertIs(False, False)  #
+        self.assertIs(None, None)  #
+        #
+        self.assertNotEqual(False, True)  #
+        self.assertNotEqual(True, None)  #
+        self.assertNotEqual(False, None)  #
+        #
+        self.assertIsNotNone(False)  #
+        self.assertIsNotNone(True)  #
+
+
+"""
+| Method                    | Checks that          |
+|---------------------------+----------------------+
+| assertEqual(a, b)         | a == b               |
+| assertNotEqual(a, b)      | a != b               |
+| assertTrue(x)             | bool(x) is True      |
+| assertFalse(x)            | bool(x) is False     |
+| assertIs(a, b)            | a is b               |
+| assertIsNot(a, b)         | a is not b           |
+| assertIsNone(x)           | x is None            |
+| assertIsNotNone(x)        | x is not None        |
+| assertIn(a, b)            | a in b               |
+| assertNotIn(a, b)         | a not in b           |
+| assertIsInstance(a, b)    | isinstance(a, b)     |
+| assertNotIsInstance(a, b) | not isinstance(a, b) |
+
+Now we definitely check up several methods of assertion embedded into
+Python unittest module, and ensure that three fundamental constants
+are also accessible out from the box.
+
+The four methods at the bottom of the table:
+
+ - assertIn(a, b)
+ - assertNotIn(a, b)
+ - assertIsInstance(a, b)
+ - assertNotIsInstance(a, b)
+
+are unnecessary right now because their purpose is testing of
+sequencies and instances wich will be introduced a bit later.
+
+In the next chapter new and principal concepts will be introduced.
+
+"""
 
 
 class TestCompareFundamentals(unittest.TestCase):
