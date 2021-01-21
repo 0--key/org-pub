@@ -490,6 +490,52 @@ compatibility of humans and testing approach for study.
              self.assertIsNotNone(True)  # Naturally, neiver False
              self.assertIsNotNone(False)  # nor True are not None
              self.assertFalse(None)  # !! None has a Boolean False
+             #
+             self.assertIs(True, True)  #
+             self.assertIs(False, False)  #
+             self.assertIs(None, None)  #
+             #
+             self.assertNotEqual(False, True)  #
+             self.assertNotEqual(True, None)  #
+             self.assertNotEqual(False, None)  #
+             #
+             self.assertIsNotNone(False)  #
+             self.assertIsNotNone(True)  #
+
+
+     """
+     | Method                    | Checks that          |
+     |---------------------------+----------------------+
+     | assertEqual(a, b)         | a == b               |
+     | assertNotEqual(a, b)      | a != b               |
+     | assertTrue(x)             | bool(x) is True      |
+     | assertFalse(x)            | bool(x) is False     |
+     | assertIs(a, b)            | a is b               |
+     | assertIsNot(a, b)         | a is not b           |
+     | assertIsNone(x)           | x is None            |
+     | assertIsNotNone(x)        | x is not None        |
+     | assertIn(a, b)            | a in b               |
+     | assertNotIn(a, b)         | a not in b           |
+     | assertIsInstance(a, b)    | isinstance(a, b)     |
+     | assertNotIsInstance(a, b) | not isinstance(a, b) |
+
+     Now we definitely check up several methods of assertion embedded into
+     Python unittest module, and ensure that three fundamental constants
+     are also accessible out from the box.
+
+     The four methods at the bottom of the table:
+
+      - assertIn(a, b)
+      - assertNotIn(a, b)
+      - assertIsInstance(a, b)
+      - assertNotIsInstance(a, b)
+
+     are unnecessary right now because their purpose is testing of
+     sequencies and instances wich will be introduced a bit later.
+
+     In the next chapter new and principal concepts will be introduced.
+
+     """
    #+END_SRC
 
    #+RESULTS: true-assertion
