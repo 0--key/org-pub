@@ -222,15 +222,14 @@ tags: [book, template]
   Python and its usage by humans, the subjects are students, teachers,
   books, programmers, software engineers, other professionals related
   to programming. And the plot is a *misleading*, its history, the
-  current state of things with focus on programming, obvious
-  deductions out there and the straightforward approach to eradicate
-  this phenomena once and forever.
+  current state of things with focus on software industry followed by
+  obvious deduction and a bit straightforward, but effective approach
+  to get rid this phenomenon off once and forever.
 
   The main intention of this book is to take to the reader chance to
-  be fun among reading, to allow them to be pleased in time they're
-  reading this book, to alleviate the headache and other pain during
-  /studying programming by excluding cramming/ as a redundant and
-  unnecessary procedure.
+  be fun at the reading, to alleviate the headache and other pain
+  during /studying programming by excluding cramming/ as a redundant
+  and unnecessary procedure.
 
    
 * Harsh overture
