@@ -442,7 +442,10 @@ compatibility of humans and testing approach for study.
 
    #+NAME: none-false-true-assertion
    #+BEGIN_SRC python :session test
-     class TestLanguageBasemet(unittest.TestCase):
+     class TestLanguageBase(unittest.TestCase):  # <-- class definition
+         # begins this reserved word /class/ following by the /name of
+         # class/ and its /parent class/ in the ellipsys. On first steps it
+         # might be like a magic mantra to enter the /test suite/.
 
          """The first and foremost taks for testing is to ensure how testing
          tools work. In our case lets begit from the simplest things ever -
