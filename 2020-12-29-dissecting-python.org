@@ -398,6 +398,9 @@ compatibility of humans and testing approach for study.
 * A dumb testing set (test the test itself)                        :noexport:
 
    #+BEGIN_SRC python :noweb yes :tangle tests/test_00dumb_testing.py
+     <<module-level-docstring>>
+
+
      <<import-header>>
 
 
@@ -411,6 +414,29 @@ compatibility of humans and testing approach for study.
 * Testing Python innate constants
 
   The bedrock of testing a programming language.
+
+  #+NAME: module-level-docstring
+  #+BEGIN_SRC python :session test
+    # -*- coding: utf-8 -*-
+    """A module-level docstring
+
+    Notice the comment above the docstring specifying the encoding.
+    Docstrings do appear in the bytecode, so you can access this through
+    the ``__doc__`` attribute. This is also what you'll see if you call
+    help() on a module or any other Python object.
+
+    It might be unnecessary in our case, when we write a simplified
+    version of programs. If the aim is a paragon of clarity it should
+    contain all required attributes of clarity and further support.
+
+    You might notice that /coding definition/ on the first string, the
+    second string begins with tripled double quotes and a sentence there.
+    They are the obligatory attributes if you have intention to do things
+    as it should do.
+
+    """
+   #+END_SRC
+
 
    #+NAME: import-header
    #+BEGIN_SRC python :session test

@@ -1,3 +1,23 @@
+# -*- coding: utf-8 -*-
+"""A module-level docstring
+
+Notice the comment above the docstring specifying the encoding.
+Docstrings do appear in the bytecode, so you can access this through
+the ``__doc__`` attribute. This is also what you'll see if you call
+help() on a module or any other Python object.
+
+It might be unnecessary in our case, when we write a simplified
+version of programs. If the aim is a paragon of clarity it should
+contain all required attributes of clarity and further support.
+
+You might notice that /coding definition/ on the first string, the
+second string begins with tripled double quotes and a sentence there.
+They are the obligatory attributes if you have intention to do things
+as it should do.
+
+"""
+
+
 import unittest
 
 """By its purpose all programming languages should allow the reader to
@@ -52,7 +72,7 @@ class TestLanguageBase(unittest.TestCase):  # <-- class definition
 
     def test_does_true_ever_exist(self):  # <-- an atomic test case itself
         # and the sample of in-line comment
-        # sel-explanatory name of the test case to focus attention
+        # self-explanatory name of the test case to focus attention
         self.assertTrue(True)  # <-- straight assertion
         # True really exists.
         # if this test do pass with success.
