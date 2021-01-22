@@ -204,26 +204,29 @@ tags: [book, template]
 
 
 * Style Notes
-  
-  The major discrepancy is the /style/ of this book: it is *not* yet
-  another user manual or user journal generously spiced by comments
-  and notes. You will involve you in a valid Python code cognition,
-  and being capable to note its incredible power and naked beauty.
+
+  A killer feature of this book is its /style/: it is *not* yet
+  another user manual, journal or notes with comments abundance.
+  Initially you will wittingly immerse in a full-dressed Python code.
+  And soon being capable to gaze its incredible power and naked beauty
+  from inside.
 
   The main intention of this book is to take to the reader chance to
   be fun at the reading, to alleviate the headache and brain fog
   /studying programming by excluding cramming/. A multiplied
   repetition with hope to rehearse the chunk of studied material and
-  forget it forever — fast and malicious way to achieve knowledge. It
-  is a redundant, tedious and popular way to do things wrong. All what
-  you're need in is to delve into Python depths leading by an
-  experience guide. That's it.
+  forget it forever — short, attractive but lousy way to achieve
+  knowledge. It is a _cognition lure._ It is a redundant, tedious and,
+  in same time, _popular way to do things wrong._ All what you are
+  need in is to delve into Python depths leading by an experience
+  guide. That's it.
 
   All articles are short enough to being grasped _less than 25
-  minutes_. The average pace is /going forward only after the current
-  point is trivial for you personally/. No need to restrict yourself
-  to read down and down without any comprehension. Slow your pace,
-  please. Couldn't check it up. Or, maybe this book is not for you.
+  minutes_. Self-pace is highly welcomed: /going forward only after
+  you know the current point as a back of your hand/. No need to
+  subdue yourself to read down and down without any comprehension. It
+  is not a learning, it is an intellectual torture. /Slow your pace,
+  please./ Couldn't catch ~all at once~.
 
   A minuscule free time in the early morning /before/ yours breakfast
   would be an ideal time for /programming/. It is not a joke, guys,
