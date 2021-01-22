@@ -211,9 +211,23 @@ tags: [book, template]
   and being capable to note its incredible power and naked beauty.
 
   The main intention of this book is to take to the reader chance to
-  be fun at the reading, to alleviate the headache and other pain
-  during /studying programming by excluding cramming/ as a redundant
-  and unnecessary procedure.
+  be fun at the reading, to alleviate the headache and brain fog
+  /studying programming by excluding cramming/. A multiplied
+  repetition with hope to rehearse the chunk of studied material and
+  forget it forever — fast and malicious way to achieve knowledge. It
+  is a redundant, tedious and popular way to do things wrong. All what
+  you're need in is to delve into Python depths leading by an
+  experience guide. That's it.
+
+  All articles are short enough to being grasped _less than 25
+  minutes_. The average pace is /going forward only after the current
+  point is trivial for you personally/. No need to restrict yourself
+  to read down and down without any comprehension. Slow your pace,
+  please. Couldn't check it up. Or, maybe this book is not for you.
+
+  A minuscule free time in the early morning /before/ yours breakfast
+  would be an ideal time for /programming/. It is not a joke, guys,
+  moving forward.
 
    
 * Relevant quotes
