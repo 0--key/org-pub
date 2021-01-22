@@ -178,19 +178,31 @@ tags: [book, template]
 * Preface
 
   This book is about programming machines to do precisely what humans
-  ordered them. Like a thousand of other books already written about
-  the same subject. The core discrepancy is the /style/ of this book:
-  it is *not* yet another user manual or user journal generously
-  spiced by comments and notes.
+  ordered them. It is same in intention /like/ a thousand similar
+  books already written about the same subject. And it is a completely
+  wrong /first/ impression.
 
-  It is a book in a wide sense of this word: it has an objective, the
-  subjects and the plot. The principal objective in this book is
-  Python and its usage by humans, the subjects are students, teachers,
-  books, programmers, software engineers, other professionals related
-  to programming. And the plot is a *misleading*, its history, the
-  current state of things with focus on software industry followed by
-  obvious deduction and a bit straightforward, but effective approach
-  to get rid this phenomenon off once and forever.
+  It is a fiction book in a wide sense of this word: it has an
+  objective, the subjects and the plot. The principal objective in
+  this book is Python and its usage by humans.
+
+  The subjects are students, teachers, books, programmers, software
+  engineers, other professionals related to programming. And the plot
+  is a misleading: its history, the current state of things with
+  focus on software industry.
+
+  Followed by obvious deductions it might discover for literate reader
+  a bit straightforward, but effective approach to get rid this
+  phenomenon off once and forever.
+
+
+
+* Style Notes
+  
+  The major discrepancy is the /style/ of this book: it is *not* yet
+  another user manual or user journal generously spiced by comments
+  and notes. You will involve you in a valid Python code cognition,
+  and being capable to note its incredible power and naked beauty.
 
   The main intention of this book is to take to the reader chance to
   be fun at the reading, to alleviate the headache and other pain
