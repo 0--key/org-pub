@@ -191,9 +191,15 @@ tags: [book, template]
   is a misleading: its history, the current state of things with
   focus on software industry.
 
-  Followed by obvious deductions it might discover for literate reader
-  a bit straightforward, but effective approach to get rid this
-  phenomenon off once and forever.
+  Followed by a set of plain deductions it might unlock for literate
+  reader a =kingdom of programming=. There is only one path: a bit
+  straightforward, but narrow approach to get rid the *misleading
+  phenomenon* off once and forever in professional and personal life.
+  Yes it is neither simple nor popular, alas. It's a primal learning,
+  boys and girls.
+
+  For density this is a bottom paragraph with no data. The tap in a
+  barrel.
 
 
 
