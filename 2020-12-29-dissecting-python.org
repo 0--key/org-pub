@@ -234,7 +234,69 @@ tags: [book, template]
    -----
 
 
-* Harsh overture
+* General observations:
+
+** Debugging is a dominant time-consuming task
+
+
+
+   #+CAPTION: Debugging
+   #+ATTR_HTML: :class rounded float-center :alt Typical proportion
+   #+ATTR_HTML: :title The lion share of efforts
+   https://i1.wp.com/semiengineering.com/wp-content/uploads/2019/02/debug1.png
+
+
+
+   for a casual programmer and often it consumes up to 90% of their
+   efforts to develop and maintain software nowadays;
+
+
+** Cognitive dissonance and size of manuals
+
+   #+CAPTION: Manuals
+   #+ATTR_HTML: :class rounded float-center :alt The Art
+   #+ATTR_HTML: :title They are enormous
+   https://cdn-blog.adafruit.com/uploads/2018/12/1Capture.jpg
+
+   There are tons of material and most of it represents ~programming
+   language~ in an imperative style.
+
+
+** An average age of readers
+
+   #+CAPTION: The team
+   #+ATTR_HTML: :class rounded float-center :alt Unexperience of youth
+   #+ATTR_HTML: :title They are so young
+   https://peerbits-wpengine.netdna-ssl.com/wp-content/uploads/2020/03/improve-software-development-team-main.jpg
+
+
+   
+** Testing as an innate tool to learn for humans;
+
+   - Testing in CS is a comparatively young concept;
+
+   #+CAPTION: Toddlers
+   #+ATTR_HTML: :class rounded float-center :alt Play as test
+   #+ATTR_HTML: :title Conduct an experiment
+   https://mk0tredebmaru2va759a.kinstacdn.com/wp-content/uploads/2018/09/best-blocks-for-toddlers.jpg
+
+
+** Einstellung effect;
+   in writing book about programming
+
+   #+CAPTION: Brain fog
+   #+ATTR_HTML: :class rounded float-center :alt True thinking is a tough task
+   #+ATTR_HTML: :title The large set of cognitive biases
+   https://miro.medium.com/max/3600/1*dxkkOejSHnx7FVfj5vo5jg.jpeg
+
+
+
+** Reading as a tourture 
+
+   Avoidance of source code reading (escapism);
+
+
+* A harsh deduction
 
       #+CAPTION: Test failure
       #+ATTR_HTML: :class rounded float-left :alt Animals also test
@@ -318,37 +380,6 @@ tags: [book, template]
   studying: by sequentially, from the elementary ones to most complex,
   testing its features.
 	  
-
-* General observations:
-     
-
-** Debugging is a major time-consuming task
-
-
-   for a casual programmer and often it consumes up to 90% of their
-   efforts to develop and maintain software nowadays;
-
-
-** Cognitive dissonance and size of manuals
-
-   There are tons of material and most of it represents ~programming
-   language~ in an imperative style.
-
-
-** An average age of readers
-
-   
-** Testing as an innate tool to learn for humans;
-   - Testing in CS is a comparatively young concept;
-
-
-** Einstellung effect in writing book about programming;
-
-
-** Reading as a tourture 
-
-   Avoidance of source code reading (escapism);
-
 
 * Several acid notations
 
