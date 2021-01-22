@@ -241,8 +241,8 @@ tags: [book, template]
       #+ATTR_HTML: :title Unconscious testing
       [[http://0--key.github.io/assets/img/pydes/monkey.jpeg]]
 
-  The paramount goal of writing is absolute clarity and density, so it
-  might sound a quite strange. In reality, it is much complex task
+  The paramount goals of writing are absolute clarity and density, so
+  it might sound a quite strange. In reality, it is much complex task
   than it seems and a plethora of already written manuals about
   programming is a strict evidence to interpret this as a _spoiled
   approach_. In contrary: “Why men avoid reading and study some common
@@ -411,7 +411,7 @@ compatibility of humans and testing approach for study.
    #+END_SRC
 
 
-* Testing Python innate constants
+* Testing Python built-in fundamental constants
 
   The bedrock of testing a programming language.
 
