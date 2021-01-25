@@ -680,7 +680,7 @@ compatibility of humans and testing approach for study.
              self.assertFalse(0)  #
    #+END_SRC
 
-   #+RESULTS: false-assertion
+** Zero, One and a symbol
 
 
 *** Assertion and assignment
