@@ -225,17 +225,33 @@ tags: [book, template]
   human-readable and machine-executable also.
 
 
+* The side effect
+
+
+  The side effect might be a cramming gap during learning. All
+  material compounded into a monolith by a logical intersection. Thus
+  it is highly welcomed to follow the /sequence of chapters/ by its
+  nature, from first and foremost to the second one, the third etc.
+
+  A multiplied repetition in hope to rehearse the chunk of studied
+  material and forget it forever — short, attractive but lousy way to
+  achieve knowledge. It is a _cognition trap_. It is an eloquent
+  illustration of redundant, tedious and, in same time, *popular way
+  to do things wrong*.
+
+  All what you are need in is to delve into Python depths leading by
+  an experience guide. That's it.
 
   All articles are short enough to being grasped _less than 25
   minutes_. Self-pace is highly welcomed: /going forward only after
   you know the current point as a back of your hand/. No need to
   subdue yourself to read down and down without any comprehension. It
-  is not a learning, it is an intellectual torture. /Slow your pace,
-  please./ Couldn't catch ~all at once~.
+  is not a learning at all, it is a foolish torture. /Slow your pace,
+  please./ You couldn't catch ~all at once~.
 
   A minuscule free time in the early morning /before/ yours breakfast
-  would be an ideal time for /programming/. It is not a joke, guys,
-  moving forward.
+  would be an ideal time for learning /programming/. It is not a joke,
+  guys, moving forward.
 
    
 * Relevant quotes
