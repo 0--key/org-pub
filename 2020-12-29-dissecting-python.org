@@ -438,34 +438,34 @@ tags: [book, template]
   testing its features.
 	  
 
-* Several acid notations
+** Several acid notations
 
 
-* Defining predicatives intentionally
+** Defining predicatives intentionally
 
-It's naturally to draw the boundaries around your invention. It's
-neither a silver bullet nor panacea for learners. Cognition demands a
-lot of time for reading and digesting each chapter. Nothing
-misterious.
-
-
-** Why Python
-
-** Why pure Python
-
-** Already existing solutions overview
+ It's naturally to draw the boundaries around your invention. It's
+ neither a silver bullet nor panacea for learners. Cognition demands a
+ lot of time for reading and digesting each chapter. Nothing
+ misterious.
 
 
-* Thurther deduction
+*** Why Python
 
-  - Conversion a boring manual into a fiction book;
-  - Black (Pandorra) Box approach;
-  - Programming languages genealogy:
-    + Atavisms:
-      + 72 char per string;
-  - Codex as a phenomena disclosure;
-  - Related material allocation on two pages at once;
-  - Pomodoro technique realization;
+*** Why pure Python
+
+*** Already existing solutions overview
+
+
+** Thurther deduction
+
+   - Conversion a boring manual into a fiction book;
+   - Black (Pandorra) Box approach;
+   - Programming languages genealogy:
+     + Atavisms:
+       + 72 char per string;
+   - Codex as a phenomena disclosure;
+   - Related material allocation on two pages at once;
+   - Pomodoro technique realization;
 
 
 * Testing as a nodal ology tool
