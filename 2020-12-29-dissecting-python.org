@@ -486,6 +486,14 @@ absolutely autonomous, we got conclusion about a native and natural
 compatibility of humans and testing approach for study.
 
 
+* Several useful tips and tricks
+
+** Two pages on the screen
+
+** Git and clone it
+
+** Contribute
+
 * A dumb testing set (test the test itself)                        :noexport:
 
    #+BEGIN_SRC python :noweb yes :tangle tests/test_00dumb_testing.py
