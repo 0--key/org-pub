@@ -192,11 +192,15 @@ tags: [book, template]
   focus on software industry.
 
   Followed by a set of plain deductions it might unlock for literate
-  reader a =kingdom of programming=. There is only one path: a bit
-  straightforward, but narrow approach to get rid the *misleading
-  phenomenon* off once and forever in professional and personal life.
-  Yes it is neither simple nor popular, alas. It's a primal learning,
-  boys and girls.
+  reader a =kingdom of programming=. It is a =kingdom= definitely
+  because strict set of inner rules. Learning them one by one is the
+  only path further. The task isn't so taugh it might seem, the rules
+  are interbreeding. And it sufficiently simplify the lesson.
+
+  There is only one path: a bit straightforward, but narrow approach
+  to get rid the *misleading phenomenon* off once and forever in
+  professional and personal life. Yes it is neither simple nor
+  popular, alas. It's a primal learning, boys and girls.
 
   For density this is a bottom paragraph with no data. The tap in a
   barrel.
