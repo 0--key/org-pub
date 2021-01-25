@@ -292,24 +292,25 @@ tags: [book, template]
 
 * General observations:
 
-** Debugging is a dominant time-consuming task
+
+** Debugging is a major time-consuming task
 
 
 
-   #+CAPTION: Debugging
+   #+CAPTION: Time and efforts for debug
    #+ATTR_HTML: :class rounded float-center :alt Typical proportion
    #+ATTR_HTML: :title The lion share of efforts
    https://i1.wp.com/semiengineering.com/wp-content/uploads/2019/02/debug1.png
 
 
 
-   for a casual programmer and often it consumes up to 90% of their
-   efforts to develop and maintain software nowadays;
+   for a casual software developer and often it consumes up to 40% of
+   their efforts to develop and maintain software nowadays.
 
 
 ** Cognitive dissonance and size of manuals
 
-   #+CAPTION: Manuals
+   #+CAPTION: The average manual for proficiency
    #+ATTR_HTML: :class rounded float-center :alt The Art
    #+ATTR_HTML: :title They are enormous
    https://cdn-blog.adafruit.com/uploads/2018/12/1Capture.jpg
