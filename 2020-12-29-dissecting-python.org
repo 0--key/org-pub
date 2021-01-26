@@ -758,6 +758,17 @@ tags: [book, template]
    
 ** Further exploration
 
+** Zero, One and a Symbol
+
+
+*** Assertion and assignment
+*** True, False, None, == and = comparison, != and Not
+
+*** Boolean operations
+
+*** Arithmetics
+
+
 *** None-False-True comparison
 
 
@@ -777,17 +788,6 @@ tags: [book, template]
 
      #+RESULTS: false-assertion
 
-
-
-** Zero, One and a symbol
-
-
-*** Assertion and assignment
-*** True, False, None, == and = comparison, != and Not
-
-*** Boolean operations
-
-*** Arithmetics
 
 
 * Innate datatypes testing
