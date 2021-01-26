@@ -473,17 +473,17 @@ tags: [book, template]
 
 * Testing as a nodal ology tool
 
-      #+CAPTION: An infant conducting test
-      #+ATTR_HTML: :alt An infant :title Infant building a tower
-      [[http://0--key.github.io/assets/img/pydes/infant-building-a-tower.jpeg]]
+  #+CAPTION: An infant conducting test
+  #+ATTR_HTML: :alt An infant :title Infant building a tower
+  [[http://0--key.github.io/assets/img/pydes/infant-building-a-tower.jpeg]]
 
-If you're observed an infant behavior strictly enough you might
-notice that it is /a silent (they can't talk yet) testing how things
-work/. With brisk ingenuity baby implements the series of conscious acts
-and it should be interpreted as experiments to examine the nature of
-events. Bear in mind its inborn origin, because every child do it
-absolutely autonomous, we got conclusion about a native and natural
-compatibility of humans and testing approach for study.
+  If you're observed an infant behavior strictly enough you might
+  notice that it is /a silent (they can't talk yet) testing how things
+  work/. With brisk ingenuity baby implements the series of conscious
+  acts and it should be interpreted as experiments to examine the
+  nature of events. Bear in mind its inborn origin, because every
+  child do it absolutely autonomous, we got conclusion about a native
+  and natural compatibility of humans and testing approach for study.
 
 
 * Several useful tips and tricks
