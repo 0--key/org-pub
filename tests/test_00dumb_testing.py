@@ -44,11 +44,11 @@ source code even for professionals. Naturally it is abnormal.
 
 
 class TestLanguageBase(unittest.TestCase):  # <-- class definition
-    # begins this reserved word /class/ following by the /name of
-    # class/ and its /parent class/ in the ellipsys. On first steps it
-    # might be like a magic mantra to enter the /test suite/.
+    """begins this reserved word /class/ following by the /name of class/
+    and its /parent class/ in the brackets. On first steps it might be
+    like a magic mantra to enter the /test suite/.
 
-    """The first and foremost taks for testing is to ensure how testing
+    The first and foremost taks for testing is to ensure how testing
     tools work. In our case lets begit from the simplest things ever -
     lets discover built-in constants True, False, None with already
     defining testing methods one by one.
