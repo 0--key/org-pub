@@ -31,3 +31,8 @@ class TestFundamentalConstantsExistence(unittest.TestCase):
         self.assertTrue(True)  # <-- straight assertion
         self.assertFalse(False)  # False also exists
         self.assertIsNone(None)  # None also predefined by the language
+
+
+"""Naturally that it is more convenient to tame a dense and terse code
+blocks which are well-fitted on a single page. Thus, try to split all
+your tests into /logical/ blocks for clarity purpose."""
