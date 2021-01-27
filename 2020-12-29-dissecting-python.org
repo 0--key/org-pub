@@ -351,6 +351,18 @@ tags: [book, template]
    unavoidable exclusion out of this rule.
 
 
+** A hidden complexity
+
+   It is straightly inherent to a human nature. Even an experienced
+   /professional/ software developer often can't explain what the
+   machine should do even in a plain English. Misleading in human
+   language should spawn only erroneous decidions with the following
+   often wrong conclusions. The slogan "Keep clear" is a paramount
+   goal of most humans, it is difficult to detour the /brain fog/
+   after the some time spent in mulling around something enough tough.
+
+   
+
    There are tons of material and most of it represents ~programming
    language~ in an imperative style.
 
