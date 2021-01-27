@@ -341,6 +341,16 @@ tags: [book, template]
    #+ATTR_HTML: :title They are enormous
    https://cdn-blog.adafruit.com/uploads/2018/12/1Capture.jpg
 
+   At one hand we have a /relatively simple/ job: to tame a machine to
+   execute the precise sequence of operations utilizing the
+   /programming language/ clear enough to be understood by humans and
+   machines. At another hand we might notice a plethora of manuals,
+   tutorials and intimidatingly large books which take an attempt to
+   dismantle the programming as a professional skill using a plain
+   English commonly and a handful of real code snippets as an
+   unavoidable exclusion out of this rule.
+
+
    There are tons of material and most of it represents ~programming
    language~ in an imperative style.
 
