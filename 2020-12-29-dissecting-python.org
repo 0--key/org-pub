@@ -229,13 +229,16 @@ tags: [book, template]
 
   Followed by a set of plain deductions it might unlock for a literate
   reader a =kingdom of programming=. It is a =kingdom= definitely due
-  to the strict set of inner rules. Learning them one by one is the
-  only true path further.
+  to the strict set of inner rules controlled by /his Majesty/
+  *Python3*. Learning these rules one by one is the only true path to
+  succeed in studying a /system/.
 
   There is only one path: a bit straightforward, but narrow approach
-  to get rid the *misleading phenomenon* off once and forever in
-  professional and personal life. Yes it is neither simple nor
-  popular, alas. It's a primal learning, boys and girls.
+  to get rid the *misleading phenomenon* off once and forever in our
+  lives. Yes it /is/ neither simple nor popular, alas. It's a natural
+  treatment for learning in general, boys and girls.
+
+  Keep tighter, please.
 
 
 ** For boring reader
