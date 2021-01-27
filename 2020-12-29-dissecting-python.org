@@ -237,8 +237,20 @@ tags: [book, template]
   professional and personal life. Yes it is neither simple nor
   popular, alas. It's a primal learning, boys and girls.
 
-  For density this is a bottom paragraph with no data. The tap in a
-  barrel.
+
+** For boring reader
+
+   The task isn't so tough it might seem, the most rules are naturally
+   entangled. There are a handful of /primal/ ones. The rest are
+   derivatives /based on/ the primal.
+
+   Undoubtedly it simplifies the lesson. All what you need is to build
+   the knowledge tree-like structure in your mind. There are only a
+   /thriple/ primals: =True=, =False= and = None =. All other are
+   knots in the large net of derivatives.
+
+   For density this is a bottom paragraph with no data. The tap in a
+   barrel.
 
 
 
