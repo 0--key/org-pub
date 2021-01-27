@@ -213,9 +213,9 @@ tags: [book, template]
 
 * Preface
 
-  #+CAPTION: Older tutor
-  #+ATTR_HTML: :class rounded float-center :alt Play as test
-  #+ATTR_HTML: :title Conduct an experiment
+  #+CAPTION: An older tutor
+  #+ATTR_HTML: :class rounded float-center :alt A game is a test
+  #+ATTR_HTML: :title Conduct an experiment together
   https://mk0tredebmaru2va759a.kinstacdn.com/wp-content/uploads/2018/09/best-blocks-for-toddlers.jpg
 
   This book is about programming machines to do precisely what humans
