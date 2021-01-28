@@ -29,6 +29,33 @@ tags: [book, template]
      to be maintained or. proved. Antithesis – the negation or
      contradiction of the thesis. Synthesis – the resolution of the
      conflict between thesis and antithesis.
+***** separate this facts and weigh them against one another
+
+***** a customary way of doing smth
+
+***** the paramount is a gleefully studying anything 
+
+***** naturally someone noticed that it is a bit effusive
+
+***** this hunch was proved to being correct 
+
+***** a downright wrong conclusion
+
+***** it is not a sham, of course
+
+***** a customary for human cognition self-deception
+
+***** it is so odd and manic in its persistence
+
+***** “Never Mistake Motion for Action” — Ernest Hemingway
+
+***** The source code should be diligently swathed
+
+      with the comments exactly to simplify comprehension by the humans
+
+***** Lets check up the provenance of this particular misleading
+
+***** It is not an author's hobbyhorse of course
 **** Retrospecive analysis
 
      - Coding in a modern sense of it was born in 40s. It was
