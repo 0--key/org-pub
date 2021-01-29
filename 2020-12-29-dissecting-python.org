@@ -97,6 +97,22 @@ tags: [book, template]
 
 ***** An attempt to nip this faulty practice
       when the first working sample of code deem as the true one
+
+***** The meaningful way to study programming
+
+***** This is because we as humans
+      get bogged down in the means and forget about the end.
+
+***** One of the major steps along the road to creating a remarkable career 
+
+***** The problem, though, is that it painted the wrong picture
+
+***** Intentionally immersed into a valid Python code from a start
+
+***** 
+
+**** Competitors
+
 **** Retrospecive analysis
 
      - Coding in a modern sense of it was born in 40s. It was
