@@ -3,7 +3,7 @@
 layout: post
 title: Dissecting Python
 tagline: " inside out"
-permalink: /python/books/disecting_python.html
+permalink: /python/books/dissecting_python.html
 categories: [Python Dissection]
 tags: [book, template]
 ---
