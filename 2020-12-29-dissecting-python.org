@@ -216,7 +216,7 @@ tags: [book, template]
   #+CAPTION: An older tutor
   #+ATTR_HTML: :class rounded float-center :alt A game is a test
   #+ATTR_HTML: :title Conduct an experiment together
-  http://0--key.github.io/assets/img/pydes/experienced_tutor.jpg
+  http://0--key.github.io/assets/img/pydes/experienced_tutor.jpeg
 
   This book is about programming machines to do precisely what humans
   ordered them. It is same in intention /like/ a thousand similar
@@ -372,7 +372,7 @@ tags: [book, template]
    #+CAPTION: The team
    #+ATTR_HTML: :class rounded float-center :alt Unexperience of youth
    #+ATTR_HTML: :title They are so young
-   http://0--key.github.io/assets/img/pydes/software-development-team.jpg
+   http://0--key.github.io/assets/img/pydes/software-development-team.jpeg
 
 
    
@@ -383,7 +383,7 @@ tags: [book, template]
    #+CAPTION: Toddlers
    #+ATTR_HTML: :class rounded float-center :alt Play as test
    #+ATTR_HTML: :title Conduct an experiment
-   http://0--key.github.io/assets/img/pydes/experienced_tutor.jpg
+   http://0--key.github.io/assets/img/pydes/experienced_tutor.jpeg
 
 
 ** Einstellung effect;
