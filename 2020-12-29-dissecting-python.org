@@ -326,7 +326,7 @@ tags: [book, template]
    #+CAPTION: Time and efforts for debug
    #+ATTR_HTML: :class rounded float-center :alt Typical proportion
    #+ATTR_HTML: :title The lion share of efforts
-   https://i1.wp.com/semiengineering.com/wp-content/uploads/2019/02/debug1.png
+   http://0--key.github.io/assets/img/pydes/debugging.jpg
 
 
 
@@ -339,7 +339,7 @@ tags: [book, template]
    #+CAPTION: The average manual for proficiency
    #+ATTR_HTML: :class rounded float-center :alt The Art
    #+ATTR_HTML: :title They are enormous
-   https://cdn-blog.adafruit.com/uploads/2018/12/1Capture.jpg
+   http://0--key.github.io/assets/img/pydes/the_volumes.jpeg
 
    At one hand we have a /relatively simple/ job: to tame a machine to
    execute the precise sequence of operations utilizing the
@@ -372,7 +372,7 @@ tags: [book, template]
    #+CAPTION: The team
    #+ATTR_HTML: :class rounded float-center :alt Unexperience of youth
    #+ATTR_HTML: :title They are so young
-   https://peerbits-wpengine.netdna-ssl.com/wp-content/uploads/2020/03/improve-software-development-team-main.jpg
+   http://0--key.github.io/assets/img/pydes/software-development-team.jpg
 
 
    
@@ -383,7 +383,7 @@ tags: [book, template]
    #+CAPTION: Toddlers
    #+ATTR_HTML: :class rounded float-center :alt Play as test
    #+ATTR_HTML: :title Conduct an experiment
-   https://mk0tredebmaru2va759a.kinstacdn.com/wp-content/uploads/2018/09/best-blocks-for-toddlers.jpg
+   http://0--key.github.io/assets/img/pydes/experienced_tutor.jpg
 
 
 ** Einstellung effect;
@@ -392,7 +392,7 @@ tags: [book, template]
    #+CAPTION: Brain fog
    #+ATTR_HTML: :class rounded float-center :alt True thinking is a tough task
    #+ATTR_HTML: :title The large set of cognitive biases
-   https://miro.medium.com/max/3600/1*dxkkOejSHnx7FVfj5vo5jg.jpeg
+   http://0--key.github.io/assets/img/pydes/cognitive_bias.jpeg
 
 
 
@@ -406,7 +406,7 @@ tags: [book, template]
   #+CAPTION: Test failure
   #+ATTR_HTML: :class rounded float-left :alt Animals also test
   #+ATTR_HTML: :title Unconscious testing
-  http://0--key.github.io/assets/img/pydes/monkey.jpeg]]
+  http://0--key.github.io/assets/img/pydes/monkey.jpeg
 
   Summarize the handful of penetraiting observations above it might be
   dedused:
