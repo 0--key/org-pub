@@ -353,9 +353,9 @@ tags: [book, template]
   this book is Python and its usage by humans.
 
   The subjects are students, teachers, books, programmers, software
-  engineers, other professionals related to programming. And the plot
-  is a misleading: its history, the current state of things with
-  focus on software industry.
+  engineers and developers, other professionals related to
+  programming. The plot is a /misleading/: its prerequisites, its
+  past and present in software industry.
 
   Followed by a set of plain deductions it might unlock for a literate
   reader a =realm of programming=. It is a =realm= actually due to the
