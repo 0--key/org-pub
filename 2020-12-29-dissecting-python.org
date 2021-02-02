@@ -668,25 +668,34 @@ tags: [book, template]
 ** Contribute
 
 
-* A dumb testing set (test the test itself)                        :noexport:
 
-   #+BEGIN_SRC python :noweb yes :tangle tests/test_00dumb_testing.py
-     <<module-level-docstring>>
+* Testing Python primary constants
 
+  Now it is time to concoct our first primitive set of tests to
+  determine the existence of /Python primals/ =True=, =False= and
+  =None=. It is intentionally simplified to show you the threshold of
+  primitivity in valid /Python/ code.
 
-     <<import-header>>
-
-
-     <<none-false-true-assertion>>
-
-
-     <<none-false-true-comparison-assertion>>
-   #+END_SRC
+  #+BEGIN_SRC python :tangle tests/test_00dumb_testing.py
+    import unittests  # <-- import header
 
 
-* Testing Python built-in fundamental constants
+    class TestLanguagePrimals(unittest.TestCase):  # <-- class definition
 
-  The bedrock of testing a programming language.
+        def test_does_true_ever_exist(self):  # <-- an atomic test case itself
+            # and the sample of in-line comment
+            # self-explanatory name of the test case to focus attention
+            self.assertTrue(True)  # <-- straight assertion
+            # If this test passed successfully than True is really exists
+
+        def test_does_false_ever_exist(self):  # No comments
+            self.assertFalse(False)  # False also exists
+
+        def test_does_none_ever_exist(self):  # no comments
+            self.assertIsNone(None)  # None also predefined by the language
+  #+END_SRC
+
+
 
 
 ** The set of attributes required
