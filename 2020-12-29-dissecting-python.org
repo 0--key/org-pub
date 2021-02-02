@@ -333,9 +333,9 @@ tags: [book, template]
   http://0--key.github.io/assets/img/pydes/experienced_tutor.jpeg
 
   This book is about programming machines to do precisely what humans
-  ordered them. It is same in intention /like/ a thousand similar
-  books already written about the same subject. And it is a completely
-  wrong /first/ impression.
+  ordered them. It is same in intention /like/ a slew similar books
+  already written about the same subject. And it is a completely wrong
+  /first/ impression.
 
   It is a fiction book in a wide sense of this word: it has an
   objective, the subjects and the plot. The principal objective in
@@ -349,8 +349,8 @@ tags: [book, template]
   Followed by a set of plain deductions it might unlock for a literate
   reader a =kingdom of programming=. It is a =kingdom= definitely due
   to the strict set of inner rules controlled by /his Majesty/
-  *Python3*. Learning these rules one by one is the only decent path
-  to succeed in studying a /system/.
+  *Python3*. Learning these rules one by one is the only proper way
+  to succeed in studying programming language as a /system/.
 
   There is only one path: a bit straightforward, but narrow approach
   to get rid the *misleading phenomenon* off once and forever in our
@@ -368,12 +368,12 @@ tags: [book, template]
 
    The task isn't so tough it might seem, the most rules are naturally
    entangled. There are a handful of /primal/ ones. The rest are
-   derivatives /based on/ the primal.
+   /derivatives/ based on the primal.
 
    Undoubtedly it simplifies the lesson. All what you need is to build
    the knowledge tree-like structure in your mind. There are only a
-   /thriple/ primals: =True=, =False= and = None =. All other are
-   knots in the large net of derivatives.
+   /thriple/ primals: =True=, =False= and =None=. All other are
+   derivatives based on them.
    
    For density this is a bottom paragraph with no data. The tap in a
    barrel.
