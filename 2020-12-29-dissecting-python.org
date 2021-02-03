@@ -693,6 +693,19 @@ tags: [book, template]
             self.assertIsNone(None)
   #+END_SRC
 
+  Yes, that's it! Try to launch this code snippet to be ensured that it
+  works as expected:
+
+  #+BEGIN_SRC sh
+    cd tests
+    python3 -m unittest test_00_primal_testing_oversimplified.py
+  #+END_SRC
+
+  #+RESULTS:
+
+
+  Now lets decorate our dry code with /inline comments/:
+
   #+BEGIN_SRC python :tangle tests/test_01_primal_testing_with_inline_comments.py
     import unittest  # <-- import header
 
