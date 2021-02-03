@@ -725,7 +725,13 @@ tags: [book, template]
             self.assertIsNone(None)  # None also predefined by the language
   #+END_SRC
 
-  
+  *Tip* It is convenient to compare these two files when you open them
+  in two panels simultaneously:
+
+  #+CAPTION: Two-panel editor view
+  #+ATTR_HTML: :alt Two-panel view :title Compare these two files
+  [[http://0--key.github.io/assets/img/pydes/compare.png]]
+
 
 
 
