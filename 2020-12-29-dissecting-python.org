@@ -677,8 +677,24 @@ tags: [book, template]
   =None=. It is intentionally simplified to show you the threshold of
   primitivity in valid /Python/ code.
 
-  #+BEGIN_SRC python :tangle tests/test_00dumb_testing.py
-    import unittests  # <-- import header
+  #+BEGIN_SRC python :tangle tests/test_00_primal_testing_oversimplified.py
+    import unittest
+
+
+    class TestLanguagePrimals(unittest.TestCase):
+
+        def test_does_true_ever_exist(self):
+            self.assertTrue(True)
+
+        def test_does_false_ever_exist(self):
+            self.assertFalse(False)
+
+        def test_does_none_ever_exist(self):
+            self.assertIsNone(None)
+  #+END_SRC
+
+  #+BEGIN_SRC python :tangle tests/test_01_primal_testing_with_inline_comments.py
+    import unittest  # <-- import header
 
 
     class TestLanguagePrimals(unittest.TestCase):  # <-- class definition
@@ -689,12 +705,14 @@ tags: [book, template]
             self.assertTrue(True)  # <-- straight assertion
             # If this test passed successfully than True is really exists
 
-        def test_does_false_ever_exist(self):  # No comments
+        def test_does_false_ever_exist(self):  # another test case
             self.assertFalse(False)  # False also exists
 
-        def test_does_none_ever_exist(self):  # no comments
+        def test_does_none_ever_exist(self):  # the last primitive test case
             self.assertIsNone(None)  # None also predefined by the language
   #+END_SRC
+
+  
 
 
 
