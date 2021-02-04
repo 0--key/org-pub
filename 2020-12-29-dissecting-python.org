@@ -231,7 +231,11 @@ tags: [book, template]
      compile it later into the source code (mostly unreadable by
      humans) executable by machines at least.
      
-**** Separate folder with tests
+**** DONE Children testing building cubes
+
+     An experienced and older guide, the nudge in a right side.
+
+**** DONE Initial Python code simplification
 
      It will serve as an essence of studying material and later, I
      hope, as an yeast for your further usage as a backbone for Python
