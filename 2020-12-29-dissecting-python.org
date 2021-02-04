@@ -713,7 +713,7 @@ tags: [book, template]
   #+RESULTS:
 
 
-  Now lets decorate our dry code with /inline comments/:
+  Now lets embellish our dry code with /inline comments/:
 
   #+BEGIN_SRC python :tangle tests/test_01_primal_testing_with_inline_comments.py
     import unittest  # <-- import header
@@ -735,7 +735,7 @@ tags: [book, template]
   #+END_SRC
 
   *Tip* It is convenient to compare these two files when you open them
-  in two panels simultaneously:
+  in two panels simultaneously on the screen:
 
   #+CAPTION: Two-panel editor view
   #+ATTR_HTML: :alt Two-panel view :title Compare these two files
