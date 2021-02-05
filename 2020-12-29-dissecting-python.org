@@ -773,10 +773,14 @@ tags: [book, template]
   though. To accomplish the switch on pure *Python* we should utilize
   a /multi-line comments/ for large chunks of description texts. Yes,
   they are not obligation too, but in many cases they are
-  indispensable as the source of clarity for author and later for all
-  its readers.
+  indispensable as the source of clarity for author during writing the
+  program and later for all its readers.
 
-** The set of attributes required
+  It was already established by *Python* as a /docstring/, the special
+  sort of comments. Multi-line docstrings consist of a /summary line/,
+  followed by a blank line, followed by a more elaborate description.
+
+  The set of attributes required
 
 
 *** The top
