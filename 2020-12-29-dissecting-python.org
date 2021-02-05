@@ -746,6 +746,18 @@ tags: [book, template]
   #+ATTR_HTML: :alt Two-panel view :title Compare these two files
   [[http://0--key.github.io/assets/img/pydes/compare.png]]
 
+  *The essence* 
+
+  Now you're checked up three _primary Python constants_ using
+  =unittest= module and its three methods:
+
+  - =assertTrue=
+  - =assertFalse=
+  - =assertIsNone=
+
+  It is simple, minuscule and plain step onto the right path to cull
+  knowledge.
+
 
 
 
