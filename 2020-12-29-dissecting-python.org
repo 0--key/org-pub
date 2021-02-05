@@ -759,8 +759,22 @@ tags: [book, template]
   knowledge.
 
 
+* Switching on lucid Python
 
+  Now you're ready and steady to read, compare and comprehend *Python*
+  programs. Yes, there are only two of them, they are /intentionally/
+  simplified, but suddenly you're got a /seismic shift/ in your mind.
+  From now and forever lets compose our programs in a self-explanatory
+  manner, and *Python* would alleviate the pain in comprehension how
+  the program works.
 
+  As you might noticed we used the set of /inline comments/ to
+  describe some significant niceties. Yes, they are not obligatory
+  though. To accomplish the switch on pure *Python* we should utilize
+  a /multi-line comments/ for large chunks of description texts. Yes,
+  they are not obligation too, but in many cases they are
+  indispensable as the source of clarity for author and later for all
+  its readers.
 
 ** The set of attributes required
 
