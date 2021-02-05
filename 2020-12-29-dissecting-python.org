@@ -444,10 +444,11 @@ tags: [book, template]
 
    All articles are short enough to being grasped _less than 25
    minutes_. Self-pace is highly welcomed: /going forward only after
-   you know the current point as a back of your hand/. No need to
-   subdue yourself to read down and down without any comprehension. It
-   is not a learning at all, it is a foolish torture. /Slow your pace,
-   please./ You couldn't catch ~all at once~.
+   you sure that know the present point as a back of your hand/. No
+   need to subdue yourself to read down and down without any
+   comprehension. It is not a learning at all, it is a foolish
+   torture. /Slow your pace, please./ You can't fathom it ~all of a
+   sudden~.
 
    A minuscule free time in the early morning /before/ yours breakfast
    would be an ideal time for learning /programming/. It is not a joke,
