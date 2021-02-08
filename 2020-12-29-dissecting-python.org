@@ -777,17 +777,17 @@ tags: [book, template]
   #+ATTR_HTML: :alt Two-panel view :title Compare these two files
   [[http://0--key.github.io/assets/img/pydes/compare.png]]
 
-  *The essence* 
+  *You've got to catch the essence of the lesson* 
 
-  Now you're checked up three _primary Python constants_ using
-  =unittest= module and its three methods:
+  Now you're checked up an existence of three _primary Python
+  constants_ using =unittest= module and its three methods:
 
   - =assertTrue=
   - =assertFalse=
   - =assertIsNone=
 
-  It is simple, minuscule and plain step onto the right path to cull
-  knowledge.
+  It is a simple, minuscule and plain step onto the right path opting
+  knowledge in its natural order.
 
 
 * Switching on lucid Python
@@ -796,20 +796,21 @@ tags: [book, template]
   programs. Yes, there are only two of them, they are /intentionally/
   simplified, but suddenly you're got a /seismic shift/ in your mind.
   From now and forever lets compose our programs in a self-explanatory
-  manner, and *Python* would alleviate the pain in comprehension how
+  manner, and *Python* would alleviate the pain in mulling around how
   the program works.
 
-  As you might noticed we used the set of /inline comments/ to
+  You might notice that we used the set of /inline comments/ to
   describe some significant niceties. Yes, they are not obligatory
   though. To accomplish the switch on pure *Python* we should utilize
-  a /multi-line comments/ for large chunks of description texts. Yes,
-  they are not obligation too, but in many cases they are
-  indispensable as the source of clarity for author during writing the
+  a /multi-line comment/ feature for the much broad depictions. Yes,
+  they are not an obligation too, but in many cases they are
+  indispensable as a source of clarity for author during writing the
   program and later for all its readers.
 
-  It was already established by *Python* as a /docstring/, the special
-  sort of comments. Multi-line docstrings consist of a /summary line/,
-  followed by a blank line, followed by a more elaborate description.
+  It was already established by *Python* and well-known as a
+  /docstring/, the special sort of comments. Multi-line docstrings
+  consist of a /summary line/, followed by a blank line, followed by a
+  more elaborate description.
 
   The set of attributes required
 
