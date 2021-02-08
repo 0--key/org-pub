@@ -705,7 +705,7 @@ tags: [book, template]
   approach for study anything.
 
 
-* Several useful tips and tricks
+* Several useful tips and tricks                                   :noexport:
 
 ** Two pages on the screen
 
