@@ -812,6 +812,75 @@ tags: [book, template]
   consist of a /summary line/, followed by a blank line, followed by a
   more elaborate description.
 
+  #+BEGIN_SRC python :tangle tests/test_01_primal_testing_full_fledged.py
+    # -*- coding: utf-8 -*-
+    """A module-level docstring brief single-line description
+
+    A module-level docstring multi-line description. Notice the first line
+    comment above with encoding definition. Docstrings do
+    appear in the bytecode, so you can access this through the ``__doc__``
+    attribute. This is also what you'll see if you call help() on a module
+    or any other Python object.
+
+    It might be unnecessary in our case, when we write a simplified
+    version of programs. If the aim is a paragon of clarity it should
+    contain all required lucidity attributes.
+
+    You might notice that /coding definition/ on the first string, the
+    second string begins with tripled double quotes and a sentence there.
+    They are the obligatory attributes if you have intention to do things
+    as it should do.
+    """
+
+    import unittest  # <-- import header
+
+    """By its purpose all programming languages should allow the reader to
+    understand what exactly this particular text do in a much explicit
+    manner. The real state of things requires a literate reader with a huge
+    experience exactly in reading programs and comprehension. Noticeable
+    that nowadays most programs demand from reader such proficiency that
+    it made them truly readable for the handful of true geeks only.
+
+    Nevertheless, this fact usually omitted by specialists, who spent a
+    huge amount of time reading so overcomplicated texts of programs.
+    Through time, it became a normal if anybody can't grasp an idea out
+    from program's source code on the fly.
+
+    “It is just lack of experience!”: they say usually. You might object
+    by notation that several professionals can't catch the essence out
+    from that text because it poorly written, they answer something like:
+    “It works well enough to be scrutinized much more precisely.”
+
+    Nowadays it is deemed as normal to lack capability to understand
+    source code even for professionals. Naturally it is abnormal.
+
+    """
+
+
+    class TestLanguagePrimals(unittest.TestCase):  # <-- class definition
+        """The class-level for brief single-line docstring
+
+        Class defininition begins this reserved word /class/ following by
+        the /name of class/ and its /parent class/ in the brackets. On
+        first steps it might be like a magic mantra to enter the /test
+        suite/
+
+        """
+
+        def test_does_true_ever_exist(self):  # <-- an atomic test case itself
+            """A single-line brief description for particular test case"""
+            self.assertTrue(True)  # <-- straight assertion
+            # If this test passed successfully than True is really exists
+
+        def test_does_false_ever_exist(self):  # another test case
+            """A single-line brief description for particular test case"""
+            self.assertFalse(False)  # False also exists
+
+        def test_does_none_ever_exist(self):  # the last primitive test case
+            """A single-line brief description for particular test case"""
+            self.assertIsNone(None)  # None also predefined by the language
+  #+END_SRC
+
   The set of attributes required
 
 
