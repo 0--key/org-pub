@@ -834,25 +834,29 @@ tags: [book, template]
 
     import unittest  # <-- import header
 
-    """By its purpose all programming languages should allow the reader to
-    understand what exactly this particular text do in a much explicit
-    manner. The real state of things requires a literate reader with a huge
-    experience exactly in reading programs and comprehension. Noticeable
-    that nowadays most programs demand from reader such proficiency that
-    it made them truly readable for the handful of true geeks only.
+    """The place below an import section reserved for multi-line comments
+    which might be utilized as preamble to your Python program. It is
+    readable only for humans, not compiled ever, and allows to the author
+    write down all stuff necessary to be a foremost.
+
+    By its purpose all programming languages should allow the reader to
+    perceive what exactly this particular text do in a much explicit
+    manner. The real state of things, when programs are habitually
+    clogged, requires from a literate reader tons of time and perceverance
+    for litter decluttering and a core idea grasp. Noticeable that
+    nowadays most programs demand from reader such proficiency that it
+    made them partially readable for humans and fully comprehended by the
+    handful of true geeks only.
 
     Nevertheless, this fact usually omitted by specialists, who spent a
     huge amount of time reading so overcomplicated texts of programs.
-    Through time, it became a normal if anybody can't grasp an idea out
-    from program's source code on the fly.
+    Through time, it became a normal if anybody can't make an idea out
+    from program's text on the fly.
 
     “It is just lack of experience!”: they say usually. You might object
     by notation that several professionals can't catch the essence out
-    from that text because it poorly written, they answer something like:
-    “It works well enough to be scrutinized much more precisely.”
-
-    Nowadays it is deemed as normal to lack capability to understand
-    source code even for professionals. Naturally it is abnormal.
+    from that text because it is poorly written, they answer something
+    like: “It works well enough to be scrutinized much more diligently.”
 
     """
 
