@@ -883,6 +883,10 @@ tags: [book, template]
         def test_does_none_ever_exist(self):  # the last primitive test case
             """A single-line brief description for particular test case"""
             self.assertIsNone(None)  # None also predefined by the language
+
+
+    """This is a conclusion multi-line comment section. It is useful to
+    put all bottom-line conclusion there."""
   #+END_SRC
 
 * The set of attributes required                                   :noexport:
