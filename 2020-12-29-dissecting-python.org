@@ -894,6 +894,7 @@ tags: [book, template]
       Docstrings do appear in the bytecode, so you can access this through
       the ``__doc__`` attribute. This is also what you'll see if you call
       help() on a module or any other Python object.
+*   The set of attributes required                                 :noexport:
 
       It might be unnecessary in our case, when we write a simplified
       version of programs. If the aim is a paragon of clarity it should
