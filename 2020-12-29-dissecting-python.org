@@ -463,8 +463,9 @@ tags: [book, template]
    nature, from first and foremost to the second one, the third etc.
 
    A multiplied repetition in hope to rehearse the chunk of studied
-   material and forget it forever — short, attractive but lousy way to
-   achieve knowledge. It is a _cognition trap_. It is an eloquent
+   material verbatim and forget it forever — short, attractive but
+   lousy way to achieve knowledge. It is a _cognition trap_. And yes,
+   it is a dogged determination in self-deception. It is an eloquent
    illustration of redundant, tedious and, in same time, *popular way
    to do things wrong*.
 
@@ -567,6 +568,7 @@ tags: [book, template]
 ** Reading as a tourture 
 
    Avoidance of source code reading (escapism);
+   Actually it is a downright grueling task to do
 
 
 * A harsh deduction
