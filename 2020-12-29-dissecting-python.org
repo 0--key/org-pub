@@ -885,7 +885,7 @@ tags: [book, template]
             self.assertIsNone(None)  # None also predefined by the language
   #+END_SRC
 
-*   The set of attributes required                                 :noexport:
+* The set of attributes required                                   :noexport:
 
 
 ** The top
