@@ -812,6 +812,15 @@ tags: [book, template]
   Multi-line docstrings consist of a /summary line/, followed by a
   blank line, followed by a more elaborate description.
 
+  #+BEGIN_QUOTE
+  "A universal convention supplies all of maintainability, clarity,
+  consistency, and a foundation for good programming habits too. What
+  it doesn't do is insist that you follow it against your will. That's
+  Python!"
+
+  - *Tim Peters*
+  #+END_QUOTE
+
   #+BEGIN_SRC python :tangle tests/test_02_primal_testing_full_fledged.py
     # -*- coding: utf-8 -*-
     """A module-level docstring brief single-line description
