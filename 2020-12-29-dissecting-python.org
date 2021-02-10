@@ -807,20 +807,20 @@ tags: [book, template]
   indispensable as a source of clarity for author during writing the
   program and later for all its readers.
 
-  It was already established by *Python* and well-known as a
-  /docstring/, the special sort of comments. Multi-line docstrings
-  consist of a /summary line/, followed by a blank line, followed by a
-  more elaborate description.
+  Naturally what such cool feature was already established by *Python*
+  and well-known as a /docstring/, the special sort of comments.
+  Multi-line docstrings consist of a /summary line/, followed by a
+  blank line, followed by a more elaborate description.
 
   #+BEGIN_SRC python :tangle tests/test_02_primal_testing_full_fledged.py
     # -*- coding: utf-8 -*-
     """A module-level docstring brief single-line description
 
     A module-level docstring multi-line description. Notice the first line
-    comment above with encoding definition. Docstrings do
-    appear in the bytecode, so you can access this through the ``__doc__``
-    attribute. This is also what you'll see if you call help() on a module
-    or any other Python object.
+    comment above with encoding definition. Docstrings do appear in the
+    bytecode, so you can access this through the ``__doc__`` attribute.
+    This is also what you'll see if you call help() on a module or any
+    other Python object.
 
     It might be unnecessary in our case, when we write a simplified
     version of programs. If the aim is a paragon of clarity it should
