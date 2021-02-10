@@ -810,7 +810,7 @@ tags: [book, template]
   Naturally what such cool feature was already established by *Python*
   and well-known as a [[https://www.python.org/dev/peps/pep-0257/][docstrings]], the special sort of comments.
   Multi-line docstrings consist of a /summary line/, followed by a
-  blank line, followed by a more elaborate description.
+  blank line, followed by a /more elaborate description/.
 
   #+BEGIN_QUOTE
   "A universal convention supplies all of maintainability, clarity,
