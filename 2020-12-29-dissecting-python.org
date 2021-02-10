@@ -812,7 +812,7 @@ tags: [book, template]
   consist of a /summary line/, followed by a blank line, followed by a
   more elaborate description.
 
-  #+BEGIN_SRC python :tangle tests/test_01_primal_testing_full_fledged.py
+  #+BEGIN_SRC python :tangle tests/test_02_primal_testing_full_fledged.py
     # -*- coding: utf-8 -*-
     """A module-level docstring brief single-line description
 
