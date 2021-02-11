@@ -1068,7 +1068,7 @@ tags: [book, template]
 * Code elaboration
 
   #+NAME: full-fledged-sample
-  #+BEGIN_SRC python :noweb yes :tangle tests/test_01false_true_none_existence.py :session one
+  #+BEGIN_SRC python :noweb yes :session one
     # -*- coding: utf-8 -*-
     """Now it is the moment to distill your knowledge about writing
     =unittests= in ~Python~. Our previous work in
@@ -1110,7 +1110,7 @@ tags: [book, template]
   #+END_SRC
 
   #+NAME: full-fledged-sample-comparison
-  #+BEGIN_SRC python :noweb yes :tangle tests/test_02false_true_none_comparison.py :session second
+  #+BEGIN_SRC python :noweb yes :session second
     # -*- coding: utf-8 -*-
     """Only code to compare None, True and False"""
 
