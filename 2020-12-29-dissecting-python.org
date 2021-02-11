@@ -555,8 +555,8 @@ tags: [book, template]
 
    -----
 
-   #+CAPTION: Toddlers
-   #+ATTR_HTML: :class rounded float-center :alt Play as test
+   #+CAPTION: Toddlers playing
+   #+ATTR_HTML: :class rounded float-center :alt A play as a test
    #+ATTR_HTML: :title Conduct an experiment
    http://0--key.github.io/assets/img/pydes/experienced_tutor.jpeg
 
