@@ -826,12 +826,12 @@ tags: [book, template]
     # -*- coding: utf-8 -*-
     """A module-level docstring brief single-line description
 
-    A module-level docstring multi-line description. Notice the first line
-    comment above with encoding definition. Docstrings do appear in the
-    bytecode, so you can access this through the ``__doc__`` attribute.
-    This is also what you'll see if you call help() on a module or any
-    other Python object.
+    A module-level docstring multi-line description. Notice the second line
+    with a straight encoding definition. 
 
+    Docstrings do appear in the bytecode, so you can access this through
+    the ``__doc__`` attribute. This is also what you'll see if you call
+    help() on a module or any other Python object.
 
     """
 
@@ -900,6 +900,7 @@ tags: [book, template]
     """This is a conclusion multi-line comment section. It is useful to
     put all bottom-line conclusion there."""
   #+END_SRC
+
 
 * The set of attributes required                                   :noexport:
 
