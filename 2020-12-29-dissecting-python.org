@@ -560,6 +560,17 @@ tags: [book, template]
    #+ATTR_HTML: :title Conduct an experiment
    http://0--key.github.io/assets/img/pydes/experienced_tutor.jpeg
 
+   If I ask you what you see on the picture above your average answer
+   would be: “There are two small boys playing cubes together.” Right?
+   But what if I tell you: “These two boys are conducting a series of
+   test to cognate the hidden features of cubes. The older one
+   demonstrating his knowledge in this particular area, and the
+   youngest one assisting him and /learning by testing/.”
+
+   This is a simple and straight evidence of human innate ability to
+   learn. And it requires no words at all, just attention, patience and
+   perseverance to deduce the meaning of this show. 
+
 
 ** Einstellung effect;
    in writing book about programming
