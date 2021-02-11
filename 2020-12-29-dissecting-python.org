@@ -547,7 +547,13 @@ tags: [book, template]
    
 ** Testing as an innate tool to learn for humans;
 
-   - Testing in CS is a comparatively young concept;
+   #+BEGIN_QUOTE
+    “There are no facts, only interpretations.”
+
+   - *Friedrich Nietzsche*
+   #+END_QUOTE
+
+   -----
 
    #+CAPTION: Toddlers
    #+ATTR_HTML: :class rounded float-center :alt Play as test
