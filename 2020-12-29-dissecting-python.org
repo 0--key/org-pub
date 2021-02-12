@@ -582,6 +582,16 @@ tags: [book, template]
    #+END_QUOTE
 
    -----
+   
+   or /cognition inertia/ in writing book about programming. First
+   books about programming were written in a plain English and it was
+   ample at that time: there wasn't any programming languages, the set
+   of commands only. Later, when full-fledged programming languages
+   was introduced, authors predictably included wee chunks of
+   programs into the text of books about programming by these
+   languages. It's right. It is much more illustrative and
+   comprehensible for readers.
+
    #+CAPTION: Brain fog
    #+ATTR_HTML: :class rounded float-center :alt True thinking is a tough task
    #+ATTR_HTML: :title The large set of cognitive biases
