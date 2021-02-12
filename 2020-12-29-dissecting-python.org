@@ -574,6 +574,14 @@ tags: [book, template]
 
 ** Einstellung effect or golden hammer
 
+   #+BEGIN_QUOTE
+    “If the only tool you have is a hammer, one tends to treat
+    everything as if it were a nail.”
+
+   - *Abraham Maslow*
+   #+END_QUOTE
+
+   -----
    #+CAPTION: Brain fog
    #+ATTR_HTML: :class rounded float-center :alt True thinking is a tough task
    #+ATTR_HTML: :title The large set of cognitive biases
