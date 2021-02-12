@@ -572,8 +572,7 @@ tags: [book, template]
    perseverance to deduce the meaning of this show. 
 
 
-** Einstellung effect;
-   in writing book about programming
+** Einstellung effect or golden hammer
 
    #+CAPTION: Brain fog
    #+ATTR_HTML: :class rounded float-center :alt True thinking is a tough task
