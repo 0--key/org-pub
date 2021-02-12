@@ -587,6 +587,11 @@ tags: [book, template]
    Avoidance of source code reading (escapism);
    Actually it is a downright grueling task to do
 
+** Testing in CS is a comparatively young concept
+
+   It was initially intoduced by computer scientists in 80s, and
+   became a wide-spread and popular concept in the industry only in
+   the beginning of 21 century.
 
 * A harsh deduction
 
