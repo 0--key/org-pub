@@ -592,6 +592,13 @@ tags: [book, template]
    languages. It's right. It is much more illustrative and
    comprehensible for readers.
 
+   What should be the next step in that direction?
+
+   It should be the programs as the textbook, written in particular
+   programming language, with plentiful number of tests to examplify
+   concepts, ideas, approaches hidden behind the wall of mutual
+   understanding between a man and machine.
+
    #+CAPTION: Brain fog
    #+ATTR_HTML: :class rounded float-center :alt True thinking is a tough task
    #+ATTR_HTML: :title The large set of cognitive biases
