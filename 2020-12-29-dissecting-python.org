@@ -618,11 +618,18 @@ tags: [book, template]
    Avoidance of source code reading (escapism);
    Actually it is a downright grueling task to do
 
-** Testing in CS is a comparatively young concept
 
-   It was initially intoduced by computer scientists in 80s, and
+** Unit testing in CS
+
+   It was initially introduced by computer scientists in 80s, and
    became a wide-spread and popular concept in the industry only in
-   the beginning of 21 century.
+   the beginning of 21st century. Thus, it is easy to deduce that
+   initially almost all modern programming languages, which was
+   developed earlier this date, was happily built without any unit
+   testing at all.
+
+   Yes, it was. 
+
 
 * A harsh deduction
 
