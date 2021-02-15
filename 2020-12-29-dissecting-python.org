@@ -757,12 +757,12 @@ tags: [book, template]
 
   If you're observed an infant behavior strictly enough you might
   notice that it is /a silent (they can't talk yet) testing how things
-  work/. A baby with brisk ingenuity implements the series of
-  conscious acts and it should be interpreted as a sequence of
-  experiments to examine the nature of events. Bear in mind its inborn
-  origin, because every child do it absolutely autonomous, we got
-  conclusion about a genuine and inborn human inclination on testing
-  approach for study anything.
+  work/. A baby with brisk ingenuity conducts the series of conscious
+  acts and it should be interpreted as a sequence of experiments to
+  examine the nature of events. Bear in mind its inborn origin,
+  because every child do it absolutely autonomous, we got conclusion
+  about a genuine and inborn human inclination on testing approach for
+  study anything.
 
 
 * Several useful tips and tricks                                   :noexport:
