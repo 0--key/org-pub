@@ -361,7 +361,6 @@ tags: [book, template]
 
    - *Abelson & Sussman, SICP, preface to the first edition*
    #+END_QUOTE
-
    -----
    #+BEGIN_QUOTE
     "Short words are best and the old words when short are best of
@@ -369,24 +368,19 @@ tags: [book, template]
 
    - *Winston Churchill*
    #+END_QUOTE
-
    -----
-
     #+BEGIN_QUOTE
     “The glass is neither half empty nor half full. It’s simply larger
-      than it needs to be.”
+     than it needs to be.”
 
    - *Grace Hopper*
    #+END_QUOTE
-
    -----
-
    #+BEGIN_QUOTE
     “Manage things. Lead people.”
 
    - *Grace Hopper*
    #+END_QUOTE
-
    -----
 
 
