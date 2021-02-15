@@ -775,468 +775,471 @@ tags: [book, template]
 
 
 
-* Testing Python primary constants
-
-  Now it is time to concoct our first primitive set of tests to
-  determine the existence of /Python primals/ =True=, =False= and
-  =None=. It is intentionally simplified to show you the threshold of
-  primitivity in valid /Python/ code.
-
-  #+BEGIN_SRC python :tangle tests/test_00_primal_testing_oversimplified.py
-    import unittest
+* Chapter I: Primary concepts
 
 
-    class TestLanguagePrimals(unittest.TestCase):
+** Testing Python primary constants
 
-        def test_does_true_ever_exist(self):
-            self.assertTrue(True)
+   Now it is time to concoct our first primitive set of tests to
+   determine the existence of /Python primals/ =True=, =False= and
+   =None=. It is intentionally simplified to show you the threshold of
+   primitivity in valid /Python/ code.
 
-        def test_does_false_ever_exist(self):
-            self.assertFalse(False)
-
-        def test_does_none_ever_exist(self):
-            self.assertIsNone(None)
-  #+END_SRC
-
-  Yes, that's it! Try to launch this code snippet to be ensured that it
-  works as expected:
-
-  #+BEGIN_SRC sh
-    cd tests
-    python3 -m unittest test_00_primal_testing_oversimplified.py
-  #+END_SRC
-
-  #+RESULTS:
+   #+BEGIN_SRC python :tangle tests/test_00_primal_testing_oversimplified.py
+     import unittest
 
 
-  Now lets embellish our dry code with /inline comments/:
+     class TestLanguagePrimals(unittest.TestCase):
 
-  #+BEGIN_SRC python :tangle tests/test_01_primal_testing_with_inline_comments.py
-    import unittest  # <-- import header
+         def test_does_true_ever_exist(self):
+             self.assertTrue(True)
 
+         def test_does_false_ever_exist(self):
+             self.assertFalse(False)
 
-    class TestLanguagePrimals(unittest.TestCase):  # <-- class definition
+         def test_does_none_ever_exist(self):
+             self.assertIsNone(None)
+   #+END_SRC
 
-        def test_does_true_ever_exist(self):  # <-- an atomic test case itself
-            # and the sample of in-line comment
-            # self-explanatory name of the test case to focus attention
-            self.assertTrue(True)  # <-- straight assertion
-            # If this test passed successfully than True is really exists
+   Yes, that's it! Try to launch this code snippet to be ensured that it
+   works as expected:
 
-        def test_does_false_ever_exist(self):  # another test case
-            self.assertFalse(False)  # False also exists
+   #+BEGIN_SRC sh
+     cd tests
+     python3 -m unittest test_00_primal_testing_oversimplified.py
+   #+END_SRC
 
-        def test_does_none_ever_exist(self):  # the last primitive test case
-            self.assertIsNone(None)  # None also predefined by the language
-  #+END_SRC
-
-  *Tip* It is convenient to compare these two files when you open them
-  in two panels simultaneously on the screen:
-
-  #+CAPTION: Two-panel editor view
-  #+ATTR_HTML: :alt Two-panel view :title Compare these two files
-  [[http://0--key.github.io/assets/img/pydes/compare.png]]
-
-  *You've got to catch the essence of the lesson* 
-
-  Now you're checked up an existence of three _primary Python
-  constants_ using =unittest= module and its three methods:
-
-  - =assertTrue=
-  - =assertFalse=
-  - =assertIsNone=
-
-  It is a simple, minuscule and plain step onto the right path opting
-  knowledge in its natural order.
+   #+RESULTS:
 
 
-* Switching on lucid Python
+   Now lets embellish our dry code with /inline comments/:
 
-  Now you're ready and steady to read, compare and comprehend *Python*
-  programs. Yes, there are only two of them, they are /intentionally/
-  simplified, but suddenly you're got a /seismic shift/ in your mind.
-  From now and forever lets compose our programs in a self-explanatory
-  manner, and *Python* would alleviate the pain in mulling around how
-  the program works.
-
-  You might notice that we used the set of /inline comments/ to
-  describe some significant niceties. Yes, they are not obligatory
-  though. To accomplish the switch on pure *Python* we should utilize
-  a /multi-line comment/ feature for the much broad depictions. Yes,
-  they are not an obligation too, but in many cases they are
-  indispensable as a source of clarity for author during writing the
-  program and later for all its readers.
-
-  Naturally what such cool feature was already established by *Python*
-  and well-known as a [[https://www.python.org/dev/peps/pep-0257/][docstrings]], the special sort of comments.
-  Multi-line docstrings consist of a /summary line/, followed by a
-  blank line, followed by a /more elaborate description/.
-
-  #+BEGIN_QUOTE
-  "A universal convention supplies all of maintainability, clarity,
-  consistency, and a foundation for good programming habits too. What
-  it doesn't do is insist that you follow it against your will. That's
-  Python!"
-
-  - *Tim Peters*
-  #+END_QUOTE
-
-  #+BEGIN_SRC python :tangle tests/test_02_primal_testing_full_fledged.py
-    #!/usr/bin/python
-    # -*- coding: utf-8 -*-
-    """A module-level docstring brief single-line description
-
-    A module-level docstring multi-line description. Notice the second line
-    with a straight encoding definition. 
-
-    Docstrings do appear in the bytecode, so you can access this through
-    the ``__doc__`` attribute. This is also what you'll see if you call
-    help() on a module or any other Python object.
-
-    """
-
-    import unittest  # <-- import header
-
-    """The place below an import section reserved for multi-line comments
-    which might be utilized as preamble to your Python program. It is
-    being red only by humans, not compiled ever, and permits author to
-    write down all stuff necessary to be at the foremost place.
-
-    It might be unnecessary in our case, when we write a simplified
-    version of programs. But our aim is a paragon of clarity thus it
-    should contain all lucidity's attributes.
-
-    You might notice that /coding definition/ on the first string, the
-    second string begins with tripled double quotes and a sentence there.
-    They are the obligatory attributes if you have intention to do things
-    as it should do.
-
-    By its purpose all programming languages should allow readers to
-    perceive what exactly this particular text do in a much explicit
-    manner. The real state of things, when programs are habitually
-    clogged, requires from a literate reader tons of time and perceverance
-    for litter decluttering and a core idea grasp. Noticeable that
-    nowadays most programs demand from its reader such literacy that it
-    made them actually indecipherable for humans and in most cases
-    extremely knotty even to its author.
-
-    Nevertheless, this fact usually omitted by specialists, who spent a
-    huge amount of time reading so overcomplicated texts of programs.
-    Through time, it became a normal if anybody can't make an idea out
-    from program's text on the fly.
-
-    “It is just lack of experience!”: they say usually. You might object
-    by notation that several professionals can't catch the essence out
-    from that text because it is poorly written, they answer something
-    like: “It works well enough to be scrutinized much diligently.”
-
-    """
+   #+BEGIN_SRC python :tangle tests/test_01_primal_testing_with_inline_comments.py
+     import unittest  # <-- import header
 
 
-    class TestLanguagePrimals(unittest.TestCase):  # <-- class definition
-        """The class-level for brief single-line docstring
+     class TestLanguagePrimals(unittest.TestCase):  # <-- class definition
 
-        Class defininition begins this reserved word /class/ following by
-        the /name of class/ and its /parent class/ in the brackets. On
-        first steps it might be like a magic mantra to enter the /test
-        suite/
+         def test_does_true_ever_exist(self):  # <-- an atomic test case itself
+             # and the sample of in-line comment
+             # self-explanatory name of the test case to focus attention
+             self.assertTrue(True)  # <-- straight assertion
+             # If this test passed successfully than True is really exists
 
-        """
+         def test_does_false_ever_exist(self):  # another test case
+             self.assertFalse(False)  # False also exists
 
-        def test_does_true_ever_exist(self):  # <-- an atomic test case itself
-            """A single-line brief description for particular test case"""
-            self.assertTrue(True)  # <-- straight assertion
-            # If this test passed successfully than True is really exists
+         def test_does_none_ever_exist(self):  # the last primitive test case
+             self.assertIsNone(None)  # None also predefined by the language
+   #+END_SRC
 
-        def test_does_false_ever_exist(self):  # another test case
-            """A single-line brief description for particular test case"""
-            self.assertFalse(False)  # False also exists
+   *Tip* It is convenient to compare these two files when you open them
+   in two panels simultaneously on the screen:
 
-        def test_does_none_ever_exist(self):  # the last primitive test case
-            """A single-line brief description for particular test case"""
-            self.assertIsNone(None)  # None also predefined by the language
+   #+CAPTION: Two-panel editor view
+   #+ATTR_HTML: :alt Two-panel view :title Compare these two files
+   [[http://0--key.github.io/assets/img/pydes/compare.png]]
+
+   *You've got to catch the essence of the lesson* 
+
+   Now you're checked up an existence of three _primary Python
+   constants_ using =unittest= module and its three methods:
+
+   - =assertTrue=
+   - =assertFalse=
+   - =assertIsNone=
+
+   It is a simple, minuscule and plain step onto the right path opting
+   knowledge in its natural order.
 
 
-    """This is a conclusion multi-line comment section. It is useful to
-    put all bottom-line conclusion there."""
-  #+END_SRC
+** Switching on lucid Python
 
+   Now you're ready and steady to read, compare and comprehend *Python*
+   programs. Yes, there are only two of them, they are /intentionally/
+   simplified, but suddenly you're got a /seismic shift/ in your mind.
+   From now and forever lets compose our programs in a self-explanatory
+   manner, and *Python* would alleviate the pain in mulling around how
+   the program works.
 
-* The set of attributes required                                   :noexport:
+   You might notice that we used the set of /inline comments/ to
+   describe some significant niceties. Yes, they are not obligatory
+   though. To accomplish the switch on pure *Python* we should utilize
+   a /multi-line comment/ feature for the much broad depictions. Yes,
+   they are not an obligation too, but in many cases they are
+   indispensable as a source of clarity for author during writing the
+   program and later for all its readers.
 
+   Naturally what such cool feature was already established by *Python*
+   and well-known as a [[https://www.python.org/dev/peps/pep-0257/][docstrings]], the special sort of comments.
+   Multi-line docstrings consist of a /summary line/, followed by a
+   blank line, followed by a /more elaborate description/.
 
-** The top
-   #+NAME: module-level-docstring
-   #+BEGIN_SRC python :session test
+   #+BEGIN_QUOTE
+   "A universal convention supplies all of maintainability, clarity,
+   consistency, and a foundation for good programming habits too. What
+   it doesn't do is insist that you follow it against your will. That's
+   Python!"
+
+   - *Tim Peters*
+   #+END_QUOTE
+
+   #+BEGIN_SRC python :tangle tests/test_02_primal_testing_full_fledged.py
+     #!/usr/bin/python
      # -*- coding: utf-8 -*-
-     """A module-level docstring
+     """A module-level docstring brief single-line description
 
-     Notice the comment above the docstring specifying the encoding.
+     A module-level docstring multi-line description. Notice the second line
+     with a straight encoding definition. 
+
      Docstrings do appear in the bytecode, so you can access this through
      the ``__doc__`` attribute. This is also what you'll see if you call
      help() on a module or any other Python object.
 
+     """
+
+     import unittest  # <-- import header
+
+     """The place below an import section reserved for multi-line comments
+     which might be utilized as preamble to your Python program. It is
+     being red only by humans, not compiled ever, and permits author to
+     write down all stuff necessary to be at the foremost place.
+
      It might be unnecessary in our case, when we write a simplified
-     version of programs. If the aim is a paragon of clarity it should
-     contain all required attributes of clarity and further support.
+     version of programs. But our aim is a paragon of clarity thus it
+     should contain all lucidity's attributes.
 
      You might notice that /coding definition/ on the first string, the
      second string begins with tripled double quotes and a sentence there.
      They are the obligatory attributes if you have intention to do things
      as it should do.
 
+     By its purpose all programming languages should allow readers to
+     perceive what exactly this particular text do in a much explicit
+     manner. The real state of things, when programs are habitually
+     clogged, requires from a literate reader tons of time and perceverance
+     for litter decluttering and a core idea grasp. Noticeable that
+     nowadays most programs demand from its reader such literacy that it
+     made them actually indecipherable for humans and in most cases
+     extremely knotty even to its author.
+
+     Nevertheless, this fact usually omitted by specialists, who spent a
+     huge amount of time reading so overcomplicated texts of programs.
+     Through time, it became a normal if anybody can't make an idea out
+     from program's text on the fly.
+
+     “It is just lack of experience!”: they say usually. You might object
+     by notation that several professionals can't catch the essence out
+     from that text because it is poorly written, they answer something
+     like: “It works well enough to be scrutinized much diligently.”
+
      """
-    #+END_SRC
 
 
-** The import
+     class TestLanguagePrimals(unittest.TestCase):  # <-- class definition
+         """The class-level for brief single-line docstring
 
-    #+NAME: import-header
+         Class defininition begins this reserved word /class/ following by
+         the /name of class/ and its /parent class/ in the brackets. On
+         first steps it might be like a magic mantra to enter the /test
+         suite/
+
+         """
+
+         def test_does_true_ever_exist(self):  # <-- an atomic test case itself
+             """A single-line brief description for particular test case"""
+             self.assertTrue(True)  # <-- straight assertion
+             # If this test passed successfully than True is really exists
+
+         def test_does_false_ever_exist(self):  # another test case
+             """A single-line brief description for particular test case"""
+             self.assertFalse(False)  # False also exists
+
+         def test_does_none_ever_exist(self):  # the last primitive test case
+             """A single-line brief description for particular test case"""
+             self.assertIsNone(None)  # None also predefined by the language
+
+
+     """This is a conclusion multi-line comment section. It is useful to
+     put all bottom-line conclusion there."""
+   #+END_SRC
+
+
+** The set of attributes required                                  :noexport:
+
+
+*** The top
+    #+NAME: module-level-docstring
     #+BEGIN_SRC python :session test
-      import unittest
+      # -*- coding: utf-8 -*-
+      """A module-level docstring
 
-      """By its purpose all programming languages should allow the reader to
-      understand what exactly this particular text do in a much explicit
-      manner. The real state of things requires a literate reader with a huge
-      experience exactly in reading programs and comprehension. Noticeable
-      that nowadays most programs demand from reader such proficiency that
-      it made them truly readable for the handful of true geeks only.
+      Notice the comment above the docstring specifying the encoding.
+      Docstrings do appear in the bytecode, so you can access this through
+      the ``__doc__`` attribute. This is also what you'll see if you call
+      help() on a module or any other Python object.
 
-      Nevertheless, this fact usually omitted by specialists, who spent a
-      huge amount of time reading so overcomplicated texts of programs.
-      Through time, it became a normal if anybody can't grasp an idea out
-      from program's source code on the fly.
+      It might be unnecessary in our case, when we write a simplified
+      version of programs. If the aim is a paragon of clarity it should
+      contain all required attributes of clarity and further support.
 
-      “It is just lack of experience!”: they say usually. You might object
-      by notation that several professionals can't catch the essence out
-      from that text because it poorly written, they answer something like:
-      “It works well enough to be scrutinized much more precisely.”
-
-      Nowadays it is deemed as normal to lack capability to understand
-      source code even for professionals. Naturally it is abnormal.
+      You might notice that /coding definition/ on the first string, the
+      second string begins with tripled double quotes and a sentence there.
+      They are the obligatory attributes if you have intention to do things
+      as it should do.
 
       """
-    #+END_SRC
-
-    #+RESULTS: import-header
+     #+END_SRC
 
 
-** None-False-True existence assertion
+*** The import
 
-
-    #+NAME: none-false-true-assertion
-    #+BEGIN_SRC python :session test
-      class TestLanguageBase(unittest.TestCase):  # <-- class definition
-          """begins this reserved word /class/ following by the /name of class/
-          and its /parent class/ in the brackets. On first steps it might be
-          like a magic mantra to enter the /test suite/.
-
-          The first and foremost taks for testing is to ensure how testing
-          tools work. In our case lets begit from the simplest things ever -
-          lets discover built-in constants True, False, None with already
-          defining testing methods one by one.
-
-          | Method                    | Checks that          |
-          |---------------------------+----------------------+
-          | assertEqual(a, b)         | a == b               |
-          | assertNotEqual(a, b)      | a != b               |
-          | assertTrue(x)             | bool(x) is True      |
-          | assertFalse(x)            | bool(x) is False     |
-          | assertIs(a, b)            | a is b               |
-          | assertIsNot(a, b)         | a is not b           |
-          | assertIsNone(x)           | x is None            |
-          | assertIsNotNone(x)        | x is not None        |
-          | assertIn(a, b)            | a in b               |
-          | assertNotIn(a, b)         | a not in b           |
-          | assertIsInstance(a, b)    | isinstance(a, b)     |
-          | assertNotIsInstance(a, b) | not isinstance(a, b) |
-
-          """
-
-          def test_does_true_ever_exist(self):  # <-- an atomic test case itself
-              # and the sample of in-line comment
-              # self-explanatory name of the test case to focus attention
-              self.assertTrue(True)  # <-- straight assertion
-              # True really exists.
-              # if this test do pass with success.
-
-          def test_does_false_ever_exist(self):  # No comments
-              self.assertFalse(False)  # False also exists
-
-          def test_does_none_ever_exist(self):  # no comments
-              self.assertIsNone(None)  # None also predefined by the language
-
-          """ Now it became obious that three built-in constants are well-defined
-          out of the box.  It is very time to compare them against each other.
-          """
-
-          def test_none_fasle_true_comparison(self):
-              self.assertIsNotNone(True)  # Naturally, neiver False
-              self.assertIsNotNone(False)  # nor True are not None
-              self.assertFalse(None)  # !! None has a Boolean False
-              #
-              self.assertIs(True, True)  #
-              self.assertIs(False, False)  #
-              self.assertIs(None, None)  #
-              #
-              self.assertNotEqual(False, True)  #
-              self.assertNotEqual(True, None)  #
-              self.assertNotEqual(False, None)  #
-              #
-              self.assertIsNotNone(False)  #
-              self.assertIsNotNone(True)  #
-
-
-      """
-      | Method                    | Checks that          |
-      |---------------------------+----------------------+
-      | assertEqual(a, b)         | a == b               |
-      | assertNotEqual(a, b)      | a != b               |
-      | assertTrue(x)             | bool(x) is True      |
-      | assertFalse(x)            | bool(x) is False     |
-      | assertIs(a, b)            | a is b               |
-      | assertIsNot(a, b)         | a is not b           |
-      | assertIsNone(x)           | x is None            |
-      | assertIsNotNone(x)        | x is not None        |
-      | assertIn(a, b)            | a in b               |
-      | assertNotIn(a, b)         | a not in b           |
-      | assertIsInstance(a, b)    | isinstance(a, b)     |
-      | assertNotIsInstance(a, b) | not isinstance(a, b) |
-
-      Now we definitely check up several methods of assertion embedded into
-      Python unittest module, and ensure that three fundamental constants
-      are also accessible out from the box.
-
-      The four methods at the bottom of the table:
-
-       - assertIn(a, b)
-       - assertNotIn(a, b)
-       - assertIsInstance(a, b)
-       - assertNotIsInstance(a, b)
-
-      are unnecessary right now because their purpose is testing of
-      sequencies and instances wich will be introduced a bit later.
-
-      In the next chapter new and principal concepts will be introduced.
-
-      """
-    #+END_SRC
-
-    #+RESULTS: true-assertion
-
-
-* Code elaboration
-
-  #+NAME: full-fledged-sample
-  #+BEGIN_SRC python :noweb yes :session one
-    # -*- coding: utf-8 -*-
-    """Now it is the moment to distill your knowledge about writing
-    =unittests= in ~Python~. Our previous work in
-    =tests/test_00dumb_testing.py= spare too much place in case if you're
-    grasp the core idea. Exactly:
-
-       - Module comments;
-       - Import section;
-       - Test class definition;
-       - Set of test cases
-
-    are necesseties to be clear when you're in writing ~Python~ code. Lets
-    create a much dense test suite out from existing one and put it in a
-    new file =tests/test_01false_true_none_existence.py=
-
-    """
-
-    import unittest
-
-    """The initial Python test suite
-
-    Asserts the existence True, False and None in Python
-    """
-
-
-    class TestFundamentalConstantsExistence(unittest.TestCase):
-
-        """Put all the existence tests together"""
-
-        def test_the_existence(self):
-            self.assertTrue(True)  # <-- straight assertion
-            self.assertFalse(False)  # False also exists
-            self.assertIsNone(None)  # None also predefined by the language
-
-
-    """Naturally that it is more convenient to tame a dense and terse code
-    blocks which are well-fitted on a single page. Thus, try to split all
-    your tests into /logical/ blocks for clarity purpose."""
-  #+END_SRC
-
-  #+NAME: full-fledged-sample-comparison
-  #+BEGIN_SRC python :noweb yes :session second
-    # -*- coding: utf-8 -*-
-    """Only code to compare None, True and False"""
-
-    import unittest
-
-
-    class TestCompareFundamentals(unittest.TestCase):
-
-        def test_none_fasle_true_comparison(self):
-            self.assertIsNotNone(True)  # Naturally, neiver False
-            self.assertIsNotNone(False)  # nor True are not None
-            self.assertFalse(None)  # !! None has a Boolean False
-            #
-            self.assertIs(True, True)  #
-            self.assertIs(False, False)  #
-            self.assertIs(None, None)  #
-            #
-            self.assertNotEqual(False, True)  #
-            self.assertNotEqual(True, None)  #
-            self.assertNotEqual(False, None)  #
-            #
-            self.assertIsNotNone(False)  #
-            self.assertIsNotNone(True)  #
-
-
-    """Seems it is much elegant than before, but less self-explanatory"""
-  #+END_SRC
-   
-** Further exploration
-
-** Zero, One and a Symbol
-
-
-*** Assertion and assignment
-*** True, False, None, == and = comparison, != and Not
-
-*** Boolean operations
-
-*** Arithmetics
-
-
-*** None-False-True comparison
-
-
-     #+NAME: none-false-true-comparison-assertion
+     #+NAME: import-header
      #+BEGIN_SRC python :session test
-       class TestCompareFundamentals(unittest.TestCase):
+       import unittest
 
-           """Now, when we ensure in existence of None, False and Ture constants,
-           it is very time to compare them with its own derivatives as zero
-           (0), one (1), the letter('A')
+       """By its purpose all programming languages should allow the reader to
+       understand what exactly this particular text do in a much explicit
+       manner. The real state of things requires a literate reader with a huge
+       experience exactly in reading programs and comprehension. Noticeable
+       that nowadays most programs demand from reader such proficiency that
+       it made them truly readable for the handful of true geeks only.
+
+       Nevertheless, this fact usually omitted by specialists, who spent a
+       huge amount of time reading so overcomplicated texts of programs.
+       Through time, it became a normal if anybody can't grasp an idea out
+       from program's source code on the fly.
+
+       “It is just lack of experience!”: they say usually. You might object
+       by notation that several professionals can't catch the essence out
+       from that text because it poorly written, they answer something like:
+       “It works well enough to be scrutinized much more precisely.”
+
+       Nowadays it is deemed as normal to lack capability to understand
+       source code even for professionals. Naturally it is abnormal.
+
+       """
+     #+END_SRC
+
+     #+RESULTS: import-header
+
+
+*** None-False-True existence assertion
+
+
+     #+NAME: none-false-true-assertion
+     #+BEGIN_SRC python :session test
+       class TestLanguageBase(unittest.TestCase):  # <-- class definition
+           """begins this reserved word /class/ following by the /name of class/
+           and its /parent class/ in the brackets. On first steps it might be
+           like a magic mantra to enter the /test suite/.
+
+           The first and foremost taks for testing is to ensure how testing
+           tools work. In our case lets begit from the simplest things ever -
+           lets discover built-in constants True, False, None with already
+           defining testing methods one by one.
+
+           | Method                    | Checks that          |
+           |---------------------------+----------------------+
+           | assertEqual(a, b)         | a == b               |
+           | assertNotEqual(a, b)      | a != b               |
+           | assertTrue(x)             | bool(x) is True      |
+           | assertFalse(x)            | bool(x) is False     |
+           | assertIs(a, b)            | a is b               |
+           | assertIsNot(a, b)         | a is not b           |
+           | assertIsNone(x)           | x is None            |
+           | assertIsNotNone(x)        | x is not None        |
+           | assertIn(a, b)            | a in b               |
+           | assertNotIn(a, b)         | a not in b           |
+           | assertIsInstance(a, b)    | isinstance(a, b)     |
+           | assertNotIsInstance(a, b) | not isinstance(a, b) |
 
            """
 
-           def test_does_zero_really_boolean_false(self):
-               self.assertFalse(0)  #
+           def test_does_true_ever_exist(self):  # <-- an atomic test case itself
+               # and the sample of in-line comment
+               # self-explanatory name of the test case to focus attention
+               self.assertTrue(True)  # <-- straight assertion
+               # True really exists.
+               # if this test do pass with success.
+
+           def test_does_false_ever_exist(self):  # No comments
+               self.assertFalse(False)  # False also exists
+
+           def test_does_none_ever_exist(self):  # no comments
+               self.assertIsNone(None)  # None also predefined by the language
+
+           """ Now it became obious that three built-in constants are well-defined
+           out of the box.  It is very time to compare them against each other.
+           """
+
+           def test_none_fasle_true_comparison(self):
+               self.assertIsNotNone(True)  # Naturally, neiver False
+               self.assertIsNotNone(False)  # nor True are not None
+               self.assertFalse(None)  # !! None has a Boolean False
+               #
+               self.assertIs(True, True)  #
+               self.assertIs(False, False)  #
+               self.assertIs(None, None)  #
+               #
+               self.assertNotEqual(False, True)  #
+               self.assertNotEqual(True, None)  #
+               self.assertNotEqual(False, None)  #
+               #
+               self.assertIsNotNone(False)  #
+               self.assertIsNotNone(True)  #
+
+
+       """
+       | Method                    | Checks that          |
+       |---------------------------+----------------------+
+       | assertEqual(a, b)         | a == b               |
+       | assertNotEqual(a, b)      | a != b               |
+       | assertTrue(x)             | bool(x) is True      |
+       | assertFalse(x)            | bool(x) is False     |
+       | assertIs(a, b)            | a is b               |
+       | assertIsNot(a, b)         | a is not b           |
+       | assertIsNone(x)           | x is None            |
+       | assertIsNotNone(x)        | x is not None        |
+       | assertIn(a, b)            | a in b               |
+       | assertNotIn(a, b)         | a not in b           |
+       | assertIsInstance(a, b)    | isinstance(a, b)     |
+       | assertNotIsInstance(a, b) | not isinstance(a, b) |
+
+       Now we definitely check up several methods of assertion embedded into
+       Python unittest module, and ensure that three fundamental constants
+       are also accessible out from the box.
+
+       The four methods at the bottom of the table:
+
+        - assertIn(a, b)
+        - assertNotIn(a, b)
+        - assertIsInstance(a, b)
+        - assertNotIsInstance(a, b)
+
+       are unnecessary right now because their purpose is testing of
+       sequencies and instances wich will be introduced a bit later.
+
+       In the next chapter new and principal concepts will be introduced.
+
+       """
      #+END_SRC
 
-     #+RESULTS: false-assertion
+     #+RESULTS: true-assertion
+
+
+** Code elaboration
+
+   #+NAME: full-fledged-sample
+   #+BEGIN_SRC python :noweb yes :session one
+     # -*- coding: utf-8 -*-
+     """Now it is the moment to distill your knowledge about writing
+     =unittests= in ~Python~. Our previous work in
+     =tests/test_00dumb_testing.py= spare too much place in case if you're
+     grasp the core idea. Exactly:
+
+        - Module comments;
+        - Import section;
+        - Test class definition;
+        - Set of test cases
+
+     are necesseties to be clear when you're in writing ~Python~ code. Lets
+     create a much dense test suite out from existing one and put it in a
+     new file =tests/test_01false_true_none_existence.py=
+
+     """
+
+     import unittest
+
+     """The initial Python test suite
+
+     Asserts the existence True, False and None in Python
+     """
+
+
+     class TestFundamentalConstantsExistence(unittest.TestCase):
+
+         """Put all the existence tests together"""
+
+         def test_the_existence(self):
+             self.assertTrue(True)  # <-- straight assertion
+             self.assertFalse(False)  # False also exists
+             self.assertIsNone(None)  # None also predefined by the language
+
+
+     """Naturally that it is more convenient to tame a dense and terse code
+     blocks which are well-fitted on a single page. Thus, try to split all
+     your tests into /logical/ blocks for clarity purpose."""
+   #+END_SRC
+
+   #+NAME: full-fledged-sample-comparison
+   #+BEGIN_SRC python :noweb yes :session second
+     # -*- coding: utf-8 -*-
+     """Only code to compare None, True and False"""
+
+     import unittest
+
+
+     class TestCompareFundamentals(unittest.TestCase):
+
+         def test_none_fasle_true_comparison(self):
+             self.assertIsNotNone(True)  # Naturally, neiver False
+             self.assertIsNotNone(False)  # nor True are not None
+             self.assertFalse(None)  # !! None has a Boolean False
+             #
+             self.assertIs(True, True)  #
+             self.assertIs(False, False)  #
+             self.assertIs(None, None)  #
+             #
+             self.assertNotEqual(False, True)  #
+             self.assertNotEqual(True, None)  #
+             self.assertNotEqual(False, None)  #
+             #
+             self.assertIsNotNone(False)  #
+             self.assertIsNotNone(True)  #
+
+
+     """Seems it is much elegant than before, but less self-explanatory"""
+   #+END_SRC
+   
+*** Further exploration
+
+*** Zero, One and a Symbol
+
+
+**** Assertion and assignment
+**** True, False, None, == and = comparison, != and Not
+
+**** Boolean operations
+
+**** Arithmetics
+
+
+**** None-False-True comparison
+
+
+      #+NAME: none-false-true-comparison-assertion
+      #+BEGIN_SRC python :session test
+        class TestCompareFundamentals(unittest.TestCase):
+
+            """Now, when we ensure in existence of None, False and Ture constants,
+            it is very time to compare them with its own derivatives as zero
+            (0), one (1), the letter('A')
+
+            """
+
+            def test_does_zero_really_boolean_false(self):
+                self.assertFalse(0)  #
+      #+END_SRC
+
+      #+RESULTS: false-assertion
 
 
 
-* Innate datatypes testing
+* Chapter II: Innate Datatypes
 
 
-* Enter the Function
+* Chapter III: Enter the Function
 
 
-* Enter the Object
+* Chapter IV: Enter the Objects
