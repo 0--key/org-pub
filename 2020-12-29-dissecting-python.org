@@ -1047,6 +1047,7 @@ tags: [book, template]
 
    - *Tim Peters*
    #+END_QUOTE
+   -----
 
    #+BEGIN_SRC python :tangle tests/test_02_primal_testing_full_fledged.py
      #!/usr/bin/python
@@ -1101,7 +1102,7 @@ tags: [book, template]
 
 
      class TestLanguagePrimals(unittest.TestCase):  # <-- class definition
-         """The class-level for brief single-line docstring
+         """The class-level for a brief single-line docstring
 
          Class defininition begins this reserved word /class/ following by
          the /name of class/ and its /parent class/ in the brackets. On
