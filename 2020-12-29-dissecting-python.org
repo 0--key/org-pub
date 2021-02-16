@@ -589,12 +589,6 @@ tags: [book, template]
   programming. The plot is a /misleading/: its natural prerequisites
   caused by human nature, its past and present in software industry.
 
-  Yes, seems like things go wrong there: for some vital reasons all
-  specialist in software industry still write only the /source code/
-  and shrink to switch on /writing programs/ instead. I observe like
-  it goes on and on for several decades already. And seems like nobody
-  capable to take a challenge to erradicate this distortion except me.
-
   Followed by a set of plain deductions it might unlock for a literate
   reader a =realm of programming=. It is a =realm= actually due to the
   strict set of certain rules defined by /his Majesty/ *Python*.
@@ -693,8 +687,13 @@ tags: [book, template]
 
 ** Machine Code vs Source Code vs Program
 
+   Yes, seems like things go wrong there: for some vital reasons all
+   specialist in software industry still write only the /source code/
+   and shrink to switch on /writing programs/ instead. I observe like
+   it goes on and on for several decades already. And seems like
+   nobody capable to take a challenge to erradicate this distortion
+   except me.
    
-
 ** Debugging is a major time-consuming task
 
 
