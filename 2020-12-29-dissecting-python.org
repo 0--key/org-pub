@@ -687,6 +687,20 @@ tags: [book, template]
 
 ** Machine Code vs Source Code vs Program
 
+   At programming early beginning there was a /machine code/ only. It
+   is a kind of machine's language by its purpose, thus casual
+   programming demanded from operator a true wit and grasp in
+   translation from /human language/ into /machine code/.
+
+   The idea of /compiler/ as a middleware between humans and machines
+   exactly for /automatic translation/ was on the tip of the tongue at
+   those days, but implemented by Grace Hopper titanic efforts and
+   phenomenal persistence only in 50s. It was the basement for all
+   modern /high-level programming/ languages establishment. Since and
+   forever it is possible to write program not in /machine code/ only,
+   but utilizing some particular /programming language/ which by its
+   purpose is human-friendly.
+
    Yes, seems like things go wrong there: for some vital reasons all
    specialist in software industry still write only the /source code/
    and shrink to switch on /writing programs/ instead. I observe like
