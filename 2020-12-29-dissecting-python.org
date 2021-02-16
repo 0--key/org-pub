@@ -502,6 +502,16 @@ tags: [book, template]
       #+RESULTS: true-assertion
 
 
+*** Several useful tips and tricks
+
+**** Two pages on the screen
+
+**** Git and clone it
+
+**** Contribute
+
+
+
 
 * Dedication
 
@@ -927,16 +937,6 @@ tags: [book, template]
   because every child do it absolutely autonomous, we got conclusion
   about a genuine and inborn human inclination on testing approach for
   study anything.
-
-
-* Several useful tips and tricks                                   :noexport:
-
-** Two pages on the screen
-
-** Git and clone it
-
-** Contribute
-
 
 
 * Chapter I: Primary concepts
