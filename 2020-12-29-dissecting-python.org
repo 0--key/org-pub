@@ -691,6 +691,9 @@ tags: [book, template]
    
 * General observations:
 
+** Machine Code vs Source Code vs Program
+
+   
 
 ** Debugging is a major time-consuming task
 
@@ -731,7 +734,7 @@ tags: [book, template]
    dismantle the programming as a professional skill using a plain
    English commonly and a handful of real code snippets as an
    unavoidable exclusion out of this rule.
-
+   
 
 ** A hidden complexity
 
@@ -865,7 +868,7 @@ tags: [book, template]
 ** Reading as a tourture 
 
    Avoidance of source code reading (escapism);
-   Actually it is a downright grueling task to do
+   Actually it is a downright grueling task to do   
 
 
 * A harsh deduction
