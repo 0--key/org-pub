@@ -708,6 +708,15 @@ tags: [book, template]
    #+ATTR_HTML: :title They are enormous
    http://0--key.github.io/assets/img/pydes/the_volumes.jpeg
 
+   -----
+   #+BEGIN_QUOTE
+    “We do not describe the world we see, we see the world we can
+    describe.”
+
+    — *Rene Descartes*
+   #+END_QUOTE
+   -----
+
    At one hand we have a /relatively simple/ job: to tame a machine to
    execute the precise sequence of operations utilizing the
    /programming language/ clear enough to be understood by humans and
@@ -740,6 +749,15 @@ tags: [book, template]
    #+ATTR_HTML: :class rounded float-center :alt Unexperience of youth
    #+ATTR_HTML: :title They are so young
    http://0--key.github.io/assets/img/pydes/software-development-team.jpeg
+
+   -----
+   #+BEGIN_QUOTE
+    “Youth is easily deceived because it is quick to hope.”
+
+   — *Aristotle*
+   #+END_QUOTE
+   -----
+
 
    The median age in a casual team of software developers is something
    below 30 years. Yes, this is a pledge of physical health, mental
@@ -850,6 +868,14 @@ tags: [book, template]
   #+ATTR_HTML: :class rounded float-left :alt Animals also test
   #+ATTR_HTML: :title Unconscious testing
   http://0--key.github.io/assets/img/pydes/monkey.jpeg
+
+   -----
+   #+BEGIN_QUOTE
+    “Doubt is the origin of wisdom”
+
+    — *Rene Descartes*
+   #+END_QUOTE
+   -----
 
   Summarize a handful of penetraiting observations above it might be
   dedused:
