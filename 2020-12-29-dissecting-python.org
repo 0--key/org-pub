@@ -522,10 +522,11 @@ tags: [book, template]
 
 * Dedication
 
+   -----
   #+BEGIN_QUOTE
   For my tiny family
   #+END_QUOTE
-
+   -----
 
 * Relevant quotes
 
