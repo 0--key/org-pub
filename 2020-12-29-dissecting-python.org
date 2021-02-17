@@ -604,19 +604,19 @@ tags: [book, template]
 
 ** For boring reader
 
-   The task isn't so tough it might seem because the most rules are
+   The task isn't so tough it might seem because the /major rules/ are
    naturally entangled. There are only a /thriple/ primals: =True=,
    =False= and =None=. The rest are /derivatives/ based on the them.
 
-   Of course 
+   Undoubtedly it prunes down the lesson. All what you need is to
+   build the tree-like structure of obtained lore in your mind. Of
+   course it requires from reader a lot of perseverance and diligence
+   to achieve a true knack in programming, but it is definetely not a
+   rocket science!
 
-   Undoubtedly it simplifies the lesson. All what you need is to build
-   the knowledge tree-like structure in your mind.
+   Naturally there are several /formal/ syntactical rules, but all
+   them are naive and would be learn without any effort at all.
    
-   For density this is a bottom paragraph with no data. The tap in a
-   barrel.
-
-
 
 ** Style Notes
 
