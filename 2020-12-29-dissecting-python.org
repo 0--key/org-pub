@@ -620,23 +620,34 @@ tags: [book, template]
 
 ** Style Notes
 
-   A killer feature of this book is its /style/: it is *not* yet
+   A major killer feature of this book is its /style/: it is *not* yet
    another user manual, journal or TTY input/output spiced with
    comments. It might deem a bit strange though. What if the book will
-   be written in =programming language=? Initially you will wittingly
-   immerse in a full-dressed Python code, the true, valid code, I
-   mean. The paramount of clarity and density. It might expected that
-   soon the =reader= will being capable to gaze its incredible power
-   and naked beauty from inside.
+   be directly written in =programming language=? Initially you will
+   wittingly immerse in a full-dressed *Python*-written program text,
+   the valid program, which might be /successfuly executed/ by
+   machine, I mean.
 
-   The main intention of this book is to take to the reader a chance to
-   be fun at the reading. At the another hand it might be impossible to
-   write a giddy novel for human readers and an absolutely precise set
-   of instructions for computer at the same time. Bear it in mind ~the
-   text~ deliberately splitted into two main chunks by its purpose:
-   /the comments/ and /the source code/ itself. Comments are for humans
-   only, but the source code is for two sides of software industry: it is
-   human-readable and machine-executable simultaneously.
+   Another noticeable discrepancy is a /test-driven/ approach in
+   disclosing programming language features. All material being wrote
+   down as a /chain of tests/ from beginning to the end. Generally
+   speaking the next one based on the previous and you should
+   incessantly compare them one against each over, detect the
+   difference and make conclusions by your own.
+
+   In addition I strive to compose each program in a paramount clarity
+   and density in expectation that instantly the =reader= will being
+   capable to gaze its incredible power and /naked beauty/ from
+   inside.
+
+   The main intention of this book is to take to the reader a chance
+   to be fun while reading. At the another hand it might be impossible
+   to write a giddy novel for human readers and an absolutely precise
+   set of instructions for computer at the same time. Bear it in mind
+   ~the text~ deliberately splitted into two main chunks by its
+   purpose: /the comments/ and /the program/ itself. The comments are
+   for humans only, the program is for two sides of software industry:
+   it is human-readable and machine-executable simultaneously.
 
 
 ** The side effect
