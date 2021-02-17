@@ -573,29 +573,31 @@ tags: [book, template]
   #+ATTR_HTML: :title Conduct an experiment together
   http://0--key.github.io/assets/img/pydes/experienced_tutor.jpeg
 
-  This book is about programming machines to do precisely what humans
-  ordered them. It is same in intention /like/ a slew similar books
-  already written about the same subject. And it is a completely wrong
-  /first/ impression.
+  This book is about programming machines to execute precisely what
+  humans ordered them to do. It is the same in intention /like/ a slew
+  similar books already written about the same subject. And it is a
+  completely wrong /first/ impression.
 
   It is a fiction book in a wide sense of this word: it has an
   objective, the subjects and the plot. The principal objective in
-  this book is Python and its usage by humans.
+  this book is *Python* programming language and its usage by humans.
 
   The subjects are students, teachers, books, programmers, software
   engineers and developers, other professionals related to
-  programming. The plot is a /misleading/: its prerequisites, its
-  past and present in software industry.
+  programming. The plot is a /misleading/: its natural prerequisites,
+  its past and present in software industry.
 
   Followed by a set of plain deductions it might unlock for a literate
   reader a =realm of programming=. It is a =realm= actually due to the
-  strict set of certain rules defined by /his Majesty/ *Python3*.
-  Learning these rules one by one is the only proper way to succeed in
+  strict set of certain rules defined by /his Majesty/ *Python*.
+  Learning these rules /one by one/ is the only proper way to succeed in
   studying programming language as a /system/.
 
-  All what I might propose to you is to serve as a bit experienced and
-  older guide on your way to acquire precious knowledge. And it will
-  be a small nudge in the right direction. Nothing more, nothing less.
+  All what I might propose to you is to serve you as a bit experienced
+  and /elder guide/ on your way to acquire /precious/ knowledge. And it
+  will be a small nudge in the right direction. All what I might
+  propose to you is a fun, joy and glee on this path only. Nothing
+  more, nothing less.
 
   Keep tighter, please.
 
