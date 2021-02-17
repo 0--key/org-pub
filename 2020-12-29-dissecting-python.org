@@ -512,6 +512,13 @@ tags: [book, template]
 
 
 
+ 
+*** Misleading erradication    
+
+  There is only one path: a bit straightforward, but narrow approach
+  to get rid the *misleading phenomenon* off once and forever in our
+  lives. Yes it /is/ neither simple nor popular, alas. It's a native
+  treatment for learning in general, boys and girls.
 
 * Dedication
 
@@ -584,11 +591,6 @@ tags: [book, template]
   strict set of certain rules defined by /his Majesty/ *Python3*.
   Learning these rules one by one is the only proper way to succeed in
   studying programming language as a /system/.
-
-  There is only one path: a bit straightforward, but narrow approach
-  to get rid the *misleading phenomenon* off once and forever in our
-  lives. Yes it /is/ neither simple nor popular, alas. It's a natural
-  treatment for learning in general, boys and girls.
 
   All what I might propose to you is to serve as a bit experienced and
   older guide on your way to acquire precious knowledge. And it will
