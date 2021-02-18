@@ -586,8 +586,8 @@ tags: [book, template]
 
   The subjects are students, teachers, books, programmers, software
   engineers and developers, other professionals related to
-  programming. The plot is a /misleading/: its natural prerequisites,
-  its past and present in software industry.
+  programming. The plot is a /misleading/: its natural prerequisites
+  caused by human nature, its past and present in software industry.
 
   Followed by a set of plain deductions it might unlock for a literate
   reader a =realm of programming=. It is a =realm= actually due to the
