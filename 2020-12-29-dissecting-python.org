@@ -520,6 +520,7 @@ tags: [book, template]
   lives. Yes it /is/ neither simple nor popular, alas. It's a native
   treatment for learning in general, boys and girls.
 
+
 * Dedication
 
    -----
@@ -527,6 +528,7 @@ tags: [book, template]
   For my tiny family
   #+END_QUOTE
    -----
+
 
 * Relevant quotes
 
@@ -849,7 +851,7 @@ tags: [book, template]
   #+ATTR_HTML: :title Unconscious testing
   http://0--key.github.io/assets/img/pydes/monkey.jpeg
 
-  Summarize the handful of penetraiting observations above it might be
+  Summarize a handful of penetraiting observations above it might be
   dedused:
 
   The paramount goals of writing are absolute clarity and density, so
@@ -1075,7 +1077,7 @@ tags: [book, template]
    and well-known as a [[https://www.python.org/dev/peps/pep-0257/][docstrings]], the special sort of comments.
    Multi-line docstrings consist of a /summary line/, followed by a
    blank line, followed by a /more elaborate description/.
-
+   -----
    #+BEGIN_QUOTE
    "A universal convention supplies all of maintainability, clarity,
    consistency, and a foundation for good programming habits too. What
