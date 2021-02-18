@@ -739,6 +739,19 @@ tags: [book, template]
    #+ATTR_HTML: :title They are so young
    http://0--key.github.io/assets/img/pydes/software-development-team.jpeg
 
+   The median age in a casual team of software developers is something
+   below 30 years. Yes, this is a pledge of physical health, mental
+   flexibility and, in most cases, a squad emotional stability. At the
+   other hand it is too young to be experienced enough to perceive
+   reality as a sum of events in the past.
+
+   Yes, 30 years old for human being intellectually is like a new born
+   toddler physically. They capable to do anything, but it requires
+   time and effort to learn it up. Nowadays they're learning a modern
+   programming by tutorials, manuals and books. That's right.
+
+   But, how these learning material is written and why? Why it is so
+   intimidatingly large?
 
    
 ** Testing as an innate tool to learn for humans;
