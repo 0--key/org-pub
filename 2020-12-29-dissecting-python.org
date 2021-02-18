@@ -1169,38 +1169,40 @@ tags: [book, template]
    #+END_SRC
 
 
-** Code elaboration
+** Program text rectification
 
-   #+NAME: full-fledged-sample
-   #+BEGIN_SRC python :noweb yes :session one
-     # -*- coding: utf-8 -*-
-     """Now it is the moment to distill your knowledge about writing
-     =unittests= in ~Python~. Our previous work in
-     =tests/test_00dumb_testing.py= spare too much place in case if you're
-     grasp the core idea. Exactly:
+   #+BEGIN_SRC python :noweb yes :tangle tests/test_03_primal_testing_distilled.py
+     """The initial test suite to check up existence of True, False and
+     None
 
-        - Module comments;
-        - Import section;
-        - Test class definition;
-        - Set of test cases
-
-     are necesseties to be clear when you're in writing ~Python~ code. Lets
-     create a much dense test suite out from existing one and put it in a
-     new file =tests/test_01false_true_none_existence.py=
+     Functionally it is the same as the programs above, but compressed for
+     density and lucidity. 
 
      """
+
 
      import unittest
 
-     """The initial Python test suite
+     """Now it is the moment to distill your knowledge about writing
+     =unittests= in ~Python~. Our previous program allocates too much space
+     in the case if you're grasp the core idea. Exactly:
 
-     Asserts the existence True, False and None in Python
+        - Module docstrings;
+        - Import section;
+        - Multi-line comments;
+        - Test class definition;
+        - A single test case function;
+        - Conclusion multi-line comments
+
+     are necesseties to be clear when you're in writing ~Python~ code. Lets
+     create a much dense test suite out from existing ones
+
      """
 
 
-     class TestFundamentalConstantsExistence(unittest.TestCase):
+     class TestPrimariesExistence(unittest.TestCase):
 
-         """Put all the existence tests together"""
+         """Allocates all the existence tests in a single function"""
 
          def test_the_existence(self):
              self.assertTrue(True)  # <-- straight assertion
@@ -1209,8 +1211,8 @@ tags: [book, template]
 
 
      """Naturally that it is more convenient to tame a dense and terse code
-     blocks which are well-fitted on a single page. Thus, try to split all
-     your tests into /logical/ blocks for clarity purpose."""
+     blocks which are well-fitted on a single page. Thus, try to make up all
+     your tests into /coherent/ blocks for clarity purpose."""
    #+END_SRC
 
    #+NAME: full-fledged-sample-comparison
