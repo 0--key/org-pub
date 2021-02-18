@@ -778,7 +778,14 @@ tags: [book, template]
 
    This is a simple and straight evidence of human innate ability to
    learn. And it requires no words at all, just attention, patience and
-   perseverance to deduce the meaning of this show. 
+   perseverance to deduce the meaning of this show.
+
+   Well, it is about playing cubes, right? Not at all. It is a general
+   approach to learning: an experience tutor should demonstrate you
+   some particular niceties by a /sequence of obvious and explicit
+   tests/. All you have to do are observe them, take them into
+   consideration, catch the essence out of them and put results into
+   your memory.
 
 
 ** Unit testing in CS
