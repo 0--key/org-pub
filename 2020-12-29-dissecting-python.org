@@ -819,9 +819,10 @@ tags: [book, template]
    these languages. It's right. It is much more illustrative and
    comprehensible for readers.
 
-   When later /unit testing/ was introduced it deemed as a special
-   concept in software development. What if I ask you: “What should be
-   the next step further in that direction?”
+   When later /unit testing/ was introduced it consider as an extra
+   special concept in software development. What if I ask you: “What
+   should be the next step to get rid of coding and switch on writing
+   programs bear in mind all these observations above?”
 
    It should be the /programs as the textbook/, written in particular
    programming language, with plentiful number of tests to examplify
