@@ -701,6 +701,12 @@ tags: [book, template]
    but utilizing some particular /programming language/ which by its
    purpose is human-friendly.
 
+   As you might expected what bright win of human ingenuity and
+   infinite lucidity all the sudden became a natural feature in the
+   industry, and it is a /wrong conclusion/: an old style of writhing
+   /machine code/ begot a /source code/ term initiation and
+   popularization.
+
    Yes, seems like things go wrong there: for some vital reasons all
    specialist in software industry still write only the /source code/
    and shrink to switch on /writing programs/ instead. I observe like
