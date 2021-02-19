@@ -1153,8 +1153,6 @@ tags: [book, template]
    -----
 
    #+BEGIN_SRC python :tangle tests/test_02_primal_testing_full_fledged.py
-     #!/usr/bin/python
-     # -*- coding: utf-8 -*-
      """A module-level docstring brief single-line description
 
      A module-level docstring multi-line description. Notice the second line
