@@ -728,7 +728,7 @@ tags: [book, template]
 
 
 
-   #+CAPTION: Time and efforts for debug
+   #+CAPTION: Time and efforts spent on debugging
    #+ATTR_HTML: :class rounded float-center :alt Typical proportion
    #+ATTR_HTML: :title The lion share of efforts
    http://0--key.github.io/assets/img/pydes/debugging.jpg
@@ -1044,13 +1044,12 @@ tags: [book, template]
 
 * Chapter I: Primary concepts
 
-
 ** Testing Python primary constants
 
    Now it is time to concoct our first primitive set of tests to
    determine the existence of /Python primals/ =True=, =False= and
    =None=. It is intentionally simplified to show you the threshold of
-   primitivity in valid /Python/ code.
+   primitivity in valid /Python/ programming.
 
    #+BEGIN_SRC python :tangle tests/test_00_primal_testing_oversimplified.py
      import unittest
