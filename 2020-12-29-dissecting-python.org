@@ -1143,6 +1143,16 @@ tags: [book, template]
    blank line, followed by a /more elaborate description/.
    -----
    #+BEGIN_QUOTE
+    *Warning, atavism!*
+    =#!/usr/bin/python=
+    =# -*- coding: utf-8 -*-=
+
+    These two topmost strings in each *Python* program are /optional/
+    and in most cases /redundant/.
+   #+END_QUOTE
+   -----
+   -----
+   #+BEGIN_QUOTE
    "A universal convention supplies all of maintainability, clarity,
    consistency, and a foundation for good programming habits too. What
    it doesn't do is insist that you follow it against your will. That's
