@@ -707,14 +707,15 @@ tags: [book, template]
    /machine code/ begot a /source code/ term initiation and
    popularization. But what this /source code/ ever means?
 
-   It is a /code/ by definition and it is a /source/ of /machine code/
-   before compilation. These peculiar niceties allow to write programs
-   as a /code/, neglecting the most significant feature of high-level
-   programming language - its *readability*, and name this
-   /pseudo-program/ as a /source code/. Yes, it is wierd, and in some
-   cases it is convenient: it allows you type less, comment nothing,
-   name variables absolutely meaningless like ~bar~, ~foo~, or even
-   ~a, b, c, d, e, f, g~!
+   It is a /code/ by the definition and it is a /source/ of /machine
+   code/ before compilation by the intention. These peculiar niceties
+   allow to write programs as a /code/, neglecting the most
+   significant feature of high-level programming language - its
+   *readability*, and name this /pseudo-program/ as a /source code/.
+   Yes, it is wierd, and in a few cases this transference is
+   convenient: it permits type less, comment nothing, name variables
+   absolutely meaningless like ~bar~, ~foo~, or even ~a, b, c, d, e,
+   f, g~!
 
    Yes, seems like things go wrong there: for some vital reasons all
    specialist in software industry still write only the /source code/
