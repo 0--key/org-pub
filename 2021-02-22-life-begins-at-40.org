@@ -13,3 +13,998 @@ tags: [mid-age, vocabulary]
 #+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
 #+TOC: headlines 2
 #+PROPERTY:header-args :results output :exports both :eval no-export
+
+
+Thank you John for those very kind words it's an absolute pleasure to
+be here tonight it's an honor to be speaking at the Royal Society so
+thank you very much for inviting me I have to say that I had not
+expected so many people to be here so thank you very much for coming
+as well we know particularly at the Royal Society that in terms of
+knowledge production we always stand on the shoulders of giants there
+are always people who have gone before us but there are people who
+walk beside us on whom we depend as well
+
+And before I start I want to thank three institutions the first is the
+Wellcome Trust the Wellcome Trust has funded a large proportion of my
+research and my research career from the very early stages converting
+from a doctor into a an early career researcher throughout various
+larger program grant strategic awards and more recently the trust has
+supported the creation of the Welcome Center for cultures and
+environments of Health in many ways for me this was the fulfillment of
+a dream although at times the responsibilities and demands seemed more
+like a nightmare but it's a fantastic opportunity and I'm deeply
+grateful for the trust for the funding and it's nice that Simon
+Chaplin is here as well so thank you for coming I'm also a deeply
+fortunate that I have worked at the University of Exeter for over 20 years.
+
+
+We know from the tag line the Dexter is probably the best university
+in the world and for me it has been fantastic a place to grow as an
+academic a place to develop to try out new ideas the senior management
+at the University Steve Smith the vice chancellor Janice Kay the
+Provost Nick told that before he left and now Neil gal that senior
+group leading the University have been fantastic they have supported
+and encouraged me and been prepared to take a risk or two to support
+one or two of my more grandiose ideas I also want to thank Andrew
+Thorp who is the Dean of the College of Humanities has been fantastic
+a scholar and friend for many many years the final institution but I
+want to thank is the institution that is my
+family.
+
+I didn't get where I am today without my wife Siobhan wonderfully
+loyal faithful tolerant of my own crises throughout our marriage our
+three children Kiera rhythm and Connell the best children these
+together are the why and the how of my life so thank you it may seem
+strange to be standing in the Royal Society giving a lecture about a
+subject like the midlife crisis this is an institution renowned for
+its world leading scientific research but I hope that what I have to
+say will do justice to the three figures after whom this lecture is
+named John Wilkins of course a natural philosopher a polymath one of
+the founders of the society John Desmond Bernal an Irish scientist
+renowned for his work in x-ray crystallographer crystallography in
+molecular biology but also a very committed and prolific historian of
+science interested in the relationship between science and society
+Peter Medawar really most famous for his work on immunological
+tolerance for which he received the Nobel Prize in 1960 what is less
+well known about Medawar work he was also interested in aging aging as
+an unsolved biological problem as he put it in his inaugural lecture
+in 1951 and one of the terms that Medawar used to describe the aging
+process was senescence and that concept of senescence had been
+popularized by an American psychologist Grandville Stanley Hall in the
+early 20th century and it came to be one of the key ways in which
+midlife and middle-age was defined during the early 20th century
+middle-age came to represent the period between adolescence and senescence.
+
+
+And that's why many people refer to it as middle essence middle-aged
+as middle essence so although it's a strange subject to be talking
+about at the Royal Society I hope that it will do justice to these
+three figures here after whom the lecture is named let me take you
+back and some of you will remember this let me take you back to the
+late 1970s so an iconic sitcom television series on BBC the fallen
+rise of Reginald Perrin starring Leonard Rossiter and the television
+series was based on a novel by the English comic writer David nobs
+Reggie Perrin Reginald Isle Anthony Perrin our IP was 46 years old
+married to his wife Elizabeth living in a near Georgian house in the
+Surrey suburbs they had two children both growing up leaving their
+parents living in a house that was perhaps not quite well no longer a
+home Reggie commuted every weekday up to Waterloo station walked
+across the bridge went to work at sunshine deserts as a middle manager
+as a bureaucrat and at the start of the novel Reggie is depressed he's
+disillusioned and distressed disaffected disillusioned with his life
+disillusioned with his wife disillusioned with his work and he begins
+to behave rather randomly he starts sending off aggressive memos to
+his colleagues he tries to have an affair with his secretary he begins
+to get more irascible and one day while his his wife is out he decides
+that he's going to collect all his childhood mementos the memories of
+his youth and burn them as if he's trying to eradicate his past
+eradicate his identity Reggie decides that he can no longer live like
+this he decides there's only two ways he can either disappear in some
+way or he can kill himself so he drives a van down to a Dorset Beach
+takes off his clothes leaves them on the beach and walks out into the
+sea naked he doesn't drown himself he walks back up puts another set
+of clothes on so that he leaves his old clothes on the beach so people
+think that he's drowned himself puts on a new set of clothes puts on a
+week and takes on a new identity and he becomes eventually Martin well
+I don't want to tell you for those of you I mean some of you will
+remember the television series the book is fantastic in many many ways
+it takes place only over a week or two I don't want to give away the
+ending what I want to say is that what Reggie Peron was suffering from
+at the age of forty something was what we would now call and was
+indeed called then a midlife crisis a man usually a man not
+exclusively and in this period largely understood to be a male problem
+a man between the age of about 35 and 45 in that deadline decade
+realizing that his life was going nowhere disaffected and
+disillusioned would go off the rails the midlife crisis.
+
+Now the term had been first introduced about a decade earlier by a
+Canadian social scientists and psychoanalyst Elliot Jax Jax had come
+over from Toronto in the second world war had stayed he was one of the
+founding members of the Tavistock Institute for human relations he was
+social scientists but also psychoanalyst he'd been analyzed himself by
+Melanie Klein and had a practice as a psychoanalyst and what she
+described was pretty much what Reggie parind experienced and his point
+in death in the midlife crisis a short article published in 1965 he
+pointed out that the paradox is that of entering the prime of life the
+stage of fulfillment but at the same time the prime and fulfillment
+are dated death lies beyond so the picture that Jack's created was off
+this this man usually at the peak of a binomial curve of life and when
+you get to that peak all you can see is the downward curve to death
+and that's the moment when anxiety a depressive crisis was triggered
+he then went on to explain what happened to middle-aged men or what
+kind of behavior they began to exhibit and what he said was that in
+order to cover up this crisis they developed a set of manic behaviors
+to try and convince themselves that they were still young so the
+compulsive attempts to remain young the hypochondriacal concern over
+health and appearance the emergence of sexual promiscuity in order to
+prove youth and potency the hollowness lack of genuine enjoyment of
+life these he said are familiar patterns and they are all attempts at
+a race against time so the midlife man the man in the deadline decade
+sees death accelerating towards him and he tries to deny that or cover
+it up by claiming or pretending that he's younger than he is leading
+to these kinds of behaviors at the time both in the 60s and when
+Reggie Peron was having his crisis in the 70s there were two principal
+explanations for the midlife crisis the first was psychological the
+kind of analysis an explanation that Eliot Jack's put forward and that
+is that the midlife crisis was an identity crisis a crisis a
+depressive identity crisis very similar to the adolescent crisis the
+adolescent crisis he thought was a schizoid crisis the midlife crisis
+a depressive crisis hey axe was not the only person or certainly not
+the first person to think about the stages the critical phases of life
+in this way Carl Jung in the 1930s had written about his own crisis at
+the age of 37 and particularly Eric Erickson an American developmental
+psychologist had talked about life particularly in terms of the ages
+or the stages of he described life in terms of eight stages each of
+which had its own particular conflict the stage that correlated with
+the period that Jax was talking about he thought was focused on a
+conflict between creativity on the one hand and stagnation on the
+other and it was that that created the crisis so there were others as
+well thinking largely from a psycho analytical point of view about how
+we understood middle-age and midlife one of the important points to
+make about this kind of approach to middle age and midlife was.
+
+That it was not just theoretical this wasn't just a theory of how we
+developed eating it was also incorporated into practice and
+psychoanalytical models of Aging became absolutely key to the work of
+marriage guidance counselors for example working for the national
+marriage guidance council or couples therapist working at the
+Tavistock clinic for example most of that was built on an
+understanding of individual development across the life course through
+the stages through middle age and through the various crisis points
+that they could produce so the first explanation for regi parents
+crisis is that he was suffering from some identity crisis around the
+age of forty forty-five but there were another set of explanations and
+these were biological the first biological explanation really revolved
+around some of the work that Peter Medawar was interested in old age
+natural death from the unsolved problem of biology he was interested
+particularly in the evolutionary and biological dimensions of Aging
+and in in that sense the downward curve of life was not necessarily
+only an awareness of approaching death it was something else it was an
+awareness that as we get older we get grayer or Balder all we develop
+middle-age spread or our muscle mass declines our vigor our vitality
+deteriorates and it was that sense of deteriorating vigor that fueled
+the cry in some kind of waste now it's not unrelated to the fear of
+death that Jax described but very much linked to that declining
+biological vitality that people wanted there was of course another way
+and there has been another way in which midlife crises have been
+linked to biology and that is particularly in women in relation to
+reproductive life and here the argument was and most of the literature
+certainly in this period was on men but there was some literature on
+women.
+
+
+In these cases women were understood to go through a crisis act
+through during after menopause as their reproductive functions
+supposedly disappeared or in some ways through the emptiness process
+so the a woman's midlife crisis which had tied very very clearly to
+her reproductive capacity the term biological clock or the talkee the
+clock is ticking in fact was used by an American journalist Richard
+Cohen in 1978 but the notion that in women their transitions and their
+crises might be governed by their biology or reduced to their biology
+was very commonplace the bats weren't surprised you to know that some
+men blamed their own midlife crises on the menopause their wife's
+menopause as well so let me go back to Reginald Perrin and reflect for
+a moment Reggie parry in the late 70s having a crisis trying to change
+his life in key ways recognizing that he perhaps hadn't achieved what
+he wanted and that he was disaffected and disillusioned we can see
+that pairing we could explain that in terms of his own psychological
+angst he's got to a stage an age in his life where everything looks as
+if it's going downhill and only death awaits we can also get a sense
+from his book that physically he's declining physically he no he no
+longer feels to be himself to be the man that he was so we could see
+it very much as an individual story of a man with psychological and
+biological problems what I want to suggest for the rest of the talk is
+that this is not the only way in which we can understand the midlife
+crisis in fact I want to zoom out to take it away from the individual
+and think about the social and cultural conditions that make the
+midlife crisis possible not only as a concept in the 60s 70s and 80s
+but also as a set of experience what happened to enable the midlife
+crisis to emerge not in an individual case but much more widely in
+terms of the socio-economic and the cultural conditions and I want to
+do that in two ways.
+
+
+In the first instance I want to think about the standardized life
+course that emerged in the middle decades of the 20th century that
+created particular stresses on people at middle-age secondly I want to
+reflect on the meaning and the history of the phrase life begins at 40
+and at the end I want to argue that it's those two components that k2
+played a key role in the emergence of the midlife crisis not just
+Reggie parens but ours as well so let me start reflecting for a moment
+on the standardized life course there's no doubt of course that our
+life cycles individually and collectively are governed by our biology
+but Bernice no Garson was a very prominent psychologist in America who
+wrote extensively on middle-aged and midlife and the transitions
+between very life stages are various life stages and she pointed out
+of course that the timetable the milestones of life were not merely
+biological they were also also socially prescribed so there was a
+socially prescribed timetable she said for the ordering of major life
+events a time in the life span when men and women are expected to
+marry a time to raise children a time to retire so the rhythm of our
+life the stages of a laugh the ages of our life the transitions of our
+life was socially prescribed not just biological and of course if
+they're socially prescribed it means that they can change our
+understandings and experience can change our expectations can change
+our expectations of the life course the life course the life cycle did
+change dramatically across the early decades of the twenty century by
+the 1950s and 1960s couples were living longer if you were born at the
+end of 19th century early 20th century in this country we might expect
+to live until we were 14 50 60 by the 1950s 40s 50s we might expect to
+live until well into our 70s or perhaps eighties so life expectancy
+had increased giving us that longer life cycle and in principle also a
+longer period of adulthood or middle age at the same time we were
+marrying earlier by 19 in 1911 only about 24% of women were married by
+the age of 24 by the early 50s that had risen to 52% and in fact if
+you look at some of the surveys of men and women's attitudes about
+that the ideal age to marry is between 20 and 24 men ideal age
+slightly later but not that much different.
+
+
+At the same time during the early decades of the 20th century it
+became more commonplace to have fewer children and to cluster them
+together earlier in the marriage so let's say a couple were married at
+the age of 20 or 21 by 24 or 25 they would have had their two or three
+children and they would be then bringing up those children the
+children would leave home so there was a much longer period of life
+after the childbearing period in a sense in this period still that was
+more important for women who tended to be in the workplace less by and
+large and looking after the children more men's rhythm the rhythm of
+men's life was slightly different dictated not so much by the rhythms
+of the family but by the rhythms of occupational patterns by the 1950s
+and 60s men tended to work for a fixed number of years often in the
+same job until retirement so you can see the male life course in some
+ways also socially prescribed from the moment of starting work to the
+moment of retirement set by the government by the state or by private
+industries one of the consequences of this this teasing out of the
+life course the the clustering of major life events in very similar
+ways across populations meant that people began to experience much
+more clearly defined stages and transitions in the life course so you
+could begin to identify a period of middle age between 30 and 50 40
+and 60 and we could begin to identify those critical stages of
+transition between those life phases now the point I want to make from
+this is that there are a number of consequences that emerged from this
+modern standardized homogenized life course and they linked directly
+to the emergence of the midlife crisis the first impact was the growth
+of age anxiety or age consciousness if there were standard life
+courses standard milestones against which we could measure ourselves
+we became much more conscious or anxious about whether we succeeding
+or failing against those milestones so a much greater sense of where
+we should be at certain points in our life and of course that
+expectation that we would leave home get married have children get a
+job retire our expectations were raised but at the same time if we
+didn't match up to those expectations if we didn't meet those
+milestones follow that timetable we could be dissatisfied with our
+achievements and this led the notion the phrase keeping up with the
+Joneses started in a comic strip in America about 1913 but it became
+in those early decades of the 20th century through the 30s and 40s a
+key way of us measuring ourselves against others a driver in some ways
+of envy and jealousy a driver of emulation a driver to increase our
+consumption to keep up with the journey the Joneses we were much more
+aware of our place in the world and particularly where we were failing
+while we were becoming more aware we were also becoming subject in
+this period two very different stresses this is the generation in the
+fifties and sixties 70s Reggie parents generation that could perhaps
+describe themselves as the first Sandwich Generation if we think about
+the patterns of marriage and child rearing and aging if you imagine
+that we have that couple ideally marrying at twenty have their
+children by twenty five by the time they're 40 45 Reggie parents age
+their children will be going through the troubled years of adolescence
+their parents would be aging through retirement needing more care and
+you find in this period the middle aged between the age of 30 and 50
+40 and 60 becoming sandwiched between the troubles of their adolescent
+children and the troubles of their parents so you hit the midlife
+crisis exactly when your children are going through an adolescent
+crisis.
+
+
+Middle age was also challenged for many people by financial pressures
+at this time and again this was a feature of the changing life cycle
+in 1891 we could expect to inherit at the age of about 37 now I have
+to say that this is a middle-class Western story this is not true of
+everybody although the longer history of the midlife crisis suggests
+that the crisis has been democratized in many ways but if you were
+lucky enough to inherit in the late 19th century you could expect to
+inherit at the age of 37 by the 1940s you would expect to inherit not
+until you were 56 that meant that you inherited it's always nice to
+get money don't get me wrong but if you inherited you inherited after
+you'd had children after their children have grown up and after they
+left home at times when you might not need it as much as you had when
+you were middle-aged bringing up children that created us set of
+financial pressures on couples trying to bring up children the final
+point I want to make in terms of midlife pressures and it applies you
+know the empty nest is is as it was first introduced the empty nest in
+in about 1913 it was applied largely to women in a rather derogatory
+way that their only function in society was to have children and once
+those children had left they were of no value but in some ways it
+describes a very key feature of the extended life course that by the
+1950s given the fact that women and men are marrying earlier having
+their children earlier a woman could live for a further 52 years after
+the birth of their last child and many years after menopause one of
+the things that created in people's minds was the question is this all
+there is do I really want to live like this with this person for the
+next 40 or 50 years and a number of the psychologists in this period
+pointed out that the extended life course that continued pressures of
+middle age through middle age meant that many people when they got to
+the age of 40 45 began what Robert Lee and Marjorie Kassabian referred
+to in the in the spouse Kappa don't if you can see weathering the
+marriage crisis during middle essence is the subtitle of the book what
+they pointed out that the multiple stresses during middle age that
+sense of recognizing that you were not achieving what you should have
+according to the standardized timetable of the life course meant that
+people began to reappraise their lives to reckon the achievements
+against the goals the satisfactions versus values the kind of
+evaluation of his life that Reggie Peron went through and they began
+to realize of course that they hadn't achieved that they were
+disappointed and as a result hit crisis point and Margaret Mead I've
+quoted here as an anthropologist in a very interesting book male and
+female in 1949 published in 1949 pointed out that in a world in which
+people may reorient their whole lives at 40 or 50 that's a world in
+which marriage for life becomes much more difficult Margaret Mead
+solution and the solution of some science fiction writers was that we
+should introduce the possibility of multiple serial marriages she
+suggested - but many writers at the time suggested possibly three one
+for youthful passion one for Parenthood and one for companionship in
+later life that there were very different demands across that extended
+life course at different stages of your life there was no reason why
+it shouldn't be the same person who fulfilled those sequentially but
+there was no reason why it should is what Margaret Mead was saying.
+
+Margaret Mead also appeared in a lot of BBC television programs on
+marriage and divorce in this period now one of the consequences one of
+the reasons why this was important socially and culturally was because
+people were concerned in this period about the levels of divorce and
+they linked marriage midlife crisis to a marriage crisis claiming that
+partly it was the behavior of middle-aged men that was threatening
+marriages leading to family breakdown separation and divorce and this
+was regarded as problematic for social stability in the post-war
+period before the Second World War fewer than 7,000 couples were
+divorced there was a big boost after the Second World War during the
+late forties to 50 linked largely to well explained in terms of hasty
+marriages during the war the difficulties that soldiers had
+readjusting to civilian life the fact that during separation both
+husbands and wives for example had had affairs those challenges led to
+a high level of breakdown after the Second World War there was a
+little bit of a plateau and then arise through the late 60s 70s and
+80s now I don't to say that the midlife crisis the challenges that
+people faced in middle age were the only reasons for that one of the
+reasons for the big rise after 1970 there's a change in the divorce
+law the divorce reform act of her was introduced in 1969 removed the
+marital offence and replaced it with the notion of irretrievable
+breakdown making it much easier for some people to get a divorce but
+debates about the midlife crisis in this period and still I think link
+it very closely to concerns about the stability of marriage which was
+regarded by many as essential for social stability let me pause for a
+moment then and think again about Reggie yes distraught yes going
+through a period of psychological angst yes fading biologically but
+also in some ways a victim of very striking demographic changes across
+the twentieth century or very different expectations of the milestones
+of life the expectations about when people would get married have
+children get a job retire and so forth created a set of pressures on
+Reggie Peron and his wife and his children that proved for him too
+much in some ways what I've sketched out is what Reggie Peron was
+escaping from the stick that pushed him to behave in these ways was
+the social pressures created by the extended standardized life course
+but what did he hope to achieve by it if that was what he wanted to
+escape from where was he expecting to go what were the benefits of
+changing his life in this kind of way and I want to reflect on that
+not just the push out of the mess that he felt he was in but the pull
+towards a better life I want to explore that just by thinking about
+the phrase life begins at 40 and where that came from and how that
+played in to the expectations and the aspirations not just of Reggie
+Peron but also many of us as well.
+
+
+The phrase life begins at 40 wa in 1917 by mrs. Theodore Parsons
+Matilda Parsons who was the widow of an army officer but had already
+had her career as well teaching particularly young women and girls and
+young women and older women how to keep fit scientific bodybuilding is
+what she referred to it as and partly it was keeping physically fit in
+order to keep the mind fit and this phrase I loved she was interviewed
+in 1917 for the newspaper it was four days after America entered the
+First World War and in the interview she said very similar set of
+ideas to what Eliot Jack's introduced much later in the sixties it's a
+paradox of life she said that we do not begin to live until we begin
+to die death begins at 30 that is deterioration of the muscle cells
+set in most old age is premature and attention to diet and exercise
+would enable men and women to live a great deal longer than they do
+today the best part of a woman's life begins at 40 that was her phrase
+now there's a particular context to what mrs. Parsons was saying and
+again this is as part of your argument unless we understand the social
+and cultural context we don't fully recognize the meaning of that kind
+of term Theodore parson mrs. Parsons directed her comments at what she
+referred to as the adipose woman of 40 she was addressing middle-aged
+women who she felt had let themselves go and the reason why this was
+important to mrs. Parsons was because of the war effort men were away
+fighting women were needed to bring up children to do the work to
+support the communities economically while their men were away so it
+became crucial to her that women retain their fitness physically and
+mentally as they aged that notion it's really interesting that as the
+notion life begins at 40 became popular.
+
+
+The first part of that sentence the best part of a woman's life begins
+at 40 got lost in some kind of translation. It became simply life
+begins at 40 and it was popularized in a whole variety of ways during
+the 1920s and 1930s the most common way or the most popular book was
+Walter Pickens book entitled life begins at 40 Pitkin was an American
+journalist working at Columbia University in the taken miss notion
+that life begins at 40 to write a self-help book and you can see from
+the cover of the book through this book's inspiring and helpful advice
+thousands of men and women fearful of middle age have lost their
+anxieties and found new ways to make life richer happier and more
+worth living this was the the the blurb on the book to try and sell it
+and the notion both Pickens book and that phrase life begins at 40
+were used in other areas life begins at 40 was a film in 1935 starring
+Will Rogers that was based on the book and there were some skits there
+were some satires as well of this great film in the late 1930s
+entitled life begins at 8:30 so the idea that life could begin rather
+than end at midlife at middle age became a key part of self-help
+literature and advice to middle-aged couples during the 30s 40s and
+50s so what did Pitkin advise people in order to find these new ways
+of being happy in fact it was pretty bland and mundane he pointed out
+that happiness comes most easily after 40 firstly by realizing that a
+great many years lie between 40 and 70 now that quite you know that
+might seem fairly banal and I think it probably is but it's it's a
+it's a twisting on its head of the concerns of midlife midlife Reggie
+parens looking back and saying I haven't achieved anything I've got
+nothing left to look forward to what Pitkin is saying is yes you have
+even at
+
+the age of 40 you're going to have 20 30
+
+40 years of your life still make the
+
+most of it and the way you made the most
+
+of it according to Pitkin was that you
+
+pursue self fulfillment through material
+
+improvement leisure and what he called
+
+the art of living much less work more
+
+leisure more play
+
+this process of self-fulfillment would
+
+make those last 30 or 40 years
+
+worthwhile no longer the downward curve
+
+no longer the acceleration towards death
+
+but in fact a fulfilling middle-aged and
+
+older age and this notion became widely
+
+adopted in two particular ways one is
+
+that it was taken as a strategy for
+
+personal renewal this is a way in which
+
+we could refresh and renew ourselves
+
+when we were getting jaded and faded in
+
+middle age begin to realize that there
+
+were things to look forward to that it
+
+was possible to reshape to Ramola life
+
+in more positive ways but the key part
+
+of this and again thinking about this in
+
+social and cultural historical terms the
+
+key part of this it's this this story
+
+that Pitkin was telling was not just
+
+about individuals of discovering
+
+themselves it was also a lesson a
+
+message for populations certainly in
+
+America and Britain during a period of
+
+economic depression during a period of
+
+recession increasingly concerned about
+
+the specter of a second world war during
+
+a period of doom and gloom that if we
+
+reinvigorated ourselves there was hope
+
+for optimism and pickins argument was
+
+that if people as they got older the
+
+middle-aged and the elderly work less
+
+and had more leisure there would be more
+
+job opportunities for younger people
+
+which would boost the economy equally if
+
+people in middle age and older age spent
+
+their money buying things enjoying
+
+themselves purchasing leisure for
+
+example and pleasure that would also
+
+boost the economy so part of the appeal
+
+of pickins work was that it struck a
+
+chord in individuals like Reggie Peron
+
+who were struggling with their own
+
+problems but it also meant something to
+
+a Western world struggling with the
+
+effects of economic recession because it
+
+promised a way out of them and in some
+
+ways a pick in writing in the 30s the
+
+1930s were a strangely paradoxical
+
+period a period of
+
+morbid gloom in some kind of ways
+
+because of the recession and because of
+
+the fear of another global war but it
+
+was also a period of incredible optimism
+
+it was the period when the American
+
+Dream was conceived and the American
+
+Dream first appeared in the work of
+
+James Truslow Adams in 1931 the year
+
+before Pitkin published life begins at
+
+40 and it's in the epilogue to this
+
+fantastic overview the epic of America
+
+and in that epilogue he tries to sketch
+
+out the future to move away from some of
+
+the doom and gloom of the interwar
+
+period to say life globally as well as
+
+individually doesn't have to go down
+
+towards death and destruction it can go
+
+the other way and for Adams the American
+
+Dream was not a dream simply of
+
+motorcars and high wages so it's not
+
+just a material dream but a dream of a
+
+social order in which each man and woman
+
+shall be able to attain to the fullest
+
+statue of which they're innately capable
+
+and be recognized by others for what
+
+they are regardless of the fortuitous
+
+circumstances of birth or position so
+
+this was Adams dream and it was a dream
+
+in a sense that resonated very clearly
+
+with what Pitkin was saying we didn't
+
+have to be depressed at midlife and the
+
+middle of the 20th century either we
+
+could look forward with some hope for
+
+this to happen
+
+Adams argued we needed to develop a new
+
+scale and basis for values for Adams
+
+looking forward to the to achieving the
+
+American dream
+
+that meant collectivity trust love
+
+working together to make a better world
+
+so here was this period of economic
+
+recession Pitkin saying yes life can
+
+begin at 40 Adams saying in fact there
+
+is an American dream that we should work
+
+towards in some ways of course what
+
+happened was the opposite those hopes
+
+and those dreams were dashed
+
+they were dashed by the second
+
+World War they were dashed by the
+
+catastrophe of global conflict and they
+
+were dashed in many ways by what
+
+happened afterwards in terms of the Cold
+
+War that sense of optimism that could
+
+create security or the sense of security
+
+that could create optimism they were
+
+dashed during the Second World War and
+
+afterwards what was left of pickins
+
+mantra and Adams dream was simply a
+
+dream of material Plenty the values the
+
+scale the basis of values that dream of
+
+social order that was democratic and
+
+egalitarian Equal Opportunities
+
+occupationally and educationally that
+
+was shattered by experiences in the
+
+second world what was left was the dream
+
+of motorcars and high wages people were
+
+left feeling that they could not achieve
+
+those other
+
+grandiose aspirations that Pitkin and
+
+Adams had set out instead what they
+
+tended to do was search for happiness
+
+and a hurry this is a wonderful book by
+
+Edmund burglar the revolt of the
+
+middle-aged man
+
+published in in 1958 that Edmund burglar
+
+was an American psychoanalyst who had a
+
+very extensive clinic and he drew on his
+
+clinical experience to write about a
+
+whole variety of challenges relating to
+
+marriage middle age and midlife in
+
+particular in relation to men he has a
+
+lovely book published in 1948 saying
+
+divorce won't help if anybody is
+
+interested and his argument in fact in
+
+that book and in this book is that
+
+before a couple run to the divorce
+
+lawyer they should go and see a
+
+psychiatrist that this is about the
+
+challenges within themselves and their
+
+relationships so what he says is that is
+
+that during the 40s and 50s the collapse
+
+of the American Dream in many ways and
+
+you can trace it through American
+
+post-war literature as well in
+
+particular the collapse of the dream
+
+left people struggling and they
+
+translated those struggles or those
+
+aspirations into a dream of material
+
+Plenty into consumption seduced by the
+
+pleasure of consuming material goods but
+
+also the pleasure the anticipation of
+
+consuming our
+
+the people this was the emergence if you
+
+like of a form of narcissistic self
+
+fulfillment that drove some of the
+
+behavior that you see in in Reggie Peron
+
+so burglar four burglar people were
+
+looking for happiness in a hurry and he
+
+has this beautiful passage which
+
+describes very very clearly the thought
+
+processes that he attributes to people
+
+like Reggie Perry in this mindset
+
+stressed by life circumstances feeling
+
+that they had failed feeling that
+
+although they were looking down to death
+
+everybody was telling them that life
+
+begins at fourteen things should be
+
+getting better at that moment they were
+
+anxious and backed more depressed than
+
+they would have been otherwise and this
+
+is the this is the mindset if you like
+
+of a Reggie Peron
+
+I want happiness love approval
+
+admiration sex youth all this is denied
+
+me in this stale marriage to an elderly
+
+sickly complaining nagging wife let's
+
+get rid of her start Life all over again
+
+with another woman sure I'll provide for
+
+my first wife and children sure I'm
+
+sorry the first marriage didn't work out
+
+but self defense comes first I just have
+
+to save myself so what is left of those
+
+aspirations in the midst of midlife
+
+middle-age stress the argument that life
+
+should be getting better not worse that
+
+optimism that we could achieve the
+
+American dreams that was dashed what was
+
+left was a sense of selfish narcissistic
+
+belief that we would do something some
+
+happiness ourselves and this burglar
+
+suggested was why people like Reggie
+
+Peron had crises pushed from their
+
+marriages pushed from their
+
+relationships disappointed in their
+
+lives but seduced by a dream that was no
+
+longer achievable except through the
+
+selfish pursuit of pleasure
+
+let me reflect then to finish on where
+
+we've been
+
+Reggie Peron in some ways spoke for a
+
+generation
+
+he was an everyman if you like and his
+
+wife and children every day victims of
+
+the kinds of pressures that people and
+
+families were under in the 50s 60s and
+
+70s we can certainly understand his
+
+behavior that random impulsive
+
+destructive behavior as the product of
+
+psychological despair I've hit my peak
+
+I've reached my prime but it no longer
+
+means anything because all I look
+
+forward to is the downward curve of life
+
+and death as that sense of an identity
+
+crisis that is captured very very neatly
+
+by David knobs but also you can see it
+
+in other literary and cinematic forms as
+
+well in the fifties sixties and
+
+seventies all we can read it in
+
+biological terms we can say that pairing
+
+is aging he's losing his virility he's
+
+losing his hair he's losing muscle mass
+
+and energy and that leads him into a
+
+crisis of despair as well linked to
+
+death but not entirely the same we can
+
+see this in individual terms this is a
+
+man behaving strangely
+
+what I want to suggest though is that we
+
+cannot understand Reggie unless we cast
+
+our lens wider than that unless we zoom
+
+out to see the social and the cultural
+
+conditions in which Reggie Peron was
+
+living and in which we continue to live
+
+in some ways so there are perhaps two
+
+conclusions that I want to make the
+
+first is that we are aged Reggie us we
+
+are aged not just by our minds and
+
+bodies but we are also aged by history
+
+by the cultural values the attitudes
+
+that beliefs the norms the practices
+
+that we have inherited from the past
+
+some ways Reggie Perry in the late
+
+seventies
+
+went off the rails because of what had
+
+happened in the 1950s and 60s
+
+both in terms of the life course end in
+
+terms of the seduction of materialism
+
+the second point is this that in that
+
+context when we are saying that we're
+
+aged by history and culture within that
+
+context the midlife crisis is no longer
+
+the biological the natural phenomenon
+
+the inevitable phenomenon of aging it is
+
+immediately a social and a cultural
+
+phenomenon the midlife crisis that
+
+Reggie suffered from that we perhaps
+
+continue to suffer from is a set of
+
+experiences that is generated by
+
+historical change shaped by cultural
+
+contexts and social economic conditions
+
+and determined also by political
+
+contingencies thank you
+
+[Applause]
+
