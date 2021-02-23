@@ -691,26 +691,27 @@ tags: [book, template]
    single set of plain instructions embedded into the /automaton/.
    This set was defined by a creator of this machine once, being
    incompatible with other machines, so it was a life-long program
-   solution for each particular mechanism.
+   solution for each particular mechanism only.
 
    Further technical evolution produced a new demand: it might being
    convenient if one particular mechanism obey different set of
    instructions and thus produce a various sequence of operations. In
-   other words it was demand to reprogram machine to do something new.
+   other words it was demand to easily reprogram machine to do
+   something new.
 
    At programming early beginning there was a /machine code/ only. It
    is a kind of machine's language by its purpose, thus casual
-   programming demanded from operator a true wit and grasp in
+   programming obliged an operator with a true wit and grasp in
    translation from /human language/ into /machine code/.
 
    The idea of /compiler/ as a middleware between humans and machines
    exactly for /automatic translation/ was on the tip of the tongue at
    those days, but implemented by Grace Hopper's titanic efforts and
    phenomenal persistence only in 50s. It was the basement for all
-   modern /high-level programming/ languages establishment. Since and
-   forever it is possible to write program not in /machine code/ only,
-   but utilizing some particular /programming language/ which by its
-   purpose is human-friendly.
+   modern /high-level programming/ languages establishment. Since that
+   time and forever it is possible to write program not in /machine
+   code/ only, but utilizing some particular /programming language/
+   which by its purpose is much human-friendly.
 
    As you might expected what bright win of human ingenuity and
    infinite lucidity all the sudden became a natural feature in the
@@ -724,9 +725,9 @@ tags: [book, template]
    significant feature of high-level programming language - its
    *readability*, and name this /pseudo-program/ as a /source code/.
    Yes, it is wierd, and in a few cases this transference is
-   convenient: it permits type less, comment nothing, name variables
-   absolutely meaningless like ~bar~, ~foo~, or even ~a, b, c, d, e,
-   f, g~!
+   convenient: it permits to type less, to comment nothing at all, to
+   name variables absolutely meaningless like ~bar~, ~foo~, or even
+   ~a, b, c, d, e, f, g~!
 
    Yes, seems like things go wrong there: for some vital reasons all
    specialist in software industry still write only the /source code/
