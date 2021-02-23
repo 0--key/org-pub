@@ -1,5 +1,3 @@
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
 """A module-level docstring brief single-line description
 
 A module-level docstring multi-line description. Notice the second line
@@ -14,18 +12,13 @@ help() on a module or any other Python object.
 import unittest  # <-- import header
 
 """The place below an import section reserved for multi-line comments
-which might be utilized as preamble to your Python program. It is
+which might be utilized as a preamble to your Python program. It is
 being red only by humans, not compiled ever, and permits author to
 write down all stuff necessary to be at the foremost place.
 
 It might be unnecessary in our case, when we write a simplified
-version of programs. But our aim is a paragon of clarity thus it
-should contain all lucidity's attributes.
-
-You might notice that /coding definition/ on the first string, the
-second string begins with tripled double quotes and a sentence there.
-They are the obligatory attributes if you have intention to do things
-as it should do.
+version of programs. But our basic aim is to serve as paragon of
+clarity thus it should contain all lucidity's attributes.
 
 By its purpose all programming languages should allow readers to
 perceive what exactly this particular text do in a much explicit
@@ -50,7 +43,7 @@ like: “It works well enough to be scrutinized much diligently.”
 
 
 class TestLanguagePrimals(unittest.TestCase):  # <-- class definition
-    """The class-level for brief single-line docstring
+    """The class-level for a brief single-line docstring
 
     Class defininition begins this reserved word /class/ following by
     the /name of class/ and its /parent class/ in the brackets. On
