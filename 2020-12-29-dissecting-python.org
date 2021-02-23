@@ -521,6 +521,13 @@ tags: [book, template]
   treatment for learning in general, boys and girls.
 
 
+*** Coding definition on the top
+    
+    You might notice that /coding definition/ on the first string, the
+    second string begins with tripled double quotes and a sentence
+    there. They are the obligatory attributes if you have intention to
+    do things as it should do.
+
 * Dedication
 
    -----
