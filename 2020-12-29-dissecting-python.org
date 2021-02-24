@@ -1301,9 +1301,11 @@ tags: [book, template]
      your tests into /coherent/ blocks for clarity purpose."""
    #+END_SRC
 
+
+** Primals comparison
+
    #+NAME: full-fledged-sample-comparison
-   #+BEGIN_SRC python :noweb yes :session second
-     # -*- coding: utf-8 -*-
+   #+BEGIN_SRC python :noweb yes :session second :tangle tests/test_04_primals_comparison.py
      """Only code to compare None, True and False"""
 
      import unittest
