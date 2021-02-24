@@ -1271,7 +1271,8 @@ tags: [book, template]
 
      """Now it is the moment to distill your knowledge about writing
      =unittests= in ~Python~. Our previous program allocates too much space
-     in the case if you're grasp the core idea. Exactly:
+     in the case if you're grasp the core idea. Exactly - what is the right
+     place and content of:
 
         - Module docstrings;
         - Import section;
