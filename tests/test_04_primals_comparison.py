@@ -2,6 +2,19 @@
 
 import unittest
 
+"""If in previous tests we were introduced by three test methods only:
+
+ - assertFalse();
+ - assertTrue();
+ - assertIsNone();
+
+Right now it is a right time to show several additional ones:
+
+ - assertIs();
+ - assertIsNotNone();
+ - assertNotEqual(); 
+"""
+
 
 class TestCompareFundamentals(unittest.TestCase):
 
