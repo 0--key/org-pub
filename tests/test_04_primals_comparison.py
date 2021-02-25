@@ -10,9 +10,9 @@ import unittest
 
 Right now it is a right time to show several additional ones:
 
- - assertIs();
- - assertIsNotNone();
- - assertNotEqual(); 
+ - assertIs() - identity assertion;
+ - assertIsNotNone() - not None assertion;
+ - assertNotEqual() - non equality assertion; 
 """
 
 
