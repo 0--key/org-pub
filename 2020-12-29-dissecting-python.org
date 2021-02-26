@@ -1356,17 +1356,20 @@ tags: [book, template]
      import unittest
 
      """The program below is identical by its meaning to previous one, but
-     it written in a distinct manner with intention to introduce a
-     statement concept."""
+     it written in a distinct manner with intention to introduce the
+     statement and operator concepts."""
 
 
-     class TestEqualityStatements(unittest.TestCase):
+     class TestFundamentalStatements(unittest.TestCase):
 
-         def test_equal_or_not_equal(self):
+         def test_equality_operator(self):
              # equality operator is double =
-             self.assertTrue(True == True)
-             self.assertTrue(False == False)
+             self.assertTrue(True == True)  # <-- equality statements
+             self.assertTrue(False == False)  # are inside the brackets
+             # and they evaluated when the program do launch
              self.assertTrue(None == None)
+
+         def test_non_equality_operator(self):
              # non equality operator is !=
              self.assertFalse(True != True)
              self.assertFalse(False != False)
