@@ -1347,6 +1347,7 @@ tags: [book, template]
      """Seems it is much elegant than before, but less self-explanatory"""
    #+END_SRC
 
+
 ** A statement concept introduction
 
    #+NAME: equality_non_equality
