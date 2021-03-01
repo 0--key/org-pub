@@ -687,6 +687,17 @@ tags: [book, template]
 
 ** Machine Code vs Source Code vs Program
 
+   Initially at the uprise of /programmable/ machines there was the
+   single set of plain instructions embedded into the /automaton/.
+   This set was defined by a creator of this machine once, being
+   incompatible with other machines, so it was a life-long program
+   solution for each particular mechanism.
+
+   Further technical evolution produced a new demand: it might being
+   convenient if one particular mechanism obey different set of
+   instructions and thus produce a various sequence of operations. In
+   other words it was demand to reprogram machine to do something new.
+
    At programming early beginning there was a /machine code/ only. It
    is a kind of machine's language by its purpose, thus casual
    programming demanded from operator a true wit and grasp in
