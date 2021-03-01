@@ -705,7 +705,7 @@ tags: [book, template]
 
    The idea of /compiler/ as a middleware between humans and machines
    exactly for /automatic translation/ was on the tip of the tongue at
-   those days, but implemented by Grace Hopper titanic efforts and
+   those days, but implemented by Grace Hopper's titanic efforts and
    phenomenal persistence only in 50s. It was the basement for all
    modern /high-level programming/ languages establishment. Since and
    forever it is possible to write program not in /machine code/ only,
@@ -735,6 +735,7 @@ tags: [book, template]
    nobody capable to take a challenge to erradicate this distortion
    except me.
    
+
 ** Debugging is a major time-consuming task
 
 
