@@ -1,0 +1,32 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Git secure
+tagline: " connect with a key"
+permalink: /git/ssh/secure_connect.html
+categories: [Git]
+tags: [ssh, git, connect]
+---
+#+END_EXPORT
+
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
+
+In the summer Git will prohibit a ~plain password~ authentication,
+thus it is time to configure your host to use =ssh= for this purpose.
+
+
+cd /usr/local/git/0--key/0--key.github.io/
+git remote -v
+git remote set-url origin git@github.com:0--key/0--key.github.io.git
+git remote -v
+cd /usr/local/git/0--key/lib/
+git remote -v
+git remote set-url origin git@github.com:0--key/lib.git
+git remote -v
+cd /usr/local/git/0--key/org-pub/
+git remote -v
+git remote set-url origin git@github.com:0--key/org-pub.git
+git remote -v
