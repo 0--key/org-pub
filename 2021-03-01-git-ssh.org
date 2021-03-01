@@ -14,8 +14,11 @@ tags: [ssh, git, connect]
 #+TOC: headlines 2
 #+PROPERTY:header-args :results output :exports both :eval no-export
 
-In the summer Git will prohibit a ~plain password~ authentication,
-thus it is time to configure your host to use =ssh= for this purpose.
+In the summer of 2021 Git will prohibit a ~plain password~
+authentication, thus it is time to configure your host to use =ssh=
+for this purpose. The general description is [[https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh][here]], but in particular
+after all preparations it is necessary to switch already pulled
+repositories on the new auth method.
 
 
 cd /usr/local/git/0--key/0--key.github.io/
