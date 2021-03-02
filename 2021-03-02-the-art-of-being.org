@@ -1,0 +1,15 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: The art of being
+tagline: " yourself"
+permalink: /personal/growth/art-of-being-yourself.html
+categories: [personal-growth, art]
+tags: [become, yourself, vocabulary]
+---
+#+END_EXPORT
+
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
