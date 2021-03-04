@@ -1409,25 +1409,25 @@ tags: [book, template]
          """
 
          def test_zero_main_properties(self):
-             self.assertFalse(0) # <-- numeric zero also is Boolean False
-             self.assertIsNotNone(0) # and it is not None!
-             self.assertEqual(0, 0) # equality assertion by the method
-             self.assertTrue(0 == 0) # true statement assertion
-
+             self.assertFalse(0)  # <-- numeric zero also is Boolean False
+             self.assertIsNotNone(0)  # and it is not None!
+             self.assertEqual(0, 0)  # equality assertion by the method
+             self.assertTrue(0 == 0)  # true statement assertion
 
          def test_one_main_properties(self):
-             self.assertTrue(1) # numeric one is also Boolean True
-             self.assertIsNotNone(1) # and it is not None!
-             self.assertEqual(1, 1) # equality assertion by the method
-             self.assertTrue(1 == 1) # true statement assertion
+             self.assertTrue(1)  # numeric one is also Boolean True
+             self.assertIsNotNone(1)  # and it is not None!
+             self.assertEqual(1, 1)  # equality assertion by the method
+             self.assertTrue(1 == 1)  # true statement assertion
 
          def test_compare_one_and_zero(self):
-             self.assertNotEqual(0, 1) # as expected 
-             self.assertFalse(0 == 1) # no comments
-             self.assertTrue(0 < 1) # a new comparison operator 'less'
-             self.assertTrue(1 > 0) # a new operator 'greater than'
-             self.assertTrue(0 <= 1) # 'less than or equal' operator
-             self.assertTrue(1 >= 0) # 'greater than or equal' operator
+             self.assertNotEqual(0, 1)  # as expected
+             self.assertFalse(0 == 1)  # no comments
+             self.assertTrue(0 < 1)  # a new comparison operator 'less'
+             self.assertTrue(1 > 0)  # a new operator 'greater than'
+             self.assertTrue(0 <= 1)  # 'less than or equal' operator
+             self.assertTrue(1 >= 0)  # 'greater than or equal' operator
+
 
    #+END_SRC
 
