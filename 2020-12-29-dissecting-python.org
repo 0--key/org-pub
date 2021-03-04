@@ -1429,6 +1429,14 @@ tags: [book, template]
              self.assertTrue(1 >= 0)  # 'greater than or equal' operator
 
 
+     """Check yourself up:
+
+     Try to extend the test suite to answer questions:
+      - Does 0 equal False?
+      - Does True greater than False?
+      - Does True equal 1?
+      - etc.
+     """
    #+END_SRC
 
 ** A Symbol and a String
