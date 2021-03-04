@@ -1439,37 +1439,18 @@ tags: [book, template]
      """
    #+END_SRC
 
+
+** Boolean operators
+
+
 ** A Symbol and a String
 
 
-**** Assertion and assignment
+** Assertion and assignment
 
 
-**** Boolean operations
 
-
-**** Arithmetics
-
-
-**** None-False-True comparison
-
-
-      #+NAME: none-false-true-comparison-assertion
-      #+BEGIN_SRC python :session test
-        class TestCompareFundamentals(unittest.TestCase):
-
-            """Now, when we ensure in existence of None, False and Ture constants,
-            it is very time to compare them with its own derivatives as zero
-            (0), one (1), the letter('A')
-
-            """
-
-            def test_does_zero_really_boolean_false(self):
-                self.assertFalse(0)  #
-      #+END_SRC
-
-      #+RESULTS: false-assertion
-
+** Arithmetics
 
 
 * Chapter II: Innate Datatypes
