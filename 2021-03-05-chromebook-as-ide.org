@@ -1,0 +1,15 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: ChromeBook HP
+tagline: " as full-blown Emacs IDE"
+permalink: /python/emacs/ide/chromebook.html
+categories: [Python, IDE, Emacs, Chromebook]
+tags: [tutorial, ide, chromebook]
+---
+#+END_EXPORT
+
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
