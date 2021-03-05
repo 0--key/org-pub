@@ -24,11 +24,19 @@ tags: [book, template]
 
 *** TODO Thoughts
 
+**** Distortion, misleading, perversion, deception, delusion, self-deception
+     prejudice, misjudgement, misconception
+
+**** Switching from coding to writing programs
 **** Thesis and antithesis
      Thesis – a statement or theory that is put forward as a premise
      to be maintained or. proved. Antithesis – the negation or
      contradiction of the thesis. Synthesis – the resolution of the
      conflict between thesis and antithesis.
+
+     
+**** TODO A bag of new words and idioms
+
 ***** separate this facts and weigh them against one another
 
 ***** a customary way of doing smth
