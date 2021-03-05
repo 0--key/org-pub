@@ -14,6 +14,8 @@ tags: [become, yourself, vocabulary]
 #+TOC: headlines 2
 #+PROPERTY:header-args :results output :exports both :eval no-export
 
+The [[https://www.youtube.com/watch?v=veEQQ-N9xWU][source]] of this transcript.
+
 The chances are you've looked in at least one mirror today. You've had
 a shave, or you combed your hair, or maybe you checked your teeth for
 spinach after lunch, but what you didn't know is that the face looking
