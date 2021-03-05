@@ -206,9 +206,16 @@ tags: [book, template]
 ***** It is screamingly obvious in the domain of cognitive biases
 
 ***** I will summarize the soul and science of my work
-
       
 ***** I think it's one of the most debilitating things.
+
+***** The principal aim was to find the optimum formula
+      for wedding words and music.
+
+***** Science and music was very intertwined there
+
+***** Out of sight out of mind
+>>>>>>> eaaa68f44b3eec5494a4eef31f52ba5504b28c93
 
 ***** 
 **** Competitors

@@ -1,0 +1,93 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: ChromeBook HP
+tagline: " as full-blown Emacs IDE"
+permalink: /python/emacs/ide/chromebook-hp-14a-0060nr.html
+categories: [Python, IDE, Emacs, Chromebook]
+tags: [tutorial, ide, chromebook]
+---
+#+END_EXPORT
+
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
+* Linux activation
+  A straightforward [[https://support.google.com/chromebook/answer/9145439][manual]].
+* A minor tune-up
+  It is convenient to use a *Dark mode* everywhere on your
+  =ChromeBook=, so: open a new tab in your Chrome by =Ctrl+t=, and put
+  this address into the =address bar=: =chrome://flags/=. Now it is
+  time to find all occurences of word ~dark~ on this page: =Ctrl+f=
+  ~dark~ =Enter=.
+
+  You should enable:
+  - _Dark/light mode of system UI_
+  - _Force Dark Mode for Web Contents_
+  - _WebUI dark mode_
+
+  Now you are in the *Dark Mode* far and wide :-))
+   
+* Emacs installation
+  Easy-peasy:
+  #+BEGIN_SRC sh :results output pp
+    sudo apt-get install emacs
+  #+END_SRC
+
+  #+RESULTS:
+  : Reading package lists...
+  : Building dependency tree...
+  : Reading state information...
+  : emacs is already the newest version (1:26.1+1-3.2+deb10u2).
+  : 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
+  #+BEGIN_SRC sh :results output pp
+    emacs --version
+  #+END_SRC
+
+  #+RESULTS:
+  : GNU Emacs 26.1
+  : Copyright (C) 2018 Free Software Foundation, Inc.
+  : GNU Emacs comes with ABSOLUTELY NO WARRANTY.
+  : You may redistribute copies of GNU Emacs
+  : under the terms of the GNU General Public License.
+  : For more information about these matters, see the file named COPYING.
+  
+* Note about package management in =Buster=
+
+  For ~security~ purpose several much popular =Elpa= packages are
+  included in =Buster= repositories and available to install as
+  trivial =Debian= packages. *But* their number is limited and if you
+  wish to use a full-fledged version of /termonuclear/ editor I might
+  suggest not follow that path.
+
+* ~Elpa~&~Melpa~ activation
+  The main config for your =Emacs= is
+  =/etc/emacs/site-stard.d/00debian.el=, the additional config for
+  customization need to be initialized in =~/.emacs.d/init.el=
+
+  Put these directives into the very top of =00debian.el=:
+  #+BEGIN_SRC elisp
+    (require 'package)
+    (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
+    ;; and MELPA
+    (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+    (package-initialize)
+    (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3") ;; Bad request fix
+  #+END_SRC
+
+  #+RESULTS:
+
+* Neccessary packages installation
+** Jekyll
+   #+BEGIN_SRC sh :results output pp
+   sudo apt-get install jekyll
+   #+END_SRC
+
+   #+RESULTS:
+   : Reading package lists...
+   : Building dependency tree...
+   : Reading state information...
+   : jekyll is already the newest version (3.8.3+dfsg-4+deb10u1).
+   : 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
