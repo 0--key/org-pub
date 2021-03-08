@@ -14,6 +14,19 @@ tags: [tutorial, ide, chromebook]
 #+TOC: headlines 2
 #+PROPERTY:header-args :results output :exports both :eval no-export
 * Linux activation
+* A minor tune-up
+** Dark mode everywhere
+   Open a new tab in your Chrome by =Ctrl+t=, and put this address
+   into the =address bar=: =chrome://flags/=. Now it is time to find
+   all occurences of word ~dark~ on this page: =Ctrl+f= ~dark~ =Enter=.
+
+   You should enable:
+   - _Dark/light mode of system UI_
+   - _Force Dark Mode for Web Contents_
+   - _WebUI dark mode_
+
+   Now you are in the *Dark Mode* far and wide :-))
+   
 * Emacs installation
 * Note about package management in =Buster=
 * ~Elpa~&~Melpa~ activation
