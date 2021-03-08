@@ -13,3 +13,19 @@ tags: [tutorial, ide, chromebook]
 #+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
 #+TOC: headlines 2
 #+PROPERTY:header-args :results output :exports both :eval no-export
+* Linux activation
+* Emacs installation
+* Note about package management in =Buster=
+* ~Elpa~&~Melpa~ activation
+* Neccessary packages installation
+** Jekyll
+   #+BEGIN_SRC sh :results output pp
+   sudo apt-get install jekyll
+   #+END_SRC
+
+   #+RESULTS:
+   : Reading package lists...
+   : Building dependency tree...
+   : Reading state information...
+   : jekyll is already the newest version (3.8.3+dfsg-4+deb10u1).
+   : 0 upgraded, 0 newly installed, 0 to remove and 19 not upgraded.
