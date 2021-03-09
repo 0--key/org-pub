@@ -40,6 +40,13 @@ tags: [tutorial, ide, chromebook]
   : 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
 
 * Note about package management in =Buster=
+
+  For ~security~ purpose several much popular =Elpa= packages are
+  included in =Buster= repositories and available to install as
+  trivial =Debian= packages. *But* their number is limited and if you
+  wish to use a full-fledged version of /termonuclear/ editor I might
+  suggest not follow that path.
+
 * ~Elpa~&~Melpa~ activation
 * Neccessary packages installation
 ** Jekyll
