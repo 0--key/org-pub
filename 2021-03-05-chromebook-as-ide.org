@@ -3,7 +3,7 @@
 layout: post
 title: ChromeBook HP
 tagline: " as full-blown Emacs IDE"
-permalink: /python/emacs/ide/chromebook.html
+permalink: /python/emacs/ide/chromebook-hp-14a-0060nr.html
 categories: [Python, IDE, Emacs, Chromebook]
 tags: [tutorial, ide, chromebook]
 ---
