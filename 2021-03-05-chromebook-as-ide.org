@@ -28,6 +28,17 @@ tags: [tutorial, ide, chromebook]
    Now you are in the *Dark Mode* far and wide :-))
    
 * Emacs installation
+  #+BEGIN_SRC sh :results output pp
+    sudo apt-get install emacs
+  #+END_SRC
+
+  #+RESULTS:
+  : Reading package lists...
+  : Building dependency tree...
+  : Reading state information...
+  : emacs is already the newest version (1:26.1+1-3.2+deb10u2).
+  : 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
 * Note about package management in =Buster=
 * ~Elpa~&~Melpa~ activation
 * Neccessary packages installation
