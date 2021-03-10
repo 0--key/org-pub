@@ -16,17 +16,18 @@ tags: [tutorial, ide, chromebook]
 * Linux activation
   A straightforward [[https://support.google.com/chromebook/answer/9145439][manual]].
 * A minor tune-up
-** Dark mode everywhere
-   Open a new tab in your Chrome by =Ctrl+t=, and put this address
-   into the =address bar=: =chrome://flags/=. Now it is time to find
-   all occurences of word ~dark~ on this page: =Ctrl+f= ~dark~ =Enter=.
+  It is convenient to use a *Dark mode* everywhere on your
+  =ChromeBook=, so: open a new tab in your Chrome by =Ctrl+t=, and put
+  this address into the =address bar=: =chrome://flags/=. Now it is
+  time to find all occurences of word ~dark~ on this page: =Ctrl+f=
+  ~dark~ =Enter=.
 
-   You should enable:
-   - _Dark/light mode of system UI_
-   - _Force Dark Mode for Web Contents_
-   - _WebUI dark mode_
+  You should enable:
+  - _Dark/light mode of system UI_
+  - _Force Dark Mode for Web Contents_
+  - _WebUI dark mode_
 
-   Now you are in the *Dark Mode* far and wide :-))
+  Now you are in the *Dark Mode* far and wide :-))
    
 * Emacs installation
   #+BEGIN_SRC sh :results output pp
