@@ -30,6 +30,7 @@ tags: [tutorial, ide, chromebook]
   Now you are in the *Dark Mode* far and wide :-))
    
 * Emacs installation
+  Easy-peasy:
   #+BEGIN_SRC sh :results output pp
     sudo apt-get install emacs
   #+END_SRC
@@ -41,6 +42,18 @@ tags: [tutorial, ide, chromebook]
   : emacs is already the newest version (1:26.1+1-3.2+deb10u2).
   : 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
 
+  #+BEGIN_SRC sh :results output pp
+    emacs --version
+  #+END_SRC
+
+  #+RESULTS:
+  : GNU Emacs 26.1
+  : Copyright (C) 2018 Free Software Foundation, Inc.
+  : GNU Emacs comes with ABSOLUTELY NO WARRANTY.
+  : You may redistribute copies of GNU Emacs
+  : under the terms of the GNU General Public License.
+  : For more information about these matters, see the file named COPYING.
+  
 * Note about package management in =Buster=
 
   For ~security~ purpose several much popular =Elpa= packages are
