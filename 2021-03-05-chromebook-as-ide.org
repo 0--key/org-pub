@@ -14,6 +14,7 @@ tags: [tutorial, ide, chromebook]
 #+TOC: headlines 2
 #+PROPERTY:header-args :results output :exports both :eval no-export
 * Linux activation
+  A straightforward [[https://support.google.com/chromebook/answer/9145439][manual]].
 * A minor tune-up
 ** Dark mode everywhere
    Open a new tab in your Chrome by =Ctrl+t=, and put this address
