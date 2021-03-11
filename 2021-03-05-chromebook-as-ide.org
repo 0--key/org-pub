@@ -63,6 +63,22 @@ tags: [tutorial, ide, chromebook]
   suggest not follow that path.
 
 * ~Elpa~&~Melpa~ activation
+  The main config for your =Emacs= is
+  =/etc/emacs/site-stard.d/00debian.el=, the additional config for
+  customization need to be initialized in =~/.emacs.d/init.el=
+
+  Put these directives into the very top of =00debian.el=:
+  #+BEGIN_SRC elisp
+    (require 'package)
+    (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
+    ;; and MELPA
+    (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+    (package-initialize)
+    (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3") ;; Bad request fix
+  #+END_SRC
+
+  #+RESULTS:
+
 * Neccessary packages installation
 ** Jekyll
    #+BEGIN_SRC sh :results output pp
