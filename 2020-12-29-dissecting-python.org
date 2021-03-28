@@ -24,11 +24,19 @@ tags: [book, template]
 
 *** TODO Thoughts
 
+**** Distortion, misleading, perversion, deception, delusion, self-deception
+     prejudice, misjudgement, misconception
+
+**** Switching from coding to writing programs
 **** Thesis and antithesis
      Thesis – a statement or theory that is put forward as a premise
      to be maintained or. proved. Antithesis – the negation or
      contradiction of the thesis. Synthesis – the resolution of the
      conflict between thesis and antithesis.
+
+     
+**** TODO A bag of new words and idioms
+
 ***** separate this facts and weigh them against one another
 
 ***** a customary way of doing smth
@@ -193,12 +201,21 @@ tags: [book, template]
       
 ***** Even a perfunctury analysis shows a plethora caveats in these judgements
 
+***** The animals are taught to read and write, but the dream turns sour
+
+***** It is screamingly obvious in the domain of cognitive biases
+
+***** I will summarize the soul and science of my work
+      
+***** I think it's one of the most debilitating things.
+
 ***** The principal aim was to find the optimum formula
       for wedding words and music.
 
 ***** Science and music was very intertwined there
 
 ***** Out of sight out of mind
+>>>>>>> eaaa68f44b3eec5494a4eef31f52ba5504b28c93
 
 ***** If you want to build a ship,
       don't drum up the men to gather wood, divide the work and give
