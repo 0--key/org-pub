@@ -1,0 +1,17 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: Go programming
+tagline: " not a monstrous task at all"
+permalink: /go/emacs/ide/chromebook-hp-14a-0060nr.html
+categories: [Go, IDE, Emacs, Chromebook]
+tags: [tutorial, ide, chromebook]
+---
+#+END_EXPORT
+
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
+* Useful links
+* The primitive samples
