@@ -91,3 +91,19 @@ tags: [tutorial, ide, chromebook]
    : Reading state information...
    : jekyll is already the newest version (3.8.3+dfsg-4+deb10u1).
    : 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+** Java
+   #+BEGIN_SRC sh :results output pp
+   sudo apt-get install default-jre
+   #+END_SRC
+
+   Check the result of installation up:
+
+   #+BEGIN_SRC sh
+   java --version
+   #+END_SRC
+
+   #+RESULTS:
+   : openjdk 11.0.11 2021-04-20
+   : OpenJDK Runtime Environment (build 11.0.11+9-post-Debian-1deb10u1)
+   : OpenJDK 64-Bit Server VM (build 11.0.11+9-post-Debian-1deb10u1, mixed mode, sharing)
+
