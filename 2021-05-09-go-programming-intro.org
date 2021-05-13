@@ -14,4 +14,12 @@ tags: [tutorial, ide, chromebook]
 #+TOC: headlines 2
 #+PROPERTY:header-args :results output :exports both :eval no-export
 * Useful links
+** Go installation on Buster
+   #+BEGIN_SRC sh
+   sudo apt-get install golang
+   #+END_SRC
+** Babel configuration
+   #+BEGIN_SRC elisp
+   package-install ob-go
+   #+END_SRC
 * The primitive samples
