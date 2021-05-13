@@ -23,3 +23,11 @@ tags: [tutorial, ide, chromebook]
    package-install ob-go
    #+END_SRC
 * The primitive samples
+
+  #+begin_src go :imports "fmt"
+  fmt.Println("Hello, 世界")
+  #+end_src
+
+#+RESULTS:
+: Hello, 世界
+
