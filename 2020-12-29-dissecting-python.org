@@ -295,6 +295,13 @@ tags: [book, template]
      compile it later into the source code (mostly unreadable by
      humans) executable by machines at least.
      
+**** The main intention of this book is
+     to bridge the gap between human cognition and...
+
+**** By intention is is a vastly oversimplified approach,
+     but the game worths candles - it is a gentle, narrow and holistic
+     attempt to shade the light on this taught subject as computation
+     is.
 **** DONE Children testing building cubes
 
      An experienced and older guide, the nudge in a right side.
