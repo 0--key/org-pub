@@ -279,21 +279,20 @@ tags: [book, template]
      question: “How does it ever happen?”
 
      It is not secret that coding and computing by electronic
-     macnihens is a relatevely fossil lore for humans. I suppose it
-     was 1940s as an early begining. It was a straightforward coding
-     due to absence of high-level programming languages.
-
+     macnihens is a relatevely fossil lore for humans. I suppose that
+     1940s was an early begining. It was a straightforward coding due
+     to absence of high-level programming languages.
 
      In 1950s Grace Hopper achived success and implement on practive
      her idea of compilation human-written programs into
      machine-readable set of precise instructions. The gestation of
      high-level programming languges started since.
      
-     The plehora of new and modern human-readable hight-level
-     programming languages was announced in 1970s due to widely
-     spreaded idea to write programs as a human-friendly text and
-     compile it later into the source code (mostly unreadable by
-     humans) executable by machines at least.
+     The new and modern human-readable hight-level programming
+     languages galore was announced in 1970s due to widely spreaded
+     idea to write programs as a human-friendly text and compile it
+     later into the source code (mostly unreadable by humans)
+     executable by machines at least.
      
 **** The main intention of this book is
      to bridge the gap between human cognition and...
