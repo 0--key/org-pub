@@ -4,7 +4,7 @@ layout: post
 title: Go programming
 tagline: " not a monstrous task at all"
 permalink: /go/emacs/ide/chromebook-hp-14a-0060nr.html
-categories: [Go, IDE, Emacs, Chromebook]
+categories: [GoLang, IDE, Emacs, Chromebook]
 tags: [tutorial, ide, chromebook]
 ---
 #+END_EXPORT
