@@ -18,6 +18,15 @@ tags: [tutorial, ide, chromebook]
    #+BEGIN_SRC sh
    sudo apt-get install golang
    #+END_SRC
+
+   Test the version:
+   #+BEGIN_SRC sh
+   go version
+   #+END_SRC
+
+   #+RESULTS:
+   : go version go1.11.6 linux/amd64
+
 ** Babel configuration
    #+BEGIN_SRC elisp
    package-install ob-go
