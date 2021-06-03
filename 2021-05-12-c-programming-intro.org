@@ -24,9 +24,15 @@ tags: [tutorial, ide, chromebook]
 
  #+RESULTS:
  : Hello World!
+*** Variable Declaration
+    #+begin_src C
+      int an_arbitrary_variable; /* the declaration itself */
+      printf("%d", an_arbitrary_variable); /* check it up */
+    #+end_src
 
-#+RESULTS:
-: Hello World!
+    #+RESULTS:
+    : 0
+
 
 ** C++
 
