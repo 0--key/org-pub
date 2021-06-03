@@ -29,7 +29,8 @@ tags: [tutorial, ide, chromebook]
 
 ** Babel configuration
    #+BEGIN_SRC elisp
-   package-install ob-go
+     package-install ob-go
+     package-install go-mode
    #+END_SRC
 * The primitive samples
 
