@@ -43,12 +43,12 @@ tags: [tutorial, ide, chromebook]
 * Functions and Scope
 
   #+begin_src go :imports "fmt"
-func main() {
-fmt.Printf("My number is: %d\n", triple_add(2, 3, 4))
-}
-func triple_add(a, b, c int) int{
-return a + b + c
-}
+    func main() {
+    fmt.Printf("My number is: %d\n", triple_add(2, 3, 4))
+    }
+    func triple_add(a, b, c int) int{
+    return a + b + c
+    }
   #+end_src
 
   #+RESULTS:
