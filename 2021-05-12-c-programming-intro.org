@@ -17,9 +17,13 @@ tags: [tutorial, ide, chromebook]
   Innate [[https://orgmode.org/worg/org-contrib/babel/languages/ob-doc-C.html][tutorial]]
 * Primitive samples
 ** C
-#+begin_src C
-  printf ("Hello World!\n");
-#+end_src
+*** Babel Test 
+ #+begin_src C
+   printf ("Hello World!\n");
+ #+end_src
+
+ #+RESULTS:
+ : Hello World!
 
 #+RESULTS:
 : Hello World!
