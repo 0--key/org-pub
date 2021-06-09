@@ -61,6 +61,38 @@ tags: [tutorial, ide, chromebook]
 
   #+RESULTS:
   : Hello, 世界
+
+  Here we implemented the strict output by =Println= function out from
+  =fmt= module.
+
+* Assignment operator and variable value substitution
+
+  In most cases it is necessary to use ~variables~ - a special form of
+  named entities, wich should be named in a special manner and
+  properly defined.
+
+** Name conventions
+
+   The proper variable name (identifier) in Golang should begin with a
+   letter or underscore, and have no spaces inside it:
+
+   #+begin_quote
+   a
+   _x9
+   ThisVariableIsExported
+   αβ
+   #+end_quote
+
+   *AND NOT A RESERVED KEYWORD*
+
+   #+begin_quote
+   break        default      func         interface    select
+   case         defer        go           map          struct
+   chan         else         goto         package      switch
+   const        fallthrough  if           range        type
+   continue     for          import       return       var
+   #+end_quote
+
 * Functions and Scope
 
   #+begin_src go :imports "fmt"
