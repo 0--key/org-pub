@@ -15,11 +15,17 @@ tags: [tutorial, ide, chromebook]
 #+PROPERTY:header-args :results output :exports both :eval no-export
 * Useful links
 * Go installation on Buster
+
+  By default your Chromebook runs Linux container with Debian
+  Buster. In assumption thay you are already a proficient Debian user
+  it might be easy-peasy to install Golang from the official
+  repository:
   #+BEGIN_SRC sh
   sudo apt-get install golang
   #+END_SRC
 
-  Test the version:
+  Lets check up Golang version to ensure the success of your
+  installation:
   #+BEGIN_SRC sh
   go version
   #+END_SRC
@@ -28,11 +34,24 @@ tags: [tutorial, ide, chromebook]
   : go version go1.11.6 linux/amd64
 
 * Babel configuration
+
+  Org-mode inside emacs propose you to write the /alive code
+  snippets/, freely launch it and get its output in one single
+  place. It is a core idea of literate programming. By default
+  Org-mode does not prepared to digest Golang. Lets configure your
+  Emacs editor to cope with Golang code snippets:
   #+BEGIN_SRC elisp
     package-install ob-go
     package-install go-mode
   #+END_SRC
-* The primitive samples
+* Default conventions
+
+  By default:
+  - if you don't define function name it is =main=;
+  - you should manually define neccessary imports in the snippet's
+    header.
+
+* The primitive sample
 
   #+begin_src go :imports "fmt"
   fmt.Println("Hello, 世界")
