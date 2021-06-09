@@ -14,24 +14,24 @@ tags: [tutorial, ide, chromebook]
 #+TOC: headlines 2
 #+PROPERTY:header-args :results output :exports both :eval no-export
 * Useful links
-** Go installation on Buster
-   #+BEGIN_SRC sh
-   sudo apt-get install golang
-   #+END_SRC
+* Go installation on Buster
+  #+BEGIN_SRC sh
+  sudo apt-get install golang
+  #+END_SRC
 
-   Test the version:
-   #+BEGIN_SRC sh
-   go version
-   #+END_SRC
+  Test the version:
+  #+BEGIN_SRC sh
+  go version
+  #+END_SRC
 
-   #+RESULTS:
-   : go version go1.11.6 linux/amd64
+  #+RESULTS:
+  : go version go1.11.6 linux/amd64
 
-** Babel configuration
-   #+BEGIN_SRC elisp
-     package-install ob-go
-     package-install go-mode
-   #+END_SRC
+* Babel configuration
+  #+BEGIN_SRC elisp
+    package-install ob-go
+    package-install go-mode
+  #+END_SRC
 * The primitive samples
 
   #+begin_src go :imports "fmt"
