@@ -53,8 +53,10 @@ tags: [tutorial, ide, chromebook]
 
 * The primitive sample
 
+  With intention to test up how it works lets compose the trivial
+  sample and launch it by typing =C-c C-c=:
   #+begin_src go :imports "fmt"
-  fmt.Println("Hello, 世界")
+    fmt.Println("Hello, 世界")
   #+end_src
 
   #+RESULTS:
