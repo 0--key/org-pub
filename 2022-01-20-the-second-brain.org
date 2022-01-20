@@ -1,0 +1,19 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: The Second Brain -
+tagline: " A Life-Changing Productivity System"
+permalink: /personal/growth/second_brain.html
+categories: [personal-growth]
+tags: [become, yourself, vocabulary]
+---
+#+END_EXPORT
+
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
+
+This is the [[https://www.youtube.com/watch?v=OP3dA2GcAh8&ab_channel=AliAbdaal][source]]
+
+
