@@ -1,0 +1,30 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: The Five Laws -
+tagline: " of Stupidity"
+permalink: /personal/growth/stupidity/antithesis.html
+categories: [personal-growth, stupidity]
+tags: [become, yourself]
+---
+#+END_EXPORT
+
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
+
+In 1976, the economist and historian Carlo M. Cipolla (1922–2000)
+wrote an essay titled “The Basic Laws of Human Stupidity” where he
+defines the five “laws of stupidity” as:
+
+1. Always and inevitably everyone underestimates the number of stupid
+   individuals in circulation;
+2. The probability that a certain person will be stupid is independent
+   of any other characteristic of that person;
+3. A stupid person is a person who causes losses to another person or
+   a group of persons while himself deriving no gain and even possibly
+   incurring losses;
+4. Nonstupid people always underestimate the damaging power of stupid
+   individuals;
+5. A stupid person is the most dangerous type of person.
