@@ -143,121 +143,124 @@ that I'm never going to look at again.
 
 Next we have the principle of slow burns and I think this is another
 really important aspect of my own personal productivity and that most
-of the things I do are slow burns rather than heavy lifts so on the
+of the things I do are slow burns rather than heavy lifts. So on the
 one hand we've got heavy lifts so like imagine you want to write a
-book or you want to make an online course and you think right i'm
+book or you want to make an online course. And you think right I'm
 going to go to a cabin in the woods and I'm going to sit down and do
 the thing and I'm going to do all the work for it in a small amount of
-time and that'll be like your heavy lift like you you're lifting a
-very heavy load this project is like a big a big thing that you have
-to do all at once and this sort of heavy lift mentality and like at
-least for me it stops me from doing a lot of things because I think
-well I haven't got the time to spend three weeks going to a cabin in
-the woods to write this book but the opposite of heavy lifts is the
-idea of slow burns and that's a big part of the building a second
-brain methodology.
-
+time. And that'll be like like you you're lifting a very heavy load.
+this project is like a big thing that you have to do all at once, and
+this sort of heavy lift mentality. And like at least for me it stops
+me from doing a lot of things because I think well I haven't got the
+time to spend three weeks going to a cabin in the woods to write this
+book. But the opposite of heavy lifts is the idea of slow burns and
+that's a big part of the building a second brain methodology.
 
 And the main idea is that we have this list of projects that we're
-working on and they're all kind of on the slow burner like for me
-right now for example I've got a handful of online courses and like
-books and other kind of products in the pipeline but I'm never sitting
-down and kind of bashing through them one at a time instead I've got
-them on the slow burn and so over time as I read and watch and listen
-to things and discover interesting ideas and come up with my own ideas
-some of the time it'll just go in straight into my second brain and
-into the relevant project and so over time instead of kind of doing a
-big project one at a time I'm doing all 10 of these projects like in
-very very very small amounts and so now when it comes for me to you
-know spend a day consolidating all of the bits into the next
-skillshare class for example it's actually very easy to put together
-because I've already done the work over time it's not a heavy lift
-that I'm struggling with instead it's a slow burn.
-
+working on, and they're all kind of on the slow burner like for me.
+Right now for example I've got a handful of online courses and like
+books and other kind of products in the pipeline but, I'm never
+sitting down and kind of bashing through them one at a time. Instead
+I've got them on the slow burn and so over time as I read and watch
+and listen to things and discover interesting ideas and come up with
+my own ideas. Some of the time it'll just go in straight into my
+second brain and into the relevant project and so over time instead of
+kind of doing a big project one at a time I'm doing all 10 of these
+projects like in very very very small amounts. And so now when it
+comes for me to you know spend a day consolidating all of the bits
+into the next skillshare class. For example it's actually very easy to
+put together because I've already done the work over time. It's not a
+heavy lift that I'm struggling with. Instead it's a slow burn.
 
 That just by default through spending time on the internet and
-capturing notes into the right place in my second brain I've kind of
-got a system for that and that's another really big plus of having a
+capturing notes into the right place in my second brain. I've kind of
+got a system for that. And that's another really big plus of having a
 centralized note-taking system that is connected to whatever thing
-you're using to keep track of your projects on the next principle is
-to start with abundance and when we're doing writing or creating
-anything or writing an essay or an assignment or a presentation or
-pretty much anything we all have that issue that we tend to start from
-a blank page and we have the blank page in front of us and we think
-right this is hard I've got writer's block I don't really know what to
-do but another main thing in the second brain stuff is that if you
-have collected all this stuff over time all of your inspirations and
-bits then you're never really starting from scratch you're always
-starting from abundance and so let's say you're using evernote for
-your second brain or notion and you want to write an article about
-motivation or productivity all you have to do is search the word
-motivation and automatically you've got like a ton of articles that
-you have read and annotated and made your own notes on over the last
-few years and you can just kind of draw from those and take bits from
-here and bits from there and ultimately that'll lead to a really nice
-blog post or video script or whatever you're making about motivation
-because you're querying the data set of stuff in your second brain and
-that just kind of changes the game because it means you're never
-starting from a blank page you're always starting with abundance
-you're starting with this pre-existing treasure trove of information
-that you yourself have decided in the past that was worth saving.
+you're using to keep track of your projects on.
+
+* To Start with Abundance
+
+The next principle is to start with abundance. And when we're doing
+writing or creating anything or writing an essay or an assignment or a
+presentation or pretty much anything we all have that issue that we
+tend to start from a blank page. And we have the blank page in front
+of us. And we think right this is hard I've got writer's block I don't
+really know what to do, but another main thing in the second brain
+stuff is. That if you have collected all this stuff over time all of
+your inspirations and bits then you're never really starting from
+scratch. You're always starting from abundance. And so let's say
+you're using ~Evernote~ for your second brain or ~Notion~ and you want
+to write an article about motivation or productivity. All you have to
+do is search the word motivation and automatically you've got like a
+ton of articles that you have read and annotated and made your own
+notes on over the last few years. And you can just kind of draw from
+those and take bits from here and bits from there and ultimately
+that'll lead to a really nice blog post or video script or whatever
+you're making about motivation. Because you're querying the data set
+of stuff in your second brain. And that just kind of changes the game
+because it means you're never starting from a blank page. You're always
+starting with abundance. You're starting with this pre-existing
+treasure trove of information that you yourself have decided in the
+past that was worth saving.
+
+* Intermediate Packets Idea
 
 Next we have the idea of intermediate packets and this is something
 that I kind of knew intuitively but I didn't really have the
-terminology for back in the day so if you imagine let's say you're a
-university student and you're writing an essay an essay isn't actually
-like we think of it as like a big thing but actually it's made up of a
-lot of intermediate packets I used to call them content blocks in my
-head when I was in my third year writing loads of essays it's like you
-know your introduction is a block an intermediate packet then you've
-got maybe a paragraph or a section on short-term memory versus
-long-term memory then you have a section on the phonological loop
-versus the visual spatial sketch pad which are aspects of working
-memory or whatever you've got these kind of five or six different
-intermediate packets and when you put them together they form an essay
-but one of the crucial insights which helps make students lives more
-efficient is that a lot of these intermediate packets you can actually
-put in different essays and so what I would do when I was at
-university and this was the method that helped me rank first in the u
-group one year um what I used to do is I would memorize the
-intermediate packets or the content blocks and then I'd be able to
-essentially in my head drag and drop them into whatever I say I wanted
-to that was relevant to memory for example and even outside the world
-of essay writing and academia it's really relevant like for you know
-for example this video on 10 principles of building a second brain
-each of these 10 principles are their own intermediate packet and i
-know that in the future when I make another kind of video or if i'm
-writing a blog post or if I'm writing a book there are surely some
-aspects of this video some intermediate packets that I can just drag
-and drop into my other thing.
+terminology for. Back in the day so if you imagine let's say you're a
+university student and you're writing an essay. An essay isn't
+actually like we think of it as like a big thing, but actually it's
+made up of a lot of intermediate packets. I used to call them content
+blocks in my head when I was in my third year writing loads of essays.
+It's like you know your introduction is a block an intermediate packet
+then you've got maybe a paragraph or a section on short-term memory
+versus long-term memory then you have a section on the phonological
+loop versus the visual spatial sketch pad which are aspects of working
+memory. Or whatever you've got these kind of five or six different
+intermediate packets and when you put them together they form an
+essay. But one of the crucial insights which helps make students
+lives more efficient is that a lot of these intermediate packets you
+can actually put in different essays. So what I would do when I was at
+university and this was the method that helped me rank first in the
+group one year what I used to do is I would memorize the intermediate
+packets or the content blocks and then I'd be able to essentially in
+my head drag and drop them into whatever I say I wanted to. That was
+relevant to memory for example. And even outside the world of essay
+writing and academia it's really relevant like for you know. For
+example this video on 10 principles of building a second brain. Each of
+these 10 principles are their own intermediate packet. And I know that
+in the future when I make another kind of video or if I'm writing a
+blog post or if I'm writing a book there are surely some aspects of
+this video some intermediate packets that I can just drag and drop
+into my other thing.
 
-So firstly thinking in that way really helps because it means that
-it's a lot easier to put stuff together for your next project but also
-in a way it makes it easier to get started on your current project so
-for example when I'm writing an essay I don't think of it as oh damn i
-need to sit down and write the whole essay which would be more of a
-heavy lift I think of it as okay I just need to focus on the
-introduction or I just need to write that one intermediate packet of
-short-term memory versus long-term memory and then it just kind of
-makes the work more doable because a big problem that me and a lot of
-other people have is getting started with doing the work and if
-there's like a big mountain in front of us like writing a whole essay
-it can feel really hard but if it's just a small intermediate packet
-like writing a single paragraph it becomes a lot easier and then those
-bits those intermediate packets are then like go into our second brain
-and they're useful for future projects further down the line next we
-have the idea that you only know what you make and this is like a big
-part of the building second brain thing this is a big part of my
-personal spiel as well these days is that like we can read watch and
-listen to all the stuff that we want but really the stuff that we're
-really going to internalize and that's really going to affect our
-lives and that we can feasibly use in our future projects is going to
-be the stuff that we have created ourselves so whether that's reading
-a book and then writing a summary of it or whether it's listening to a
-podcast and kind of turning it into like a tweet storm of like
-insights from the podcast or even if it's having a random idea and
-then writing like fleshing out that idea into an intermediate packet
-and chucking it into our second brain.
+So, firstly thinking in that way really helps because it means that
+it's a lot easier to put stuff together for your next project, but
+also in a way it makes it easier to get started on your current
+project. So for example when I'm writing an essay I don't think of it
+as: "Oh, damn, I need to sit down and write the whole essay." Which
+would be more of a heavy lift. I think of it as: "o'kay, I just need
+to focus on the introduction", or: "I just need to write that one
+intermediate packet of short-term memory versus long-term memory." And
+then it just kind of makes the work more doable because a big problem
+that me and a lot of other people have is getting started with doing
+the work and if there's like a big mountain in front of us. Like
+writing a whole essay. It can feel really hard but if it's just a small
+intermediate packet like writing a single paragraph it becomes a lot
+easier and then those bits those intermediate packets are then like go
+into our second brain and they're useful for future projects further
+down the line next we have the idea that you only know what you make
+and this is like a big part of the building second brain thing this is
+a big part of my personal spiel as well these days is that like we can
+read watch and listen to all the stuff that we want but really the
+stuff that we're really going to internalize and that's really going
+to affect our lives and that we can feasibly use in our future
+projects is going to be the stuff that we have created ourselves so
+whether that's reading a book and then writing a summary of it or
+whether it's listening to a podcast and kind of turning it into like a
+tweet storm of like insights from the podcast or even if it's having a
+random idea and then writing like fleshing out that idea into an
+intermediate packet and chucking it into our second brain.
 
 
 When we engage with the material ourselves rather than relying on just
