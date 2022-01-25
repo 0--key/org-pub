@@ -4,8 +4,8 @@ layout: page
 title: The Second Brain -
 tagline: " A Life-Changing Productivity System"
 permalink: /personal/growth/second_brain.html
-categories: [personal-growth]
-tags: [become, yourself, vocabulary]
+categories: [personal-growth, knowledge-management]
+tags: [become, yourself]
 ---
 #+END_EXPORT
 
@@ -15,7 +15,6 @@ tags: [become, yourself, vocabulary]
 #+PROPERTY:header-args :results output :exports both :eval no-export
 
 This is the [[https://www.youtube.com/watch?v=OP3dA2GcAh8&ab_channel=AliAbdaal][source]]
-
 
 So last year I spent a stupidly large amount of money on this online
 course that genuinely changed my life. It's called building a second
@@ -203,7 +202,7 @@ starting with abundance. You're starting with this pre-existing
 treasure trove of information that you yourself have decided in the
 past that was worth saving.
 
-* Intermediate Packets Idea
+* The Intermediate Packets Idea
 
 Next we have the idea of intermediate packets and this is something
 that I kind of knew intuitively but I didn't really have the
