@@ -13,3 +13,11 @@ tags: [become, yourself, thought, contemplation]
 #+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
 #+TOC: headlines 2
 #+PROPERTY:header-args :results output :exports both :eval no-export
+
+* Prelude
+
+* What is cognition?
+
+* What are cognition biases?
+
+* Why it is crucially to detect them?
