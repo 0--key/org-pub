@@ -31,4 +31,7 @@ failure? It's ridiculous and seems like a silly time wasting.
 
 * What are cognition biases?
 
+are systematic patterns of deviation from norm and/or rationality in
+judgment.
+
 * Why it is crucially to detect them?
