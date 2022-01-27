@@ -1,0 +1,15 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: The Cognitive Biases -
+tagline: " a set of rigid obstacles to make a thought"
+permalink: /personal/growth/cognitive_biases.html
+categories: [personal-growth, cognition, biases]
+tags: [become, yourself, thought, contemplation]
+---
+#+END_EXPORT
+
+#+STARTUP: showall
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
