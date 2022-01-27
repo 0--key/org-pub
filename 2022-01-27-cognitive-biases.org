@@ -4,7 +4,7 @@ layout: page
 title: The Cognitive Biases -
 tagline: " a set of rigid obstacles to make a thought"
 permalink: /personal/growth/cognitive_biases.html
-categories: [personal-growth, cognition, biases]
+categories: [personal-growth, cognition biases]
 tags: [become, yourself, thought, contemplation]
 ---
 #+END_EXPORT
