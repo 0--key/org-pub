@@ -29,6 +29,31 @@ failure? It's ridiculous and seems like a silly time wasting.
 
 * What is cognition?
 
+Cognition refers to "the mental action or process of acquiring
+knowledge and understanding through thought, experience, and the
+senses". It encompasses many aspects of intellectual functions and
+processes such as:
+
+** perception
+
+** attention
+
+** thought
+
+** the formation of knowledge
+
+** memory and working memory
+
+** judgment and evaluation
+
+** reasoning and "computation"
+
+** problem solving and decision making
+
+** comprehension
+
+** production of language
+
 * What are cognition biases?
 
 are systematic patterns of deviation from norm and/or rationality in
