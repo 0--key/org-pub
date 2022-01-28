@@ -1,0 +1,17 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: The Socrates' Quotes -
+tagline: " are so old, so they are true gold"
+permalink: /personal/growth/Socrates-quotes.html
+categories: [personal-growth, Socrates, quotes]
+tags: [become, yourself, wit, wisdom]
+---
+#+END_EXPORT
+
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
+
+* Prelude
