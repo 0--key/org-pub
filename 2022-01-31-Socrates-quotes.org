@@ -15,3 +15,12 @@ tags: [become, yourself, wit, wisdom]
 #+PROPERTY:header-args :results output :exports both :eval no-export
 
 * Prelude
+
+Even shallow attention on to a history of human race intellectual
+gestation might disclose fact its initialization in the ancient
+period. Thurther deduction show up its huge bonds with *Socrates*
+(Greek: Σωκράτης; c. 470 -399 BC) who was a Greek philosopher from
+Athens and who is credited as a /founder of Western philosophy/. An
+enigmatic figure, *Socrates* authored /no texts/ and is known mainly
+through the posthumous accounts of classical writers, particularly his
+students Plato and Xenophon.
