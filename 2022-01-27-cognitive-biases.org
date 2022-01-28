@@ -9,7 +9,7 @@ tags: [become, yourself, thought, contemplation]
 ---
 #+END_EXPORT
 
-#+STARTUP: showall
+#+STARTUP: showall indent
 #+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
 #+TOC: headlines 2
 #+PROPERTY:header-args :results output :exports both :eval no-export
