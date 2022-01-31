@@ -29,18 +29,53 @@ It's ridiculous and seems like a silly time wasting.
 
 * What is cognition?
 
-Cognition refers to "the mental action or process of acquiring
-knowledge and understanding through thought, experience, and the
-senses". It encompasses many aspects of intellectual functions and
+Cognition refers to
+#+begin_quote
+"the mental action or process of acquiring knowledge and understanding
+through thought, experience, and the senses"
+#+end_quote
+
+
+It encompasses many aspects of intellectual functions and
 processes such as:
 
 ** perception
+#+begin_quote
+is the organization, identification, and interpretation of sensory
+information in order to represent and understand the presented
+information or environment. All perception involves signals that go
+through the nervous system, which in turn result from physical or
+chemical stimulation of the sensory system. For example, vision
+involves light striking the retina of the eye; smell is mediated by
+odor molecules; and hearing involves pressure waves.
+#+end_quote
 
 ** attention
+#+begin_quote
+is the behavioral and cognitive process of selectively
+concentrating on a discrete aspect of information, whether considered
+subjective or objective, while ignoring other perceivable information.
+William James wrote that "Attention is the taking possession by the
+mind, in clear and vivid form, of one out of what seem several
+simultaneously possible objects or trains of thought. Focalization,
+concentration, of consciousness are of its essence."
+#+end_quote
 
 ** thought
+#+begin_quote
+In their most common sense, the terms thought and thinking refer to
+conscious cognitive processes that can happen independently of sensory
+stimulation. Their most paradigmatic forms are judging, reasoning,
+concept formation, problem solving, and deliberation. But other mental
+processes, like considering an idea, memory, or imagination, are also
+often included. These processes can happen internally independent of
+the sensory organs, unlike perception.
+#+end_quote
 
 ** the formation of knowledge
+#+begin_quote
+the construction, transmission, and contestation of forms of knowledge
+#+end_quote
 
 ** memory and working memory
 
