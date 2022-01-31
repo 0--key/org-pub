@@ -20,6 +20,17 @@ defines the five “laws of stupidity” as:
 
 1. Always and inevitably everyone underestimates the number of stupid
    individuals in circulation;
+
+   The compilers of the Testament were aware of the First Basic Law,
+   and they paraphrased it when they asserted that:
+
+   #+begin_quote
+   “stultorum infinitus est numerus”
+   #+end_quote
+
+   But they indulged in /poetic exaggeration/. The number of stupid
+   people cannot be infinite because the number of living people is
+   finite.
 2. The probability that a certain person will be stupid is independent
    of any other characteristic of that person;
 3. A stupid person is a person who causes losses to another person or
