@@ -90,8 +90,14 @@ the construction, transmission, and contestation of forms of knowledge
 ** production of language
 
 * What are cognition biases?
-
+#+begin_quote
 are systematic patterns of deviation from norm and/or rationality in
 judgment.
+#+end_quote
+
+*OR*
+#+begin_quote
+are rational deviations from logical thought.
+#+end_quote
 
 * Why it is crucially to detect them?
