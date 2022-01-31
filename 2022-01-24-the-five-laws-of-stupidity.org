@@ -33,6 +33,11 @@ defines the five “laws of stupidity” as:
    finite.
 2. The probability that a certain person will be stupid is independent
    of any other characteristic of that person;
+
+   #+begin_quote
+   A stupid man is born a stupid man by an act of Providence.
+   #+end_quote
+
 3. A stupid person is a person who causes losses to another person or
    a group of persons while himself deriving no gain and even possibly
    incurring losses;
