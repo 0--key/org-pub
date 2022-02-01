@@ -27,6 +27,12 @@ philosophers Plato Aristotle. Plato on the left is pointing upwards
 with this digit finger, and Aristotle is is pointing in front of him to
 the world around him.
 
+  #+CAPTION: Plato and Aristotle
+  #+ATTR_HTML: :alt Plato and Aristotle :title Two Philosophers :align center
+  #+ATTR_HTML: :width 80%
+  [[http://0--key.github.io/assets/img/learning/Plato&Aristotle.jpg]]
+
+
 Why these two philosophers here at the start of this module on
 learning and instruction? Well they are a source of inspiration for
 many philosophers to come many learning theorists to come.
