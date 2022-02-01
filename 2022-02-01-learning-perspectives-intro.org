@@ -1,0 +1,15 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Perspectives on Learning -
+tagline: " and instruction"
+permalink: /learning/course/perspectives_on_learning_intro.html
+categories: [learning, perspective]
+tags: [intro]
+---
+#+END_EXPORT
+
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
