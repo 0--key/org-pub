@@ -1,0 +1,15 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Perspectives
+tagline: " on learning and instruction. Behaviorism."
+permalink: /learning/course/perspectives_on_learning_behaviorism.html
+categories: [perspectives on learning]
+tags: [behaviorism]
+---
+#+END_EXPORT
+
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
