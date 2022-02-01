@@ -13,3 +13,22 @@ tags: [behaviorism]
 #+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
 #+TOC: headlines 2
 #+PROPERTY:header-args :results output :exports both :eval no-export
+
+* Definition
+
+Learning is conditioning. It leads to new connections between external
+stimuli and behavior (responces).
+
+* Classical conditioning
+
+*Example:* Fear conditioning
+
+~Stimulus substitution~
+
+/Autonomous responces are connected to new stimuli/
+
+* Operant conditioning
+
+*Example:* Self management
+~Response substitution~
+
