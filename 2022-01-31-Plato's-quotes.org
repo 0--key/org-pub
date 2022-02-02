@@ -1,7 +1,7 @@
 #+BEGIN_EXPORT html
 ---
 layout: page
-title: The Old Quotes -
+title: The Old Quotes
 tagline: " are true gold"
 permalink: /personal/growth/Plato's-quotes.html
 categories: [personal-growth, Plato, quotes]
