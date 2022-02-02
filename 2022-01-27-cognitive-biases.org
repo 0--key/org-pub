@@ -101,3 +101,54 @@ are rational deviations from logical thought.
 #+end_quote
 
 * Why it is crucially to detect them?
+
+
+
+* Belief, decision-making and behavioral
+
+**  Anchoring bias
+
+**  Apophenia
+
+**  Availability heuristic
+
+**  Cognitive dissonance
+
+**  Confirmation bias
+
+**  Egocentric bias
+
+**  Extension neglect
+
+**  False priors
+
+**  Framing effect
+
+**  Logical fallacy
+
+**  Prospect theory
+
+**  Self-assessment
+
+**  Truthiness
+
+**  Other
+
+**  Social
+
+***  Association fallacy
+
+***  Attribution bias
+
+***  Conformity
+
+***  Ingroup bias
+
+***  Other
+
+
+* Memory
+
+**  Misattribution of memory
+
+**  Other
