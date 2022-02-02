@@ -1,7 +1,7 @@
 #+BEGIN_EXPORT html
 ---
 layout: page
-title: The Five Laws -
+title: The Five Laws
 tagline: " of Stupidity"
 permalink: /personal/growth/stupidity/antithesis.html
 categories: [personal-growth, stupidity]
@@ -9,7 +9,7 @@ tags: [become, yourself]
 ---
 #+END_EXPORT
 
-#+STARTUP: showall
+#+STARTUP: showall indent
 #+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
 #+TOC: headlines 2
 #+PROPERTY:header-args :results output :exports both :eval no-export

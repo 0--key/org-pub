@@ -1,7 +1,7 @@
 #+BEGIN_EXPORT html
 ---
 layout: page
-title: The Second Brain -
+title: The Second Brain
 tagline: " A Life-Changing Productivity System"
 permalink: /personal/growth/second_brain.html
 categories: [personal-growth, knowledge-management]
