@@ -5,7 +5,8 @@ title: Intelligence amplification
 tagline: " with Emacs"
 permalink: /personal/growth/intelligence_amplification.html
 categories: [personal growth]
-tags: [intelligence, amplification]
+tags: [intelligence amplification, enhanced intelligence, machine augmented intelligence, cognitive
+augmentation]
 ---
 #+END_EXPORT
 
