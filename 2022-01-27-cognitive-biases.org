@@ -140,6 +140,24 @@ everything looks like a nail."
 
 **  Apophenia
 
+is the tendency to perceive meaningful connections between unrelated
+things. The term (German: Apophänie from the Greek verb ἀποφαίνειν
+(apophaínein), represent as) was coined by psychiatrist Klaus Conrad
+in his 1958 publication on the beginning stages of schizophrenia. He
+defined it as:
+
+#+begin_quote
+"unmotivated seeing of connections [accompanied by] a specific feeling
+of abnormal meaningfulness"
+#+end_quote
+
+He described the early stages of delusional thought as
+self-referential over-interpretations of actual sensory perceptions,
+as opposed to hallucinations.
+
+Apophenia has also come to describe a human propensity to unreasonably
+seek patterns in random information, such as can occur while gambling.
+
 **  Availability heuristic
 
 **  Cognitive dissonance
