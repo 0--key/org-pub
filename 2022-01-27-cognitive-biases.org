@@ -108,6 +108,36 @@ are rational deviations from logical thought.
 
 **  Anchoring bias
 
+The *anchoring effect* is a cognitive bias whereby an individual's
+decisions /are influenced by/ a particular reference point or
+'anchor'. Once the value of the anchor is set, subsequent
+arguments, estimates, etc. made by an individual may change from what
+they would have otherwise been without the anchor. For example, an
+individual may be more likely to purchase a car if it is placed
+alongside a more expensive model (the anchor).
+
+The anchoring bias, or focalism, is the tendency to rely too
+heavily—to "anchor"—on one trait or piece of information when making
+decisions (usually the first piece of information acquired on that
+subject).
+
+Anchoring bias includes or involves the following:
+
+*** Common source bias
+the tendency to combine or compare research studies from the same
+source, or from sources that use the same methodologies or data.
+*** Conservatism bias
+the tendency to insufficiently revise one's belief when presented with
+new evidence.
+*** Functional fixedness
+a tendency limiting a person to using an object only in the way it is
+traditionally used.
+*** Law of the instrument
+an over-reliance on a familiar tool or methods, ignoring or
+under-valuing alternative approaches. "If all you have is a hammer,
+everything looks like a nail."
+
+
 **  Apophenia
 
 **  Availability heuristic
