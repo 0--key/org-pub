@@ -14,3 +14,12 @@ augmentation]
 #+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
 #+TOC: headlines 2
 #+PROPERTY:header-args :results output :exports both :eval no-export
+
+* Definition
+
+#+begin_quote
+#+begin_verse
+information technology
+in augmenting human intelligence.
+#+end_verse
+#+end_quote
