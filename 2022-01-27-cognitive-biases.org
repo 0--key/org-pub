@@ -161,9 +161,18 @@ seek patterns in random information, such as can occur while gambling.
 The following are types of apophenia:
 
 *** Clustering illusion
+
 the tendency to overestimate the importance of small runs, streaks, or
- clusters in large samples of random data (that is, seeing phantom
- patterns).
+clusters in large samples of random data (that is, seeing phantom
+patterns). In other words:
+
+#+begin_quote
+The *clustering illusion* is the tendency to erroneously consider the
+inevitable "streaks" or "clusters" arising in small samples from
+random distributions to be non-random. The illusion is caused by a
+human tendency to underpredict the amount of variability likely to
+appear in a small sample of random or pseudorandom data.
+#+end_quote
 *** Illusory correlation
 a tendency to inaccurately perceive a relationship between two
 unrelated events.
