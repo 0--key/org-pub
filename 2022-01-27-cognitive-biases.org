@@ -158,6 +158,20 @@ as opposed to hallucinations.
 Apophenia has also come to describe a human propensity to unreasonably
 seek patterns in random information, such as can occur while gambling.
 
+The following are types of apophenia:
+
+*** Clustering illusion
+the tendency to overestimate the importance of small runs, streaks, or
+ clusters in large samples of random data (that is, seeing phantom
+ patterns).
+*** Illusory correlation
+a tendency to inaccurately perceive a relationship between two
+unrelated events.
+*** Pareidolia
+a tendency to perceive a vague and random stimulus (often an image or
+sound) as significant, e.g., seeing images of animals or faces in
+clouds, the man in the moon, and hearing non-existent hidden messages
+on records played in reverse.
 **  Availability heuristic
 
 **  Cognitive dissonance
