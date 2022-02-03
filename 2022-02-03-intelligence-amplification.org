@@ -1,0 +1,15 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Intelligence amplification
+tagline: " with Emacs"
+permalink: /personal/growth/intelligence_amplification.html
+categories: [personal growth]
+tags: [intelligence, amplification]
+---
+#+END_EXPORT
+
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
