@@ -13,3 +13,36 @@ tags: [org-mode, note-taking]
 #+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
 #+TOC: headlines 2
 #+PROPERTY:header-args :results output :exports both :eval no-export
+
+
+* Notes                                                      :noexport:notes:
+
+The [[https://writingcooperative.com/zettelkasten-how-one-german-scholar-was-so-freakishly-productive-997e4e0ca125][source]]
+
+“I’m not thinking everything on my own. Much of it happens in my
+Zettelkasten.  My productivity is largely explained by the
+Zettelkasten method”
+
+Sometimes he described it as a second memory, cybernetic system, a
+ruminant, or septic tank.
+
+It’s like me handing a pencil to a Neanderthal and the Neanderthal
+asking “That’s it? This little stick is what allows you to communicate
+through space and time with other human beings and remember things
+forever?”
+
+[[https://zettelkasten.de/posts/collectors-fallacy/][Collector’s fallacy]] — the tendency to collect heaps of information
+without ever doing anything useful with it.
+
+Claude Shannon, the father of information theory, studied communication
+and needed some measure for the amount of information that is exchanged
+when two entities communicate. The measure he came up with is called
+surprisal (also known as [[https://en.wikipedia.org/wiki/Information_content][information content]], Shannon information, or
+self-information). Shannon realized that how much information is
+contained in a message is determined by how surprising the message is.
+
+As [[https://en.wikipedia.org/wiki/Don_Norman][Don Norman]] put it in his book Things that make us smart: Defending
+human attributes in the age of the machine, “The power of the unaided
+mind is highly overrated. Without external aids, memory, thought, and
+reasoning are all constrained. […] The real powers come from devising
+external aids that enhance cognitive abilities.”
