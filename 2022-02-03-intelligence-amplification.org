@@ -23,3 +23,10 @@ information technology
 in augmenting human intelligence.
 #+end_verse
 #+end_quote
+
+* Notes                                                      :noexport:notes:
+[[https://en.wikipedia.org/wiki/W._Ross_Ashby][Ross Ashby]];
+Ross Ashby [[http://www.rossashby.info/][archive]];
+[[https://en.wikipedia.org/wiki/Self-organization][Self-organization]];
+[[https://en.wikipedia.org/wiki/Intelligence_amplification][Intelligence-amplification]];
+

@@ -96,3 +96,5 @@ We are going to subsequently explore behaviorism, cognitivism and
 constructivism as prosper theoretical perspectives on learning and
 instruction and eventually we will discuss a few research methods,
 which are used by researchers in this particular domain.
+* Notes                                                            :noexport:notes:
+Jos Beishuizen Vrije Universiteit Amsterdam

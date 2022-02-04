@@ -13,3 +13,5 @@ tags: [thought, contemplation, thinking, cognintion, mull over]
 #+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
 #+TOC: headlines 2
 #+PROPERTY:header-args :results output :exports both :eval no-export
+
+
