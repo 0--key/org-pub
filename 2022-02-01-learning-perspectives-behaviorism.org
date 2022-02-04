@@ -61,102 +61,122 @@ has been rewarded will return in the future. Will be shown more often
 in the future because of this reward. So the act is strengthened
 basically that's the idea so we can strengthen particular new forms of
 behavior by rewarding them by providing positive reinforcement and
-that is the law of effect has pull forward by Edward Thorndike.
+that is the law of effect has pull forward by Edward Thorndike now.
 
-Now John Watson was a more of a philosopher he published his behaviour
+John Watson was a more of a philosopher he published his behaviour
 manifesto in 1917 and we can have a small look into the first
-paragraph of the manifest out I'll try to move my own face a bit in
-order to be able to read what is written here ok here we are
-psychology as the behaviorist fuse it is a purely objective as mental
-branch of natural science is theoretical goal is prediction and
-control of behavior introspection forms no essential part of its
-methods nor is a scientific value of its data dependent upon the
-readiness with which they lend themselves to interpretation in terms
-of consciousness the behaviorist in his efforts to get a unitary
-scheme of animal responds recognizes notified in line between man and
-route the behavior of man with all of its refinement and complexity
-forms only a part of the behaviorist total scheme of Investigation ok
-what does it say well first of all man human beings and animals are
+paragraph of the manifest. Psychology as the behaviorist fuse it is a
+purely objective as mental branch of natural science. Its theoretical
+goal is prediction and control of behavior introspection forms. No
+essential part of its methods nor is a scientific value of its data
+dependent upon the readiness with which they lend themselves to
+interpretation.
+
+In terms of consciousness the behaviorist in his efforts to get a
+unitary scheme of animal responds recognizes notified in line between
+man and route the behavior of man with all of its refinement and
+complexity forms only a part of the behaviorist total scheme of
+investigation.
+
+What does it say? Well, first of all man human beings and animals are
 put on the same line and studying their behavior is basically done
-with the same methods it's just a matter of natural science so we do
+with the same methods. It's just a matter of natural science so we do
 not need such things as introspection or free will as Skinner ruger is
-going to discuss later on in this module these are concepts
+going to discuss later on in this module. These are concepts
 introspection free will let's say desires or memory or decisions or
-whatever they stem from the Middle Ages in which we were not able to
-completely explain and predict human behavior that's what we want we
-want to predict and control behavior and we are developing methods
-derived from natural science to study the behavior and our basic let's
-say point of view is the human act the human behavior and the animal
-behavior for that matter and we try to find the rules which determine
-how and how animals behave that is the objective of dangerous okay
-let's continue now with with the definition of learning in the domain
-of behaviorism learning is supposed to be conditioning it leads to new
-connections between external stimuli and behavior conditioning means
-influencing the conditions under which behavior operates so we are not
-directly influencing the individual the learner we are not saying you
-have to do this and that no we're just changing you're arranging the
-environment the conditions and we will see the effect on the behavior
-of learner there will be new connections between external stimuli and
-responses and internal responses that is the basic idea so beaver ism
-is in a wave let's say already emphasizing this basic connection
-between stimulus and response response which is also let's say the
-basic building block of our brain as neuro scientists nowadays study
-it the neuron which also is a connection or creates a connection
-between stimulus and restaurants okay so that connection is important
-and we will see that effect two types of connections and there are
-also two types of learning from the perspective of behaviorism
-classical conditioning and operant conditioning classical conditioning
-focuses on the change of behavior in wage not the behavior itself
-changes but the environment changes let's see how tough love studied
-the way dogs started to salivate in the view of a piece of meat these
-dogs were hungry they saw a piece of meat and immediately autonomously
-excited to salivate no decision no plans no ideas of how I have to
-myself no for digesting this food so I'm try to get some some salad I
-my mouth and then it will become easier no nothing whatsoever just an
-autonomous response and then the dogs the doc is prepared to eat meat
-but whenever the meat was offered together with the sound of a ringing
-Bell of discovered that the dog also started to salivate when this
-belt started touring without you know any meat whatsoever so there was
-a connection made between the ringing of the bell and the salivation
-response a new connection which is not existent before but it created
-this connection this learning process the autonomous response of
-salivating as soon as the bell rings an interesting effect and then in
-the indeed an extension of the repertoire of the doc okay now this
-seems all out old-fashioned and laboratory life etc but whenever we
-zoom into the way students behave in classrooms we can see examples of
-what we call fear conditioning let me take my own example I was a
-student in secondary school not very able to do you know the Latin
-exercises translating pieces of Julius Caesar an effort and what
-happened so I often got very bad marks for that particular activity
-now as soon as I saw the teacher I already started to tremble my
-heartbeat raged etc I started to sweat and all these typical
-autonomous fear responses which were connected to the act of
-translating you know we're also generalized to the teacher mini
-apparatus man who happened to be a former police officer but anyway
-that's not important sorry you made some impression it was a big man
-but that forget about that you know the whole learning process is is
-the fear conditioning the generalization of the fear response to the
-person of the teacher or even perhaps the book as soon as you open the
-book you know yards on the train go again etc etc well this is a
-conditioned fear response and it is very strong and very difficult to
-resting extinguish and very powerful and influential so therefore this
-learning process as few as studied by behaviorist is still very
-relevant in our classrooms Oh enough about classical condition
-conditioning we now move to operant conditioning and here we see that
-a different kind of learning because not so much the stimulus is
-changed as well the response is changed so for instance when we learn
-a dog to get the newspaper you know out of the post box we gradually
-reward the dog for doing that particular piece of behavior step by
-step so we dogs I got born you know with the idea of newspapers has to
-be less active to be drawn after of post boxes and offer to to the
-master no not such a thing we have to reward the dark walking to the
-post box for me no nose into the newspaper and then grabbing the
-newspaper and then getting newspaper out of the post box and then
-gradually walking to the bedroom and offering the master so this is a
-step-by-step gradual process in which new new behavior new complex
-behavior is actually acquired by the doc so not the responses changed
-ringing Bell of the doc in paphos laboratory here the behavior itself
-is changed you know getting the newspaper out of the post box
+whatever. They stem from the Middle Ages in which we were not able to
+completely explain and predict human behavior.
+
+That's what we want we want to predict and control behavior and we are
+developing methods derived from natural science to study the behavior.
+And our basic let's say point of view is the human act. The human
+behavior and the animal behavior for that matter and we try to find
+the rules which determine how and how animals behave. That is the
+objective of dangerous.
+
+Let's continue now with with the definition of learning
+
+#+begin_example
+in the domain of behaviorism
+learning is supposed to be *conditioning*.
+#+end_example
+
+It leads to new connections between external stimuli and
+behavior. Conditioning means
+
+#+begin_example
+influencing the conditions
+under which
+behavior operates.
+#+end_example
+
+So we are not directly influencing the individual learner. We are not
+saying you have to do this and that. No we're just changing you're
+arranging the environment the conditions and we will see the effect on
+the behavior of learner. There will be new connections between
+external stimuli and responses and internal responses. That is the
+basic idea so behaviorism is in a wave, let's say, already emphasizing
+this basic connection between stimulus and response. Response which is
+also, let's say, the basic building block of our brain as neuro
+scientists nowadays study it, the neuron which also is a connection or
+creates a connection between stimulus and restraints.
+
+Okay, so that connection is important and we will see that effect two
+types of connections. And there are also two types of learning from the
+perspective of behaviorism: classical conditioning and operant
+conditioning.
+
+Classical conditioning focuses on the change of behavior
+in wage not the behavior itself changes but the environment changes
+let's see how tough love studied the way dogs started to salivate in
+the view of a piece of meat these dogs were hungry they saw a piece of
+meat and immediately autonomously excited to salivate no decision no
+plans no ideas of how I have to myself no for digesting this food so
+I'm try to get some some salad I my mouth and then it will become
+easier no nothing whatsoever just an autonomous response and then the
+dogs the doc is prepared to eat meat but whenever the meat was offered
+together with the sound of a ringing Bell of discovered that the dog
+also started to salivate when this belt started touring without you
+know any meat whatsoever so there was a connection made between the
+ringing of the bell and the salivation response a new connection which
+is not existent before but it created this connection this learning
+process the autonomous response of salivating as soon as the bell
+rings an interesting effect and then in the indeed an extension of the
+repertoire of the doc okay now this seems all out old-fashioned and
+laboratory life etc but whenever we zoom into the way students behave
+in classrooms we can see examples of what we call fear conditioning
+let me take my own example I was a student in secondary school not
+very able to do you know the Latin exercises translating pieces of
+Julius Caesar an effort and what happened so I often got very bad
+marks for that particular activity now as soon as I saw the teacher I
+already started to tremble my heartbeat raged etc I started to sweat
+and all these typical autonomous fear responses which were connected
+to the act of translating you know we're also generalized to the
+teacher mini apparatus man who happened to be a former police officer
+but anyway that's not important sorry you made some impression it was
+a big man but that forget about that you know the whole learning
+process is is the fear conditioning the generalization of the fear
+response to the person of the teacher or even perhaps the book as soon
+as you open the book you know yards on the train go again etc etc well
+this is a conditioned fear response and it is very strong and very
+difficult to resting extinguish and very powerful and influential so
+therefore this learning process as few as studied by behaviorist is
+still very relevant in our classrooms Oh enough about classical
+condition conditioning we now move to operant conditioning and here we
+see that a different kind of learning because not so much the stimulus
+is changed as well the response is changed so for instance when we
+learn a dog to get the newspaper you know out of the post box we
+gradually reward the dog for doing that particular piece of behavior
+step by step so we dogs I got born you know with the idea of
+newspapers has to be less active to be drawn after of post boxes and
+offer to to the master no not such a thing we have to reward the dark
+walking to the post box for me no nose into the newspaper and then
+grabbing the newspaper and then getting newspaper out of the post box
+and then gradually walking to the bedroom and offering the master so
+this is a step-by-step gradual process in which new new behavior new
+complex behavior is actually acquired by the doc so not the responses
+changed ringing Bell of the doc in paphos laboratory here the behavior
+itself is changed you know getting the newspaper out of the post box
 therefore we call this response substitution whereas the foreman won
 the classical conditioning one was called stimulus substitution okay
 now let's watch a short interview with a virus Skinner with the most
