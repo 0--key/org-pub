@@ -1,0 +1,15 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Critical Thinking
+tagline: " isn't a congenial skill"
+permalink: /personal/growth/critical_thinking.html
+categories: [personal-growth, critical thinking]
+tags: [thought, contemplation, thinking, cognintion, mull over]
+---
+#+END_EXPORT
+
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
