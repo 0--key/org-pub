@@ -1,15 +1,15 @@
 #+BEGIN_EXPORT html
 ---
 layout: page
-title: An External Cortex -
-tagline: " store your knowledge as a net"
+title: An External Cortex
+tagline: " preserves your personal knowledge as a net"
 permalink: /personal/knowledge/management/zettelkasten.html
 categories: [Emacs, Zettelkasten, personal-growth, knowledge-management]
 tags: [org-mode, note-taking]
 ---
 #+END_EXPORT
 
-#+STARTUP: showall
+#+STARTUP: showall indent
 #+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
 #+TOC: headlines 2
 #+PROPERTY:header-args :results output :exports both :eval no-export
