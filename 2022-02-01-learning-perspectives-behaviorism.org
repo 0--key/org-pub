@@ -16,8 +16,10 @@ tags: [behaviorism]
 
 * Definition
 
+#+begin_example
 Learning is conditioning. It leads to new connections between external
 stimuli and behavior (responces).
+#+end_example
 
 * Classical conditioning
 
@@ -47,18 +49,21 @@ Thorndike was researcher who studied for instance behavior cats. Cats
 were put into cages which were called puzzle boxes and as soon as they
 were put in such gauge the cats usually try to find its way out of the
 cage of course and coincidentally pressed a lever which opened the
-door of the cage and an able to get to get out of the cage now when
+door of the cage and an able to get to get out of the cage now. When
 you put such a get back into the cage and enclose the door the cat
-will more quickly find the lever and press it and jump out of the cage
-and once again the next trial again put get into the cage he
-immediately grabs the lever opens the door and gets out of the cage
-now this is what phone dyke considered the law of effect an act which
-has been rewarded will return in the future will be shown more often
-in the future because of this reward so the act is strengthened
+will more quickly find the lever and press it and jump out of the
+cage.
+
+And once again the next trial again put get into the cage he
+immediately grabs the lever, opens the door and gets out of the cage.
+Now this is what Thirndike considered the law of effect. An act which
+has been rewarded will return in the future. Will be shown more often
+in the future because of this reward. So the act is strengthened
 basically that's the idea so we can strengthen particular new forms of
 behavior by rewarding them by providing positive reinforcement and
-that is the law of effect has put forward by Edward full night now
-John Watson was a more of a philosopher he published his behaviour
+that is the law of effect has pull forward by Edward Thorndike.
+
+Now John Watson was a more of a philosopher he published his behaviour
 manifesto in 1917 and we can have a small look into the first
 paragraph of the manifest out I'll try to move my own face a bit in
 order to be able to read what is written here ok here we are
