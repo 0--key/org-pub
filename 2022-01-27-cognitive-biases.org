@@ -176,8 +176,8 @@ The following are types of apophenia:
 *** Clustering illusion
 
 the tendency to overestimate the importance of small runs, streaks, or
-clusters in large samples of random data (that is, seeing phantom
-patterns). In other words:
+clusters in large samples of random data (that is, seeing *phantom
+patterns*). In other words:
 
 #+begin_quote
 The *clustering illusion* is the tendency to erroneously consider the
