@@ -186,10 +186,25 @@ random distributions to be non-random. The illusion is caused by a
 human tendency to underpredict the amount of variability likely to
 appear in a small sample of random or pseudorandom data.
 #+end_quote
+
 *** Illusory correlation
+
 a tendency to inaccurately perceive a relationship between two
 unrelated events.
+
+#+begin_quote
+illusory correlation is the phenomenon of perceiving a relationship
+between variables (typically people, events, or behaviors) even when
+no such relationship exists.
+#+end_quote
+
+#+begin_quote
+Correlation is not causation
+- *Karl Pearson*
+#+end_quote
+
 *** Pareidolia
+
 a tendency to perceive a vague and random stimulus (often an image or
 sound) as significant, e.g., seeing images of animals or faces in
 clouds, the man in the moon, and hearing non-existent hidden messages
