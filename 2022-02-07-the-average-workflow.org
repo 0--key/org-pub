@@ -14,5 +14,18 @@ tags: [data gathering, data elaboration, notetaking]
 #+TOC: headlines 2
 #+PROPERTY:header-args :results output :exports both :eval no-export
 
+* Preamble
+
+** Toolset
+
+* Average modes
+
+** Task management
+
+** Data gathering
+
+** Data elaboration
+
+** Meta-analysys
 
 * Notes                                                      :noexport:notes:
