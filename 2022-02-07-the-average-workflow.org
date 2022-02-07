@@ -1,0 +1,18 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Organize Your Work
+tagline: " with a minimum interruptions"
+permalink: /professional/workflow_inside_org_mode.html
+categories: [workflow, org-mode, effeciency, Zettelkasten]
+tags: [data gathering, data elaboration, notetaking]
+---
+#+END_EXPORT
+
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
+
+
+* Notes                                                      :noexport:notes:
