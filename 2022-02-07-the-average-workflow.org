@@ -29,3 +29,5 @@ tags: [data gathering, data elaboration, notetaking]
 ** Meta-analysys
 
 * Notes                                                      :noexport:notes:
+ - GitHub.io with Jekyll data representation might be ideal for
+   meta-analysys already collected data
