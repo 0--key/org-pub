@@ -124,18 +124,31 @@ subject).
 Anchoring bias includes or involves the following:
 
 *** Common source bias
+
 the tendency to combine or compare research studies from the same
 source, or from sources that use the same methodologies or data.
+
 *** Conservatism bias
+
 the tendency to insufficiently revise one's belief when presented with
 new evidence.
+
 *** Functional fixedness
+
 a tendency limiting a person to using an object only in the way it is
 traditionally used.
-*** Law of the instrument
-an over-reliance on a familiar tool or methods, ignoring or
-under-valuing alternative approaches. "If all you have is a hammer,
-everything looks like a nail."
+
+Karl Duncker defined functional fixedness as:
+#+begin_quote
+being a mental block against using an object in a new way that is
+required to solve a problem.
+#+end_quote
+
+*** Law of the hammer, Maslow's hammer (or gavel), or golden hammer
+
+*Law of the instrument*: an over-reliance on a familiar tool or
+methods, ignoring or under-valuing alternative approaches. "If all you
+have is a hammer, everything looks like a nail."
 
 
 **  Apophenia
