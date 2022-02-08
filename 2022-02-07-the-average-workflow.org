@@ -16,6 +16,18 @@ tags: [data gathering, data elaboration, notetaking]
 
 * Preamble
 
+Without shadow of doubt the managing your task is a /meta-task/ that
+vitally important to accomplish your job in a productive and effective
+manner. I mean do it with sincere joy, playfully focusing on each
+particular task and, of cause, with minimum silly interruptions. Yes,
+it is silly to seek answer on such dumb question: "What I should do
+next?" in the morning when you're much productive than ever. So, lets
+dismantle several classical approaches to this quite delicate issue:
+
++ ToDo lists;
++ Time-table;
++ Calendar.
+
 ** Toolset
 
 * Average modes
