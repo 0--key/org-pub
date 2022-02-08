@@ -30,6 +30,13 @@ dismantle several classical approaches to this quite delicate issue:
 
 ** Toolset
 
+Separate EWW window for each task  -- does its history also splitted?
+Does Desktop-Save saves their properties also?
+
+
+
+Separate set of bookmarks for each task
+
 * Average modes
 
 ** Task management
