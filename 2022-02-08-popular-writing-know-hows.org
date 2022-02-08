@@ -1,0 +1,29 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: How-to Make Money on Writing
+tagline: " and be proficient"
+permalink: /personal/wealth/make_money.html
+categories: [personal wealth]
+tags: [how-to, money, on-line]
+---
+#+END_EXPORT
+
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
+
+* Intro
+
+* Starting out
+
+* Getting better
+
+* Unfair advantages
+
+* How to grow your audience
+
+* Monetisation
+
+* Notes                                                      :noexport:notes:
