@@ -29,13 +29,6 @@ stimuli and behavior (responces).
 
 /Autonomous responces are connected to new stimuli/
 
-* Operant conditioning
-
-*Example:* Self management
-~Response substitution~
-
-* Source text
-
 Let's continue with behavior business the first theoretical
 perspective we would like to further explore we are going to to look
 into a definition and then study two particular kinds of learning
@@ -126,77 +119,93 @@ types of connections. And there are also two types of learning from the
 perspective of behaviorism: classical conditioning and operant
 conditioning.
 
-Classical conditioning focuses on the change of behavior
-in wage not the behavior itself changes but the environment changes
-let's see how tough love studied the way dogs started to salivate in
-the view of a piece of meat these dogs were hungry they saw a piece of
-meat and immediately autonomously excited to salivate no decision no
-plans no ideas of how I have to myself no for digesting this food so
-I'm try to get some some salad I my mouth and then it will become
-easier no nothing whatsoever just an autonomous response and then the
-dogs the doc is prepared to eat meat but whenever the meat was offered
-together with the sound of a ringing Bell of discovered that the dog
-also started to salivate when this belt started touring without you
-know any meat whatsoever so there was a connection made between the
-ringing of the bell and the salivation response a new connection which
-is not existent before but it created this connection this learning
-process the autonomous response of salivating as soon as the bell
-rings an interesting effect and then in the indeed an extension of the
+Classical conditioning focuses on the change of behavior in wage not
+the behavior itself changes but the environment changes.  Let's see
+how tough love studied the way dogs started to salivate in the view of
+a piece of meat. These dogs were hungry, they saw a piece of meat and
+immediately autonomously excited to salivate. No decision, no plans,
+no ideas of how I have to do myself for digesting this food.
+
+So I'm try to get some some salad I my mouth and then it will become
+easier. No. Nothing whatsoever. Just an autonomous response and then
+the dog is prepared to eat meat, but whenever the meat was offered
+together with the /sound of a ringing bell/ discovered that the dog
+also started to salivate when this bell started touring without any
+meat whatsoever. So there was a connection made between the ringing of
+the bell and the salivation response. A new connection which is not
+exist before but it created this connection. This is learning process.
+The autonomous response of salivating as soon as the bell rings.
+
+An interesting effect and then in the indeed an extension of the
 repertoire of the doc okay now this seems all out old-fashioned and
 laboratory life etc but whenever we zoom into the way students behave
-in classrooms we can see examples of what we call fear conditioning
-let me take my own example I was a student in secondary school not
+in classrooms we can see examples of what we call fear conditioning.
+
+Let me take my own example. I was a student in secondary school not
 very able to do you know the Latin exercises translating pieces of
 Julius Caesar an effort and what happened so I often got very bad
 marks for that particular activity now as soon as I saw the teacher I
-already started to tremble my heartbeat raged etc I started to sweat
+already started to tremble my heartbeat raged etc. I started to sweat
 and all these typical autonomous fear responses which were connected
-to the act of translating you know we're also generalized to the
-teacher mini apparatus man who happened to be a former police officer
-but anyway that's not important sorry you made some impression it was
-a big man but that forget about that you know the whole learning
-process is is the fear conditioning the generalization of the fear
-response to the person of the teacher or even perhaps the book as soon
-as you open the book you know yards on the train go again etc etc well
-this is a conditioned fear response and it is very strong and very
-difficult to resting extinguish and very powerful and influential so
-therefore this learning process as few as studied by behaviorist is
-still very relevant in our classrooms Oh enough about classical
-condition conditioning we now move to operant conditioning and here we
-see that a different kind of learning because not so much the stimulus
-is changed as well the response is changed so for instance when we
-learn a dog to get the newspaper you know out of the post box we
-gradually reward the dog for doing that particular piece of behavior
-step by step so we dogs I got born you know with the idea of
-newspapers has to be less active to be drawn after of post boxes and
-offer to to the master no not such a thing we have to reward the dark
-walking to the post box for me no nose into the newspaper and then
-grabbing the newspaper and then getting newspaper out of the post box
-and then gradually walking to the bedroom and offering the master so
-this is a step-by-step gradual process in which new new behavior new
-complex behavior is actually acquired by the doc so not the responses
-changed ringing Bell of the doc in paphos laboratory here the behavior
-itself is changed you know getting the newspaper out of the post box
-therefore we call this response substitution whereas the foreman won
-the classical conditioning one was called stimulus substitution okay
-now let's watch a short interview with a virus Skinner with the most
-famous researcher in this area and who actually explains how pigeons
-are trained to pack on a particular disk to get some food and how this
-is also you know an explanation the model for the way people behave
-and then we return to the issue of free will let's see what he is
-going to say I'll put myself out of the window here because otherwise
-you are distracted and we have to of course HD video oops here we go
-now the Vengeance read this one gives every indication because it's
-been taught to distinguish between two words to behave appropriately
-it is learn his different response to each sign by being rewarded with
+to the act of translating you know.
+
+We're also generalized to the teacher mini apparatus man who happened
+to be a former police officer but anyway that's not important. Sorry
+you made some impression it was a big man but that forget about that
+you know the whole learning process is is the fear conditioning the
+generalization of the fear response to the person of the teacher.
+
+Or even perhaps the book. As soon as you open the book, you know,
+yards on the train go again etc. etc. Well this is a conditioned fear
+response and it is very strong and very difficult to resting
+extinguish and very powerful and influential. So therefore this
+learning process as few as studied by behaviorist is still very
+relevant in our classrooms.
+
+* Operant conditioning
+
+*Example:* Self management
+~Response substitution~
+
+Oh enough about classical conditioning we now move to operant
+conditioning. And here we see that a different kind of learning
+because not so much the stimulus is changed as well the response is
+changed. So for instance when we learn a dog to get the newspaper you
+know out of the post box we gradually reward the dog for doing that
+particular piece of behavior step by step. So we dogs I got born you
+know with the idea of newspapers has to be less active to be drawn
+after of post boxes and offer to the master  not such a thing.
+
+We have to reward the dog walking to the post box for me, put nose
+into the newspaper and then grabbing the newspaper and then getting
+newspaper out of the post box and then gradually walking to the
+bedroom and offering the master. So this is a step-by-step gradual
+process in which new behavior, /new complex behavior/ is actually
+acquired by the dog. So not the responses changed. Ringing bell of the
+dog in laboratory. Here the *behavior* itself *is changed*. Getting
+the newspaper out of the post box.
+
+Therefore we call this response substitution. Whereas the foreman won
+the classical conditioning one was called stimulus substitution. Okay,
+now let's watch a short interview with Skinner, the most famous
+researcher in this area and who actually explains how pigeons are
+trained to peck on a particular disk to get some food. Also you know
+an explanation the model for the way people behave and then we return
+to the issue of free will. Let's see what he is going to say. I'll put
+myself out of the window here because otherwise you are distracted and
+we have to of course HD video oops here we go now the Vengeance read
+this one gives every indication because it's been taught to
+distinguish between two words to behave appropriately.
+
+It is learn his different response to each sign by being rewarded with
 moon so the bird isn't acting independently its behavior is shaped by
-controlling its environment the first task was to isolate an
-individual piece of behavior see how that can be changed you can
-attend this by keeping individual provincials it's about three
-quarters of their normal weight no the birds were always hungry and
-food could be used as an automatic reward the pigeon was studied in a
-uniform box wanna quickly grew used to one visa behavior packing had
-color today's profession on the ground cleavage in London making the
+controlling its environment. The first task was to /isolate an
+individual piece of behavior/ and see how that can be changed you can
+attend this by keeping individual provincials. It's about three
+quarters of their normal weight, the birds were always hungry and
+food could be used as an automatic reward. The pigeon was studied in a
+uniform box wanna quickly grew used to one visa behavior pecking had
+color. Today's profession on the ground cleavage in London making the
 disc produced the reward then the behavior of making who be studied in
 relation to how off underwater often when Skinner's turns what was the
 schedule of reinforcement anything but what we call schedules of
