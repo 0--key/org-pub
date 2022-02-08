@@ -258,3 +258,8 @@ learned these kinds of learning in everyday squeeze therefore we do
 how we are helped believe this perspective but of course there are
 other perspectives as well as we learn soon discovered
 
+
+
+* Notes                                                      :noexport:notes:
+
+** TODO Add definitions for C&O conditioning
