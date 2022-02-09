@@ -33,6 +33,17 @@ into the ~Emacs'~ ~Org-mode~ package, and all you're need to do - just
 read its documentation. Yes, it is not easy to do, so we are on the
 right path.
 
+* A natrual way to make notes
+
+Historically all this fuss around the notes has been successfully
+resolved a million years in a row simply inside the one's
+skull. Usually _Homo_ just remember what he wants to know in the
+nearby future. Yes, this approach has a ton of caveats:
+
+- Longevity;
+- Precision;
+- Distortion;
+- etc.
 ** Toolset
 
 Separate EWW window for each task  -- does its history also splitted?
