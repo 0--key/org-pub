@@ -28,6 +28,11 @@ dismantle several classical approaches to this quite delicate issue:
 + Time-table;
 + Calendar.
 
+Arguably, but all these tools and a lot more are already inculuded
+into the ~Emacs'~ ~Org-mode~ package, and all you're need to do - just
+read its documentation. Yes, it is not easy to do, so we are on the
+right path.
+
 ** Toolset
 
 Separate EWW window for each task  -- does its history also splitted?
