@@ -63,6 +63,26 @@ depending on current job properties.
 
 * Emacs' standpoint
 
+** ACTIVE The Org Agenda
+
+#+begin_quote
+Due to the way Org works, TODO items, time-stamped items, and tagged
+headlines can be scattered throughout a file or even a number of
+files.  To get an overview of open action items, or of events that are
+important for a particular date, this information must be collected,
+sorted and displayed in an organized way.
+#+end_quote
+
+
+#+begin_quote
+Entries in the agenda buffer are linked back to the Org file or diary
+file where they originate.  You are not allowed to edit the agenda
+buffer itself, but commands are provided to show and jump to the
+original entry location, and to edit the Org files “remotely” from the
+agenda buffer.  In this way, all information is stored only once,
+removing the risk that your agenda and note files may diverge.
+#+end_quote
+
 ** Toolset
 
 Separate EWW window for each task  -- does its history also splitted?
