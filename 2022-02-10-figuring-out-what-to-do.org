@@ -1,0 +1,19 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: What Is the Meaning
+tagline: " of your life?"
+permalink: /personal/growth/the_meaning.html
+categories: [personal growth]
+tags: [meaning]
+---
+#+END_EXPORT
+
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
+#+CATEGORY: Workflow
+#+TODO: RAW INIT TODO ACTIVE | MAYBE DONE CLOSED
+
+* Notes                                                      :noexport:notes:
