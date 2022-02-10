@@ -16,4 +16,9 @@ tags: [meaning]
 #+CATEGORY: PersDevArticle
 #+TODO: RAW INIT TODO ACTIVE | MAYBE DONE CLOSED
 
+* Intro
+* The Gravestone Technique
+* The Odyssey Plan
+* The Ideal Ordinary Week
+
 * Notes                                                      :noexport:notes:
