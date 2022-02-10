@@ -13,7 +13,7 @@ tags: [meaning]
 #+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
 #+TOC: headlines 2
 #+PROPERTY:header-args :results output :exports both :eval no-export
-#+CATEGORY: Workflow
+#+CATEGORY: PersDevArticle
 #+TODO: RAW INIT TODO ACTIVE | MAYBE DONE CLOSED
 
 * Notes                                                      :noexport:notes:
