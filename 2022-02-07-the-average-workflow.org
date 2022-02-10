@@ -13,6 +13,8 @@ tags: [data gathering, data elaboration, notetaking]
 #+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
 #+TOC: headlines 2
 #+PROPERTY:header-args :results output :exports both :eval no-export
+#+CATEGORY: Workflow
+#+TODO: RAW INIT TODO ACTIVE | MAYBE DONE CLOSED
 
 * Preamble
 
