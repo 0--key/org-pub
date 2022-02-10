@@ -83,6 +83,18 @@ agenda buffer.  In this way, all information is stored only once,
 removing the risk that your agenda and note files may diverge.
 #+end_quote
 
+For a much detailed overview each item might be extendeid in a
+separate buffer:
+
+#+begin_quote
+(‘org-agenda-tree-to-indirect-buffer’)
+     Display the entire subtree of the current item in an indirect
+     buffer.  With a numeric prefix argument N, go up to level N and
+     then take that tree.  If N is negative, go up that many levels.
+     With a ‘C-u’ prefix, do not remove the previously used indirect
+     buffer.
+#+end_quote
+
 ** Toolset
 
 Separate EWW window for each task  -- does its history also splitted?
