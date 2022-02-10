@@ -127,3 +127,87 @@ disconnected optionally, depending on current job properties.
 
 
 
+** RAW Fleeting Notes
+SCHEDULED: <2022-02-16 Wed>
+:PROPERTIES:
+:CATEGORY: Old Notes
+:END:
+
+Hide and seek game inside all my projects
+
+Extend key-chords
+
+digital-analogous perceptron
+
+Bookmark+ as a local Wiki
+
+Average checksum in the DrinkMarket store
+
+wys fix on the last pages
+
+
+odious
+
+одиозный
+
+adjective
+ 1. одиозный (odious)
+ 2. ненавистный (hated, hateful, odious, abhorrent, accursed, accurst)
+ 3. отвратительный (disgusting, hideous, heinous, abominable, revolting, odious)
+ 4. гнусный (vile, abominable, heinous, nefarious, odious, wretched)
+
+DEFINITION
+
+adjective
+ 1. extremely unpleasant; repulsive.
+    "a pretty odious character"
+
+
+https://exercism.org/  Programming classes
+https://convertkit.com The creator marketing platform
+https://boosty.to/mi3ch Critical Thinking on Russian
+https://perell.com David Perell
+https://readingworldmagazine.com/emacs/2021-11-07-emacs-how-to-find-just-about-anything-on-your-computer-1/
+
+
+conventional wisdom
+spotting bias
+
+     |----------+---------------------|
+     | Sequence | Expands to          |
+     |----------+---------------------|
+     | <s       | #+BEGIN_SRC         |
+     | <e       | #+BEGIN_EXAMPLE     |
+     | <q       | #+BEGIN_QUOTE       |
+     | <v       | #+BEGIN_VERSE       |
+     | <V       | #+BEGIN_VERBATIM    |
+     | <c       | #+BEGIN_CENTER      |
+     | <l       | #+BEGIN_LaTeX       |
+     | <L       | #+LaTeX             |
+     | <h       | #+BEGIN_EXPORT html |
+     | <H       | #+HTML              |
+     | <a       | #+BEGIN_ASCII       |
+     | <A       | #+ASCII:            |
+     | <i       | #+INDEX:            |
+     | <I       | #+INCLUDE:          |
+     |----------+---------------------|
+
+
+What is org-store-link?
+2022-01-26-zettelkasten.org
+
+Robert Pirsig book
+
+ * Notes :noexport:notes:
+section as a set of fleeting notes for further elaboration
+
+Intro
+Starting out
+Getting better
+Unfair advantages
+How to grow your audience
+Monetisation
+
+** RAW Internal and external
+SCHEDULED: <2022-02-16 Wed>
+[[info:org#Link Format][links for Zettelkasten]]
