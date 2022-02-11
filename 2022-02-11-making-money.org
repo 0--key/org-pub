@@ -1,0 +1,41 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: The Best Book I've Ever Read
+tagline: "  about Making Money"
+permalink: /personal/wealth/money-book.html
+categories: [personal wealth, money]
+tags: [overview]
+---
+#+END_EXPORT
+
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
+#+CATEGORY: Money
+#+TODO: RAW INIT TODO ACTIVE | MAYBE DONE CLOSED
+
+*  Intro
+
+*  Avoid the slow lane
+
+*  Work the process
+
+*  Build money trees
+
+*  Switch from being a consumer to a producer
+
+*  Show commitment, don't just show interest
+
+*  1.The commandment of need 
+
+*  2.The commandment of entry
+
+*  3.The commandment of control
+
+*  4.The commandment of scale
+
+*  5.The commandment of time
+
+* Notes                                                      :noexport:notes:
