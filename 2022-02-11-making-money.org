@@ -16,7 +16,8 @@ tags: [overview]
 #+CATEGORY: Money
 #+TODO: RAW INIT TODO ACTIVE | MAYBE DONE CLOSED
 
-*  Intro
+* TODO Intro
+SCHEDULED: <2022-02-15 Tue>
 
 All right, so in this video, I'm gonna summarise some of the insights
 from this book, The Millionaire Fastlane.  I thought that this was
@@ -30,7 +31,10 @@ we distil and discuss highlights from some of my favourite books,
 we're gonna be breaking down five key lessons from the book.  And
 also, the five commandments of building a business that MJ DeMarco
 talks about.  How to get rich quick.
-*  Avoid the slow lane
+
+* TODO Avoid the slow lane
+SCHEDULED: <2022-02-15 Tue>
+
 
 *  Work the process
 
