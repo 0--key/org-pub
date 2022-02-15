@@ -127,7 +127,7 @@ disconnected optionally, depending on current job properties.
 
 
 
-** RAW Fleeting Notes
+** RAW [#B] Fleeting Notes
 SCHEDULED: <2022-02-16 Wed>
 :PROPERTIES:
 :CATEGORY: Old Notes
