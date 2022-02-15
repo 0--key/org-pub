@@ -10,9 +10,11 @@ tags: [become, yourself]
 #+END_EXPORT
 
 #+STARTUP: showall indent
-#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+OPTIONS: tags:nil num:nil todo:nil pri:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
 #+TOC: headlines 2
 #+PROPERTY:header-args :results output :exports both :eval no-export
+#+CATEGORY: Stupidity
+#+TODO: RAW INIT TODO ACTIVE | MAYBE DONE CLOSED
 
 In 1976, the economist and historian Carlo M. Cipolla (1922–2000)
 wrote an essay titled “The Basic Laws of Human Stupidity” where he

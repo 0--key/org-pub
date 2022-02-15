@@ -10,9 +10,11 @@ tags: [become, yourself, wit, wisdom]
 #+END_EXPORT
 
 #+STARTUP: showall indent
-#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+OPTIONS: tags:nil num:nil todo:nil pri:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
 #+TOC: headlines 2
 #+PROPERTY:header-args :results output :exports both :eval no-export
+#+CATEGORY: Socrates
+#+TODO: RAW INIT TODO ACTIVE | MAYBE DONE CLOSED
 
 * Prelude
 
