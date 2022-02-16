@@ -17,7 +17,7 @@ tags: [overview]
 #+TODO: RAW INIT TODO ACTIVE | MAYBE DONE CLOSED
 
 * ACTIVE Intro
-SCHEDULED: <2022-02-15 Tue>
+SCHEDULED: <2022-02-17 Thu>
 
 All right, so in this video, I'm gonna summarise some of the insights
 from this book, The Millionaire Fastlane.  I thought that this was
@@ -33,7 +33,7 @@ also, the five commandments of building a business that MJ DeMarco
 talks about.  How to get rich quick.
 
 * ACTIVE Avoid the slow lane
-SCHEDULED: <2022-02-15 Tue>
+SCHEDULED: <2022-02-17 Thu>
 
 Now, the first important lesson in the book is that we want to avoid
 the slow lane.  And the point that our friend, MJ, makes in the book,
@@ -125,7 +125,8 @@ thinking a few weeks.  That is not a thing.  What he's arguing for is
 a process that will take probably around 10 years to get rich quick.
 And that is actually quick, in his book.
 
-*  Work the process
+* TODO Work the process
+SCHEDULED: <2022-02-16 Wed>
 
 And that brings us on to lesson number two, which is to work the
 process.  Now in the book, he talks a lot about how wealth is not an
@@ -147,7 +148,8 @@ you don't see the five years they spent making videos that no one was
 watching to get to the point where they could then have the "event" of
 the overnight success.
 
-*  Build money trees
+* INIT Build money trees
+SCHEDULED: <2022-02-18 Fri>
 
 All right, so lesson number three is to build money trees.  Now we've
 all heard that phrase that money doesn't grow on trees.  But what he
