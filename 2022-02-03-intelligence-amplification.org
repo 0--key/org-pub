@@ -31,6 +31,39 @@ in augmenting human intelligence.
 :CATEGORY: Ashby's Aphorisms
 :END:
 
+** On Science                                                      :science:
+
+A Cyberneticist observes what might have happened but did not.
+
+A "system" is a set of variables sufficiently isolated to stay
+[constant] long enough for us to discuss it.
+
+When we take the ordinates of a wave function and use them to compute
+their exact values a moment later, we are:
+ 1. Demonstrating that the science of quantum physics use determinant
+ systems;
+ 2. Treating the system as determinate.
+
+Science is the "Observer's Digest".
+
+** On Evolution                                                  :evolution:
+
+The species is fundamentally aimless (it finds its goals as it goes along). 
+
+By the time sexual reproduction has been achieved, the main difficulty
+of evolution is past.
+
+The brain is merely Nature's latest means of self-preservation.
+
+** On Man                                                              :man:
+
+Division of the world's system into Natural and Man-made died with Darwin. 
+
+Man is not the measure: first comes the measure, then we see where he
+falls; so far the result has always been humiliating.
+
+Man pays for his knowledge with humiliation.
+
 * Notes                                                      :noexport:notes:
 [[https://en.wikipedia.org/wiki/W._Ross_Ashby][Ross Ashby]];
 Ross Ashby [[http://www.rossashby.info/][archive]];
