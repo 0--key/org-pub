@@ -1,0 +1,25 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Distraction Epidemy
+tagline: " Why You're Always Distracted"
+permalink: /personal/health/distraction-epidemy.html
+categories: [personal health, focus, distraction]
+tags: [attention, distraction]
+---
+#+END_EXPORT
+
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil todo:nil pri:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
+#+CATEGORY: Health
+#+TODO: RAW INIT TODO ACTIVE | MAYBE DONE CLOSED
+
+
+* Intro
+* Embrace welcome distractions
+* Optimize for enjoyment
+* Throw away the phone
+* Control your environment
+* Deliberately manage your time
