@@ -148,8 +148,11 @@ you don't see the five years they spent making videos that no one was
 watching to get to the point where they could then have the "event" of
 the overnight success.
 
-* INIT Build money trees
-SCHEDULED: <2022-02-18 Fri>
+* TODO Build money trees
+SCHEDULED: <2022-02-23 Wed>
+:LOGBOOK:
+CLOCK: [2022-02-21 Mon 10:06]
+:END:
 
 All right, so lesson number three is to build money trees.  Now we've
 all heard that phrase that money doesn't grow on trees.  But what he
