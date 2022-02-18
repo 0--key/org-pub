@@ -13,7 +13,7 @@ tags: [attention, distraction]
 #+OPTIONS: tags:nil num:nil todo:nil pri:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
 #+TOC: headlines 2
 #+PROPERTY:header-args :results output :exports both :eval no-export
-#+CATEGORY: Health
+#+CATEGORY: Distraction
 #+TODO: RAW INIT TODO ACTIVE | MAYBE DONE CLOSED
 
 [[https://www.youtube.com/watch?v=N282bXQYRFc][Source]]
