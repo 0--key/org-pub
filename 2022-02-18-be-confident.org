@@ -1,0 +1,30 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: How to Be
+tagline: " really confident"
+permalink: /personal/confidence.html
+categories: [personal, confidence]
+tags: [confidence]
+---
+#+END_EXPORT
+
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil todo:nil pri:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
+#+CATEGORY: Health
+#+TODO: RAW INIT TODO ACTIVE | MAYBE DONE CLOSED
+
+[[https://www.youtube.com/watch?v=I5hTDOckpnU][Source]]
+
+* Intro
+* Appreciate the value of confidence
+* Confidence is domain specific
+* Fake it until you make it
+* Take baby steps
+* Confidence is something that you can just have
+* Appreciate the spotlight effect
+* Everyone is friendly but you have to go first
+* Just practice
+* Confidence can be learned
