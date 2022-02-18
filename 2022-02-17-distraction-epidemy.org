@@ -18,7 +18,8 @@ tags: [attention, distraction]
 
 [[https://www.youtube.com/watch?v=N282bXQYRFc][Source]]
 
-* Intro
+* RAW Intro
+SCHEDULED: <2022-02-28 Mon>
 
 All right.  So life is kinda hard these days for lots of reasons, but
 one of them is that we live in an epidemic of distraction.  We're
@@ -44,7 +45,8 @@ know the enemy, let's figure out ways that we can fight these
 distractions so that they don't stop us from doing the things that
 actually matter to us.
 
-* Embrace welcome distractions
+* RAW Embrace welcome distractions
+SCHEDULED: <2022-02-28 Mon>
 
 Tip number one is somewhat counter-intuitive, but that is to embrace
 welcome distractions.  Now, I draw the distinction here between
@@ -73,7 +75,8 @@ when I'm on my death bed in a few years time, will I wish I had worked
 harder and been more focused or will I wish that I had spent more time
 being distracted by friends and family?  I don't know.
 
-* Optimize for enjoyment
+* RAW Optimize for enjoyment
+SCHEDULED: <2022-03-01 Tue>
 
 Tip number two for combating distractions is to optimise for
 enjoyment.  So you know how we talked about one of the main reasons
@@ -107,7 +110,8 @@ progress through it.  Yeah, a bunch of other stuff, it's all gonna be
 in the book.  I'm researching all this stuff these days, but sign up
 to the mailing list to find out more as details come up.
 
-* Throw away the phone
+* RAW Throw away the phone
+SCHEDULED: <2022-03-01 Tue>
 
 Tip number three is to basically throw away the phone.  Like, even if
 we're having fun and the phone is bombarding us with notifications,
