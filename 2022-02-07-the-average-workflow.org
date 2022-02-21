@@ -127,8 +127,8 @@ disconnected optionally, depending on current job properties.
 
 
 
-** RAW [#C] Fleeting Notes elaboration
-SCHEDULED: <2022-02-21 Mon>
+** TODO [#C] Fleeting Notes elaboration
+SCHEDULED: <2022-02-24 Thu>
 :PROPERTIES:
 :CATEGORY: Old Notes
 :END:
