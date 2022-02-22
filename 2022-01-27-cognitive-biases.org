@@ -207,13 +207,90 @@ Correlation is not causation
 
 *** Pareidolia
 
+#+begin_quote
 a tendency to perceive a vague and random stimulus (often an image or
 sound) as significant, e.g., seeing images of animals or faces in
 clouds, the man in the moon, and hearing non-existent hidden messages
 on records played in reverse.
-**  Availability heuristic
+#+end_quote
 
-**  Cognitive dissonance
+** ACTIVE Availability heuristic
+SCHEDULED: <2022-02-23 Wed>
+:LOGBOOK:
+CLOCK: [2022-02-22 Tue 11:23]--[2022-02-22 Tue 11:45] =>  0:22
+:END:
+
+#+begin_quote
+The availability heuristic (also known as the availability bias) is
+the tendency to overestimate the likelihood of events with greater
+"availability" in memory, which can be influenced by how recent the
+memories are or how unusual or emotionally charged they may be.
+#+end_quote
+
+#+begin_example
+Subsequently, under the availability heuristic, people tend to heavily
+weigh their judgments toward /more recent/ information, making new opinions
+biased toward that latest news.
+#+end_example
+
+*** Anthropocentric thinking
+
+the tendency to use human analogies as a basis for reasoning about
+other, less familiar, biological phenomena.
+
+*** Anthropomorphism or personification
+
+the tendency to characterize animals, objects, and abstract concepts
+as possessing human-like traits, emotions, and intentions. The
+opposite bias, of not attributing feelings or thoughts to another
+person, is dehumanised perception, a type of objectification.
+
+*** Attentional bias
+
+the tendency of perception to be affected by recurring thoughts.
+
+*** Frequency illusion or Baader–Meinhof phenomenon
+
+The frequency illusion is that once something has been noticed then
+every instance of that thing is noticed, leading to the belief it has
+a high frequency of occurrence (a form of selection bias). The
+Baader–Meinhof phenomenon is the illusion where something that has
+recently come to one's attention suddenly seems to appear with
+improbable frequency shortly afterwards. It was named after an
+incidence of frequency illusion in which the Baader–Meinhof Group was
+mentioned.
+ 
+*** Implicit association
+
+where the speed with which people can match words depends on how
+closely they are associated.
+
+*** Salience bias
+
+the tendency to focus on items that are more prominent or emotionally
+striking and ignore those that are unremarkable, even though this
+difference is often irrelevant by objective standards.
+
+*** Selection bias
+
+which happens when the members of a statistical sample are not chosen
+completely at random, which leads to the sample not being
+representative of the population.
+
+*** Survivorship bias
+
+which is concentrating on the people or things that "survived" some
+process and inadvertently overlooking those that did not because of
+their lack of visibility.
+
+*** Well travelled road effect
+
+the tendency to underestimate the duration taken to traverse
+oft-travelled routes and overestimate the duration taken to traverse
+less familiar routes.
+
+** INIT Cognitive dissonance
+SCHEDULED: <2022-02-22 Tue>
 
 **  Confirmation bias
 
