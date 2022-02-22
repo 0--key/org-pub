@@ -242,48 +242,57 @@ MJ says in the book is that, and what's obviously true, is that it's
 not that easy to build one of these.  You don't just magically have
 the ability to do that.
 
-* RAW Switch from being a consumer to a producer
+* INIT Switch from being a consumer to a producer
 SCHEDULED: <2022-02-22 Tue>
+:LOGBOOK:
+CLOCK: [2022-02-22 Tue 10:54]
+:END:
 
 And one of the ways that you can is lesson number four, which is
 switch from being a consumer to being a producer.  Now from a young
 age, society broadly teaches us that we should be consumers.  And we
-should be thinking about what to buy, you know?  Our parents are like,
-"Johnny, what do you want for your birthday?"  "What are you gonna buy
-when you get that-" Or you know, "What would you buy if you had a
-million dollars, if you won the lottery?"  It's all very much based on
-being a consumer.  But, as MJ tells us in the book, this consumer
-mindset is never gonna help us to actually build wealth.  Instead, we
-need to think to a producer mindset.  And this genuinely changes the
-way that you approach the world.  Like if you think in the eyes of a
-consumer and you see some cool- I was in the Samsung store earlier
-today.  It's fairly close to where I live. It's really cool.  I'm
-thinking as a consumer like, "Bloody hell, there's all these phones
-and watches and gadgets and fridges and microwaves and all this cool
-stuff.  And the store is really nice.  And I want a fancy new sofa
-because that's a fancy new sofa.  But if you have more of a producer
-mindset, then you start thinking you could- you kind of ignore the
-fact that there's all this stuff out there you can buy.  Instead, you
-start thinking, "Oh, this is an interesting marketing play that
-they're doing."  "I wonder how much it costs to put the store
-together?"  "Oh, I wonder if I could make a video where I switched
-from iPhone to Samsung because there's so many Samsung phones here?
-So I can make a video where I talk about it and switch.  And then
-teach people what it's like to switch from an iPhone to an Android",
-and all that kind of jazz.  And so the way I'm thinking there is,
-hopefully, as a producer, rather than a consumer.  And if you want a
-practical tip for how this works, I think, really, the key is to just
-think about what's going on on the business side of stuff when you are
-out and about.  For example, next time you're in McDonald's, instead
-of thinking how tasty your Filet-O-Fish burger is, think, "Huh, I
-wonder how it is that McDonald's created a system whereby every single
-fish burger in every single McDonald's basically tastes the same?"
-"How do they do that?"  That's pretty incredible.  And then you can
-read a book like "The E-Myth Revisited", which is, again, one of my
-favourite business books of all time that talks about exactly how
-McDonald's built this sort of franchise system.
+should be thinking about what to buy, you know?
 
-*  Show commitment, don't just show interest
+Our parents are like, "Johnny, what do you want for your birthday?"
+"What are you gonna buy when you get that-" Or you know, "What would
+you buy if you had a million dollars, if you won the lottery?"  It's
+all very much based on being a consumer.  But, as MJ tells us in the
+book, this consumer mindset is never gonna help us to actually build
+wealth.  Instead, we need to think to a producer mindset.
+
+And this genuinely changes the way that you approach the world.  Like
+if you think in the eyes of a consumer and you see some cool- I was in
+the Samsung store earlier today.  It's fairly close to where I
+live. It's really cool.  I'm thinking as a consumer like, "Bloody
+hell, there's all these phones and watches and gadgets and fridges and
+microwaves and all this cool stuff.  And the store is really nice.
+And I want a fancy new sofa because that's a fancy new sofa.
+
+But if you have more of a producer mindset, then you start thinking
+you could- you kind of ignore the fact that there's all this stuff out
+there you can buy.  Instead, you start thinking, "Oh, this is an
+interesting marketing play that they're doing."  "I wonder how much it
+costs to put the store together?"  "Oh, I wonder if I could make a
+video where I switched from iPhone to Samsung because there's so many
+Samsung phones here?  So I can make a video where I talk about it and
+switch.  And then teach people what it's like to switch from an iPhone
+to an Android", and all that kind of jazz.
+
+And so the way I'm thinking there is, hopefully, as a producer, rather
+than a consumer.  And if you want a practical tip for how this works,
+I think, really, the key is to just think about what's going on on the
+business side of stuff when you are out and about.  For example, next
+time you're in McDonald's, instead of thinking how tasty your
+Filet-O-Fish burger is, think, "Huh, I wonder how it is that
+McDonald's created a system whereby every single fish burger in every
+single McDonald's basically tastes the same?"  "How do they do that?"
+That's pretty incredible.  And then you can read a book like "The
+E-Myth Revisited", which is, again, one of my favourite business books
+of all time that talks about exactly how McDonald's built this sort of
+franchise system.
+
+* RAW Show commitment, don't just show interest
+SCHEDULED: <2022-02-23 Wed>
 
 And lesson number five, show commitment, don't just show interest.
 And this is a message that MJ talks about throughout the book.
