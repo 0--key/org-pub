@@ -289,8 +289,45 @@ the tendency to underestimate the duration taken to traverse
 oft-travelled routes and overestimate the duration taken to traverse
 less familiar routes.
 
-** INIT Cognitive dissonance
-SCHEDULED: <2022-02-22 Tue>
+** ACTIVE Cognitive dissonance
+SCHEDULED: <2022-02-23 Wed>
+:LOGBOOK:
+CLOCK: [2022-02-22 Tue 12:08]
+:END:
+
+#+begin_quote
+In the field of psychology, cognitive dissonance is the perception of
+contradictory information.
+#+end_quote
+
+*** Normalcy bias, or normality bias
+
+is a cognitive bias which leads people to disbelieve or minimize
+threat warnings. Consequently, individuals underestimate the
+likelihood of a disaster, when it might affect them, and its potential
+adverse effects. The normalcy bias causes many people to not
+adequately prepare for natural disasters, market crashes, and
+calamities caused by human error.
+
+Normalcy bias has also been called /analysis paralysis/, /the ostrich
+effect/, and by first responders, the negative panic. The opposite of
+normalcy bias is overreaction, or worst-case scenario bias, in which
+small deviations from normality are dealt with as signals of an
+impending catastrophe.
+
+*** Effort justification
+
+is a person's tendency to attribute greater value to an outcome if
+they had to put effort into achieving it. This can result in more
+value being applied to an outcome than it actually has.
+
+*** The Ben Franklin effect
+
+is a proposed psychological phenomenon: a person who has already
+performed a favor for another person is more likely to do another
+favor for the other than if they had received a favor from that
+person.
+
 
 **  Confirmation bias
 
