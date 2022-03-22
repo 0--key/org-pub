@@ -1,0 +1,17 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Install and use
+tagline: " offline dictionary"
+permalink: /emacs/dictionary.html
+categories: [emacs, customization]
+tags: [dictionary, offline]
+---
+#+END_EXPORT
+
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil todo:nil pri:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
+#+CATEGORY: Confidence
+#+TODO: RAW INIT TODO ACTIVE | MAYBE DONE CLOSED
