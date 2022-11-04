@@ -17,7 +17,7 @@ tags: [overview]
 #+TODO: RAW INIT TODO ACTIVE | MAYBE DONE CLOSED
 
 * ACTIVE Intro
-SCHEDULED: <2022-02-24 Thu>
+SCHEDULED: <2022-11-06 Sun>
 
 All right, so in this video, I'm gonna summarise some of the insights
 from this book, The Millionaire Fastlane.  I thought that this was
@@ -33,7 +33,7 @@ also, the five commandments of building a business that MJ DeMarco
 talks about.  How to get rich quick.
 
 * ACTIVE Avoid the slow lane
-SCHEDULED: <2022-02-24 Thu>
+SCHEDULED: <2022-11-06 Sun>
 
 Now, the first important lesson in the book is that we want to avoid
 the slow lane.  And the point that our friend, MJ, makes in the book,
@@ -149,7 +149,7 @@ watching to get to the point where they could then have the "event" of
 the overnight success.
 
 * TODO Build money trees
-SCHEDULED: <2022-02-23 Wed>
+SCHEDULED: <2022-11-07 Mon>
 :LOGBOOK:
 CLOCK: [2022-02-21 Mon 10:06]--[2022-02-21 Mon 10:31] =>  0:25
 :END:
@@ -243,9 +243,9 @@ not that easy to build one of these.  You don't just magically have
 the ability to do that.
 
 * INIT Switch from being a consumer to a producer
-SCHEDULED: <2022-02-22 Tue>
+SCHEDULED: <2022-11-06 Sun>
 :LOGBOOK:
-CLOCK: [2022-02-22 Tue 10:54]
+CLOCK: [2022-02-22 Tue 10:54]--[2022-02-22 Tue 11:06] =>  0:12
 :END:
 
 And one of the ways that you can is lesson number four, which is
@@ -292,7 +292,7 @@ of all time that talks about exactly how McDonald's built this sort of
 franchise system.
 
 * RAW Show commitment, don't just show interest
-SCHEDULED: <2022-02-23 Wed>
+SCHEDULED: <2022-11-10 Thu>
 
 And lesson number five, show commitment, don't just show interest.
 And this is a message that MJ talks about throughout the book.

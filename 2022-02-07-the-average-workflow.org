@@ -128,7 +128,7 @@ disconnected optionally, depending on current job properties.
 
 
 ** TODO [#C] Fleeting Notes elaboration
-SCHEDULED: <2022-02-24 Thu>
+SCHEDULED: <2022-11-04 Fri>
 :PROPERTIES:
 :CATEGORY: Old Notes
 :END:
@@ -209,5 +209,7 @@ How to grow your audience
 Monetisation
 
 ** RAW Internal and external
-SCHEDULED: <2022-02-25 Fri>
+SCHEDULED: <2022-11-04 Fri>
+- Note taken on [2022-11-04 Fri 10:47] \\
+  This is the first sample of innate ~Org~ =Note=
 [[info:org#Link Format][links for Zettelkasten]]
