@@ -215,7 +215,7 @@ on records played in reverse.
 #+end_quote
 
 ** ACTIVE Availability heuristic
-SCHEDULED: <2022-11-05 Sat>
+SCHEDULED: <2022-11-09 Wed>
 :LOGBOOK:
 CLOCK: [2022-02-22 Tue 11:23]--[2022-02-22 Tue 11:45] =>  0:22
 :END:
@@ -290,9 +290,9 @@ oft-travelled routes and overestimate the duration taken to traverse
 less familiar routes.
 
 ** ACTIVE Cognitive dissonance
-SCHEDULED: <2022-11-05 Sat>
+SCHEDULED: <2022-11-09 Wed>
 :LOGBOOK:
-CLOCK: [2022-02-22 Tue 12:08]
+CLOCK: [2022-02-22 Tue 12:08]--[2022-02-22 Tue 12:33] =>  0:25
 :END:
 
 #+begin_quote
