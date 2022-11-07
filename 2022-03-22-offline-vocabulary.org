@@ -15,3 +15,47 @@ tags: [dictionary, offline]
 #+PROPERTY:header-args :results output :exports both :eval no-export
 #+CATEGORY: Confidence
 #+TODO: RAW INIT TODO ACTIVE | MAYBE DONE CLOSED
+
+  541  sudo apt-cache search dictd
+  542  sudo apt-get install dictd
+  543  sudo apt-get install dict-freedict-eng-rus
+  544  dict -I
+  545  dict
+  546  dict free
+  547  dict stolen
+  548  dict steal
+  549  dict strike
+  550  sudo apt-get install mueller7-dict
+  551  dict strike
+  552  dict steal
+  553  sudo apt-cache search dict-gcide
+  554  sudo apt-get install dict-gcide
+  555  dict steal
+  556  dict -I
+  557  man dict
+  558  ls -la
+  559  find ./ .dict
+  560  nano /etc/dictd/dict.conf
+  561  ls -la
+  562  ls -la .local/
+  563  ls -la .config/
+  564  man dict
+  565  man dictd
+  566  history
+  567  uname -a
+  568  ls /usr/share/dict/
+  569  ls /usr/share/dictd/
+  570  ls /usr/share/dictd/ucf/
+  571  sudo apt-get remove freedict-eng-rus
+  572  sudo apt-cache search freedict
+  573  sudo apt-get remove dict-freedict-eng-rus
+  574  ls /usr/sbin/dictdconfig 
+  575  nano /usr/sbin/dictdconfig 
+  576  nano /etc/dictd/dictd.con
+  577  ls /etc/dictd/
+  578  nano /etc/dictd/dictd.order 
+  579  nano /etc/dictd/colorit.conf 
+  580  nano /etc/dictd/dict.conf 
+  581  ls /etc/dictd/dictdconfig.alias 
+  582  nano /etc/dictd/dictdconfig.alias 
+  583  nano /etc/dictd/dictd.order
