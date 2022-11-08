@@ -120,6 +120,15 @@ disconnected optionally, depending on current job properties.
 
 ~C-h l~ history of Emacs' commands 
 
+** RAW Archiving
+SCHEDULED: <2022-11-10 Thu>
+
+Sometimes it is convenient to declutter workspace and move some
+particular task to archive.
+
+=Trees with :ARCHIVE: tag and all active archive files are included=
+=Trees with :ARCHIVE: tag are included=
+
 * Notes                                                      :noexport:notes:
  - GitHub.io with Jekyll data representation might be ideal for
    meta-analysys already collected data
