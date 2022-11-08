@@ -1,0 +1,30 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Organize Your Work
+tagline: " with a minimum interruptions"
+permalink: /cultural_discrepancies.html
+categories: [sociology, slavery, freedom, liberty]
+tags: [slaves, masters]
+---
+#+END_EXPORT
+
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
+#+CATEGORY: Writing
+#+TODO: RAW INIT | MAYBE
+#+TODO: TODO ACTIVE | DONE
+
+* TODO [#C] Intro
+SCHEDULED: <2022-11-08 Tue>
+
+Cultural differences due to artificial selection in human population
+in Western and Eastern Europe.
+
+The pledge of succeeding in close, autocratic and enslaved population
+isn't some protruding qualities as experience, physical strength etc,
+but loyal and meek behavior.
+
+Discrepancy
