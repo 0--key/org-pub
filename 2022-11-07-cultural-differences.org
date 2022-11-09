@@ -1,8 +1,8 @@
 #+BEGIN_EXPORT html
 ---
 layout: page
-title: Organize Your Work
-tagline: " with a minimum interruptions"
+title: Slaves, not masters
+tagline: " made slavery up and running"
 permalink: /cultural_discrepancies.html
 categories: [sociology, slavery, freedom, liberty]
 tags: [slaves, masters]
