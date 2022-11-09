@@ -18,20 +18,30 @@ tags: [slaves, masters]
 #+TODO: TODO ACTIVE | DONE
 
 * TODO [#C] Intro
-SCHEDULED: <2022-11-09 Wed .+1d>
+SCHEDULED: <2022-11-10 Thu .+1d>
 :PROPERTIES:
-:LAST_REPEAT: [2022-11-08 Tue 20:58]
+:LAST_REPEAT: [2022-11-09 Wed 19:01]
 :END:
+- State "DONE"       from "ACTIVE"     [2022-11-09 Wed 19:01]
 - State "DONE"       from "ACTIVE"     [2022-11-08 Tue 20:58]
 :LOGBOOK:
+CLOCK: [2022-11-09 Wed 18:30]--[2022-11-09 Wed 18:45] =>  0:15
 CLOCK: [2022-11-08 Tue 16:32]--[2022-11-08 Tue 16:40] =>  0:08
 :END:
 
+#+begin_quote
+The single one dream of a slave is not a /freedom/ or /liberty/, but his
+or her own slaves /possession/. E.g. the dream to become *master*.
+#+end_quote
+
 Cultural differences due to artificial selection in human population
-in Western and Eastern Europe. 
+in Western and Eastern Europe.
+
+
 
 The pledge of succeeding in close, autocratic and enslaved population
 isn't some eminent qualities or faculties such as experience, physical
 strength etc, but loyal, submissive and meek /behavior/. 
 
 Discrepancy
+
