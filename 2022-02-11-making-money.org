@@ -14,7 +14,8 @@ tags: [overview]
 #+TOC: headlines 2
 #+PROPERTY:header-args :results output :exports both :eval no-export
 #+CATEGORY: Money
-#+TODO: RAW INIT TODO ACTIVE | MAYBE DONE CLOSED
+#+TODO: RAW INIT | MAYBE
+#+TODO: TODO ACTIVE | DONE
 
 * ACTIVE Intro
 SCHEDULED: <2022-11-06 Sun>
