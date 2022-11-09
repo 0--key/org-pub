@@ -214,9 +214,14 @@ clouds, the man in the moon, and hearing non-existent hidden messages
 on records played in reverse.
 #+end_quote
 
-** ACTIVE Availability heuristic
-SCHEDULED: <2022-11-09 Wed>
+** RAW Availability heuristic
+SCHEDULED: <2022-11-12 Sat .+3d/4d>
+:PROPERTIES:
+:LAST_REPEAT: [2022-11-09 Wed 19:00]
+:END:
+- State "MAYBE"      from "ACTIVE"     [2022-11-09 Wed 19:00]
 :LOGBOOK:
+CLOCK: [2022-11-09 Wed 17:43]--[2022-11-09 Wed 17:51] =>  0:08
 CLOCK: [2022-02-22 Tue 11:23]--[2022-02-22 Tue 11:45] =>  0:22
 :END:
 
@@ -289,9 +294,14 @@ the tendency to underestimate the duration taken to traverse
 oft-travelled routes and overestimate the duration taken to traverse
 less familiar routes.
 
-** ACTIVE Cognitive dissonance
-SCHEDULED: <2022-11-09 Wed>
+** RAW Cognitive dissonance
+SCHEDULED: <2022-11-11 Fri .+2d/3d>
+:PROPERTIES:
+:LAST_REPEAT: [2022-11-09 Wed 18:58]
+:END:
+- State "MAYBE"      from "ACTIVE"     [2022-11-09 Wed 18:58]
 :LOGBOOK:
+CLOCK: [2022-11-09 Wed 18:11]--[2022-11-09 Wed 18:22] =>  0:11
 CLOCK: [2022-02-22 Tue 12:08]--[2022-02-22 Tue 12:33] =>  0:25
 :END:
 
@@ -299,6 +309,8 @@ CLOCK: [2022-02-22 Tue 12:08]--[2022-02-22 Tue 12:33] =>  0:25
 In the field of psychology, cognitive dissonance is the perception of
 contradictory information.
 #+end_quote
+
+[[https://en.wikipedia.org/wiki/Cognitive_dissonance][Cognitive dissonance - Wikipedia]]
 
 *** Normalcy bias, or normality bias
 
