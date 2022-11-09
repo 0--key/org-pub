@@ -1,0 +1,24 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Stars Warmth
+tagline: " between sky and ocean"
+permalink: /lit/star_warmth.html
+categories: [literature]
+tags: [sensuality, sentimentality]
+---
+#+END_EXPORT
+
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
+#+CATEGORY: Writing
+#+TODO: RAW INIT | MAYBE
+#+TODO: TODO ACTIVE | DONE
+
+* RAW [#C] Prelude
+SCHEDULED: <2022-11-10 Thu .+1d>
+:PROPERTIES:
+:LAST_REPEAT: [2022-11-09 Wed 18:52]
+:END:
