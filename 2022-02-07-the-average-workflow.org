@@ -121,7 +121,14 @@ disconnected optionally, depending on current job properties.
 ~C-h l~ history of Emacs' commands 
 
 ** RAW Archiving
-SCHEDULED: <2022-11-10 Thu>
+SCHEDULED: <2022-11-20 Sun .+1w>
+:PROPERTIES:
+:LAST_REPEAT: [2022-11-13 Sun 09:40]
+:END:
+- State "MAYBE"      from "ACTIVE"     [2022-11-13 Sun 09:40]
+:LOGBOOK:
+CLOCK: [2022-11-11 Fri 09:21]--[2022-11-11 Fri 09:50] =>  0:29
+:END:
 
 Sometimes it is convenient to declutter workspace and move some
 particular task to archive.
@@ -137,7 +144,7 @@ particular task to archive.
 
 
 ** TODO [#B] Fleeting Notes elaboration
-SCHEDULED: <2022-11-10 Thu>
+SCHEDULED: <2022-11-15 Tue>
 :PROPERTIES:
 :CATEGORY: Old Notes
 :END:

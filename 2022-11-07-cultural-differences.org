@@ -18,7 +18,7 @@ tags: [slaves, masters]
 #+TODO: TODO ACTIVE | DONE
 
 * TODO [#C] Intro
-SCHEDULED: <2022-11-10 Thu .+1d>
+SCHEDULED: <2022-11-15 Tue .+2d/3d>
 :PROPERTIES:
 :LAST_REPEAT: [2022-11-09 Wed 19:01]
 :END:
