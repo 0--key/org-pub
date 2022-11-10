@@ -232,8 +232,3 @@ Unfair advantages
 How to grow your audience
 Monetisation
 
-** RAW Internal and external
-SCHEDULED: <2022-11-10 Thu>
-- Note taken on [2022-11-04 Fri 10:47] \\
-  This is the first sample of innate ~Org~ =Note=
-[[info:org#Link Format][links for Zettelkasten]]
