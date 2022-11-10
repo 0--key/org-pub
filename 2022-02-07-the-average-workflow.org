@@ -42,11 +42,10 @@ resolved a million years in a row simply inside the one's
 skull. Usually _Homo_ just remember what he wants to know in the
 nearby future. Yes, this approach has a ton of caveats:
 
-- Longevity;
+- Durability;
 - Precision;
 - Distortion;
 - etc.
-
 
 * A synthetic way of note-taking
 
@@ -63,7 +62,7 @@ depending on current job properties.
 
 * Emacs' standpoint
 
-** ACTIVE The Org Agenda
+** The Org Agenda
 
 #+begin_quote
 Due to the way Org works, TODO items, time-stamped items, and tagged
@@ -131,10 +130,16 @@ CLOCK: [2022-11-11 Fri 09:21]--[2022-11-11 Fri 09:50] =>  0:29
 :END:
 
 Sometimes it is convenient to declutter workspace and move some
-particular task to archive.
+particular task to archive temporarily or permanently.
 
+*v A*
 =Trees with :ARCHIVE: tag and all active archive files are included=
+*v a*
 =Trees with :ARCHIVE: tag are included=
+
+So, it is possible to archive ~TODO~ items on the fly by tagging, and
+moving them to another place by commands ~org-agenda-toggle-archive-tag~
+and ~org-agenda-archive~ accordingly.
 
 * Notes                                                      :noexport:notes:
  - GitHub.io with Jekyll data representation might be ideal for

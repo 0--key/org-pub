@@ -294,7 +294,7 @@ the tendency to underestimate the duration taken to traverse
 oft-travelled routes and overestimate the duration taken to traverse
 less familiar routes.
 
-** RAW Cognitive dissonance
+** INIT Cognitive dissonance
 SCHEDULED: <2022-11-11 Fri .+2d/3d>
 :PROPERTIES:
 :LAST_REPEAT: [2022-11-09 Wed 18:58]

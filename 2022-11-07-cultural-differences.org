@@ -30,8 +30,10 @@ CLOCK: [2022-11-08 Tue 16:32]--[2022-11-08 Tue 16:40] =>  0:08
 :END:
 
 #+begin_quote
-The single one dream of a slave is not a /freedom/ or /liberty/, but his
-or her own slaves /possession/. E.g. the dream to become *master*.
+Conventional wisdom postulates from the point of view of conditionally
+/free/ man...  The single one dream of a slave is not a /freedom/ or
+/liberty/, but his or her own slaves /possession/. E.g. the dream to
+become *master*.
 #+end_quote
 
 Cultural differences due to artificial selection in human population
