@@ -105,17 +105,21 @@ Separate set of bookmarks for each task
 
 * Average modes
 
-** Task management
+** RAW Task management
+SCHEDULED: <2022-11-16 Wed>
 
 Naturally it might be implemented by a single ~master~ ToDo list for
 general tasks, and a bundle of ~slave~ ToDo lists, connected and
 disconnected optionally, depending on current job properties.
 
-** Data gathering
+** RAW Data gathering
+SCHEDULED: <2022-11-16 Wed>
 
-** Data elaboration
+** RAW Data elaboration
+SCHEDULED: <2022-11-17 Thu>
 
-** Meta-analysys
+** RAW Meta-analysys
+SCHEDULED: <2022-11-17 Thu>
 
 ~C-h l~ history of Emacs' commands 
 
