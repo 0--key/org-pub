@@ -18,26 +18,40 @@ tags: [slaves, masters]
 #+TODO: TODO ACTIVE | DONE
 
 * TODO [#C] Intro
-SCHEDULED: <2022-11-15 Tue .+2d/3d>
+SCHEDULED: <2022-11-17 Thu .+2d/3d>
 :PROPERTIES:
-:LAST_REPEAT: [2022-11-09 Wed 19:01]
+:LAST_REPEAT: [2022-11-15 Tue 09:03]
 :END:
+- State "DONE"       from "ACTIVE"     [2022-11-15 Tue 09:03]
 - State "DONE"       from "ACTIVE"     [2022-11-09 Wed 19:01]
 - State "DONE"       from "ACTIVE"     [2022-11-08 Tue 20:58]
 :LOGBOOK:
+CLOCK: [2022-11-15 Tue 08:33]--[2022-11-15 Tue 09:03] =>  0:30
 CLOCK: [2022-11-09 Wed 18:30]--[2022-11-09 Wed 18:45] =>  0:15
 CLOCK: [2022-11-08 Tue 16:32]--[2022-11-08 Tue 16:40] =>  0:08
 :END:
 
+*Cultural differences between human population in Western and Eastern
+Europe due to artificial selection.*
+
 #+begin_quote
 Conventional wisdom postulates from the point of view of conditionally
-/free/ man...  The single one dream of a slave is not a /freedom/ or
-/liberty/, but his or her own slaves /possession/. E.g. the dream to
-become *master*.
+/free/ man that, allegedly, all human strive for freedom, slaves are
+human, so slaves endeavor to find the way to be free.
 #+end_quote
 
-Cultural differences due to artificial selection in human population
-in Western and Eastern Europe.
+The core idea is clear - all humans are equal. Yes, it is. They are
+equal before when society separate and purpose them. After this
+adaptation, usually accomplished in a young age, the metamorphosis is
+so vivid and explicit, in some extraordinary cases it might be even
+palpable. E.g. unarguably that society cast each member to fit into
+its requirements.
+
+#+begin_quote
+The single one dream of a slave is not a /freedom/ or /liberty/, but his
+or her own slaves /possession/. E.g. the dream to become *master*.
+#+end_quote
+
 
 
 

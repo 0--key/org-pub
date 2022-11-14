@@ -18,7 +18,17 @@ tags: [sensuality, sentimentality]
 #+TODO: TODO ACTIVE | DONE
 
 * RAW [#C] Prelude
-SCHEDULED: <2022-11-14 Mon .+2d/3d>
+SCHEDULED: <2022-11-17 Thu .+2d/3d>
 :PROPERTIES:
-:LAST_REPEAT: [2022-11-09 Wed 18:52]
+:LAST_REPEAT: [2022-11-15 Tue 08:34]
 :END:
+- State "MAYBE"      from "INIT"       [2022-11-15 Tue 08:34]
+:LOGBOOK:
+CLOCK: [2022-11-15 Tue 07:51]--[2022-11-15 Tue 08:02] =>  0:11
+:END:
+
+A dusk at early November morning is dense and viscous like a tar. No
+wind at all, all are still in a silence soaked with scents
+abundance. The grass, leaves, blackberries and soil's odors twisted
+with rich aroma of the ocean bay dizzying your mind, but sooth your
+soul. The stars gazing at this keep quiet and twinkle one to another.
