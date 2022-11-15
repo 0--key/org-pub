@@ -105,13 +105,40 @@ Separate set of bookmarks for each task
 
 * Average modes
 
-** RAW Task management
+** INIT Task management
 SCHEDULED: <2022-11-16 Wed>
+:LOGBOOK:
+CLOCK: [2022-11-15 Tue 19:02]--[2022-11-15 Tue 19:17] =>  0:15
+CLOCK: [2022-11-15 Tue 19:02]--[2022-11-15 Tue 19:02] =>  0:00
+:END:
 
 Naturally it might be implemented by a single ~master~ ToDo list for
 general tasks, and a bundle of ~slave~ ToDo lists, connected and
 disconnected optionally, depending on current job properties.
 
+*** Re-scheduling the task
+
+By typing ~S-right/left~ it is possible to move the schedule/deadline
+date in the past or future at one day.
+
+*** Prioritize the task
+
+By typing ~S-up/down~ it is possible change the task's priority.
+
+*** Change the task's state
+
+Typing ~t~ will sequentially change the ~TODO~ state of the particular
+item in the *Org-Agenda* buffer.
+
+*** Make the task auto-repeatable
+
+~++2d  .+1d .+2d/3d~
+
+*** Annihilate the task
+
+The most effective way to get rid of obvious litter is to kill them by
+~C-k~ directly in the *Org-Agenda* buffer. It is the straight path to
+~Ktulkh~.
 ** RAW Data gathering
 SCHEDULED: <2022-11-16 Wed>
 
