@@ -148,8 +148,19 @@ item in the *Org-Agenda* buffer.
 The most effective way to get rid of obvious litter is to kill them by
 ~C-k~ directly in the *Org-Agenda* buffer. It is the straight path to
 ~Ktulkh~.
-** RAW Data gathering
-SCHEDULED: <2022-11-16 Wed>
+
+** ACTIVE Data gathering
+SCHEDULED: <2022-11-17 Thu>
+:LOGBOOK:
+CLOCK: [2022-11-16 Wed 07:10]--[2022-11-16 Wed 07:36] =>  0:26
+:END:
+
+It would be successfully resolved utilizing innate =Org-mode= *capture.*
+All what you need to unleash its real power is to configure its
+templates for capturing where you're define how and where data will be
+captured and stored.
+
+[[info:org#Capture templates][org#Capture templates]]
 
 ** RAW Data elaboration
 SCHEDULED: <2022-11-17 Thu>
