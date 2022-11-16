@@ -116,6 +116,8 @@ Naturally it might be implemented by a single ~master~ ToDo list for
 general tasks, and a bundle of ~slave~ ToDo lists, connected and
 disconnected optionally, depending on current job properties.
 
+[[info:org#Agenda Files][org#Agenda Files]]
+
 *** Re-scheduling the task
 
 By typing ~S-right/left~ it is possible to move the schedule/deadline
@@ -125,14 +127,21 @@ date in the past or future at one day.
 
 By typing ~S-up/down~ it is possible change the task's priority.
 
+[[info:org#Priorities][org#Priorities]]
+
 *** Change the task's state
 
 Typing ~t~ will sequentially change the ~TODO~ state of the particular
 item in the *Org-Agenda* buffer.
 
+[[info:org#Workflow states][org#Workflow states]]
+[[info:org#Multiple sets in one file][org#Multiple sets in one file]]
+
 *** Make the task auto-repeatable
 
 ~++2d  .+1d .+2d/3d~
+
+[[info:org#Tracking your habits][org#Tracking your habits]]
 
 *** Annihilate the task
 
