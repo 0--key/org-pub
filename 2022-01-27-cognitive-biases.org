@@ -214,8 +214,8 @@ clouds, the man in the moon, and hearing non-existent hidden messages
 on records played in reverse.
 #+end_quote
 
-** RAW Availability heuristic
-SCHEDULED: <2022-11-16 Wed .+3d/4d>
+** INIT Availability heuristic
+SCHEDULED: <2022-11-23 Wed .+3d/4d>
 :PROPERTIES:
 :LAST_REPEAT: [2022-11-09 Wed 19:00]
 :END:
