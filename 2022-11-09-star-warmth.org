@@ -17,7 +17,7 @@ tags: [sensuality, sentimentality]
 #+TODO: RAW INIT | MAYBE
 #+TODO: TODO ACTIVE | DONE
 
-* RAW [#C] Prelude
+* INIT [#C] Prelude
 SCHEDULED: <2022-11-17 Thu .+2d/3d>
 :PROPERTIES:
 :LAST_REPEAT: [2022-11-15 Tue 08:34]
@@ -32,3 +32,10 @@ wind at all, all are still in a silence soaked with scents
 abundance. The grass, leaves, blackberries and soil's odors twisted
 with rich aroma of the ocean bay dizzying your mind, but sooth your
 soul. The stars gazing at this keep quiet and twinkle one to another.
+
+** Two hares
+
+It was a damp and foggy early November morning. The twilight was so
+thick, so you can see below only 20 or 30 meters. I've returned from
+the short running session and noticed an adult bunny, sitting on the
+road and looking at me from the safe distance. The fence  dense
