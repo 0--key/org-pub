@@ -152,8 +152,7 @@ required to solve a problem.
 methods, ignoring or under-valuing alternative approaches. "If all you
 have is a hammer, everything looks like a nail."
 
-
-**  Apophenia
+***  Apophenia
 
 is the tendency to perceive meaningful connections between unrelated
 things. The term (German: Apophänie from the Greek verb ἀποφαίνειν
@@ -214,7 +213,7 @@ clouds, the man in the moon, and hearing non-existent hidden messages
 on records played in reverse.
 #+end_quote
 
-** INIT Availability heuristic
+*** INIT Availability heuristic
 SCHEDULED: <2022-11-23 Wed .+3d/4d>
 :PROPERTIES:
 :LAST_REPEAT: [2022-11-09 Wed 19:00]
@@ -294,14 +293,16 @@ the tendency to underestimate the duration taken to traverse
 oft-travelled routes and overestimate the duration taken to traverse
 less familiar routes.
 
-** RAW Cognitive dissonance
-SCHEDULED: <2022-11-18 Fri .+2d/3d>
+*** RAW Cognitive dissonance
+SCHEDULED: <2022-11-20 Sun .+2d/3d>
 :PROPERTIES:
-:LAST_REPEAT: [2022-11-15 Tue 07:48]
+:LAST_REPEAT: [2022-11-18 Fri 18:17]
 :END:
+- State "MAYBE"      from "ACTIVE"     [2022-11-18 Fri 18:17]
 - State "MAYBE"      from "ACTIVE"     [2022-11-15 Tue 07:48]
 - State "MAYBE"      from "ACTIVE"     [2022-11-09 Wed 18:58]
 :LOGBOOK:
+CLOCK: [2022-11-18 Fri 07:39]--[2022-11-18 Fri 07:51] =>  0:12
 CLOCK: [2022-11-09 Wed 18:11]--[2022-11-09 Wed 18:22] =>  0:11
 CLOCK: [2022-02-22 Tue 12:08]--[2022-02-22 Tue 12:33] =>  0:25
 :END:
