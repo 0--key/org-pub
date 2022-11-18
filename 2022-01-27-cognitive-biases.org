@@ -295,7 +295,7 @@ oft-travelled routes and overestimate the duration taken to traverse
 less familiar routes.
 
 ** RAW Cognitive dissonance
-SCHEDULED: <2022-11-17 Thu .+2d/3d>
+SCHEDULED: <2022-11-18 Fri .+2d/3d>
 :PROPERTIES:
 :LAST_REPEAT: [2022-11-15 Tue 07:48]
 :END:

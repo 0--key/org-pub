@@ -18,7 +18,7 @@ tags: [sensuality, sentimentality]
 #+TODO: TODO ACTIVE | DONE
 
 * INIT [#C] Prelude
-SCHEDULED: <2022-11-17 Thu .+2d/3d>
+SCHEDULED: <2022-11-19 Sat .+2d/3d>
 :PROPERTIES:
 :LAST_REPEAT: [2022-11-15 Tue 08:34]
 :END:
