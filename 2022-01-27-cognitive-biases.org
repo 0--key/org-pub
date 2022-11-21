@@ -213,7 +213,7 @@ clouds, the man in the moon, and hearing non-existent hidden messages
 on records played in reverse.
 #+end_quote
 
-*** INIT Availability heuristic
+*** INIT Availability heuristic                                   :ARCHIVE:
 SCHEDULED: <2022-11-23 Wed .+3d/4d>
 :PROPERTIES:
 :LAST_REPEAT: [2022-11-09 Wed 19:00]
@@ -293,8 +293,8 @@ the tendency to underestimate the duration taken to traverse
 oft-travelled routes and overestimate the duration taken to traverse
 less familiar routes.
 
-*** RAW Cognitive dissonance
-SCHEDULED: <2022-11-20 Sun .+2d/3d>
+*** INIT Cognitive dissonance                                     :ARCHIVE:
+SCHEDULED: <2022-11-23 Wed .+2d/3d>
 :PROPERTIES:
 :LAST_REPEAT: [2022-11-18 Fri 18:17]
 :END:
