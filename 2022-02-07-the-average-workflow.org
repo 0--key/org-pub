@@ -157,12 +157,13 @@ The most effective way to get rid of obvious litter is to kill them by
 ~Ktulkh~.
 
 ** INIT [#B] Data gathering
-SCHEDULED: <2022-11-22 Tue .+5d/6d>
+SCHEDULED: <2022-11-24 Thu .+5d/6d>
 :PROPERTIES:
 :LAST_REPEAT: [2022-11-18 Fri 07:33]
 :END:
 - State "MAYBE"      from "ACTIVE"     [2022-11-18 Fri 07:33]
 :LOGBOOK:
+CLOCK: [2022-11-22 Tue 14:42]--[2022-11-22 Tue 15:02] =>  0:20
 CLOCK: [2022-11-16 Wed 07:10]--[2022-11-16 Wed 07:36] =>  0:26
 :END:
 
