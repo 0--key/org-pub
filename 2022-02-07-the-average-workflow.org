@@ -105,11 +105,13 @@ Separate set of bookmarks for each task
 
 * Average modes
 
-** INIT Task management                                            :ARCHIVE:
-SCHEDULED: <2022-11-22 Tue .+4d/5d>
+** ACTIVE Task management
+SCHEDULED: <2022-12-13 Tue .+4d/5d>
 :PROPERTIES:
-:LAST_REPEAT: [2022-11-18 Fri 07:32]
+:LAST_REPEAT: [2022-12-03 Sat 09:27]
+:CATEGORY: Manage
 :END:
+- State "DONE"       from "ACTIVE"     [2022-12-03 Sat 09:27]
 - State "MAYBE"      from "ACTIVE"     [2022-11-18 Fri 07:32]
 - Note taken on [2022-11-16 Wed 17:26] \\
   So it is neccessary to re-order =TODO= files and switch *Org-Agenda* on
@@ -174,10 +176,12 @@ The most effective way to get rid of obvious litter is to kill them by
 ~Ktulkh~.
 
 ** INIT [#B] Data gathering
-SCHEDULED: <2022-11-24 Thu .+5d/6d>
+SCHEDULED: <2022-12-12 Mon .+3d/4d>
 :PROPERTIES:
-:LAST_REPEAT: [2022-11-18 Fri 07:33]
+:LAST_REPEAT: [2022-11-25 Fri 07:29]
 :END:
+- State "DONE"       from "ACTIVE"     [2022-11-25 Fri 07:29]
+- State "DONE"       from "ACTIVE"     [2022-11-25 Fri 07:29]
 - State "MAYBE"      from "ACTIVE"     [2022-11-18 Fri 07:33]
 :LOGBOOK:
 CLOCK: [2022-11-24 Thu 13:22]--[2022-11-24 Thu 13:34] =>  0:12
@@ -203,10 +207,10 @@ So, the common types of notes would be:
 [[info:org#Capture templates][org#Capture templates]]
 
 ** INIT Data elaboration
-SCHEDULED: <2022-11-24 Thu>
+SCHEDULED: <2022-12-13 Tue>
 
-** RAW Meta-analysys
-SCHEDULED: <2022-11-24 Thu .+1w>
+** INIT Meta-analysys
+SCHEDULED: <2022-12-08 Thu .+1w>
 :PROPERTIES:
 :CATEGORY: Meta
 :END:
@@ -214,11 +218,12 @@ SCHEDULED: <2022-11-24 Thu .+1w>
 ~C-h l~ history of Emacs' commands 
 ~agenda-log-mode~
 
-** RAW Archiving
-SCHEDULED: <2022-11-25 Fri .+1w>
+** INIT Archiving
+SCHEDULED: <2022-12-09 Fri .+1w>
 :PROPERTIES:
-:LAST_REPEAT: [2022-11-13 Sun 09:40]
+:LAST_REPEAT: [2022-11-25 Fri 09:36]
 :END:
+- State "DONE"       from "ACTIVE"     [2022-11-25 Fri 09:36]
 - State "MAYBE"      from "ACTIVE"     [2022-11-13 Sun 09:40]
 :LOGBOOK:
 CLOCK: [2022-11-11 Fri 09:21]--[2022-11-11 Fri 09:50] =>  0:29
