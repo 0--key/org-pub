@@ -125,6 +125,23 @@ disconnected optionally, depending on current job properties.
 
 [[info:org#Agenda Files][org#Agenda Files]]
 
+*** Type of Tasks
+
+It is convenient to classify the whole bunch of tasks by their nature
+on several specific:
+
+By age and maturity:
+
+- Raw, which are only defined;
+- Initial, which are accepted and scheduled;
+- To-Do are gone through minor clarificatoin;
+- Active is the status for primal tasks - they are decent enough to
+  spend time on it.
+
+
+- Regular, or repeatable or periodic;
+- Irregular;
+
 *** Re-scheduling the task
 
 By typing ~S-right/left~ it is possible to move the schedule/deadline
