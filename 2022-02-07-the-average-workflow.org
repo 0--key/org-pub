@@ -180,14 +180,25 @@ SCHEDULED: <2022-11-24 Thu .+5d/6d>
 :END:
 - State "MAYBE"      from "ACTIVE"     [2022-11-18 Fri 07:33]
 :LOGBOOK:
+CLOCK: [2022-11-24 Thu 13:22]--[2022-11-24 Thu 13:34] =>  0:12
 CLOCK: [2022-11-22 Tue 14:42]--[2022-11-22 Tue 15:02] =>  0:20
 CLOCK: [2022-11-16 Wed 07:10]--[2022-11-16 Wed 07:36] =>  0:26
 :END:
 
-It would be successfully resolved utilizing innate =Org-mode= *capture.*
-All what you need to unleash its real power is to configure its
-templates for capturing where you're define how and where data will be
-captured and stored.
+It would be successfully resolved utilizing innate =Org-mode= *capture's.*
+features. All what you need to unleash its real power is to configure
+its templates for capturing where you're define how and where data
+will be captured and stored.
+
+So, the common types of notes would be:
+
+- Rough note in a short words;
+- Crude note as idea and comment for it;
+- Proverbs:
+  + with annotation;
+  + obvious enough, without any comments;
+- Quotation;
+- etc.
 
 [[info:org#Capture templates][org#Capture templates]]
 
