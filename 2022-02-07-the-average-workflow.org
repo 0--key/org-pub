@@ -209,8 +209,8 @@ So, the common types of notes would be:
 ** INIT Data elaboration
 SCHEDULED: <2022-12-13 Tue>
 
-** INIT Meta-analysys
-SCHEDULED: <2022-12-08 Thu .+1w>
+** INIT [#B] Meta-analysys
+SCHEDULED: <2022-12-09 Fri .+1w>
 :PROPERTIES:
 :CATEGORY: Meta
 :END:
@@ -226,6 +226,7 @@ SCHEDULED: <2022-12-09 Fri .+1w>
 - State "DONE"       from "ACTIVE"     [2022-11-25 Fri 09:36]
 - State "MAYBE"      from "ACTIVE"     [2022-11-13 Sun 09:40]
 :LOGBOOK:
+CLOCK: [2022-12-09 Fri 10:45]--[2022-12-09 Fri 11:03] =>  0:18
 CLOCK: [2022-11-11 Fri 09:21]--[2022-11-11 Fri 09:50] =>  0:29
 :END:
 
@@ -239,7 +240,24 @@ particular task to archive temporarily or permanently.
 
 So, it is possible to archive ~TODO~ items on the fly by tagging, and
 moving them to another place by commands ~org-agenda-toggle-archive-tag~
-and ~org-agenda-archive~ accordingly.
+and ~org-agenda-archive~ accordingly. There are several =hot keys= to
+archive some item in a special =archive file= (*$, a, C-c $*) in
+*Org-Agenda* buffer by default, but there no a single one for simple
+~un/tagging~. So, for convevinence, it is possible to define some
+special for ~org-agenda-mode-map~ key-chord:
+
+#+begin_src elisp
+  (require 'org-agenda)
+  (key-chord-define org-agenda-mode-map "za" \
+                    'org-agenda-toggle-archive-tag)
+#+end_src
+
+Naturally it would be necessary to check up your archive from time to
+time to ensure that its content is really redundant, move surely
+unactual tasks into a separate file or, in case of erroneous
+archiving - return some /seemingly/ unactual tasks back into your
+current agenda. *Note* that it is much easy to ~untag~ task than move it
+back from a separate file.
 
 * Notes                                                      :noexport:notes:
  - GitHub.io with Jekyll data representation might be ideal for
