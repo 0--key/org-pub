@@ -9,6 +9,7 @@ tags: [CV, Emacs, Python, Literate Programming]
 ---
 #+END_EXPORT
 
+#+STARTUP: showall indent
 #+AUTHOR:    Anton S. Kosinov
 #+TITLE:     Mental Athlete Curriculum Vitae
 #+SUBTITLE:  Would you like to unleash the team synergy?
@@ -310,6 +311,41 @@ tags: [CV, Emacs, Python, Literate Programming]
  capable to learn joyfully and fast persistence and patience
 
  Personal: reading-addicted
+
+
+* Emerald Island                                           :noexport:emerald:
+
+** Header
+At the top-center of a single-page:
+Anton Kosinov
+Software Engineer Mental Athlete
+Python AWS Emacs SQL NoSQL
+
++ April 2023 dismantled "Software tester" profession for my wife;
++ February 2023 Repair my professional skills in less than 2 months;
++ December 2022 Tamed time management approach with Org-Agenda;
++ September 2022 Migrated to Ireland;
++ March 2022 Paused my skills extension and switch to a active
+  observation;
++ May 2021 stumbled upon cognitive biases phenomena and studied them
+  in particular;
++ November 2020 studied and deliberately practiced information hygiene;
++ February 2020 applied ergonomics dissection;
++ September 2019 new approaches to burst up productivity;
++ January 2019 productivity in software development rectification;
++ October 2018 the price of erroroneous decision estimation;
++ May 2016 my professional skills assessment and meta-analysis;
++ June 2012 my third project with me as a full-stack Python developer
+  finished in 4 months of work from zero to one:
+  + TechSpeck;
+  + DB structure;
+  + Interface design;
+  + App logging approach;
+  + Func testing;
+  + Bug fixing.
++ May 2011 my first full-stack Python developer project;
++ 
+
 
 * src                                                              :noexport:
 
