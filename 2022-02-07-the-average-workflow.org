@@ -106,7 +106,7 @@ Separate set of bookmarks for each task
 * Average modes
 
 ** ACTIVE Task management
-SCHEDULED: <2022-12-13 Tue .+4d/5d>
+SCHEDULED: <2023-04-20 Thu .+4d/5d>
 :PROPERTIES:
 :LAST_REPEAT: [2022-12-03 Sat 09:27]
 :CATEGORY: Manage
@@ -176,7 +176,7 @@ The most effective way to get rid of obvious litter is to kill them by
 ~Ktulkh~.
 
 ** INIT [#B] Data gathering
-SCHEDULED: <2022-12-12 Mon .+3d/4d>
+SCHEDULED: <2023-05-05 Fri .+3d/4d>
 :PROPERTIES:
 :LAST_REPEAT: [2022-11-25 Fri 07:29]
 :END:
@@ -207,19 +207,22 @@ So, the common types of notes would be:
 [[info:org#Capture templates][org#Capture templates]]
 
 ** INIT Data elaboration
-SCHEDULED: <2022-12-13 Tue>
+SCHEDULED: <2023-04-25 Tue>
 
 ** INIT [#B] Meta-analysys
-SCHEDULED: <2022-12-09 Fri .+1w>
+SCHEDULED: <2023-05-03 Wed .+1w>
 :PROPERTIES:
 :CATEGORY: Meta
+:END:
+:LOGBOOK:
+CLOCK: [2022-12-09 Fri 11:17]--[2022-12-09 Fri 11:29] =>  0:12
 :END:
 
 ~C-h l~ history of Emacs' commands 
 ~agenda-log-mode~
 
-** INIT Archiving
-SCHEDULED: <2022-12-09 Fri .+1w>
+** INIT Archiving                                                  :ARCHIVE:
+SCHEDULED: <2023-04-12 Wed .+1w>
 :PROPERTIES:
 :LAST_REPEAT: [2022-11-25 Fri 09:36]
 :END:
