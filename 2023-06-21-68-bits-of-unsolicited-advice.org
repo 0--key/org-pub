@@ -1,0 +1,17 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Acid Piece of Advice
+tagline: " from the old man"
+permalink: /philosophy/68-bits-of-unsolicited-advice.html
+categories: [philosophy]
+tags: [advice, wit, wisdom]
+---
+#+END_EXPORT
+
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
+#+CATEGORY: Advice
+#+TODO: TODO ACTIVE | DONE
