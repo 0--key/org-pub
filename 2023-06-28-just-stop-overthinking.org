@@ -1,0 +1,77 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Just Stop
+tagline: " Overthinking. It isn't thinking at all"
+permalink: /philosophy/overthinking.html
+categories: [philosophy, overthinking]
+tags: [advice, wit, wisdom, experience]
+---
+#+END_EXPORT
+
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
+#+CATEGORY: Advice
+#+TODO: TODO ACTIVE | DONE
+* 8 Ways You Can Beat Overthinking
+** The problem is rarely the problem
+99% of the harm is caused in your head, by you and your thoughts. 1%
+of the harm is caused by reality, what actually happens and the
+outcome. Most of the time, the problem isn't the problem. The way you
+think about the problem is.
+** Avoid self-rejection
+Don't think you deserve that opportunity? Apply for it anyways. Don't
+think your article is good enough? *Publish it anyways.* Don't think
+they'll reply to your email? *Send it anyways.* Never overthink
+yourself into *self-rejection.*
+** Silence and time
+The truth is, most problems aren't solved with more thinking, they're
+solved with less. You'll find most of the answers you're looking for
+in silence, in time band with a clear mind. If you can't solve a
+problem, /stop trying to/. Sometimes doing nothing can do more for
+you, than you're might expect.
+** An important question
+When you start criticizing yourself for past mistakes, or seeing
+disaster around every corner, ask yourself:
+
+~Is there anything I can do right now to change the past or to
+positively influence the future?~
+
+If the answer is /Yes/, do it take action. If the answer is /No/, be
+at peace let it go. You have to take action or let it go, everything
+else is self-harm.
+** The power of now
+You're not going to overthink your way to a better future. You're not
+going to overthink your way to a better past. All you have is *NOW.*
+And what you do with *NOW* can make right of your past and make good
+of your future. Make peace with yesterday, let go of tomorrow, grab
+hold of now.
+** Fact check your own thoughts
+Your thoughts will create scenarios in your mind that reflect your
+insecurities, fears, and worries. So it's important to always
+fact-check your thoughts before accepting them because, in highly
+emotional situations, your thoughts will tell you stories that aren't
+true.
+
+*Fact-check yourself.*
+** Acceptance is peace
+No amount of anxiety will change your future, no amount of regret will
+change your past.
+
+/Peace is found in acceptance:/
+- Accept imperfection;
+- Accept uncertainty;
+- Accept the uncontrollable.
+
+You don't have to understand, tolerate or even forget something, but
+if you want peace, you must accept it.
+
+** Health starts in your mind
+You can go to the gym, eat healthy, do yoga, drink water and take
+vitamins, but if you don't directly confront the negativity in your
+thoughts, you will never truly be 'healthy'. Our health isn't measured
+on scales, by the size of our muscules or by the width of our
+waist. True health is measured by the quality of our thougts and the
+peacefulness of our minds. Health starts in your mind.
