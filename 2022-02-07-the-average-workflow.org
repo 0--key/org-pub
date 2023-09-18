@@ -132,17 +132,30 @@ disconnected optionally, depending on current job properties.
 It is convenient to classify the whole bunch of tasks by their nature
 on several specific:
 
-By age and maturity:
+****  By the age and maturity:
 
-- Raw, which are only defined;
-- Initial, which are accepted and scheduled;
-- To-Do are gone through minor clarificatoin;
-- Active is the status for primal tasks - they are decent enough to
-  spend time on it.
+Any idea, thought or note should have eough time for gestation. So,
+let define /the primary set of states/ for the each new-born task:
 
+- *Raw*, which are only /generally and basicaly defined/;
+- *Init* -ial, which are noticed as more or less rational and actual
+  thus being accepted and scheduled;
+- *To-Do* - all that are already sieved through /minor clarificatoin/
+  and became early inceptive;
+- *Active* is the status for the majority of primal and current
+  tasks - they are still being decent enough to spend time on
+  it. Naturally most of them are complex and knotty enough to spend
+  several weeks or even months on elaboration. So it is rational to
+  make them periodic:
+  + Regular, or repeatable or periodic;
+  + Irregular;
+- And, finally (and ideally;) every *Active* task ought to spawn out
+  several *Raw* ones and turn into inactive state *DONE*.
 
-- Regular, or repeatable or periodic;
-- Irregular;
+On practice, a task galore requires a much more amount of time to be
+dismantled. And in this case the best step further is to postpone them
+on several months and switch on to /additional states sequence/
+
 
 *** Re-scheduling the task
 
