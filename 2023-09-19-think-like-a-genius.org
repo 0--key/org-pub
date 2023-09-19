@@ -1,0 +1,21 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Ability to Think
+tagline: " doesn't granted for all"
+permalink: /professional/a_initial_attempt_to_ponder.html
+categories: [Thinking, Pondering, Mental Models]
+tags: []
+---
+#+END_EXPORT
+
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
+#+CATEGORY: Workflow
+#+TODO: RAW INIT TODO ACTIVE | DONE
+
+
+The [[https://www.youtube.com/watch?v=ocMH2l2ptpc][source]]
+
