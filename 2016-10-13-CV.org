@@ -4,8 +4,8 @@ layout: post
 title: Anton S. Kosinov
 tagline: " Keep clear"
 permalink: /cv.html
-categories: [info, about me]
-tags: [CV, Emacs, Python, Literate Programming]
+categories: [Emacs, Python, Literate Programming]
+tags: [cv, info, about me, author]
 ---
 #+END_EXPORT
 
@@ -23,7 +23,7 @@ tags: [CV, Emacs, Python, Literate Programming]
 #+LaTeX_HEADER: \usepackage{courier}
 #+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
 
-* \alpha Dense Text
+* \alpha Brief Overview
 
   #+CAPTION: Anton S. Kosinov
   #+ATTR_HTML: :title Looking for solution :align left :float wrap
