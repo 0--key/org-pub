@@ -15,6 +15,8 @@ tags: [data gathering, data elaboration, notetaking]
 #+PROPERTY:header-args :results output :exports both :eval no-export
 #+CATEGORY: Workflow
 #+TODO: RAW INIT TODO ACTIVE | DONE
+#+TODO: DELAY LAG RETARD | STARK
+#+TODO: | FROZEN
 
 * Preamble
 
