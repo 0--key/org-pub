@@ -190,7 +190,7 @@ The most effective way to get rid of obvious litter is to kill them by
 ~C-k~ directly in the *Org-Agenda* buffer. It is the straight path to
 ~Ktulkh~.
 
-** INIT [#B] Data gathering
+** DELAY [#B] Data gathering
 SCHEDULED: <2023-06-26 Mon .+3d/4d>
 :PROPERTIES:
 :LAST_REPEAT: [2022-11-25 Fri 07:29]
@@ -221,7 +221,7 @@ So, the common types of notes would be:
 
 [[info:org#Capture templates][org#Capture templates]]
 
-** INIT Data elaboration
+** DELAY Data elaboration
 SCHEDULED: <2023-06-22 Thu>
 
 ** INIT [#B] Meta-analysys
