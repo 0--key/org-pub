@@ -33,12 +33,28 @@ tags: [cv, info, about me, author]
   [[http://0--key.github.io/assets/Portrait.jpg]]
 
 
-  I'm an avid knowledge gatherer as long as I can remember myself. The
-  acts speak much louder than words, thus, this is the very gist out
-  of my professional skills: [[http://bit.ly/2nPfOXR][Leaning to Learn]], [[http://bit.ly/2nSSGJQ][Introduction to Data
-  Science]], [[http://bit.ly/1lk9C7p][Model Thinking]], [[http://bit.ly/2nP3uqx][Ovivo]], Pythonanywhere, 0--key, [[http://bit.ly/211LI1k][oDesk]],
-  FastFresh, Py-Org-Cookbook, Perceptron in OOP Python3, Python Design
-  Patterns Catalogue, StackOverflow.
+  I'm a voracious reader and avid knowledge gatherer as long as I can
+  remember myself. Initially it was just fun, a little bit later I
+  commenced a conscious approach to learning and found an urge
+  necessity for meta-learning: skill allowing to study any subject
+  much effective.
+
+  After acquisition of these skills, when I've [[http://bit.ly/2nPfOXR][learnt how to learn]],
+  naturally appeared the next challenge:
+  #+begin_quote
+What should I know to be healthy, wealthy and wise?
+  #+end_quote
+  
+
+
+
+
+  The acts speak much louder than words, thus, this
+  is the very gist out of my professional skills: [[http://bit.ly/2nPfOXR][Leaning to Learn]],
+  [[http://bit.ly/2nSSGJQ][Introduction to Data Science]], [[http://bit.ly/1lk9C7p][Model
+  Thinking]], [[http://bit.ly/2nP3uqx][Ovivo]], Pythonanywhere, 0--key, [[http://bit.ly/211LI1k][oDesk]], FastFresh,
+  Py-Org-Cookbook, Perceptron in OOP Python3, Python Design Patterns
+  Catalogue, StackOverflow.
 
   In 2017 I've begun to dissect an Artificial Intelligent approach for
   data classification, Elisp, NumPy, SciPy, GNU Octave and enrolled
