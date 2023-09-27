@@ -23,7 +23,41 @@ tags: [cv, info, about me, author]
 #+LaTeX_HEADER: \usepackage{courier}
 #+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
 
-* \alpha Brief Overview
+* \alpha bout me
+
+ I'm a voracious reader and avid knowledge gatherer as long as I can
+ remember myself. Initially it was just fun, a bit later I commenced a
+ conscious approach to learning and found an urge necessity for
+ meta-learning: skill allowing to study any subject much effective.
+
+ After acquisition of these skills, when I've [[http://bit.ly/2nPfOXR][learnt how to learn]],
+ naturally appeared the next challenge:
+
+ #+begin_quote
+  What should I know to be healthy, wealthy and wise?
+  #+end_quote
+
+ Soon it became clear to me ~I should know everything~ for that and it
+ is just impossible due to ~infinite amount of knowledge~. So I need
+ to find a trade off, a some hack which allows me ~to be happy enough~
+ to live and prosper. And I choose to study =Computer Science= that by
+ definition ought to amplify my ability to sift, order and consume
+ information. Furthermore these skills will liverage my capability to
+ acquire the knowledge much faster.
+
+ Further, pondering in this direction pointed me out =Python= as the
+ main tool to cope with a plethora of *Data*, =Emacs= as the handy
+ tool to cope with =Python=, =Bash=, myself and computer in the same
+ time. A mammoth task was to find a cue to myself, elaborate the right
+ system in learning, other required only time and patience.
+
+ Several years I've spent studying these mighty tools, from time to
+ time practicing in applied areas, making pauses for contemplation,
+ and now I'm proud that I'm in charge to solve most of feasible tasks.
+
+ 
+* \beta rief overview
+* \alpha init                                                      :noexport:
 
   #+CAPTION: Anton S. Kosinov
   #+ATTR_HTML: :title Looking for solution :align left :float wrap
@@ -31,20 +65,6 @@ tags: [cv, info, about me, author]
   #+ATTR_LATEX: :float wrap :width 5cm
   #+ATTR_LATEX: [[./Portrait.jpg]]
   [[http://0--key.github.io/assets/Portrait.jpg]]
-
-
-  I'm a voracious reader and avid knowledge gatherer as long as I can
-  remember myself. Initially it was just fun, a little bit later I
-  commenced a conscious approach to learning and found an urge
-  necessity for meta-learning: skill allowing to study any subject
-  much effective.
-
-  After acquisition of these skills, when I've [[http://bit.ly/2nPfOXR][learnt how to learn]],
-  naturally appeared the next challenge:
-  #+begin_quote
-What should I know to be healthy, wealthy and wise?
-  #+end_quote
-  
 
 
 
