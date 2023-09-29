@@ -3,7 +3,7 @@
 layout: page
 title: Ability to Think
 tagline: " doesn't granted for all"
-permalink: /professional/a_initial_attempt_to_ponder.html
+permalink: /professional/tame-your-mind.html
 categories: [Thinking, Pondering, Mental Models]
 tags: []
 ---
@@ -13,7 +13,7 @@ tags: []
 #+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
 #+TOC: headlines 2
 #+PROPERTY:header-args :results output :exports both :eval no-export
-#+CATEGORY: Workflow
+#+CATEGORY: ThoughtCast
 #+TODO: RAW INIT TODO ACTIVE | DONE
 
 
@@ -40,75 +40,85 @@ ideas that we do understand to aid us in learning about the things
 that we don't understand. Here's a quick example:
 
 #+begin_example
-let's say an environmentalist of botanist and a business person walk
-into a forest.  They're all going to focus on different things. The
+Let's say an environmentalist of botanist and a business person walk
+into a forest. They're all going to focus on different things. The
 environmentalists may focus on the impact of climate change. The
 business person is probably going to look at the forest and see the
 immense value of the land and the botanist is going to focus on the
 ecosystem.
 #+end_example
 
-
-
 Each person essentially is simplifying the innate complexity of the
 forest into something that that they could understand with the limited
-knowledge.  What they have while doing this isn't necessarily
-bad. What they see is entirely limited to what they know and therefore
-they can't see the full scope of the forest. So one thing they may end
-up doing is sharing their specialized knowledge with each other. This
+knowledge. What they have while doing this isn't necessarily bad. What
+they see is entirely limited to what they know and therefore they
+can't see the full scope of the forest. So one thing they may end up
+doing is sharing their specialized knowledge with each other. This
 creates a scenario where each person develops a much more well-rounded
-understanding of the forest, this is exactly what you do with mental
-models: you'll learn the fundamental concepts of other disciplines to
+understanding of the forest, this is exactly what you do with /mental
+models/: you'll learn the fundamental concepts of other disciplines to
 help give you a bigger toolbox.
 
 If you will to sort of see the world through the more models you have
 the more lenses you can use while you look at the world and therefore
-the fewer blind spots that you end up having so now that you
-understand what a mental model is in the importance of using all of
-these different models throughout your life let's learn what some of
-those models actually are and how you can use them.
+the /fewer blind spots/ that you end up having.
 
+So now that you understand what a mental model is in the importance of
+using all of these different models throughout your life. Let's learn
+what some of those models actually are and how you can use them.
 
 * The Map is not the Territory
 
-
 One of the most important mental models to learn is _/map is not the
 territory/_.  This model teaches that the representation of reality is
-not actual reality even the best maps are imperfect because they are
-naturally reductions of what they represent if a map were to represent
-the territory with perfect Fidelity it would no longer be a reduction
-of the thing it would just be the thing like like imagine trying to
-navigate New York with a map the size of New York in your pocket there
-are just so many obvious reasons why that won't work at a more
-practical level the graph or the spreadsheet of the financials of the
-company isn't actually the financials of the company so it doesn't
-accurately represent the real important numbers in the dollars in your
-bank account the information about a project from your direct report
-isn't the actual project so before making decisions based on these
-assumptions and maps and reports and summaries you have to ensure that
-you understand 100 percent that there production of the thing is not
-the thing so make sure you get familiar with the actual territory
-before you make an important decision and not just go based on
-whatever the map is saying
+not actual reality. Even the best maps are imperfect because they are
+naturally reductions of what they represent.
 
+If a map were to represent the territory with perfect fidelity, it
+would no longer be a reduction of the thing it, - would /just be the
+thing/.
+
+Like imagine trying to navigate New York with a map the size of New
+York in your pocket. There are just so many obvious reasons why that
+won't work at a more practical level. The graph or the spreadsheet of
+the financials of the company isn't actually the financials of the
+company. So it doesn't accurately represent the real important numbers
+in the dollars in your bank account. The information about a project
+from your direct report isn't the actual project, so before making
+decisions based on these assumptions and maps and reports and
+summaries you have to ensure that you understand 100 percent that
+there /reduction of the thing is not the thing/.
+
+So make sure you get familiar with the actual territory before you
+make an important decision and not just go based on whatever the map
+is saying.
 
 * Circle of Competence
 
 Circle of competence is simple each one of us through our experience
 and our study has built up useful knowledge on different areas of the
-world some of those areas are inside of our circle of competence and
-these are the things that we understand well if you work as a
-marketing director marketing is probably within your circle of
-competence product might be around the edges and Engineering is well
-outside of your circle of competence so now when you make a decision
-you can evaluate where the scope of that decision lies relative to
-your circle of competence if it falls inside of it you can make the
-decision with a confidence knowing that you have the expertise to make
-the decision if the decision Falls outside of the scope of your circle
-of competence that's when you can consult an expert whose circle of
-competence contains that decision Tom Watson the founder of IBM put it
-best when he said I'm no genius I'm smart in spots and I stay around
-those spots we should all aim to do the same
+world. Some of those areas are inside of our circle of competence and
+these are the things that we understand well.
+
+If you work as a marketing director, - marketing is probably within
+your circle of competence. Product might be around the edges and
+engineering is well outside of your circle of competence. So now when
+you make a decision you can evaluate where the scope of that decision
+lies relative to your circle of competence. If it falls inside of it
+you can make the decision with a confidence, knowing that you have the
+expertise to make the decision.
+
+If the decision falls outside of the scope of your circle of
+competence, - that's when you can consult an expert whose circle of
+competence contains that decision.
+
+*Tom Watson* the founder of IBM put it best when he said
+
+#+begin_quote
+I'm not genius. I'm smart in spots and I /stay around/ those spots.
+#+end_quote
+
+We should all aim to do the same.
 
 
 * Second Order Thinking
