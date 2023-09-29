@@ -15,7 +15,12 @@ tags: [cv, info, about me, author]
 #+SUBTITLE:  Would you like to unleash the team synergy?
 #+EMAIL:     a.s.kosinov@gmail.com
 #+LANGUAGE: en
-#+OPTIONS: toc:nil num:nil tex:t author:nil title:nil date:nil
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+CATEGORY: CV
+#+TODO: RAW INIT TODO ACTIVE | DONE
+#+TODO: DELAY LAG RETARD | STARK
+#+TODO: | FROZEN
 #+LaTeX_HEADER: \usepackage[T1]{fontenc}
 #+LaTeX_HEADER: \usepackage{mathpazo}
 #+LaTeX_HEADER: \linespread{1.05}
