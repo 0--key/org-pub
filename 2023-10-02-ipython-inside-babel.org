@@ -1,0 +1,22 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: IPython
+tagline: " as an advanced REPL"
+permalink: /python/ipython-advanced.html
+categories: [Python, Emacs, Babel, Org]
+tags: [ipython, installation, settings, usage]
+---
+#+END_EXPORT
+
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
+#+CATEGORY: IPython
+#+TODO: RAW INIT TODO ACTIVE | DONE
+
+* Overview
+* Installation
+* Settings
+* Usage Samples
