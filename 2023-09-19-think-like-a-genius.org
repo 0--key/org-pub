@@ -123,75 +123,87 @@ We should all aim to do the same.
 
 * Second Order Thinking
 
-Almost everyone can anticipate the immediate results of their actions
-this type of first order thinking is easy and safe but it's also a way
-to ensure that you get the same results that everyone else does second
-order thinking is thinking further ahead and thinking holistically it
-not only requires us to consider our actions and their immediate
-consequences but also the consequences of those consequences there's a
-really famous story about this that is now called the Cobra effect and
-it's about in the 1900s British Colonials ruled India at the time but
-there was a massive Cobra problem they were just everywhere what the
-government did was they decided to pay citizens to kill snakes so
-citizens would kill the snakes and then bring them to the government
-and they get paid for kind of like a bounty system what ended up
-happening was the citizens just started breeding snakes so they could
-kill them to make more money once the government found out about this
-and ended the Bounty program the citizens now had no need for all
-these newborn snakes so they just let them loose in the street making
-the Cobra problem even worse off than it it was before this story
-illustrates the perfect example of what happens when someone doesn't
-consider the second order effects of their decisions you might be
-wondering where I'm getting this content from and it's from our actual
-books we've written three books on mental models and how to use them
-in your life we've also written hundreds of blog posts on our site
-fs.blog so if you want to learn more about any of these and go into
-more detail you can visit our site again that's fs.blog or you can
-visit the link it's linked down in the description below
+Almost everyone can anticipate the immediate results of their actions.
+This type of first order thinking is easy and safe but it's also a way
+to ensure that you get the same results that everyone else does.
 
+/Second order thinking/ is thinking further ahead and thinking
+holistically. It not only requires us to consider our actions and their
+immediate consequences, but also the consequences of those consequences.
+There's a really famous story about this that is now called the Cobra
+effect. And it's about in the 1900s British Colonials ruled India at
+the time. But there was a massive Cobra problem — they were just
+everywhere.
+
+What the government did was: they decided to pay citizens to kill
+snakes — so citizens would kill the snakes and then bring them to the
+government, and they get paid for. Kind of like a bounty system. What
+ended up happening was the citizens just started breeding snakes — so
+they could kill them to make more money.
+
+Once the government found out about this and ended the Bounty program
+the citizens now had no need for all these newborn snakes, so they just
+let them loose in the street making the Cobra problem even worse off
+than it was before.
+
+This story illustrates the perfect example of what happens when
+someone doesn't consider the second order effects of their decisions.
+
+You might be wondering where I'm getting this content from and it's
+from our actual books. We've written three books on mental models and
+how to use them in your life. We've also written hundreds of blog
+posts on our site [[http://fs.blog][fs.blog]], so if you want to learn more about any of
+these and go into more detail you can visit our site. Again that's
+fs.blog or you can visit the link it's linked down in the description
+below.
 
 * Probabilistic thinking
 
-Probabilistic thinking is essentially trying to estimate using some
-tools of math and Logic the likelihood of any specific outcome
-happening the world as complex as it is is very rarely black and white
-so instead of deciding things as either happening or not happening
-probabilistic thinking encourages us to assign a probability estimate
-to that thing happening to get a more accurate result as a simple
-example let's say you read a headline in a local paper that says car
-break-ins On The Rise now without thinking probabilistically you
-probably might start freaking out about leaving your car parked on the
-side of the street but using probabilistic thinking you can add a
-little bit more context to this for example let's say you know that
-violent crime has been declining to its lowest rates in decades your
-city is now safer than it has been ever let's also say that the chance
-of your car getting broken into last year was one in ten thousand or
-point zero one percent the article states with accuracy probably that
-this type of crime has doubled it it is now two in ten thousand or
-point zero two percent now is that worth being terribly worried about
-probably not so the prior information here is key when we Factor it in
-we realize that our safety isn't really being compromised
+Probabilistic thinking is essentially trying to estimate, using some
+tools of math and logic, the likelihood of any specific outcome
+happening. /The world as complex as it is/: it is very rarely black
+and white, so instead of deciding things as either ~happening or not
+happening~ probabilistic thinking encourages us to assign a
+probability estimate to that thing happening to get a more accurate
+result.
+
+As a simple example let's say you read a headline in a local paper
+that says car break-ins on the rise now. Without thinking
+probabilistically you probably might start freaking out about leaving
+your car parked on the side of the street, but using probabilistic
+thinking you can add a bit more context to this.
+
+For example, let's say you know that violent crime has been declining
+to its lowest rates in decades. Your city is now safer than it has
+been ever. Let's also say that the chance of your car getting broken
+into last year was one in ten thousand or point zero one percent. The
+article states with accuracy probably that this type of crime has
+doubled it. It is now two in ten thousand or point zero two percent
+now. Is that worth being terribly worried about? Probably not, so the
+prior information here is key when we factor it in we realize that our
+safety isn't really being compromised.
 
 
 * Inversion
 
 Inversion is a powerful tool to improve your thinking because it helps
-you identify and remove different obstacles to success as a thinking
+you identify and remove different obstacles to success. As a thinking
 tool it means approaching a situation from the opposite end of the
-natural starting point when most of us start a new project we'd like
-to think about what success would look like and then we set the goals
-and priorities around getting there using inversion though you think
-about what failure it would look like and what might cause that then
-you set goals and priorities to ensure you avoid whatever it is that
-might cause that failure instead of thinking about success and aiming
-for whatever that looks like you think about failure and make sure you
-stay away from whatever that looks like Charlie Munger has famously
-said:
+natural starting point, when most of us start a new project we'd like
+to think about what success would look like. And then we set the goals
+and priorities around getting there using inversion.
+
+Though you think about what failure would look like and what might
+cause that. Then you set goals and priorities to ensure you avoid
+whatever it is. That might cause that failure, instead of thinking
+about success and aiming for whatever that looks like. You think about
+failure and make sure you stay away from whatever that looks like.
+
+Charlie Munger has famously said:
 
 #+begin_quote
 All I want to know is where I'm going to die so I'll never go there.
 #+end_quote
-
 
 * Occam’s Razor
 
