@@ -18,8 +18,8 @@ tags: [slaves, masters]
 #+TODO: DELAY LAG RETARD | STARK
 #+TODO: | FROZEN
 
-* DELAY [#C] Intro
-SCHEDULED: <2024-01-12 Fri .+2d/3d>
+* ACTIVE [#B] Intro
+SCHEDULED: <2023-10-12 Thu .+2d/3d>
 :PROPERTIES:
 :LAST_REPEAT: [2022-11-15 Tue 09:03]
 :END:

@@ -107,8 +107,8 @@ Separate set of bookmarks for each task
 
 * Average modes
 
-** TODO Task management
-SCHEDULED: <2023-07-10 Mon .+4d/5d>
+** LAG Task management
+SCHEDULED: <2023-11-13 Mon .+4d/5d>
 :PROPERTIES:
 :LAST_REPEAT: [2022-12-03 Sat 09:27]
 :CATEGORY: Manage
@@ -190,11 +190,14 @@ The most effective way to get rid of obvious litter is to kill them by
 ~C-k~ directly in the *Org-Agenda* buffer. It is the straight path to
 ~Ktulkh~.
 
-** DELAY [#B] Data gathering
-SCHEDULED: <2023-06-26 Mon .+3d/4d>
+** LAG [#B] Data gathering
+SCHEDULED: <2023-10-31 Tue .+3d/4d>
 :PROPERTIES:
-:LAST_REPEAT: [2022-11-25 Fri 07:29]
+:LAST_REPEAT: [2023-09-22 Fri 09:55]
 :END:
+- State "FROZEN"     from "RAW"        [2023-09-22 Fri 09:55]
+- State "FROZEN"     from "RAW"        [2023-09-22 Fri 09:55]
+- State "FROZEN"     from "DELAY"      [2023-09-22 Fri 09:51]
 - State "DONE"       from "ACTIVE"     [2022-11-25 Fri 07:29]
 - State "DONE"       from "ACTIVE"     [2022-11-25 Fri 07:29]
 - State "MAYBE"      from "ACTIVE"     [2022-11-18 Fri 07:33]
@@ -222,10 +225,10 @@ So, the common types of notes would be:
 [[info:org#Capture templates][org#Capture templates]]
 
 ** DELAY Data elaboration
-SCHEDULED: <2023-06-22 Thu>
+SCHEDULED: <2023-12-21 Thu>
 
-** INIT [#B] Meta-analysys
-SCHEDULED: <2023-07-04 Tue .+1w>
+** DELAY [#B] Meta-analysys
+SCHEDULED: <2023-10-08 Sun .+1w>
 :PROPERTIES:
 :CATEGORY: Meta
 :END:
