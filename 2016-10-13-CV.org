@@ -52,19 +52,29 @@ tags: [cv, info, about me, author]
  my capability to acquire the knowledge much faster.
 
  Further, pondering in this direction pointed me out =Python= as the
- main tool to cope with a plethora of *Data*, =Emacs= as the handy
- tool to cope with =Python=, =Bash=, myself and computer in the same
- time. A mammoth task was to find a cue to myself, elaborate the right
- system in learning, other required only time and patience.
+ main tool to cope with a plethora of *Data*, =Emacs= as the powerful
+ enough tool to cope with =Python=, =Bash=, computer and me in the
+ same time. A mammoth task was to find a clue to myself, elaborate the
+ right system in learning, all that left required only time and
+ patience.
 
  Several years I've spent studying these mighty tools, from time to
  time practicing in applied areas, making pauses for contemplation,
- and now I'm proud that I'm in charge to solve most of feasible tasks.
+ and now I'm proud that I've forge another person from myself, and
+ seems it is very time to help other.
 
  
-* \Beta{}rief overview
+* \beta{}rief overview
 
-* \Gamma{}ist
+*Python* deliberately sliced and diced in *Emacs* - this dish is for
+gourmets and connoisseurs only. More than 30 years experience in
+applied programming, more than 10 years of acquaintance with *Python*
+allow to define me on the expert level, and seems like I literally am
+a /programming adept/!
+
+* \gamma{}ist
+
+Paramount
 
 * \Delta{}esired role
 
@@ -86,7 +96,7 @@ tags: [cv, info, about me, author]
 
 
   
-* \Epsilon{}macs Literate Programming
+* \epsilon{}macs Literate Programming
   is a pivotal tool to forge a team synergy.
 
 
