@@ -17,6 +17,110 @@ tags: [ipython, installation, settings, usage]
 #+TODO: RAW INIT TODO ACTIVE | DONE
 
 * Overview
+
+
 * Installation
+
+** Host environment check up:
+
+#+begin_src sh 
+  emacs --version
+  python3 --version
+  hostnamectl
+#+end_src
+
+#+RESULTS:
+#+begin_example
+GNU Emacs 27.1
+Copyright (C) 2020 Free Software Foundation, Inc.
+GNU Emacs comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of GNU Emacs
+under the terms of the GNU General Public License.
+For more information about these matters, see the file named COPYING.
+Python 3.9.2
+   Static hostname: penguin
+         Icon name: computer-container
+           Chassis: container
+        Machine ID: 22c77650e7daeb44b74872c75febe8c3
+           Boot ID: 4cd2f334b6054deda2e13c06ef7c94e1
+    Virtualization: lxc
+  Operating System: Debian GNU/Linux 11 (bullseye)
+            Kernel: Linux 5.15.124-20273-g4bee82191fda
+      Architecture: x86-64
+#+end_example
+
+** Python3 as default Python
+
+#+begin_src sh
+sudo apt-get install python-is-python3
+#+end_src
+
+** IPython itself
+
+#+begin_src sh
+pip install ipython
+#+end_src
+
+** Notes                                                          :noexport:
+#+begin_src sh
+sudo apt-cache search ipython
+#+end_src
+
+#+RESULTS:
+#+begin_example
+astro-viewers - Interactive astronomical data viewers
+elpa-websocket - Emacs WebSocket client and server
+python3-ipdb - IPython-based pdb replacement (Python 3 version)
+python3-ipykernel - IPython kernel for Jupyter (Python 3)
+python-ipyparallel-doc - Interactive Parallel Computing with IPython (documentation)
+python3-ipyparallel - Interactive Parallel Computing with IPython (library & scripts)
+ipython3 - Enhanced interactive Python 3 shell
+python-ipython-doc - Enhanced interactive Python shell (documentation)
+python3-ipython - Enhanced interactive Python shell (Python 3 version)
+python3-ipython-genutils - IPython vestigial utilities for Python 3
+python-itango-doc - Interactive Tango client - documentation
+python3-itango - Interactive Tango client - Python 3
+jupyter-console - Jupyter terminal client (script)
+python-jupyter-console-doc - Jupyter terminal client (documentation)
+python3-jupyter-console - Jupyter terminal client (Python 3)
+jupyter-core - Core common functionality of Jupyter projects (tools)
+python3-knitpy - report generation tool with Python
+mu-editor - simple editor for beginner Python programmers
+mu-editor-doc - simple editor for beginner Python programmers (documentation)
+python3-nb2plots - Converting between ipython notebooks and sphinx docs (Python 3)
+python3-pikepdf - Python library to read and write PDFs with QPDF
+fonts-powerline - prompt and statusline utility (symbols font)
+powerline - prompt and statusline utility
+powerline-doc - prompt and statusline utility (documentation)
+python3-powerline - prompt and statusline utility (Python 3.x module)
+powerline-gitstatus - Powerline Git segment
+python3-powerline-gitstatus - Powerline Git segment for Python (3.x)
+pry - powerful irb alternative and runtime developer console
+python-agate-doc - documentation for agate
+python3-agate - data analysis library optimized for human readability
+python-leather-doc - documentation for leather
+python3-leather - charting library for Python
+python3-line-profiler - line-by-line profiling for Python
+jupyter-qtconsole - Jupyter - Qt console (binaries)
+python-qtconsole-doc - Jupyter - Qt console (documentation)
+python3-qtconsole - Jupyter - Qt console (Python 3)
+python3-sagenb-export - Convert SageNB Notebooks (Python 3)
+python-sardana-doc - instrument control and data acquisition system - documentation
+python3-sardana - instrument control and data acquisition system - library
+python-snimpy-doc - interactive SNMP tool with Python (documentation)
+python3-snimpy - high-level SNMP bindings for Python 3
+snimpy - interactive SNMP tool with Python
+isympy3 - Python3 shell for SymPy
+python-traitlets-doc - Lightweight Traits-like package for Python
+python3-traitlets - Lightweight Traits-like package for Python 3
+#+end_example
+
+#+begin_src sh
+
+#+end_src
+
+#+RESULTS:
+
+
 * Settings
 * Usage Samples
