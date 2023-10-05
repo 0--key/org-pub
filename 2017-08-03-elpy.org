@@ -30,6 +30,19 @@ tags: [post-installation, config]
 
   #+RESULTS:
 
+* Installation caveat
+
+#+begin_example
+Elpy is updating the RPC virtualenv (’/home/alioth/.emacs.d/elpy/rpc-venv’)
+error in process sentinel: elpy-rpc--default-error-callback: peculiar error: "exited abnormally with code 1"
+error in process sentinel: peculiar error: "exited abnormally with code 1"
+#+end_example
+
+Might be solved through:
+#+begin_src elisp
+  elpy-rpc-reinstall-virtualenv
+#+end_src
+
 * Post-install configuration
 
   #+BEGIN_SRC elisp
