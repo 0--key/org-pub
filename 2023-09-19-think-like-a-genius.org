@@ -207,50 +207,65 @@ All I want to know is where I'm going to die so I'll never go there.
 
 * Occam’s Razor
 
-Simpler explanations are more likely to be true than complicated ones
-this is the essence of Occam's razor a classic principle of logic and
-problem solving instead of wasting your time trying to disprove very
-complex and intertwined scenarios you can make decisions more
-confidently by basing them on the explanation that has the fewest
-moving Parts a simple example of Occam's razor is used to find the
-truth among conspiracy theories most conspiracy theories have many
-complicated and interwoven threads that seemingly paint a bigger
-picture but for conspiracy theory to be true all of those individual
-threads need to be proven 100 accurate that's really hard to do it's
-much simpler and much more rational honestly to assume the logical
-explanation because it has fewer dependencies for example the Titanic
-hitting an iceberg and sinking is pretty cut and dry there's not many
-dependencies on the other hand a lot of things had to have happened
-for the Freemasons to cause sinking of the Titanic which is believed
-by some doctors often look for the simplest solution to an ailment and
-scientists usually start with the Least Complicated hypothesis to
-disprove and then they go from there.
+#+begin_quote
+Simpler explanations are more likely to be true than complicated ones.
+#+end_quote
 
+This is the essence of Occam's razor: a classic principle of logic and
+problem solving. Instead of wasting your time trying to disprove very
+complex and intertwined scenarios, _you can make decisions more
+confidently_ by basing them on the /explanation that has the fewest
+moving parts/.
+
+A simple example of Occam's razor is used to find the truth among
+conspiracy theories. Most conspiracy theories have many complicated
+and interwoven threads that seemingly paint a bigger picture but, for
+conspiracy theory. To be true all of those individual threads need to
+be proven 100% accurate. That's really hard to do — it's much simpler and
+much more rational honestly to assume the logical explanation, because
+it has fewer dependencies.
+
+For example: the Titanic hitting an iceberg and sinking. It is pretty
+cut and dry, there's not many dependencies. On the other hand a lot of
+things had to have happened for the =Freemasons= to cause sinking of the
+Titanic which is believed by.
+
+Some doctors often look for the simplest solution to an ailment, and
+scientists usually start with the least complicated hypothesis to
+disprove, and then they go from there.
 
 * Hanlon’s Razor
 
-Another helpful razor is hanlon's Razor this model says that we should
-not attribute to maliciousness that which is easily explained by
-incompetence essentially just because someone does something that
-makes you mad or upsets you doesn't mean they're out to get you like
-we so often believe it's far more likely that they are just ignorant
-of something or something else is going on in their life for example
-if a good friend hasn't responded to your messages lately using
-hanlon's razor we can assume it's far more likely that they are busy
-with work or something personal came up than it is that they no longer
-want to be your friend.
+Another helpful razor is *Hanlon's Razor*. This model says that we
+should /not attribute to maliciousness that which is easily explained
+by incompetence/.
+
+Essentially just because someone does something that makes you mad or
+upsets you doesn't mean they're out to get you, like we so often
+believe. It's far more likely that /they are just ignorant of
+something/ or something else is going on in their life.
+
+For example if a good friend hasn't responded to your messages lately.
+Using hanlon's razor we can assume it's far more likely that they are
+busy with work or something personal came up than it is, that they no
+longer want to be your friend.
 
 
 * Reciprocity
 
-Reciprocity or the principle of reciprocation if we want to get super
-fancy it states that for every action there is an equal and opposite
-reaction in life the same is true if you treat someone with kindness
-odds are they are going to reciprocate kindness back to you but the
-opposite is also true if you treat someone poorly you can't be
-surprised when they do the same to you reciprocity prompts us to
-rewrite the Golden Rule a little bit saying do unto others knowing
-that something will be done unto you.
+*Reciprocity or the principle of reciprocation*.
+
+If we want to get super fancy it states that /for every action there
+is an equal and opposite reaction/. In life the same is true: if you
+treat someone with kindness odds are they are going to reciprocate
+kindness back to you, but the opposite is also true. If you treat
+someone poorly — you can't be surprised when they do the same to you.
+
+Reciprocity prompts us to rewrite the Golden Rule, - a wee saying:
+
+#+begin_quote
+Do onto others knowing that something will be done onto you.
+#+end_quote
 
 
 * Activation Energy
