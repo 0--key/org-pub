@@ -28,10 +28,11 @@ tags: [cv, info, about me, author]
 #+LaTeX_HEADER: \usepackage{courier}
 #+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
 
-* \Alpha{}bout me
+* \alpha{}bout me
 
- I'm a voracious reader and avid knowledge gatherer as long as I can
- remember myself. Initially it was just fun, a bit later I commenced a
+ Innate fathomless curiousity made me a voracious reader and avid
+ knowledge gatherer as I can remember myself. Initially it was just a
+ knowledge thirst and fun aquiring them, a bit later I commenced a
  conscious approach to learning and found an urge necessity for
  meta-learning: skill that allows to study any subject much effective.
 
