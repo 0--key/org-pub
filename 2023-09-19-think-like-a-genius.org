@@ -5,7 +5,7 @@ title: Ability to Think
 tagline: " doesn't granted for all"
 permalink: /professional/tame-your-mind.html
 categories: [Thinking, Pondering, Mental Models]
-tags: []
+tags: [map, circle of competence, second order thinking]
 ---
 #+END_EXPORT
 
@@ -16,9 +16,7 @@ tags: []
 #+CATEGORY: ThoughtCast
 #+TODO: RAW INIT TODO ACTIVE | DONE
 
-
 The [[https://www.youtube.com/watch?v=ocMH2l2ptpc][source]]
-
 
 * What is a mental model
 
@@ -28,10 +26,8 @@ else could even fathom and all around. Just improve how you think if
 you're wondering /what a mental model is/, - 
 
 #+begin_quote
-it's simply a representation of how the world works.
+It's simply a representation of how the world works.
 #+end_quote
-
-
 
 We operate in a very complex world and it's impossible to truly
 understand all the different intricacies of everything that we
@@ -39,21 +35,19 @@ experience. So in order to help us we use these different models in
 ideas that we do understand to aid us in learning about the things
 that we don't understand. Here's a quick example:
 
-#+begin_example
 Let's say an environmentalist of botanist and a business person walk
 into a forest. They're all going to focus on different things. The
 environmentalists may focus on the impact of climate change. The
 business person is probably going to look at the forest and see the
 immense value of the land and the botanist is going to focus on the
 ecosystem.
-#+end_example
 
 Each person essentially is simplifying the innate complexity of the
 forest into something that that they could understand with the limited
 knowledge. What they have while doing this isn't necessarily bad. What
 they see is entirely limited to what they know and therefore they
 can't see the full scope of the forest. So one thing they may end up
-doing is sharing their specialized knowledge with each other. This
+doing is /sharing their specialized knowledge with each other/. This
 creates a scenario where each person develops a much more well-rounded
 understanding of the forest, this is exactly what you do with /mental
 models/: you'll learn the fundamental concepts of other disciplines to
@@ -70,13 +64,16 @@ what some of those models actually are and how you can use them.
 * The Map is not the Territory
 
 One of the most important mental models to learn is _/map is not the
-territory/_.  This model teaches that the representation of reality is
-not actual reality. Even the best maps are imperfect because they are
-naturally reductions of what they represent.
+territory/_.  This model teaches that:
 
-If a map were to represent the territory with perfect fidelity, it
-would no longer be a reduction of the thing it, - would /just be the
-thing/.
+#+begin_quote
+The representation of reality is not actual reality.
+#+end_quote
+
+Even the best maps are imperfect because they are naturally reductions
+of what they represent. If a map were to represent the territory with
+perfect fidelity, it would no longer be a reduction of the thing it, -
+would /just be the thing/.
 
 Like imagine trying to navigate New York with a map the size of New
 York in your pocket. There are just so many obvious reasons why that
@@ -95,12 +92,12 @@ is saying.
 
 * Circle of Competence
 
-Circle of competence is simple each one of us through our experience
-and our study has built up useful knowledge on different areas of the
-world. Some of those areas are inside of our circle of competence and
-these are the things that we understand well.
+*Circle of competence* is simple. Each one of us through our
+experience and our study has built up useful knowledge on different
+areas of the world. Some of those areas are inside of our circle of
+competence and these are the things that we understand well.
 
-If you work as a marketing director, - marketing is probably within
+If you work as a marketing director, - ~marketing~ is probably within
 your circle of competence. Product might be around the edges and
 engineering is well outside of your circle of competence. So now when
 you make a decision you can evaluate where the scope of that decision
@@ -120,16 +117,17 @@ I'm not genius. I'm smart in spots and I /stay around/ those spots.
 
 We should all aim to do the same.
 
-
 * Second Order Thinking
 
 Almost everyone can anticipate the immediate results of their actions.
-This type of first order thinking is easy and safe but it's also a way
-to ensure that you get the same results that everyone else does.
+This type of *first order thinking* is easy and safe but it's also a
+way to ensure that you get the same results that everyone else does.
 
-/Second order thinking/ is thinking further ahead and thinking
-holistically. It not only requires us to consider our actions and their
-immediate consequences, but also the consequences of those consequences.
+*/Second order thinking/* is thinking further ahead and ~thinking
+holistically~. It not only requires us to consider our actions and
+their immediate consequences, but also the consequences of those
+consequences.
+
 There's a really famous story about this that is now called the Cobra
 effect. And it's about in the 1900s British Colonials ruled India at
 the time. But there was a massive Cobra problem — they were just
@@ -147,19 +145,20 @@ let them loose in the street making the Cobra problem even worse off
 than it was before.
 
 This story illustrates the perfect example of what happens when
-someone doesn't consider the second order effects of their decisions.
+someone doesn't consider the /second order effects/ of their
+decisions.
 
 You might be wondering where I'm getting this content from and it's
 from our actual books. We've written three books on mental models and
 how to use them in your life. We've also written hundreds of blog
 posts on our site [[http://fs.blog][fs.blog]], so if you want to learn more about any of
 these and go into more detail you can visit our site. Again that's
-fs.blog or you can visit the link it's linked down in the description
+[[http://fs.blog][fs.blog]], or you can visit the link it's linked down in the description
 below.
 
 * Probabilistic thinking
 
-Probabilistic thinking is essentially trying to estimate, using some
+*Probabilistic thinking* is essentially trying to estimate, using some
 tools of math and logic, the likelihood of any specific outcome
 happening. /The world as complex as it is/: it is very rarely black
 and white, so instead of deciding things as either ~happening or not
@@ -183,15 +182,14 @@ now. Is that worth being terribly worried about? Probably not, so the
 prior information here is key when we factor it in we realize that our
 safety isn't really being compromised.
 
-
 * Inversion
 
-Inversion is a powerful tool to improve your thinking because it helps
-you identify and remove different obstacles to success. As a thinking
-tool it means approaching a situation from the opposite end of the
-natural starting point, when most of us start a new project we'd like
-to think about what success would look like. And then we set the goals
-and priorities around getting there using inversion.
+*Inversion* is a powerful tool to improve your thinking because it
+helps you identify and remove different obstacles to success. As a
+thinking tool it means approaching a situation from the opposite end
+of the natural starting point. When most of us start a new project
+we'd like to think about what success would look like. And then we set
+the goals and priorities around getting there using inversion.
 
 Though you think about what failure would look like and what might
 cause that. Then you set goals and priorities to ensure you avoid
@@ -211,15 +209,15 @@ All I want to know is where I'm going to die so I'll never go there.
 Simpler explanations are more likely to be true than complicated ones.
 #+end_quote
 
-This is the essence of Occam's razor: a classic principle of logic and
-problem solving. Instead of wasting your time trying to disprove very
-complex and intertwined scenarios, _you can make decisions more
+This is the essence of *Occam's razor*: a classic principle of logic
+and problem solving. Instead of wasting your time trying to disprove
+very complex and intertwined scenarios, _you can make decisions more
 confidently_ by basing them on the /explanation that has the fewest
 moving parts/.
 
 A simple example of Occam's razor is used to find the truth among
 conspiracy theories. Most conspiracy theories have many complicated
-and interwoven threads that seemingly paint a bigger picture but, for
+and interwoven threads that seemingly paint a bigger picture, but for
 conspiracy theory. To be true all of those individual threads need to
 be proven 100% accurate. That's really hard to do — it's much simpler and
 much more rational honestly to assume the logical explanation, because
@@ -227,8 +225,8 @@ it has fewer dependencies.
 
 For example: the Titanic hitting an iceberg and sinking. It is pretty
 cut and dry, there's not many dependencies. On the other hand a lot of
-things had to have happened for the =Freemasons= to cause sinking of the
-Titanic which is believed by.
+things had to have happened for the =Freemasons= to cause sinking of
+the Titanic which is believed by.
 
 Some doctors often look for the simplest solution to an ailment, and
 scientists usually start with the least complicated hypothesis to
@@ -250,7 +248,6 @@ Using hanlon's razor we can assume it's far more likely that they are
 busy with work or something personal came up than it is, that they no
 longer want to be your friend.
 
-
 * Reciprocity
 
 *Reciprocity or the principle of reciprocation*.
@@ -267,29 +264,31 @@ Reciprocity prompts us to rewrite the Golden Rule, - a wee saying:
 Do onto others knowing that something will be done onto you.
 #+end_quote
 
-
 * Activation Energy
 
-Activation energy is a model from chemistry and it tells us that a
+*Activation energy* is a model from chemistry and it tells us that a
 chemical reaction needs a certain amount of energy before it can begin
-working one way to increase energy in a chemical reaction is with a
-catalyst this is something that can be added to a reaction to lower
-the activation energy that is required using this practically in our
-lives we can identify some catalysts like coffee or inspiration even
-that make doing hard work or a big project easier writing along paper
-is a really difficult task and takes a lot of activation energy to
-start and get going if you drink coffee you can help lower that
-activation energy and get you going a lot quicker when someone you
-know is struggling to get started on a project or finish a project try
-to identify what's causing so much activation energy to be required
-and see if you can somehow lower that threshold.
+working. One way to increase energy in a chemical reaction is with a
+catalyst. This is something that can be added to a reaction to lower
+the activation energy that is required.
 
+Using this practically in our lives we can identify some catalysts
+like coffee or inspiration. Even that make doing hard work or a big
+project easier. Writing along paper is a really difficult task and
+takes a lot of activation energy to start and get going. If you drink
+coffee you can help lower that activation energy and get you going a
+lot quicker.
+
+When someone you know is struggling to get started on a project or
+finish a project try to identify what's causing so much activation
+energy to be required and see if you can somehow lower that threshold.
 
 * Epilogue
 
 If you enjoyed this video and you want more mental models content
 subscribe to our Weekly Newsletter every Sunday we'll send you
-Timeless ideas and actionable insights you can use for work in life
-you can go to fs.block newsletter or visit the link down in the
+Timeless ideas and actionable insights you can use for work in life.
+
+You can go to fs.block newsletter or visit the link down in the
 description.
 
