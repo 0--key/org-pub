@@ -227,8 +227,8 @@ So, the common types of notes would be:
 ** DELAY Data elaboration
 SCHEDULED: <2023-12-21 Thu>
 
-** DELAY [#B] Meta-analysys
-SCHEDULED: <2023-10-08 Sun .+1w>
+** LAG [#B] Meta-analysys
+SCHEDULED: <2024-01-05 Fri .+1w>
 :PROPERTIES:
 :CATEGORY: Meta
 :END:
