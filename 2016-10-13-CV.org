@@ -75,7 +75,45 @@ a /programming adept/!
 
 * \gamma{}ist
 
-Paramount
+** Linux
+
+I've installed my first Linux distro (it was *RHEL4* from CD which
+I've serendiptiously bought on the flea market) in 2007. And it was
+acute and palpable sensation from obtaining a freedom from proprietary
+OS. Later were *Ubuntu* and *Debian* in the different shapes,
+*CentOS*, *AltLinux*, *Gentoo*, *DamnSmallLinux*, *Fedora*,
+*PuppyLinux* and even =i386= *Porteus* as a portable version of my
+favorite OS on a 512M USB-stick.
+
+Naturally it was easy to me to switch on the ~cloud infrastructure~
+provided by Amazon Web Services. I've commenced to utilize *EC2*. And
+it was 2011.
+
+Now I use *Chrome OS* on my HP ChromeBook with *Debian* BullsEye out
+from the box.
+
+** Emacs
+
+My first aquaintance was in 2011 and in that moment, due to the lack
+of experience, it repelled me by its weirdness and complexity. Later,
+than I've got enough adventures with other ~IDEs~, the obvious thought
+strikes me:
+
+#+begin_quote
+All these commercial IDEs are use the mouse as a main tool to handle
+the code. And the mouse has only two keys on it. On another hand,
+*Emacs* uses a keyboard with at least 104 keys on it.
+#+end_quote
+
+The advantage is obvious: if you are a touch typist (and I was
+since 2008) it should be much convenient to use a keyboard to manage
+your routine tasks around *software development*. It has a lot of keys
+on it, and your fingers are able to remember these keys to use them
+fluently.
+
+** Python
+
+** Literate Programming
 
 * \Delta{}esired role
 
