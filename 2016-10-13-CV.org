@@ -113,12 +113,29 @@ fluently.
 
 ** Python
 
-** Literate Programming
+Initially I met Python code snippet around 2010 and the first
+impression was such astounding and mesmerizing:
+
+#+begin_quote
+It was like you've finally met a well-known, /but occasionally
+forgotten by you/, version of algorithmic language with additional
+faculty to govern machines.
+#+end_quote
+
+All in *Pythton* was familiar to me, and multiplied by 100 by someone
+who are infinitely clever. Yes, the ~lists~ is a perfect idea, and
+innate methods to handle it are just a straightforward empowering
+it. It was a pure rapture, and now, more than 10 years later, it
+becomes clear - it is an incessant rapture.
+
+All that I only dreamt on to have in my hands as a ~flexible~ and
+~powerful~ tool to rule machines, - all this /it has already/ inside.
+
+** Literate Programming                                           :noexport:
+
 
 * \Delta{}esired role
 
-  - A team catalyst, accelerator and propeller. Who next will fall in
-    love with Emacs and Python simultaneously?
   - A synergy among the team is not just only a sum of knowledge, our
     goal is to obtain its product literally:
     #+BEGIN_QUOTE
@@ -126,20 +143,65 @@ fluently.
     #+END_QUOTE
   - In other words the desired aim should be a /knowledge
     multiplication/: sustainable state of continuous intellectual
-    advancements for each collaborator in particular.
-  - A team of professionals with mostly contiguous skills.
+    advancements for each collaborator in particular;
+  - I see myself in the team of professionals with mostly contiguous
+    skills;
   - Right now for professional growth I'm crucially need in /knowledge
     exchange/: who knows something fascinating and would share it with
     me, please?
-
-
-
+ - I would be a team catalyst, accelerator and propeller. Who next
+   will fall in love with Emacs and Python simultaneously?
   
-* \epsilon{}macs Literate Programming
-  is a pivotal tool to forge a team synergy.
-
-
   
+* \epsilon{}macs
+
+The rule of thumb is: the tough task crack requires a handy and mighty
+tool in your hand. Mighty tool requires a lot of time to become
+well-known and thus - handy.
+
+All tasks are tough enough to be cracked by mighty tool in several
+deft gestures; most of the people haven't time to learn any potent
+tool and spent all theirs lives tinkering around the shallow tasks in
+attempts to resolve them by what they have in their possession - a set
+of primitive tools with limited functionality.
+
+* \mu{}otto
+
+  Synergy \to the interaction or cooperation of two or more organizations,
+  substances, or other agents to produce a combined effect greater than
+  the sum of their separate effects:
+
+  $\displaystyle\sum_{n=1}^{team}\sum_{k=1}^{skill}\Rightarrow\prod_{n=1}^{team}\sum_{k=1}^{skill}$
+
+
+* \Sigma{}kills overview                                           :noexport:
+  
+** Emacs and a plethora of satellite packages
+
+** Python cooked gently in Emacs:
+   - Built-in functions test suite
+   - Cookbook in a TDD dissection
+   - OOP design patterns scrutiny
+
+** Dense and terse overview
+   #+BEGIN_SRC python
+     class Person(object):
+
+         def __init__(self):
+             self.name = "Anton Kosinov"
+             self.birth_date = "1978-02-23"
+
+         def boast_of_ancestry(self):
+             self.father = "nuclear phisicist"
+             self.mother = "chemical engineer"
+             self.ant = "physics teacher"
+             self.grandmother = "Russian literature teacher"
+
+         def schooling(self):
+             self.succeed = ["Republican Physics Olympiad winner",]
+   #+END_SRC
+
+
 
 * \alpha init                                                      :noexport:
 
@@ -164,29 +226,18 @@ fluently.
   data classification, Elisp, NumPy, SciPy, GNU Octave and enrolled
   into [[https://www.coursera.org/learn/neural-networks/home][Neural Networks for Machine Learning]].
  
-* \mu{}otto
-
-  Synergy \to the interaction or cooperation of two or more organizations,
-  substances, or other agents to produce a combined effect greater than
-  the sum of their separate effects:
-
-  $\displaystyle\sum_{n=1}^{team}\sum_{k=1}^{skill}\Rightarrow\prod_{n=1}^{team}\sum_{k=1}^{skill}$
-
-
-
-
-
 * Patches
-  contrarian, a snap judgment about real power of machines, owing to
-  my innate curiosity and perseverance, I've brooded about lack of
-  skills that restrained, damp down the rush around these points, To
-  avert the brain withering, to enshrine the versatile skills in one
-  place, to choose an eligible approach to disclose the topic in a
-  much attractive and explicit manner, austerely overview the
-  customary of writing books about programming languages it might be
-  sufficient to found its basement, suppose it is at whole a slightly
-  primitive novel in English which thoroughly endeavor to shed the
-  light on another language niceties.
+  pivotal tool to forge a team synergy, contrarian, a snap judgment
+  about real power of machines, owing to my innate curiosity and
+  perseverance, I've brooded about lack of skills that restrained,
+  damp down the rush around these points, To avert the brain
+  withering, to enshrine the versatile skills in one place, to choose
+  an eligible approach to disclose the topic in a much attractive and
+  explicit manner, austerely overview the customary of writing books
+  about programming languages it might be sufficient to found its
+  basement, suppose it is at whole a slightly primitive novel in
+  English which thoroughly endeavor to shed the light on another
+  language niceties.
 
   Emerging unit testing in the early 2000 produced a sismic shift in
   software development, but still be totally ignored by the writers.
@@ -237,32 +288,6 @@ fluently.
   | Introduction to Data Science | StackOverFlow |                |
   |                              | LinkedIn      |                |
 
-* \Sigma{}kills overview                                           :noexport:
-  
-** Emacs and a plethora of satellite packages
-
-** Python cooked gently in Emacs:
-   - Built-in functions test suite
-   - Cookbook in a TDD dissection
-   - OOP design patterns scrutiny
-
-** Dense and terse overview
-   #+BEGIN_SRC python
-     class Person(object):
-
-         def __init__(self):
-             self.name = "Anton Kosinov"
-             self.birth_date = "1978-02-23"
-
-         def boast_of_ancestry(self):
-             self.father = "nuclear phisicist"
-             self.mother = "chemical engineer"
-             self.ant = "physics teacher"
-             self.grandmother = "Russian literature teacher"
-
-         def schooling(self):
-             self.succeed = ["Republican Physics Olympiad winner",]
-   #+END_SRC
 * \zeta{}urrent state                                              :noexport:
   Following the concept of /knowledge chain reaction/\trade I'm in conveying
   my own skills to my family: my patient, wise&cute wife and to my
