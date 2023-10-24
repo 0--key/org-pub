@@ -126,7 +126,7 @@ All in *Python* was familiar to me, and multiplied by 100 by unnamed
 magician who are unfathomably brainy. Yes, the ~lists~ is a perfect
 idea, and innate methods to handle them are just a deft and obvious
 approach to liverage its power. It was a pure rapture there, and now,
-more than 10 years later, it becomes clear - it is an incessant
+more than 10 years later, it becomes clear - it barely is an incessant
 rapture.
 
 All that I only dreamt on to have in my hands as a ~flexible~ and
@@ -163,8 +163,9 @@ well-known and thus - handy.
 All tasks are tough enough to be cracked by mighty tool in several
 deft gestures; most of the people haven't time to learn any potent
 tool and spent all theirs lives tinkering around the shallow tasks in
-attempts to resolve them by what they have in their possession - a set
-of primitive tools with limited functionality.
+attempts to resolve them by what they have in theirs disposal - a set
+of rude but /simple tools/ with limited functionality but with /low
+entry threshold/.
 
 * \mu{}otto
 
@@ -177,9 +178,10 @@ of primitive tools with limited functionality.
 
 * \Sigma{}kills overview                                           :noexport:
   
-** Emacs and a plethora of satellite packages
+** \epsilon{}macs
+and a plethora of satellite packages
 
-** Python cooked gently in Emacs:
+** \prod{}ython gently preliminarily cooked in Emacs:
    - Built-in functions test suite
    - Cookbook in a TDD dissection
    - OOP design patterns scrutiny
@@ -187,19 +189,20 @@ of primitive tools with limited functionality.
 ** Dense and terse overview
    #+BEGIN_SRC python
      class Person(object):
-
          def __init__(self):
-             self.name = "Anton Kosinov"
+             self.full_name = "Anton Kosinov"
              self.birth_date = "1978-02-23"
 
-         def boast_of_ancestry(self):
+         def origin(self):
              self.father = "nuclear phisicist"
              self.mother = "chemical engineer"
              self.ant = "physics teacher"
              self.grandmother = "Russian literature teacher"
 
-         def schooling(self):
-             self.succeed = ["Republican Physics Olympiad winner",]
+         def tuition(self):
+             self.succeed = [
+                 "Republican Physics Olympiad winner",
+             ]
    #+END_SRC
 
 
