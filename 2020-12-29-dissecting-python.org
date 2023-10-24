@@ -1113,15 +1113,20 @@ tags: [book, template]
 
 
      class TestLanguagePrimals(unittest.TestCase):
+	 """True, False and None are the basement of any logic.
 
-         def test_does_true_ever_exist(self):
-             self.assertTrue(True)
+	 Thus theirs derivatitve methods of assertion are fundamental as
+	 well.
+	 """
 
-         def test_does_false_ever_exist(self):
-             self.assertFalse(False)
+	 def test_does_true_ever_exist(self):
+	     self.assertTrue(True)
 
-         def test_does_none_ever_exist(self):
-             self.assertIsNone(None)
+	 def test_does_false_ever_exist(self):
+	     self.assertFalse(False)
+
+	 def test_does_none_ever_exist(self):
+	     self.assertIsNone(None)
    #+END_SRC
 
    Yes, that's it! Try to launch this code snippet to be ensured that it
