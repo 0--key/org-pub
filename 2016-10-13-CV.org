@@ -114,19 +114,20 @@ fluently.
 ** Python
 
 Initially I met Python code snippet around 2010 and the first
-impression was such astounding and mesmerizing:
+impression was utterly astounding and overly enchanting:
 
 #+begin_quote
 It was like you've finally met a well-known, /but occasionally
 forgotten by you/, version of algorithmic language with additional
-faculty to govern machines.
+faculty to understand you on the fly.
 #+end_quote
 
-All in *Pythton* was familiar to me, and multiplied by 100 by someone
-who are infinitely clever. Yes, the ~lists~ is a perfect idea, and
-innate methods to handle it are just a straightforward empowering
-it. It was a pure rapture, and now, more than 10 years later, it
-becomes clear - it is an incessant rapture.
+All in *Python* was familiar to me, and multiplied by 100 by unnamed
+magician who are unfathomably brainy. Yes, the ~lists~ is a perfect
+idea, and innate methods to handle them are just a deft and obvious
+approach to liverage its power. It was a pure rapture there, and now,
+more than 10 years later, it becomes clear - it is an incessant
+rapture.
 
 All that I only dreamt on to have in my hands as a ~flexible~ and
 ~powerful~ tool to rule machines, - all this /it has already/ inside.
