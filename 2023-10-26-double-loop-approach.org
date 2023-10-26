@@ -20,41 +20,44 @@ The [[https://www.youtube.com/watch?v=83w-jFcwiX0][source]]
 
 * Intro
 
-So you read 30 books last year and you took copious amounts of notes
-on everything but how do you actually implement these concepts and
-figure out which ones work best in the situations you're in how do you
-know what's effective and what's not the answer double loop learning
-we can think of double loop learning as learning based on bayesian
-updating the modification of goals rules or ideas in response to new
-evidence and experience it might sound like another piece of corporate
-jargon but double loop learning
+So you red 30 books last year and you took copious amounts of notes on
+everything but how do you actually implement these concepts and figure
+out which ones work best in the situations you're in? How do you know
+what's effective and what's not? The answer is *double loop learning*.
+We can think of double loop learning as learning based on /bayesian
+updating/, the modification of goals rules or ideas /in response to
+new evidence and experience/.
+
+It might sound like another piece of corporate jargon but double loop
+learning cultivates creativity and innovation for both organizations
+and individuals.
 
 * Single Loop Learning
 
-cultivates creativity and innovation for both organizations and
-individuals before we get into double loop learning let's first look
-at single loop learning the first time we aim for a goal follow a rule
-or make a decision we're engaging in single loop learning this is
-where many people get stuck and keep making the same mistakes if we
-question our approaches and make honest self-assessments we shift into
-double loop learning in this stage we assess our biases question our
-mental models and look for areas where we can improve we collect data
-seek feedback and gauge our performance but we can't learn from
-experience without reflection only reflection allows us to distill the
-experience into something we can learn from
+Before we get into *double loop learning* let's first look at *single
+loop learning*. The first time we aim for a goal follow a rule or make
+a decision we're engaging in single loop learning. This is where many
+people get stuck and /keep making the same mistakes/.
+
+If we question our approaches and make honest self-assessments -- we
+shift into double loop learning. In this stage we assess our biases
+question our mental models and look for areas where we can improve. We
+collect data seek feedback and gauge our performance, but we can't
+learn from experience without reflection. Only reflection allows us to
+distill the experience into something we can learn from teaching smart
+people how to learn.
 
 * Thermostat Analogy
 
-in teaching smart people how to learn business theorist chris aguirres
-compares single loop learning to a typical thermostat it operates in a
-homeostatic loop always seeking to return the room to the temperature
-at which the thermostat is set a thermostat might keep the room steady
-but it doesn't learn by contrast double loop learning would entail the
-thermostat is becoming more efficient over time is the room at the
-optimum temperature what's the humidity like today would a lower
-temperature be more comfortable the thermostat would then test each
-idea and repeat the process double loop learning on the other hand is
-a part of action science
+business theorist Chris Aguirres compares single loop learning to a
+typical thermostat it operates in a homeostatic loop always seeking to
+return the room to the temperature at which the thermostat is set a
+thermostat might keep the room steady but it doesn't learn by contrast
+double loop learning would entail the thermostat is becoming more
+efficient over time is the room at the optimum temperature what's the
+humidity like today would a lower temperature be more comfortable the
+thermostat would then test each idea and repeat the process double
+loop learning on the other hand is a part of action science
 
 * The Learning Dilemma
 
