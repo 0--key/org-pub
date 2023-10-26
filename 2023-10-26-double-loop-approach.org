@@ -1,0 +1,20 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Adaptive Learning
+tagline: " don't know what we don't know"
+permalink: /professional/double-pondering.html
+categories: [Thinking, Pondering, Learning to Learn]
+tags: []
+---
+#+END_EXPORT
+
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+PROPERTY:header-args :results output :exports both :eval no-export
+#+CATEGORY: ThoughtCast
+#+TODO: RAW INIT TODO ACTIVE | DONE
+
+The [[https://www.youtube.com/watch?v=83w-jFcwiX0][source]]
+
