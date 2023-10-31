@@ -49,57 +49,67 @@ people how to learn.
 
 * Thermostat Analogy
 
-business theorist Chris Aguirres compares single loop learning to a
-typical thermostat it operates in a homeostatic loop always seeking to
-return the room to the temperature at which the thermostat is set a
-thermostat might keep the room steady but it doesn't learn by contrast
-double loop learning would entail the thermostat is becoming more
-efficient over time is the room at the optimum temperature what's the
-humidity like today would a lower temperature be more comfortable the
-thermostat would then test each idea and repeat the process double
-loop learning on the other hand is a part of action science
+Business theorist Chris Aguirres compares single loop learning to a
+typical thermostat. It operates in a homeostatic loop always seeking
+to return the room to the temperature at which the thermostat is
+set. A thermostat might keep the room steady but it doesn't learn. By
+contrast, /double loop learning/ would entail. The thermostat is
+becoming more efficient over time: is the room at the optimum
+temperature, what's the humidity like today, would a lower temperature
+be more comfortable. The thermostat would then test each idea and
+repeat the process. /Double loop learning/ on the other hand is a part
+of action science - the study of how we act in difficult situations.
 
 * The Learning Dilemma
 
-the study of how we act in difficult situations individuals and
-organizations need to learn if they want to succeed or even survive
-but few of us pay much attention to exactly how we learn and how we
-can optimize the process even smart well-educated people can struggle
-to learn from experience we all know someone who's been at the office
-for 20 years and claims to have 20 years of experience but they really
-have one year repeated 20 times many of us are so focused on solving
-problems as they arise that we don't take the time to reflect on them
-after we've dealt with them and this mission dramatically limits our
-ability to learn from the experiences of course we want to reflect but
-we're busy and we have more problems to solve not to mention that
-reflecting on our idiocy is painful and we're predisposed to avoid
-pain and protect our egos reflection however is an example of the
-approach we call first order negative second order positive it's got
-very visible short-term costs it takes time and honest self-assessment
-about our shortcomings but it pays off in spades in the future the
-problem is that the future is not visible today so slowing down today
-to go faster at some future point seems like a bad idea to many plus
-with the payoff being so far in the future it's hard to connect to the
-reflection today this is the learning dilemma many skilled people
-excel at single loop learning it's what we learn in academic
-situations but if we're accustomed only to success double loop
-learning can ignite defensive behavior this is why learning can be so
-difficult it's not because we aren't competent but because we resist
-learning out of a fear of seeming incompetent smart people aren't used
-to failing so they struggle to learn from their mistakes and often
-respond by blaming someone else
+Individuals and organizations need to learn if they want to succeed or
+even survive, but few of us pay much attention to exactly /how we
+learn/ and how we can optimize the process. Even smart well-educated
+people can struggle to learn from experience.
+
+We all know someone who's been at the office for 20 years and claims
+to have 20 years of experience, but they really have one year repeated
+20 times. Many of us are so focused on solving problems as they arise.
+That we don't take the time to reflect on them after we've dealt with
+them and this mission dramatically limits our ability to learn from
+the experiences. Of course we want to reflect but we're busy and we
+have more problems to solve. Not to mention that /reflecting on our
+idiocy is painful/ and we're predisposed to avoid pain and protect our
+egos reflection.
+
+However is an example of the approach we call first order negative,
+second order positive. It's got very visible short-term costs. It
+takes time and honest self-assessment about our shortcomings, but it
+pays off in spades in the future.
+
+#+begin_quote
+The problem is that the future is not visible today
+#+end_quote
+
+So slowing down today to go faster at some future point seems like a
+bad idea to many, plus with the payoff being so far in the future it's
+hard to connect to the reflection today. This is the /learning
+dilemma/.  Many skilled people excel at single loop learning: it's
+what we learn in academic situations, but if we're accustomed only to
+success double loop learning can ignite defensive behavior. This is
+why learning can be so difficult: it's not because we aren't
+competent, but because we resist learning out of a fear of seeming
+incompetent.
+
+Smart people aren't used to failing so they struggle to learn from
+their mistakes and often respond by blaming someone else, as a
+juniors.
 
 * Smart People
 
-as a jurors put it their ability to learn shuts down precisely at the
-moment they need it the most in the same way a muscle strengthens at
-the point of failure we learn best after dramatic errors the problem
-is that single loop
+Put in their ability to learn shuts down precisely at the moment they
+need it. The most in the same way a muscle strengthens at the point of
+failure - we learn best after dramatic errors. The problem is that
+single loop processes can be self-fulfilling.
 
 * The Problem
 
-processes can be self-fulfilling
-consider managers who assume their employees are inept they deal with
+Consider managers who assume their employees are inept. They deal with
 this by micromanaging and making every decision themselves their
 employees have no opportunity to learn so they become discouraged they
 don't even try to make their own decisions this is a self-perpetuating
