@@ -110,147 +110,193 @@ single loop processes can be self-fulfilling.
 * The Problem
 
 Consider managers who assume their employees are inept. They deal with
-this by micromanaging and making every decision themselves their
-employees have no opportunity to learn so they become discouraged they
-don't even try to make their own decisions this is a self-perpetuating
-circle for double loop learning to happen the managers would have to
-let go a little allowing someone else to make minor decisions offer
-guidance instead of intervention leave room for mistakes in the long
-run everyone would benefit the same applies to teachers who think
-their students are going to fail an exam the teachers might become
+this by micromanaging and making every decision themselves. Their
+employees have no opportunity to learn, so they become discouraged. They
+don't even try to make their own decisions.
+
+#+begin_quote
+This is a self-perpetuating circle.
+#+end_quote
+
+For double loop learning to happen the managers would have to let go a
+little allowing someone else to make minor decisions, offer guidance
+instead of intervention, leave room for mistakes. In the long run
+everyone would benefit. The same applies to teachers who think their
+students are going to fail an exam. The teachers might become
 condescending and assign simple work when the exam rolls around guess
-what many of the students do badly the teachers think that they were
-right so the same thing happens the next semester many of the leaders
+what many of the students do badly. The teachers think that they were
+right so the same thing happens the next semester. Many of the leaders
 ajira studied blamed any problems on unclear goals insensitive and
 unfair leaders and stupid clients rather than making useful
-assessments complaining might be cathartic but it doesn't let us learn
-agiras explained that this defensive reasoning happens even when we
-want to improve single loop learning just happens to be a way of
-minimizing effort we would go mad if we had to rethink our response
-every time someone asks us how we are for example so ajiris explains
-everyone develops their own theory of action a set of rules that
-individuals use to design and implement their own behavior as well as
-to understand the behavior of others most of the time we don't even
-consider our theory of action it's only when asked to explain it that
-the divide between how we act and how we think we act becomes apparent
-identifying the gap between our espoused theory of action and what
-we're actually doing is the hard part the first step ajiris
+assessments. Complaining might be cathartic but it doesn't let us
+learn agiras explained that this defensive reasoning happens even when
+we want to improve. _Single loop learning just happens to be a way of
+minimizing effort_.
+
+We would go mad if we had to rethink our response every time someone
+asks us how we are. For example so ajiris explains everyone develops
+their own theory of action a set of rules that individuals use to
+design and implement their own behavior as well as to understand the
+behavior of others. Most of the time we don't even consider our theory
+of action. It's only when asked to explain it that the divide between
+how we act and how we think. We act becomes apparent, identifying the
+gap between our espoused theory of action and what we're actually
+doing is.
 
 * Stop Getting Defensive
 
-identified is to stop getting defensive instead he advocates for
-collecting and analyzing relevant data what conclusions can we draw
-from experience how can we test them what evidence do we need to prove
-a new idea is correct
+The hard part the first step ajiris identified is to stop getting
+defensive instead he advocates for collecting and analyzing relevant
+data. What conclusions can we draw from experience, how can we test
+them, what evidence do we need to prove a new idea is correct.
 
 * Change Our Mental Models
 
-the next step is to change our mental models break apart paradigms
+The next step is to change our mental models break apart paradigms
 question where conventions came from pivot and make reassessments if
-necessary problem solving isn't a linear process we can't make one
-decision and then sit back and await success edgier has found that
+necessary. Problem solving isn't a linear process - we can't make one
+decision and then sit back and await success. Edgier has found that
 many professionals are skilled at teaching others yet find it
-difficult to recognize the problems they themselves cause like
-galilean relativity it's easy to focus on other people it's much
-harder to look inward and face complex challenges doing so brings up
-guilt embarrassment and defensiveness as john gray put it if there's
-anything unique about the human animal it's that it has the ability to
-grow knowledge at an accelerating rate while being chronically
-incapable of learning from experience
+difficult to recognize the problems they themselves cause. Like
+Galilean relativity it's easy to focus on other people.
+
+#+begin_quote
+It's much harder to look inward and face complex challenges.
+#+end_quote
+
+Doing so brings up guilt embarrassment and defensiveness as John Gray
+put it. If there's anything unique about the human animal it's that it
+has the ability to grow knowledge at an accelerating rate while being
+chronically incapable of learning from experience.
 
 * Habits
 
-when we repeat a single loop process it becomes a habit each
+When we repeat a single loop process it becomes a habit. Each
 repetition requires less and less effort we stop questioning or
-reconsidering it especially if it does the job or appears to while
+reconsidering it especially if it does the job or appears to. While
 habits are essential in many areas of our lives they don't serve us
-well if we want to keep improving
+well if we want to keep improving.
 
 * Single Loop
 
-for that we need to push the single loop to the point of failure to
-strengthen how we act in the double loop it's a bit like the feynman
-technique we have to dismantle what we know to see how solid it truly
-is one example is a typical five day nine to five work week most
-organizations stick to it year after year they don't reconsider the
+For that we need to push the single loop to the point of failure to
+strengthen how we act. In the double loop it's a bit like the Feynman
+technique:
+
+#+begin_quote
+We have to dismantle what we know to see how solid it truly is.
+#+end_quote
+
+One example is a typical: five day nine to five work week. Most
+organizations stick to it year after year. They don't reconsider the
 efficacy of a schedule designed for industrial revolution factory
-workers this is single loop learning it's just the way things are done
-but not necessarily the smartest way to do things the decisions made
-early on in an organization have the greatest long-term impact
-changing them in the months years or even decades that follow becomes
-a non-option how to structure the work week is one such initial
-decision that becomes invisible
+workers. This is single loop learning, it's just the way things are
+done, but not necessarily the smartest way to do things. The decisions
+made early on in an organization have the greatest long-term impact.
+Changing them in the months years or even decades that follow becomes
+a non-option. How to structure the work week is one such initial
+decision that becomes invisible.
 
 * How to Structure
 
-as gk chesterton put it the things we see every day are the things we
-never see at all sure a nine to five schedule might not be causing any
-obvious problems the organization might be perfectly successful but
-that doesn't mean things can't improve it's the equivalent of a child
-continuing to crawl because it gets them around why try walking if
-crawling does the job why look for another option if the current one
-is working a growing number of organizations are realizing that
-conventional work weeks might not be the most effective way to
-structure the work time they're using double loop learning to test
-other structures some organizations are trying shorter work days or
-four day work weeks or allowing people to set their own schedules
-managers then keep track of how the tested structures affect
-productivity and profits over time it becomes apparent whether the new
-schedule is better than the old one 37 signals is one company using
-double loop learning to restructure their work week ceo jason fried
-began experimenting a few years ago he tried out a 4-day 32-hour work
-week he gave employees the whole of june off to explore new ideas he
-cut back on meetings and created quiet spaces for focused work rather
-than following conventions 37 signals became a laboratory looking for
-ways for improving over time what worked and what didn't became
-obvious double loop learning is about data backed experimentation not
-aimless tinkering if a new idea doesn't work it's time to try
-something else
+As  G.K.Chesterton put it
+
+#+begin_quote
+The things we see every day are the things we never see at all.
+#+end_quote
+
+Sure a nine to five schedule might not be causing any obvious
+problems - the organization might be perfectly successful, but that
+doesn't mean things can't improve. It's the equivalent of a child
+continuing to crawl because it gets them around. Why try walking if
+crawling does the job, why look for another option if the current one
+is working.
+
+A growing number of organizations are realizing that conventional work
+weeks might not be the most effective way to structure the work time.
+They're using double loop learning to test other structures. Some
+organizations are trying shorter work days or four day work weeks or
+allowing people to set their own schedule. Managers then keep track of
+how the tested structures affect productivity and profits. Over time
+it becomes apparent whether the new schedule is better than the old
+one.
+
+37 signals is one company using double loop learning to restructure
+their work week. CEO Jason Fried began experimenting a few years ago:
+ - he tried out a 4-day 32-hour work week;
+ - he gave employees the whole of june off to explore new ideas;
+ - he cut back on meetings and created quiet spaces for focused work
+   rather than following conventions.
+
+
+37 signals became a laboratory looking for ways for improving. Over
+time what worked and what didn't became obvious. /Double loop
+learning/ is about data backed experimentation: not aimless
+tinkering - if a new idea doesn't work it's time to try something else.
 
 * David Chang
 
-in an op-ed for the new york times sweeney and gosvel gave the example
-of david chang double loop learning turned his failing noodle bar into
-an award-winning empire after apprenticing as a cook in japan mr chang
-started his own restaurant yet his early efforts were ineffective he
-found himself overworked and struggling to make money he knew his
-cooking was excellent so how could he make it profitable many people
-would have quit or continued making irrelevant tweaks until the whole
-endeavor failed instead mr chang shifted from single to double loop
-learning a process of making honest self-assessments began one of his
-foundational beliefs was that the restaurant should serve only noodles
-but he decided to change the menu to reflect his skills in time it
-paid off the crowds came rave reviews piled up awards followed and
-unimaginable opportunities presented themselves this is what double
-loop learning looks like in action questioning everything and starting
-from scratch if necessary
+In an op-ed for the New York times Sweeney and Gosvel gave the example
+of David Chang. /Double loop learning/ turned his failing noodle bar
+into an award-winning empire!
+
+After apprenticing as a cook in Japan Mr Chang started his own
+restaurant, yet his early efforts were ineffective he found himself
+overworked and struggling to make money. He knew: his cooking was
+excellent, so =how could he make it profitable?=
+
+Many people would have quit or continued making irrelevant tweaks
+until the whole endeavor failed. Instead, Mr Chang _shifted from
+single to double loop learning_. A process of making honest
+self-assessments began.
+
+One of his foundational beliefs was that the restaurant should serve
+only noodles, but he decided to change the menu to reflect his skills.
+In time it paid off: the crowds came, rave reviews piled up, awards
+followed and unimaginable opportunities presented themselves. This is
+what double loop learning looks like in action: ~questioning
+everything and starting from scratch if necessary~!
 
 * Josh Wadeskin
 
-josh wadeskin's approach as explained in the art of learning is
-similar after reaching the heights of competitive chess weights can
-turned his focus to martial arts he began with tai chi chuan martial
-arts and chess are on the surface completely different but waits can
-use double loop learning for both he progressed quickly because he was
-willing to lose matches if doing so meant he could learn he noticed
-that other martial arts students had a tendency to repeat their
-mistakes letting fruitless habits become ingrained like the managers
-at jairus worked with students grew defensive when challenged they
-wanted to be right even if it prevented their learning in contrast
-waitskin viewed practice as experiment each session was an opportunity
-to test his beliefs he mastered several martial arts earning a black
-belt in jiu jitsu and winning a world championship
+Josh Wadeskin's approach as explained in the art of learning is
+similar: after reaching the heights of competitive chess Weights can
+turned his focus to martial arts, - he began with ~Tai Chi Chuan~
+martial arts and chess are on the surface. Completely different, but
+Waights can use /double loop learning/ for both.
+
+He progressed quickly, because he was willing to lose matches, if
+doing so meant he could learn. He noticed that other martial arts
+students had a tendency to repeat their mistakes, letting fruitless
+habits become ingrained: like the managers at jairus - worked with
+students grew defensive when challenged they wanted to be right even
+if it prevented their learning. In contrast Waitskin viewed practice as
+experiment. Each session was an opportunity to test his beliefs.
+
+He mastered several martial arts earning a =black belt= in Jiu-Jitsu
+and winning a world championship.
 
 * Conclusion
 
-ajir has found that organizations learn best when people know how to
-communicate no surprise there leaders need to listen actively and open
-up exploratory dialogues so that problematic assumptions and
-conventions can be revealed a juris identified some key questions to
-consider what is the current theory in use how does it differ from
-proposed strategies and goals what unspoken rules are being followed
-and are they detrimental what could change and how forget the details
-what's the bigger picture meaningful learning doesn't happen without
-focused effort double loop learning is the key to turning experience
-into improvements information into action and conversations into
-progress you
+Ajir has found that organizations learn best when people know how to
+communicate. No surprise there:
+
+#+begin_quote
+Leaders need to listen actively and open up exploratory dialogues, so
+that problematic assumptions and conventions ~can be revealed~.
+#+end_quote
+
+A Juris identified some key questions to consider:
+
+- what is the current theory in use;
+- how does it differ from proposed strategies and goals;
+- what unspoken rules are being followed and are they detrimental;
+- what could change and how forget the details;
+- what's the bigger picture?
+
+#+begin_quote
+Meaningful learning doesn't happen without focused effort.
+#+end_quote
+
+/Double loop learning/ is the key to turning experience into
+improvements, information into action and conversations into progress.
