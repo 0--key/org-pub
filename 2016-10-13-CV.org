@@ -156,9 +156,9 @@ All that I only dreamt on to have in my hands as a ~flexible~ and
   
 * \epsilon{}macs
 
-The rule of thumb is: the tough task crack requires a handy and mighty
-tool in your hand. Mighty tool requires a lot of time to become
-well-known and thus - handy.
+The rule of thumb is: the tough task split requires a handy and mighty
+tool in your hand. Mighty tool demandss a lot of time and patience to
+become handy.
 
 All tasks are tough enough to be cracked by mighty tool in several
 deft gestures; most of the people haven't time to learn any potent
@@ -176,17 +176,20 @@ entry threshold/.
   $\displaystyle\sum_{n=1}^{team}\sum_{k=1}^{skill}\Rightarrow\prod_{n=1}^{team}\sum_{k=1}^{skill}$
 
 
-* \Sigma{}kills overview                                           :noexport:
-  
+* \Sigma{}kills overview
+
+** \Lambda{}ife long learner
+with /Double Loop Learning/ approach in my disposal at least 25 years.
+
 ** \epsilon{}macs
-and a plethora of satellite packages
+dressed with ELPA/MELPA packages galore
 
 ** \prod{}ython gently preliminarily cooked in Emacs:
    - Built-in functions test suite
    - Cookbook in a TDD dissection
    - OOP design patterns scrutiny
 
-** Dense and terse overview
+* Dense and terse overview                                         :noexport:
    #+BEGIN_SRC python
      class Person(object):
          def __init__(self):
@@ -201,7 +204,7 @@ and a plethora of satellite packages
 
          def tuition(self):
              self.succeed = [
-                 "Republican Physics Olympiad winner",
+                 "Master degree in automation at nuclear power plant",
              ]
    #+END_SRC
 
@@ -230,7 +233,7 @@ and a plethora of satellite packages
   data classification, Elisp, NumPy, SciPy, GNU Octave and enrolled
   into [[https://www.coursera.org/learn/neural-networks/home][Neural Networks for Machine Learning]].
  
-* Patches
+* Patches                                                          :noexport:
   pivotal tool to forge a team synergy, contrarian, a snap judgment
   about real power of machines, owing to my innate curiosity and
   perseverance, I've brooded about lack of skills that restrained,
