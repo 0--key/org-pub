@@ -189,6 +189,54 @@ dressed with ELPA/MELPA packages galore
    - Cookbook in a TDD dissection
    - OOP design patterns scrutiny
 
+
+
+   
+* Reverse <<==                                                     :noexport:
+
+** #1
+
+Looking for a Senior Python Software Developer. The ideal candidate
+will have strong programming skills with a focus on quality,
+performance, extensibility, and maintainability of code within an
+agile software development environment.
+
+*** Key Responsibilities
+
+To design and develop code with performance optimisation,
+extensibility and maintainability in mind Own and drive development
+tasks that you are involved in, participating and supporting your
+agile development SCRUM team Functionally testing all developed code
+to a very high standard to enable QA to test efficiently
+
+
+*** Essential Requirements
+
+- Demonstrable experience with Python, MySQL & Linux;
+- 5+ years experience developing with Python
+- Experience in version control systems, ideally Git;
+- Exceptional analytical and problem solving skills;
+- Ability to adapt to a fast-paced development schedule;
+- Strong communication skills and fluency in verbal and written
+  English are essential;
+
+
+*** Desirable
+
+- Experience/understanding of working in an Agile environment;
+- Experience with asynchronous networking library such as Twisted or
+  Tornado;
+- Redis or other modern non-relational data storage systems;
+- Especially unit testing, test-driven development and
+  behaviour-driven development;
+- Modern Python web frameworks. e.g. Flask, Django and Python ORM
+  e.g. storm, sqlalchemy.
+
+  
+Posted on Oct 24, 2023.
+
+
+
 * Dense and terse overview                                         :noexport:
    #+BEGIN_SRC python
      class Person(object):
