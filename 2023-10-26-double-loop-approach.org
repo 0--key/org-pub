@@ -126,15 +126,15 @@ students are going to fail an exam. The teachers might become
 condescending and assign simple work when the exam rolls around guess
 what many of the students do badly. The teachers think that they were
 right so the same thing happens the next semester. Many of the leaders
-ajira studied blamed any problems on unclear goals insensitive and
+Agyris studied blamed any problems on unclear goals insensitive and
 unfair leaders and stupid clients rather than making useful
 assessments. Complaining might be cathartic but it doesn't let us
-learn agiras explained that this defensive reasoning happens even when
+learn Agyris explained that this defensive reasoning happens even when
 we want to improve. _Single loop learning just happens to be a way of
 minimizing effort_.
 
 We would go mad if we had to rethink our response every time someone
-asks us how we are. For example so ajiris explains everyone develops
+asks us how we are. For example: so Agyris explains everyone develops
 their own theory of action a set of rules that individuals use to
 design and implement their own behavior as well as to understand the
 behavior of others. Most of the time we don't even consider our theory
@@ -145,7 +145,7 @@ doing is.
 
 * Stop Getting Defensive
 
-The hard part the first step ajiris identified is to stop getting
+The hard part the first step Agyris identified is to stop getting
 defensive instead he advocates for collecting and analyzing relevant
 data. What conclusions can we draw from experience, how can we test
 them, what evidence do we need to prove a new idea is correct.
@@ -259,8 +259,8 @@ everything and starting from scratch if necessary~!
 
 * Josh Wadeskin
 
-Josh Wadeskin's approach as explained in the art of learning is
-similar: after reaching the heights of competitive chess Weights can
+Josh Waitzkin's approach as explained in the art of learning is
+similar: after reaching the heights of competitive chess Waitzkin
 turned his focus to martial arts, - he began with ~Tai Chi Chuan~
 martial arts and chess are on the surface. Completely different, but
 Waights can use /double loop learning/ for both.
@@ -270,7 +270,7 @@ doing so meant he could learn. He noticed that other martial arts
 students had a tendency to repeat their mistakes, letting fruitless
 habits become ingrained: like the managers at jairus - worked with
 students grew defensive when challenged they wanted to be right even
-if it prevented their learning. In contrast Waitskin viewed practice as
+if it prevented their learning. In contrast Waitzkin viewed practice as
 experiment. Each session was an opportunity to test his beliefs.
 
 He mastered several martial arts earning a =black belt= in Jiu-Jitsu
@@ -278,7 +278,7 @@ and winning a world championship.
 
 * Conclusion
 
-Ajir has found that organizations learn best when people know how to
+Agyris has found that organizations learn best when people know how to
 communicate. No surprise there:
 
 #+begin_quote
