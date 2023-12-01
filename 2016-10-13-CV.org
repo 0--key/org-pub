@@ -30,28 +30,29 @@ tags: [cv, info, about me, author]
 
 * \alpha{}bout me
 
- Innate fathomless curiousity made me a voracious reader and avid
- knowledge gatherer as I can remember myself. Initially it was just a
- knowledge thirst and fun aquiring them, a bit later I commenced a
- conscious approach to learning and found an urge necessity for
- meta-learning: skill that allows to study any subject much effective.
+ Innate fathomless curiosity forged me as an avid reader and voracious
+ knowledge gatherer. Initially it was just an unconscious thirst of
+ knowledge, nudged forward by a temptation to know everything. Soon it
+ became clear to me /I should know everything/ for that and it is just
+ impossible due to /infinite amount of knowledge/, and 15 years after
+ graduation from University, I've intentionally commenced a conscious
+ attempt to elaborate personal knoledge and found an urge necessity
+ for meta-learning: skill what allows to study any subject much
+ effective with the same fun and pleasure.
 
  After acquisition of these skill, when I've [[http://bit.ly/2nPfOXR][learnt how to learn]],
  naturally loomed the next challenge:
 
  #+begin_quote
-  What should I know to be healthy, wealthy and wise?
+  What should I know to be happy?
   #+end_quote
 
- Soon it became clear to me /I should know everything/ for that and it
- is just impossible due to /infinite amount of knowledge/. So I need
- to find a trade off, a some hack which allows me /to be happy enough/
- to live and prosper. And I choose to study =Computer Science= that by
- definition ought to amplify my ability to sift, put it in order and
- consume information. And, as an inevitable catalyser, [[http://bit.ly/1lk9C7p][model thinking]]
- was a right tool in the hands. Furthermore these skills will liverage
- my capability to acquire the knowledge much faster.
-
+So I need to find a trade off, a some hack which allows me /to be
+ happy enough/ to live and prosper. And I choose to study [[https://bit.ly/3t5fN8][Data Science]]
+ that by its definition ought to amplify my ability to sift put it in
+ order and consume information. And, as an inevitable catalyser, [[http://bit.ly/1lk9C7p][model
+ thinking]] was a right tool in the hands. Furthermore these skills will
+ liverage my capability to acquire the knowledge much faster.
  Further, pondering in this direction pointed me out =Python= as the
  main tool to cope with a plethora of *Data*, =Emacs= as the powerful
  enough tool to cope with =Python=, =Bash=, computer and me in the
