@@ -108,7 +108,7 @@ Separate set of bookmarks for each task
 * Average modes
 
 ** LAG Task management
-SCHEDULED: <2023-11-13 Mon .+4d/5d>
+SCHEDULED: <2023-12-12 Tue .+4d/5d>
 :PROPERTIES:
 :LAST_REPEAT: [2022-12-03 Sat 09:27]
 :CATEGORY: Manage
