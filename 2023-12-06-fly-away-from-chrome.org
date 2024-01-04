@@ -16,6 +16,10 @@ tags: [migration, strategy]
 #+CATEGORY: Debian
 #+TODO: RAW INIT TODO ACTIVE | DONE
 
+* Preface
+
+* Hard Disk Partitioning
+
 An EFI system partition is necessary to start Debian.
 
 To configure an EFI system partition, go back and select or
@@ -26,3 +30,22 @@ least 300MB in size. The filesystem must have flag boot set.
 
 You can continue without setting up an EFI system partition but
 your system may fail to start.
+
+* ~ELPY~ as Pythonic *IDE*
+
+** Prerequisites
+
+~ELPY~ has several requirements which ought to be satisfied
+preliminarily:
+
+First of all:
+#+begin_src python :results output
+sudo apt install python-is-python3 virtualenv pip
+#+end_src
+
+After that your system is prepared to:
+
+#+begin_src elisp
+    package-install pyvenv
+  package-install elpy
+#+end_src
