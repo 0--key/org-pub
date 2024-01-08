@@ -1,0 +1,16 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Arrange Your Life
+tagline: " in order"
+permalink: /personal/life-style.html
+categories: [Personal, Development, LifeStyle]
+tags: [order, arrange, life, goal, style]
+---
+#+END_EXPORT
+
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+
+
