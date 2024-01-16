@@ -1,0 +1,27 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Cook Python
+tagline: " easy&peasy"
+permalink: /python/ide.html
+categories: [Python, IDE, Emacs, Eglot, Elpy]
+tags: [efficiency, software development]
+---
+#+END_EXPORT
+
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+* Intro
+* ToolBox
+** Python-mode
+** IPython
+** Unittest
+* The Sandbox
+* Routine task set automation
+** Project
+** Projectile
+** Elpy
+** Eglot
+
+
