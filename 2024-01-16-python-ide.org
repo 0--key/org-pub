@@ -46,6 +46,40 @@ scope of usage, capabilities and facilities.
 ~Python~ is relatevely old programming language and it widely and
 deeply supported by =vanilla= ~Emacs~ by its native packages.
 
+#+begin_src sh :results output :exports both
+  pylsp --version 2>&1
+  pylsp --help 2>&1
+#+end_src
+
+#+RESULTS:
+#+begin_example
+pylsp v1.7.1
+usage: pylsp [-h] [--tcp] [--ws] [--host HOST] [--port PORT]
+             [--check-parent-process]
+             [--log-config LOG_CONFIG | --log-file LOG_FILE] [-v] [-V]
+
+Python Language Server
+
+options:
+  -h, --help            show this help message and exit
+  --tcp                 Use TCP server instead of stdio
+  --ws                  Use Web Sockets server instead of stdio
+  --host HOST           Bind to this address
+  --port PORT           Bind to this port
+  --check-parent-process
+                        Check whether parent process is still alive using
+                        os.kill(ppid, 0) and auto shut down language server
+                        process when parent process is not alive.Note that
+                        this may not work on a Windows machine.
+  --log-config LOG_CONFIG
+                        Path to a JSON file containing Python logging config.
+  --log-file LOG_FILE   Redirect logs to the given file instead of writing to
+                        stderr.Has no effect if used with --log-config.
+  -v, --verbose         Increase verbosity of log output, overrides log config
+                        file
+  -V, --version         show program's version number and exit
+#+end_example
+
 ** Python-mode
 
 #+begin_quote
