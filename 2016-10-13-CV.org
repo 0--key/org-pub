@@ -47,7 +47,8 @@ tags: [cv, info, about me, author]
   What should I know to be happy?
   #+end_quote
 
-So I need to find a trade off, a some hack which allows me /to be
+
+So, I need to find a trade off, a some hack which allows me /to be
  happy enough/ to live and prosper. And I choose to study [[https://bit.ly/3t5fN8][Data Science]]
  that by its definition ought to amplify my ability to sift put it in
  order and consume information. And, as an inevitable catalyser, [[http://bit.ly/1lk9C7p][model
