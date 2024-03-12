@@ -1,0 +1,874 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: How we think
+tagline: " we think"
+permalink: /generic/thought_dismantle.html
+categories: [brain, hemisphere, thought, thinking]
+tags: [Philosophy, Thinking, Iain McGilchrist]
+---
+#+END_EXPORT
+
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+
+The [[https://www.youtube.com/watch?v=AuQ4Hi7YdgU][source]]
+
+* Description
+
+A Revolution in Thought? How hemisphere theory helps us understand the
+metacrisis
+
+It is often remarked that though it may seem that we face numerous
+global crises of different kinds – environmental, social, political,
+cultural, economic, psychological, and so on – these crises are
+interrelated. The term ‘metacrisis’ has been invented to describe this
+predicament. However these crises are not merely adventitiously
+interrelated because each has an impact on and reinforces each of the
+others – though that may be true – but because they share roots at a
+deeper level in a way of thinking about ourselves and the world. What
+are these roots? Hemisphere theory, deeply grounded as it is in
+Darwinism and subsequent neuroscientific research, shows us that a
+new, far more complex, and more nuanced, appraisal of the bipartite
+brain – the product of the last 30 years of research – brings new
+insights into the human condition. There are vitally important clues
+to the understanding of human cognition and motivation embodied in the
+structure of the brain. These clues help explain why certain
+apparently unrelated phenomena tend to occur together, why outcomes
+that appear paradoxical are in reality predictable, and why many
+attempts to remedy them will prove inadequate since they are tackling
+only the manifestations of a problem that we need to address at its
+root – both in the psyche of the individual and that of a civilisation
+viewed as a whole. ‘Know thyself’ commanded the Delphian oracle: we
+need urgently to learn to do so, and this synergy of philosophy and
+neuroscience appears to offer the most promising way.
+
+Dr Iain McGilchrist is a Quondam Fellow of All Souls College, Oxford,
+an Associate Fellow of Green Templeton College, Oxford, a Fellow of
+the Royal College of Psychiatrists, a Fellow of the Royal Society of
+Arts, and former Consultant Psychiatrist and Clinical Director at the
+Bethlem Royal & Maudsley Hospital, London. He has been a Research
+Fellow in neuroimaging at Johns Hopkins Hospital, Baltimore and a
+Fellow of the Institute of Advanced Studies in Stellenbosch. He has
+published original articles and research papers in a wide range of
+publications on topics in literature, philosophy, medicine and
+psychiatry. He is the author of a number of books, but is best-known
+for The Master and his Emissary: The Divided Brain and the Making of
+the Western World (Yale 2009); and his book on neuroscience,
+epistemology and ontology, The Matter with Things: Our Brains, Our
+Delusions and the Unmaking of the World (Perspectiva 2021).
+
+* Transcript
+
+* Wetting your appetite
+
+Good evening.
+
+My name is Ian McGilchrist, I write books about neuroscience and
+philosophy. The best best known two are "The Master and His Emissary"
+and "The Matter With Things".
+
+Today I'm going to be talking about the /Hemisphere Theory/ as a way
+of understanding what we call /the meta-crisis/ - the various groups
+of problems of considerable severity that bedevil us these days. I
+believe that by understanding more about how the brain works we can
+see these disperate elements of the /so-called meta-crisis/ as
+coherent and in some sense as _inevitable consequences_ of our espousal
+of a very strange way of thinking about and looking at ourselves and
+the world to which we belong.
+
+* Introduction
+
+Good evening ladies and gentlemen!
+
+Welcome you join us of course for our fourth Darwin College lecture on
+the theme of Revolution. Over the last 3 weeks we've heard from a
+historian a geneticist and a political theorist, each delivering a
+rich but varied perspective on the historical political and biological
+revolutions. If you missed any of those they are of course on the
+Darwin College YouTube channel along with the lectures that have been
+delivered or many of them have been delivered over the last 39 years.
+
+
+This year we celebrate our 60th anniversary as the first postgraduate
+College here at the University of Cambridge. And in the leadup to that
+our fellowship have recently adopted a 10-year strategic plan for the
+college, which both recognizes that the world faces a broad spectrum of
+interrelated Global challenges. We're familiar with many of them:
+perhaps you might call them meta-crises as we will hear more about in
+due course. And our strategic plan also includes a commitment to act on
+and promote solutions to such Global challenges. And tonight's speaker
+may well help us on our way in that process.
+
+So it's a great pleasure to welcome Dr Ian McGilchrist to deliver his
+lecture Iain is a psychiatrist, a writer, a former Oxford literary
+scholar, and after reading English at the University of Oxford uh he
+trained as a medic. He's held numerous distinguished fellowships
+academic fellowships and written many scholarly papers and books which
+I'm sure you are familiar with at least some of you. In his own words
+he came late to medicine but since then he served as a consultant
+psychiatrist a Clinical Director at senior registrant and consultant
+level in hospitals here in the UK and as a senior research fellow in
+the United States.
+
+So both he served on the front line and as a scholar in medical
+science and practice. In an addition he has interests that span
+philosophy, psychology, literature, neuroscience and indeed many other
+disciplines which together coalesces for him around a deep knowledge,
+fascination and understanding in the workings of the brain.
+
+And I think he's therefore ideally placed to deliver this lecture on a
+revolution in thought /how hemispheric theory helps us to understand
+the meta-crisis/. Please join me in welcoming Iain to the stage.
+
+* Know thyself
+
+First of all I want to thank the master and fellows of Darwin college
+for the honor of asking me to give this lecture.
+
+Carved into the stone of the Ancient Temple of Apollo at Dephae was the
+injunction to know thyself:
+
+#+begin_quote
+ΓΝΩΘΙ ΣΑΥΤΟΝ (KNOW THYSELF),
+ΜΗΔΕΝ ΑΓΑΝ (NOTHING IN EXCESS),
+ΕΓΓΥΑ, ΠΑΡΑ ΔΑΤΗ (SURETY BRINGS RUIN)
+#+end_quote
+
+Without such knowledge we are tossed this way and that by forces we
+neither suspect nor understand. Knowing ourselves helps explain our
+predicament, and doing so is greatly aided by understanding an aspect
+of the way in which the brain constructs the world.
+
+I believe we've adopted a limited vision of a very particular type,
+and precisely because it is limited /we cannot see that it is
+limited/.
+
+We no longer seem to recognize what it is, we do not know
+what our way of being in the world is pushing out of our lives and out
+of our world. To understand what is going on we need a bread of view
+that is increasingly rare. It is the possibility of this that I intend
+to explore here today.
+
+Let me ask you this: do you think there is a connection between
+realism the appreciation of uniqueness a capacity for understanding
+melody and harmony, an aptitude for appreciating time, a sense of
+humor, the ability to read body language, to sustain attention and the
+flight fight mode or, on the other hand, - between a talent for
+manipulation, a giveness to literalism, to theory at the expense of
+experience, unreasonable optimism and a preoccupation with detail as
+well as a loss of a sense of the living body with in its place a focus
+on body parts. _Perhaps not_.
+
+Yet I assure you there is such a connection in either case, - it is
+rooted deep in us and it is quite coherent once one comes to
+understand what underlies the pattern. My reason for starting here is
+to introduce the body of work generated over three decades and
+published in two long books:
+
+/"The Master and His Emissary *::* The Divided Brain and the Making of
+the Western World"/ in 2009 and
+
+/"The Matter with Things *::* Our Brains, Our Delusions, and the
+Unmaking of the World/ in 2021.
+
+In these books I examine critically and in depth the matter of
+hemisphere difference and its important meaning for our lives. As you
+can see from the deliberately random selection of respectively right
+and left hemisphere Tendencies above the distinction is not the simple
+one that many might have heard and which should be unceremoniously
+buried. It's not at all the case that the left hemisphere is
+unemotional and dependable, whereas the right hemisphere is flighty
+and fanciful, if anything the contrary is the case.
+
+But that a question has been wrongly answered doesn't invalidate the
+question, but rather should in my opinion invite further exploration.
+Consider these facts the brain is an organ the power of which consists
+solely in making connections is massively divided down the
+middle. Why?
+
+
+Moreover it is asymmetrical in almost everything that can be measured
+at many levels in both its structure and function. Why?
+
+Not only that but the band of fibers that connects the hemisphere at
+their base the Corpus Colossum is /getting proportionately _smaller
+not larger_ over Evolution/ and is in any case to a large extent
+inhibitory in function. Again why could it be that two aspects of
+brain function are being kept apart?
+
+Unfortunately I cannot spend time on the evidence here for one thing
+there is a great deal of it and it requires to be examined at length.
+It is laid out for that purpose in the two long books I've mentioned.
+I'm going to go straight to a characterization of some of the core
+findings, - so please forgive me if these are lacking in finesse to some
+extent that is inevitable for present purposes as I'm sure you will
+understand.
+
+In a nutshell each hemisphere has evolved for classical Darwinian
+reasons to pay a /different kind of attention/ to the world. When I
+saw this I have to admit that the full import of the distinction did
+not immediately dawn on me because I'd been trained in the cognitive
+science paradigm that saw attention as simply another cognitive
+function. But the nature of the attention we pay is of critical
+importance - it creates and molds the only world we can know.
+
+#+begin_quote
+Indeed it is a matter of a disposing of our consciousness towards the
+world in a particular way.
+#+end_quote
+
+The left hemisphere has evolved to pay narrow beam attention focused
+on on the detail that we already know and desire and are intent on
+grabbing and getting whether it be something to eat or to use in some
+other way. In a word: _the left hemisphere exists in the service of
+manipulation_.
+
+The right hemisphere meanwhile is on the lookout for
+everything else that's going on while we're manipulating: for mates
+conspecifics, offsprings and predators so as not to be eaten while
+eating. Its attention is:
+
+ - broad;
+ - sustained;
+ - coherent;
+ - vigilant and
+ - uncommitted
+
+   as to what it may find - _the exact opposite_ of that of the
+left hemisphere.
+
+
+In brief the right hemisphere is in the service of understanding the
+contextual whole which is nothing less than the world and context
+changes everything the difference then is not as used to be supposed
+to do with what each hemisphere does as though it were some sort of a
+machine so much as the manner in which it does it as though it were
+part of a person the hemispheric difference in attention is beyond
+dispute indeed it is universally attested and since the nature of
+attention also indisputably changes what it is that comes to our
+attention such a difference logically cannot but lead to two different
+phenomenological worlds hence my belief that attention is a moral act
+it helps form both us and the world we come to know so what are these
+two worlds like very briefly if crudely these worlds could be
+characterized like this in the case of the left hemisphere the world
+is simplified in the service of manipulation it is made of isolated
+static things things moreover that are already known familiar
+predetermined and fixed they're fragments that are importantly devoid
+of context disembodied and meaningless abstract generic quantifiable
+fungible mechanical ultimately bloodless and lifeless this is indeed
+not so much a world as a representation of a world which means a world
+that's actually no longer present but reconstructed after the fact and
+it is literally two-dimensional schematic and theoretical not in fact
+a world at all more like a map nothing wrong with a map of course
+unless you mistake it for the world and here the future is a fantasy
+that remains under our control the left hemisphere is unreasonably
+optimistic and fails to see the dangers that loom in the case of the
+right Hemisphere by contrast is a world of flowing processes not
+isolated things one where nothing is simply fixed entirely certain
+exhaustively known or fully predictable but always changing and
+ultimately interconnected with everything else where context is
+everything where what exists are holes of which what we call the parts
+are an artifact of our way of attending where what really matters
+matters is implicit a world of uniqueness one where quality is more
+important than quantity a world that is essentially animate here the
+future is a product of realism not denial this is a world that is
+fully present rich and complex a world of experience which calls for
+understanding not the map all but the world that is mapped the
+emotional tambra here is more cautious and in general more realistic
+we need both of these worlds to work together but also independently
+hence the need for connection and separation naturally we are not
+aware of this because these worlds are combined at a level below our
+awareness we become aware only after an accident of nature such as a
+stroke tumor or injury or after commissurotomy the so-called split
+brain operation or if one hemisphere at a time is experimentally
+suppressed then they may become suddenly vividly present to us yet
+because these two worlds have mutually incompatible properties when we
+come to reflect self-consciously and to rationalize about what we find
+we're forced by the requirement for consistency to choose between the
+pictures of the world they offer this is why as aan Whitehead one of
+my intellectual Heroes observed a culture is in its finest flower
+before it begins to analyze itself once our lives become very largely
+mediated by self-reflexive language and discourse as in our postmodern
+world they are the explicit stands forward and the implicit retires
+yet almost everything that really matters to us the beauty of nature
+poetry music art narrative drama myth ritual sex love the sense of the
+Sacred must remain implicit if we're not to destroy their nature the
+attempt to make the implicit explicit radically Alters its nature we
+can no longer rely on the wisdom that comes from these all important
+but hidden sources from closeness to the long tradition of a society
+to Nature and to the sacred to sophisticate our understanding in fact
+we see these not as Irreplaceable guides to truths deeper than those
+that science can Encompass but as lies possibly entertaining lies but
+lies nonetheless we begin to see only the self-created self-referring
+world according to the left hemisphere we go for the machine model
+reductive materialism and the consequences are all around us
+unfortunately the two hemispheres are not equally veridical in terms
+of our ability to apprehend take hold of and use the world the left
+hemisphere is superior but in terms of the ability to comprehend the
+world the right hemisphere is Superior in each of what one might call
+the portals of understanding attention perception judgment emotional
+and social intelligence cognitive intelligence that is IQ and
+creativity the right hemisphere is so much super Superior that the
+left hemisphere on its own has been repeatedly described as frankly
+delusional this is not a rhetorical expression denial of the facts and
+delusional beliefs are far commoner in association with damage to the
+right Hemisphere and consequently dependence on the left hemisphere
+than the reverse on its own the left hemisphere confabulates makes up
+stories so to fit with its beliefs it will frankly insist that a
+paralyzed limb is unaffected or if challenged deny that the offending
+appendage belongs to the subject at all belongs to you Doctor unlike
+the right hemisphere which sees more than one angle and has for this
+reason been called by vs ramachandran the Devil's Advocate the left
+hemisphere never doubts that it is right it is never wrong and never
+at fault someone else is always to blame furthermore in what I take to
+be the four important onward paths to truth science reason intuition
+and Imagination though both hemispheres contribute The crucial part in
+each case including in science and reason is played by the right
+hemisphere not the left our predicament is that we now live in a world
+where the understand the understanding of which is largely limited to
+that of the inferior left hemisphere some signs of this include our
+inability to see the broader picture both in space and in time the way
+in which wisdom has been lost understanding reduced to Mere knowledge
+a knowledge replaced by information token representations the loss of
+the concepts of skill and judgment which are the products of
+experience the divorce of mind and matter resulting in a strong
+tendency to simultaneous abstraction and the debasement of matter to
+Mere lump and matter there our exploitation an exponential growth of
+bureaucracy and administration everywhere the proceduralization of
+Life the reduction of justce Justice to Mere equality a loss of the
+sense of the uniqueness of all things the supplanting of quality by
+quantity the abandonment of nuance in favor of simplistic either or
+positions the loss of reasonableness which is replaced by
+rationalization a complete disregard for common sense the design of
+systems not for humans but to maximize utility a growth of paranoia
+and per vasive mistrust for if all is not under its control the left
+hemisphere becomes anxious and protects its anxiety outwards onto
+others nonetheless we play the passive victim and abjure
+responsibility for our own lives in addition I might point to the rise
+of anger and aggression in the public sphere the destruction of social
+cohesion and its replacement by Angry Waring factions like almost
+everything that you to be said about hemisphere differences the idea
+that the left hemisphere is unemotional is wrong the most highly
+lateralized emotion is anger and guess what it lateralizes to the left
+hemisphere and there are more indications but for today's purposes
+I'll stop here in the second part of the master and his Emissary I
+Trac the main turning points in the history of ideas in the west and
+concluded that three times we have seen enacted a certain pattern
+first there is a sudden efflorescence of everything that comes from
+the proper working together of the two hemispheres in harmony that
+then follows a stable period for a few hundred years at most and soon
+a decline after which the civilization eventually crumbles under its
+own weight I Trac this pattern beginning in the Greek world around the
+6th Century BC in the Roman world around the end of the Republic and
+the beginning of the empire and in the modern world with the
+Renaissance in each case it's apparent that the vitality and Harmony
+of a flourishing culture is lost as in due course it overreaches
+itself becomes less creative more and more sclerotic unimaginative
+over administered over hierarchical and power hungry there is a
+cooning of values where goodness Beauty and Truth had once been The
+Guiding value the need to control the value of power hold sway I'm
+sometimes asked why if the right hemisphere is more intelligent and by
+a long way more insightful than the left this progression is always
+leftwards it's a good question in brief there are a handful of reasons
+first and most obviously the left hemisphere is more is designed to
+Aid Us in grabbing stuff it controls the right hand with which most of
+us do the grabbing as such it is seductive not to say addictive second
+the left hemisphere view sees a very simplified schema of the world
+and offers simple answers to our questions it's mod of thinking prizes
+consistency above all and offers the same mechanistic model to explain
+everything that exists when reductionist thinking encounters a problem
+in reconciling apparent irreconcilables for example matter and
+Consciousness it simply denies that one element or the other exists
+that's very convenient third the left hemisphere's worldview is easier
+to articulate though language is shared between hemispheres speech is
+almost always confined to the left the right hemisphere has literally
+no voice and the map isofacto vastly simpler than the complex terrain
+that is mapped almost everything that really m matters cannot be found
+there or in the banality of discursive Pros fourth importantly there
+is or should be always an appeal from a theory back to the empirical
+evidence if you like the left hemisphere has a theoretical model the
+right hemisphere looks out of the window to see if the model
+corresponds with experience since the Industrial Revolution and
+particularly in the last 50 years we have created a world around us
+which in contrast to the Natural World reflects the left hemisphere's
+properties and its Vision what we see around us now looking out of the
+metaphorical window is rectilinear man-made utilitarian each thing
+ripped from the context in which it alone has meaning and for many the
+two-dimensional representations provided by TV screens and computers
+have come largely to supplant direct face-to-face experience of
+three-dimensional life in all its complexity fifth built into the
+relationship between the hemispheres is that they have a different
+take on everything including their own relationship essentially the
+right hemisphere tends to ground experience it knows that the left
+hemisphere has a valuable role though the left hemisphere then works
+on what it's offer to clarify unpack and generally render the implicit
+explicit and the right hemisphere finally re integrates what the left
+hemisphere's produce with its own understanding the explicit once more
+receding to produce a new now enriched home the left hemisphere's
+contribution then is valuable but must come at an intermediate stage
+problems arise when this is treated as it now often is as the end
+stage analysis is a valuable tool but breaking things down must be
+followed by an attempt to understand the whole once more unfortunately
+the left hemisphere is is unaware of what it is missing he doesn't
+know why the right hemisphere is important it cannot see the gestal
+the ultimately indivisible whole therefore it thinks it can go It
+Alone six a culture that exemplifies the qualities of the left
+hemisphere's World attracts to itself in positions of influence and
+Authority those whose natural Outlook is similar especially in the
+areas of science technology and administration which have an undue
+importance in shaping contemporary life they then make us more like
+themselves My worry is not that machines will become like people an
+impossibility but that people are already becoming more like machines
+finally I've already referred to the problem that a civilization that
+is increasingly cut off from its intuitive life relies more heavily on
+Exchange of explicit ideas in the public forum here though Tru truth
+is manifestly complicated and many lad an awareness of inherent
+ambiguities and a capacity for seeing both sides of a question what
+happened to that is no longer considered a strength the right
+hemisphere view is multifaceted and also already takes into account
+the left hemisphere's point of view this virtue makes it immediately
+vulnerable to the charge of inconsistency and it is therefore liable
+to be dismissed I believe it is the left hemispheric view of the world
+intellectually Dune and morally bankrupt as it is that has resulted in
+what has been called The Meta crisis not just the odd crisis here and
+there but the despoliation of the natural world the decline of species
+on a colossal scale the destabilization of the climate the destruction
+of the way of life of indigenous people the fragmentation and
+polarization of a once civiliz ized Society with escalating not
+diminishing resentments on all sides and escalating not diminishing
+gap between rich and poor a surge in mental illness not the promised
+increase in happiness a proliferation of laws but a rise in crime the
+abandonment of civil discourse a betrayal of standards in our major
+institutions government the BBC the police our h hospitals schools and
+universities once rightly admired all over the world which have all
+become vastly overweighted with bureaucracy inflexible and obsessed
+with enforcement of a world view that is in flat contradiction to
+reality and isn't their job to enforce and the looming manace of
+totalitarian control through AI these aspects of the so-called metac
+crisis have a multitude of proximal causes economic political social
+psychological technological and so on but beneath and beyond that each
+manifests within those Realms aspects of the left hemisphere's
+dysfunctional view of the world the very thing that originates the
+problem also militates against seeing the problem seeing the wider
+picture and necessarily Prelude to understanding is now increasingly
+disfavored and as a consequence the crises I've referred to are often
+seen as isolated pieces of bad luck but they're not they could have
+been and were by some predicted the metac crisis is the predictable
+outcome of a complete failure to understand what a human being is what
+the world is and what the one has to do with the other and all this is
+the sort of thing the right hemisphere is far better equipped to
+understand than the left the rightful Master the right hemisphere has
+been subjugated by his Emissary or servant the left in an entirely
+predictable parallel we have become enslaved by the machine that
+should be our servant as so many have predicted since the time of
+Gerta we cannot say we were not warned even physics now teaches us
+that the mechanical model of the universe is mistaken but because of
+our success in making machines we still imagine that the machine is
+the best model for understanding everything we come across we
+ourselves our brains and Minds our society and the living world are
+now supposed to be explained by the metaphor of the machine yet only
+the tiniest handful of things in the entire known universe are at all
+like a machine namely the machines we made in the last few hundred
+years machines unlike life and all complex systems whether animate or
+inanimate are linear and sequential are put together part by part from
+the ground up and can be switched on and off at will their default
+status is stasis not flow they are not resonantly embroiled with their
+environment they have precise boundaries their parts do not change
+structure and function as the whole changes and evolves not least
+because in the machine the whole does not evolve and they are
+utilitarian constructs in service of the power of their maker none of
+this applies to life nor does it to anything else in the universe the
+brilliant mathematician and biophysicist Robert Rosen in his book life
+itself demonstrates just how unlike machines organisms are he further
+argues that the best way to understand all naturally occurring systems
+which are never merely complicated but complex and therefore never
+fully predictable is as organisms whether we choose to see them as
+alive or not and that's before one gets to consider the neglect of our
+emotional moral and spiritual nature which is at the core of Being
+Human we seem to have been seduced into thinking we understand
+everything and what's more can Master it and mold it like a machine so
+as to provide a future that will benefit mankind that this is a malign
+fantasy becomes pler with every passing day those with grand schemes
+to improve Humanity have caused misery on an almost unimaginable scale
+by their narcissism cruelty and willful blindness in Psychology
+there's something called the Dunning Krueger effect which tells us
+that the less people know the more they think they know it's hardly
+rocket science I admit but it is worth bearing in mind instead of
+seeing all things as processes running organically from the past to
+the Future across time and spreading out across the world through
+space like water finding its way across a landscape we see ourselves
+and the world as composed of static slices or points Here and Now
+compartmentalized in a way that conforms to the modus operandi of of
+the left hemisphere a world of meaningless bits we owe nothing to and
+can learn nothing from history or so we believe we owe nothing to and
+Lead need leave nothing to posterity we turn a blind eye to the
+inevitable impact of our rapacity on more humble and more stable ways
+of life that have stood the test of time better than ours we neglect
+the importance of context we believe we are right and that one size
+fits all justifying the imposition of vast Global bureaucratic
+structures not to say Wars so as to impose our thinking on cultures
+far different from our own equally we arrogantly critique our
+ancestors for not sharing the idiosyncratic view of the world we've
+generated in the last 20 years and which we believe must now be forced
+on all whatever their reasonable misgivings and we treat people people
+not as unique living beings but as exemplars of a category one aspect
+of this is the virtual machine known as bureaucracy famously har arand
+referred to the banality of evil one of the most disquieting aspects
+of the Nazi regime was its chilling bureaucracy mind-numbing evil was
+committed by people who were for the most part not conventional
+monsters but were simply following the ordained procedures real people
+and real life had been almost wholly obscured by pieces of paper and
+the recording of numbers after the war Theodor adoro saw developing
+around him what he called theal the administered World in which
+everything was controlled proceduralized and devitalized inevitably at
+that point in history this could not be separated from the evil that
+was narcisism but adoro can see that it was much more than that
+narcism was at least as much a symptom of a new mentality as its cause
+a mentality of total control that had taken root in the form of a
+self- legitimizing bureaucracy the roots of which lay in the past he
+quoted the mid 19th century orrian writer Ferdinand ker life no longer
+lives who does not recognize with a chill this diagnosis of the modern
+human predicament and adoro points out that it is not even the Triumph
+of The Logical since Administration serves to rationalize the
+irrational which explains why its workings and outcomes are often
+deeply unreasonable and deeply damaging the cancerous growth of more
+and more elaborate and more and more expensive bureaucracies in the
+world I particularly know hospitals and universities but the same
+could be said of government schools and the police is an inevitable
+and dangerous consequence of the world view we've adopted the other if
+possible still more dangerous expansion is that of AI bureaucracy and
+ai go hand in hand enlarging the Empire of the left hemisphere and
+making possible if not inevitable in the near future almost total
+control of the populace by any regime however malignant as we broaden
+our view it becomes apparent how much The Meta crisis can best be seen
+as a war on nature and a war on life this my friends is the reality we
+face why on Earth should such a suicidal War come about there are
+three reasons that spring to mind one is that the left hemisphere
+which makes that's what Benjamin Franklin called The Tool making
+animal thinks like a machine and has therefore exported machine like
+thinking into our environment everywhere nature and life are therefore
+ultimately an impediment the second is that the left hemisphere really
+only understands its own representations what it itself has made and
+given to itself nature and life are therefore ultimately
+incomprehensible and the third and most important is the resentfulness
+of a mind that believes it understands and can and what's more should
+control all its surveys here nature and life are a rebuff to its power
+a rebuff which cannot be tolerated the German American Artist George
+gross produced a shockingly vivid expression of this mindset as he
+contemplated Europe before the second world war entitled I shall
+extinguish everything around me that restricts me from being the
+master the Contemporary fantasy that we can be whatever we want and do
+whatever we want is a cruel travesty of the truth this was never true
+and never could be it is the product of a culture of narcissistic
+fragmentation ironically we've invented new impediments to its
+fulfillment we now live in a world in which you cannot speak or act
+and until you've put each word before a humorous in a tribunal which
+is ready to say no to everything you want to say or do I'm of course a
+boring old stick but I feel so sorry for young people now whatever
+happened to the spontaneous act the sense of J to the movement of the
+spirit out of sheer exaltation even an Impulse to visit a gallery soon
+runs into the need to have booked weeks ahead ahead using an app and
+that's just getting into a gallery what about negotiating the
+numberless hazards of a date life no longer lives wisdom skill
+judgment intuition and even understanding all to be gained only from a
+life well- lived have been sidelined in favor of machine-like
+algorithms that stifle true thought the assault on life continues as
+far as a mechanic as far as a mechanical system is concerned human
+beings must be dispensable and wholly interchangeable in fact despite
+the rhetoric true diversity is not to be tolerated imaginative
+eccentrics lose their jobs humans must have no allegiances which might
+conflict with their duty to fit into their slot thus it is that we've
+seen concerted attacks on the idea that there are any differences
+between men and women attempts to brainwash children attacks on family
+and K ship with their rightful claims on loyalty on the professions
+with their expertise which must be replaced by blind rule following
+and their codes of Ethics which a machine cannot understand and which
+is therefore replaced by the pretense that teachers doctors and
+Priests are just providing a service to Consumers rather than
+embodying what are ultimately sacred duties indeed that anything
+should be sacred it isn't the front to the power hungry left
+hemisphere dominated mind belief in a Divine Cosmos is seen as
+standing in the way of whatever Society the machine hurtles us towards
+Milton saw it all Lucifer the bright cannot bear the imputation of
+anything higher than he and the Very word Society reminds us that no
+properly functioning Society is mechanistic so we see social cohesion
+dissipate and Living Traditions erased in their place fragmentation
+the stoking of resentment and a rise of aggression this in turn is
+deemed to require what the toille pressingly described as a network of
+small complicated rules that he fora would come to strangle life
+itself once the Integrity founded in an intuitive moral sense is lost
+a society becomes like a building that has lost its integrity and
+needs to be shored up with ever more scaffolding now there has to be a
+law for everything yet crime escalates why when we see how devastating
+this process can be do we carry on promoting it the physicist David
+bone reflected on a phenomenon he called sustained incoherence
+characteristic of what he called thought the thought process we now
+know to be typical of the left hemisphere what he meant was that on
+seeing incoherence it would be intelligent to stop look for the cause
+and change Tac but he noticed there was a reflex defensiveness in
+thought that leads instead to obstinate continuation in other words
+the left hemisphere above all else does not want to hear why it might
+have got things wrong I see widespread evidence of this sustained
+incoherence in corporations governments Health Systems and education
+everywhere that management culture hold sway that when things go wrong
+it's never that we've been traveling in the wrong direction or have
+gone too far in what may once have been the right direction it's
+always that we've not gone far enough this links to the Dunning
+Krueger effect the less you know the smarter you think you are but a
+further finding by Dunning and colleagues reinforces the relationship
+with the left hemisphere mindset because of its preference of simple
+linear algorithms and procedures that it believes logically must lead
+to a certain outcome those who've bought into such procedures think
+they must be in the right even when the outcome ought to compel them
+to the opposite conclusion psychological experiments show that once
+they're committed to their theory of how things work drawing attention
+to its obvious failure in the real world leads not to a flicker of
+Doubt but to arise in confidence and redoubled efforts along the same
+line I'm sure we can all think of many such dead ends in the world
+around us but I want to refer to just one in the time available to me
+the squandering of trust this has the distinction of being at the same
+time supremely important and almost completely ignored truth and Trust
+Words which come from the same root naturally go together one cannot
+have trust in a society where no one is speaking the truth and one
+cannot be true to a society where there is no trust as Confucius told
+his disciple Su Kong for a stable Society a ruler needs three things
+weapons food and Trust if he cannot hold all three he should forgo
+weapons first and food next for quote without trust we cannot stand
+trust costs nothing but the time to build it once built it is a
+fantastically efficient way for any any human Enterprise particularly
+a society to operate but it's easy to lose there's a Dutch proverb
+trust arrives on foot but departs on Horseback the massive complex of
+administration and AI do nothing to promote a society of trust but
+actively undermine whatever is left of it at every turn being
+trustworthy is no small thing and its importance needs to be
+inculcated at an early age and then nourished by both individual and
+Society no one will believe in us if we cannot believe in ourselves we
+need to start believing in ourselves again and deserving to be
+believed in once people lose pride in being as good as their word
+doing the best job they can and expecting much of themselves rules
+have to be enforced from without and a penal code substitutes for the
+moral code it helped to destroy mediocrity quickly displaces
+Excellence boredom replaces Vitality this is not not only vastly less
+effective but hugely costly in terms of administration and litigation
+not to mention time and morale and leads to a wicked problem once
+trust has been lost it's not easy to remove the scaffolding of rules
+and procedures which have come to take its place in the world of
+capital older Europe European business practices based on honor have
+been grossly undermined by a smarter Paradigm imported from America in
+the pursuit of short-term gain by defectors this was very shortsighted
+trust has also been lost in the world of schools and universities
+hospitals the police and the Army all of which now have massive
+recruitment problems because the perception is that lives of service
+are no longer respected or properly rewarded that the necess necessary
+creativity Independence self-reliance and initiative required by a
+skillful professional will be stifled and that the best candidates
+will not be supported and promoted because of a patronizing agenda
+based on the ticking of boxes and militating against Excellence like
+civilizations before us which drifted further and further to the
+Outlook of the left hemisphere we would appear to be engaged in
+committing suicide intellectual and moral if not indeed literal for I
+fear that the Western world may longer have the will or the skill to
+defend itself against authoritarian enemies that we cannot just wish
+away because in our Theory they don't figure we seem sometimes beused
+at how so often a path that looks promising leads us somewhere almost
+opposite to where we intend it but seeing the picture picture in the
+round we start to see why the outcome we wish for deluded eluded us we
+feel we are beset by paradoxes in the M matter with things I devote a
+chapter to logical Paradox and explore around 30 of the best known
+paradoxes that have intrigued and largely baffled Phil philosophers
+historically in every case I explain why the apparent Paradox can be
+seen as stemming from the different dispositions towards the world
+offered by the right and left hemispheres this doesn't mean however
+that each take is equally valid in Zeno's well-known Paradox of
+Achilles and the Tortoise although he purports to prove that Achilles
+can never catch up with never mind overtake the tortoise we know
+perfectly well that in real life he can overtake the toris in a couple
+of strides as a society we pursue happiness and we become measurably
+less happy over time studies of rates of psychopath theology in
+adolescence relying on serial contemporaneous assessments using the
+same objective instrument and meeting stringent standards over the
+period from 1938 to 2007 showed that there were between five and eight
+times not five or 8% more but five between five and eight times as
+many students that met a common cut off for Psychopathology in the
+latest cohort compared with the earliest and this may be an
+underestimate because many recent subjects were already stabilized on
+an anti-depressant a possibility that didn't exist for the earliest
+cohorts rates of suicide which have always been about three times
+higher in men are rising most steeply in young women we privilege
+autonomy and end up Bound by rules to which we never ascented and more
+spied on than any people since the beginning of time we pursue leisure
+through technology and discover that the average working day is longer
+than ever and that we have less time than we had before we also find
+that the technology places an enormous burden on our time alienates us
+from Human intercourse and exposes us to risk from organized criminals
+and mind control by disorganized criminals such as governments the
+means to our ends are ever more available while we have less sense of
+what our end should be or whether this purpose to anything at all
+economists carefully model and monitor the financial markets in order
+to avoid any future crash they promptly crash we're so eager that all
+scientific research results in positive findings that it has become
+progressively less adventurous and more predictable and therefore
+discovers less and less um that is truly significant Advan in
+scientific thinking we grossly misconceive the nature of studying the
+humanities as utilitarian in some way in order to get value from money
+and thus render it pointless and in this form certainly a waste of
+resource we improve education by dictating curricular and focusing on
+exam results to the point where freeth thinking arguably an
+overarching goal of true education is discouraged in our universities
+many students are in any case so frightened that the truth might turn
+out not to conform to their theoretical model that they demand to be
+protected from disc russan that threaten to examine the model
+critically and their teachers who should know better in a serious
+dereliction of Duty collude we over sanitize and cause vulnerability
+to infection we overuse antibiotics leading to Super bacteria that no
+antibiotic can kill we protect children in such a way that they cannot
+cope with let alone relish uncertainty or risk and are rendered
+vulnerable the left hemisphere's motivation is control and its means
+of achieving it alarmingly linear as though it could only see one of
+the arrows in a vastly complex network of interactions at any one time
+which is all that it can if these paradoxes surprise us it's because
+we've not thought far enough ahead in time or broadly enough in space
+we take a small part of the complex for the whole the awareness coming
+from the right hemisphere can Embrace that of the left but not the
+other way around when the hemispheres are working together under the
+unifying influence of the right hemisphere the effect is not purely
+additive but transformative however since the left hemisphere not only
+takes in less but understands what it does take in that well our
+almost exclusive Reliance on it the servant in contemporary Western
+culture is a problem of some considerable proportions the three things
+on which human flourishing and well-being most depend are these
+belonging to a cohesive social group which one can trust and with
+which one can share one's life closeness to the natural world and
+communion with a Divine realm however conceived this is not just my
+opinion but borne out by a vast and ever increasing body of research
+but none of this Accords with our current value power it's hardly a
+surprise then when we see that material affluence does not make us
+happy if accompanied by spiritual poverty let me finally consider the
+influence of left hemisphere capture on the realm of value for over
+2,000 years in the platonic and later the Christian tradition of
+Western thought human life was seen as orientated towards three great
+values goodness Beauty and Truth each of them in turn seen as a
+manifestation of an aspect of the Sacred during my my lifetime I've
+seen each of these important values along with the sacred repudiated
+and reviled a model that favors the machine over the human being the
+inanimate over the living is one that is corrosive of all that is
+beautiful good and true and has no place in it for the sacred the
+early 20th century philosopher Max sha was much concerned with
+questions of value when he died in 1928 haiger who gave his funeral
+oration described him as the most potent force in the world of
+philosophy at the time Shayla thought there was a hierarchy of values
+which um with with those of pleasure and utility the values of
+utilitarianism in the left hemisphere at the lowest level and Rising
+by stages to that of the holy or sacred which he considered the
+highest a value which I suggest is incomprehensive ible to the left
+hemisphere in between were first the leens Vera or values of life such
+as courage magnanimity nobility loyalty and humility and then the gist
+the values of mind or Spirit such as Beauty goodness and Truth which I
+suggest are better understood by the right hemisphere the left
+hemisphere's res on De being power and control it naturally puts
+values of utility and heathenism that those of the lowest rank in
+shaya's pyramid first I may be wrong but it's my distinct impression
+that there has been a decline in Courage magnanimity nobility loyalty
+and humility in our society indeed in all behavior that carried its
+costs up front rather than concealing its sting in the tail speaking
+the truth takes courage and it would seem that those in our public
+institutions would rather conform than confr front untruth and along
+with the loss of courage to speak the truth there's been an undeniable
+withdrawal from the beautiful and the sacred all of this combines to
+reinforce a loss of sense of purpose and Direction hence the crisis of
+meaning that is by now a common place that we Face Shaya calls the
+human being ends amand the being that is capable of love in its place
+we have homoeconomicus in the world we live in reductionist
+materialism inverts shaya's perception and in a thoroughly cynical
+assessment of what it means to be human we have exalted the individual
+ego over all else and it has rendered many virtues including but not
+confined to Beauty goodness and Truth obsolete these values I believe
+far from being human inventions are ontological Primitives for they
+are aspects of the ground of being our capacity to respond to them and
+draw them ever further into being is our privilege and indeed I argue
+our purpose that is why there is life at all we can of course also
+ignore them devalue them and cause them to wither away at what cost to
+us personally and to the whole of the Living World we can only surmise
+the world we are creating is one that computes as far as the left
+hemisphere is concerned but is grossly impoverished demoralized and
+lacking in meaning one that is in some more fit for a computer than
+for a human being I'm often asked what we need to do about this
+predicament this is understandable of course but I think that any list
+of bullet points though no doubt needed at one level risks missing the
+point almost entirely at another for it's not that we took the wrong
+decision here or there but that we've completely lost Direction
+because of the value we've come to espouse as I get nearer to the end
+of life I'm more and more convinced that not only is being receptive
+to the summons offered by values the key to a fulfilling life the key
+to a flourishing society and a flourishing Natural World At Large but
+every bit is important as survival itself what I mean is this even if
+we were by a massive effort and a massive stroke of Fortune enabled to
+prevent any further loss of the world's Forest reverse the pollution
+of the oceans reverse the decline of species and similarly tackle the
+other aspects of the metac crisis I have mentioned this would be in
+vain if it simply meant that we did not change our hearts and Minds
+for we would still be the same hubristic entitled resentful power
+hungry animals that we have become and this like the rest has
+everything to do with the dominance of the left hemisphere's mode of
+being we can be far better than that so what are we to do I could list
+the bullet points the left hemisphere would like me to which along the
+way would inevitably refer to reforming the educational system to a
+Revival of the humanities a serious reduction in bureaucracy to the
+cultivation of meditative or spiritual practices to abstinence from
+social media keeping machines in the background where they can be
+helpful but away from intercourse with humans and much more that we
+all know might help and of course it goes without saying that we must
+tirelessly seek to stop and where possible reverse damage to Nature I
+will not say the environment since the term expresses the separation
+from nature that is part of the problem but these will not themselves
+heal a matter of psyche or Soul there is no quick fix for such
+problems alas as a psychiatrist I would often know after listening to
+a patient for an hour or more on their first visit what it was they
+needed to do and when I was inexperienced I used to tell them that was
+a mistake until a person truly sees for him or herself from the inside
+what it is they need to do they will not do it and once they do see it
+they will not need to be told the work is to get them to that place
+the good news is that we can begin healing the work each one of us
+today people say what can I do the world is so huge and I'm so small
+and sometimes they add and our planet is so small in an
+incomprehensibly vast Universe there's a lot I could say about that
+but this is to think in the left hemispheres terms measuring and
+quantifying when the lover says my love is as deep as the ocean and as
+wide as the skies how large or small is that all the important changes
+happen from in here not out there it's been said that if we could
+change radically the hearts and minds of only 3% of people we will be
+able to change and bring about the changes we need to see in world
+around us so my recommendations might be quite simple Begin by
+cultivating a sense of awe and wonder rather than clever clever
+knowingness about the extraordinary complex and beautiful Cosmos which
+it a pure gift that we have been given a life in think about what
+we're to do with it and in order to do that well to to have compassion
+to others and to all the living world not a sense of aggressive
+embattlement against forces that we quite probably misunderstand and
+to begin to adopt a sense of the little that we can know in other
+words a kind of not willing ignorance but the beginnings of true
+knowing which is when we recognize how little that we know that is the
+first step towards true knowledge for this to happen we need to
+understand ourselves and new G sayon know thyself we need every
+Insight we can get into what we're doing to ourselves to life itself
+and to our in expressively beautiful and complex world I hope I may
+have here offered one such Insight however small the work is great but
+we are capable of greater things than we know thank [Applause] you
+thank you very much thank you very much thank you thank you so much
+Ian for what for me at least was an extraordinar thoughtful
+philosophical analytical insightful and and knowledge and
+practice-based uh lecture uh simp simply wonderful clearly um drawing
+without doubt on what must be an enormous brain uh and I suspect a
+very large right hemisphere but thank you really that was magnificent
+I have learned a great deal I hope uh about how we might really
+address the metac crisis that you have so clearly articulated um uh
+I've also so rather nervous about carrying the title master I have to
+say so we might do something about that but no thank you that was
+wonderful please do come back next week um uh we have sorry I can't
+yes well I hope the audience can uh because we move from what goes on
+inside our head to what goes on out there in space our next lecture is
+the Swiss astronomer a Nobel Prize winner at DDA quellos uh who is
+going to be talking about the EXO Planet Revolution but please once
+again join me with an enormous thank you to
