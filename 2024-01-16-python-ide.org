@@ -14,18 +14,25 @@ tags: [efficiency, software development]
 #+TOC: headlines 2
 * Intro
 
-Nowadays interactive development environment (IDE) are a widespread
-solution for software development productivity and effectiveness
-issues resolving. Naturally the purpose of its usage is to alleviate
-the headache of professionals, facilitate the speed of software
-development, reduce the number of silly mistakes and stupid errors. Of
-course, it is not a silver bullet - professional should study how to
-use these powerful tools /properly/, and it itself requires time and
-effort to accomplish. After these unavoidable preparations most of
-tedious, knotty and complex tasks become easy&peasy to solve, and
-engineer or developer just happily forget his previous bloody toil
-under the code writing and, most significant - his fruitless attempts
-to extend code's functionality, debug or refactor it.
+Nowadays interactive development environment (IDE) are an ubiquitous
+solution with main objective to push forward productivity and
+effectiveness at all stages of software development. Actually the
+purpose of its creation and usage is to alleviate the headache of
+professionals by reducing the number of silly mistakes and stupid
+errors.
+
+#+begin_quote
+The metaphor about a carpenter and an axe.
+#+end_quote
+
+Of course, it is not a silver bullet - professional should study how
+to use these powerful tools /properly/, and it itself requires a lot
+of precious time and effort to accomplish. After these unavoidable
+preparations most of tedious, knotty and complex tasks become
+easy&peasy to solve, and engineer or developer just happily forget his
+previous bloody toil under the code writing and, the most significant
+detali, - his fruitless attempts to extend code's functionality, debug
+or refactor it.
 
 ~Emacs~ provides a variety of tools to work with source code, and
 making a bundle out from this tools SD or SE create IDE. As the main
@@ -46,44 +53,10 @@ scope of usage, capabilities and facilities.
 ~Python~ is relatevely old programming language and it widely and
 deeply supported by =vanilla= ~Emacs~ by its native packages.
 
-#+begin_src sh :results output :exports both
-  pylsp --version 2>&1
-  pylsp --help 2>&1
-#+end_src
-
-#+RESULTS:
-#+begin_example
-pylsp v1.7.1
-usage: pylsp [-h] [--tcp] [--ws] [--host HOST] [--port PORT]
-             [--check-parent-process]
-             [--log-config LOG_CONFIG | --log-file LOG_FILE] [-v] [-V]
-
-Python Language Server
-
-options:
-  -h, --help            show this help message and exit
-  --tcp                 Use TCP server instead of stdio
-  --ws                  Use Web Sockets server instead of stdio
-  --host HOST           Bind to this address
-  --port PORT           Bind to this port
-  --check-parent-process
-                        Check whether parent process is still alive using
-                        os.kill(ppid, 0) and auto shut down language server
-                        process when parent process is not alive.Note that
-                        this may not work on a Windows machine.
-  --log-config LOG_CONFIG
-                        Path to a JSON file containing Python logging config.
-  --log-file LOG_FILE   Redirect logs to the given file instead of writing to
-                        stderr.Has no effect if used with --log-config.
-  -v, --verbose         Increase verbosity of log output, overrides log config
-                        file
-  -V, --version         show program's version number and exit
-#+end_example
-
 ** Python-mode
 
 #+begin_quote
-python-mode is an autoloaded, interactive and natively compiled
+=python-mode= is an autoloaded, interactive and natively compiled
 function defined in python.el.gz.
 #+end_quote
 
@@ -123,8 +96,14 @@ M-a        python-nav-backward-block
 M-e        python-nav-forward-block
 #+end_quote
 
+Suffice to notice, that ~Emacs~ in charge to cope gracefully with
+~Python~ even in its =vanilla= edition, and it is the start point to
+bother about automation and enhancement.
+
 ** IPython
 ** Unittest
+** Eglot
+** Elpy
 * The Sandbox
 * Routine task set automation
 ** Project
