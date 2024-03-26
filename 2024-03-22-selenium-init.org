@@ -73,7 +73,9 @@ wheel              0.38.4
 wsproto            1.2.0
 #+end_example
 
-#+begin_src python :results output :exports both
+** Headless Chrome
+
+#+begin_src python :results output :exports both :eval no-export
   from selenium import webdriver
   from selenium.webdriver.chrome.options import Options
   from selenium.webdriver.chrome.service import Service
@@ -92,3 +94,28 @@ wsproto            1.2.0
 
 #+RESULTS:
 : Welcome to Python.org
+
+** Headed Chrome
+
+Unfortunately it doesn't work inside the =Babel=, but it is possible
+to launch outside. Lets create the test file:
+
+#+begin_src python :results output :exports both :eval no-export
+  from selenium import webdriver
+  from selenium.webdriver.chrome.options import Options
+  from selenium.webdriver.chrome.service import Service
+  from webdriver_manager.chrome import ChromeDriverManager
+
+  options = Options()
+  # by default it has launching headed mode and in the sandbox
+  # options.add_argument('--headless')
+  # options.add_argument('--no-sandbox')
+  options.add_argument('--disable-dev-shm-usage')
+  driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+
+  driver.get("https://python.org")
+  print(driver.title)
+  driver.close()
+#+end_src
+
+#+RESULTS:
