@@ -10,7 +10,7 @@ tags: [efficiency, software development]
 #+END_EXPORT
 
 #+STARTUP: showall indent
-#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t eval:no-export
 #+TOC: headlines 2
 * Intro
 
