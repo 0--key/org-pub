@@ -110,5 +110,29 @@ bother about automation and enhancement.
 ** Projectile
 ** Elpy
 ** Eglot
+* TDD with CodeWars
 
+#+begin_src sh :results output :exports both
+  pwd
+  ls CodeWars 2>&1
+  ls CodeWars/tests/ 2>&1
+#+end_src
 
+#+RESULTS:
+#+begin_example
+/home/alioth/Git/0--key/org-pub
+constants.py
+constants.py~
+__init__.py
+__pycache__
+tests
+__init__.py
+__pycache__
+test_init.py
+test_init.py~
+#+end_example
+
+#+begin_src python :results output :exports both :tangle CodeWars/constants.py :comments link
+  first_constant_value = 1
+  # just comment
+#+end_src
