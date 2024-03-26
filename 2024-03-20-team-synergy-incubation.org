@@ -103,10 +103,39 @@ in towns and cities.
 
 ** The Peter Principle
 
+#+begin_quote
+"In a hierarchy every employee tends to rise to his level of
+incompetence."
+#+end_quote
+
+This is an amazing book by =Laurence J.Peter= unvailing all subtleties
+and premises which occur in any particular cell of any human's crew,
+initially built in a hierarchical structure, but incline to chaos and
+uncertainty later by its nature.
+
+In other words, if you work in an organization with a top-down
+management structure and you are good at your job, you will likely be
+promoted until you reach one rung above your level of competence. Dr
+Peter called this level your "final placement."
+
+While the book is written in a lighthearted manner, there's more than
+a grain of truth in its well-researched analysis of one of the main
+flaws in hierarchical structures.
+
+All ailments are result of simple, as pie observation:
+
+#+begin_quote
+People with stronger skills tend to be promoted more quickly and that
+people with weaker skills tend to get stuck in their current jobs
+after just one or two promotions.
+#+end_quote
+
+
+
 ** A Clot for Every Slot
 
 From the uper level, where most chiefs are at their point incopetence,
-the most feasible and pertinent candidate for _assignment is the most
+the most feasible and pertinent candidate for _promotion is the most
 defty and experienced employee_. But, in this case, team has lost a
 valuable and productive member in exchange of a dim perspective to
 obtain a good enough team leader. A good leadership requires an
@@ -119,7 +148,7 @@ And, /at the unconscious level of thinking/: if this employee is
 capable to be competent, the probability of his competency after
 assinment is high enough to make a menace for the Boss.
 
-Another polar point of view is to make an _assignment for the most
+Another polar point of view is to make a _promotion for the most
 incompetent employee_. In this case the team will lost the value near
 a zero, the perspective of his succeeding  
 
