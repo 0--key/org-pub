@@ -11,6 +11,7 @@ tags: [installation, set-up, config]
 
 #+STARTUP: showall indent
 #+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+OPTIONS: eval:no-export
 #+TOC: headlines 2
 
 
@@ -217,9 +218,7 @@ urllib3            2.2.1
 wheel              0.38.4
 #+end_example
 
-* Testing
-
-Lets create a separate folder to test up =PlayWright= in a proper way:
+** Separate folder to test up =PlayWright=:
 
 #+begin_src sh :results output :exports both
   pwd 2>&1
@@ -240,6 +239,10 @@ Lets create a separate folder to test up =PlayWright= in a proper way:
 
 #+RESULTS:
 : tests
+
+
+* Testing
+
 
 And the =Python= file with a couple of =pytest= s inside:
 
@@ -304,3 +307,8 @@ the terminal.
 
 Now, the output says loud and clear that it works as expected even
 inside =Emacs= =Babel= environment.
+
+* Further steps
+
+- Tests galore;
+- Tests separation and isolation;
