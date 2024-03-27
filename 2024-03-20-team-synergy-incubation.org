@@ -77,6 +77,14 @@ Leadership is the capacity to translate vision into reality
 /-- Warren G. Bennis/
 #+end_quote
 
+#+begin_quote
+Leadership is about making others better as a result of your presence
+and making sure that impact lasts in your absence
+
+/-- Sheryl Sandberg/
+#+end_quote
+
+
 * AntiThesis
 
 ** Biology
