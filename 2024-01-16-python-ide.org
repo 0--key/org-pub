@@ -110,7 +110,7 @@ bother about automation and enhancement.
 ** Projectile
 ** Elpy
 ** Eglot
-* TDD with CodeWars
+* TODO TDD with CodeWars
 
 #+begin_src sh :results output :exports both
   pwd
@@ -136,3 +136,21 @@ test_init.py~
   first_constant_value = 1
   # just comment
 #+end_src
+
+
+#+begin_src sh :results output :exports both
+  pwd 2>&1
+  # ls Codewars/tests/ 2>&1
+#+end_src
+
+#+RESULTS:
+: /home/alioth/Git/0--key/org-pub
+
+
+#+begin_src sh :results output :exports both
+  cd ./CodeWars/
+  pwd 2>&1
+  python -m unittest discover
+#+end_src
+
+#+RESULTS:

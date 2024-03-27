@@ -40,12 +40,15 @@ tags: [coding, algorithms]
 
    #+BEGIN_SRC python
      seq = []
+
+
      def is_happy(n):
 	 sum_of_squares(n)
 	 if n in seq:
 	     return True
 	 else:
 	     return False
+
 
      def sum_of_squares(p):
 	 s = str(p)
@@ -55,11 +58,11 @@ tags: [coding, algorithms]
 	 seq.append(q)
 	 return q
 
-     assert(sum_of_squares(22) == 8)
 
-     assert(is_happy(1))
+     assert (sum_of_squares(22) == 8)
+
+     assert (is_happy(1))
      # assert(is_happy(7))
    #+END_SRC
 
    #+RESULTS:
-   : None
