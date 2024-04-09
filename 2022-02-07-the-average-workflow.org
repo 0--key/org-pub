@@ -107,8 +107,8 @@ Separate set of bookmarks for each task
 
 * Average modes
 
-** RETARD Task management
-SCHEDULED: <2024-04-08 Mon .+4d/5d>
+** TODO Task management                                               :bait:
+SCHEDULED: <2024-04-10 Wed .+4d/5d>
 :PROPERTIES:
 :LAST_REPEAT: [2022-12-03 Sat 09:27]
 :CATEGORY: Manage
@@ -224,8 +224,8 @@ So, the common types of notes would be:
 
 [[info:org#Capture templates][org#Capture templates]]
 
-** LAG Data elaboration
-SCHEDULED: <2024-04-05 Fri>
+** RETARD Data elaboration
+SCHEDULED: <2024-04-10 Wed>
 
 ** RETARD [#B] Meta-analysys
 SCHEDULED: <2024-04-26 Fri .+1w>
