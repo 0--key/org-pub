@@ -1,0 +1,56 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: An insight incubation
+tagline: " as the true way through cognitive biases"
+permalink: /emacs/task-management.html
+categories: [Emacs, Org-Agenda, Task-Management]
+tags: [efficiency, clarity]
+---
+#+END_EXPORT
+
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t eval:no-export
+#+TOC: headlines 2
+* Intro
+
+Nowadays it becomes clear that a =life long learning= is the only true
+way to succeed. But it is tough task with a plethora obstacles behind
+the hood, and the most formidable ones are the ~biological~: human
+beings are naturally selected to solve the urgent and actual tasks
+only; the ability to a ~long-term future planning~ is a seldom
+deviation from the general rule.
+
+Yes, we easily distracted and forget about our plans when something
+extraordinary happens. And, as a bitter, but frequent occasion, - in
+most cases we just lost our path forever. Perseverance is the most
+sparse of human qualities.
+
+Yes, we tend to get rid of really tough tasks; we ignore and avoid
+them: it is boring to take even the third attempt to solve something
+difficult enough to be interesting.
+
+Yes, for us it is arduous task to consider it is not enough knowledge:
+we incline to think about our previously gathered experience as a
+sufficient enough to be used indefinitely. And even a minor success
+only strengthen our biased and often wrong opinion about our
+competence.
+
+Yes, all these phenomena are well known for me from my personal
+experience (btw I'm a life-long learner in my fifties), and from my
+observations on my acquaintances as well: we all humans and in this
+particular case we inclined to act in the same manner.
+
+* Premises
+
+** Write down everything
+
+Definitely. If you're ignore to make a material evidence about your
+thought, note, observation or insight it will just vanishes. It is
+natural for human memory: we obliged to get rid of tough tasks if they
+are non-actual. Biologically speaking ~future is illusion~. 
+
+** Assign a right time for each note
+** Return to each note at least twice
+** Archive the barren ones
+* Org-Agenda implementation
