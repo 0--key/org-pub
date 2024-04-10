@@ -4,7 +4,7 @@ def getCount(inputStr):
     # your code here
     for letter in inputStr:
         list_of_vowels = ['a', 'e', 'i', 'o', 'u']
-        if letter in list_of_vowels:
+        if letter.lower() in list_of_vowels:
             num_vowels += 1
             # print(letter)
             # print(num_vowels)
