@@ -27,12 +27,12 @@ of technical documentation, technologcal schemes, diagrams and charts
 on electronics, electrotechnics, thermomechanics, automatics,
 telemetry, programming and even nuclear physics, comprehend the gist
 out there and utilize these knowledge in my professional activity.
-
+------
 * \epsilon{}xperience
 
- Zaporizhzha NPP
+ [[https://en.wikipedia.org/wiki/Zaporizhzhia_Nuclear_Power_Plant][Zaporizhzha NPP]]
 
-** 2003 --- 2022
+** 2003 \to 2022
 
 Alongside with my direct duties I was being attested as an instructor:
 I've shared my professional experience and knowledge about
@@ -41,7 +41,7 @@ younger colleagues (~15 of them), assisted them by an advice, cue,
 nudge or by a relevant quote from technical documentation in their
 professional growth.
 
-** 1999 --- 2003
+** 1999 \to 2003
 
 Professionally being plunged into automated measurment of radioactive
 parameters: I've read around 5 hundred pages of technological
@@ -60,10 +60,10 @@ The main responsibilities list:
   + Making log entries about the system's part state/deviation;
   + Emergency intrusion/adjustment with purpose to restore its normal
     state;
-
+------
 * \epsilon{}ducation
 
-1995 --- 1999
+1995 \to 1999
 
 Sevastopol National University of Nuclear Energy. Graduated as a
 bachelor of automation of technological processes on nuclear power
