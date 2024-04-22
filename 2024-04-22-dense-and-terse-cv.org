@@ -1,0 +1,95 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: Anton S. Kosinov
+tagline: " what do I do professionally"
+permalink: /dense_cv.html
+categories: [CV]
+tags: [cv, info, about me]
+---
+#+END_EXPORT
+
+#+STARTUP: showall indent
+#+AUTHOR:    Anton S. Kosinov
+#+TITLE:     What do I do
+#+SUBTITLE:  professionally
+#+EMAIL:     a.s.kosinov@gmail.com
+#+LANGUAGE: en
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+CATEGORY: CV
+#+TODO: RAW INIT TODO ACTIVE | DONE
+
+* \alpha{}bout Me
+
+I'm a vocational life-long learner apt to detangle a thousand pages
+of technical documentation, technologcal schemes, diagrams and charts
+on electronics, electrotechnics, thermomechanics, automatics,
+telemetry, programming and even nuclear physics, comprehend the gist
+out there and utilize these knowledge in my professional activity.
+
+* \epsilon{}xperience
+
+ Zaporizhzha NPP
+
+** 2003 --- 2022
+
+Alongside with my direct duties I was being attested as an instructor:
+I've shared my professional experience and knowledge about
+technological niceties, subtleties and unobvious caveats with my
+younger colleagues (~15 of them), assisted them by an advice, cue,
+nudge or by a relevant quote from technical documentation in their
+professional growth.
+
+** 1999 --- 2003
+
+Professionally being plunged into automated measurment of radioactive
+parameters: I've read around 5 hundred pages of technological
+documentation, a hundred sheets of schemes and diagrams, comprehended
+the pith out there and was sertified as a measurement quality engineer
+in charge to manage technological measurements under 1,500 independent
+measurment channels up from an acitve core of nuclear reactor to 30 km
+perimeter of the NPP site.
+
+The main responsibilities list:
+- Control under proper functioning of automated measurement system by:
+  + Continuous monitoring values of technological parameters;
+  + Deviation from its normal state detection;
+  + Periodical visual supervision and control of normal state of each
+    its part;
+  + Making log entries about the system's part state/deviation;
+  + Emergency intrusion/adjustment with purpose to restore its normal
+    state;
+
+* \epsilon{}ducation
+
+1995 --- 1999
+
+Sevastopol National University of Nuclear Energy. Graduated as a
+bachelor of automation of technological processes on nuclear power
+plants.
+
+* \Sigma{}kills:
+
+- Perseverance and attention to details;
+- Analytical thinking;
+- Problem solving;
+- Probabilistic approach in reasoning;
+
+
+
+* Notes                                                            :noexport:
+
+
+** Rigel Lab LLC.
+
+*** 2022 --- 2024
+Senior Software Automation Engineer
+
+** UpWork Inc.
+*** 2013 --- 2016
+Freelance Software Developer
+** ODesk Inc.
+*** 2008 --- 2013
+Freelance Software Developer
+
