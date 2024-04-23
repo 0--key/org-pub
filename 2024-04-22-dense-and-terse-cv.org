@@ -23,51 +23,59 @@ tags: [cv, info, about me]
 * \alpha{}bout Me
 
 I'm a vocational life-long learner apt to detangle a thousand pages
-of technical documentation, technologcal schemes, diagrams and charts
+of technical documentation, technological schemes, diagrams and charts
 on electronics, electrotechnics, thermomechanics, automatics,
 telemetry, programming and even nuclear physics, comprehend the gist
-out there and utilize these knowledge in my professional activity.
+out there and utilise these knowledge in my professional activity.
 ------
 * \epsilon{}xperience
 
- [[https://en.wikipedia.org/wiki/Zaporizhzhia_Nuclear_Power_Plant][Zaporizhzha NPP]]
+ [[https://en.wikipedia.org/wiki/Zaporizhzhia_Nuclear_Power_Plant][Zaporizhzhia NPP]]
+
+#+CAPTION: Zaporizhzhia NPP
+#+ATTR_HTML: :title Panorama :align center
+[[https://0--key.github.io/assets/img/CV/zapor-aes-panorama.jpg]]
 
 ** 2003 \to 2022
 
-Alongside with my direct duties I was being attested as an instructor:
+Alongside with my liable duties I was being attested as an instructor:
 I've shared my professional experience and knowledge about
-technological niceties, subtleties and unobvious caveats with my
-younger colleagues (~15 of them), assisted them by an advice, cue,
-nudge or by a relevant quote from technical documentation in their
-professional growth.
+technological niceties, subtleties and obscure caveats with my
+younger colleagues (~15 of them were being fostered by me), assisted
+them by an advice, cue, nudge or by a relevant quote from technical
+documentation in their professional growth.
 
 ** 1999 \to 2003
 
-Professionally being plunged into automated measurment of radioactive
-parameters: I've read around 5 hundred pages of technological
-documentation, a hundred sheets of schemes and diagrams, comprehended
-the pith out there and was sertified as a measurement quality engineer
-in charge to manage technological measurements under 1,500 independent
-measurment channels up from an acitve core of nuclear reactor to 30 km
-perimeter of the NPP site.
+#+CAPTION: Control Room
+#+ATTR_HTML: :title Control Room :align center
+[[https://0--key.github.io/assets/img/CV/cshchrk-3.jpg]]
 
-The main responsibilities list:
-- Control under proper functioning of automated measurement system by:
+Professionally being plunged into automated measurement of radioactive
+parameters: I've read zealously around 5 hundred pages of
+technological documentation, a hundred sheets of schemes and diagrams,
+comprehended the pith out there and was certified as a measurement
+quality engineer in charge to manage technological measurements under
+1,500 independent measurement channels up from an active core of
+nuclear reactor to 30 km perimeter of the NPP site.
+
+My primary liable duties was:
+
+Control under proper and accurate functioning of automated measurement
+system by:
   + Continuous monitoring values of technological parameters;
-  + Deviation from its normal state detection;
-  + Periodical visual supervision and control of normal state of each
-    its part;
+  + Detection any deviation from its normal state;
+  + Periodical visual supervision and inspection of normal state of
+    each its part;
   + Making log entries about the system's part state/deviation;
   + Emergency intrusion/adjustment with purpose to restore its normal
     state;
 ------
 * \epsilon{}ducation
-
 1995 \to 1999
-
-Sevastopol National University of Nuclear Energy. Graduated as a
-bachelor of automation of technological processes on nuclear power
-plants.
+*Sevastopol National University of Nuclear Energy*: Graduated as /a
+bachelor of automation/ of technological processes on /nuclear power
+plants./
 
 * \Sigma{}kills:
 
