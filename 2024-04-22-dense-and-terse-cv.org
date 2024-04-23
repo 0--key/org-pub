@@ -66,7 +66,7 @@ Perform a control under proper, accurate and safe functioning of
 automated measurement system by:
   + Continuous monitoring the values of several thousands
     technological parameters (level, pressure, temperature, specific
-    radioacivity, voltage, consuming power);
+    radioactivity, voltage, consuming power);
   + Detection any deviation from its normal status;
   + Periodical visual supervision and inspection of normal condition
     of each its section;
@@ -83,7 +83,7 @@ plants./
 
 * \Sigma{}kills:
 
-- Perseverance at studing technical documentation;
+- Perseverance at studying technical documentation;
 - Curiosity and attention to details;
 - Analytical thinking in comprehension the causality;
 - Problem solving with emotional calm in any risky situation;
