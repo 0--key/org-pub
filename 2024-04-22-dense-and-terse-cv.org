@@ -27,8 +27,8 @@ of technical documentation, technological schemes, diagrams and charts
 on electronics, electrotechnics, thermomechanics, automatics,
 telemetry, programming and even nuclear physics, comprehend the gist
 out there and utilise these knowledge in my professional activity.
-------
-* \epsilon{}xperience
+
+* \Epsilon{}xperience
 
  [[https://en.wikipedia.org/wiki/Zaporizhzhia_Nuclear_Power_Plant][Zaporizhzhia NPP]]
 
@@ -49,7 +49,7 @@ documentation in their professional growth.
 
 #+CAPTION: Control Room
 #+ATTR_HTML: :title Control Room :align center
-[[https://0--key.github.io/assets/img/CV/cshchrk-3.jpg]]
+[[https://0--key.github.io/assets/img/CV/ControlRoom_1.jpg]]
 
 Professionally being plunged into automated measurement of radioactive
 parameters: I've read zealously around 5 hundred pages of
@@ -70,9 +70,10 @@ system by:
   + Making log entries about the system's part state/deviation;
   + Emergency intrusion/adjustment with purpose to restore its normal
     state;
-------
-* \epsilon{}ducation
+
+* \Epsilon{}ducation
 1995 \to 1999
+
 *Sevastopol National University of Nuclear Energy*: Graduated as /a
 bachelor of automation/ of technological processes on /nuclear power
 plants./
