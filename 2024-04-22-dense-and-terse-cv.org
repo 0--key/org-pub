@@ -22,11 +22,12 @@ tags: [cv, info, about me]
 
 * \alpha{}bout Me
 
-I'm a vocational life-long learner apt to detangle a thousand pages
-of technical documentation, technological schemes, diagrams and charts
-on electronics, electrotechnics, thermomechanics, automatics,
-telemetry, programming and even nuclear physics, comprehend the gist
-out there and utilise these knowledge in my professional activity.
+I'm a vocational life-long learner apt to detangle a thousand pages of
+technical documentation, technological schemes, diagrams and charts on
+electronics, electromechanics, pneumatics, automatics, telemetry,
+programming and even nuclear physics, comprehend the gist out there
+and utilise these knowledge in my professional activity with aim to
+ensure stable, reliable and safe work of any automatic system. 
 
 * \Epsilon{}xperience
 
@@ -38,12 +39,12 @@ out there and utilise these knowledge in my professional activity.
 
 ** 2003 \to 2022
 
-Alongside with my liable duties I was being attested as an instructor:
-I've shared my professional experience and knowledge about
-technological niceties, subtleties and obscure caveats with my
+Alongside with my liable duties I was being attested as an
+/instructor/: I've shared my professional experience and knowledge
+about technological niceties, subtleties and obscure caveats with my
 younger colleagues (~15 of them were being fostered by me), assisted
-them by an advice, cue, nudge or by a relevant quote from technical
-documentation in their professional growth.
+them in their professional growth by a piece of advice, cue, nudge or
+by a relevant quote from technical documentation.
 
 ** 1999 \to 2003
 
@@ -61,15 +62,17 @@ nuclear reactor to 30 km perimeter of the NPP site.
 
 My primary liable duties was:
 
-Control under proper and accurate functioning of automated measurement
-system by:
-  + Continuous monitoring values of technological parameters;
-  + Detection any deviation from its normal state;
-  + Periodical visual supervision and inspection of normal state of
-    each its part;
-  + Making log entries about the system's part state/deviation;
-  + Emergency intrusion/adjustment with purpose to restore its normal
-    state;
+Perform a control under proper, accurate and safe functioning of
+automated measurement system by:
+  + Continuous monitoring the values of several thousands
+    technological parameters (level, pressure, temperature, specific
+    radioacivity, voltage, consuming power);
+  + Detection any deviation from its normal status;
+  + Periodical visual supervision and inspection of normal condition
+    of each its section;
+  + Making log entries about the system's part status/deviation;
+  + Emergency intrusion/adjustment/repair any of its segments with a
+    purpose to restore its normal functioning;
 
 * \Epsilon{}ducation
 1995 \to 1999
@@ -80,9 +83,10 @@ plants./
 
 * \Sigma{}kills:
 
-- Perseverance and attention to details;
-- Analytical thinking;
-- Problem solving;
+- Perseverance at studing technical documentation;
+- Curiosity and attention to details;
+- Analytical thinking in comprehension the causality;
+- Problem solving with emotional calm in any risky situation;
 - Probabilistic approach in reasoning;
 
 
