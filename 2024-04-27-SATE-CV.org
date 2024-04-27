@@ -1,0 +1,83 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: Anton S. Kosinov
+tagline: " what do I do professionally"
+permalink: /python/software-automation-testing-cv.html
+categories: [CV, SATE]
+tags: [cv, info, about me]
+---
+#+END_EXPORT
+
+#+STARTUP: showall indent
+#+AUTHOR:    Anton S. Kosinov
+#+TITLE:     What do I do
+#+SUBTITLE:  vocationally
+#+EMAIL:     a.s.kosinov@gmail.com
+#+LANGUAGE: en
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+CATEGORY: CV
+#+TODO: RAW INIT TODO ACTIVE | DONE
+* Notes                                                            :noexport:
+
+
+Based on the information provided in the search results, here is a
+summary of the key requirements to become a software automated testing
+engineer:
+
+1. Strong foundation in manual testing principles and methodologies:
+   - Understanding of software testing concepts, techniques, and best
+     practices
+
+2. Knowledge of software development methodologies:
+   - Familiarity with Agile, Scrum, or other software development
+     frameworks
+
+3. Analytical and problem-solving skills:
+   - Ability to think critically, identify test scenarios,
+     troubleshoot issues, and design effective automated tests
+
+4. Coding and scripting skills:
+   - Proficiency in programming languages like Python, Java, or other
+     languages used for test automation
+   - Ability to design, develop, and maintain automated test scripts
+
+5. Experience with test automation tools and frameworks:
+   - Knowledge of popular test automation tools like Selenium, Appium,
+     Katalon, etc.
+   - Ability to integrate automated tests into the CI/CD pipeline
+
+6. Understanding of software architecture and technologies:
+   - Knowledge of web, mobile, and desktop applications, APIs,
+     databases, and other relevant technologies
+
+7. Certifications (optional but beneficial):
+   - ISTQB Certified Tester - Foundation Level
+   - Other relevant test automation certifications
+
+8. Practical experience:
+   - Hands-on experience in designing, implementing, and maintaining
+     automated test suites
+   - Collaboration with development teams to ensure comprehensive test
+     coverage
+
+9. Soft skills:
+   - Strong communication and collaboration skills to work effectively
+     with cross-functional teams
+   - Attention to detail and ability to document test results and
+     defects
+
+The search results emphasize that while a formal IT or computer
+science degree can be advantageous, it is not always a strict
+requirement. Demonstrating the necessary technical skills, expertise,
+and practical experience through certifications and personal projects
+can be equally valuable for becoming a successful software automated
+testing engineer.
+
+Citations:
+[1] https://bugbug.io/blog/software-testing/how-to-become-automated-test-engineer/
+[2] https://www.istqb.org/certifications/test-automation-engineer/
+[3] https://training.epam.com/en/skill/AutomatedTesting
+[4] https://yojji.io/blog/qa-automation-engineer
+[5] https://katalon.com/resources-center/blog/test-automation-engineer
