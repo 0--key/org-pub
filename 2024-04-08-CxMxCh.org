@@ -29,9 +29,9 @@ interaction between the human and equipment.
 So, we all are humans, thus we all has a human factor. In particular
 case of software development using =Emacs= editor the most efficient
 way to interact with your IDE is a keyboard, an old-fashion device
-with a hundred of keys at least. Due to this, a number of keys, I
-mean, keyboard is an extremely convenient tool to type the text or
-commands into your screen.
+with a hundred of keys at least. Due to this, a number of keys I
+mean, keyboard is an extremely effective tool to type the text or
+commands onto your screen or editor.
 
 ** Touch typing
 
@@ -49,9 +49,38 @@ fingers back at their places. It's definitely not a /rocket science/,
 and if you have enough practice it is easy&peasy to type up to 50
 words per minute.
 
+
 * Emacs' commands
+
+Naturally, the command that you send to your editor should be
+distinguished by editor from the ordinary text input, though,
+historically each keyboard has that option - the keys =Ctrl= and
+=Alt=. So =Emacs= was doomed to utilize them, despite the fact, that
+from the point of view of touch typing they both are awkward to use
+due their remote position on the keyboard. They situated far under
+your pinky, and not destined for frequent usage just by location.
+
+In addition the =vanilla Emacs= prefixes are =Ctrl+x=, =Ctrl+c= and
+=Alt+x= which only aggravates the situation: in the most cases to type
+such kind of key combinations typist ought to remove his fingers from
+their middle position due to difficulties to type this tough
+combination, and this distracts him, or even irritates though.
 
 * Key-chords
 
+The silver bullet in charge to alleviate the pain in =Emacsist's=
+fingers is the /key-chords.el/. The general idea is to use the
+simultaneous push on several buttons (usually two keys in the same
+time) as the particular, command.
+
 * Frequency
+
+Of course several commands are oft repeated, other are less frequent,
+but /all of them begin with prefixes/.
+
+*Caveats:* 
+
+* Solution
+
+Obvious solution is to assign prefixes to key-chords.
 
