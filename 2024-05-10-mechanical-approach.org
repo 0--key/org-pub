@@ -1,0 +1,16 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Mechanical Approach
+tagline: " does not work for humans"
+permalink: /generic/human_nature.html
+categories: [Philosophy, Thinking, Iain McGilchrist, Intellect]
+tags: [brain, hemisphere, thought, thinking]
+---
+#+END_EXPORT
+
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+
+The [[https://www.youtube.com/watch?v=REB7GOxX5Mk][source]]
