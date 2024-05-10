@@ -108,7 +108,7 @@ Separate set of bookmarks for each task
 * Average modes
 
 ** TODO Task management                                               :bait:
-SCHEDULED: <2024-04-10 Wed .+4d/5d>
+SCHEDULED: <2024-05-10 Fri .+4d/5d>
 :PROPERTIES:
 :LAST_REPEAT: [2022-12-03 Sat 09:27]
 :CATEGORY: Manage
@@ -191,7 +191,7 @@ The most effective way to get rid of obvious litter is to kill them by
 ~Ktulkh~.
 
 ** RETARD [#B] Data gathering
-SCHEDULED: <2024-05-05 Sun .+3d/4d>
+SCHEDULED: <2024-05-22 Wed .+3d/4d>
 :PROPERTIES:
 :LAST_REPEAT: [2023-09-22 Fri 09:55]
 :END:
@@ -225,10 +225,10 @@ So, the common types of notes would be:
 [[info:org#Capture templates][org#Capture templates]]
 
 ** RETARD Data elaboration
-SCHEDULED: <2024-04-10 Wed>
+SCHEDULED: <2024-05-21 Tue>
 
 ** RETARD [#B] Meta-analysys
-SCHEDULED: <2024-04-26 Fri .+1w>
+SCHEDULED: <2024-05-14 Tue .+1w>
 :PROPERTIES:
 :CATEGORY: Meta
 :END:
