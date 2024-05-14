@@ -1,0 +1,164 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: Anton S. Kosinov
+tagline: " what do I do vocationally"
+permalink: /about/devops-cv.html
+categories: [CV, DevOps]
+tags: [cv, info, about me]
+---
+#+END_EXPORT
+
+#+STARTUP: showall indent
+#+AUTHOR:    Anton S. Kosinov
+#+TITLE:     What do I do
+#+SUBTITLE:  vocationally
+#+EMAIL:     a.s.kosinov@gmail.com
+#+LANGUAGE: en
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+
+* \alpha{}bout Me
+
+* \sigma{}xperience
+
+* \sigma{}kills
+
+** Technical
+Linux, Python, Bash, Git, Docker, zsh, cron, Puppet, Chef, Ansible,
+Jenkins, Travis
+
+** Soft
+
+- Continuous learning and adaptability;
+- Problem decomposing and solving;
+- Team player, apt to learn and teach others.
+
+  
+* Notes                                                            :noexport:
+
+** Requirements
+  The requirements for DevOps professionals include a mix of technical
+  skills, soft skills, and specific knowledge areas. Here are the key
+  prerequisites based on the provided sources:
+  
+  1. Technical Skills:
+     - Programming Languages: Proficiency in at least one
+       programming language like Python, Ruby, or Java is essential for
+       DevOps professionals[2][5].
+     - Scripting: Ability to write scripts, such as Shell scripting,
+       for task automation[2].
+     - Configuration Management: Understanding of configuration
+       management tools like Puppet, Chef, or Ansible[2].
+     - Cloud Computing: Familiarity with cloud computing platforms
+       such as AWS, Azure, or Google Cloud[2].
+     - CI/CD Tools: Knowledge of continuous integration and
+       continuous deployment tools like Jenkins or Travis CI[2].
+     - Version Control Systems: Familiarity with version control
+       systems like Git and containerization technologies like
+       Docker[2].
+  
+  2. Soft Skills:
+     - Communication and Collaboration Skills: Effective
+       communication and collaboration abilities are crucial for working
+       across different teams in a DevOps environment[2].
+     - Continuous Learning and Adaptability: A passion for
+       continuous learning and staying updated with the latest trends in
+       the field is essential for DevOps professionals[2].
+     - Problem-Solving: Strong problem-solving skills to identify
+       and resolve issues efficiently[2].
+     - Collaboration: Ability to work effectively in a team and
+       collaborate with other team members within and across different
+       teams in an organization[2].
+  
+  3. Knowledge Areas:
+     - Software Development Understanding: Basic understanding of
+       software development processes is important for DevOps
+       professionals[3].
+     - Operating Systems and Networking: Familiarity with operating
+       systems and networking concepts is beneficial for managing
+       infrastructure in a DevOps environment[3].
+  
+  In summary, to excel as a DevOps professional, individuals should
+  focus on developing a strong foundation in technical skills, honing
+  soft skills like communication and problem-solving, staying updated
+  with industry trends, and having a collaborative mindset to work
+  effectively in cross-functional teams[2][3][5].
+  
+  Citations:
+  [1] https://www.browserstack.com/guide/devops-prerequisites
+  [2] https://www.linkedin.com/pulse/what-important-prerequisites-devops-professionals-knowlathon
+  [3] https://www.knowledgehut.com/blog/devops/prerequisite-for-devops
+  [4] https://www.indeed.com/career-advice/career-development/how-to-become-a-devops-engineer
+  [5] https://spacelift.io/blog/how-to-become-devops-engineer
+
+
+
+  
+** ToolBox
+  Some of the most common tools used by DevOps engineers include:
+  
+  1. Version Control Systems:
+     - Git: A widely used open-source distributed version control
+       system[1][3][4].
+     - GitHub: A cloud-based hosting service for Git repositories[4].
+  
+  2. Configuration Management:
+     - Ansible: An open-source software provisioning, configuration
+       management, and application-deployment tool[2][3].
+     - Puppet: An open-source software configuration management
+       tool[3][4].
+     - Chef: An open-source configuration management tool[4][5].
+  
+  3. Containerization:
+     - Docker: A popular containerization platform for building,
+       deploying, and running applications[2][4].
+  
+  4. Container Orchestration:
+     - Kubernetes: An open-source system for automating deployment,
+       scaling, and management of containerized applications[2][4].
+  
+  5. Continuous Integration and Continuous Deployment (CI/CD):
+     - Jenkins: An open-source automation server used for automating the
+       process of building, testing, and deploying
+       applications[2][3][5].
+     - CircleCI: A cloud-based CI/CD platform[5].
+  
+  6. Monitoring and Observability:
+     - Prometheus: An open-source monitoring system for collecting and
+       storing time series data[2][4].
+     - Datadog: A monitoring and analytics tool for IT and DevOps
+       teams[2][4].
+  
+  7. Cloud Platforms:
+     - AWS: A comprehensive cloud computing platform offered by
+       Amazon[2][4].
+  
+  8. Infrastructure as Code (IaC):
+     - Terraform: An open-source infrastructure as code software
+       tool[4].
+     - AWS CloudFormation: A service that helps model and set up AWS
+       resources[4].
+  
+  9. Testing:
+     - Selenium: An open-source testing framework for automating web
+       browsers[3][4].
+     - JUnit: A unit testing framework for Java[1].
+  
+  10. Collaboration and Communication:
+      - Slack: A cloud-based set of team collaboration tools and
+        services[4].
+  
+  These tools help DevOps engineers automate various processes, manage
+  infrastructure, monitor systems, and collaborate effectively
+  throughout the software development lifecycle[1][2][3][4][5].
+  
+  Citations:
+  [1] https://dev.to/aws-builders/essential-tools-for-a-successful-devops-engineer-4lgl
+  [2] https://www.oneclickitsolution.com/blog/devops-tools/
+  [3] https://www.indeed.com/career-advice/career-development/tools-for-devops
+  [4] https://spacelift.io/blog/devops-tools
+  [5] https://kinsta.com/blog/devops-tools/
+
+
+** Questions&Answers
