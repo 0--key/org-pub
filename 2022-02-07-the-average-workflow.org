@@ -20,13 +20,44 @@ tags: [data gathering, data elaboration, notetaking]
 
 * Preamble
 
-Without a shadow of doubt the managing your task is a /meta-task/ that
-vitally important to accomplish your job in a productive and effective
-manner. I mean do it with sincere joy, playfully focusing on each
-particular task and, of cause, with minimum silly interruptions. Yes,
-it is silly to seek answer on such dumb question: "What I should do
-next?" in the morning when you're much productive than ever. So, lets
-dismantle several classical approaches to this quite delicate issue:
+Without a shadow of doubt the managing your tasks galore is a
+/meta-task/ that is vitally important to release your vocation in a
+/productive/ *and* /effective/ manner.
+
+#+begin_quote
+
+*Productive* here means /apt to gain an evident result/.
+*Effective* here means /apt to achieve the aim faster/.
+
+#+end_quote
+
+The paragon aim is to do your best with sincere joy, playfully
+focusing on each particular task in a preliminarily defined
+sequence. Yes, it sounds appealing, but it might be a /herculian
+effort/ to resolve this issue neglecting several well-known nowadays
+pequliarities of human cognition.
+
+* Premises
+
+** Biology
+
+*** Hunger
+
+**** Instant reward
+
+**** Delayed reward
+
+*** Circadian rhythms
+
+In the morning when you're much productive than ever.
+
+*** Distractions
+
+Naturally they serves as a /back to reality/ mechanism.
+
+*** Rehearsal
+So, lets dismantle several classical approaches to this
+quite delicate issue:
 
 + ToDo lists;
 + Time-table;
