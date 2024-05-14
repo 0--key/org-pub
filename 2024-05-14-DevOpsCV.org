@@ -20,9 +20,9 @@ tags: [cv, info, about me]
 
 * \alpha{}bout Me
 
-* \sigma{}xperience
+* \epsilon{}xperience
 
-* \sigma{}kills
+* \Sigma{}kills
 
 ** Technical
 Linux, Python, Bash, Git, Docker, zsh, cron, Puppet, Chef, Ansible,
