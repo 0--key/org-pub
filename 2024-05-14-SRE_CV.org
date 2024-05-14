@@ -1,0 +1,175 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: Anton S. Kosinov
+tagline: " what do I do vocationally"
+permalink: /about/site-reliability-engineer-cv.html
+categories: [CV, SRE]
+tags: [cv, info, about me]
+---
+#+END_EXPORT
+
+#+STARTUP: showall indent
+#+AUTHOR:    Anton S. Kosinov
+#+TITLE:     What do I do
+#+SUBTITLE:  vocationally
+#+EMAIL:     a.s.kosinov@gmail.com
+#+LANGUAGE: en
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+
+* \alpha{}bout Me
+
+* \epsilon{}xperience
+
+* \Sigma{}kills
+
+** Technical
+
+Familiar with the whole bundle of tools to monitor, analyze, and
+optimize the performance, reliability, and availability of systems and
+applications, ensuring smooth operations and efficient incident
+response.
+
+- Python, Bash, zsh, cron, MySQL, PostgreSQL, noSQL;
+- Prometheus, Grafana, Kibana, Datalog, Splunk, New Relic,
+  ElasticSearch, DynaTrace, AppDynamics, Zabbix
+- Data analysis;
+- JIRA, Terraform, Datalog, Ansible, SaltStack;
+- Incident Management;
+- CI/CD pipeline development.
+
+** Soft
+
+- Problem definition, decomposition, fixture, resolving and prevention;
+- Time management with =Emacs Org-Agenda=;
+- Team player apt to learn and teach others;
+
+* Notes                                                            :noexport:
+
+** Requirements
+
+  The requirements to become a Site Reliability Engineer (SRE) typically
+  include a combination of education, experience, and specific
+  skills. Here are the key requirements based on the provided sources:
+  
+  1. *Education*:
+     - Most SREs hold at least a bachelor's degree in IT, computer
+       science, engineering, or a related field[1][2].
+     
+  2. *Experience*:
+     - Aspiring SRE professionals should gain at least two to four years
+       of related work experience in IT operations and software
+       development[1].
+     
+  3. *Skills*:
+     - *Hard Skills*:
+       - Strong IT knowledge and skills.
+       - Data analysis.
+       - Writing code to fix software issues and automate processes.
+       - Database management.
+       - CI/CD pipeline development[1].
+     - *Soft Skills*:
+       - Communication and presentation skills.
+       - Time management and organizational skills.
+       - Strong collaboration and teamwork skills.
+       - Creative problem solving[1].
+     
+  4. *Tools and Programs*:
+     - Familiarity with tools like Grafana, JIRA, Terraform, Datadog,
+       Ansible, and SaltStack is beneficial for SREs[1].
+  
+  5. *Certifications and Courses*:
+     - Completing courses like Site Reliability Engineering (SRE)
+       Foundation, Site Reliability Engineering: Measuring and Managing
+       Reliability, or obtaining a Professional Certificate in Site
+       Reliability Engineering can enhance one's qualifications[1].
+  
+  6. *Career Path*:
+     - Many SREs start their careers in roles like software engineer,
+       developer, IT support specialist, or systems administrator before
+       transitioning to an SRE role[1].
+  
+  In summary, to become a successful Site Reliability Engineer,
+  individuals should focus on obtaining relevant education, gaining
+  practical experience, developing both hard and soft skills,
+  familiarizing themselves with essential tools, and considering
+  certifications to enhance their qualifications in the field[1].
+  
+  Citations:
+  [1] https://builtin.com/learn/careers/site-reliability-engineer
+  [2] https://www.knowledgehut.com/blog/devops/site-reliability-engineer
+  [3] https://www.tealhq.com/how-to-become/site-reliability-engineer
+  [4] https://www.itprotoday.com/it-operations/how-become-site-reliability-engineer-step-step-guide
+  [5] https://www.glassdoor.ie/Career/site-reliability-engineer-career_KO0,25.htm
+
+** ToolBox
+
+  Some /common tools/ used by Site Reliability Engineers (SREs) include:
+  
+  1. *Prometheus*:
+     - An open-source software used for monitoring and collecting
+       metrics about infrastructure and applications. It works well with
+       Kubernetes and offers extensive features and plugin support[3].
+  
+  2. *Grafana*:
+     - An open-source analytics and monitoring tool used to visualize
+       data and metrics. It supports various data sources like
+       Prometheus, MySQL, Elasticsearch, AWS, and more, allowing for
+       customizable dashboards and alerts[3].
+  
+  3. *Kibana*:
+     - A dashboard visualization software popular among SREs. It works
+       in conjunction with Elasticsearch and provides insights into
+       system health by analyzing logs, metrics, and traces[3].
+  
+  4. *Datadog*:
+     - A monitoring and analytics tool used by IT and DevOps teams to
+       monitor services like servers and databases. It collects events
+       and metrics, providing insights into monitoring and performance
+       data[3].
+  
+  5. *Splunk*:
+     - Used for monitoring and searching through big data, Splunk
+       indexes and correlates information for searchability, alerting,
+       reporting, and visualization. It collects and analyzes high
+       volumes of network and machine data in real-time[3].
+  
+  6. *New Relic*:
+     - A Software as a Service offering focusing on performance and
+       availability monitoring. It uses an application performance index
+       (Apdex) score to rate application performance and provides
+       insights for building better software[3].
+  
+  7. *Elasticsearch*:
+     - A distributed search and analytics engine built on Apache
+       Lucene. It is commonly used for log analytics, full-text search,
+       security intelligence, business analytics, and operational
+       intelligence use cases[3].
+  
+  8. *Dynatrace*:
+     - A monitoring tool that provides insights into application
+       performance and user experience. It offers real-time monitoring,
+       AI-powered analytics, and automation to optimize system
+       performance[3].
+  
+  9. *AppDynamics*:
+     - An application performance management and IT operations analytics
+       tool that provides real-time insights into application
+       performance, user experience, and business impact[3].
+  
+  10. *Zabbix*:
+      - An open-source monitoring software for networks and
+        applications. It offers real-time monitoring, alerting, and
+        visualization capabilities for IT infrastructure[3].
+  
+  These tools help SREs monitor, analyze, and optimize the performance,
+  reliability, and availability of systems and applications, ensuring
+  smooth operations and efficient incident response.
+  
+  Citations:
+  [1] https://www.dotcom-monitor.com/blog/top-13-site-reliability-engineer-sre-tools/
+  [2] https://business.linkedin.com/talent-solutions/resources/how-to-hire-guides/site-reliability-engineer/interview-questions
+  [3] https://www.devopsschool.com/blog/top-10-monitoring-and-observability-tools-in-2022-for-sre-site-reliability-engineering/
+  [4] https://www.recruitingfromscratch.com/blog/site-reliability-engineers
+  [5] https://successive.cloud/top-12-site-reliability-engineering-tools/
