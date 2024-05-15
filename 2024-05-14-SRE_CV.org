@@ -41,11 +41,93 @@ response.
 
 ** Soft
 
-- Problem definition, decomposition, fixture, resolving and prevention;
+- The issue clear depiction, thorough decomposition, tough fixture,
+  serial resolving, causality deduction and prevention its occasion in
+  the future;
 - Time management with =Emacs Org-Agenda=;
 - Team player apt to learn and teach others;
 
 * Notes                                                            :noexport:
+
+** The essence
+
+Creating a CV for a Site Reliability Engineer (SRE) position requires
+including essential phrases that highlight your technical skills,
+experience with relevant tools and technologies, and your ability to
+manage and improve system reliability and performance. Here are some
+key phrases and sections to consider including:
+
+### Contact Information
+- **Full Name**
+- **Phone Number**
+- **Email Address**
+- **LinkedIn Profile**
+- **GitHub/GitLab Profile** (if applicable)
+- **Portfolio/Website** (if applicable)
+
+### Professional Summary
+- "Experienced Site Reliability Engineer with X years in system
+  administration, software development, and operations."
+- "Proven track record of improving system reliability and performance through automation and proactive monitoring."
+- "Strong background in managing and scaling cloud infrastructure, deploying CI/CD pipelines, and enhancing system observability."
+
+### Skills
+#### Technical Skills
+- **Programming/Scripting Languages**: "Proficient in Python, Go,
+  Bash, etc."
+- **Infrastructure as Code**: "Experienced with Terraform, Ansible, CloudFormation."
+- **CI/CD Tools**: "Hands-on experience with Jenkins, GitLab CI, CircleCI."
+- **Monitoring & Logging**: "Skilled in Prometheus, Grafana, ELK Stack, Splunk."
+- **Cloud Platforms**: "Expertise in AWS, GCP, Azure."
+- **Containerization & Orchestration**: "Proficient with Docker, Kubernetes."
+- **Databases**: "Experienced with MySQL, PostgreSQL, MongoDB, etc."
+
+#### Soft Skills
+- "Strong problem-solving and analytical skills."
+- "Excellent communication and collaboration abilities."
+- "Proactive and detail-oriented mindset."
+
+### Professional Experience
+- "Managed and scaled cloud infrastructure using AWS/GCP/Azure,
+  resulting in X% improvement in uptime and performance."
+- "Developed and maintained CI/CD pipelines with Jenkins/GitLab CI, reducing deployment times by X%."
+- "Implemented infrastructure as code with Terraform/Ansible, streamlining environment provisioning and management."
+- "Monitored and analyzed system performance using Prometheus/Grafana, leading to early detection and resolution of issues."
+- "Deployed and managed Kubernetes clusters for containerized applications, enhancing deployment flexibility and resource utilization."
+- "Collaborated with development teams to optimize application performance and reliability."
+
+### Projects
+- "Designed and deployed a multi-region, fault-tolerant infrastructure
+  on AWS, ensuring X% uptime."
+- "Automated server provisioning and configuration using Ansible, reducing manual intervention by X%."
+- "Set up comprehensive logging and monitoring solutions with ELK Stack, improving issue detection and troubleshooting speed."
+
+### Education
+- **Degree**: "Bachelor's/Master's in Computer Science, Information
+  Technology, or related field."
+- **Certifications**: "AWS Certified Solutions Architect, Google Cloud Professional DevOps Engineer, Certified Kubernetes Administrator, etc."
+
+### Additional Sections
+#### Achievements
+- "Recognized for outstanding contributions to system reliability and
+  performance improvement."
+- "Led a successful migration of legacy systems to cloud infrastructure, resulting in X% cost savings."
+
+#### Publications & Talks
+- "Published articles on SRE best practices in [reputable industry
+  blogs/journals]."
+- "Presented on [relevant topics] at [industry conferences/meetups]."
+
+### Languages
+- "Fluent in [languages], with professional proficiency in
+  [languages]."
+
+### References
+- "Available upon request."
+
+These phrases and sections will help you effectively showcase your
+expertise and experience as a Site Reliability Engineer, making your
+CV stand out to potential employers.
 
 ** Requirements
 
