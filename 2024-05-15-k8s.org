@@ -1,0 +1,108 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: Kubernetes
+tagline: " inside Emacs"
+permalink: /emacs/k8s.html
+categories: [Emacs, Kubernetes]
+tags: [k8s]
+---
+#+END_EXPORT
+
+#+STARTUP: showall indent
+#+AUTHOR:    Anton S. Kosinov
+#+TITLE:     Kubernetes
+#+SUBTITLE:  as an orchestration primary tool
+#+EMAIL:     a.s.kosinov@gmail.com
+#+LANGUAGE: en
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+
+* Overview
+
+Kubernetes is an open-source platform designed to automate the
+deployment, scaling, and operation of /containerized
+applications/. Originally developed by Google and now maintained by
+the Cloud Native Computing Foundation, Kubernetes helps manage
+clusters of compute instances, ensuring that containerized
+applications run consistently in different environments.
+
+#+begin_quote
+Kubernetes provides a robust framework to run distributed systems
+resiliently. It takes care of scaling and failover for your
+application, provides deployment patterns, and more, making it easier
+to manage complex applications consistently across various
+environments.
+#+end_quote
+
+Here are some key concepts and features of Kubernetes:
+
+** Glossary:
+
+*** Containers:
+These are lightweight, standalone, executable packages that include
+everything needed to run a piece of software, including the code,
+runtime, libraries, and dependencies.
+
+*** Pods:
+The smallest deployable units in Kubernetes, which can contain /one or
+more containers/. Pods represent a single instance of a running
+process in a cluster.
+
+*** Nodes:
+/Worker nodes/ run the containers and are managed by the control
+plane. Each node contains the necessary services to run pods,
+including the container runtime, kubelet, and kube-proxy.
+
+*** Clusters:
+A Kubernetes cluster consists of a /set/ of worker machines, called
+nodes, that run containerized applications. Every cluster has at least
+one worker node.
+
+
+*** Control Plane:
+The control plane manages the Kubernetes cluster. It makes decisions
+about the cluster (like scheduling), detects and responds to cluster
+events, and manages the cluster’s lifecycle.
+
+*** Key Components of the Control Plane:
+- Kube-APIserver: Exposes the Kubernetes API and is the entry
+  point for all the administrative tasks.
+- etcd: A consistent and highly-available key-value store used as
+  Kubernetes' backing store for all cluster data.
+- Kube-scheduler: Assigns workloads to specific nodes based on several
+  factors like resource requirements.
+- Kube-controller-manager: Runs various controllers to manage the
+  state of the cluster.
+
+
+
+** Main features:
+
+*** Service Discovery and Load Balancing:
+Kubernetes can expose a container using a DNS name or its IP
+address. It can also load balance the traffic to containers to ensure
+consistent application performance.
+
+*** Storage Orchestration:
+Kubernetes allows you to automatically mount the storage system of
+your choice, such as local storage, public cloud providers, and more.
+
+*** Automated Rollouts and Rollbacks:
+Kubernetes can manage the deployment of application changes, allowing
+for controlled rollouts and automatic rollbacks if something goes
+wrong.
+
+*** Self-Healing:
+Kubernetes restarts containers that fail, replaces and reschedules
+containers when nodes die, kills containers that don't respond to
+user-defined health checks, and doesn't advertise them to clients
+until they are ready to serve.
+
+*** Secret and Configuration Management:
+Kubernetes provides a way to manage sensitive information, such as
+passwords, OAuth tokens, and ssh keys. You can deploy and update
+secrets and application configuration without rebuilding your image
+and without exposing secrets in your stack configuration.
+
+* Installation & initial configuration
