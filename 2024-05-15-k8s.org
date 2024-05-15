@@ -75,7 +75,9 @@ events, and manages the cluster’s lifecycle.
 - Kube-controller-manager: Runs various controllers to manage the
   state of the cluster.
 
-
+#+CAPTION: Architecture
+#+ATTR_HTML: :title The Architecture :align center
+[[https://0--key.github.io/assets/img/k8s/k8s_arch_sample.png]]
 
 ** Main features:
 
