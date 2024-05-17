@@ -77,6 +77,7 @@ into the ~Emacs'~ ~Org-mode~ package, and all you're need to do - just
 read its documentation. Yes, it is not easy to do, so we are on the
 right path.
 
+
 * A natrual way to make notes
 
 Historically all this fuss around the notes has been successfully
@@ -326,4 +327,28 @@ back from a separate file.
 
 
 
+ 
+** An Insight Incubation
 
+It requires a lot of time to figure out what exactly your idea is.
+
+*** Double Loop Learning
+
+https://www.youtube.com/watch?v=83w-jFcwiX0
+
+** Straight Work Approach
+
++ Work first - recover later;
+- First 90 seconds after when you're wake up;
+- Harness your natural (early bird) proneness;
+
+** Shallow/deep | long/short sessions
+
+The time is a relative term when you're in deep learning. Only few
+early morning sessions could be productive and endure more than the
+standart 25 minutes.
+
+*** Regressive pomodoro
+
+- From 45m in the morning to 25m at noon;
+- Timer sound
