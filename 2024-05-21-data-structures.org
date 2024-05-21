@@ -1,0 +1,126 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: Data structures
+tagline: " as a key for structured data"
+permalink: /fundamentals/data-structures.html
+categories: [Data Structures]
+tags: [array, linked list, heap]
+---
+#+END_EXPORT
+
+#+STARTUP: showall indent
+#+AUTHOR:    Anton S. Kosinov
+#+TITLE:     A brief introduction into
+#+SUBTITLE:  the main data structures
+#+EMAIL:     a.s.kosinov@gmail.com
+#+LANGUAGE: en
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+
+
+#+CAPTION: Cover
+#+ATTR_HTML: :title Cover :align center
+[[https://0--key.github.io/assets/img/data_structures/cover.png]]
+
+* Overview
+
+Data structures in computer science are specialized formats for
+organizing, processing, retrieving, and storing data to suit specific
+purposes. They play a crucial role in efficient software design and
+algorithm implementation. Some main data structures include:
+
+**  Arrays
+
+#+begin_quote
+Collections of data items stored at contiguous memory locations,
+allowing for constant-time access.
+#+end_quote
+
+**  Linked Lists
+
+#+begin_quote
+Linear data structures where elements are linked using pointers,
+enabling dynamic insertion and deletion.
+#+end_quote
+
+The main difference between an array and a linked list lies in their
+structure and functionality:
+
+*Array*:
+
+ - An array is a collection of elements of the same data type stored
+   in contiguous memory locations;
+ - Elements in an array are accessed using indexes, allowing for fast
+   random access;
+ - Arrays have a fixed size specified during declaration and cannot be
+   altered at runtime;
+ - Memory allocation for arrays is done during compile time;
+ - Insertion and deletion operations in arrays can be time-consuming,
+   especially when elements need to be shifted.
+
+*Linked List*:
+
+ - A linked list is a linear data structure where elements are
+   stored randomly in memory and linked using pointers;
+ - Elements in a linked list are accessed sequentially, starting from
+   the head node;
+ - Linked lists are dynamic and flexible, allowing for size
+   adjustments during execution;
+ - Memory allocation for linked lists is done at runtime;
+ - Insertion and deletion operations in linked lists are faster and
+   more efficient compared to arrays.
+
+In summary, arrays are suitable for scenarios requiring fast random
+access to elements and a fixed size, while linked lists are preferred
+for dynamic data structures that need flexibility in size and
+efficient insertion and deletion operations.
+
+
+**  Stacks
+
+#+begin_quote
+Last-In-First-Out (LIFO) structures where elements are added and
+removed from the top.
+#+end_quote
+
+**  Queues
+
+#+begin_quote
+First-In-First-Out (FIFO) structures where elements are added at the
+end and removed from the beginning.
+#+end_quote
+
+**  Hash Tables
+
+#+begin_quote
+Data structures that use a hash function to map keys to values,
+facilitating fast lookup and insertion.
+#+end_quote
+
+**  Trees
+
+#+begin_quote
+Hierarchical structures where each node can have multiple child nodes.
+#+end_quote
+
+**  Graphs
+
+#+begin_quote
+Collections of nodes connected by edges, representing relationships
+between data elements.
+#+end_quote
+
+**  Heaps
+
+#+begin_quote
+Specialized tree-based data structures used for priority queue
+operations.
+#+end_quote
+
+* Conclusion
+
+These data structures are fundamental in computer science, enabling
+efficient data management, algorithm design, and software
+optimization.
+
