@@ -328,6 +328,11 @@ back from a separate file.
 
 
  
+** Temperature and Noise
+
+
+** Long-term planning
+ 
 ** An Insight Incubation
 
 It requires a lot of time to figure out what exactly your idea is.
