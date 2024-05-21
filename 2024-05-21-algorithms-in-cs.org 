@@ -24,6 +24,34 @@ The main algorithms in computer science cover a wide range of
 problem-solving techniques. Here are some key categories of algorithms
 commonly used in computer science:
 
+Sorting algorithms in computer science are essential procedures used
+to organize data efficiently in a specific order, typically ascending
+or descending. These algorithms play a crucial role in various
+applications within computer science, such as database sort-merge join
+algorithms and search algorithms like binary search. Sorting
+algorithms are integral to optimizing the efficiency of other
+algorithms and data handling, facilitating faster and more effective
+data management. They are vital for enhancing data access speed,
+improving resource management, and supporting more efficient and
+insightful data analysis outcomes.
+
+Some common sorting algorithms include Bubble Sort, Selection Sort,
+Insertion Sort, Merge Sort, Quick Sort, Heap Sort, Counting Sort,
+Radix Sort, and Bucket Sort. Each of these algorithms has unique
+advantages, disadvantages, and performance complexities. Sorting
+algorithms can be categorized based on parameters like the number of
+swaps or inversions, the number of comparisons, recursion or
+non-recursion, stability, and extra space requirement. The best
+possible time complexity for any comparison-based sorting algorithm is
+$$O(n \log n)$$, with algorithms like Heapsort and Merge Sort being
+asymptotically optimal comparison sorts[3][5].
+
+Citations:
+[1] https://www.studysmarter.co.uk/explanations/computer-science/algorithms-in-computer-science/sorting-algorithms/
+[2] https://brilliant.org/wiki/sorting-algorithms/
+[3] https://www.freecodecamp.org/news/sorting-algorithms-explained/
+[4] https://pmt.physicsandmathstutor.com/download/Computer-Science/A-level/Notes/OCR/2.3-Algorithms/Intermediate/2.3.3.%20Sorting%20Algorithms.pdf
+[5] https://www.geeksforgeeks.org/sorting-algorithms/
 
 * Optimization Algorithms
 
@@ -143,7 +171,7 @@ more effective overall solution.
 
 
 
-*  Graph Drawing:
+* Graph Drawing:
    - Force-based Algorithms
    - Spectral Layout
 
