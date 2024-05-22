@@ -1,0 +1,239 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: Anton S. Kosinov
+tagline: " what do I do vocationally"
+permalink: /python/full-stack-python-cv.html
+categories: [CV, FSPE]
+tags: [cv, info, about me]
+---
+#+END_EXPORT
+
+#+STARTUP: showall indent
+#+AUTHOR:    Anton S. Kosinov
+#+TITLE:     What do I do
+#+SUBTITLE:  vocationally
+#+EMAIL:     a.s.kosinov@gmail.com
+#+LANGUAGE: en
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+
+* \alpha{}bout Me
+
+Experienced Python developer with 4 years in software development,
+specializing in building, provisioning, hosting, testing, debugging,
+maintenance and extension of web applications. Proficient in Flask
+web-framework and Jinja template engine, with a strong background in
+Linux, RDBMS, algorithms and problem-solving.
+
+* \sigma{}xperience
+
+** Rehabilitation
+/2024 \to/
+
+** Mentoring
+/2023 \to 2024/
+
+Applying ultra-learning methodology I've being a tutor for my wife on
+her path to acquire new profession of software tester.
+
+/2022 \to 2023/
+
+Linux, Emacs & Python mentor
+
+** Self-reflection: Emacs, Org-Mode, Cognitive Biases
+/2016 \to 2022/
+
+Looking backward it is become clear to me that most of the time I've
+spend at software development was, frankly speaking, the waste of
+time: I just spent a lion's share of it by seeking out my own mistakes
+and figuring out how to fix them. Reasonably, I switched my focus on to
+/productivity and efficiency/ issue in software development.
+
+Studied Emacs extensions which might alleviate a headache: static
+syntax analysers...
+
+
+** Freelance: Python3, PostgreSQL, Flask, Jinja2
+/2010 \to 2015/
+
+I've developed web-apps galore: from a hundred of web-spiders to a
+couple of long-term full-fledged web-sites development. From composing
+technical specification, through minimum viable product elaboration,
+its extension, testing, debugging and maintenance.
+
+
+** CEO&CTO: PHP, MySQL, HTML5, CSS3
+/2008 \to 2010/
+
+
+** Linux Red Hat 4 & Ubuntu 5.10
+/2006 \to 2007/
+
+
+** Touch Typist
+/2005 \to 2006/
+
+
+* Notes                                                            :noexport:
+
+** Scratches
+
+Developed and launch my first start-up project from E2E: the buisiness
+idea was to implement the advanced delivery from local grocery stores
+to customers without any motor vehicles. The site was written by me in
+a PHP&MySQL bundle with a straight folder separation as a primitive
+version control system and WML for rendering data on smartphone
+screens. Later I filled the system up with goods, advertised and
+launch into production, but, alas, it was a failure: no one had had
+any wish to use it.
+
+** Essence
+Creating an effective CV for a Python software developer involves
+highlighting key skills, experiences, and achievements that resonate
+with potential employers. Here are essential phrases and sections to
+include:
+
+### Contact Information
+- Name
+- Phone Number
+- Email Address
+- LinkedIn Profile
+- GitHub Profile (or other relevant portfolios)
+- Personal Website/Blog (if applicable)
+
+### Professional Summary
+- Summary Statement:
+  - "Experienced Python developer with X years in software
+    development, specializing in web applications, data analysis, and
+    automation. Proficient in frameworks such as Django and Flask,
+    with a strong background in algorithms and problem-solving."
+  
+### Skills
+- Programming Languages:
+  - "Python, JavaScript, HTML/CSS, SQL"
+- Frameworks and Libraries:
+  - "Django, Flask, React, Pandas, NumPy, TensorFlow"
+- Tools and Technologies:
+  - "Git, Docker, Kubernetes, AWS, Jenkins"
+- Databases:
+  - "PostgreSQL, MySQL, MongoDB"
+- Other Skills:
+  - "API development, RESTful services, Agile methodologies,
+    Test-driven development (TDD)"
+
+### Professional Experience
+- Job Title, Company Name, Location (Month/Year – Month/Year)
+  - "Developed and maintained scalable web applications using Python and Django, serving over X users."
+  - "Implemented RESTful APIs to support front-end functionalities and third-party integrations."
+  - "Optimized database queries, reducing response times by X%."
+  - "Collaborated with cross-functional teams in Agile environments, delivering projects on time."
+  - "Automated data processing tasks using Python scripts, improving efficiency by X%."
+
+### Projects
+- Project Title (Link to repository or demo)
+  - "Description: Developed a [type of project] using [technologies], achieving [specific result]."
+  - "Implemented [specific feature], which improved [aspect] by X%."
+  - "Integrated [third-party API/tool] to enhance functionality."
+
+### Education
+- Degree, Major – University Name, Location (Year of Graduation)
+  - "Relevant coursework: Data Structures, Algorithms, Database Systems, Software Engineering"
+  - "Capstone Project: [Title], where I [brief description of the project]."
+
+### Certifications (if any)
+- Certification Title – Issuing Organization (Month/Year)
+  - "Description of certification or relevant skills gained."
+
+### Additional Sections
+- Open Source Contributions:
+  - "Contributed to [project name], where I [specific contribution], enhancing the [aspect of the project]."
+- Publications or Speaking Engagements:
+  - "Published an article on [topic] in [journal/blog]."
+  - "Spoke at [conference/event] on [topic]."
+- Professional Memberships:
+  - "Member of [professional organization], participating in [activities]."
+
+### Key Action Verbs and Phrases
+- "Developed"
+- "Implemented"
+- "Designed"
+- "Optimized"
+- "Automated"
+- "Collaborated"
+- "Led"
+- "Maintained"
+- "Improved"
+- "Integrated"
+
+### Achievements and Metrics
+- "Reduced processing time by X% through [specific action]."
+- "Increased application performance by X% by [specific optimization]."
+- "Successfully led a team of X developers in [project/task]."
+- "Delivered project X weeks ahead of schedule, resulting in [specific benefit]."
+- "Enhanced user experience, leading to X% increase in user engagement."
+
+### Final Tips
+- Tailor your CV: Customize your CV for each job application,
+  emphasizing the most relevant experiences and skills.
+- Use quantifiable achievements: Whenever possible, use numbers to demonstrate your impact.
+- Keep it concise: Aim for clarity and brevity, focusing on your most significant and relevant experiences.
+- Proofread: Ensure there are no typos or grammatical errors. A polished CV reflects attention to detail.
+
+By incorporating these essential phrases and structuring your CV
+effectively, you'll present a professional and compelling case to
+potential employers.
+** Requirements
+
+Based on the information provided in the search results, here is a
+summary of the key requirements to become a full-stack Python software
+developer:
+
+1. Strong foundation in Python programming:
+   - Proficiency in Python syntax, data structures, control flow, and
+     object-oriented programming
+
+2. Understanding of front-end technologies:
+   - HTML and CSS for structuring and styling web content
+   - JavaScript for building interactive user interfaces
+   - Experience with front-end frameworks like React, Vue.js, or
+     Angular
+
+3. Expertise in back-end development:
+   - Knowledge of Python web frameworks like Django or Flask
+   - Ability to design and implement server-side logic and APIs
+   - Experience with database management systems like PostgreSQL,
+     MySQL, or MongoDB
+   - Understanding of Object-Relational Mapping (ORM) tools like
+     SQLAlchemy
+
+4. Familiarity with version control systems:
+   - Proficiency in using Git for tracking code changes and
+     collaborating with teams
+
+5. Understanding of web servers and deployment:
+   - Knowledge of web servers like Apache or Nginx
+   - Experience with deployment platforms like Heroku, AWS, or Docker
+
+6. Continuous learning and staying up-to-date:
+   - Willingness to learn new technologies and frameworks
+   - Attending conferences, meetups, and workshops to expand knowledge
+
+7. Soft skills:
+   - Strong problem-solving and analytical abilities
+   - Effective communication and collaboration skills
+   - Attention to detail and ability to write clean, maintainable code
+
+The search results emphasize that becoming a full-stack Python
+developer requires a combination of technical skills, practical
+experience, and a continuous learning mindset. A bachelor's degree in
+computer science or a related field can be beneficial, but it is not
+always a strict requirement. The key is to demonstrate proficiency in
+the core technologies and the ability to design and implement
+end-to-end web applications.
+
+Citations:
+[1] https://www.ziprecruiter.com/career/Full-Stack-Python-Developer/What-Is-How-to-Become
+[2] https://www.cromacampus.com/blogs/what-do-i-need-to-become-a-full-stack-python-developer/
+[3] https://www.linkedin.com/pulse/complete-roadmap-becoming-full-stack-python-web-jai-steedhar
+[4] https://vivasoftltd.com/how-to-become-a-full-stack-developer-in-python/
