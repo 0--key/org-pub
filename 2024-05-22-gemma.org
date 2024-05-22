@@ -1,0 +1,41 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: Anton S. Kosinov
+tagline: " what do I do vocationally"
+permalink: /about/gemma.html
+categories: [Career Consultant]
+tags: [self-reflection, about me]
+---
+#+END_EXPORT
+
+#+STARTUP: showall indent
+#+AUTHOR:    Anton S. Kosinov
+#+TITLE:     How to sell
+#+SUBTITLE:  myself
+#+EMAIL:     a.s.kosinov@gmail.com
+#+LANGUAGE: en
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+
+
+* The third appointment
+
+** Non-verbal communication
+
+** My point of view
+
+From our first appointment I put my heart and soul into
+self-reflection. All what I did before was just an attempt to learn
+dancing without music at all and in a complete darkness: studying
+theory and ignoring a loopback response. Yes, it was fun enough for
+me: I've spent a dosen unforgettable weeks reading philosophy and
+contemplating about the turmoil in my life. Now, when you're point out
+on the general direction to the light and make a pace for my steps
+forward... It's just much easier to move when when you can count on
+professionalism and experience of another person.
+
+Yes, it was difficult to me initially, but now, when I figure out the
+level of your competence... It is high enough to trust you blindly.
+
+Following your suggestion to split the time, experience and skills...
