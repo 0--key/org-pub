@@ -75,6 +75,34 @@ its extension, testing, debugging and maintenance.
 /2005 \to 2006/
 
 
+
+* \Sigma{}kills
+
+** \Pi{}rogramming \Lambda{}anguages
+
+- Python, SQL, HTML/CSS, Elisp
+
+
+** Frameworks and Libraries
+
+- Flask, Jinja3, TwitterBootstrap, ...
+
+
+** Tools and Technologies
+
+- Emacs, Org-Mode, Git, Docker, Kubernetes, AWS, Jenkins
+
+
+** Databases
+
+- PostgreSQL, MySQL, MongoDB, SQLite3
+
+
+** Meta Skills
+
+- Task management, API development, RESTful services, Agile
+  methodologies, Test-driven development (TDD)
+
 * Notes                                                            :noexport:
 
 ** Scratches
@@ -168,17 +196,23 @@ include:
 
 ### Achievements and Metrics
 - "Reduced processing time by X% through [specific action]."
-- "Increased application performance by X% by [specific optimization]."
+- "Increased application performance by X% by [specific
+  optimization]."
 - "Successfully led a team of X developers in [project/task]."
-- "Delivered project X weeks ahead of schedule, resulting in [specific benefit]."
-- "Enhanced user experience, leading to X% increase in user engagement."
+- "Delivered project X weeks ahead of schedule, resulting in [specific
+  benefit]."
+- "Enhanced user experience, leading to X% increase in user
+  engagement."
 
 ### Final Tips
 - Tailor your CV: Customize your CV for each job application,
   emphasizing the most relevant experiences and skills.
-- Use quantifiable achievements: Whenever possible, use numbers to demonstrate your impact.
-- Keep it concise: Aim for clarity and brevity, focusing on your most significant and relevant experiences.
-- Proofread: Ensure there are no typos or grammatical errors. A polished CV reflects attention to detail.
+- Use quantifiable achievements: Whenever possible, use numbers to
+  demonstrate your impact.
+- Keep it concise: Aim for clarity and brevity, focusing on your most
+  significant and relevant experiences.
+- Proofread: Ensure there are no typos or grammatical errors. A
+  polished CV reflects attention to detail.
 
 By incorporating these essential phrases and structuring your CV
 effectively, you'll present a professional and compelling case to
