@@ -24,7 +24,7 @@ Experienced Python developer with 4 years in software development,
 specializing in building, provisioning, hosting, testing, debugging,
 maintenance and extension of web applications. Proficient in Flask
 web-framework and Jinja template engine, with a strong background in
-Linux, RDBMS, algorithms and problem-solving.
+Linux OS, DBMS, algorithms and problem solving&prevention.
 
 * \sigma{}xperience
 
@@ -41,6 +41,10 @@ her path to acquire new profession of software tester.
 
 Linux, Emacs & Python mentor
 
+
+** Literate Programming
+
+
 ** Self-reflection: Emacs, Org-Mode, Cognitive Biases
 /2016 \to 2022/
 
@@ -54,8 +58,24 @@ Studied Emacs extensions which might alleviate a headache: static
 syntax analysers...
 
 
-** Freelance: Python3, PostgreSQL, Flask, Jinja2
+** Freelance: Full-stack Python web-developer
 /2010 \to 2015/
+
+*** FastFresh
+/January 2014 \to March 2014/
+
+- Elaborated the initial technical specification in a week;
+- Created the tables structure in 100 minutes;
+- Developed the buisines logic model in 3 days;
+- Created the minimum-viable product in 5 days;
+- Manually tested its functionality in a single day;
+- Automated a database indexing; 
+- Automated the log directory clean-up;
+
+*** OvivoGAE
+
+*** Rigel LTD
+
 
 I've developed web-apps galore: from a hundred of web-spiders to a
 couple of long-term full-fledged web-sites development. From composing
@@ -72,20 +92,19 @@ its extension, testing, debugging and maintenance.
 
 
 ** Touch Typist
-/2005 \to 2006/
-
+/2005 \to 2006
 
 
 * \Sigma{}kills
 
 ** \Pi{}rogramming \Lambda{}anguages
 
-- Python, SQL, HTML/CSS, Elisp
+- Python, JavaScript, SQL, HTML/CSS, Elisp
 
 
 ** Frameworks and Libraries
 
-- Flask, Jinja3, TwitterBootstrap, ...
+- Flask, Jinja3, jQuery, TwitterBootstrap, Scrapy, NLTK
 
 
 ** Tools and Technologies
@@ -102,6 +121,7 @@ its extension, testing, debugging and maintenance.
 
 - Task management, API development, RESTful services, Agile
   methodologies, Test-driven development (TDD)
+
 
 * Notes                                                            :noexport:
 
