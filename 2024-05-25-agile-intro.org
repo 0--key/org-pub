@@ -1,0 +1,256 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: An Agile Methodology  
+tagline: " brief overview"
+permalink: /methodology/agile-overview.html
+categories: [Agile, Methodology]
+tags: [overview]
+---
+#+END_EXPORT
+
+#+STARTUP: showall indent
+#+AUTHOR:    Anton S. Kosinov
+#+TITLE:     A brief introduction into
+#+SUBTITLE:  an agile methodology
+#+EMAIL:     a.s.kosinov@gmail.com
+#+LANGUAGE: en
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+* Notes                                                            :noexport:
+** What is an AM in software development?
+
+An *Agile Methodology* in software development is an approach that
+emphasizes:
+
+- flexibility;
+- customer satisfaction;
+- collaboration to efficiently execute projects.
+
+
+It involves iterative and incremental processes, focusing on team
+collaboration and delivering working products quickly to meet customer
+needs and expectations[1][2].
+
+Agile methodologies prioritize
+principles like:
+
+- achieving customer satisfaction;
+- delivering error-free software;
+- adapting to market changes;
+- emphasizing face-to-face communication for effective information
+  sharing[1].
+
+
+The Agile software
+development process typically involves steps like:
+
+- gathering requirements;
+- planning, development;
+- testing, deployment;
+- maintenance to ensure continuous improvement and customer
+  satisfaction[1].
+
+Agile methodologies, such as =Scrum= and =Kanban=, promote iterative
+development, where requirements evolve through collaboration between
+self-organizing cross-functional teams, enabling faster delivery of
+high-quality software and better responsiveness to change[4].
+
+Citations:
+[1] https://www.simplilearn.com/tutorials/agile-scrum-tutorial/what-is-agile
+[2] https://www.redhat.com/en/topics/devops/what-is-agile-methodology
+[3] https://www.spiceworks.com/tech/devops/articles/what-is-agile-software-development/
+[4] https://www.cprime.com/resources/what-is-agile-what-is-scrum/
+[5] https://www.techtarget.com/searchsoftwarequality/definition/agile-software-development
+
+
+** What are an agile methodology main principles?
+
+The Agile methodology is based on 12 key principles that guide the
+project management approach. These principles are outlined in the
+Agile Manifesto and are designed to ensure that Agile projects are
+delivered efficiently, effectively, and with a focus on customer
+satisfaction. Here are the 12 Agile principles:
+
+1. Satisfy the customer through early and continuous delivery of valuable software: Deliver working software to customers regularly, rather than waiting until the end of the project[1][2][3].
+
+2. Welcome changing requirements, even late in development: Be open to changes in project requirements, even if they come late in the development process[1][2][3].
+
+3. Deliver working software frequently: Break down the project into smaller, manageable chunks, and deliver working software at the end of each iteration[1][2][3].
+
+4. Business people and developers must work together daily: Encourage collaboration between business stakeholders and developers throughout the project[1][2][3].
+
+5. Build projects around motivated individuals: Give team members the autonomy and support they need to do their jobs effectively[1][2].
+
+6. Face-to-face conversation is the most efficient and effective method of conveying information: Prioritize face-to-face communication over other methods, such as email or phone[1][2].
+
+7. Working software is the primary measure of progress: Focus on delivering working software, rather than just completing tasks or meeting deadlines[1][2].
+
+8. Agile processes promote sustainable development: Aim to maintain a consistent pace throughout the project, without the need for overtime or crunch time[1][2].
+
+9. Continuous attention to technical excellence and good design enhances agility: Prioritize technical excellence and good design to improve the overall quality of the project[1][2].
+
+10. Simplicity – the art of maximizing the amount of work not done – is essential: Focus on simplicity and avoid unnecessary complexity or work[1][2].
+
+11. The best architectures, requirements, and designs emerge from self-organizing teams: Empower teams to organize themselves and make decisions about the project[1][2].
+
+12. At regular intervals, the team reflects on how to become more agile and adjusts its behavior accordingly: Regularly reflect on the project's progress and adjust the approach as needed to improve agility[1][2].
+
+These principles form the foundation of the Agile methodology and are
+designed to promote flexibility, collaboration, and customer
+satisfaction in software development projects.
+
+Citations:
+[1] https://www.wrike.com/project-management-guide/agile-methodology-basics/
+[2] https://www.knowledgetrain.co.uk/agile/agile-project-management/agile-project-management-course/agile-principles
+[3] https://www.projectmanager.com/blog/agile-principles
+[4] https://www.simplilearn.com/tutorials/agile-scrum-tutorial/what-is-agile
+[5] https://agilemanifesto.org/principles.html
+
+** What are the benefits?
+
+The benefits of using Agile methodology in software development are
+numerous and impactful. Here are some key advantages highlighted in
+the provided sources:
+
+*** Flexibility and Adaptability
+
+Agile software development offers greater flexibility and adaptability
+in both deliverables and budget, allowing teams to respond quickly to
+changes in requirements or unforeseen obstacles[2][5].
+ 
+*** Increased Collaboration
+
+Agile promotes face-to-face communication and encourages collaboration
+among team members, stakeholders, and customers, ensuring everyone
+works towards the same goals and can identify and resolve problems
+effectively[2][5].
+
+*** Expert-Led Results
+
+Agile methodologies put experts in the lead of development decisions,
+ensuring that projects benefit from expert input on factors like cost,
+time, and methods, leading to adaptable software that meets client
+needs[2].
+
+*** Transparency
+
+Agile methodologies encourage transparency and regular inspection,
+allowing teams to track progress, identify issues early, and ensure
+that the final product meets expectations[3].
+
+*** Lower Client Stress
+
+Agile reduces client stress by providing insight and involvement
+throughout the project lifecycle, increasing customer satisfaction and
+trust in the team's ability to deliver high-quality results[2].
+
+*** Reduced Risk
+
+Agile's continuous review process helps catch potential mistakes
+early, lowering the risk of project failure and increasing confidence
+in the project's direction for all involved parties[2].
+
+*** Higher Motivation and Satisfaction
+
+Agile empowers team members, fostering a sense of ownership and
+responsibility for project success, leading to higher motivation and
+satisfaction among team members[2].
+
+*** Faster Delivery
+
+Agile emphasizes delivering working software early and frequently,
+allowing for quick feedback and adjustments, ultimately reducing the
+time to market for products or services[2][5].
+
+*** Continuous Improvement
+
+Agile fosters a culture of self-reflection and continuous improvement,
+ensuring that each sprint is better than the last and mistakes are not
+repeated, leading to enhanced project outcomes[5].
+
+*** Improved Team Morale
+
+Agile teams are self-organized and self-managing, leading to increased
+autonomy and authority over decisions, improved collaboration, and a
+close-knit team environment that boosts morale[5].
+
+*** More Relevant Metrics
+
+Agile methodologies provide more accurate and relevant metrics for
+estimating time and cost, measuring project performance, and
+optimizing results, enabling data-driven decisions and performance
+improvements[5].
+
+These benefits collectively contribute to the success of software
+development projects by enhancing quality, customer satisfaction, team
+collaboration, and project outcomes.
+
+Citations:
+[1] https://www.orientsoftware.com/blog/benefits-of-agile-methodology/
+[2] https://www.elevatodigital.com/benefits-of-agile-methodology/
+[3] https://www.seguetech.com/8-benefits-of-agile-software-development/
+[4] https://builtin.com/articles/benefits-of-agile
+[5] https://kissflow.com/project/agile/benefits-of-agile/
+
+
+*** What are the most popular agile methodologies?
+
+The most popular Agile methodologies are:
+
+**** Scrum
+
+Scrum is currently the most widely used Agile methodology, with 87% of
+respondents reporting they use it in their business[1]. Scrum is a
+framework that helps teams deliver customer value and iterate on
+products faster than traditional approaches[1]. It involves short
+sprints, daily stand-ups, and a focus on continuous
+improvement[1][2][4].
+
+**** Kanban
+
+Kanban is a workflow method that facilitates production and inventory
+control[2]. It helps teams visualize their work, maximize efficiency,
+and be agile[2]. Kanban uses a Kanban board with columns like "To Do",
+"In Progress", and "Done" to manage the workflow[2][4].
+
+**** Scaled Agile Framework (SAFe)
+
+SAFe is a popular framework for scaling Agile to larger teams and
+organizations[1]. It allows larger teams to get the advantages of
+Agile without sacrificing higher-level planning and control[1].
+
+**** Scrum of Scrums
+
+Scrum of Scrums is a method for scaling Scrum to multiple teams[1]. It
+involves a Scrum of Scrums meeting where representatives from each
+Scrum team meet and coordinate[1]. This helps larger teams stay
+aligned while retaining the benefits of small Scrum teams[1].
+
+**** Extreme Programming (XP)
+
+XP is an Agile methodology that involves a high degree of
+participation between customers and developers[2]. Customers provide
+feedback to inspire further development, while developers base each
+software upgrade on this feedback and test new innovations every few
+weeks[2].
+
+**** Scrumban (a hybrid of Scrum and Kanban)[1][5]
+
+**** Feature-Driven Development (FDD)[2][3]
+
+**** Lean Software Development[3][4]
+
+**** Crystal[4]
+
+The choice of Agile methodology depends on factors like team size,
+project complexity, and organizational culture. However, all Agile
+methodologies share a focus on flexibility, collaboration, and
+delivering value to customers[2][4].
+
+Citations:
+[1] https://www.parabol.co/blog/most-popular-agile-methodologies/
+[2] https://businessmap.io/agile/different-agile-methodologies
+[3] https://www.indeed.com/career-advice/career-development/agile-methodologies
+[4] https://www.xpand-it.com/blog/top-5-agile-methodologies/
+[5] https://whiteboards.io/blog/types-of-agile-methodologies/
