@@ -1,0 +1,199 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: Anton S. Kosinov
+tagline: " what do I do vocationally"
+permalink: /misc/training-dev-overview.html
+categories: [CV, Training Dev]
+tags: []
+---
+#+END_EXPORT
+
+#+STARTUP: showall indent
+#+LANGUAGE: en
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+
+* Preface
+
+If you are interested in /creating engaging and effective learning
+experiences/ for various audiences, you might want to consider a
+career as a ~training developer~.
+
+#+begin_quote
+A ~training developer~ is a professional who designs, develops, and
+evaluates training programs and materials for different organizations
+and purposes.
+#+end_quote
+
+In this article, you will learn about the main roles and
+responsibilities, skills and qualifications, and career opportunities
+of a ~training developer~.
+
+* Roles and responsibilities 
+
+A ~training developer~ is responsible for the whole process of
+creating and delivering training solutions, from identifying the
+learning needs and objectives, to designing the curriculum and
+content, to developing the activities and assessments, to evaluating
+the outcomes and feedback. A ~training developer~ may work on
+different types of training, such as e-learning, instructor-led,
+blended, or mobile, depending on the context and the target
+audience. A ~training developer~ may also collaborate with subject
+matter experts, instructors, graphic designers, and other stakeholders
+to ensure the quality and relevance of the training.
+
+A ~training developer~ is responsible for creating, designing, and
+developing training programs and materials to /facilitate learning and
+skill development/ among employees or learners.
+
+This involves:
+
+- identifying training needs;
+- designing curricula;
+- creating content;
+- selecting appropriate delivery methods
+- evaluating the effectiveness of training programs.
+
+
+Their goal is to ensure that training aligns with organizational
+objectives and enhances the knowledge and skills of participants.
+
+
+* Skills and qualifications 
+
+To become a successful ~training developer~, you need to have a
+combination of technical, interpersonal, and creative skills. Some of
+the technical skills include knowledge of instructional design
+principles and models, learning theories and strategies, adult
+learning principles, and various authoring tools and platforms. Some
+of the interpersonal skills include communication, collaboration,
+facilitation, and presentation skills. Some of the creative skills
+include problem-solving, critical thinking, and innovation
+skills. Additionally, you may need to have a degree or a certification
+in education, instructional design, or a related field, as well as
+some experience in developing and delivering training.
+
+
+** Skills:
+
+1. Need identification;
+2. Root cause Analysis;
+3. Problem solving;
+4. Making complex things simpler and easy to understand;
+5. Clarity in communication;
+6. Usage of stories and examples.
+
+** Qualifications:
+
+1. Degree (UG/ PG)in your domain
+2. Certifications related to your area of expertise;
+3. Recognition, License from key organisations.
+
+
+* Career opportunities 
+
+As a ~training developer~, you can find employment opportunities in
+various sectors and industries, such as education, business,
+government, health care, or nonprofit. You can also work as a
+freelancer or a consultant, offering your services to different
+clients and projects. According to the U.S. Bureau of Labor
+Statistics, the median annual wage for training and development
+specialists, which includes ~training developer~s, was $61,210 in
+2019. The job outlook for this occupation is projected to grow by 9% from
+2019 to 2029, faster than the average for all occupations.
+
+
+Large companies are increasingly adopting a model that views work as a
+set of skills. This trend emphasizes the need for ~training
+developer~s to focus on skill-based training programs. Companies with
+comprehensive employee training programs also have significantly
+higher income per employee than those without formalized
+training. When employees receive the training they need, companies are
+more productive so more opportunities are arising! There is also a
+growing trend in the adoption of VR for training, which is
+transforming the way training is delivered and experienced. This
+suggests a need for ~training developer~s to be adept in creating
+VR-based training programs.
+
+
+A ~training developer~ designs and creates educational materials for
+various purposes, often in corporate or academic settings. They
+analyze learning needs, develop curriculum, and utilize various tools
+and technologies to produce engaging training programs. Career
+opportunities in this field are diverse, ranging from e-learning
+companies to corporate training departments. With the increasing
+demand for skill development, ~training developer~s play a pivotal
+role in shaping effective learning experiences, offering a dynamic and
+rewarding career path for those passionate about education and
+instructional design.
+
+
+* Benefits and challenges 
+
+Working as a ~training developer~ can be rewarding and fulfilling, as
+you get to create meaningful and impactful learning experiences that
+can help people improve their skills, knowledge, and performance. You
+also get to use your creativity and innovation to design and develop
+engaging and effective training solutions that suit different needs
+and preferences.  However, working as a ~training developer~ can also
+be challenging and demanding, as you have to deal with tight
+deadlines, changing requirements, complex content, diverse audiences,
+and limited resources. You also have to constantly update your skills
+and knowledge to keep up with the latest trends and technologies in
+the field.
+
+A ~training developer~ designs and creates educational materials to
+enhance employee skills. Benefits include improved workforce
+competence and streamlined onboarding. Challenges involve staying
+current with industry trends and ensuring content relevance. Balancing
+engagement and information delivery is key for effective training
+development. It's a dynamic role requiring creativity, adaptability,
+and a commitment to continuous improvement.
+
+
+* Tips and advice 
+
+If you want to pursue a career as a ~training developer~, there are
+some tips and advice that can be useful.
+
+
+Building a portfolio of your training projects and samples is a great
+way to showcase your skills for potential employers or
+clients. Networking with other training professionals and joining
+online communities can help you exchange ideas, insights, and
+feedback. Additionally, seeking feedback from learners, clients, or
+colleagues can help you improve your training products and
+processes. You can also use data and analytics to measure the
+effectiveness of your training solutions. Above all, it is important
+to keep learning and developing your skills and knowledge as a
+~training developer~ by enrolling in online courses, reading books or
+blogs, or watching videos or podcasts that cover relevant topics and
+trends in the field.
+
+Absolutely true! I would definitely focus on two topics included in
+this section of the article: what is the business impact or ROI on the
+training you’ve developed, and how are you continuing to grow and
+develop your own skillset. We were just having this conversation
+yesterday, ensuring there is a way to measure the business impact of
+the training that has been developed and delivered, and then
+communicating that impact, will ensure you stand out. Always align to
+the numbers! The moment you are standing still you risk being left
+behind. Continuing to expand your skills and keeping up with training
+trends will set you up for success in this field.
+
+In my experience, using a different set of frameworks helped me get a
+additional perspectives and enhance the impact of and engagement of
+content. -Deeply understanding L&D challenges and context. -Adapting
+strategic frameworks like the 7S McKinsey or ADKAR for a thorough
+analysis. Though not designed for content development, they can guide
+content to align with organizational objectives and ensure impact. For
+example, content that supports change could emphasize the benefits of
+this change, or add questions to reflect on the change even if the
+topic is on how to use a new system. -Opting for visual storyboards or
+prototypes over text-based ones to provide a clearer, more
+comprehensive view to clients and minimize revisions.
+
+* [[https://www.linkedin.com/advice/3/what-does-training-developer-do-training-development-advice-fvsqc][Source]]
+
+* Notes                                                            :noexport:
