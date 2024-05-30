@@ -9,10 +9,12 @@ tags: [docker, intro]
 ---
 #+END_EXPORT
 
-#+STARTUP: showall
+#+STARTUP: showall indent
 #+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
 #+TOC: headlines 2
 #+PROPERTY:header-args :results output :exports both :eval no-export
+
+
 
 * Concept description
 
@@ -22,7 +24,12 @@ tags: [docker, intro]
 * Installation
 
   Seems like all you need is to follow up through the comprehensive
-  manual from [[https://docs.docker.com/install/linux/docker-ce/#set-up-the-repository][the official site]].
+  manual from [[https://docs.docker.com/engine/install/debian/#install-using-the-repository][the official site]] using ~apt repository~.
+
+** Post-installation settings
+
+Follow the [[https://docs.docker.com/engine/install/linux-postinstall/][official manual]].
+
 
 * Check-up
 
@@ -32,7 +39,7 @@ tags: [docker, intro]
    #+END_SRC
 
    #+RESULTS:
-   : Docker version 17.12.0-ce, build c97c6d6
+   : Docker version 26.1.3, build b72abbb
 
 ** Help
    #+BEGIN_SRC sh
@@ -42,68 +49,68 @@ tags: [docker, intro]
    #+RESULTS:
    #+begin_example
 
-   Usage:	docker COMMAND
+   Usage:  docker [OPTIONS] COMMAND
 
    A self-sufficient runtime for containers
 
-   Options:
-         --config string      Location of client config files (default "/home/antony/.docker")
-     -D, --debug              Enable debug mode
-         --help               Print usage
-     -H, --host list          Daemon socket(s) to connect to (default [])
-     -l, --log-level string   Set the logging level ("debug", "info", "warn", "error", "fatal") (default "info")
-         --tls                Use TLS; implied by --tlsverify
-         --tlscacert string   Trust certs signed only by this CA (default "/home/antony/.docker/ca.pem")
-         --tlscert string     Path to TLS certificate file (default "/home/antony/.docker/cert.pem")
-         --tlskey string      Path to TLS key file (default "/home/antony/.docker/key.pem")
-         --tlsverify          Use TLS and verify the remote
-     -v, --version            Print version information and quit
+   Common Commands:
+     run         Create and run a new container from an image
+     exec        Execute a command in a running container
+     ps          List containers
+     build       Build an image from a Dockerfile
+     pull        Download an image from a registry
+     push        Upload an image to a registry
+     images      List images
+     login       Log in to a registry
+     logout      Log out from a registry
+     search      Search Docker Hub for images
+     version     Show the Docker version information
+     info        Display system-wide information
 
    Management Commands:
+     builder     Manage builds
+     buildx*     Docker Buildx
+     checkpoint  Manage checkpoints
+     compose*    Docker Compose
      container   Manage containers
+     context     Manage contexts
      image       Manage images
+     manifest    Manage Docker image manifests and manifest lists
      network     Manage networks
-     node        Manage Swarm nodes
      plugin      Manage plugins
-     secret      Manage Docker secrets
-     service     Manage services
-     stack       Manage Docker stacks
-     swarm       Manage Swarm
      system      Manage Docker
+     trust       Manage trust on Docker images
      volume      Manage volumes
 
+   Swarm Commands:
+     config      Manage Swarm configs
+     node        Manage Swarm nodes
+     secret      Manage Swarm secrets
+     service     Manage Swarm services
+     stack       Manage Swarm stacks
+     swarm       Manage Swarm
+
    Commands:
-     attach      Attach to a running container
-     build       Build an image from a Dockerfile
+     attach      Attach local standard input, output, and error streams to a running container
      commit      Create a new image from a container's changes
      cp          Copy files/folders between a container and the local filesystem
      create      Create a new container
      diff        Inspect changes to files or directories on a container's filesystem
      events      Get real time events from the server
-     exec        Run a command in a running container
      export      Export a container's filesystem as a tar archive
      history     Show the history of an image
-     images      List images
      import      Import the contents from a tarball to create a filesystem image
-     info        Display system-wide information
      inspect     Return low-level information on Docker objects
      kill        Kill one or more running containers
      load        Load an image from a tar archive or STDIN
-     login       Log in to a Docker registry
-     logout      Log out from a Docker registry
      logs        Fetch the logs of a container
      pause       Pause all processes within one or more containers
      port        List port mappings or a specific mapping for the container
-     ps          List containers
-     pull        Pull an image or a repository from a registry
-     push        Push an image or a repository to a registry
      rename      Rename a container
      restart     Restart one or more containers
      rm          Remove one or more containers
      rmi         Remove one or more images
-     run         Run a command in a new container
      save        Save one or more images to a tar archive (streamed to STDOUT by default)
-     search      Search the Docker Hub for images
      start       Start one or more stopped containers
      stats       Display a live stream of container(s) resource usage statistics
      stop        Stop one or more running containers
@@ -111,21 +118,40 @@ tags: [docker, intro]
      top         Display the running processes of a container
      unpause     Unpause all processes within one or more containers
      update      Update configuration of one or more containers
-     version     Show the Docker version information
      wait        Block until one or more containers stop, then print their exit codes
 
+   Global Options:
+	 --config string      Location of client config files (default
+			      "/home/alioth/.docker")
+     -c, --context string     Name of the context to use to connect to the
+			      daemon (overrides DOCKER_HOST env var and
+			      default context set with "docker context use")
+     -D, --debug              Enable debug mode
+     -H, --host list          Daemon socket to connect to
+     -l, --log-level string   Set the logging level ("debug", "info",
+			      "warn", "error", "fatal") (default "info")
+	 --tls                Use TLS; implied by --tlsverify
+	 --tlscacert string   Trust certs signed only by this CA (default
+			      "/home/alioth/.docker/ca.pem")
+	 --tlscert string     Path to TLS certificate file (default
+			      "/home/alioth/.docker/cert.pem")
+	 --tlskey string      Path to TLS key file (default
+			      "/home/alioth/.docker/key.pem")
+	 --tlsverify          Use TLS and verify the remote
+     -v, --version            Print version information and quit
+
    Run 'docker COMMAND --help' for more information on a command.
- #+end_example
+
+   For more help on how to use Docker, head to https://docs.docker.com/go/guides/
+   #+end_example
 
 ** Images
 
    #+BEGIN_SRC sh
-   docker images
+     docker images
    #+END_SRC
 
    #+RESULTS:
-   : REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
-   : hello-world         latest              1815c82652c0        2 years ago         1.84kB
 
 ** Test execution
 
@@ -134,29 +160,6 @@ tags: [docker, intro]
    #+END_SRC
 
    #+RESULTS:
-   #+begin_example
-
-   Hello from Docker!
-   This message shows that your installation appears to be working correctly.
-
-   To generate this message, Docker took the following steps:
-    1. The Docker client contacted the Docker daemon.
-    2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
-    3. The Docker daemon created a new container from that image which runs the
-       executable that produces the output you are currently reading.
-    4. The Docker daemon streamed that output to the Docker client, which sent it
-       to your terminal.
-
-   To try something more ambitious, you can run an Ubuntu container with:
-    $ docker run -it ubuntu bash
-
-   Share images, automate workflows, and more with a free Docker ID:
-    https://cloud.docker.com/
-
-   For more examples and ideas, visit:
-    https://docs.docker.com/engine/userguide/
-
-   #+end_example
 
 ** Busy box                                                        :noexport:
    #+BEGIN_SRC sh
