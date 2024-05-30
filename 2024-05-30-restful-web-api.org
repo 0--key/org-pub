@@ -1,0 +1,141 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: RESTful API
+tagline: " for web apps"
+permalink: /web/restful/api.html
+categories: [RESTful, API]
+tags: [overview]
+---
+#+END_EXPORT
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+PROPERTY: header-args :exports both
+#+PROPERTY: header-args+ :results output pp
+#+PROPERTY: header-args+ :eval no-export
+#+TOC: headlines 2
+* Intro
+
+#+begin_quote
+A RESTful web API (/Representational State Transfer web Application
+Programming Interface/) serves as a communication interface between
+different software applications. It allows them to exchange data in a
+standardized and efficient manner, facilitating integration and
+interaction between various components and systems.
+#+end_quote
+
+** Definition
+
+#+begin_quote
+A RESTful web API (/Representational State Transfer web Application
+Programming Interface/) is an architectural style and approach to
+designing networked applications. It uses =HTTP requests= to perform
+standard CRUD (/Create, Read, Update, Delete/) operations. Here’s an
+overview of the key concepts:
+#+end_quote
+
+
+* Key Concepts
+
+** Resources
+
+Everything in a RESTful API is considered a resource. A resource can
+be any object, data, or service that can be accessed and manipulated.
+Each resource is identified by a URI (/Uniform Resource
+Identifier/). For example, in a RESTful API for a library system, a
+book might be a resource with a URI like `/books/123`.
+
+** HTTP Methods
+
+RESTful APIs use standard /HTTP methods/ to perform operations on
+resources:
+
+*** GET: Retrieve a resource or a collection of resources.
+
+*** POST: Create a new resource.
+
+*** PUT: Update an existing resource.
+
+*** DELETE: Remove a resource.
+
+** Statelessness:
+
+Each request from a client to the server must contain all the
+information needed to understand and process the request. The server
+does not store any client context between requests.
+
+** Representation
+
+Resources are typically represented in JSON or XML format. When a
+client requests a resource, the server sends back the resource's
+current state in one of these formats. For example, a GET request to
+`/books/123` might return the following JSON representation of a book:
+
+*json*
+#+begin_example
+     {
+       "id": 123,
+       "title": "RESTful Web Services",
+       "author": "Leonard Richardson",
+       "published_date": "2007-05-08"
+     }
+#+end_example
+
+** Stateless Communication:
+
+Each request from a client contains all the information the server
+needs to fulfill that request (e.g., authentication tokens,
+parameters).
+
+** Hypermedia as the Engine of Application State (HATEOAS):
+
+Clients interact with a network application entirely through
+hypermedia provided dynamically by application servers.
+
+For instance, a response from the server might include links to
+related resources:
+
+*json*
+
+#+begin_example
+{
+       "id": 123,
+       "title": "RESTful Web Services",
+       "author": "Leonard Richardson",
+       "links": [
+         {"rel": "self", "href": "/books/123"},
+         {"rel": "author", "href": "/authors/45"}
+       ]
+     }
+#+end_example
+
+
+* Example Use Case
+
+Imagine you are developing a RESTful API for a library system. Here’s
+how you might design the API endpoints:
+
+- GET /books: Retrieve a list of all books.
+- GET /books/{id}: Retrieve a specific book by its ID.
+- POST /books: Add a new book.
+- PUT /books/{id}: Update the details of an existing book.
+- DELETE /books/{id}: Remove a book.
+
+
+
+* Benefits of RESTful APIs
+
+- Scalability: /Statelessness/ and the separation of client and server
+  enable better scalability.
+- Flexibility: Clients and servers can evolve independently.
+- Interoperability: RESTful APIs can be used with virtually any
+  programming language that supports HTTP.
+
+
+* Conclusion
+
+A RESTful web API leverages standard web protocols and HTTP methods to
+create, retrieve, update, and delete resources in a way that is
+simple, scalable, and stateless. This architectural style is widely
+used for web services and applications due to its efficiency and ease
+of integration.
