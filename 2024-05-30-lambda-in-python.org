@@ -1,0 +1,47 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Lamda Function
+tagline: " is a tiny and efficient"
+permalink: /fundamentals/python/lambda.html
+categories: [Python, Literate Programming]
+tags: [overview, lambda function]
+---
+#+END_EXPORT
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+PROPERTY: header-args :exports both
+#+PROPERTY: header-args+ :results output pp
+#+PROPERTY: header-args+ :eval no-export
+#+TOC: headlines 2
+* Preface
+** Official
+
+#+begin_verse
+lambda
+
+     An anonymous inline function consisting of a single
+     expression which is evaluated when the function is called.
+     The syntax to create a lambda function is ‘lambda [parameters]:
+     expression’
+#+end_verse
+
+#+begin_verse
+expression
+
+     A piece of syntax which can be evaluated to some value.  In other
+     words, an expression is an accumulation of expression elements like
+     literals, names, attribute access, operators or function calls
+     which all return a value.  In contrast to many other languages, not
+     all language constructs are expressions.  There are also 
+     statement, which cannot be used as expressions, such as
+     while. Assignments are also statements, not expressions.
+#+end_verse
+
+
+** Alternative definition
+
+#+begin_quote
+Python lambdas are little, anonymous functions, subject to a more
+restrictive but more concise syntax than regular Python functions.
+#+end_quote

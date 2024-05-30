@@ -1,0 +1,45 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Python's innate
+tagline: " data model"
+permalink: /python/fundamentals/innate-data-model.html
+categories: [Python, Data Model]
+tags: []
+---
+#+END_EXPORT
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t eval:no-export
+#+PROPERTY: header-args :exports both
+#+PROPERTY: header-args+ :results output pp
+#+PROPERTY: header-args+ :eval no-export
+#+TOC: headlines 2
+
+#+CAPTION: Python Logo
+#+ATTR_HTML: :title Python Itself :align center
+[[https://0--key.github.io/assets/img/green_snake.jpeg]]
+
+* Prerequisites
+#+begin_src sh
+  python3 --version
+  echo "Hello!"
+#+end_src
+
+#+RESULTS:
+: Python 3.11.2
+: Hello!
+
+#+begin_src python
+  import sys
+  print(sys.path)
+  print("Hello from Babel!@!")
+#+end_src
+
+#+RESULTS:
+: ['', '/usr/lib/python311.zip', '/usr/lib/python3.11', '/usr/lib/python3.11/lib-dynload', '/usr/local/lib/python3.11/dist-packages', '/usr/lib/python3/dist-packages', '/usr/lib/python3.11/dist-packages']
+: Hello from Babel!@!
+['', '/usr/lib/python311.zip', '/usr/lib/python3.11', '/usr/lib/python3.11/lib-dynload', '/usr/local/lib/python3.11/dist-packages', '/usr/lib/python3/dist-packages', '/usr/lib/python3.11/dist-packages']
+Hello from Babel!
+
+
+
