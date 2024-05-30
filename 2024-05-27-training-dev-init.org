@@ -16,6 +16,10 @@ tags: []
 
 * Preface
 
+#+begin_quote
+“To help and lead others to aspire!”
+#+end_quote
+
 If you are interested in /creating engaging and effective learning
 experiences/ for various audiences, you might want to consider a
 career as a ~training developer~.
@@ -197,3 +201,8 @@ comprehensive view to clients and minimize revisions.
 * [[https://www.linkedin.com/advice/3/what-does-training-developer-do-training-development-advice-fvsqc][Source]]
 
 * Notes                                                            :noexport:
+Originally employed as a trainee in technical support
+
+profound experience, seduction astray mentoring 'abysmal divorce', It
+is rationalized by hindsight, comprehend, maintain implement
+additional perseverance, tenacity

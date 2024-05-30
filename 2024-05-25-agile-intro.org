@@ -10,15 +10,119 @@ tags: [overview]
 #+END_EXPORT
 
 #+STARTUP: showall indent
-#+AUTHOR:    Anton S. Kosinov
-#+TITLE:     A brief introduction into
-#+SUBTITLE:  an agile methodology
-#+EMAIL:     a.s.kosinov@gmail.com
-#+LANGUAGE: en
 #+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+PROPERTY: header-args :exports both
+#+PROPERTY: header-args+ :results output pp
+#+PROPERTY: header-args+ :eval no-export
 #+TOC: headlines 2
+
+* Preface
+
+The Agile methodology is based on 12 key principles that guide the
+project management approach. These principles are outlined in the
+[[https://agilemanifesto.org/principles.html][Agile Manifesto]] and are designed to ensure that Agile projects are
+delivered efficiently, effectively, and with a focus on customer
+satisfaction.
+
+* We follow these principles: 
+
+#+begin_verse
+Our highest priority is /to satisfy the customer/
+through early and continuous delivery
+of valuable software.
+
+Welcome changing requirements, even late in 
+development. Agile processes harness change for 
+the customer's competitive advantage. 
+
+Deliver working software frequently, from a 
+couple of weeks to a couple of months, with a 
+preference to the shorter timescale. 
+
+Business people and developers must work 
+together daily throughout the project. 
+
+Build projects around motivated individuals. 
+Give them the environment and support they need, 
+and trust them to get the job done. 
+
+The most efficient and effective method of 
+conveying information to and within a development 
+team is face-to-face conversation. 
+
+Working software is the primary measure of progress. 
+
+Agile processes promote sustainable development. 
+The sponsors, developers, and users should be able 
+to maintain a constant pace indefinitely. 
+
+Continuous attention to technical excellence 
+and good design enhances agility. 
+
+Simplicity--the art of maximizing the amount 
+of work not done--is essential. 
+
+The best architectures, requirements, and designs 
+emerge from self-organizing teams. 
+
+At regular intervals, the team reflects on how 
+to become more effective, then tunes and adjusts 
+its behavior accordingly. 
+#+end_verse
+
+
+
+
 * Notes                                                            :noexport:
+
+** What are an agile methodology main principles?
+
+
+The Agile methodology is based on 12 key principles that guide the
+project management approach. These principles are outlined in the
+Agile Manifesto and are designed to ensure that Agile projects are
+delivered efficiently, effectively, and with a focus on customer
+satisfaction. Here are the 12 Agile principles:
+
+1. Satisfy the customer through early and continuous delivery of valuable software: Deliver working software to customers regularly, rather than waiting until the end of the project[1][2][3].
+
+2. Welcome changing requirements, even late in development: Be open to changes in project requirements, even if they come late in the development process[1][2][3].
+
+3. Deliver working software frequently: Break down the project into smaller, manageable chunks, and deliver working software at the end of each iteration[1][2][3].
+
+4. Business people and developers must work together daily: Encourage collaboration between business stakeholders and developers throughout the project[1][2][3].
+
+5. Build projects around motivated individuals: Give team members the autonomy and support they need to do their jobs effectively[1][2].
+
+6. Face-to-face conversation is the most efficient and effective method of conveying information: Prioritize face-to-face communication over other methods, such as email or phone[1][2].
+
+7. Working software is the primary measure of progress: Focus on delivering working software, rather than just completing tasks or meeting deadlines[1][2].
+
+8. Agile processes promote sustainable development: Aim to maintain a consistent pace throughout the project, without the need for overtime or crunch time[1][2].
+
+9. Continuous attention to technical excellence and good design enhances agility: Prioritize technical excellence and good design to improve the overall quality of the project[1][2].
+
+10. Simplicity – the art of maximizing the amount of work not done – is essential: Focus on simplicity and avoid unnecessary complexity or work[1][2].
+
+11. The best architectures, requirements, and designs emerge from self-organizing teams: Empower teams to organize themselves and make decisions about the project[1][2].
+
+12. At regular intervals, the team reflects on how to become more agile and adjusts its behavior accordingly: Regularly reflect on the project's progress and adjust the approach as needed to improve agility[1][2].
+
+These principles form the foundation of the Agile methodology and are
+designed to promote flexibility, collaboration, and customer
+satisfaction in software development projects.
+
+Citations:
+[1] https://www.wrike.com/project-management-guide/agile-methodology-basics/
+[2] https://www.knowledgetrain.co.uk/agile/agile-project-management/agile-project-management-course/agile-principles
+[3] https://www.projectmanager.com/blog/agile-principles
+[4] https://www.simplilearn.com/tutorials/agile-scrum-tutorial/what-is-agile
+[5] https://agilemanifesto.org/principles.html
+
+
+
 ** What is an AM in software development?
+
 
 An *Agile Methodology* in software development is an approach that
 emphasizes:
@@ -62,50 +166,6 @@ Citations:
 [3] https://www.spiceworks.com/tech/devops/articles/what-is-agile-software-development/
 [4] https://www.cprime.com/resources/what-is-agile-what-is-scrum/
 [5] https://www.techtarget.com/searchsoftwarequality/definition/agile-software-development
-
-
-** What are an agile methodology main principles?
-
-The Agile methodology is based on 12 key principles that guide the
-project management approach. These principles are outlined in the
-Agile Manifesto and are designed to ensure that Agile projects are
-delivered efficiently, effectively, and with a focus on customer
-satisfaction. Here are the 12 Agile principles:
-
-1. Satisfy the customer through early and continuous delivery of valuable software: Deliver working software to customers regularly, rather than waiting until the end of the project[1][2][3].
-
-2. Welcome changing requirements, even late in development: Be open to changes in project requirements, even if they come late in the development process[1][2][3].
-
-3. Deliver working software frequently: Break down the project into smaller, manageable chunks, and deliver working software at the end of each iteration[1][2][3].
-
-4. Business people and developers must work together daily: Encourage collaboration between business stakeholders and developers throughout the project[1][2][3].
-
-5. Build projects around motivated individuals: Give team members the autonomy and support they need to do their jobs effectively[1][2].
-
-6. Face-to-face conversation is the most efficient and effective method of conveying information: Prioritize face-to-face communication over other methods, such as email or phone[1][2].
-
-7. Working software is the primary measure of progress: Focus on delivering working software, rather than just completing tasks or meeting deadlines[1][2].
-
-8. Agile processes promote sustainable development: Aim to maintain a consistent pace throughout the project, without the need for overtime or crunch time[1][2].
-
-9. Continuous attention to technical excellence and good design enhances agility: Prioritize technical excellence and good design to improve the overall quality of the project[1][2].
-
-10. Simplicity – the art of maximizing the amount of work not done – is essential: Focus on simplicity and avoid unnecessary complexity or work[1][2].
-
-11. The best architectures, requirements, and designs emerge from self-organizing teams: Empower teams to organize themselves and make decisions about the project[1][2].
-
-12. At regular intervals, the team reflects on how to become more agile and adjusts its behavior accordingly: Regularly reflect on the project's progress and adjust the approach as needed to improve agility[1][2].
-
-These principles form the foundation of the Agile methodology and are
-designed to promote flexibility, collaboration, and customer
-satisfaction in software development projects.
-
-Citations:
-[1] https://www.wrike.com/project-management-guide/agile-methodology-basics/
-[2] https://www.knowledgetrain.co.uk/agile/agile-project-management/agile-project-management-course/agile-principles
-[3] https://www.projectmanager.com/blog/agile-principles
-[4] https://www.simplilearn.com/tutorials/agile-scrum-tutorial/what-is-agile
-[5] https://agilemanifesto.org/principles.html
 
 ** What are the benefits?
 
@@ -194,11 +254,11 @@ Citations:
 [5] https://kissflow.com/project/agile/benefits-of-agile/
 
 
-*** What are the most popular agile methodologies?
+** What are the most popular agile methodologies?
 
 The most popular Agile methodologies are:
 
-**** Scrum
+*** Scrum
 
 Scrum is currently the most widely used Agile methodology, with 87% of
 respondents reporting they use it in their business[1]. Scrum is a
@@ -207,27 +267,27 @@ products faster than traditional approaches[1]. It involves short
 sprints, daily stand-ups, and a focus on continuous
 improvement[1][2][4].
 
-**** Kanban
+*** Kanban
 
 Kanban is a workflow method that facilitates production and inventory
 control[2]. It helps teams visualize their work, maximize efficiency,
 and be agile[2]. Kanban uses a Kanban board with columns like "To Do",
 "In Progress", and "Done" to manage the workflow[2][4].
 
-**** Scaled Agile Framework (SAFe)
+*** Scaled Agile Framework (SAFe)
 
 SAFe is a popular framework for scaling Agile to larger teams and
 organizations[1]. It allows larger teams to get the advantages of
 Agile without sacrificing higher-level planning and control[1].
 
-**** Scrum of Scrums
+*** Scrum of Scrums
 
 Scrum of Scrums is a method for scaling Scrum to multiple teams[1]. It
 involves a Scrum of Scrums meeting where representatives from each
 Scrum team meet and coordinate[1]. This helps larger teams stay
 aligned while retaining the benefits of small Scrum teams[1].
 
-**** Extreme Programming (XP)
+*** Extreme Programming (XP)
 
 XP is an Agile methodology that involves a high degree of
 participation between customers and developers[2]. Customers provide
@@ -235,13 +295,13 @@ feedback to inspire further development, while developers base each
 software upgrade on this feedback and test new innovations every few
 weeks[2].
 
-**** Scrumban (a hybrid of Scrum and Kanban)[1][5]
+*** Scrumban (a hybrid of Scrum and Kanban)[1][5]
 
-**** Feature-Driven Development (FDD)[2][3]
+*** Feature-Driven Development (FDD)[2][3]
 
-**** Lean Software Development[3][4]
+*** Lean Software Development[3][4]
 
-**** Crystal[4]
+*** Crystal[4]
 
 The choice of Agile methodology depends on factors like team size,
 project complexity, and organizational culture. However, all Agile

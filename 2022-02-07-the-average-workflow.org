@@ -20,6 +20,8 @@ tags: [data gathering, data elaboration, notetaking]
 
 * Preamble
 
+I am an originator of my task management system!
+
 Without a shadow of doubt the managing your tasks galore is a
 /meta-task/ that is vitally important to release your vocation in a
 /productive/ *and* /effective/ manner.
@@ -108,6 +110,9 @@ Often it is useful to rephrase it to obtain clarity.
 
 Often they are interrelated. Be cautious, please!
 
+** Pomodoro
+
+** Change task to avoid einstulling
 
 
 * A natrual way to make notes
@@ -389,3 +394,6 @@ standart 25 minutes.
 
 - From 45m in the morning to 25m at noon;
 - Timer sound
+
+
+** Change task to avoid einstulling
