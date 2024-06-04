@@ -19,6 +19,43 @@ tags: []
 #+ATTR_HTML: :title Python Itself :align center
 [[https://0--key.github.io/assets/img/green_snake.jpeg]]
 
+* Brief intro
+
+The =Python= by the design given by its originator is an
+~object-oriented~ programming language in a general sense: even you
+don't use any classes by yourself, =Python= uses its own ~object~
+representation for your code. Yes, in =Python= everything is an
+object with its own type, built-in methods and properties.
+
+The data representation is a cornerstone of programming, it is a start
+point for any further manipulations, so it is reasonable to dismantle
+it first.
+
+#+begin_quote
+=Objects= are Python’s abstraction for data.  All data in a Python
+program is represented by objects or by relations between objects.
+(In a sense, and in conformance to Von Neumann’s model of a “stored
+program computer”, code is also represented by objects.)
+#+end_quote
+
+** Built-in data types
+
+*** Basic
+
+**** Numbers
+
+**** Text
+
+*** Composite
+
+**** List
+
+**** Tuple
+
+**** Dictionary
+
+*** Miscellaneous
+
 * Prerequisites
 #+begin_src sh
   python3 --version
@@ -32,14 +69,48 @@ tags: []
 #+begin_src python
   import sys
   print(sys.path)
-  print("Hello from Babel!@!")
+  print("Hello from Babel!")
 #+end_src
 
 #+RESULTS:
 : ['', '/usr/lib/python311.zip', '/usr/lib/python3.11', '/usr/lib/python3.11/lib-dynload', '/usr/local/lib/python3.11/dist-packages', '/usr/lib/python3/dist-packages', '/usr/lib/python3.11/dist-packages']
-: Hello from Babel!@!
-['', '/usr/lib/python311.zip', '/usr/lib/python3.11', '/usr/lib/python3.11/lib-dynload', '/usr/local/lib/python3.11/dist-packages', '/usr/lib/python3/dist-packages', '/usr/lib/python3.11/dist-packages']
-Hello from Babel!
+: Hello from Babel!
 
 
 
+
+
+* Fundamentals
+
+#+begin_src python
+  print(type(True))
+  print(type(False))
+  print(type(None))
+#+end_src
+
+#+RESULTS:
+: <class 'bool'>
+: <class 'bool'>
+: <class 'NoneType'>
+
+* Numbers
+
+** Integers
+
+#+begin_src python
+  print(type(45)) # positive
+  print(type(-45)) # negative
+  print(type(0)) # zero
+#+end_src
+
+#+RESULTS:
+: <class 'int'>
+: <class 'int'>
+: <class 'int'>
+
+** Limitation
+
+#+begin_src python :results none
+  # Exceeds the limit (4300 digits) for integer string conversion
+  assert ValueError(123 ** 10000)
+#+end_src
