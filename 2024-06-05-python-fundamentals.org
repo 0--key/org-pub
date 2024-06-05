@@ -1,0 +1,45 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Python Peculiarities Dissection
+tagline: " test the toolbox"
+permalink: /python/fundamentals/true-false-and-none.html
+categories: [Python, Dissection, Learning by Testing, Literate Programming]
+tags: [True, False, None]
+---
+#+END_EXPORT
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+PROPERTY: header-args :exports both
+#+PROPERTY: header-args+ :results output pp
+#+PROPERTY: header-args+ :eval no-export
+#+TOC: headlines 2
+* Intro
+* Basics
+#+begin_src python :tangle tests/test_cornerstones.py :comments link
+  import unittest
+
+
+  class TestTheBasement(unittest.TestCase):
+
+      def test_does_true_ever_exist(self):
+          self.assertTrue(True)
+
+      def test_does_false_ever_exist(self):
+          self.assertFalse(False)
+
+
+  class TestPrimalsQuirks(unittest.TestCase):
+
+      def test_true_equals_one(self):
+          self.assertTrue(True == 1)  # it is equal
+          self.assertFalse(True == 2)  # it isn't equal two!
+          self.assertFalse(True == 0)  # True is not zero
+
+      def test_zero_is_same_as_false(self):
+          self.assertFalse(0)
+
+      def test_any_non_zero_value_is_true(self):
+          self.assertTrue("A")
+          self.assertTrue(32)
+#+end_src
