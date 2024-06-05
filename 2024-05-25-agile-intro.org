@@ -75,6 +75,10 @@ its behavior accordingly.
 
 * Notes                                                            :noexport:
 
+** Chinese Whispers
+
+https://en.wikipedia.org/wiki/Chinese_whispers
+
 ** What are an agile methodology main principles?
 
 
@@ -302,6 +306,8 @@ weeks[2].
 *** Lean Software Development[3][4]
 
 *** Crystal[4]
+
+** FootNotes
 
 The choice of Agile methodology depends on factors like team size,
 project complexity, and organizational culture. However, all Agile

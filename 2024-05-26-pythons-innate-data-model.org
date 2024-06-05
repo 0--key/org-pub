@@ -9,7 +9,7 @@ tags: []
 ---
 #+END_EXPORT
 #+STARTUP: showall indent
-#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t eval:no-export
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
 #+PROPERTY: header-args :exports both
 #+PROPERTY: header-args+ :results output pp
 #+PROPERTY: header-args+ :eval no-export
@@ -54,7 +54,11 @@ program computer”, code is also represented by objects.)
 
 **** Dictionary
 
+
 *** Miscellaneous
+
+
+#+RESULTS:
 
 * Prerequisites
 #+begin_src sh
