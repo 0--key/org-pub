@@ -71,6 +71,9 @@ another sub-set of human-only demands:
   
 *** Hunger
 
+Undoubtly, it is the cornerstone of safety for all creatures with no
+exception.
+
 **** Instant reward
 
 Is a basement for all types of /right/ actions. In opposite, - /wrong/
@@ -78,8 +81,23 @@ actions don't give instant reward.
 
 **** Delayed reward
 
-~Human-only~ faculty to imagine a profitable consequence of /seemingly
-wrong recent/ actions.
+~Human-only~ faculty to imagine a positive consequence of /actions
+with no instant reward/.
+
+**** [[https://en.wikipedia.org/wiki/Stanford_marshmallow_experiment][Marshmallow test]]
+
+It explicitly unvails a craving suppression hypothesis:
+
+#+begin_quote
+Individuals who can resist a temptation to eat a bait are potentially
+more successful in life.
+#+end_quote
+
+**** Applicability
+
+The most potent and powerful drive to gain knowledge first with
+delayed gratification by food a little bit later.
+
 
 *** Circadian rhythms
 
