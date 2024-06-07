@@ -71,7 +71,25 @@ its behavior accordingly.
 #+end_verse
 
 
+* Acid Notes
 
+With no doubt it is an explicit definition of several obvious
+cornerstones of /successful software development/, which involves all
+three sides of interest: the team, the customer and the sofware. And
+the set of these rules defines the certain obligations for all three
+sides:
+
+- Buisiness people should participate in software development in a
+  /daily basics/ face-to-face with development team:
+  - surely, it reduces information distortion due to [[https://en.wikipedia.org/wiki/Chinese_whispers][transmission
+    chaining]];
+  - daily (not weekly or even from time to tiem) clarification
+    sufficiently...
+  
+
+- it have to be build on the customer's demand;
+- the list of requirements ought to be precise and self-explanatory;
+- it should be build in a reasonable time;
 
 * Notes                                                            :noexport:
 
