@@ -1,0 +1,74 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: Anton S. Kosinov
+tagline: " what do I do vocationally"
+permalink: /ultra-learning/cv.html
+categories: [CV, UL]
+tags: [cv, info, about me]
+---
+#+END_EXPORT
+
+#+STARTUP: showall indent
+#+AUTHOR:    Anton S. Kosinov
+#+TITLE:     What do I do
+#+SUBTITLE:  vocationally
+#+EMAIL:     a.s.kosinov@gmail.com
+#+LANGUAGE: en
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+#+CATEGORY: CV
+#+TODO: RAW INIT TODO ACTIVE | DONE
+
+* \alpha{}bout Me
+
+I'm a vocational life-long learner apt to detangle a thousand pages of
+technical documentation, technological schemes, diagrams and charts on
+electronics, electromechanics, pneumatics, automatics, telemetry,
+programming and even nuclear physics, comprehend the gist out there
+and utilise these knowledge in my professional activity with aim to
+ensure stable, reliable and safe work of any automatic system. 
+
+* \sigma{}xperience
+/2023 \to 2024/
+
+Applying ultra-learning methodology I've being a teacher for my wife
+in acquiring new profession of software tester.
+
+/2022 \to 2023/
+
+
+/2004 \to 2022/ I was sertified as a high-skilledd professional by and
+by adminitration assignment commence to teach and share my lore and
+experience with my younger colleagues.
+
+* \sigma{}ducation
+1995 \to 1999
+
+*Sevastopol National University of Nuclear Energy*: Graduated as /a
+bachelor of automation/ of technological processes on /nuclear power
+plants./
+
+* \Sigma{}kills:
+
+- Perseverance at studying technical documentation;
+- Curiosity and attention to details;
+- Analytical thinking in comprehension the causality;
+- Problem solving with emotional calm in any risky situation;
+- Probabilistic approach in reasoning;
+
+
+* Notes                                                            :noexport:
+
+https://hundred.org/en/innovations/learning-arches
+
+Learning Arches: This concept comes from the Kaospilot program in
+Aarhus, Denmark, where it serves as a visual method for creatively
+defining, designing, delivering, and discovering learning
+experiences. Learning Arches aim to build ownership, craft, talent,
+and mastery while sustaining flow, transparency, challenge, and
+impact. The process involves four steps: defining known and unknown
+content, designing the learning journey, delivering and leading the
+learning journey, and making incremental adjustments as needed. This
+approach has been adopted internationally, training approximately
+5,000 teachers across 41 countries
