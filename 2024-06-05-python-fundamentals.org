@@ -13,10 +13,11 @@ tags: [True, False, None]
 #+PROPERTY: header-args :exports both
 #+PROPERTY: header-args+ :results output pp
 #+PROPERTY: header-args+ :eval no-export
+#+PROPERTY: header-args+ :session basement
 #+TOC: headlines 2
 * Intro
 * Basics
-#+begin_src python :tangle tests/test_cornerstones.py :comments link
+#+begin_src python :results none :tangle tests/test_cornerstones.py :comments link
   import unittest
 
   """
@@ -67,11 +68,20 @@ tags: [True, False, None]
           self.assertIsNot(True, False)
           self.assertIsNot(True, None)
           self.assertIsNot(None, False)
+#+begin_src python :exports results
+unittest.main(exit=False)
+#+end_src
 
       def test_are_they_equal(self):
           self.assertEqual(True, True)
           self.assertEqual(False, False)
           self.assertEqual(None, None)
+#+RESULTS:
+: ............
+: ----------------------------------------------------------------------
+: Ran 12 tests in 0.000s
+: 
+: OK
 
       def test_are_they_not_equal(self):
           self.assertNotEqual(True, False)
@@ -108,4 +118,13 @@ tags: [True, False, None]
           self.assertTrue("A")
           self.assertTrue(32)
 
+#+begin_src python :exports results
+unittest.main(exit=False)
 #+end_src
+
+#+RESULTS:
+: ............
+: ----------------------------------------------------------------------
+: Ran 12 tests in 0.000s
+: 
+: OK
