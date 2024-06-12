@@ -1,0 +1,51 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Python Peculiarities Dissection
+tagline: " test the comparison operators"
+permalink: /python/fundamentals/true-false-and-none-in-comparison.html
+categories: [Python, Dissection, Learning by Testing, Literate Programming]
+tags: [True, False, None, comparison operators]
+---
+#+END_EXPORT
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+PROPERTY: header-args :exports both
+#+PROPERTY: header-args+ :results output pp
+#+PROPERTY: header-args+ :eval no-export
+#+TOC: headlines 2
+* Intro
+* Self-explanatory test suite
+#+begin_src python  :tangle tests/test_comparisons.py :comments link
+  """
+
+  Now lets figure out how to compare with unittest
+
+  """
+
+
+  class TestTheLiteralTruths(unittest.TestCase):
+
+      def test_any_non_zero_is_true(self):
+          self.assertTrue(1)
+          self.assertTrue(-1)
+          self.assertTrue("L")
+          self.assertFalse(None)  # Except the None!
+
+      def test_zero_and_none_are_same_as_false(self):
+          self.assertFalse(0)
+          self.assertFalse(None)  # and None as well!
+
+
+  class TestPrimalsQuirks(unittest.TestCase):
+
+      def test_true_equals_one(self):
+          self.assertTrue(True == 1)  # it is equal
+          self.assertFalse(True == -1)
+          self.assertFalse(True == 2)  # it isn't equal two!
+          self.assertFalse(True == 0)  # True is not zero
+
+      def test_any_non_zero_value_is_true(self):
+          self.assertTrue("A")
+          self.assertTrue(32)
+#+end_src
