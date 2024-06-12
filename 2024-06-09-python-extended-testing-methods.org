@@ -1,0 +1,86 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Python Peculiarities Dissection
+tagline: " test the extended toolbox"
+permalink: /python/fundamentals/advanced-testing-methods.html
+categories: [Python, Dissection, Learning by Testing, Literate Programming]
+tags: [True, False, None]
+---
+#+END_EXPORT
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+PROPERTY: header-args :exports both
+#+PROPERTY: header-args+ :results output pp
+#+PROPERTY: header-args+ :eval no-export
+#+PROPERTY: header-args+ :session advanced
+#+TOC: headlines 2
+* Preface
+In the previous chapter you're introduced into the set of basics
+testing methods:
+
+- assertTrue;
+- assertFalse;
+- assertIsNone;
+- assertIsNotNone.
+
+
+All they are pretty straightforward and operates under a single
+argument. Now lets dissect the additional tools for testing which get
+two arguments and detect theirs sameness and equality.
+
+
+* Additional testing tools
+
+#+begin_src python :exports code
+  import unittest
+
+
+  """
+
+  Now it is very moment to dismantle the content of ~unittest~
+  toolbox. A dozen of acute utensils are there and you need to know
+  which do what.
+
+  """
+
+
+  class TestAddtionalAssertionMethods(unittest.TestCase):
+
+      def test_are_they_the_same(self):
+          # both arguments are same
+          self.assertIs(True, True)
+          self.assertIs(False, False)
+          self.assertIs(None, None)
+
+      def test_are_they_not_the_same(self):
+          # both arguments are different
+          self.assertIsNot(True, False)
+          self.assertIsNot(True, None)
+          self.assertIsNot(None, False)  # despite None has Boolean False
+
+      def test_are_they_equal(self):
+          # both arguments are equal
+          self.assertEqual(True, True)
+          self.assertEqual(False, False)
+          self.assertEqual(None, None)
+
+      def test_are_they_not_equal(self):
+          # arguments are not equal one another
+          self.assertNotEqual(True, False)
+          self.assertNotEqual(True, None)
+          self.assertNotEqual(None, False)  # despite None has Boolean False
+#+end_src
+
+#+RESULTS:
+
+#+begin_src python :exports results
+unittest.main(exit=False)
+#+end_src
+
+#+RESULTS:
+: ....
+: ----------------------------------------------------------------------
+: Ran 4 tests in 0.000s
+: 
+: OK
