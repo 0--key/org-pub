@@ -1,0 +1,144 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Open AI
+tagline: " iterate it untill end"
+permalink: /python/openai/prompt-iteration.html
+categories: [Python, OpenAI, Prompt Engineering]
+tags: [iteration]
+---
+#+END_EXPORT
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+PROPERTY: header-args :exports both
+#+PROPERTY: header-args+ :results output pp
+#+PROPERTY: header-args+ :eval no-export
+#+PROPERTY: header-args+ :session iteration
+#+TOC: headlines 2
+* Intro
+* Iterative approach
+
+#+begin_src python
+  from openai import OpenAI
+  client = OpenAI()
+
+  completion = client.chat.completions.create(
+      model="gpt-3.5-turbo",
+      temperature=0,
+      messages=[
+	  {"role": "system", "content": "You are a poetic assistant, skilled in explaining complex programming concepts with creative flair."},
+	  {"role": "user", "content": prompt}
+      ]
+  )
+
+  print(completion.choices[0].message.content)
+#+end_src
+
+#+RESULTS:
+#+begin_example
+🌟 Introducing the epitome of elegance and functionality - our Mid-Century Inspired Office Chair! 🌟
+
+Step into a world of timeless design with our exquisite family of office furniture, where every piece tells a story of sophistication and style. From filing cabinets to meeting tables, our collection is a harmonious blend of mid-century charm and modern allure.
+
+Choose your chair's destiny with a variety of shell colors and base finishes, allowing you to customize your workspace to reflect your unique taste. Opt for the sleek plastic back and front upholstery or indulge in the luxurious full upholstery, available in a plethora of fabric and leather options.
+
+Crafted with precision and care, this chair boasts a 5-wheel plastic-coated aluminum base for effortless mobility and a pneumatic adjust for seamless height adjustments. Whether you prefer the embrace of armrests or the freedom of armless design, this chair caters to your comfort in both home and business settings.
+
+Embrace the Italian craftsmanship that defines our chair, with materials like cast aluminum and HD36 foam ensuring durability and comfort. Dive into a realm of options with soft or hard-floor casters, varying seat foam densities, and the choice between armless or 8-position PU armrests.
+
+Indulge in the artistry of our Mid-Century Inspired Office Chair, where form meets function in a symphony of beauty and practicality. Elevate your workspace with a touch of Italian sophistication and let your creativity soar in the comfort of this exquisite creation. 🌿✨
+#+end_example
+
+
+
+#+begin_src python
+  fact_sheet_chair = """
+     OVERVIEW
+     - Part of a beautiful family of mid-century inspired office furniture, 
+     including filing cabinets, desks, bookcases, meeting tables, and more.
+     - Several options of shell color and base finishes.
+     - Available with plastic back and front upholstery (SWC-100) 
+     or full upholstery (SWC-110) in 10 fabric and 6 leather options.
+     - Base finish options are: stainless steel, matte black, 
+     gloss white, or chrome.
+     - Chair is available with or without armrests.
+     - Suitable for home or business settings.
+     - Qualified for contract use.
+
+     CONSTRUCTION
+     - 5-wheel plastic coated aluminum base.
+     - Pneumatic chair adjust for easy raise/lower action.
+
+     DIMENSIONS
+     - WIDTH 53 CM | 20.87”
+     - DEPTH 51 CM | 20.08”
+     - HEIGHT 80 CM | 31.50”
+     - SEAT HEIGHT 44 CM | 17.32”
+     - SEAT DEPTH 41 CM | 16.14”
+
+     OPTIONS
+     - Soft or hard-floor caster options.
+     - Two choices of seat foam densities: 
+      medium (1.8 lb/ft3) or high (2.8 lb/ft3)
+     - Armless or 8 position PU armrests 
+
+     MATERIALS
+     SHELL BASE GLIDER
+     - Cast Aluminum with modified nylon PA6/PA66 coating.
+     - Shell thickness: 10 mm.
+     SEAT
+     - HD36 foam
+
+     COUNTRY OF ORIGIN
+     - Italy
+     """
+
+  prompt = f"""
+     Your task is to help a marketing team create a 
+     description for a retail website of a product based 
+     on a technical fact sheet.
+
+     Write a product description based on the information 
+     provided in the technical specifications delimited by 
+     triple backticks.
+
+     Technical specifications: ```{fact_sheet_chair}```
+     """
+
+  completion = client.chat.completions.create(
+      model="gpt-3.5-turbo",
+      temperature=0,
+      messages=[
+          {"role": "system",
+            "content": "You are a high-skilled professional in the marketing"},
+          {"role": "user", "content": prompt}
+      ]
+  )
+
+
+  print(completion.choices[0].message.content)
+#+end_src
+
+#+RESULTS:
+#+begin_example
+Introducing the SWC-100/SWC-110 Mid-Century Inspired Office Chair
+
+Elevate your workspace with the SWC-100/SWC-110 Mid-Century Inspired Office Chair, a stunning addition to our collection of office furniture designed to blend style and functionality seamlessly. This chair is part of a beautiful family of mid-century inspired office furniture, offering a cohesive look when paired with our filing cabinets, desks, bookcases, meeting tables, and more.
+
+Customization is key with the SWC-100/SWC-110 chair, as it comes in several options of shell colors and base finishes to suit your aesthetic preferences. Choose between plastic back and front upholstery (SWC-100) or full upholstery (SWC-110) in a range of 10 fabric and 6 leather options. The base finish options include stainless steel, matte black, gloss white, or chrome, allowing you to tailor the chair to your space.
+
+Designed for both home and business settings, the SWC-100/SWC-110 chair is qualified for contract use, ensuring durability and longevity. The construction features a 5-wheel plastic-coated aluminum base and a pneumatic chair adjust for easy raise/lower action, providing comfort and convenience during long work hours.
+
+Dimensions:
+- Width: 53 cm | 20.87”
+- Depth: 51 cm | 20.08”
+- Height: 80 cm | 31.50”
+- Seat Height: 44 cm | 17.32”
+- Seat Depth: 41 cm | 16.14”
+
+Tailor your chair further with options such as soft or hard-floor caster options, two choices of seat foam densities (medium or high), and the choice between armless or 8-position PU armrests for added comfort and support.
+
+Crafted from high-quality materials, the SWC-100/SWC-110 chair features a shell base glider made of cast aluminum with modified nylon PA6/PA66 coating and a seat constructed with HD36 foam for optimal comfort and support.
+
+Originating from Italy, this chair embodies the essence of Italian craftsmanship and design excellence. Elevate your workspace with the SWC-100/SWC-110 Mid-Century Inspired Office Chair and experience the perfect blend of style and functionality.
+#+end_example
