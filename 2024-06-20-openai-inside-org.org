@@ -1,0 +1,173 @@
+:PROPERTIES:
+:GPTEL_MODEL: gpt-3.5-turbo
+:GPTEL_BACKEND: ChatGPT
+:GPTEL_SYSTEM: I want you to act as a storyteller. You will come up with entertaining stories that are engaging, imaginative and captivating for the audience. It can be fairy tales, educational stories or any other type of stories which has the potential to capture people's attention and imagination. Depending on the target audience, you may choose specific themes or topics for your storytelling session e.g., if it’s children then you can talk about animals; If it’s adults then history-based tales might engage them better etc. My first request is "I need an interesting story on perseverance."
+:GPTEL_BOUNDS: ((1528 . 1719) (2005 . 2304) (2590 . 2880) (2957 . 3463) (3540 . 4043) (4099 . 4504) (4507 . 4603) (4606 . 4719) (4722 . 4790) (4793 . 5299) (5307 . 5882) (6371 . 7573))
+:END:
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Open AI
+tagline: " inside Org-Mode"
+permalink: /emacs/openai/prompt-engineering.html
+categories: [Python, OpenAI, Prompt Engineering]
+tags: []
+---
+#+END_EXPORT
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+PROPERTY: header-args :exports both
+#+PROPERTY: header-args+ :results output pp
+#+PROPERTY: header-args+ :eval no-export
+#+TOC: headlines 2
+* Intro
+:PROPERTIES:
+:GPTEL_MODEL: gpt-3.5-turbo
+:GPTEL_BACKEND: ChatGPT
+:GPTEL_SYSTEM: You are a large language model living in Emacs and a helpful assistant. Respond concisely.
+:END:
+** How can Open AI liverage the Org-mode faculties?
+
+Open AI can leverage Org-mode functionalities by integrating it into
+their workflow for organizing, documenting, and managing their
+projects related to Python, OpenAI, and Prompt Engineering.
+
+
+* Compose a poem that explains the concept of recursion in programming.
+:PROPERTIES:
+:GPTEL_MODEL: gpt-3.5-turbo
+:GPTEL_BACKEND: ChatGPT
+:GPTEL_SYSTEM: You are a poetic assistant, skilled in explaining complex programming concepts with creative flair.
+:GPTEL_TEMPERATURE: 1.0
+:END:
+
+In code we find a wondrous flow,
+Recursion's dance, a looping show.
+A function calling itself with grace,
+Solving problems in a recursive space.
+Base case to end the endless loop,
+Infinite power in a simple swoop.
+Recursion in programming, a delightful art,
+Unraveling problems with a looping heart.
+
+* Compose a poem that explains the concept of recursion in programming.
+:PROPERTIES:
+:GPTEL_MODEL: gpt-3.5-turbo
+:GPTEL_BACKEND: ChatGPT
+:GPTEL_SYSTEM: You are a poetic assistant, skilled in explaining complex programming concepts with creative flair.
+:GPTEL_TEMPERATURE: 0.0
+:END:
+
+
+In loops that loop within themselves,
+Recursive magic programming delves.
+A function calls itself, clever and sly,
+Till base case breaks the sky.
+Infinite chains of iteration,
+With termination, the final station.
+Recursion in code, a pattern profound,
+In programming circles, it's renowned.
+
+*** Compose a poem that explains the concept of recursion in programming.
+
+In the realm of code, a concept profound,
+Recursion's loop, a cycle unbound.
+A function calls itself, a mesmerizing feat,
+Repeating steps until the task's complete.
+
+Base case breaks the infinite chain,
+Ending the cycle, no loop in vain.
+Like a mirror reflecting its own reflection,
+Recursion in programming, a clever direction.
+
+With elegance and grace, problems unravel,
+In a recursive dance, they gracefully travel.
+A concept in code, both powerful and clear,
+Recursion's magic, in programming, so dear.
+
+*** Compose a poem that explains the concept of recursion in programming.
+
+In programming's world of depth and line,
+Recursion's touch weaves paths entwined.
+A function calls itself, a loop so grand,
+Iterations unfold as it takes a stand.
+
+Through loops within loops, the code ascends,
+Till base cases halt where the journey bends.
+Infinite loops with a finite refrain,
+Recursion's elegance, a programmer's domain.
+
+A problem divided into smaller parts,
+Recursive solutions craft intricate arts.
+A loop within a loop, a dance so fine,
+Recursion in programming, a concept divine.
+
+*** Explain the concept of recursion in programmming
+
+Recursion in programming is a technique where a function calls itself
+in order to solve a problem. This approach involves breaking down a
+complex problem into simpler, smaller instances of the same problem
+until a base case is reached that can be easily solved.
+
+Here's how recursion works:
+1. The function is called with a certain input.
+2. The function checks if the input meets a base condition. If it
+   does, it returns a value.
+3. If the base condition is not met, the function calls itself with a
+   modified input (usually smaller in some way).
+4. This process continues until the base case is reached, at which
+   point the functions stop calling itself and the results are bubbled
+   back up through the chain of recursive calls.
+
+Recursion is commonly used in algorithms where the problem structure
+lends itself to repetitive subproblems, such as calculating factorial,
+Fibonacci sequence, tree traversal, and sorting algorithms like
+quicksort and mergesort. When implemented correctly, recursion can
+lead to elegant and concise solutions. However, it is crucial to
+define a proper base case and ensure that the recursive calls converge
+towards the base case to prevent infinite recursion.
+
+*** 
+
+Recursion in programming is a technique where a function calls itself
+to solve a problem. It allows a function to break down a larger
+problem into smaller, simpler subproblems that are solved
+iteratively. Recursion relies on two key components: a base case that
+defines when the recursion should stop, and a recursive case that
+breaks the problem down into smaller instances until the base case is
+reached. This elegant approach is used in algorithms to solve problems
+that exhibit repetitive structures and has applications in many
+programming languages and data structures.
+
+* The concept of time and space
+:PROPERTIES:
+:GPTEL_MODEL: gpt-3.5-turbo
+:GPTEL_BACKEND: ChatGPT
+:GPTEL_SYSTEM: I want you to act as a philosopher. I will provide some topics or questions related to the study of philosophy, and it will be your job to explore these concepts in depth. This could involve conducting research into various philosophical theories, proposing new ideas or finding creative solutions for solving complex problems.
+:END:
+
+** Explain the concept of time, please
+
+Time is a fundamental concept that governs our existence and
+perception of the world around us. In philosophy, time has been a
+subject of contemplation and debate for centuries. One of the
+prevailing views is that time is a dimension through which events
+occur sequentially, creating a past, present, and future. This linear
+understanding of time is often associated with the idea of time as a
+flowing river, constantly moving forward.
+
+However, philosophers have also explored the nature of time in more
+abstract terms, questioning its ultimate reality and whether our
+experience of time is an illusion. Some philosophies posit that time
+is a human construct, a framework through which we interpret changes
+in the world rather than an inherent feature of reality.
+
+From a metaphysical standpoint, time raises intriguing questions about
+the nature of causality, free will, and the nature of existence
+itself. Time is not just a measurement but a profound concept that
+shapes our understanding of the universe and our place within it. It
+invites us to contemplate the fleeting nature of moments, the
+persistence of memories, and the mystery of what lies ahead in the
+ever-unfolding journey of existence.
+
+*** 
