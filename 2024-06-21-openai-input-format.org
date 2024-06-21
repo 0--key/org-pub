@@ -1,0 +1,123 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Open AI
+tagline: " input format"
+permalink: /python/openai/input-format.html
+categories: [Python, OpenAI]
+tags: [prompt, input format]
+---
+#+END_EXPORT
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+PROPERTY: header-args :exports both
+#+PROPERTY: header-args+ :results output pp
+#+PROPERTY: header-args+ :eval no-export
+#+PROPERTY: header-args+ :session input
+#+TOC: headlines 2
+* Intro
+* All posssible options
+
+#+begin_src python
+  from openai import OpenAI
+  client = OpenAI()
+
+  completion = client.chat.completions.create(
+      # MANDATORY PARAMETERS
+      model="gpt-3.5-turbo",
+      messages=[
+          {"role": "system", "content": "You are a poetic assistant, skilled in explaining complex programming concepts with creative flair."},
+          {"role": "user", "content": "Compose a poem that explains the concept of recursion in programming."}
+      ],
+      # OPTIONAL PARAMETERS
+      # frequency_penalty = 2.2,
+      # function_call
+      # functions
+      # logit_bias =
+      # logprobs
+      max_tokens=100,
+      n=3,
+      # parallel_tool_calls
+      # presence_penalty,
+      # response_format,
+      # seed,
+      # stop,
+      # stream,
+      # stream_options,
+      temperature=0,
+      # tools,
+      # tool_choice,
+      # top_logprobs,
+      # top_p,
+      # user,
+      # extra_headers,
+      # extra_body,
+      # extra_query,
+      # timeout,
+
+  )
+
+  for meSsage in completion.choices:
+      print(meSsage.message.content)
+      print("\n**********\n")
+#+end_src
+
+#+RESULTS:
+#+begin_example
+In the realm of code, a concept profound,
+Recursion dances, a cycle unbound.
+Like a mirror reflecting its own reflection,
+A function calls itself, a recursive connection.
+
+A task divided, into smaller parts,
+Each one solved with recursive arts.
+A loop of logic, elegant and neat,
+Repeating steps until the task's complete.
+
+Like a Russian doll, nested and deep,
+Recursion delves into problems to keep.
+Breaking down problems, layer by layer,
+Until the solution becomes clear
+
+,**********
+
+In the realm of code, a concept profound,
+Recursion dances, a cycle unbound.
+Like a mirror reflecting its own reflection,
+A function calls itself, a recursive connection.
+
+A task divided, into smaller parts,
+Each one solved with recursive arts.
+A loop of logic, elegant and neat,
+Repeating steps until the task's complete.
+
+Like a Russian doll, nested and deep,
+Recursion delves into problems to keep.
+Breaking down problems, layer by layer,
+Until the solution becomes clear
+
+,**********
+
+In the realm of code, a concept profound,
+Recursion dances, a cycle unbound.
+Like a mirror reflecting its own reflection,
+A function calls itself, a recursive connection.
+
+A task divided, into smaller parts,
+Each one solved with recursive arts.
+A loop of logic, elegant and neat,
+Repeating steps until the task's complete.
+
+Like a Russian doll, nested and deep,
+Recursion delves into problems to keep.
+Breaking down problems, layer by layer,
+Until the solution becomes clear
+
+,**********
+#+end_example
+
+* Conclusion
+
+Now we are able to retrieve out from ~OpenAI~ three variations of
+answers with fixed number of tokens and the zero deviation one from
+others. 
