@@ -1,16 +1,10 @@
-:PROPERTIES:
-:GPTEL_MODEL: gpt-3.5-turbo
-:GPTEL_BACKEND: ChatGPT
-:GPTEL_SYSTEM: I want you to act as a storyteller. You will come up with entertaining stories that are engaging, imaginative and captivating for the audience. It can be fairy tales, educational stories or any other type of stories which has the potential to capture people's attention and imagination. Depending on the target audience, you may choose specific themes or topics for your storytelling session e.g., if it’s children then you can talk about animals; If it’s adults then history-based tales might engage them better etc. My first request is "I need an interesting story on perseverance."
-:GPTEL_BOUNDS: ((1528 . 1719) (2005 . 2304) (2590 . 2880) (2957 . 3463) (3540 . 4043) (4099 . 4504) (4507 . 4603) (4606 . 4719) (4722 . 4790) (4793 . 5299) (5307 . 5882) (6371 . 7573))
-:END:
 #+BEGIN_EXPORT html
 ---
 layout: page
-title: Open AI
+title: Open AI Assistant
 tagline: " inside Org-Mode"
-permalink: /emacs/openai/prompt-engineering.html
-categories: [Python, OpenAI, Prompt Engineering]
+permalink: /emacs/openai/assistant.html
+categories: [Python, OpenAI, Assistant]
 tags: []
 ---
 #+END_EXPORT
@@ -24,150 +18,867 @@ tags: []
 :PROPERTIES:
 :GPTEL_MODEL: gpt-3.5-turbo
 :GPTEL_BACKEND: ChatGPT
-:GPTEL_SYSTEM: You are a large language model living in Emacs and a helpful assistant. Respond concisely.
+:GPTEL_SYSTEM: You are a professional ChatGPT prompt engineer with deep and profound knowledge of OpenAI subtleties.
 :END:
-** How can Open AI liverage the Org-mode faculties?
 
-Open AI can leverage Org-mode functionalities by integrating it into
-their workflow for organizing, documenting, and managing their
-projects related to Python, OpenAI, and Prompt Engineering.
+** Thread-specific workflow
 
+Summary of Workflow:
 
-* Compose a poem that explains the concept of recursion in programming.
+    - Initialization: Create a new thread or start a new session.
+    - Message Exchange: Send messages and handle responses within the
+      same thread.
+    - Context Switching: Open new threads or switch assistants as needed.
+    - Termination: Gracefully end the thread if supported or naturally
+      cease interactions.
+
+This workflow allows for organized and context-aware conversations
+with the model, /leveraging the capabilities of threads/ to maintain
+coherence across multiple interactions.
+
+** Define your assistants
+
+For my purpose it is necessary to invite an extra-specialist with huge
+experience with Emacs and Elisp in the same time. So I've created him
+via web-interface:
+
+*Instructions:* _You are an experienced Emacs user proficient in Elisp
+programming language._
+
+And his =id= is: asst_k0LyQk3P0ugc93lkXqkzrP0x
+
+#+begin_src sh
+curl "https://api.openai.com/v1/assistants" \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $OPENAI_API_KEY" \
+  -H "OpenAI-Beta: assistants=v2" \
+  -d '{
+    "instructions": "You are a personal math tutor. Write and run code to answer math questions.",
+    "name": "Math Tutor",
+    "tools": [{"type": "code_interpreter"}],
+    "model": "gpt-4o"
+  }'
+#+end_src
+
+Response
+
+#+begin_src json
+{
+  "id": "asst_abc123",
+  "object": "assistant",
+  "created_at": 1698984975,
+  "name": "Math Tutor",
+  "description": null,
+  "model": "gpt-4-turbo",
+  "instructions": "You are a personal math tutor. When asked a question, write and run Python code to answer the question.",
+  "tools": [
+    {
+      "type": "code_interpreter"
+    }
+  ],
+  "metadata": {},
+  "top_p": 1.0,
+  "temperature": 1.0,
+  "response_format": "auto"
+}
+#+end_src
+
+** Initiate the thread
 :PROPERTIES:
-:GPTEL_MODEL: gpt-3.5-turbo
-:GPTEL_BACKEND: ChatGPT
-:GPTEL_SYSTEM: You are a poetic assistant, skilled in explaining complex programming concepts with creative flair.
-:GPTEL_TEMPERATURE: 1.0
+:vizier-assistant-id: asst_k0LyQk3P0ugc93lkXqkzrP0x
+:vizier-thread-id: thread_cAVYYX9uwp93t2gWWe2VHn7m
 :END:
 
-In code we find a wondrous flow,
-Recursion's dance, a looping show.
-A function calling itself with grace,
-Solving problems in a recursive space.
-Base case to end the endless loop,
-Infinite power in a simple swoop.
-Recursion in programming, a delightful art,
-Unraveling problems with a looping heart.
+Read =vizier-thread-id= and =visier-assistant-id= from =PROPERTIES=:
 
-* Compose a poem that explains the concept of recursion in programming.
-:PROPERTIES:
-:GPTEL_MODEL: gpt-3.5-turbo
-:GPTEL_BACKEND: ChatGPT
-:GPTEL_SYSTEM: You are a poetic assistant, skilled in explaining complex programming concepts with creative flair.
-:GPTEL_TEMPERATURE: 0.0
-:END:
+#+begin_src elisp
+  (require 'request)
+  (require 'json)
+  (require 'org)
+
+  (defun vizier-org-arguments (callback)
+    "Extract the content of the current Org header and pass it to CALLBACK."
+    (save-excursion
+      (org-back-to-heading t)
+      (let ((thread-id (org-entry-get nil "vizier-thread-id"))
+            (assistant-id (org-entry-get nil "vizier-assistant-id"))
+            (question (org-entry-get nil "ITEM")))
+        (if (and thread-id assistant-id question)
+            (funcall callback thread-id assistant-id question)
+          (message "Properties of Org header are incomplete.")))))
+
+  (defun vizier-thread-send-message (thread-id assistant-id question)
+    "Send QUESTION to a specific THREAD-ID and ASSISTANT-ID in OpenAI API and return the message ID."
+    (message "Sending message to thread: %s with assistant: %s and question: %s" thread-id assistant-id question)
+    (let* ((url (format "https://api.openai.com/v1/threads/%s/messages" thread-id))
+           (headers `(("Content-Type" . "application/json")
+                      ("Authorization" . ,(concat "Bearer " (getenv "OPENAI_API_KEY")))
+                      ("OpenAI-Beta" . "assistants=v2")))
+           (data (json-encode `(("role" . "user")
+                                ("content" . ,question))))
+           (msg-id nil))
+      (request
+       url
+       :type "POST"
+       :headers headers
+       :data data
+       :parser 'json-read
+       :success (cl-function
+                  (lambda (&key data &allow-other-keys)
+                    (setq msg-id (cdr (assoc 'id data)))
+                    (message "Message sent with ID: %s" msg-id)
+                    msg-id))
+       :error (cl-function
+               (lambda (&key error-thrown &allow-other-keys)
+                 (message "Error sending message: %S" error-thrown))))
+      (while (not msg-id)
+        (sleep-for 0.1)) ;; Wait for the request to complete
+      msg-id))
 
 
-In loops that loop within themselves,
-Recursive magic programming delves.
-A function calls itself, clever and sly,
-Till base case breaks the sky.
-Infinite chains of iteration,
-With termination, the final station.
-Recursion in code, a pattern profound,
-In programming circles, it's renowned.
 
-*** Compose a poem that explains the concept of recursion in programming.
 
-In the realm of code, a concept profound,
-Recursion's loop, a cycle unbound.
-A function calls itself, a mesmerizing feat,
-Repeating steps until the task's complete.
+  (defun vizier-send-org-message ()
+    "Extract Org header properties and send the message."
+    (interactive)
+    (vizier-org-arguments
+     (lambda (thread-id assistant-id question)
+       (vizier-thread-send-message thread-id assistant-id question))))
 
-Base case breaks the infinite chain,
-Ending the cycle, no loop in vain.
-Like a mirror reflecting its own reflection,
-Recursion in programming, a clever direction.
 
-With elegance and grace, problems unravel,
-In a recursive dance, they gracefully travel.
-A concept in code, both powerful and clear,
-Recursion's magic, in programming, so dear.
 
-*** Compose a poem that explains the concept of recursion in programming.
 
-In programming's world of depth and line,
-Recursion's touch weaves paths entwined.
-A function calls itself, a loop so grand,
-Iterations unfold as it takes a stand.
+  (defun vizier-thread-run (thread-id assistant-id instructions)
+    "Run a command in a specific THREAD-ID using a given ASSISTANT-ID and INSTRUCTIONS, returning the run ID."
+    (let* ((url (format "https://api.openai.com/v1/threads/%s/runs" thread-id))
+           (headers `(("Content-Type" . "application/json")
+                      ("Authorization" . ,(concat "Bearer " (getenv "OPENAI_API_KEY")))
+                      ("OpenAI-Beta" . "assistants=v2")))
+           (data (json-encode `(("assistant_id" . ,assistant-id)
+                                ("instructions" . ,instructions))))
+           run-id)
+      (request
+       url
+       :type "POST"
+       :headers headers
+       :data data
+       :parser 'json-read
+       :success (cl-function
+                  (lambda (&key data &allow-other-keys)
+                    (setq run-id (cdr (assoc 'id data)))
+                    (message "Run initiated with ID: %s" run-id)
+                    run-id))
+       :error (cl-function
+               (lambda (&key error-thrown &allow-other-keys)
+                 (message "Error initiating run: %S" error-thrown))))
+      (while (not run-id)
+        (sleep-for 0.1)) ;; Wait for the request to complete
+      run-id))
 
-Through loops within loops, the code ascends,
-Till base cases halt where the journey bends.
-Infinite loops with a finite refrain,
-Recursion's elegance, a programmer's domain.
 
-A problem divided into smaller parts,
-Recursive solutions craft intricate arts.
-A loop within a loop, a dance so fine,
-Recursion in programming, a concept divine.
 
-*** Explain the concept of recursion in programmming
+  (defun vizier-run ()
+    "Runs the current thread."
+    (interactive)
+    (vizier-org-arguments
+     (lambda (thread-id assistant-id question)
+       (vizier-thread-run thread-id assistant-id "instructions later"))))
 
-Recursion in programming is a technique where a function calls itself
-in order to solve a problem. This approach involves breaking down a
-complex problem into simpler, smaller instances of the same problem
-until a base case is reached that can be easily solved.
 
-Here's how recursion works:
-1. The function is called with a certain input.
-2. The function checks if the input meets a base condition. If it
-   does, it returns a value.
-3. If the base condition is not met, the function calls itself with a
-   modified input (usually smaller in some way).
-4. This process continues until the base case is reached, at which
-   point the functions stop calling itself and the results are bubbled
-   back up through the chain of recursive calls.
 
-Recursion is commonly used in algorithms where the problem structure
-lends itself to repetitive subproblems, such as calculating factorial,
-Fibonacci sequence, tree traversal, and sorting algorithms like
-quicksort and mergesort. When implemented correctly, recursion can
-lead to elegant and concise solutions. However, it is crucial to
-define a proper base case and ensure that the recursive calls converge
-towards the base case to prevent infinite recursion.
+
+  (defun vizier-get-thread-messages (thread-id)
+    "Retrieve all messages from a specific THREAD-ID in OpenAI API and return their content."
+    (interactive "sThread ID: ")
+    (let* ((url (format "https://api.openai.com/v1/threads/%s/messages" thread-id))
+           (headers `(("Content-Type" . "application/json")
+                      ("Authorization" . ,(concat "Bearer " (getenv "OPENAI_API_KEY")))
+                      ("OpenAI-Beta" . "assistants=v2")))
+           messages)
+      (request
+       url
+       :type "GET"
+       :headers headers
+       :parser 'json-read
+       :success (cl-function
+                  (lambda (&key data &allow-other-keys)
+                    (setq messages (mapcar (lambda (msg)
+                                             (alist-get 'content msg))
+                                           (alist-get 'data data)))))
+       :error (cl-function
+               (lambda (&key error-thrown &allow-other-keys)
+                 (message "Error retrieving messages: %S" error-thrown))))
+      (while (not messages)
+        (sleep-for 0.1)) ;; Wait for the request to complete
+      messages))
+
+  (defun vizier-print-thread-messages (messages)
+    "Print the content of MESSAGES."
+    (dolist (message messages)
+      (dolist (content message)
+        (message "Message Content: %s" (alist-get 'value (alist-get 'text content))))))
+
+  (defun vizier-print-thread-messages-interactive ()
+    "Retrieve and print messages from a thread interactively."
+    (interactive)
+    (let ((thread-id (read-string "Enter Thread ID: ")))
+      (vizier-print-thread-messages (vizier-get-thread-messages thread-id))))
+#+end_src
+
+#+RESULTS:
+: ""
+
+#+begin_src sh
+curl https://api.openai.com/v1/threads \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $OPENAI_API_KEY" \
+  -H "OpenAI-Beta: assistants=v2" \
+  -d ''
+#+end_src
+
+Response
+
+#+begin_src json
+{
+  "id": "thread_abc123",
+  "object": "thread",
+  "created_at": 1699012949,
+  "metadata": {},
+  "tool_resources": {}
+}
+#+end_src
+
+
+
+#+begin_src elisp :session assistant
+  (require 'request)
+  (require 'json)
+
+
+  (defun vizier-thread-init ()
+    "Initialize a new conversation thread with the OpenAI API and return the thread ID."
+    (interactive)
+    (let* ((url "https://api.openai.com/v1/threads")
+           (headers `(("Content-Type" . "application/json")
+                      ("Authorization" . ,(concat "Bearer " (getenv "OPENAI_API_KEY")))
+                      ("OpenAI-Beta" . "assistants=v2")))
+           thread-id)
+      (request
+        url
+        :type "POST"
+        :headers headers
+        :data ""
+        :parser 'json-read
+        :success (cl-function
+                   (lambda (&key data &allow-other-keys)
+                     (setq thread-id (cdr (assoc 'id data)))
+                     (message "Thread initialized with ID: %s" thread-id)
+                     thread-id))
+        :error (cl-function
+                (lambda (&key error-thrown &allow-other-keys)
+                  (message "Error initializing thread: %S" error-thrown))))
+      (while (not thread-id)
+        (sleep-for 0.1)) ;; Wait for the request to complete
+      thread-id))
+
+
+  (defun vizier-thread-send-message (thread-id message-content)
+    "Send MESSAGE-CONTENT to a specific THREAD-ID in OpenAI API and return the message ID."
+    (interactive "sThread ID: \nsMessage Content: ")
+    (let* ((url (format "https://api.openai.com/v1/threads/%s/messages" thread-id))
+           (headers `(("Content-Type" . "application/json")
+                      ("Authorization" . ,(concat "Bearer " (getenv "OPENAI_API_KEY")))
+                      ("OpenAI-Beta" . "assistants=v2")))
+           (data (json-encode `(("role" . "user")
+                                ("content" . ,message-content))))
+           msg-id)
+      (request
+        url
+        :type "POST"
+        :headers headers
+        :data data
+        :parser 'json-read
+        :success (cl-function
+                   (lambda (&key data &allow-other-keys)
+                     (setq msg-id (cdr (assoc 'id data)))
+                     (message "Message sent with ID: %s" msg-id)
+                     msg-id))
+        :error (cl-function
+                (lambda (&key error-thrown &allow-other-keys)
+                  (message "Error sending message: %S" error-thrown))))
+      (while (not msg-id)
+        (sleep-for 0.1)) ;; Wait for the request to complete
+      msg-id))
+
+
+  (defun vizier-thread-run (thread-id assistant-id instructions)
+    "Run a command in a specific THREAD-ID using a given ASSISTANT-ID and INSTRUCTIONS, returning the run ID."
+    (interactive "sThread ID: \nsAssistant ID: \nsInstructions: ")
+    (let* ((url (format "https://api.openai.com/v1/threads/%s/runs" thread-id))
+           (headers `(("Content-Type" . "application/json")
+                      ("Authorization" . ,(concat "Bearer " (getenv "OPENAI_API_KEY")))
+                      ("OpenAI-Beta" . "assistants=v2")))
+           (data (json-encode `(("assistant_id" . ,assistant-id)
+                                ("instructions" . ,instructions))))
+           run-id)
+      (request
+       url
+       :type "POST"
+       :headers headers
+       :data data
+       :parser 'json-read
+       :success (cl-function
+                  (lambda (&key data &allow-other-keys)
+                    (setq run-id (cdr (assoc 'id data)))
+                    (message "Run initiated with ID: %s" run-id)
+                    run-id))
+       :error (cl-function
+               (lambda (&key error-thrown &allow-other-keys)
+                 (message "Error initiating run: %S" error-thrown))))
+      (while (not run-id)
+        (sleep-for 0.1)) ;; Wait for the request to complete
+      run-id))
+
+
+  (defun vizier-thread-all-messages (thread-id)
+    "Retrieve all messages for a specific THREAD-ID from OpenAI API and return the last message ID."
+    (interactive "sThread ID: ")
+    (let* ((url (format "https://api.openai.com/v1/threads/%s/messages" thread-id))
+           (headers `(("Content-Type" . "application/json")
+                      ("Authorization" . ,(concat "Bearer " (getenv "OPENAI_API_KEY")))
+                      ("OpenAI-Beta" . "assistants=v2")))
+           last-id)
+      (request
+       url
+       :type "GET"
+       :headers headers
+       :parser 'json-read
+       :success (cl-function
+                  (lambda (&key data &allow-other-keys)
+                    (let ((messages (cdr (assoc 'messages data))))
+                      (when (and messages (arrayp messages))
+                        (setq last-id (cdr (assoc 'id (aref messages (1- (length messages)))))
+                              (message "Last message ID: %s" last-id)
+                              last-id))))
+       :error (cl-function
+               (lambda (&key error-thrown &allow-other-keys)
+                 (message "Error retrieving messages: %S" error-thrown))))
+      (while (not last-id)
+        (sleep-for 0.1)) ;; Wait for the request to complete
+      last-id)))
+
+#+end_src
+
+#+RESULTS:
+: ""
+
+#+begin_src elisp :session assistant
+  (let ((thread-id (vizier-thread-init)))
+    (message "Thread ID: %s" thread-id))
+#+end_src
+
+#+RESULTS:
+: ""
+
+#+begin_src elisp :session assistant
+(message "Thread ID: %s" thread-id)
+#+end_src
+
+#+begin_src elisp
+  (require 'json)
+  (require 'request)
+
+  (message openai-api-key)
+
+  (defun vizier-thread-init ()
+    (let* ((request_url "https://api.openai.com/v1/threads")
+
+           (request_headers `(("Content-Type" . "application/json")
+                              ("OpenAI-Beta" . "assistants=v2")
+                              ("Authorization" . openai-api-key)))))
+
+    (request
+      request_url
+      :type "POST"
+      :headers request_headers
+      :data ''
+      :parser 'json-read
+      :success (cl-function
+                (lambda(&key response)
+                  (message response)))
+      :error (cl-function
+              (lambda(&key error-thrown &allow-other-keys)
+                (message "Error: %S" error-thrown)))))
+		
+#+end_src
+
+#+RESULTS:
+: ""
+
+** Add a Message to the Thread
+
+#+begin_src sh
+curl https://api.openai.com/v1/threads/thread_abc123/messages \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $OPENAI_API_KEY" \
+  -H "OpenAI-Beta: assistants=v2" \
+  -d '{
+      "role": "user",
+      "content": "I need to solve the equation `3x + 11 = 14`. Can you help me?"
+    }'
+#+end_src
+
+Response
+
+#+begin_src json
+{
+  "id": "msg_abc123",
+  "object": "thread.message",
+  "created_at": 1713226573,
+  "assistant_id": null,
+  "thread_id": "thread_abc123",
+  "run_id": null,
+  "role": "user",
+  "content": [
+    {
+      "type": "text",
+      "text": {
+        "value": "How does AI work? Explain it in simple terms.",
+        "annotations": []
+      }
+    }
+  ],
+  "attachments": [],
+  "metadata": {}
+}
+#+end_src
+
+** Create a Run
+
+#+begin_src sh
+curl https://api.openai.com/v1/threads/thread_abc123/runs \
+  -H "Authorization: Bearer $OPENAI_API_KEY" \
+  -H "Content-Type: application/json" \
+  -H "OpenAI-Beta: assistants=v2" \
+  -d '{
+    "assistant_id": "asst_abc123",
+    "instructions": "Please address the user as Tony."
+  }'
+#+end_src
+
+Response:
+
+#+begin_src json
+{
+  "id": "run_abc123",
+  "object": "thread.run",
+  "created_at": 1699063290,
+  "assistant_id": "asst_abc123",
+  "thread_id": "thread_abc123",
+  "status": "queued",
+  "started_at": 1699063290,
+  "expires_at": null,
+  "cancelled_at": null,
+  "failed_at": null,
+  "completed_at": 1699063291,
+  "last_error": null,
+  "model": "gpt-4-turbo",
+  "instructions": null,
+  "incomplete_details": null,
+  "tools": [
+    {
+      "type": "code_interpreter"
+    }
+  ],
+  "metadata": {},
+  "usage": null,
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_prompt_tokens": 1000,
+  "max_completion_tokens": 1000,
+  "truncation_strategy": {
+    "type": "auto",
+    "last_messages": null
+  },
+  "response_format": "auto",
+  "tool_choice": "auto",
+  "parallel_tool_calls": true
+}
+#+end_src
+
+** Retrieve Messages From the Run
+
+#+begin_src sh
+curl https://api.openai.com/v1/threads/thread_abc123/messages \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $OPENAI_API_KEY" \
+  -H "OpenAI-Beta: assistants=v2"
+#+end_src
+
+Response:
+
+#+begin_src json
+{
+  "object": "list",
+  "data": [
+    {
+      "id": "msg_abc123",
+      "object": "thread.message",
+      "created_at": 1699016383,
+      "assistant_id": null,
+      "thread_id": "thread_abc123",
+      "run_id": null,
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "value": "How does AI work? Explain it in simple terms.",
+            "annotations": []
+          }
+        }
+      ],
+      "attachments": [],
+      "metadata": {}
+    },
+    {
+      "id": "msg_abc456",
+      "object": "thread.message",
+      "created_at": 1699016383,
+      "assistant_id": null,
+      "thread_id": "thread_abc123",
+      "run_id": null,
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "value": "Hello, what is AI?",
+            "annotations": []
+          }
+        }
+      ],
+      "attachments": [],
+      "metadata": {}
+    }
+  ],
+  "first_id": "msg_abc123",
+  "last_id": "msg_abc456",
+  "has_more": false
+}
+#+end_src
+
+
+** What is the purpose of usage of conversation threads (or sessions) in ChatGPT?
+
+Conversation threads, also known as sessions, in ChatGPT serve a vital
+purpose in maintaining context and continuity within a
+conversation. By utilizing conversation threads, ChatGPT can keep
+track of the ongoing discussion, understand the flow of dialogues, and
+provide more coherent and relevant responses.
+
+Here are a few key purposes of using conversation threads in ChatGPT:
+
+1. Context Retention: Conversation threads allow ChatGPT to reference
+   past messages and responses, enabling it to understand the context
+   of the ongoing conversation. This helps ChatGPT generate more
+   relevant and coherent replies based on previous interactions.
+
+2. Continuity: By organizing messages into threads, ChatGPT can
+   maintain the flow of conversation and ensure that responses are
+   connected to earlier exchanges. This results in smoother and more
+   natural interactions between the AI and the user.
+
+3. Personalization: Conversation threads enable ChatGPT to personalize
+   responses based on the history of the conversation. This can lead
+   to more tailored and engaging interactions, as the AI can adapt its
+   replies to suit the user's preferences and interests.
+
+4. Improved Engagement: By using conversation threads, ChatGPT can
+   create a more engaging and interactive experience for users. The AI
+   can follow the progression of discussions more seamlessly, leading
+   to a more dynamic and fulfilling conversation.
+
+Overall, the purpose of conversation threads in ChatGPT is to enhance
+the quality of interactions, maintain context, improve continuity, and
+personalize responses, ultimately making the conversation more
+effective and engaging for users.
+
+*** So, as I can infer, it is reasonable to discuss some particular topic in some particular conversation therad? 
+
+Yes, that's correct. By discussing a particular topic within a
+specific conversation thread or session, ChatGPT can better understand
+the context and focus on that topic more effectively. This approach
+helps maintain coherence and relevance in the conversation, making it
+easier for the AI to provide insightful and on-point responses related
+to the specific topic being discussed within that thread.
+
+*** And the opposite is true: unrelated topics ought to be separated into different thread exactly to preserve the clarity of conversation?
+
+Yes, separating unrelated topics into different conversation threads
+helps preserve the clarity and coherence of the conversation. By
+compartmentalizing discussions based on their relevance and focus,
+ChatGPT can provide more accurate and contextual responses within each
+thread. This segregation ensures that the conversation remains
+organized, making it easier for both the AI and the user to track the
+flow of different topics and maintain a clear line of communication.
 
 *** 
 
-Recursion in programming is a technique where a function calls itself
-to solve a problem. It allows a function to break down a larger
-problem into smaller, simpler subproblems that are solved
-iteratively. Recursion relies on two key components: a base case that
-defines when the recursion should stop, and a recursive case that
-breaks the problem down into smaller instances until the base case is
-reached. This elegant approach is used in algorithms to solve problems
-that exhibit repetitive structures and has applications in many
-programming languages and data structures.
+** What is the purpose of usage of Assistants in conversation threads?
 
-* The concept of time and space
+Assistants play a crucial role in conversation threads by providing
+additional support, guidance, and contextual information to both users
+and AI models like ChatGPT. Here are some key purposes of using
+Assistants in conversation threads:
+
+1. *Guidance and Clarification*: Assistants can offer clarifications,
+   suggestions, or additional context to help users and AI models
+   navigate the conversation more effectively. They can intervene when
+   there is confusion or ambiguity, ensuring a smoother flow of
+   dialogue.
+
+2. *Quality Control*: Assistants can monitor conversations, flag
+   inappropriate content, correct errors, or provide feedback to
+   improve the overall quality of interactions. They act as a quality
+   assurance mechanism to maintain a high standard of communication.
+
+3. *Personalization and Customization*: Assistants can personalize the
+   conversation by tailoring responses to individual preferences,
+   providing relevant information, or adapting the dialogue based on
+   user feedback. This helps create a more engaging and personalized
+   experience for users.
+
+4. *Handling Multiple Tasks*: Assistants can manage multiple tasks
+   simultaneously within a conversation thread. They can switch
+   between topics, provide updates, answer queries, and ensure that
+   all aspects of the conversation are addressed effectively.
+
+5. *Enhancing User Experience*: By assisting users in navigating the
+   conversation, providing relevant information, and ensuring a
+   seamless interaction, Assistants contribute to an enhanced user
+   experience. They strive to make interactions more efficient,
+   engaging, and enjoyable for all parties involved.
+
+Overall, Assistants in conversation threads serve as facilitators,
+ensuring smooth communication, improving the quality of interactions,
+and enhancing the overall user experience.
+
+*** Is it possible to use several assistants into a single thread?
+
+Yes, it is possible to use multiple assistants in a single
+conversation thread. Having multiple assistants can offer diverse
+expertise, perspectives, and functionalities to enrich the
+conversation experience. Each assistant may have a specific role, such
+as providing different types of information, offering varied
+suggestions, or managing distinct aspects of the dialogue.
+
+By incorporating several assistants, you can leverage their combined
+capabilities to create a more comprehensive and engaging
+interaction. This approach allows for a dynamic and multifaceted
+conversation, enhancing the depth and breadth of the discussion while
+accommodating various needs and preferences within the same thread.
+
+*** What does the RUN concept mean?
+
+#+begin_src markdown
+  The concept of "RUN" can have various meanings depending on the
+  context in which it is used. In a general sense, "RUN" can refer to:
+
+  1. **Physical Activity**: "RUN" commonly refers to the action of moving
+     swiftly on foot, such as running or jogging as a form of exercise
+     or sport.
+
+  2. *Operations*: In business or organizational contexts, "RUN" can
+     refer to the operational management of a company. Phrases like
+     "day-to-day operations" or "running the business" are often used in
+     this context.
+
+  3. *Software and Technology*: In computing, "RUN" often refers to
+     executing a program or code. For example, running a script, running
+     a software application, or running a command.
+
+  4. *Events*: "RUN" can also refer to organizing and managing an event,
+     race, or competition. "Running an event" implies taking
+     responsibility for its planning and execution.
+
+  5. *Functioning*: Additionally, "RUN" can describe the functioning of
+     a system, machine, or process. For instance, ensuring that a
+     machine is up and running.
+
+  Ultimately, the meaning of "RUN" is heavily dependent on the specific
+  domain or situation in which it is being used.
+#+end_src
+
+** What kind of instructions I can provide to Assistant?
 :PROPERTIES:
-:GPTEL_MODEL: gpt-3.5-turbo
-:GPTEL_BACKEND: ChatGPT
-:GPTEL_SYSTEM: I want you to act as a philosopher. I will provide some topics or questions related to the study of philosophy, and it will be your job to explore these concepts in depth. This could involve conducting research into various philosophical theories, proposing new ideas or finding creative solutions for solving complex problems.
+:vizier-thread-id: thread_HZBh9PMJgndmnJLVz2GqifRz
+:vizier-assistant-id: asst_oLuLDRdsSDyMcBAvpwCGkbGS
 :END:
 
-** Explain the concept of time, please
+#+begin_src markdown
+  As a user, you can provide a variety of instructions to an AI
+  assistant like me. Here are some examples categorized by their nature
+  and application:
 
-Time is a fundamental concept that governs our existence and
-perception of the world around us. In philosophy, time has been a
-subject of contemplation and debate for centuries. One of the
-prevailing views is that time is a dimension through which events
-occur sequentially, creating a past, present, and future. This linear
-understanding of time is often associated with the idea of time as a
-flowing river, constantly moving forward.
+  ### 1. **General Queries:**
+     - **Information Retrieval:** Ask for facts, data, and general
+       knowledge.
+       - "Tell me about the French Revolution."
+       - "What is the capital of Japan?"
+       - "How does photosynthesis work?"
 
-However, philosophers have also explored the nature of time in more
-abstract terms, questioning its ultimate reality and whether our
-experience of time is an illusion. Some philosophies posit that time
-is a human construct, a framework through which we interpret changes
-in the world rather than an inherent feature of reality.
+  ### 2. **Task Automation:**
+     - **Routine Tasks:** Scheduling, reminders, and organizational
+       tasks.
+       - "Set a reminder for my meeting at 3 PM tomorrow."
+       - "Add groceries to my shopping list."
+       - "Send an email to John with the following subject and body."
 
-From a metaphysical standpoint, time raises intriguing questions about
-the nature of causality, free will, and the nature of existence
-itself. Time is not just a measurement but a profound concept that
-shapes our understanding of the universe and our place within it. It
-invites us to contemplate the fleeting nature of moments, the
-persistence of memories, and the mystery of what lies ahead in the
-ever-unfolding journey of existence.
+  ### 3. **Content Creation:**
+     - **Writing Assistance:** Generating text for various purposes.
+       - "Draft an email to my boss about the project update."
+       - "Write a blog post on the benefits of renewable energy."
+       - "Create a short story about a child who discovers a secret
+         door."
 
-*** 
+  ### 4. **Learning and Education:**
+     - **Tutoring:** Help with studying subjects or solving problems.
+       - "Explain Newton's laws of motion."
+       - "Help me solve this math problem."
+       - "What are the main themes in 'To Kill a Mockingbird'?"
+
+  ### 5. **Creative Projects:**
+     - **Idea Generation:** Brainstorming and developing creative
+       concepts.
+       - "Give me some ideas for a sci-fi novel plot."
+       - "Suggest themes for my upcoming photography project."
+       - "Help me brainstorm business names for a tech startup."
+
+  ### 6. **Technical Assistance:**
+     - **Programming Help:** Code generation, debugging, and algorithms.
+       - "Write a Python script to sort a list of numbers."
+       - "Fix the error in this JavaScript code snippet."
+       - "Explain how a binary search algorithm works."
+
+  ### 7. **Language Translation and Learning:**
+     - **Multilingual Support:** Translation and language practice.
+       - "Translate this paragraph into Spanish."
+       - "How do you say 'Good morning' in French?"
+       - "Correct the grammar in this English sentence."
+
+  ### 8. **Entertainment and Fun:**
+     - **Games and Trivia:** Interactive and fun activities.
+       - "Tell me a joke."
+       - "Play a trivia quiz with me."
+       - "Suggest some interesting movies to watch."
+
+  ### 9. **Health and Wellness:**
+     - **Advice and Information:** General well-being guidance.
+       - "What are some effective stress-relief techniques?"
+       - "Give me tips for a balanced diet."
+       - "What exercises can help improve my posture?"
+
+  ### 10. **Travel and Navigation:**
+     - **Travel Assistance:** Planning and directions.
+       - "Find the best route to the airport."
+       - "Provide information about tourist attractions in Paris."
+       - "Help me plan a weekend getaway."
+
+  ### 11. **Personal Development:**
+     - **Self-Improvement:** Tips and guidance for personal growth.
+       - "How can I improve my public speaking skills?"
+       - "Provide some strategies for better time management."
+       - "Give me a daily affirmations list to boost my confidence."
+
+  ### Specific Instruction Tips:
+  - **Clarity and Precision:** Provide clear and detailed instructions
+    to get accurate responses.
+  - **Context and Background:** Give context when necessary to aid
+    understanding.
+  - **Follow-up Questions:** Don't hesitate to ask follow-up questions
+    to refine answers or get more details.
+
+  ### Examples of Complex Instructions:
+  - "Summarize the current state of AI research and its potential future
+    impact on society."
+  - "Create a marketing strategy for a new eco-friendly product
+    targeting millennials."
+  - "Write a review of the latest tech gadget, highlighting its pros and
+    cons."
+
+  By using these types of instructions, you can leverage the AI's
+  capabilities to assist you effectively in many different areas.
+#+end_src
+
+*I mean `instructions` when I launch `Run` on some particular
+conversaton thread. What is the size of these `instructions`?*
+
+
+
+#+begin_src markdown
+  Ah, I understand now. You're referring to the `instructions` that can
+  be set when launching the `Run` option on a specific conversation
+  thread, particularly within the OpenAI playground or API
+  context. These instructions guide the assistant on how to behave or
+  what to focus on in the conversation.
+
+  As of my last update, the guidelines for the instructions size are as
+  follows:
+
+  ### Instruction Size:
+  - **Token Limit:** Instructions, like any other text input to the
+    model, fall under the token limit that applies to the specific model
+    you are using. For example, for GPT-3 models such as `davinci`, the
+    maximum token limit is 4096 tokens. This limit includes both the
+    instructions and the conversation history.
+  - **Practical Length:** While the token limit is 4096, it is generally
+    a good practice to keep instructions concise and focused to ensure
+    clarity and effectiveness. Typically, a few sentences to a paragraph
+    are enough to provide clear guidance without overwhelming the
+    assistant.
+
+  ### Examples of Instructions:
+  Here are a few examples of how you might structure these instructions:
+
+  1. **Customer Support Role:**
+     ```
+     You are a customer support assistant for an e-commerce website. Respond politely and provide helpful solutions to customer issues. Make sure to verify order numbers and assist with tracking, refunds, and product inquiries.
+     ```
+
+  2. **Educational Tutor:**
+     ```
+     You are an educational tutor specializing in high school chemistry. Provide detailed explanations and step-by-step solutions to problems. Ensure that your explanations are clear and easy to understand for a high school student.
+     ```
+
+  3. **Creative Writing Assistant:**
+     ```
+     You are a creative writing assistant helping an author develop a fantasy novel. Provide imaginative and engaging suggestions for plot development, character creation, and world-building. Help brainstorm unique and unexpected storylines.
+     ```
+
+  4. **Technical Support Agent:**
+     ```
+     You are a technical support agent for a software company. Assist users with troubleshooting common issues, provide clear instructions for resolving technical problems, and guide users through any necessary steps. Be patient and precise in your responses.
+     ```
+
+  ### Crafting Effective Instructions:
+  - **Be Specific:** Clearly outline the role and the type of responses
+    you expect.
+  - **Set the Tone:** Indicate the desired tone, whether it be formal,
+    friendly, professional, etc.
+  - **Highlight Priorities:** Mention any specific priorities, such as
+    accuracy, creativity, thoroughness, etc.
+  - **Contextual Guidance:** Provide any relevant context or background
+    that the assistant should be aware of.
+
+  ### Considerations:
+  - **Conciseness vs. Detail:** Balance the need for detail with the
+    importance of keeping instructions concise. Overly long instructions
+    can consume a significant portion of the token limit.
+  - **Adaptability:** Adjust and refine instructions based on the
+    assistant's responses to better achieve the desired outcome.
+
+  By optimizing the instructions within these parameters, you can ensure
+  that the assistant performs effectively in the role you envision for
+  the conversation.
+#+end_src
