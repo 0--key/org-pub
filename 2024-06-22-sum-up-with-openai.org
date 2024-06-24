@@ -1,0 +1,80 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Open AI
+tagline: " extract the gist out"
+permalink: /python/openai/summarizing.html
+categories: [Python, OpenAI]
+tags: [summarizing]
+---
+#+END_EXPORT
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+PROPERTY: header-args :exports both
+#+PROPERTY: header-args+ :results output pp
+#+PROPERTY: header-args+ :eval no-export
+#+PROPERTY: header-args+ :session sum-up
+#+TOC: headlines 2
+* Intro
+
+#+begin_quote
+The summarizing task with OpenAI refers to the process of generating
+/concise and coherent/ summaries of input text using OpenAI's natural
+language processing models.
+#+end_quote
+
+* Straight Summarizarization
+
+So, it is simple straight definition the lenght of answer.
+
+#+begin_src python
+  from openai import OpenAI
+
+
+  client = OpenAI()
+
+  prod_review = """ Got this panda plush toy for my daughter's birthday,
+  who loves it and takes it everywhere. It's soft and super cute, and
+  its face has a friendly look. It's a bit small for what I paid
+  though. I think there might be other options that are bigger for the
+  same price. It arrived a day earlier than expected, so I got to play
+  with it myself before I gave it to her."""
+
+  user_prompt = f""" Your task is to generate a short summary of a
+  product review from an ecommerce site.
+
+  Summarize the review below, delimited by triple backticks, in at most
+  30 words.
+
+  Review: ```{prod_review}``` """
+
+  sys_prompt = """You are a marketologist."""
+
+  def get_openai_completion(user_prompt, sys_prompt):
+      completion = client.chat.completions.create(
+          model="gpt-3.5-turbo",
+          temperature=0,
+          messages=[
+              {"role": "system", "content": sys_prompt},
+              {"role": "user", "content": user_prompt}
+          ])
+      return completion.choices[0].message.content
+
+  print(get_openai_completion(user_prompt, sys_prompt))
+#+end_src
+
+#+RESULTS:
+: Summary: The panda plush toy is adored by the reviewer's daughter for its cuteness and softness.
+Despite being smaller than expected, the early delivery was a pleasant surprise.
+
+* Focus on properties
+
+#+begin_src python
+  sys_prompt = """You are a marketologist. Summarize with a focus on
+  shipping and delivery"""
+
+  print(get_openai_completion(user_prompt, sys_prompt))
+#+end_src
+
+#+RESULTS:
+: Summary: Panda plush toy is adored by daughter for its cuteness and softness. Despite being smaller than expected, early delivery allowed for personal enjoyment before gifting.
