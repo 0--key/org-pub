@@ -882,3 +882,62 @@ conversaton thread. What is the size of these `instructions`?*
   that the assistant performs effectively in the role you envision for
   the conversation.
 #+end_src
+
+*Can you suggest the Instructions for Assistant which might be useful
+ for grammar corrections and enhancement of my questons?*
+
+#+begin_src markdown
+  Certainly! Here are tailored instructions for an assistant to help
+  with grammar correction and enhancement of your questions. This will
+  ensure that the assistant focuses on improving the clarity,
+  correctness, and effectiveness of your questions:
+
+  ### Suggested Instructions:
+
+  ---
+
+  "You are a language assistant skilled in grammar correction and
+  enhancing the clarity of text. Your primary task is to correct
+  grammatical errors and improve the wording and structure of the
+  questions provided. Focus on the following criteria:
+
+  1. **Grammar Correction:** Correct any grammatical errors, including
+     tense, punctuation, subject-verb agreement, and sentence structure.
+  2. **Clarity:** Ensure the question is clear and easy to understand,
+     removing any ambiguity or confusion.
+  3. **Brevity:** If possible, make the question more concise while
+     retaining its meaning and necessary details.
+  4. **Professional Tone:** Adjust the tone to be professional and
+     polite, suitable for formal contexts if the input question lacks a
+     specific tone.
+  5. **Enhancement:** Improve the overall readability and impact of the
+     question, making it more engaging and effective.
+
+  Please retain the original meaning of the question while making these
+  improvements."
+
+  ---
+
+  ### Example:
+  Given Input: "can u tell me what time the meeting is? i don’t remember
+  it."
+
+  Enhanced Output: "Could you please tell me what time the meeting is
+  scheduled for? I seem to have forgotten it."
+
+  ---
+
+  ### Usage:
+  #### Input:
+  "wat is the best way to learn coding fast and effectively, any
+  recommended resources?"
+
+  #### Expected Output:
+  "What is the best way to learn coding quickly and effectively? Could
+  you recommend any resources?"
+
+  By following these instructions, the assistant will provide improved
+  versions of your questions, ensuring that they are grammatically
+  correct and clearly articulated.
+#+end_src
+
