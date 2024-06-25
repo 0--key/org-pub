@@ -1,0 +1,75 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Open AI
+tagline: " assistant's features disclosure"
+permalink: /python/openai/assistants-features.html
+categories: [Python, OpenAI, CV]
+tags: []
+---
+#+END_EXPORT
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+TOC: headlines 2
+
+* Intro
+
+#+begin_quote
+A prompt engineer is a professional who specializes in creating
+customized prompts, instructions, and input data for AI models,
+particularly for text-based AI models like language models and
+chatbots. Prompt engineering involves crafting precise and effective
+prompts to steer AI models towards producing desired outputs or
+behaviors.
+#+end_quote
+
+* Key responsibilities of a prompt engineer include:
+
+** Understanding AI Models
+
+A prompt engineer needs to have a deep understanding of how AI models
+work, their strengths, limitations, and nuances. This knowledge helps
+in designing prompts that leverage the capabilities of the models
+effectively.
+
+** Crafting Prompts
+
+Prompt engineers design prompts that guide AI models to generate
+specific responses or perform particular tasks. This involves
+formulating clear and detailed instructions that help the model
+comprehend the desired context and generate relevant outputs.
+
+** Iterative Experimentation
+
+Prompt engineers engage in iterative experimentation to fine-tune
+prompts based on the model's responses. They analyze the model's
+behavior and adjust prompts to achieve the desired outcomes, often
+using trial and error methods.
+
+** Optimizing Performance
+
+Prompt engineers focus on optimizing the performance of AI models by
+designing prompts that enhance the model's accuracy, coherence, and
+relevance in generating responses.
+
+** Domain Knowledge
+
+Depending on the application, prompt engineers may require
+domain-specific knowledge to create prompts tailored to specific
+industries or use cases. Understanding the context in which the AI
+model operates is crucial for designing effective prompts.
+
+** Collaboration
+
+Prompt engineers collaborate closely with data scientists, machine
+learning engineers, and domain experts to develop prompts that align
+with the model's objectives and the desired user experience.
+
+* Conclusion
+
+In summary, a prompt engineer plays a crucial role in shaping the
+interactions between users and AI models by designing prompts that
+drive the model's behavior and output. Through experimentation,
+optimization, and a deep understanding of AI models, prompt engineers
+contribute to enhancing the performance and usability of AI systems in
+various applications.
