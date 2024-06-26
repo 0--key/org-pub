@@ -1,0 +1,1060 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: AI Assistant
+tagline: " inside Org-Mode"
+permalink: /emacs/openai/assistant.html
+categories: [Python, OpenAI, Assistant]
+tags: []
+---
+#+END_EXPORT
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+PROPERTY: header-args :exports both
+#+PROPERTY: header-args+ :results output pp
+#+PROPERTY: header-args+ :eval no-export
+#+TOC: headlines 2
+* Preface
+
+Unleash the power of AI Assistants in your =Org= buffer!
+
+#+name: emacs-lisp-hello-world
+#+begin_src elisp :exports both 
+(princ "Hello World!")
+#+end_src
+
+#+RESULTS: emacs-lisp-hello-world
+: Hello World!
+
+* Initiate a New Thread
+:PROPERTIES:
+:vizier-thread-id: thread_Q1teTN2ZdIKPvKif3ZuzN42S
+:END:
+
+
+#+begin_src elisp :results none
+       (require 'request)
+       (require 'json)
+       (require 'org)
+
+       (defun vizier-new-thread ()
+         "Create a new conversation thread in the current branch if it not exists else"
+         (interactive)
+         (save-excursion
+           (org-back-to-heading t)
+           (let ((thread-id (org-entry-get nil "vizier-thread-id")))
+             (if thread-id
+                 (message "You are already in conversation thread")
+               (message "You need to create a new conversation thread")))))
+
+       (defun vizier-thread-init (callback)
+         "Initialize a new conversation thread with the OpenAI API and return the thread ID."
+         ;(interactive)
+         (let* ((url "https://api.openai.com/v1/threads")
+                (headers `(("Content-Type" . "application/json")
+                           ("Authorization" . ,(concat "Bearer " openai-api-key))
+                           ("OpenAI-Beta" . "assistants=v2")))
+                thread-id)
+           (request
+             url
+             :type "POST"
+             :headers headers
+             :data ""
+             :parser 'json-read
+             :success (cl-function
+                        (lambda (&key data &allow-other-keys)
+                          (setq thread-id (cdr (assoc 'id data)))
+                          (message "Thread initialized with ID: %s" thread-id)  
+                          thread-id))
+             :error (cl-function
+                     (lambda (&key error-thrown &allow-other-keys)
+                       (message "Error initializing thread: %S" error-thrown))))
+           (while (not thread-id)
+             (sleep-for 0.1)) ;; Wait for the request to complete
+           thread-id))
+
+       ;; It is time to concoct the query
+
+
+       (defun vizier-org (start end)
+         "Grasp the active region or the current header."
+         (interactive "r")
+         ;; Check if there's an active region
+         (let* ((use-region (use-region-p))
+                (query (if use-region
+                           (buffer-substring-no-properties start end)
+                         (save-excursion
+                           (org-back-to-heading t)
+                           (org-element-property :title (org-element-at-point))))))
+           ;; Print message based on context
+           (if use-region
+               (message "The active region will be the query: %s" query)
+             (message "The current header will be the query: %s" query))
+         (vizier-send-query query)
+         ;; place for extension
+         ))
+
+       ;; Example usage:
+       ;; (defun example-vizier-org ()
+       ;;   "Example function to demonstrate how to grasp the active region or the current header."
+       ;;   (interactive "r")
+       ;;   (vizier-org (region-beginning) (region-end)))
+
+       ;; So, ~vizier-org~ might pass the query to another function
+
+      (defun vizier-send-query (question)
+        "Send QUESTION to a specific THREAD and return MSG-ID."
+        (save-excursion
+          (org-back-to-heading t)
+          (let ((thread-id (org-entry-get nil "vizier-thread-id")))
+            (if thread-id
+                (progn
+                  (message "Sending message to thread: %s with question: %s" thread-id question)
+                  (vizier-send-message-to-thread thread-id question))
+              (message "Thread ID is missing in the current heading.")))))
+
+      (defun vizier-send-message-to-thread (thread-id question)
+        "Helper function to send QUESTION to a specific THREAD-ID and return MSG-ID."
+        (let* ((url (format "https://api.openai.com/v1/threads/%s/messages" thread-id))
+               (headers `(("Content-Type" . "application/json")
+                          ("Authorization" . ,(concat "Bearer " (getenv "OPENAI_API_KEY")))
+                          ("OpenAI-Beta" . "assistants=v2")))
+               (data (json-encode `(("role" . "user")
+                                    ("content" . ,question))))
+               msg-id)
+          (request
+           url
+           :type "POST"
+           :headers headers
+           :data data
+           :parser 'json-read
+           :success (cl-function
+                     (lambda (&key data &allow-other-keys)
+                       (setq msg-id (cdr (assoc 'id data)))
+                       (message "Message sent with ID: %s" msg-id)
+                       msg-id))
+           :error (cl-function
+                   (lambda (&key error-thrown &allow-other-keys)
+                     (message "Error sending message: %S" error-thrown))))
+          (while (not msg-id)
+            (sleep-for 0.1)) ;; Wait for the request to complete
+          msg-id))
+
+
+#+end_src
+
+* Run the Thread with Assistant
+:PROPERTIES:
+:vizier-thread-id: thread_Q1teTN2ZdIKPvKif3ZuzN42S
+:vizier-assistant-id: asst_k0LyQk3P0ugc93lkXqkzrP0x
+:END:
+
+Now it is very time to evaluate the ~question~. The =Assistant= was
+preliminarily created via web-interface and his =id= I've put into
+header's =PROPERTIES=.
+
+#+begin_src elisp :results none
+  (require 'request)
+  (require 'json)
+  (require 'org)
+
+  (defun vizier-org-arguments (callback)
+    "Extract the content of the current Org header and pass it to CALLBACK."
+    (save-excursion
+      (org-back-to-heading t)
+      (let ((thread-id (org-entry-get nil "vizier-thread-id"))
+            (assistant-id (org-entry-get nil "vizier-assistant-id")))
+        (if (and thread-id assistant-id)
+            (funcall callback thread-id assistant-id)
+          (message "Properties of Org header are incomplete.")))))
+
+
+  (defun vizier-run ()
+    "Runs the current thread."
+    (interactive)
+    (vizier-org-arguments
+     (lambda (thread-id assistant-id)
+       (vizier-thread-run thread-id assistant-id))))
+
+  ;; Put instructions for your Assistant into register q, please!
+  (defun vizier-thread-run (thread-id assistant-id)
+    "Run a command in a specific THREAD-ID using a given ASSISTANT-ID and INSTRUCTIONS, returning the run ID."
+    (let* ((url (format "https://api.openai.com/v1/threads/%s/runs" thread-id))
+           (instructions (get-register ?q))
+           (headers `(("Content-Type" . "application/json")
+                      ("Authorization" . ,(concat "Bearer " (getenv "OPENAI_API_KEY")))
+                      ("OpenAI-Beta" . "assistants=v2")))
+           (data (json-encode `(("assistant_id" . ,assistant-id)
+                                ("instructions" . ,instructions))))
+           run-id)
+      (request
+       url
+       :type "POST"
+       :headers headers
+       :data data
+       :parser 'json-read
+       :success (cl-function
+                  (lambda (&key data &allow-other-keys)
+                    (setq run-id (cdr (assoc 'id data)))
+                    (message "Run initiated with ID: %s" run-id)
+                    (message "Assistant's instructions is:%s" instructions)
+                    run-id))
+       :error (cl-function
+               (lambda (&key error-thrown &allow-other-keys)
+                 (message "Error initiating run: %S" error-thrown))))
+      (while (not run-id)
+        (sleep-for 0.1)) ;; Wait for the request to complete
+      run-id))
+#+end_src
+
+* Retrieve the Answer from the Thread
+:PROPERTIES:
+:vizier-thread-id: thread_Q1teTN2ZdIKPvKif3ZuzN42S
+:END:
+
+
+#+begin_src elisp :results none
+  (require 'request)
+  (require 'json)
+  (require 'org)
+
+  (defun vizier-answer (&optional query-limit)
+    "Retrieve the last message for a specific THREAD-ID from OpenAI API and insert its content in the Org buffer.
+  If QUERY-LIMIT is provided, set the number of messages to retrieve."
+    (interactive)
+    (let* ((thread-id (org-entry-get nil "vizier-thread-id"))
+           (limit (or query-limit 1))
+           (url (format "https://api.openai.com/v1/threads/%s/messages?limit=%d" thread-id limit))
+           (headers `(("Content-Type" . "application/json")
+                      ("Authorization" . ,(concat "Bearer " (getenv "OPENAI_API_KEY")))
+                      ("OpenAI-Beta" . "assistants=v2")))
+           last-message-content)
+      (request
+       url
+       :type "GET"
+       :headers headers
+       :parser 'json-read
+       :success (cl-function
+                 (lambda (&key data &allow-other-keys)
+                   (let ((messages (cdr (assoc 'data data))))
+                     (when (and messages (arrayp messages))
+                       (let ((last-message (aref messages (1- (length messages)))))
+                         (setq last-message-content
+                               (mapconcat (lambda (item)
+                                            (alist-get 'value (alist-get 'text item)))
+                                          (alist-get 'content last-message)
+                                          "\n"))
+                         ;; Insert after the current paragraph
+                         (save-excursion
+                           (org-back-to-heading t)
+                           (while (not (eobp))
+                             (org-forward-paragraph))
+                           (insert (format "\n#+begin_src markdown\n%s\n#+end_src\n"
+                                           last-message-content))
+                           (end-of-buffer)
+                           (previous-line 2)
+                           (org-fill-paragraph)))))))
+       :error (cl-function
+               (lambda (&key error-thrown &allow-other-keys)
+                 (message "Error retrieving messages: %S" error-thrown))))
+      (while (not last-message-content)
+        (sleep-for 0.1)) ;; Wait for the request to complete
+      last-message-content))
+
+
+  (defun vizier ()
+    "Sequentially execute vizier-org, vizier-run, and vizier-answer.
+    Pause for one second between vizier-run and vizier-answer."
+    (interactive)
+    (let ((start (if (use-region-p) (region-beginning) (point-min)))
+          (end (if (use-region-p) (region-end) (point-max))))
+      (vizier-org start end)
+      (vizier-run)
+      (sleep-for 1)
+      (vizier-answer)))
+#+end_src
+
+* Manual Testing
+:PROPERTIES:
+:vizier-thread-id: thread_Q1teTN2ZdIKPvKif3ZuzN42S
+:vizier-assistant-id: asst_k0LyQk3P0ugc93lkXqkzrP0x
+:END:
+So it is the first answer in the current thread:
+#+begin_src markdown
+  Hi Tony! It seems like you'd like help with something specific, but
+  your request is a bit unclear. If you're referring to an action in a
+  software program, document, or coding environment, could you please
+  provide more details? For instance, are you trying to edit a document,
+  navigate a software interface, or adjust a section of code? Let me
+  know how I can assist you further!
+#+end_src
+Now it is the moment to compose the question:
+#+begin_src markdown
+  Can you write Elisp function `get-properties-from-file-header` which
+  retrieve properties from the header of Org file?
+#+end_src
+#+begin_src markdown
+  Certainly, Tony! Below is an Emacs Lisp (Elisp) function named
+  `get-properties-from-file-header` which retrieves properties from the
+  header of an Org file. This function reads the metadata properties
+  from the header section of an Org file and returns them as an
+  association list.
+
+  ```elisp
+  (defun get-properties-from-file-header (file-path)
+    "Retrieve properties from the header of an Org file specified by FILE-PATH.
+  Returns an association list of properties."
+    (with-temp-buffer
+      (insert-file-contents file-path)
+      (let ((properties '())
+            (org-header-regexp "#\\+\\([A-Z_]+\\):\\s-*\\(.*\\)"))
+        (goto-char (point-min))
+        (while (re-search-forward org-header-regexp nil t)
+          (let ((property (upcase (match-string 1)))
+                (value (match-string 2)))
+            (push (cons property value) properties)))
+        (nreverse properties))))
+
+  ;; Example Usage:
+  ;; (get-properties-from-file-header "/path/to/your/org-file.org")
+  ```
+
+  ### Explanation:
+
+  1. **`with-temp-buffer`**: Creates a temporary buffer to work with.
+  2. **`insert-file-contents`**: Reads the contents of the Org file
+     specified by `file-path` into the buffer.
+  3. **`org-header-regexp`**: A regular expression to match Org file
+     header properties. It captures lines that look like `#+PROPERTY:
+     value`.
+  4. **`goto-char` and `re-search-forward`**: This combination searches
+     through the buffer for matches to the regular expression.
+  5. **`match-string`**: Retrieves the matched property name and value
+     from the regular expression.
+  6. **`push` and `nreverse`**: Pushes each matched property onto the
+     `properties` list, and then reverses the list to maintain the
+     original order.
+
+  You can replace `"/path/to/your/org-file.org"` in the example usage
+  with the actual path to test the function. This function should help
+  you extract the header properties of any Org file as an association
+  list.
+
+  Let me know if you need further customization or additional features,
+  Tony!
+#+end_src
+Refactor this function for the current buffer with `org` file in it,
+please.
+#+begin_src markdown
+  Sure, Tony! Below is the refactored function
+  `get-properties-from-current-buffer`. This variation of the function
+  works directly on the current buffer, assuming it contains an Org
+  file.
+
+  ```elisp
+  (defun get-properties-from-current-buffer ()
+    "Retrieve properties from the header of the current buffer (assuming it's an Org file).
+    Returns an association list of properties."
+    (interactive)
+    (let ((properties '())
+          (org-header-regexp "^#\\+\\([A-Z_]+\\):\\s-*\\(.*\\)"))
+      (save-excursion
+        (goto-char (point-min))
+        (while (re-search-forward org-header-regexp nil t)
+          (let ((property (upcase (match-string 1)))
+                (value (match-string 2)))
+            (push (cons property value) properties)))
+        (nreverse properties))))
+
+  ;; Example Usage:
+  ;; M-x get-properties-from-current-buffer
+  ```
+
+  ### Explanation:
+
+  1. **`interactive`**: Makes the function callable via `M-x`.
+  2. **`save-excursion`**: Saves the point and buffer state, ensuring it
+     returns to the original location after execution.
+  3. **`goto-char`, `re-search-forward`, `match-string`, `push` and
+     `nreverse`**: These function calls work in the same way as
+     described previously, but now they operate on the current buffer
+     directly.
+
+  ### Usage in Emacs:
+
+  1. Open an Org file in Emacs.
+  2. Run the function by typing `M-x
+     get-properties-from-current-buffer`.
+
+  This function will then retrieve the properties from the header of the
+  Org file in the current buffer and return them as an association list.
+
+  Let me know if you need further customization or any other assistance,
+  Tony!
+#+end_src
+Refactor function, please. I want to retriveve `org-properties` from
+the currently opened `org` file. They usually begin with `#+PROPERTY:`
+#+begin_src markdown
+  Got it, Tony! I'll refactor the function to specifically look for
+  lines beginning with `#+PROPERTY:` and retrieve these properties from
+  the current buffer. The function will then return the properties as an
+  association list.
+
+  Here's the refactored function:
+
+  ```elisp
+  (defun get-org-properties-from-current-buffer ()
+    "Retrieve properties from the header of the current Org buffer.
+  These properties begin with `#+PROPERTY:`. Returns an association list of properties."
+    (interactive)
+    (let ((properties '())
+          (org-property-regexp "^#\\+PROPERTY:\\s-*\\([A-Z_]+\\):\\s-*\\(.*\\)"))
+      (save-excursion
+        (goto-char (point-min))
+        (while (re-search-forward org-property-regexp nil t)
+          (let ((property (upcase (match-string 1)))
+                (value (match-string 2)))
+            (push (cons property value) properties)))
+        (nreverse properties))))
+
+  ;; Example Usage:
+  ;; M-x get-org-properties-from-current-buffer
+  ```
+
+  ### Explanation:
+
+  1. **`interactive`**: Allows the function to be called interactively
+     via `M-x`.
+  2. **`org-property-regexp}`**: The regular expression specifically
+     matches lines that start with `#+PROPERTY:`, followed by the
+     property name and value.
+  3. **`save-excursion`**: Preserves the point and buffer state,
+     ensuring it returns to the original location after execution.
+  4. **`goto-char`, `re-search-forward`, `match-string`, `push`, and
+     `nreverse`**: These function calls process the current buffer
+     content to extract the properties that match the regular
+     expression.
+
+  ### Usage in Emacs:
+
+  1. Open an Org file in Emacs.
+  2. Run the function by typing `M-x
+     get-org-properties-from-current-buffer`.
+
+  This function will then search for `#+PROPERTY:` lines in the current
+  buffer, extract the associated properties, and return them as an
+  association list.
+
+  Let me know if you have any further modifications or additional
+  features you'd like, Tony!
+#+end_src
+Looks good, but not enough!
+It is so, because instruction for the =Assistant= is:
+#+begin_example
+Please address the user as Tony.
+#+end_example
+Put the instructions for our =Assistant= into the register =q=:
+#+begin_example
+You are an experienced Emacs user proficient in Elisp programming language.
+#+end_example
+
+The next question is the same:
+#+begin_example
+Can you write Elisp function `get-properties-from-file-header` which retrieve properties from the header of Org file?
+#+end_example
+#+begin_src markdown
+  Certainly, Tony! Here’s an improved version of the function
+  `get-properties-from-file-header` that retrieves properties from the
+  header of an Org file. This function reads the Org file from a
+  specified path and extracts `#+PROPERTY:` lines from the header
+  section, returning them as an association list.
+
+  ```elisp
+  (defun get-properties-from-file-header (file-path)
+    "Retrieve properties from the header of an Org file specified by FILE-PATH.
+  Returns an association list of properties where each property is represented
+  as a cons cell (name . value)."
+    (with-temp-buffer
+      (insert-file-contents file-path)
+      (let ((properties '())
+            (org-property-regexp "^#\\+PROPERTY:\\s-*\\([A-Z_]+\\):\\s-*\\(.*\\)")
+            (header-end nil))
+        (goto-char (point-min))
+        ;; Find the end of the properties header, typically before the first non-header content
+        (setq header-end (save-excursion
+                           (re-search-forward "^\\* " nil t)
+                           (point)))
+        ;; Extract properties within the header section
+        (while (re-search-forward org-property-regexp header-end t)
+          (let ((property (upcase (match-string 1)))
+                (value (match-string 2)))
+            (push (cons property value) properties)))
+        (nreverse properties))))
+
+  ;; Example Usage:
+  ;; (get-properties-from-file-header "/path/to/your/org-file.org")
+  ```
+
+  ### Explanation:
+
+  1. **`with-temp-buffer`**: Creates a temporary buffer to load the
+     contents of the Org file.
+  2. **`insert-file-contents`**: Loads the contents of the Org file
+     specified by `file-path` into the temporary buffer.
+  3. **`org-property-regexp`**: Regular expression to match the
+     `#+PROPERTY:` lines in the Org file.
+  4. **`header-end`**: This variable marks the end of the header
+     section. This is usually identified as the first headline in the
+     Org file (e.g., lines starting with `* `).
+  5. **`goto-char`, `re-search-forward`, `match-string`, `push`, and
+     `nreverse`**: These functions operate within the header section to
+     find and extract properties, then reverse the resulting list to
+     maintain the original order.
+  6. **`header-end` calculation**: The `save-excursion` function ensures
+     we find the end of the header without moving the point permanently.
+
+  ### Usage Example
+
+  To utilize this function, provide the path to your Org file:
+
+  ```elisp
+  (get-properties-from-file-header "/path/to/your/org-file.org")
+  ```
+
+  This function will return an association list of the properties found
+  in the header of the specified Org file.
+
+  Let me know if you need more adjustments or further help, Tony!
+#+end_src
+Modify by additional question:
+#+begin_example
+I mean script for _current_ buffer.
+#+end_example
+
+#+begin_src markdown
+  Got it. Below is an updated function for retrieving properties from
+  the header of the currently opened Org file in the current buffer.
+
+  ```elisp
+  (defun get-properties-from-current-buffer ()
+    "Retrieve properties from the header of the current Org buffer.
+  These properties are denoted by `#+PROPERTY:`. Returns an association list of properties."
+    (interactive)
+    (let ((properties '())
+          (org-property-regexp "^#\\+PROPERTY:\\s-*\\(.*\\)\\s-*:\\s-*\\(.*\\)")
+          (header-end nil))
+      (save-excursion
+        (goto-char (point-min))
+        ;; Find the end of the properties header, ideally just before the first headline
+        (setq header-end (save-excursion
+                           (or (re-search-forward "^\\* " nil t)
+                               (point-max))))
+        ;; Extract properties within the header section
+        (while (re-search-forward org-property-regexp header-end t)
+          (let ((property (match-string 1))
+                (value (match-string 2)))
+            (push (cons (upcase property) value) properties)))
+        (nreverse properties))))
+
+  ;; Usage:
+  ;; Call this function interactively with M-x get-properties-from-current-buffer
+  ;; or evaluate it in your Lisp environment to retrieve the properties.
+
+  ```
+
+  ### Explanation:
+
+  1. **`interactive`**: Allows the function to be called interactively
+     using `M-x`.
+  2. **`org-property-regexp`**: A regular expression to match lines that
+     start with `#+PROPERTY:` followed by the property name and value.
+  3. **`save-excursion`**: Preserves the point and buffer states,
+     ensuring that it returns to the original location after execution.
+  4. **`goto-char (point-min)`**: Moves the point to the beginning of
+     the buffer to start searching from the top.
+  5. **`header-end`**: Identifies the end of the header section,
+     typically just before the first headline (lines starting with `*
+     `). If no headlines are found, it defaults to the end of the
+     buffer.
+  6. **`re-search-forward`, `match-string`, `push`, and `nreverse`**:
+     These functions operate within the header section to find and
+     extract properties using the regular expression, then reverse the
+     resulting list to maintain the original order.
+
+  ### How to Use:
+
+  1. Open an Org file in Emacs.
+  2. Run the function by typing `M-x
+     get-properties-from-current-buffer`.
+
+  The function will search the header section of the current buffer for
+  lines starting with `#+PROPERTY:` and return the properties as an
+  association list.
+
+  Let me know if you need further modifications or additional features,
+  Tony!
+#+end_src
+
+So can you explain Elisp's main concepts, please?
+#+begin_src markdown
+  So can you explain Elisp's main concepts, please?
+#+end_src
+
+#+begin_src markdown
+  Certainly, Tony! Emacs Lisp (Elisp) is a dialect of the Lisp
+  programming language used primarily for extending and customizing the
+  Emacs text editor. Let's go through some of the main concepts of
+  Elisp:
+
+  ### 1. S-expressions (Symbolic Expressions)
+  - **Evaluation**: Elisp code is written in the form of S-expressions (often abbreviated as s-exprs). These consist of a function and its arguments, both enclosed in parentheses.
+    ```elisp
+    (+ 1 2)
+    ;; Evaluates to 3
+    ```
+
+  ### 2. Functions
+  - **Defining Functions**: You can define functions using `defun`.
+    ```elisp
+    (defun greet (name)
+      "Greet a person with NAME."
+      (message "Hello, %s!" name))
+    ;; Usage: (greet "Tony") -> "Hello, Tony!"
+    ```
+
+  ### 3. Variables
+  - **Setting Variables**: Variables in Elisp can be defined and set using `setq`.
+    ```elisp
+    (setq my-variable 42)
+    (setq another-variable "Hello, Emacs!")
+    ```
+
+  - **Local Variables**: You can create local variables using `let`.
+    ```elisp
+    (let ((x 10)
+          (y 20))
+      (+ x y))
+    ;; Returns 30
+    ```
+
+  ### 4. Lists
+  - **Creating Lists**: Lists are one of the central data structures in Lisp.
+    ```elisp
+    (setq my-list '(1 2 3 4 5))
+    (car my-list)  ;; Returns 1
+    (cdr my-list)  ;; Returns (2 3 4 5)
+    (nth 2 my-list)  ;; Returns 3
+    ```
+
+  ### 5. Control Structures
+  - **Conditionals**: Elisp supports standard conditional structures like `if`, `cond`, and `when`.
+    ```elisp
+    (if (> 3 2)
+        (message "3 is greater than 2")
+      (message "2 is greater or equal to 3"))
+
+    (cond ((= x 1) (message "x is 1"))
+          ((= x 2) (message "x is 2"))
+          (t (message "x is something else")))
+
+    (when (> 3 2)
+      (message "This always runs because 3 is greater than 2"))
+    ```
+
+  ### 6. Buffers and Windows
+  - **Current Buffer**: Manipulating content within buffers is a key feature of Elisp.
+    ```elisp
+    (with-current-buffer "example-buffer"
+      (insert "Hello, Emacs Lisp!"))
+    ```
+
+  ### 7. Hooks
+  - **Customization Hooks**: Hooks are variables that hold lists of functions to be called at specific times.
+    ```elisp
+    (add-hook 'before-save-hook 'delete-trailing-whitespace)
+    ;; Deletes trailing whitespace before saving any file
+    ```
+
+  ### 8. Macros
+  - **Creating Macros**: Macros operate on S-expressions and return transformed S-expressions.
+    ```elisp
+    (defmacro unless (condition &rest body)
+      `(if (not ,condition)
+           (progn ,@body)))
+    ;; Usage: (unless (> 2 3) (message "2 is not greater than 3."))
+    ```
+
+  ### 9. Interactive Functions
+  - **Interactive Commands**: You can make functions interactive so they can be called with `M-x`.
+    ```elisp
+    (defun my-command ()
+      "A simple interactive command."
+      (interactive)
+      (message "My command has been called!"))
+
+    ;; Now you can call this with M-x my-command
+    ```
+
+  ### 10. Packaging and Libraries
+  - **Using External Libraries**: You can load and manage packages using `require` and `use-package`.
+    ```elisp
+    (require 'org)
+    (use-package magit
+      :ensure t
+      :config
+      (global-set-key (kbd "C-x g") 'magit-status))
+    ```
+
+  ### Detailed Example: Buffer Manipulation
+
+  Here's a practical example using some of these concepts to illustrate
+  how to interact with a buffer:
+
+  ```elisp
+  (defun insert-current-time ()
+    "Insert the current date and time at point."
+    (interactive)
+    (insert (format-time-string "%Y-%m-%d %H:%M:%S")))
+
+  (defun buffer-info ()
+    "Display information about the current buffer."
+    (interactive)
+    (message "Buffer name: %s\nSize: %d"
+             (buffer-name) 
+             (buffer-size)))
+
+  (defun add-to-buffer-end (text)
+    "Add TEXT to the end of the current buffer."
+    (interactive "sEnter text to add: ")
+    (save-excursion
+      (goto-char (point-max))
+      (insert "\n" text)))
+
+  ;; Now you can call these with M-x insert-current-time, M-x buffer-info, etc.
+  ```
+
+  ### Summary
+  By understanding these main concepts, you'll be well-equipped to write
+  and understand Emacs Lisp code. Elisp is both a powerful and flexible
+  language, especially tailored for extending the Emacs editing
+  environment. If you have any specific questions or need further
+  clarification on any topics, feel free to ask!
+#+end_src
+
+So what you would think about a software developer, who don't use Emacs?
+#+begin_src markdown
+  As a long-time Emacs user and someone passionate about the
+  capabilities of Emacs and Emacs Lisp, I certainly recognize the unique
+  and powerful features that Emacs offers. However, evaluating a
+  software developer's effectiveness or expertise based solely on their
+  choice of tools is neither fair nor productive. Here are some thoughts
+  on this broader topic:
+
+  ### 1. Tool Diversity
+  - **Individual Preferences**: Developers have different preferences
+    based on their experiences, comfort levels, and specific needs. Some
+    may prefer Emacs, while others might find other editors such as Vim,
+    Visual Studio Code, Sublime Text, or even IDEs like IntelliJ IDEA or
+    Eclipse better suited to their workflow.
+  - **Project Requirements**: Certain projects or development
+    environments might dictate the choice of tools. For example, working
+    with large Java projects might necessitate using a robust IDE like
+    IntelliJ IDEA or Eclipse.
+  - **Team and Collaboration**: In some team environments, standardizing
+    on specific tools can enhance collaboration and productivity. A
+    developer might use a particular editor because it aligns with their
+    team's workflow and practices.
+
+  ### 2. Learning Curve and Productivity
+  - **Ease of Learning**: Emacs, while powerful, also has a steep
+    learning curve. Developers might choose other tools that allow them
+    to become productive more quickly.
+  - **Customization**: Not all developers need or want the deep
+    customization that Emacs provides. Many find the default
+    configurations of other editors meet their needs without extensive
+    tweaking.
+  - **Community and Ecosystem**: Some editors or IDEs might have more
+    vibrant ecosystems or plugins that cater to specific areas of
+    software development, making them more attractive for certain tasks.
+
+  ### 3. Productivity and Efficiency
+  - **Effectiveness Over Tools**: A developer's productivity is
+    determined more by how effectively they can solve problems, write
+    clean and maintainable code, and work within their team, rather than
+    the specific tool they use.
+  - **Adaptability**: A good developer is typically adaptable and can
+    become proficient with various tools as needed.
+
+  ### 4. Innovation and Personal Growth
+  - **Continuous Learning**: The software development field is always
+    evolving, and so too do the tools and editors. A developer who keeps
+    learning and adapts to new tools and best practices is what truly
+    matters.
+  - **Community Contributions**: Developers contribute to and benefit
+    from different communities. For instance, someone who's an active
+    contributor to a VS Code extension may provide just as much value as
+    someone who contributes to Emacs packages.
+
+  ### 5. Respect and Inclusivity
+  - **Respect for Choices**: Tools and editors are personal choices, and
+    it's important to respect the diversity in these choices. Mocking or
+    undervaluing someone because of the tools they use is
+    counterproductive.
+  - **Inclusivity**: Encouraging and supporting a wide range of tools
+    and practices fosters a more inclusive and innovative development
+    community.
+
+  ### Conclusion
+  In summary, while Emacs is an exceptional tool beloved by many,
+  including myself, being a successful and effective software developer
+  is about much more than just the editor one uses. It's about
+  problem-solving, collaboration, continuous learning, and
+  adaptability. Therefore, a developer who does not use Emacs can be
+  just as proficient and valuable as one who does. The focus should
+  always be on the quality of the work and the value they bring to their
+  projects and teams.
+
+  If you have any more questions or need insights on specific topics
+  related to Emacs, Elisp, or software development in general, feel free
+  to ask!
+#+end_src
+Write Elisp function `vizier` that sequentially executes three
+interactive functions: `vizier-org`, `visier-run` and `vizier-answer`
+with pause between the last two in one second.
+#+begin_src markdown
+  Certainly, Tony! Below is an Emacs Lisp function named `vizier` that
+  sequentially executes three interactive functions: `vizier-org`,
+  `vizier-run`, and `vizier-answer`. It also includes a one-second pause
+  between the execution of `vizier-run` and `vizier-answer` using
+  `sleep-for`.
+
+  Here's how you could write this function:
+
+  ```elisp
+  (defun vizier ()
+    "Sequentially execute vizier-org, vizier-run, and vizier-answer.
+  Pause for one second between vizier-run and vizier-answer."
+    (interactive)
+    (vizier-org)
+    (vizier-run)
+    (sleep-for 1)
+    (vizier-answer))
+
+  ;; Example dummy implementations of the interactive functions (for testing)
+  (defun vizier-org ()
+    "Dummy implementation of vizier-org."
+    (interactive)
+    (message "Executing vizier-org..."))
+
+  (defun vizier-run ()
+    "Dummy implementation of vizier-run."
+    (interactive)
+    (message "Executing vizier-run..."))
+
+  (defun vizier-answer ()
+    "Dummy implementation of vizier-answer."
+    (interactive)
+    (message "Executing vizier-answer..."))
+
+  ;; Usage:
+  ;; M-x vizier
+  ```
+
+  ### Explanation:
+
+  1. **`interactive`**: Marks `vizier` as an interactive function that
+     can be called with `M-x`.
+  2. **`vizier-org`, `vizier-run`, `vizier-answer`**: Sequentially calls
+     these existing interactive functions.
+  3. **`sleep-for`**: Pauses the execution for one second between
+     `vizier-run` and `vizier-answer`.
+
+  ### Testing the Function:
+
+  If you already have implementations for `vizier-org`, `vizier-run`,
+  and `vizier-answer`, you can skip the dummy implementations provided
+  above. Otherwise, you can use these dummy implementations to test the
+  `vizier` function and replace them with your actual interactive
+  functions later.
+
+  To use the function:
+  1. Evaluate the function definitions in your Emacs environment.
+  2. Call the function by typing `M-x vizier`.
+
+  This will execute `vizier-org`, then `vizier-run`, pause for one
+  second, and finally execute `vizier-answer`.
+
+  If you have any specific requirements or additional features you'd
+  like to add, feel free to ask!
+#+end_src
+The `vizier-org` function:
+```
+       (defun vizier-org (start end)
+         "Grasp the active region or the current header."
+         ;;(interactive "r")
+         ;; Check if there's an active region
+         (let* ((use-region (use-region-p))
+                (query (if use-region
+                           (buffer-substring-no-properties start end)
+                         (save-excursion
+                           (org-back-to-heading t)
+                           (org-element-property :title (org-element-at-point))))))
+           ;; Print message based on context
+           (if use-region
+               (message "The active region will be the query: %s" query)
+             (message "The current header will be the query: %s" query))
+         (vizier-send-query query)
+         ;; place for extension
+         ))
+```
+visier, as you're suggested above:
+```
+  (defun vizier ()
+    "Sequentially execute vizier-org, vizier-run, and vizier-answer.
+  Pause for one second between vizier-run and vizier-answer."
+    (interactive)
+    (vizier-org)
+    (vizier-run)
+    (sleep-for 1)
+    (vizier-answer))
+```
+
+If I try `M-x vizier` it throws the error:
+```
+vizier: Wrong number of arguments: (lambda (start end) "Grasp the
+active region or the current header." (let* ((use-region
+(use-region-p)) (query (if use-region (buffer-substring-no-properties
+start end) (save-excursion (org-back-to-heading t)
+(org-element-property :title (org-element-at-point)))))) (if
+use-region (message "The active region will be the query: %s" query)
+(message "The current header will be the query: %s" query))
+(vizier-send-query query))), 0
+```
+
+What is wrong?
+
+#+begin_src markdown
+  The error you’re seeing is related to the `vizier-org` function
+  needing specific arguments, which it isn't receiving when called from
+  `vizier`. Your `vizier-org` function is designed to take two arguments
+  (`start` and `end`), likely for use with an active region, but
+  `vizier` attempts to call it without these arguments.
+
+  To resolve this issue, you need to:
+  1. Ensure `vizier-org` can handle both being calling normally from
+     `vizier` and interactively from `M-x vizier-org`.
+  2. Modify `vizier` to correctly call `vizier-org` with the appropriate
+     arguments.
+
+  ### Step 1: Ensure `vizier-org` can handle calls properly
+
+  First, let's make sure `vizier-org` works both interactively and from
+  within the `vizier` function. This can be done by making `vizier-org`
+  interactively handle an active region or fallback to the current
+  heading when called without `start` and `end`.
+
+  ```elisp
+  (defun vizier-org (start end)
+    "Grasp the active region or the current header."
+    (interactive "r")
+    ;; Check if there's an active region, or if start and end are provided
+    (let* ((use-region (if (use-region-p) t (not (and (null start) (null end)))))
+           (query (if use-region
+                      (buffer-substring-no-properties start end)
+                    (save-excursion
+                      (org-back-to-heading t)
+                      (org-element-property :title (org-element-at-point))))))
+      ;; Print message based on context
+      (if use-region
+          (message "The active region will be the query: %s" query)
+        (message "The current header will be the query: %s" query))
+      (vizier-send-query query)))
+  ```
+
+  ### Step 2: Modify `vizier` to correctly call `vizier-org`
+
+  Now let's adjust `vizier` so it calls `vizier-org` with the
+  appropriate arguments. Since `vizier-org` is meant to handle regions,
+  we'll look for an active region or default to the whole buffer when
+  there's no region.
+
+  ```elisp
+  (defun vizier ()
+    "Sequentially execute vizier-org, vizier-run, and vizier-answer.
+  Pause for one second between vizier-run and vizier-answer."
+    (interactive)
+    (let ((start (if (use-region-p) (region-beginning) (point-min)))
+          (end (if (use-region-p) (region-end) (point-max))))
+      (vizier-org start end)
+      (vizier-run)
+      (sleep-for 1)
+      (vizier-answer)))
+  ```
+
+  ### Dummy Functions for Completion
+
+  If you haven't defined `vizier-send-query`, `vizier-run`, and
+  `vizier-answer`, you might want to add dummy implementations for
+  testing. Assuming they are defined, it should work correctly.
+
+  Here’s a recap of the complete solution:
+
+  ```elisp
+  (defun vizier-org (start end)
+    "Grasp the active region or the current header."
+    (interactive "r")
+    ;; Check if there's an active region or if start and end are provided
+    (let* ((use-region (if (use-region-p) t (not (and (null start) (null end)))))
+           (query (if use-region
+                      (buffer-substring-no-properties start end)
+                    (save-excursion
+                      (org-back-to-heading t)
+                      (org-element-property :title (org-element-at-point))))))
+      ;; Print message based on context
+      (if use-region
+          (message "The active region will be the query: %s" query)
+        (message "The current header will be the query: %s" query))
+      (vizier-send-query query)))
+
+  (defun vizier ()
+    "Sequentially execute vizier-org, vizier-run, and vizier-answer.
+  Pause for one second between vizier-run and vizier-answer."
+    (interactive)
+    (let ((start (if (use-region-p) (region-beginning) (point-min)))
+          (end (if (use-region-p) (region-end) (point-max))))
+      (vizier-org start end)
+      (vizier-run)
+      (sleep-for 1)
+      (vizier-answer)))
+
+  ;; Example Dummy Implementations for testing
+  (defun vizier-send-query (query)
+    "Dummy implementation of vizier-send-query."
+    (message "Sending query: %s" query))
+
+  (defun vizier-run ()
+    "Dummy implementation of vizier-run."
+    (interactive)
+    (message "Executing vizier-run..."))
+
+  (defun vizier-answer ()
+    "Dummy implementation of vizier-answer."
+    (interactive)
+    (message "Executing vizier-answer..."))
+
+  ;; Usage:
+  ;; M-x vizier
+  ```
+
+  Now, calling `M-x vizier` should sequentially execute `vizier-org`,
+  `vizier-run`, and `vizier-answer` with a one-second pause between the
+  last two functions.
+#+end_src
+Just say Hi!
+#+begin_src markdown
+  Hi Tony! How can I assist you further today?
+#+end_src
+
+#+begin_src markdown
+  Hi! 🙌 How can I help you today?
+#+end_src
