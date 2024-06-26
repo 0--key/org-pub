@@ -47,9 +47,9 @@ Unleash the power of AI Assistants in your =Org= buffer!
                  (message "You are already in conversation thread")
                (message "You need to create a new conversation thread")))))
 
-       (defun vizier-thread-init (callback)
+       (defun vizier-thread-init ()
          "Initialize a new conversation thread with the OpenAI API and return the thread ID."
-         ;(interactive)
+         (interactive)
          (let* ((url "https://api.openai.com/v1/threads")
                 (headers `(("Content-Type" . "application/json")
                            ("Authorization" . ,(concat "Bearer " openai-api-key))
@@ -1057,4 +1057,295 @@ Just say Hi!
 
 #+begin_src markdown
   Hi! 🙌 How can I help you today?
+#+end_src
+
+*How to tag `markup` `md` blocks in org-mode?*
+#+begin_src markdown
+
+#+end_src
+
+#+begin_src markdown
+In Org-mode, you can easily tag and include blocks of various languages, including Markdown (`md`). You achieve this using the `#+BEGIN_SRC` and `#+END_SRC` directives provided by Org-mode to delimit code blocks. For Markdown specifically, you'll use `markdown` as the language for the source block.
+
+Here's an example of how to include a Markdown block within an Org-mode file:
+
+```org
+#+BEGIN_SRC markdown
+# Markdown Header
+
+This is a paragraph in Markdown.
+
+- Bullet point 1
+- Bullet point 2
+
+Here is some **bold text** and *italic text*.
+#+END_SRC
+```
+
+### Explanation:
+
+1. **`#+BEGIN_SRC markdown`**: Starts the code block and specifies `markdown` as the language.
+2. **Content**: The actual Markdown-formatted content you want to include.
+3. **`#+END_SRC`**: Ends the code block.
+
+This `#+BEGIN_SRC markdown ... #+END_SRC` structure tells Org-mode to treat the enclosed content as raw Markdown text. 
+
+### Example Org-mode File:
+
+```org
+* Example Org Document
+
+Here is some sample content in Org-mode. Below is a block of Markdown.
+
+#+BEGIN_SRC markdown
+# This is a Markdown Title
+
+## This is a Subtitle
+
+Here is a list:
+- Item 1
+- Item 2
+- Item 3
+
+**Bold text** and *italic text* are also supported.
+#+END_SRC
+
+That's it for our Markdown block example.
+```
+
+### Viewing and Exporting:
+
+While in the Org-mode buffer, you will see the entire block as entered.
+
+When you export this Org-mode document to other formats (such as HTML, LaTeX, PDF, or Markdown), Org-mode will correctly interpret and handle the Markdown block. For instance:
+
+- **To export to HTML**: `C-c C-e h o` (exports and opens the HTML file in the default browser).
+- **To export to LaTeX/PDF**: `C-c C-e l o` (exports to LaTeX and opens the PDF file).
+- **To export to Markdown**: `C-c C-e M-m` (directly exports to a Markdown file).
+
+These commands ensure that the Markdown block is properly tagged and retains its formatting in the exported document.
+
+If you have any more questions or need further clarification, feel
+free to ask!  #+end_src
+* *How to export `markdown` blocks with syntax highlight?*
+:PROPERTIES:
+:vizier-thread-id: thread_Q1teTN2ZdIKPvKif3ZuzN42S
+:vizier-assistant-id: asst_k0LyQk3P0ugc93lkXqkzrP0x
+:END:
+
+#+begin_src markdown To export `markdown` blocks with syntax
+highlighting in Org-mode, you can make use of a package called
+`Pygments`, a syntax highlighter written in Python. Additionally,
+Org-mode supports various backends for exporting to formats like HTML
+and LaTeX, which can incorporate syntax highlighting.
+
+Here is a step-by-step guide to achieving syntax highlighting for
+Markdown blocks:
+
+### Step 1: Install Pygments
+
+First, make sure you have Pygments installed. If you don't have it
+installed, you can install it using `pip`:
+
+```sh
+pip install Pygments
+```
+
+### Step 2: Configure Org-mode for Syntax Highlighting
+
+Edit your Emacs configuration file (usually `.emacs` or `init.el`) to
+enable and configure syntax highlighting for source blocks:
+
+```elisp
+;; Enable syntax highlighting for source code blocks
+(setq org-src-fontify-natively t)
+(setq org-src-tab-acts-natively t)
+```
+
+### Step 3: Export to HTML with Syntax Highlighting
+
+For HTML export using Pygments, you need to configure Org-mode to
+include Pygments during HTML export. You can use `ox-html` and a
+custom CSS file that Pygments generates:
+
+1. Generate a CSS file for Pygments highlighting:
+   ```sh
+   pygmentize -S default -f html > pygments.css
+   ```
+
+2. Include the generated `pygments.css` in your Org-mode export. To do
+   this, you can either manually link it in your Org file or configure
+   Org-mode to include it automatically.
+
+#### Manual Link in Org File
+
+Add the following line to the top of your Org file to include the CSS file:
+
+```org
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="path/to/pygments.css" />
+```
+
+#### Automatic Inclusion via Configuration
+
+Add the following to your Emacs configuration to automatically include
+the CSS file in every exported HTML:
+
+```elisp
+(setq org-html-head-extra
+      "<link rel=\"stylesheet\" type=\"text/css\" href=\"path/to/pygments.css\" />")
+```
+
+### Step 4: Example Markdown Block with Syntax Highlighting
+
+Here is an example Org-mode file with a Markdown block and
+configuration for HTML export:
+
+```org
+#+TITLE: Example Org Document
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="path/to/pygments.css" />
+
+* Example Org Document
+
+Here is some sample content in Org-mode. Below is a block of Markdown
+with syntax highlighting.
+
+#+BEGIN_SRC markdown
+# This is a Markdown Title
+
+## This is a Subtitle
+
+Here is a list:
+- Item 1
+- Item 2
+- Item 3
+
+**Bold text** and *italic text* are also supported.
+#+END_SRC
+
+That's it for our Markdown block example.
+```
+
+### Exporting to HTML
+
+Export this Org file to HTML using `C-c C-e h o`. The exported HTML should now include the syntax highlighting from the Pygments CSS file.
+
+### Exporting to LaTeX with Syntax Highlighting
+
+If you want to export to LaTeX/PDF with syntax highlighting, you should install the `minted` package for LaTeX and configure Org-mode to use it.
+
+1. Install the `minted` package:
+   ```sh
+   sudo apt-get install texlive-latex-extra python-pygments
+   ```
+
+2. Configure Org-mode to use `minted` for LaTeX export:
+   ```elisp
+   ;; Use minted package for syntax highlighting
+   (setq org-latex-listings 'minted)
+   (setq org-latex-packages-alist '(("" "minted")))
+   (setq org-latex-minted-options
+         '(("frame" "lines")
+           ("linenos" "")))
+
+   ;; Ensure -shell-escape is enabled for pygments in minted
+   (setq org-latex-pdf-process
+         '("pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"
+           "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"
+           "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"))
+   ```
+
+### Example LaTeX/Org Mode Configuration
+
+Here is an example Org file configured for LaTeX export with syntax
+highlighting using `minted`:
+
+```org
+#+TITLE: Example Org Document
+#+LATEX_HEADER: \usepackage{minted}
+#+LATEX_HEADER: \newminted{markdown}{fontsize=\scriptsize, tabsize=4}
+
+* Example Org Document
+
+Here is some sample content in Org-mode. Below is a block of Markdown
+with syntax highlighting.
+
+#+BEGIN_SRC markdown
+# This is a Markdown Title
+
+## This is a Subtitle
+
+Here is a list:
+- Item 1
+- Item 2
+- Item 3
+
+**Bold text** and *italic text* are also supported.
+#+END_SRC
+
+That's it for our Markdown block example.
+```
+
+Export this Org file to PDF using `C-c C-e l o`. The exported PDF
+should now include the syntax highlighting.
+
+Follow these steps, and you should have nicely exported Markdown
+blocks with syntax highlighting in both HTML and PDF formats. If you
+have any further questions, feel free to ask!  #+end_src
+
+* What term `vizier` means?
+:PROPERTIES:
+:vizier-thread-id: thread_Q1teTN2ZdIKPvKif3ZuzN42S
+:vizier-assistant-id: asst_k0LyQk3P0ugc93lkXqkzrP0x
+:END:
+
+#+begin_src markdown
+  The term "vizier" has historical significance and is used to describe
+  a high-ranking political advisor or minister in various Middle
+  Eastern, Central Asian, North African, and some South Asian
+  governments.
+
+  ### Historical Context:
+
+  1. **Ancient Egypt**: In ancient Egypt, a vizier was the
+     highest-ranking official to serve the pharaoh, often overseeing the
+     administration of the kingdom. The vizier acted as a chief
+     minister, handling state affairs, the treasury, judiciary, and
+     more.
+
+  2. **Islamic Caliphates**: During the Islamic Golden Age, viziers were
+     key advisors and administrators under caliphs (Islamic rulers). The
+     most famous of these was perhaps the Abbasid viziers in Baghdad.
+
+  3. **Ottoman Empire**: In the Ottoman Empire, the Grand Vizier (Sadr-ı
+     Azam) was the head of the imperial government and second only to
+     the Sultan. The Grand Vizier had considerable autonomy and power in
+     administering the vast Ottoman territories.
+
+  4. **Persia and Mughal India**: In Persian and Mughal courts, viziers
+     held similar roles as chief advisors and administrators, managing
+     various aspects of governance and statecraft.
+
+  ### Literary and Cultural References:
+
+  - **The Thousand and One Nights (Arabian Nights)**: Viziers frequently
+    appear in Middle Eastern literature and folklore, often as wise
+    counselors or sometimes as scheming power-seekers.
+
+  - **Modern Usage**: The term "vizier" can be used metaphorically to
+    describe a trusted advisor or right-hand person in contemporary
+    contexts, though it retains a somewhat exotic and historical
+    connotation.
+
+  ### Etymology:
+
+  - The word "vizier" is derived from the Arabic word "وزير" (wazīr),
+    which means "helper" or "minister."
+  - It entered English through French and Turkish influences, reflecting
+    the historical interactions between Europe and the Islamic world.
+
+  In the context of Emacs Lisp and the function example you've been
+  working with, the usage of "vizier" is purely arbitrary or
+  metaphorical. It implies the function is acting as a guide or helper
+  to perform a series of tasks sequentially. If you have any specific
+  usage context or need more examples, feel free to let me know!
 #+end_src
