@@ -20,6 +20,7 @@ tags: [job, proposal]
 :vizier-assistant-id: asst_TBAMrIBzyYhMQ1cJSEuaGzGx
 :END:
 
+
 *Instructions for Assistant*
 
 #+begin_src markdown
@@ -269,7 +270,7 @@ conclusion.
   or developing relevant skills, feel free to ask!
 #+end_src
 
-* Q:I've got job requirements from two companies: Learnosity and WorkHuman.
+* Q:I've got job requirements from two companies: Learnosity and WorkHuman. :noexport:
 :PROPERTIES:
 :vizier-thread-id: thread_Q1teTN2ZdIKPvKif3ZuzN42S
 :vizier-assistant-id: asst_k0LyQk3P0ugc93lkXqkzrP0x
