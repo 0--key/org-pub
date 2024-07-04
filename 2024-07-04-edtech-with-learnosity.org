@@ -1,0 +1,273 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: The Future of EdTech
+tagline: " with Learnosity"
+permalink: /edtech/learnosity/overview.html
+categories: [Python, OpenAI, Learnosity, EdTech]
+tags: []
+---
+#+END_EXPORT
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+PROPERTY: header-args :exports both
+#+PROPERTY: header-args+ :results output pp
+#+PROPERTY: header-args+ :eval no-export
+#+PROPERTY: vizier-thread-id thread_PvkC2Tbe7Djc0xOTE3ansOSF
+#+PROPERTY: vizier-assistant-id asst_TBAMrIBzyYhMQ1cJSEuaGzGx
+#+TOC: headlines 2
+
+* Intro
+
+As humankind, we stand on the brink of a new era in our intellectual
+evolution: /AI-augmented education/ is the cornerstone of this
+transformation. While the incredible speed and access to information,
+provided by technologies like OpenAI, present unprecedented
+opportunities, human nature remains unchanged. We are still inherently
+/biased *biological* organisms/.
+
+* Acid Note
+
+#+begin_quote
+All the information you can comprehend must pass sequentially through
+the narrow filter of your experience, shrouded by cognitive biases and
+the twilight of consciousness. It is no surprise that you mostly
+operate with overly limited and significantly distorted data.
+
+*Anton Philomath*
+#+end_quote
+
+* The Mission
+
+The mission of =Learnosity= is to provide technology that reliably
+retrieves relevant, precise, and comprehensive information based on
+users' queries. The /learning techniques/ should significantly enhance
+users' comprehension and, consequently, the /effectiveness of
+learning/. Ideally, these techniques should also make the learning
+process satisfying and enjoyable.
+
+* Precaution
+
+The ability to teach effectively is highly correlated with the
+teacher's own skills. First and foremost, /the teacher must be
+proficient in the subject they are instructing/. Additionally,
+patience and persistence are essential qualities. =Conversely=,
+attempting to teach a skill with only a vague or uncertain
+understanding often results in a futile waste of time.
+
+A team that does not culturally embrace, or even actively negates, the
+core (*biological*) principles of education cannot positively impact
+their customers' learning experience merely by providing access to
+information. The /paramount goal/ should be to first teach effective
+methods and approaches to studying. Once customers are /well-prepared
+methodically/, providing them with information will be far more
+beneficial.
+
+* My Role at Learnosity
+
+My extensive experience in self-learning and teaching an adult learner
+/(my dear wife btw)/, has led me to conclude the effectiveness of
+unconventional, challenging, counterintuitive, and sometimes even
+painful, but /scientifically proved approaches to effective
+studying/. My goal is to share this unique experience with the team,
+suggest the most effective learning strategies personally, and assist
+them on their difficult and long journey to acquire knowledge.
+
+OpenAI, Emacs, and Python are only the powerful tools that I utilize
+to leverage my own capabilities.
+
+* Concluson
+
+I am eager to bring my expertise and passion for education to
+Learnosity, helping to create transformative learning experiences and
+methodologies for your customers.
+
+
+* Init                                                             :noexport:
+:PROPERTIES:
+:vizier-assistant-id: asst_u6sQc9si0rJOYJBcNGSozM7i
+:END:
+
+Correct and enhance this paragraph:
+```
+We all, as a humankind are on the brink of new era in our intellectual
+evolution: augumented by AI educatoin is the cornerstone here. If it
+is clear about the incredible speed in access for all sorts of
+information (OpenAI provides this bizzare opportunity), in the same
+moment the nature of human still be the same: they are the strictly
+biased biological organisms.
+```
+
+
+
+
+#+begin_src markdown
+  Here is a corrected and enhanced version of your paragraph:
+
+  ---
+
+  As humankind, we stand on the brink of a new era in our intellectual
+  evolution: AI-augmented education is the cornerstone of this
+  transformation. While the incredible speed and access to information,
+  provided by technologies like OpenAI, present unprecedented
+  opportunities, human nature remains unchanged. We are still inherently
+  biased biological organisms.
+
+  ---
+
+  This version improves clarity, corrects grammatical errors, and
+  enhances the overall readability of the paragraph.
+#+end_src
+
+Correct and enhance this paragraph:
+```
+All information you can comprehend ought to follow sequentially
+through the narrow gap of your experience, fog of cogniitve biases in
+a twighlight of consciousness. It is not surprise that usually you
+awkwardly operate under overly limited and drastically distorted data.
+```
+
+#+begin_src markdown
+  Certainly! Here is a corrected and enhanced version of your paragraph:
+
+  ---
+
+  All the information you can comprehend must pass sequentially through
+  the narrow filter of your experience, shrouded by cognitive biases and
+  the twilight of consciousness. It is no surprise that you often
+  operate with overly limited and significantly distorted data.
+
+  ---
+
+  This version improves grammar, clarity, and overall readability.
+#+end_src
+
+Correct and enhance this paragraph: ``` Sure, the mission of
+Learnosity is to provide the technology for sure and fire retrieving
+relevant, precise and complete information on user's query. The
+learning technique should crucially enhance the user's comprehension,
+thus productivity of learning, and, ideally, bring them satisfaction
+of the learning process.```
+
+#+begin_src markdown
+  Certainly! Here is a corrected and enhanced version of your paragraph:
+
+  ---
+
+  The mission of Learnosity is to provide technology that reliably
+  retrieves relevant, precise, and comprehensive information based on
+  users' queries. The learning techniques employed should significantly
+  enhance users' comprehension and, consequently, their
+  productivity. Ideally, these techniques should also make the learning
+  process satisfying and enjoyable.
+
+  ---
+
+  This version corrects grammatical errors, improves clarity, and
+  enhances the overall readability of the paragraph.
+#+end_src
+
+Correct and enhance this paragraph:
+
+```The capability to teach someone highly correlated with the
+teacher's own skills. First and foremost the teacher himself ought to
+be proficient in the skill he's pontificate. Patience, persistence are
+unavoidable skills in addition. And the opposite is true: an attempt
+to teach some skill with a vague and uncertain comprehension of it by
+the teacher himself is, in most cases, the vain waste of time.
+```
+
+#+begin_src markdown
+  Absolutely! Here is a corrected and enhanced version of your
+  paragraph:
+
+  ---
+
+  The ability to teach effectively is highly correlated with the
+  teacher's own skills. First and foremost, the teacher must be
+  proficient in the subject they are instructing. Additionally, patience
+  and persistence are essential qualities. Conversely, attempting to
+  teach a skill with only a vague or uncertain understanding often
+  results in a futile waste of time.
+
+  ---
+
+  This version improves clarity, corrects grammatical errors, and
+  enhances the overall readability of the paragraph.
+#+end_src
+
+Correct and enhance this paragraph: ``` The team culturally not
+embracing, or even negated the core principle of education can not
+impact positively on their customer's learning experience by providing
+access for information only. The paragon aim is to teach the methods
+and approaches for studying first, and when the customers is well
+prepared methodically, - provide the information for them.```
+
+#+begin_src markdown
+  Certainly! Here is a corrected and enhanced version of your paragraph:
+
+  ---
+
+  A team that does not culturally embrace, or even actively negates, the
+  core principles of education cannot positively impact their customers'
+  learning experience merely by providing access to information. The
+  paramount goal should be to first teach effective methods and
+  approaches to studying. Once customers are well-prepared methodically,
+  providing them with information will be far more beneficial.
+
+  ---
+
+  This version improves clarity, corrects grammatical errors, and
+  enhances the overall readability of the paragraph.
+#+end_src
+
+Correct and enhance this paragraph:
+
+```My Role in Learnosity
+
+My huge experience in self-learning and teaching an adult woman(my
+wife, btw!) allows me to make conclusion about effectiveness of
+unpopular, tough, countrintuitive and sometimes painful approaches to
+study. So, all my efforts will be target on to spreading my unique
+experience amongst the team, suggest the most effective approaches and
+assist them on their thorny path to obtain the knowledge.
+```
+
+#+begin_src markdown
+  Certainly! Here is a corrected and enhanced version of your paragraph:
+
+  ---
+
+  ,**My Role at Learnosity**
+
+  My extensive experience in self-learning and teaching an adult
+  learner, specifically my wife, has led me to conclude the
+  effectiveness of unconventional, challenging, counterintuitive, and
+  sometimes even painful approaches to study effectively. My goal is to
+  share this unique experience with the team, suggest the most effective
+  learning strategies, and assist them on their difficult journey to
+  acquire knowledge.
+
+  ---
+
+  This version improves grammar, clarity, and overall readability, while
+  maintaining the original intent and tone.
+#+end_src
+
+Correct and enhance this paragraph:
+```OpenAI, Emacs and Python are only the set of tools which are capable
+to use to liverage my own faculties.```
+
+#+begin_src markdown
+  Certainly! Here is a corrected and enhanced version of your paragraph:
+
+  ---
+
+  OpenAI, Emacs, and Python are powerful tools that I utilize to
+  leverage my own capabilities.
+
+  ---
+
+  This version improves grammar, clarity, and conciseness, making the
+  sentence more impactful.
+#+end_src
