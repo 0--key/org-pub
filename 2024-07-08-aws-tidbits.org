@@ -355,3 +355,103 @@ Seems like it is necessary to configure the software repositories first. Am I ri
   environment without the overhead of graphical components.
 #+end_src
 
+* So it is time to create users on my brand-new Debian micro-instance.
+
+I want to make user `alioth` with super-user privileges, generate a
+pair of secure keys and connect to it through ssh. Can you suggest the
+sequence of actions how to accomplish this task?
+
+#+begin_src markdown
+  Certainly! Here is the step-by-step sequence to create a user with
+  super-user privileges, generate a pair of secure SSH keys, and connect
+  through SSH:
+
+  ### Step 1: Create User `alioth`
+  1. **Connect to your Debian AWS instance** as the default user
+     (`admin`, `ubuntu`, or `ec2-user` depending on the AMI).
+
+  2. **Add the user `alioth`**:
+     ```sh
+     sudo adduser alioth
+     ```
+
+  3. **Add `alioth` to the `sudo` group** to grant super-user privileges:
+     ```sh
+     sudo usermod -aG sudo alioth
+     ```
+
+  ### Step 2: Generate SSH Keys
+  1. **Generate SSH keys** on your local machine (not on the server). Open a terminal on your local machine and run:
+     ```sh
+     ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+     ```
+
+  2. **Follow the prompts** to save the keys (default location is
+     usually fine, e.g., `~/.ssh/id_rsa`).
+
+  ### Step 3: Configure SSH Access
+  1. **Switch to the `alioth` user** on the server and set up the `.ssh` directory:
+     ```sh
+     sudo su - alioth
+     mkdir -p ~/.ssh
+     chmod 700 ~/.ssh
+     ```
+
+  2. **Add the public key to the authorized_keys file**:
+     - On your local machine, display the public key file:
+       ```sh
+       cat ~/.ssh/id_rsa.pub
+       ```
+     - Copy the contents of the public key.
+
+     - On the server, create and edit the `authorized_keys` file:
+       ```sh
+       echo "your_copied_public_key" >> ~/.ssh/authorized_keys
+       chmod 600 ~/.ssh/authorized_keys
+       ```
+
+  3. **Exit the `alioth` user** session to return to your default user:
+     ```sh
+     exit
+     ```
+
+  4. **Test SSH access** to `alioth` from your local machine:
+     ```sh
+     ssh -i ~/.ssh/id_rsa alioth@your_server_ip
+     ```
+
+  ### Example Sequence:
+  1. **Create and configure user:**
+     ```sh
+     sudo adduser alioth
+     sudo usermod -aG sudo alioth
+     sudo su - alioth
+     mkdir -p ~/.ssh
+     chmod 700 ~/.ssh
+     exit
+     ```
+
+  2. **On your local machine:**
+     ```sh
+     ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+     cat ~/.ssh/id_rsa.pub
+     ```
+
+  3. **Back on the server as default user:**
+     ```sh
+     sudo su - alioth
+     echo "your_copied_public_key" >> ~/.ssh/authorized_keys
+     chmod 600 ~/.ssh/authorized_keys
+     exit
+     ```
+
+  4. **Test connection from your local machine:**
+     ```sh
+     ssh -i ~/.ssh/id_rsa alioth@your_server_ip
+     ```
+
+  By following these steps, you will successfully create the `alioth`
+  user with super-user privileges and set up SSH key-based
+  authentication for secure access.
+#+end_src
+
