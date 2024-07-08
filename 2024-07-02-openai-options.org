@@ -1,0 +1,1177 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Open AI
+tagline: " optional parameters"
+permalink: /openai/input-options.html
+categories: [Python, OpenAI]
+tags: [prompt, input format, input options]
+---
+#+END_EXPORT
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+PROPERTY: header-args :exports both
+#+PROPERTY: header-args+ :results output pp
+#+PROPERTY: header-args+ :eval no-export
+#+PROPERTY: vizier-assistant-id asst_oLuLDRdsSDyMcBAvpwCGkbGS
+#+PROPERTY: vizier-thread-id thread_HZBh9PMJgndmnJLVz2GqifRz
+#+TOC: headlines 2
+
+* Intro
+
+There are around 25 optional arguments, and the aim of this article to
+disclose their purpose and average use cases.
+
+* Request optional parameters
+:PROPERTIES:
+:END:
+
+** Frequency Penalty
+
+Answer the question:
+
+```When making a request to an OpenAI model, various optional
+  parameters such as temperature and max_tokens can modulate the
+  response. Can you explain the purpose and usage of the
+  frequency_penalty parameter?```
+
+#+begin_src markdown
+The `frequency_penalty` parameter in OpenAI models is used to adjust
+the likelihood of the model generating repeated tokens or phrases
+within its responses. Its primary purpose is to control the
+repetitiveness of the output.
+
+### Purpose:
+The `frequency_penalty` parameter discourages the model from repeating
+words or phrases excessively by applying a negative score to tokens
+that have already appeared in the text being generated. This helps in
+creating more diverse and engaging responses, especially in longer
+texts.
+
+### Usage:
+- **Parameter Range:** The `frequency_penalty` typically ranges from 0
+  to 2. A value of 0 means no penalty is applied, while higher values
+  increase the penalty for repeated tokens.
+- **How to Use It:** When you want to reduce repetition in the model’s
+  output, set a higher `frequency_penalty`. Conversely, if repetition
+  is not a concern or is even desirable, you can keep this parameter
+  lower or at 0.
+
+### Example:
+Suppose you are generating a long piece of text and notice that
+certain words or phrases tend to recur frequently. By setting a
+`frequency_penalty`, you can make the model less likely to repeat and
+thus produce more varied and interesting text.
+
+```json
+{
+  "model": "text-davinci-003",
+  "prompt": "Describe a beautiful landscape.",
+  "max_tokens": 150,
+  "temperature": 0.7,
+  "frequency_penalty": 1.0
+}
+```
+
+In this example, a frequency_penalty of 1.0 is applied, encouraging
+the model to avoid repeating terms it has already used, resulting in a
+more dynamic and less repetitive description.
+#+end_src
+
+
+** Logit Bias
+
+Answer the question: ```When making a request to an OpenAI model,
+  various optional parameters such as temperature and max_tokens can
+  modulate the response. Can you explain the purpose and usage of the
+  `logit_bias` parameter?```
+
+
+
+
+#+begin_src markdown
+  The `logit_bias` parameter in OpenAI models is a powerful tool that
+  allows you to influence the probability distribution of tokens during
+  text generation. It enables fine-tuned control over the model's output
+  by adjusting the likelihood of specific tokens appearing.
+
+  ### Purpose:
+  The `logit_bias` parameter is used to either increase or decrease the
+  likelihood of certain tokens being selected by the model during
+  generation. This can be useful in guiding the model to produce more
+  desirable responses or to avoid certain words or phrases.
+
+  ### Usage:
+  - **Parameter Format:** The `logit_bias` is provided as a dictionary
+    where keys are token IDs (integers) and values are the biases
+    (floats) to be applied. The biases adjust the logits of the
+    corresponding tokens before the softmax function is applied to
+    compute probabilities.
+  - **Bias Values:** Positive bias values make the corresponding tokens
+    more likely to be chosen, while negative bias values make them less
+    likely. The magnitude of the bias determines the strength of the
+    influence.
+  - **Setting the Parameter:** This parameter is typically set by
+    developers who want to exert fine control over specific aspects of
+    the model's output.
+
+  ### Example:
+  Suppose you want to ensure that the model more frequently mentions the
+  word "innovation" in its responses, and less frequently mentions the
+  word "redundant." First, you need the token IDs for these words, which
+  can be obtained using a tokenizer.
+
+  ```json
+  {
+    "model": "text-davinci-003",
+    "prompt": "Discuss the future of technology.",
+    "max_tokens": 150,
+    "temperature": 0.7,
+    "logit_bias": {
+      "5632": 5.0,   // Hypothetical token ID for "innovation"
+      "8791": -5.0   // Hypothetical token ID for "redundant"
+    }
+  }
+  ```
+
+  In this example:
+  - A positive bias of 5.0 is applied to the token for "innovation,"
+    making it more probable that this word will be included in the
+    generated text.
+  - A negative bias of -5.0 is applied to the token for "redundant,"
+    reducing its likelihood of appearing in the response.
+
+  By using `logit_bias`, you can tailor the model's outputs to better
+  suit your needs, ensuring more relevant and contextually appropriate
+  responses.
+#+end_src
+
+** Logprobs&Top_logprobs
+
+Answer the question: ```When making a request to an OpenAI model,
+  various optional parameters such as temperature and max_tokens can
+  modulate the response. Can you explain the purpose and usage of the
+  `logprobs` parameter?```
+
+
+#+begin_src markdown
+  The `logprobs` parameter in OpenAI models is used to obtain the log
+  probabilities of the tokens generated by the model. This can provide
+  insights into the model's decision-making process and the relative
+  likelihood of different tokens at each step of the generation.
+
+  ### Purpose:
+  The `logprobs` parameter allows you to see not just the output
+  generated by the model but also the probabilities (in log scale)
+  associated with the top token choices at each position in the
+  generated text. This can be useful for understanding model confidence,
+  diagnosing issues, and conducting more detailed analyses of the
+  model's behavior.
+
+  ### Usage:
+  - **Parameter Value:** When specifying `logprobs`, you provide an
+    integer `N`, where the model will return the log probabilities for
+    the top `N` most likely tokens at each step.
+  - **Returned Data:** The response will include an additional field
+    showing the log probabilities for these `N` tokens, along with the
+    generated tokens.
+
+  ### Example:
+  Suppose you want to get the log probabilities for the top 5 token
+  choices for a given prompt.
+
+  ```json
+  {
+    "model": "text-davinci-003",
+    "prompt": "What are the benefits of regular exercise?",
+    "max_tokens": 50,
+    "temperature": 0.7,
+    "logprobs": 5
+  }
+  ```
+
+  ### Output Example:
+
+  The response might look something like this (simplified for clarity):
+
+  ```json
+  {
+    "choices": [
+      {
+        "text": "Regular exercise can improve your cardiovascular health, boost your mood, and increase your energy levels.",
+        "logprobs": {
+          "tokens": ["Regular", "exercise", "can", "improve", "your", ...],
+          "token_logprobs": [-0.3, -0.2, -0.4, -0.1, -0.5, ...],
+          "top_logprobs": [
+            { "Regular": -0.3, "consistent": -1.5, "routine": -2.0, ... },
+            { "exercise": -0.2, "activity": -1.2, "workout": -1.4, ... },
+            ...
+          ],
+          "text_offset": [0, 8, 17, 21, 29, ...]
+        }
+      }
+    ]
+  }
+  ```
+
+  In this output:
+  - **tokens**: The list of tokens generated by the model.
+  - **token_logprobs**: The log probabilities of each token in the
+    sequence.
+  - **top_logprobs**: The log probabilities for the top `N` tokens at
+    each position.
+  - **text_offset**: The position offsets of each token in the original
+    text.
+
+  ### Benefits:
+  - **Understanding Model Choices:** By examining the log probabilities,
+    you can understand why the model chose certain words over others.
+  - **Debugging and Optimization:** Helps in identifying cases where the
+    model may have made unexpected choices, thus aiding in debugging and
+    optimization efforts.
+  - **Advanced Applications:** Useful in applications like beam search,
+    where you need to consider multiple possible sequences.
+
+  By using the `logprobs` parameter, you'll gain deeper insights into
+  the model's prediction process, enabling more informed adjustments and
+  refinements to your use of the model.
+#+end_src
+
+** Max Tokens
+
+Answer the question: ```When making a request to an OpenAI model,
+  various optional parameters such as temperature and max_tokens can
+  modulate the response. Can you explain the purpose and usage of the
+  `max_tokens` parameter?```
+
+#+begin_src markdown
+  The `max_tokens` parameter in OpenAI models controls the maximum
+  number of tokens (words or word pieces) that the model will generate
+  in its response.
+
+  ### Purpose:
+  The primary purpose of the `max_tokens` parameter is to limit the
+  length of the generated response. This is useful for ensuring the
+  output is concise, preventing overly lengthy responses, and managing
+  the computational resources used.
+
+  ### Usage:
+  - **Parameter Value:** You specify an integer value that represents
+    the maximum number of tokens to be generated. For example, setting
+    `max_tokens` to 100 means the model will generate up to 100 tokens
+    in response to your input.
+  - **Context Inclusion:** It's important to note that this limit is
+    applied in addition to the tokens used in the prompt. If your prompt
+    takes up a significant number of tokens, fewer tokens will be
+    available for the response, keeping within the overall model token
+    limit.
+
+  ### Example:
+  Suppose you want a response that is no longer than 50 tokens.
+
+  ```json
+  {
+    "model": "text-davinci-003",
+    "prompt": "What are the benefits of regular exercise?",
+    "max_tokens": 50,
+    "temperature": 0.7
+  }
+  ```
+
+  ### Output Example:
+  The model will generate a response that includes at most 50 tokens,
+  ensuring brevity and relevance.
+
+  ### Benefits:
+  - **Control Over Output Length:** Ensures that responses do not exceed
+    a specified length, which is beneficial for constraints like word
+    limits in applications or user interfaces with limited space.
+  - **Resource Management:** Helps manage computational resources
+    efficiently by avoiding unnecessarily long outputs.
+  - **Focused Responses:** Encourages the generation of concise and
+    to-the-point answers, which can be more effective in many
+    applications.
+
+  By utilizing the `max_tokens` parameter, you have precise control over
+  the length of the model's outputs, making it easier to tailor
+  responses to specific needs and constraints.
+#+end_src
+
+** n
+
+Answer the question: ```When making a request to an OpenAI model,
+  various optional parameters such as temperature and max_tokens can
+  modulate the response. Can you explain the purpose and usage of the
+  `n` parameter?```
+
+#+begin_src markdown
+  Certainly!
+
+  The `n` parameter in OpenAI models determines the number of different
+  response completions the model will generate for a single input
+  prompt.
+
+  ### Purpose:
+  The primary purpose of the `n` parameter is to provide multiple
+  variations of the model's response to a given prompt. This can be
+  useful for exploring different possible outputs and selecting the most
+  appropriate or creative one for your needs.
+
+  ### Usage:
+  - **Parameter Value:** You specify an integer value for `n` to
+    indicate how many response completions you want. For example,
+    setting `n` to 3 will result in three different responses being
+    generated for the same prompt.
+  - **Response Structure:** When multiple completions are requested, the
+    output will contain a list of completions, each representing a
+    distinct possible response.
+
+  ### Example:
+  Suppose you want three different responses to the prompt "What are the
+  benefits of regular exercise?".
+
+  ```json
+  {
+    "model": "text-davinci-003",
+    "prompt": "What are the benefits of regular exercise?",
+    "max_tokens": 50,
+    "temperature": 0.7,
+    "n": 3
+  }
+  ```
+
+  ### Output Structure:
+  The response will include an array of completions, each representing a
+  different text snippet generated by the model.
+
+  ```json
+  {
+    "choices": [
+      {"text": "Regular exercise improves cardiovascular health, boosts mood, and increases energy levels."},
+      {"text": "Exercise helps maintain a healthy weight, strengthens muscles, and enhances overall well-being."},
+      {"text": "Engaging in regular physical activity can reduce stress, improve sleep quality, and promote mental clarity."}
+    ]
+  }
+  ```
+
+  ### Benefits:
+  - **Diversity of Responses:** Provides multiple perspectives or
+    phrasings for the same query, allowing you to choose the best or
+    most suitable response.
+  - **Creative and Comprehensive Output:** Useful for creative tasks
+    such as writing, brainstorming, or generating varied content.
+  - **Increased Flexibility:** Offers more options for applications
+    where a single response may not suffice or when exploring different
+    ways to answer a query.
+
+  By using the `n` parameter, you can obtain a range of responses from
+  the model, enhancing the versatility and depth of interaction while
+  allowing you to select the most fitting or innovative output.
+#+end_src
+
+** Presence Penalty
+
+Answer the question: ```When making a request to an OpenAI model,
+  various optional parameters such as temperature and max_tokens can
+  modulate the response. Can you explain the purpose and usage of the
+  `presence_penalty` parameter?```
+
+
+#+begin_src markdown
+  Certainly!
+
+  The `presence_penalty` parameter in OpenAI models is used to encourage
+  the model to introduce new topics or concepts into its response by
+  applying a penalty to tokens that have already been used in the
+  conversation.
+
+  ### Purpose:
+  The primary purpose of the `presence_penalty` parameter is to promote
+  diversity and creativity in the model's output. By penalizing the
+  repetition of previously mentioned tokens, the model is incentivized
+  to generate new content rather than sticking to familiar words or
+  phrases.
+
+  ### Usage:
+  - **Parameter Range:** The `presence_penalty` typically ranges from 0
+    to 2. A value of 0 means no penalty is applied (allowing for
+    repetition), while higher values (closer to 2) apply a stronger
+    penalty, encouraging more novel content.
+  - **How to Use:** Set a higher `presence_penalty` if you want the
+    model to be more creative and avoid repeating itself. This can be
+    particularly useful in extended conversations or creative writing
+    tasks.
+
+  ### Example:
+  Suppose you want the model to generate a response that introduces new
+  concepts and avoids repeating words already used in the prompt or
+  previous responses.
+
+  ```json
+  {
+    "model": "text-davinci-003",
+    "prompt": "Tell me about the benefits of outdoor activities.",
+    "max_tokens": 50,
+    "temperature": 0.7,
+    "presence_penalty": 1.0
+  }
+  ```
+
+  ### Output Example:
+  With a `presence_penalty` of 1.0, the model is more likely to generate
+  a response that includes new words and ideas rather than repeating
+  those already mentioned.
+
+  ```json
+  {
+    "choices": [
+      {
+        "text": "Outdoor activities can improve mental health, foster a connection with nature, and provide opportunities for social interaction and skill development."
+      }
+    ]
+  }
+  ```
+
+  ### Benefits:
+  - **Enhanced Creativity:** Encourages the model to be more innovative
+    and diverse in its responses.
+  - **Reduced Redundancy:** Helps avoid repetition, making the
+    conversation more engaging and dynamic.
+  - **Increased Novelty:** Useful in scenarios such as brainstorming,
+    storytelling, or any application where fresh ideas are valued.
+
+  By using the `presence_penalty` parameter, you can steer the model
+  towards generating responses that are less repetitive and more varied,
+  enhancing the overall quality and creativity of the output.
+#+end_src
+
+** Response Format
+
+Answer the question: ```When making a request to an OpenAI model,
+  various optional parameters such as temperature and max_tokens can
+  modulate the response. Can you explain the purpose and usage of the
+  `response_format` parameter?```
+
+#+begin_src markdown
+  Certainly!
+
+  When making a request to an OpenAI model, various optional parameters
+  such as temperature and max_tokens can modulate the response. Can you
+  explain the purpose and usage of the `response_format` parameter?
+
+  The `response_format` parameter is used to specify the format in which
+  you want the model's output to be returned. This parameter allows you
+  to tailor the response to better suit your specific needs and the
+  requirements of your application.
+
+  ### Purpose:
+
+  The primary purpose of the `response_format` parameter is to provide
+  flexibility in how the output is structured, enabling integration with
+  various systems and making it easier to process the response
+  programmatically.
+
+  ### Usage:
+
+  - **Parameter Value:** The `response_format` parameter can take
+    various values, such as "text", "json", or other formats supported
+    by the API. The exact options available may vary based on the
+    specific API version and service being used.
+  - **How to Use:** Set the `response_format` to your desired output
+    type to receive the response in that format.
+
+  ### Example:
+
+  Suppose you want the model to return the response in JSON format for
+  easier parsing and integration into a web application.
+
+  ```json
+  {
+    "model": "text-davinci-003",
+    "prompt": "What are the benefits of regular exercise?",
+    "max_tokens": 50,
+    "temperature": 0.7,
+    "response_format": "json"
+  }
+  ```
+
+  ### Output Example:
+
+  If the `response_format` is set to "json", the API might return a
+  response like this:
+
+  ```json
+  {
+    "choices": [
+      {
+        "text": "Regular exercise improves cardiovascular health, boosts mood, and increases energy levels."
+      }
+    ]
+  }
+  ```
+
+  ### Benefits:
+
+  - **Flexibility:** Allows you to choose the response format that best
+    fits your application's needs.
+  - **Ease of Integration:** Enables easy integration with other
+    systems, especially when using structured formats like JSON.
+  - **Custom Processing:** Facilitates custom processing and
+    manipulation of the response data based on the chosen format.
+
+  By using the `response_format` parameter, you can ensure that the
+  model's output is returned in a format that best suits your needs,
+  enhancing the usability and integration of the generated responses.
+#+end_src`
+
+*** Supportet Output Formats
+
+Which output formats except "text" and "json" are supported as a
+`response_format` by the OpenAI API with `gpt-4o` model?
+
+
+
+
+#+begin_src markdown
+  As of my last update, the OpenAI API with GPT-4 models primarily
+  supports `response_format` options of "text" and "json". However,
+  OpenAI continues to evolve its models and API capabilities, so
+  additional formats might be available depending on updates and
+  extensions to the API.
+
+  To get the most current and detailed information, including supported
+  output formats beyond "text" and "json", you should refer to the
+  official OpenAI API documentation or contact OpenAI support. The
+  official documentation will provide the latest details on all
+  available features and parameters.
+
+  ### Example:
+  ```json
+  {
+    "model": "gpt-4",
+    "prompt": "Describe the benefits of a balanced diet.",
+    "response_format": "text" // You could also try "json" or check the latest documentation for any new supported formats.
+  }
+  ```
+
+  ### How to Check for Updates:
+  - **OpenAI API Documentation:** Visit the official [OpenAI API
+    documentation](https://beta.openai.com/docs/) to check for the
+    latest updates and supported formats.
+  - **Release Notes:** Review the release notes or changelog sections
+    for any new features or updates regarding output formats.
+  - **Support and Community Forums:** Engage with OpenAI support or
+    participate in community forums for insights and confirmation on
+    newly available features.
+
+  If OpenAI has introduced new response formats, you'll find the most
+  accurate and up-to-date information through these official channels.
+#+end_src
+
+*** The Default Response Format
+
+What is the default OpenAI API response format for `data/choices/text`?
+
+
+#+begin_src markdown
+  The default response format for `data/choice/text` when using the
+  OpenAI API is plain text. This format returns the generated text as a
+  straightforward string, making it easy to read and integrate into
+  applications that simply need the text output without additional
+  structure or metadata.
+
+  ### Example API Call:
+
+  Here's an example JSON structure for a request to the OpenAI API
+  without specifying a `response_format`, which defaults to plain text
+  for the choice's text:
+ 
+  ```json
+  {
+    "model": "text-davinci-003",
+    "prompt": "What are the benefits of regular exercise?",
+    "max_tokens": 50,
+    "temperature": 0.7
+  }
+  ```
+
+  ### Response Example:
+
+  The API response would typically be structured as follows, where
+  `choices` contain `text` fields with the generated responses:
+
+  ```json
+  {
+    "id": "cmpl-6bQ5H9GyKHlU736ooBrgb",
+    "object": "text_completion",
+    "created": 1676252845,
+    "model": "text-davinci-003",
+    "choices": [
+      {
+        "text": "\nRegular exercise offers numerous benefits including improved cardiovascular health, increased strength and flexibility, better mood, and enhanced cognitive function.",
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "length"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10,
+      "completion_tokens": 22,
+      "total_tokens": 32
+    }
+  }
+  ```
+
+  ### Explanation:
+
+  - **`choices`:** An array containing the generated completions.
+    - **`text`:** The generated text completion.
+    - **`index`:** The position of this completion in the array of
+      choices.
+    - **`logprobs`:** (Optional) Log probabilities of the tokens (if
+      requested).
+    - **`finish_reason`:** Reason why the completion finished (e.g.,
+      "length" if it stopped because it reached the maximum token
+      limit).
+
+  In summary, the default format for `data/choices/text` is plain text,
+  making it the most straightforward and commonly used format for
+  integrating generated text from OpenAI models.
+#+end_src
+
+*** Markdown
+
+Seems, like the default format for `data/choices/text` in OpenAI
+`response` object is not a plain text, but `markdown`. Am I right?
+
+#+begin_src markdown
+  The default format for `data/choices/text` in the OpenAI API response
+  is plain text, but it can often contain markdown-formatted content if
+  the prompt or the model's typical responses include or generate
+  markdown.
+
+  ### Clarification:
+
+  - **Plain Text vs. Markdown Content:** The response is provided as
+    plain text, but the content may include markdown syntax such as
+    headers, lists, links, etc., if the generated response is intended
+    to utilize markdown features.
+  - **Rendering Differences:** While the raw response format is text,
+    applications that display the content (such as chat interfaces or
+    documentation tools) may render markdown syntax as formatted HTML.
+
+  ### Example of Plain Text with Markdown Syntax:
+
+  Consider making a request like this:
+
+  ```json
+  {
+    "model": "text-davinci-003",
+    "prompt": "Provide a brief summary of the benefits of regular exercise in markdown format.",
+    "max_tokens": 50,
+    "temperature": 0.7
+  }
+  ```
+
+  ,**Response:**
+
+  ```json
+  {
+    "id": "cmpl-6bQ5H9GyKHlU736ooBrgb",
+    "object": "text_completion",
+    "created": 1676252845,
+    "model": "text-davinci-003",
+    "choices": [
+      {
+        "text": "\n\n## Benefits of Regular Exercise\n\n- Improved cardiovascular health\n- Increased strength and flexibility\n- Better mood\n- Enhanced cognitive function",
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "length"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 10,
+      "completion_tokens": 32,
+      "total_tokens": 42
+    }
+  }
+  ```
+
+  ### Breakdown:
+
+  - **`text`:** The content here is plain text that includes markdown
+    syntax (e.g., `##` for a header, `-` for list items).
+
+  ,**Applications:**
+
+  - When rendered in an environment that supports markdown (like a
+    markdown editor or GitHub), this text will display with proper
+    formatting.
+  - In raw text form, it remains plain text with markdown syntax.
+
+  ### Conclusion:
+
+  While the response is technically plain text, OpenAI models frequently
+  generate content containing markdown due to its widespread use for
+  formatting. The default format helps maintain versatility, allowing
+  the text to be easily rendered in both plain text and
+  markdown-compatible environments.
+#+end_src
+
+** Seed
+
+Answer the question: ```When making a request to an OpenAI model,
+  various optional parameters such as temperature and max_tokens can
+  modulate the response. Can you explain the purpose and usage of the
+  `seed` parameter?```
+
+#+begin_src markdown
+  Certainly!
+
+  When making a request to an OpenAI model, various optional parameters
+  such as temperature and max_tokens can modulate the response. Can you
+  explain the purpose and usage of the `seed` parameter?
+
+  ### Purpose:
+  The `seed` parameter is used to initialize the random number generator
+  that influences the model’s output. By setting a specific seed value,
+  you can make the generated responses deterministic, meaning that you
+  will get the same output for the same input prompt every time you use
+  that seed. This is particularly useful for testing, debugging, and
+  reproducibility.
+
+  ### Usage:
+  - **Parameter Value:** The `seed` parameter takes an integer
+    value. This value is used to initialize the random number
+    generation, ensuring that the sequence of generated responses
+    remains consistent across different runs with the same seed.
+  - **How to Use:** Set the `seed` parameter to any integer to get
+    deterministic output. Every unique seed value will produce a unique
+    sequence of outputs, allowing you to recreate specific responses as
+    needed.
+
+  ### Example:
+  Suppose you want to ensure that you get the same response every time
+  you query the model with a given prompt for testing purposes.
+
+  ```json
+  {
+    "model": "text-davinci-003",
+    "prompt": "What are the benefits of regular exercise?",
+    "max_tokens": 50,
+    "temperature": 0.7,
+    "seed": 42
+  }
+  ```
+
+  ### Output Example:
+  With the `seed` set to 42, you can expect the following response to be
+  identical every time you use this specific seed value with the same
+  prompt and parameters.
+
+  ```json
+  {
+    "choices": [
+      {
+        "text": "Regular exercise improves cardiovascular health, boosts mood, increases energy levels, and enhances cognitive function."
+      }
+    ]
+  }
+  ```
+
+  ### Benefits:
+  - **Reproducibility:** Ensures that you and others can reproduce the
+    same output given the same input, which is critical for debugging
+    and consistency in testing scenarios.
+  - **Consistency:** Useful for applications where a stable and
+    predictable response is necessary, such as automated testing or
+    educational content generation.
+  - **Controlled Experimentation:** Facilitates controlled
+    experimentation where you want to observe the effects of changing
+    other parameters while keeping the output consistency due to the
+    seed.
+
+  By using the `seed` parameter, you can control the randomness inherent
+  in the model's response generation, making your outputs predictable
+  and reproducible, which is valuable for development, testing, and
+  consistent content generation.
+#+end_src
+
+** Stop
+
+Answer the question: ```When making a request to an OpenAI model,
+  various optional parameters such as temperature and max_tokens can
+  modulate the response. Can you explain the purpose and usage of the
+  `stop` parameter?```
+
+#+begin_src markdown
+  Certainly!
+
+  ### Purpose and Usage of the `stop` Parameter:
+
+  The `stop` parameter in OpenAI models is used to specify one or more
+  tokens or sequences of tokens at which the model should stop
+  generating further tokens. This helps to control the length and
+  content of the output by defining clear boundaries for the generated
+  text.
+
+  ### Purpose:
+  The primary purpose of the `stop` parameter is to create a natural
+  endpoint for the generated response based on custom delimiters. This
+  ensures that the model stops generating text once it encounters any of
+  the specified stop sequences, allowing for more structured and
+  contextually appropriate outputs.
+
+  ### Usage:
+  - **Parameter Value:** The `stop` parameter can take a string or a
+    list of strings. Each string acts as a delimiter where the model
+    will halt its text generation.
+  - **How to Use:** Provide one or more stop sequences to indicate where
+    you want the response to end. If the model encounters any of these
+    sequences during text generation, it will stop at that point.
+
+  ### Example:
+  Suppose you want the model to generate a response about the benefits
+  of regular exercise, but you want it to stop as soon as it mentions
+  "health" or "mood."
+
+  ```json
+  {
+    "model": "text-davinci-003",
+    "prompt": "What are the benefits of regular exercise?",
+    "max_tokens": 50,
+    "temperature": 0.7,
+    "stop": ["health", "mood"]
+  }
+  ```
+
+  ### Output Example:
+  With the provided stop sequences, the model will generate a response
+  and stop once it hits either "health" or "mood."
+
+  ```json
+  {
+    "choices": [
+      {
+        "text": "Regular exercise improves cardiovascular health"
+      }
+    ]
+  }
+  ```
+
+  ### Benefits:
+  - **Control Over Output Length:** Helps prevent overly long or
+    rambling responses by enforcing a clear stopping point.
+  - **Improved Readability:** Ensures the response is concise and ends
+    at a logical point, making it more readable and relevant.
+  - **Customizability:** Allows for the generation of content that fits
+    specific formats or requirements, such as stopping at the end of a
+    sentence or paragraph.
+
+  By using the `stop` parameter, you can precisely control where the
+  model's output ends, creating more tailored and contextually
+  appropriate responses to fit your specific needs.
+#+end_src
+
+** Stream
+
+Answer the question: ```When making a request to an OpenAI model,
+  various optional parameters such as temperature and max_tokens can
+  modulate the response. Can you explain the purpose and usage of the
+  `stream` parameter?```
+
+
+
+#+begin_src markdown
+  Certainly!
+
+  When making a request to an OpenAI model, various optional parameters
+  such as temperature and max_tokens can modulate the response. Can you
+  explain the purpose and usage of the `stream` parameter?
+
+  ### Purpose:
+  The `stream` parameter is used to enable or disable the streaming of
+  partial results as they are generated by the model. This allows you to
+  receive portions of the output incrementally rather than waiting for
+  the entire response to be generated. Streaming can improve the
+  responsiveness of applications, making interactions feel faster and
+  more dynamic.
+
+  ### Usage:
+  - **Parameter Value:** The `stream` parameter is a boolean. Setting it
+    to `true` enables streaming, while setting it to `false` (or
+    omitting it) means the response will be delivered in a single,
+    complete message after the entire generation process is finished.
+  - **How to Use:** Simply include `"stream": true` in your API request
+    to enable streaming.
+
+  ### Example:
+  Suppose you want to enable streaming so that you can start processing
+  the response as soon as the model begins generating it.
+
+  ```json
+  {
+    "model": "text-davinci-003",
+    "prompt": "Write a short story about a brave knight.",
+    "max_tokens": 150,
+    "temperature": 0.7,
+    "stream": true
+  }
+  ```
+
+  ### Output Delivery:
+  With streaming enabled, the response will be delivered in chunks. Each
+  chunk will be a partial result of the model's response, allowing you
+  to display or process the output incrementally.
+
+  ### Example Response (streamed):
+  First chunk:
+  ```json
+  {
+    "choices": [
+      { "text": "Once upon a time, in a kingdom far away, there lived a brave knight named Sir Cedric. He was known throughout the land for his" }
+    ]
+  }
+  ```
+
+  Second chunk:
+  ```json
+  {
+    "choices": [
+      { "text": "courage and kindness. One day, a fearsome dragon threatened the kingdom, and the king called upon Sir Cedric to save them." }
+    ]
+  }
+  ```
+
+  ...and so on, until the complete response is generated.
+
+  ### Benefits:
+  - **Improved Responsiveness:** Allows for more interactive and dynamic
+    user experiences by showing parts of the response as soon as they
+    are ready.
+  - **Reduced Waiting Time:** Users don't have to wait for the entire
+    response to be generated, which can be particularly beneficial in
+    applications requiring quick feedback.
+  - **Continuous Processing:** Enables early processing of the output
+    for applications that need to handle data incrementally (e.g., live
+    chat interfaces, real-time analysis tools).
+
+  By using the `stream` parameter, you can enhance the interactiveness
+  and responsiveness of applications that rely on real-time or
+  near-real-time responses from the model, providing a better user
+  experience.
+#+end_src
+
+** Stream Options ~not documented yet~
+
+Answer the question: ```When making a request to an OpenAI model,
+  various optional parameters such as temperature and max_tokens can
+  modulate the response. Can you explain the purpose and usage of the
+  `stream_options` parameter?```
+
+** Temperature
+
+Answer the question: ```When making a request to an OpenAI model,
+  various optional parameters such as temperature and max_tokens can
+  modulate the response. Can you explain the purpose and usage of the
+  `temperature` parameter?```
+
+#+begin_src markdown
+  Certainly!
+
+  When making a request to an OpenAI model, various optional parameters
+  such as temperature and max_tokens can modulate the response. Can you
+  explain the purpose and usage of the `temperature` parameter?
+
+  ### Purpose:
+  The `temperature` parameter is used to control the randomness and
+  creativity of the model’s responses. It determines how deterministic
+  or varied the output will be. A lower temperature makes the model's
+  output more focused and deterministic, while a higher temperature
+  makes it more random and creative.
+
+  ### Usage:
+  - **Parameter Value:** The `temperature` parameter takes a float value
+    between 0 and 1, though values slightly above 1 can also be
+    used. The default value is typically 1.
+    - **Lower Value (e.g., 0.2):** Makes the model choose more
+      predictable and focused responses. This is useful when you need
+      precise and reliable answers.
+    - **Higher Value (e.g., 0.8):** Increases the creativity of the
+      responses by making the model explore a wider range of potential
+      outputs. This is ideal for creative writing or brainstorming
+      tasks.
+
+  ### Example:
+  Suppose you want the model to generate a more creative
+  description. You would set a higher temperature.
+
+  ```json
+  {
+    "model": "text-davinci-003",
+    "prompt": "Describe a sunset over the mountains.",
+    "max_tokens": 50,
+    "temperature": 0.9
+  }
+  ```
+
+  ### Output Example with Higher Temperature (0.9):
+  ```json
+  {
+    "choices": [
+      {
+        "text": "The sunset spilled across the sky in a riot of colors—fiery oranges, deep purples, and golds blending into one another. The mountains stood silhouetted against this canvas, like ancient guardians of a fading day."
+      }
+    ]
+  }
+  ```
+
+  By contrast, setting a lower temperature would yield a more
+  straightforward and predictable output.
+
+  ### Example with Lower Temperature (0.2):
+  ```json
+  {
+    "model": "text-davinci-003",
+    "prompt": "Describe a sunset over the mountains.",
+    "max_tokens": 50,
+    "temperature": 0.2
+  }
+  ```
+
+  ### Output Example with Lower Temperature (0.2):
+  ```json
+  {
+    "choices": [
+      {
+        "text": "The sunset over the mountains was beautiful, with colors of orange and pink filling the sky. The mountains were dark in the fading light."
+      }
+    ]
+  }
+  ```
+
+  ### Benefits:
+  - **Control Over Fluency:** Adjusting the temperature allows you to
+    balance between fluent, predictable text and more creative, diverse
+    text.
+  - **Flexibility:** Enables the creation of responses suited to
+    different contexts, whether precise and factual or imaginative and
+    exploratory.
+  - **Custom Tailoring:** Provides a simple yet powerful way to
+    fine-tune the model's outputs to align with specific requirements
+    and preferences.
+
+  By using the `temperature` parameter, you can modulate the response of
+  the OpenAI model, tuning it to be either more deterministic and
+  focused or more random and creative, depending on your specific needs.
+#+end_src
+
+ 
+** Tools ~not documented yet~
+
+Answer the question: ```When making a request to an OpenAI model,
+  various optional parameters such as temperature and max_tokens can
+  modulate the response. Can you explain the purpose and usage of the
+  `tools` parameter?```
+
+** Tool Choice ~not documented yet~
+
+** Top Logprobs
+
+Answer the question: ```When making a request to an OpenAI model,
+  various optional parameters such as temperature and max_tokens can
+  modulate the response. Can you explain the purpose and usage of the
+  `top_logprobs` parameter?```
+
+#+begin_src markdown
+  Certainly!
+
+  When making a request to an OpenAI model, various optional parameters
+  such as temperature and max_tokens can modulate the response. Can you
+  explain the purpose and usage of the `top_logprobs` parameter?
+
+  ### Purpose:
+  The `top_logprobs` parameter is used to retrieve the log probabilities
+  of the top N most likely tokens during the generation of each token in
+  the model’s response. This provides insights into the model’s
+  decision-making process by showing the probabilities the model
+  assigned to different token choices at each step of the text
+  generation.
+
+  ### Usage:
+  - **Parameter Value:** The `top_logprobs` parameter takes an integer
+    value N, indicating that you want the log probabilities for the top
+    N tokens. For example, setting `top_logprobs` to 5 will return the
+    log probabilities for the five most likely tokens at each step.
+  - **How to Use:** Include `"top_logprobs": N` in your API request to
+    retrieve this information along with the generated text.
+
+  ### Example:
+  Suppose you want to see the top 3 log probabilities for each token
+  generated in response to a prompt.
+
+  ```json
+  {
+    "model": "text-davinci-003",
+    "prompt": "What are the benefits of regular exercise?",
+    "max_tokens": 50,
+    "temperature": 0.7,
+    "top_logprobs": 3
+  }
+  ```
+
+  ### Example Response Structure:
+  The response will include the usual text generation output along with
+  the top log probabilities for each token:
+
+  ```json
+  {
+    "choices": [
+      {
+        "text": "Regular exercise improves cardiovascular health, boosts mood, and increases energy levels.",
+        "logprobs": {
+          "tokens": ["Regular", "exercise", "improves", "cardiovascular", "health", ",", "boosts", "mood", ",", "and", "increases", "energy", "levels", "."],
+          "token_logprobs": [-0.1, -0.2, -0.3, -0.1, -0.2, -0.5, -0.2, -0.3, -0.5, -0.3, -0.2, -0.1, -0.2, -0.1],
+          "top_logprobs": [
+            {"Regular": -0.1, "Frequent": -1.2, "Consistent": -2.0},
+            {"exercise": -0.2, "activity": -1.3, "movement": -2.1},
+            {"improves": -0.3, "enhances": -1.1, "boosts": -1.5},
+            // ... continued for each token
+          ],
+          "text_offset": [0, 8, 17, 26, 40, 47, 49, 56, 60, 66, 70, 81, 88, 95]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 8,
+      "completion_tokens": 14,
+      "total_tokens": 22
+    }
+  }
+  ```
+
+  ### Explanation:
+  - **`tokens`:** The list of tokens in the generated response.
+  - **`token_logprobs`:** The log probabilities assigned to each token
+    in the response.
+  - **`top_logprobs`:** The top N (in this example, 3) log probabilities
+    of alternative tokens for each position.
+  - **`text_offset`:** The character offsets for each token in the
+    response text.
+
+  ### Benefits:
+  - **Insight into Model Decisions:** Understanding why the model chose
+    certain tokens over others can be valuable for debugging and
+    improving prompt engineering.
+  - **Probabilistic Analysis:** Provides a deeper statistical
+    understanding of the model's output, useful for research and
+    analysis.
+  - **Quality Control:** Helps in evaluating the confidence of the model
+    in its chosen tokens and identifying potential uncertainties or
+    variations in the generated text.
+
+  By using the `top_logprobs` parameter, you can gain detailed insights
+  into the model's token selection process, allowing for more informed
+  adjustments and analysis of the generated responses.
+#+end_src
+
