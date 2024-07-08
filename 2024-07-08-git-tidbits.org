@@ -89,3 +89,46 @@ tags: [tidbits]
   up-to-date information on GitHub's pricing page.
 #+end_src
 
+
+
+* How can I add other users as contributors of my private repository on GitHub?
+
+
+#+begin_src markdown
+  To add contributors to your private repository on GitHub, follow these
+  steps:
+
+  1. **Go to Your Repository**:
+     - Navigate to the repository on GitHub.
+
+  2. **Open the Settings**:
+     - Click on the "Settings" tab, which is usually located on the
+       right side of the repository menu.
+
+  3. **Access Manage Access**:
+     - In the left sidebar, click on "Manage access."
+
+  4. **Invite a Collaborator**:
+     - Click on the green "Invite a collaborator" button.
+
+  5. **Enter the GitHub Username**:
+     - Enter the GitHub username or email of the person you want to add
+       as a collaborator.
+
+  6. **Send the Invitation**:
+     - Click the "Add <username>" button to send an invitation.
+
+  7. **Collaborator Accepts the Invitation**:
+     - The invited collaborator will receive an email notification. They
+       need to accept the invitation to gain access to the repository.
+
+  8. **Set Permissions (optional)**:
+     - After the user accepts the invitation, you can adjust their role
+       by clicking the dropdown next to their name in the "Manage
+       access" page. You can set them as Read, Write, or admin based on
+       the access level they need.
+
+  By following these steps, you will be able to add other users as
+  collaborators to your private repository.
+#+end_src
+
