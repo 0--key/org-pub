@@ -13,7 +13,10 @@ tags: []
 #+PROPERTY: header-args :exports both
 #+PROPERTY: header-args+ :results output pp
 #+PROPERTY: header-args+ :eval no-export
+#+PROPERTY: vizier-thread-id thread_9ruuYBQCznH7lOdaMsXAdjj0
+#+PROPERTY: vizier-assistant-id asst_k0LyQk3P0ugc93lkXqkzrP0x
 #+TOC: headlines 2
+
 * Intro
 :PROPERTIES:
 :GPTEL_MODEL: gpt-3.5-turbo
