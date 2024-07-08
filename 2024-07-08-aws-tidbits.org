@@ -1,0 +1,357 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Amazon Web Service
+tagline: " micro-instance initiation"
+permalink: /aws/micro-instance-initiation.html
+categories: [AWS]
+tags: [micro-instance, t2, initiation]
+---
+#+END_EXPORT
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+PROPERTY: header-args :exports both
+#+PROPERTY: header-args+ :results output pp
+#+PROPERTY: header-args+ :eval no-export
+#+PROPERTY: vizier-thread-id thread_kOgalyOivHHDdkvKBaRLGF9Z
+#+PROPERTY: vizier-assistant-id asst_p7qY0db95VJOnhiDsaF1jEqp
+#+TOC: headlines 2
+* I want to use a free AWS EC2 micro-instance with the Debian distribution of Linux. Is this possible?
+
+
+#+begin_src markdown
+  Yes, it is possible to use a free AWS EC2 micro-instance with a Debian
+  distribution of Linux. Here are the steps to set it up:
+
+  1. **Sign in to AWS Management Console**: Navigate to [AWS Management
+     Console](https://aws.amazon.com/console/).
+
+  2. **Launch an instance**:
+     - Go to the EC2 Dashboard and click on "Launch Instance".
+     - Choose a "Quick Start" AMI. You can search for "Debian" in the
+       search bar.
+
+  3. **Select the "Free tier eligible" instance type**:
+     - Choose "t2.micro" or "t3.micro" (both are free tier-eligible).
+
+  4. **Configure Instance Details**: You can leave the default settings
+     or adjust them according to your needs.
+
+  5. **Add Storage**: The default storage settings are usually
+     sufficient for a micro-instance, but you can adjust them if needed.
+
+  6. **Add Tags**: Optionally, add tags to help you identify the
+     instance.
+
+  7. **Configure Security Group**:
+     - Add rules to allow SSH (port 22) so you can connect to your
+       instance.
+     - Add any other rules required for your application.
+
+  8. **Review and Launch**:
+     - Review your settings and click "Launch".
+     - Select or create a new key pair to connect to your instance
+       securely and click "Launch Instances".
+
+  9. **Connect to your instance**:
+     - Once the instance is running, select it and click on "Connect".
+     - Follow the provided instructions to SSH into your Debian instance
+       using the key pair you downloaded.
+
+  This will give you a Debian-based micro-instance running on AWS,
+  within the free tier limits.
+#+end_src
+
+* What is the difference between "t2.micro" and "t3.micro" instances?
+
+
+#+begin_src markdown
+  The primary differences between "t2.micro" and "t3.micro" instances on
+  AWS are related to performance characteristics, pricing, and
+  underlying technology. Here's a concise comparison:
+
+  ### Performance
+
+  - **T2 Instances**:
+    - **Baseline Performance:** T2 instances provide a baseline level of
+      CPU performance with the ability to burst above the baseline for a
+      short time.
+    - **CPU Credits:** They accumulate CPU credits when idle and consume
+      credits while bursting. If the credits are exhausted, the instance
+      will be throttled.
+
+  - **T3 Instances**:
+    - **Enhanced Baseline:** T3 instances generally offer better
+      baseline performance compared to T2.
+    - **CPU Credits:** Similar to T2 in that they use CPU credits, but
+      T3 instances have the additional advantage of **Unlimited Mode**
+      by default, where they can sustain high CPU performance without
+      being throttled, and you pay for any extra usage beyond the
+      baseline.
+
+  ### Pricing
+
+  - **T2 Instances**:
+    - Often slightly cheaper than T3 instances.
+    - Typically used for consistent, low-CPU-bound workloads.
+
+  - **T3 Instances**:
+    - Slightly more expensive but more cost-efficient for variable
+      workloads due to their improved baseline performance and CPU
+      credit management.
+
+  ### Technology
+
+  - **T2 Instances**:
+    - Earlier generation, generally based on Intel processors (older
+      versions).
+    - EBS-optimized option available but might lower IOPS compared to
+      T3.
+
+  - **T3 Instances**:
+    - Newer generation, often based on AWS Nitro System, which provides
+      better network performance and flexibility.
+    - Generally more efficient and capable compared to T2.
+    - Support for both Intel and AMD processors.
+
+  ### Summary
+
+  - **T2.micro**: Suitable for consistent workloads with occasional
+    bursts, slightly cheaper.
+  - **T3.micro**: Better for variable workloads with frequent bursting
+    needs, more efficient use of CPU credits, and enhanced networking
+    capabilities.
+
+  Choosing between the two depends on your specific use case regarding
+  performance requirements and cost considerations.
+#+end_src
+
+* When I create my subnet my default IPv4 VPC CIDR block is 172.31.0.0/16. What I have to specify as IPv4 subnet CIDR block?
+
+
+#+begin_src markdown
+  When you create a subnet within a VPC with the default IPv4 CIDR block
+  `172.31.0.0/16`, you need to specify a smaller CIDR block for the
+  subnet that falls within the range of the VPC's CIDR block. Here’s how
+  you can determine and specify an appropriate CIDR block for your
+  subnet:
+
+  ### Example Subnet CIDR Blocks
+
+  For a default VPC CIDR block of `172.31.0.0/16`, here are some
+  examples of valid subnet CIDR blocks that adhere to common subnetting
+  practices:
+
+  #### /24 subnet (256 IP addresses)
+  - `172.31.0.0/24`
+  - `172.31.1.0/24`
+  - `172.31.2.0/24`
+  - ...
+  - `172.31.255.0/24`
+
+  #### /20 subnet (4096 IP addresses)
+  - `172.31.0.0/20`
+  - `172.31.16.0/20`
+  - `172.31.32.0/20`
+  - ...
+  - `172.31.240.0/20`
+
+  #### /28 subnet (16 IP addresses)
+  - `172.31.0.0/28`
+  - `172.31.0.16/28`
+  - `172.31.0.32/28`
+  - ...
+  - `172.31.255.240/28`
+
+  ### Steps to Create a Subnet
+
+  1. **Navigate to the VPC Dashboard**: In the AWS Management Console,
+     go to the VPC Dashboard.
+  2. **Select the VPC**: Choose the VPC with the CIDR block
+     `172.31.0.0/16`.
+  3. **Create Subnet**:
+     - Click on "Create Subnet".
+     - Select the VPC you want to create the subnet in.
+     - Specify the `Subnet Name` for easy identification.
+     - Choose the Availability Zone where you want the subnet to
+       reside. You can also select "No Preference".
+     - Enter the IPv4 CIDR block for the subnet. For example:
+       - `172.31.1.0/24` for a /24 subnet providing 256 addresses
+       - Or use a smaller or larger subnet mask based on your
+         requirements, such as /20 for more addresses or /28 for fewer.
+
+  ### Important Points to Consider:
+  - **Address Size**: Smaller subnet masks like /20 provide more IP
+    addresses but fewer subnets, whereas larger subnet masks like /28
+    provide fewer IP addresses but more subnets.
+  - **Overlapping**: Ensure that the subnet CIDR block does not overlap
+    with another subnet in the same VPC.
+  - **Size Allocation**: Think about future scaling—it's often a good
+    idea to leave some space for additional subnets later.
+
+  By following these practices, you can effectively manage and allocate
+  IP addresses within your VPC.
+#+end_src
+
+* Notes                                                            :noexport:
+
+{
+  "MaxCount": 1,
+  "MinCount": 1,
+  "ImageId": "ami-00402f0bdf4996822",
+  "InstanceType": "t2.micro",
+  "KeyName": "PhilomathEC2micro",
+  "EbsOptimized": false,
+  "NetworkInterfaces": [
+    {
+      "SubnetId": "subnet-0ba6f55c33d678d1e",
+      "AssociatePublicIpAddress": true,
+      "DeviceIndex": 0,
+      "Groups": [
+        "<groupId of the new security group created below>"
+      ]
+    }
+  ],
+  "TagSpecifications": [
+    {
+      "ResourceType": "instance",
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "Philomath"
+        }
+      ]
+    }
+  ],
+  "MetadataOptions": {
+    "HttpEndpoint": "enabled",
+    "HttpPutResponseHopLimit": 2,
+    "HttpTokens": "required"
+  },
+  "PrivateDnsNameOptions": {
+    "HostnameType": "ip-name",
+    "EnableResourceNameDnsARecord": false,
+    "EnableResourceNameDnsAAAARecord": false
+  }
+}
+
+===
+
+{
+  "GroupName": "launch-wizard",
+  "Description": "launch-wizard created 2024-07-08T05:34:20.540Z",
+  "VpcId": "vpc-0602c78bde2353046"
+}
+
+===
+
+{
+  "GroupId": "<groupId of the security group created above>",
+  "IpPermissions": [
+    {
+      "IpProtocol": "tcp",
+      "FromPort": 22,
+      "ToPort": 22,
+      "IpRanges": [
+        {
+          "CidrIp": "0.0.0.0/0",
+          "Description": "Default SSH"
+        }
+      ]
+    }
+  ]
+}
+
+* I successfully connected to my Debian AWS instance, and try to install additional package `emacs`:
+```
+sudo apt install emacs
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+E: Unable to locate package emacs
+```
+Seems like it is necessary to configure the software repositories first. Am I right? 
+
+
+#+begin_src markdown
+  Yes, you are correct. If you are unable to locate the `emacs` package,
+  it's often because the package repositories are not properly
+  configured. Here are the steps to configure your repositories and
+  install `emacs` on your Debian AWS instance:
+
+  1. **Update Package Lists**: First, update the package lists to ensure they are up to date.
+     ```sh
+     sudo apt update
+     ```
+
+  2. **Check Sources List**: Ensure that the sources list file has the necessary repositories. The sources list file is usually located at `/etc/apt/sources.list`. You can check its contents with:
+     ```sh
+     cat /etc/apt/sources.list
+     ```
+
+  3. **Edit Sources List**: If necessary, edit the sources list file to include the official Debian repositories. Use a text editor like nano or vim:
+     ```sh
+     sudo nano /etc/apt/sources.list
+     ```
+     Make sure it includes lines similar to the following (replace `buster` with your Debian version if different):
+     ```sh
+     deb http://deb.debian.org/debian buster main
+     deb http://deb.debian.org/debian buster-updates main
+     deb http://deb.debian.org/debian buster-backports main
+     deb http://security.debian.org/debian-security buster/updates main
+     ```
+
+  4. **Update Package Lists Again**: After saving any changes to the sources list, run the following command again to update the package lists:
+     ```sh
+     sudo apt update
+     ```
+
+  5. **Install Emacs**: Now, try to install `emacs` again:
+     ```sh
+     sudo apt install emacs
+     ```
+
+  ### Example:
+  ```sh
+  sudo apt update
+  sudo apt install emacs
+  ```
+
+  These steps should configure the repositories correctly and allow you
+  to install `emacs` on your Debian AWS instance.
+#+end_src
+
+* What if I want to install `Emacs` without `X` support?
+
+
+#+begin_src markdown
+  If you want to install `Emacs` without X support (i.e., the text-only
+  version of Emacs that runs in the terminal), you should install the
+  package `emacs-nox`. This version of Emacs is designed to run without
+  any graphical user interface.
+
+  Here’s how you can do it:
+
+  1. **Update Package Lists**: Always a good practice to update the package lists to ensure you get the latest information.
+     ```sh
+     sudo apt update
+     ```
+
+  2. **Install Emacs without X Support**:
+     ```sh
+     sudo apt install emacs-nox
+     ```
+
+  This will install the Emacs text editor without any X dependencies,
+  allowing you to run it entirely within the terminal.
+
+  ### Example:
+  ```sh
+  sudo apt update
+  sudo apt install emacs-nox
+  ```
+
+  By installing `emacs-nox`, you'll be able to use Emacs in a terminal
+  environment without the overhead of graphical components.
+#+end_src
+
