@@ -1,0 +1,91 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Git Tidbits
+tagline: " as Q/A"
+permalink: /git/tidbits.html
+categories: [Git]
+tags: [tidbits]
+---
+#+END_EXPORT
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+PROPERTY: header-args :exports both
+#+PROPERTY: header-args+ :results output pp
+#+PROPERTY: header-args+ :eval no-export
+#+PROPERTY: vizier-thread-id thread_DxS4jeIINr43Kg86DRbUJXun
+#+PROPERTY: vizier-assistant-id asst_enUVW0dg6eP0D3NNqwYWiYN0
+#+TOC: headlines 2
+
+* Intro
+
+* How to make my own private repository on some particular folder?
+
+
+#+begin_src markdown
+  To create a private Git repository in a specific folder, follow these
+  steps:
+
+  1. **Navigate to the folder**:
+     ```sh
+     cd /path/to/your/folder
+     ```
+
+  2. **Initialize the Git repository**:
+     ```sh
+     git init
+     ```
+
+  3. **Add your files to the repository**:
+     ```sh
+     git add .
+     ```
+
+  4. **Commit the files**:
+     ```sh
+     git commit -m "Initial commit"
+     ```
+
+  5. **Host your private repository**:
+     - If you want to host it locally, you're done. To share it,
+       consider setting up a SSH server.
+     - If you want to host it remotely (e.g., GitHub, GitLab):
+       - Create a new private repository on the hosting site.
+       - Add the remote repository URL:
+         ```sh
+         git remote add origin <remote_repository_URL>
+         ```
+       - Push your local repository to the remote one:
+         ```sh
+         git push -u origin master
+         ```
+
+  Note that on popular hosting services like GitHub, GitLab, and
+  Bitbucket, you can create private repositories directly through their
+  web interfaces.
+#+end_src
+
+* Is a private repository on GitHub free?
+
+
+#+begin_src markdown
+  Yes, GitHub offers free private repositories with certain
+  limitations. Here are some key points:
+
+  1. **Free Plan**:
+      - Unlimited private repositories.
+      - Unlimited collaborators.
+      - Limited to 2,000 Actions minutes per month (for CI/CD).
+      - Some knowledge of usage and resource limits.
+
+  2. **Paid Plans**:
+      - **GitHub Pro and Team**: Offer additional features such as more
+        Actions minutes, advanced security features, and more.
+      - **GitHub Enterprise**: Suitable for large organizations with
+        enhanced administrative and security features.
+
+  For most individual and small team use cases, the free plan is
+  sufficient for using private repositories. You can find detailed and
+  up-to-date information on GitHub's pricing page.
+#+end_src
+
