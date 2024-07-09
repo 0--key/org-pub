@@ -11,6 +11,9 @@ tags: [config, emacs-server]
 
 #+STARTUP: showall indent
 #+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+PROPERTY: header-args :exports both
+#+PROPERTY: header-args+ :results output pp
+#+PROPERTY: header-args+ :eval no-export
 #+TOC: headlines 2
 * Intro
 
