@@ -491,11 +491,23 @@ elpa-ztree - text mode directory tree
 elpa-zzz-to-char - fancy version of `zap-to-char' command
 #+end_example
 
+** Emacs' Package Installation
+
+#+begin_src sh
+  sudo apt-get install elpa-ag elpa-avy elpa-company elpa-counsel elpa-esxml
+  sudo apt-get install elpa-helpful elpa-highlight-indentation elpa-hydra
+  sudo apt-get install elpa-ivy elpa-magit elpa-magit-section elpa-nov elpa-persist
+  sudo apt-get install elpa-popup elpa-project elpa-projectile elpa-pyvenv elpa-request
+  sudo apt-get install elpa-s elpa-transient elpa-which-key elpa-yasnippet
+  ##sudo apt-get install silversearcher-ag
+#+end_src
+** Debian =elpa= Directory
+
 By default all they are installed into
-=/usr/share/emacs/site-lisp/elpa=
+=/usr/share/emacs/site-lisp/elpa/= and
+=/usr/share/emacs/site-lisp/elpa-src/=
 
 
-* System-wide additional packages
 
 There are a plethora packages, provided by third-parties and not
 included into the official ~Debian~ release. They can be allocated in
