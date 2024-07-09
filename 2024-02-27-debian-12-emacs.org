@@ -549,6 +549,10 @@ speed-type-1.3
 voca-builder-0.2.0
 #+end_example
 
+#+begin_src sh
+scp -r alioth@192.168.43.143:/usr/local/share/emacs/site-lisp/* /usr/local/share/emacs/site-lisp/
+#+end_src
+
 All them are in the default ~Emacs'~ =load-path= and accesible for
 each user, but it's necessary to /add every package's folder/ into the
 pesonal load path. It might be defined manually, folder by folder, but
