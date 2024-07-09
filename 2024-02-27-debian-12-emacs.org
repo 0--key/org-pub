@@ -516,7 +516,7 @@ By default all they are installed into
   cd ~/Git/0--key/
   git clone git@github.com:0--key/org-pub.git
   git clone git@github.com:0--key/lib.git
-  mkdir ~/Git/annelida  
+  mkdir ~/Git/annelida
 #+end_src
 
 * System-wide Additional Packages
