@@ -22,11 +22,36 @@ amongst several users on the same ~Debian12~ host and this article
 provides a dense and terse overview how to manage this task in a
 sure&fire manner.
 
-* System-wide settings
+
+* Emacs ItSelf etc.
+
+#+begin_src sh
+sudo apt-get install emacs-nox git
+#+end_src
+
+* Git Configuration
+** Gitconfig
+
+#+begin_src sh
+cat ~/.gitconfig
+#+end_src
+
+#+RESULTS:
+: [user]
+: 	email = a.s.kosinov@gmail.com
+: 	name = Anton S. Kosinov
+: [credential]
+: 	helper = cache --timeout=3600
+
+** Authentication Keys
+
+
+* System-wide Emacs` Settings
 
 The file which executes by each instance of ~Emacs~ allocated at
 =/etc/emacs/site-start.d/00debian.el= So it is reasonable to put all
 /common settings/ into it.
+
 
 * Elpa-*.deb packages
 
