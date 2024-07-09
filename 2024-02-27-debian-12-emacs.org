@@ -586,3 +586,8 @@ config =~/.emacs= in a single string:
 * Per-user Settings
 
 * Personal Package Management
+
+
+* Info System Extension
+--Seems it is require `emacs-common-non-dfsg` installation
++python3.11-doc
