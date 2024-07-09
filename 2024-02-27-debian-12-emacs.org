@@ -508,6 +508,18 @@ By default all they are installed into
 =/usr/share/emacs/site-lisp/elpa-src/=
 
 
+* Clone repositories
+
+#+begin_src sh
+    mkdir ~/Git
+  mkdir ~/Git/0--key
+  cd ~/Git/0--key/
+  git clone git@github.com:0--key/org-pub.git
+  git clone git@github.com:0--key/lib.git
+  mkdir ~/Git/annelida  
+#+end_src
+
+* System-wide Additional Packages
 
 There are a plethora packages, provided by third-parties and not
 included into the official ~Debian~ release. They can be allocated in
