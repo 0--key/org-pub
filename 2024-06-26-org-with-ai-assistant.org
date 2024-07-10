@@ -86,121 +86,132 @@ Unleash the power of AI Assistants in your =Org= buffer!
 #+end_src
 
 
+* Initiate a new Thread
 :PROPERTIES:
 :vizier-thread-id: thread_Q1teTN2ZdIKPvKif3ZuzN42S
 :END:
 
 
 #+begin_src elisp :results none
-       (require 'request)
-       (require 'json)
-       (require 'org)
+  (require 'request)
+  (require 'json)
+  (require 'org)
 
-       (defun vizier-new-thread ()
-         "Create a new conversation thread in the current branch if it not exists else"
-         (interactive)
-         (save-excursion
-           (org-back-to-heading t)
-           (let ((thread-id (org-entry-get nil "vizier-thread-id")))
-             (if thread-id
-                 (message "You are already in conversation thread")
-               (message "You need to create a new conversation thread")))))
+  (defun vizier-new-thread ()
+    "Create a new conversation thread in the current branch if it not exists else"
+    (interactive)
+    (save-excursion
+      (org-back-to-heading t)
+      (let ((thread-id (org-entry-get nil "vizier-thread-id")))
+        (if thread-id
+            (message "You are already in conversation thread")
+          (message "You need to create a new conversation thread")))))
 
-       (defun vizier-thread-init ()
-         "Initialize a new conversation thread with the OpenAI API and return the thread ID."
-         (interactive)
-         (let* ((url "https://api.openai.com/v1/threads")
-                (headers `(("Content-Type" . "application/json")
-                           ("Authorization" . ,(concat "Bearer " openai-api-key))
-                           ("OpenAI-Beta" . "assistants=v2")))
-                thread-id)
-           (request
-             url
-             :type "POST"
-             :headers headers
-             :data ""
-             :parser 'json-read
-             :success (cl-function
-                        (lambda (&key data &allow-other-keys)
-                          (setq thread-id (cdr (assoc 'id data)))
-                          (message "Thread initialized with ID: %s" thread-id)  
-                          thread-id))
-             :error (cl-function
-                     (lambda (&key error-thrown &allow-other-keys)
-                       (message "Error initializing thread: %S" error-thrown))))
-           (while (not thread-id)
-             (sleep-for 0.1)) ;; Wait for the request to complete
-           thread-id))
+  (defun vizier-thread-init ()
+    "Initialize a new conversation thread with the OpenAI API and return the thread ID."
+    (interactive)
+    (let* ((url "https://api.openai.com/v1/threads")
+           (headers `(("Content-Type" . "application/json")
+                      ("Authorization" . ,(concat "Bearer " openai-api-key))
+                      ("OpenAI-Beta" . "assistants=v2")))
+           thread-id)
+      (request
+        url
+        :type "POST"
+        :headers headers
+        :data ""
+        :parser 'json-read
+        :success (cl-function
+                   (lambda (&key data &allow-other-keys)
+                     (setq thread-id (cdr (assoc 'id data)))
+                     (message "Thread initialized with ID: %s" thread-id)  
+                     thread-id))
+        :error (cl-function
+                (lambda (&key error-thrown &allow-other-keys)
+                  (message "Error initializing thread: %S" error-thrown))))
+      (while (not thread-id)
+        (sleep-for 0.1)) ;; Wait for the request to complete
+      thread-id))
+#+end_src
 
-       ;; It is time to concoct the query
+
+* Shape the query and send message to the Thread
+:PROPERTIES:
+:vizier-thread-id: thread_Q1teTN2ZdIKPvKif3ZuzN42S
+:END:
 
 
-       (defun vizier-org (start end)
-         "Grasp the active region or the current header."
-         (interactive "r")
-         ;; Check if there's an active region
-         (let* ((use-region (use-region-p))
-                (query (if use-region
-                           (buffer-substring-no-properties start end)
-                         (save-excursion
-                           (org-back-to-heading t)
-                           (org-element-property :title (org-element-at-point))))))
-           ;; Print message based on context
-           (if use-region
-               (message "The active region will be the query: %s" query)
-             (message "The current header will be the query: %s" query))
-         (vizier-send-query query)
-         ;; place for extension
-         ))
+#+begin_src elisp :results none
+  (require 'request)
+  (require 'json)
+  (require 'org)
 
-       ;; Example usage:
-       ;; (defun example-vizier-org ()
-       ;;   "Example function to demonstrate how to grasp the active region or the current header."
-       ;;   (interactive "r")
-       ;;   (vizier-org (region-beginning) (region-end)))
+  (defun vizier-org (start end)
+     "Grasp the active region or the current header."
+     (interactive "r")
+     ;; Check if there's an active region
+     (let* ((use-region (use-region-p))
+            (query (if use-region
+                       (buffer-substring-no-properties start end)
+                     (save-excursion
+                       (org-back-to-heading t)
+                       (org-element-property :title (org-element-at-point))))))
+       ;; Print message based on context
+       (if use-region
+           (message "The active region will be the query")
+         (message "The current header will be the query: %s" query))
+     (vizier-send-query query)
+     ;; place for extension
+     ))
 
-       ;; So, ~vizier-org~ might pass the query to another function
+   ;; Example usage:
+   ;; (defun example-vizier-org ()
+   ;;   "Example function to demonstrate how to grasp the active region or the current header."
+   ;;   (interactive "r")
+   ;;   (vizier-org (region-beginning) (region-end)))
 
-      (defun vizier-send-query (question)
-        "Send QUESTION to a specific THREAD and return MSG-ID."
-        (save-excursion
-          (org-back-to-heading t)
-          (let ((thread-id (org-entry-get nil "vizier-thread-id")))
-            (if thread-id
-                (progn
-                  (message "Sending message to thread: %s with question: %s" thread-id question)
-                  (vizier-send-message-to-thread thread-id question))
-              (message "Thread ID is missing in the current heading.")))))
+   ;; So, ~vizier-org~ might pass the query to another function
 
-      (defun vizier-send-message-to-thread (thread-id question)
-        "Helper function to send QUESTION to a specific THREAD-ID and return MSG-ID."
-        (let* ((url (format "https://api.openai.com/v1/threads/%s/messages" thread-id))
-               (headers `(("Content-Type" . "application/json")
-                          ("Authorization" . ,(concat "Bearer " (getenv "OPENAI_API_KEY")))
-                          ("OpenAI-Beta" . "assistants=v2")))
-               (data (json-encode `(("role" . "user")
-                                    ("content" . ,question))))
-               msg-id)
-          (request
-           url
-           :type "POST"
-           :headers headers
-           :data data
-           :parser 'json-read
-           :success (cl-function
-                     (lambda (&key data &allow-other-keys)
-                       (setq msg-id (cdr (assoc 'id data)))
-                       (message "Message sent with ID: %s" msg-id)
-                       msg-id))
-           :error (cl-function
-                   (lambda (&key error-thrown &allow-other-keys)
-                     (message "Error sending message: %S" error-thrown))))
-          (while (not msg-id)
-            (sleep-for 0.1)) ;; Wait for the request to complete
-          msg-id))
+  (defun vizier-send-query (question)
+    "Send QUESTION to a specific THREAD and return MSG-ID."
+    (save-excursion
+      (org-back-to-heading t)
+      (let ((thread-id (org-entry-get nil "vizier-thread-id" t)))
+        (if thread-id
+            (progn
+              (message "Sending message to thread: %s with question: %s" thread-id question)
+              (vizier-send-message-to-thread thread-id question))
+          (message "Thread ID is missing in the current heading.")))))
 
+  (defun vizier-send-message-to-thread (thread-id question)
+    "Helper function to send QUESTION to a specific THREAD-ID and return MSG-ID."
+    (let* ((url (format "https://api.openai.com/v1/threads/%s/messages" thread-id))
+           (headers `(("Content-Type" . "application/json")
+                      ("Authorization" . ,(concat "Bearer " (getenv "OPENAI_API_KEY")))
+                      ("OpenAI-Beta" . "assistants=v2")))
+           (data (json-encode `(("role" . "user")
+                                ("content" . ,question))))
+           msg-id)
+      (request
+       url
+       :type "POST"
+       :headers headers
+       :data data
+       :parser 'json-read
+       :success (cl-function
+                 (lambda (&key data &allow-other-keys)
+                   (setq msg-id (cdr (assoc 'id data)))
+                   (message "Message sent with ID: %s" msg-id)
+                   msg-id))
+       :error (cl-function
+               (lambda (&key error-thrown &allow-other-keys)
+                 (message "Error sending message: %S" error-thrown))))
+      (while (not msg-id)
+        (sleep-for 0.1)) ;; Wait for the request to complete
+      msg-id))
 
 #+end_src
+
 
 * Run the Thread with Assistant
 :PROPERTIES:
@@ -221,8 +232,8 @@ header's =PROPERTIES=.
     "Extract the content of the current Org header and pass it to CALLBACK."
     (save-excursion
       (org-back-to-heading t)
-      (let ((thread-id (org-entry-get nil "vizier-thread-id"))
-            (assistant-id (org-entry-get nil "vizier-assistant-id")))
+      (let ((thread-id (org-entry-get nil "vizier-thread-id" t))
+            (assistant-id (org-entry-get nil "vizier-assistant-id" t)))
         (if (and thread-id assistant-id)
             (funcall callback thread-id assistant-id)
           (message "Properties of Org header are incomplete.")))))
@@ -239,12 +250,13 @@ header's =PROPERTIES=.
   (defun vizier-thread-run (thread-id assistant-id)
     "Run a command in a specific THREAD-ID using a given ASSISTANT-ID and INSTRUCTIONS, returning the run ID."
     (let* ((url (format "https://api.openai.com/v1/threads/%s/runs" thread-id))
-           (instructions (get-register ?q))
+           ;;(instructions (get-register ?q))
            (headers `(("Content-Type" . "application/json")
                       ("Authorization" . ,(concat "Bearer " (getenv "OPENAI_API_KEY")))
                       ("OpenAI-Beta" . "assistants=v2")))
            (data (json-encode `(("assistant_id" . ,assistant-id)
-                                ("instructions" . ,instructions))))
+                                ;;("instructions" . ,instructions)
+                                )))
            run-id)
       (request
        url
@@ -256,7 +268,7 @@ header's =PROPERTIES=.
                   (lambda (&key data &allow-other-keys)
                     (setq run-id (cdr (assoc 'id data)))
                     (message "Run initiated with ID: %s" run-id)
-                    (message "Assistant's instructions is:%s" instructions)
+                    ;;(message "Assistant's instructions is:%s" instructions)
                     run-id))
        :error (cl-function
                (lambda (&key error-thrown &allow-other-keys)
@@ -265,6 +277,7 @@ header's =PROPERTIES=.
         (sleep-for 0.1)) ;; Wait for the request to complete
       run-id))
 #+end_src
+
 
 * Retrieve the Answer from the Thread
 :PROPERTIES:
@@ -281,7 +294,7 @@ header's =PROPERTIES=.
     "Retrieve the last message for a specific THREAD-ID from OpenAI API and insert its content in the Org buffer.
   If QUERY-LIMIT is provided, set the number of messages to retrieve."
     (interactive)
-    (let* ((thread-id (org-entry-get nil "vizier-thread-id"))
+    (let* ((thread-id (org-entry-get nil "vizier-thread-id" t))
            (limit (or query-limit 1))
            (url (format "https://api.openai.com/v1/threads/%s/messages?limit=%d" thread-id limit))
            (headers `(("Content-Type" . "application/json")
@@ -332,6 +345,7 @@ header's =PROPERTIES=.
       (sleep-for 1)
       (vizier-answer)))
 #+end_src
+
 
 * Manual Testing
 :PROPERTIES:
@@ -801,6 +815,7 @@ So can you explain Elisp's main concepts, please?
 #+end_src
 
 So what you would think about a software developer, who don't use Emacs?
+
 #+begin_src markdown
   As a long-time Emacs user and someone passionate about the
   capabilities of Emacs and Emacs Lisp, I certainly recognize the unique
@@ -877,534 +892,72 @@ So what you would think about a software developer, who don't use Emacs?
   related to Emacs, Elisp, or software development in general, feel free
   to ask!
 #+end_src
-Write Elisp function `vizier` that sequentially executes three
-interactive functions: `vizier-org`, `visier-run` and `vizier-answer`
-with pause between the last two in one second.
+
+
+** Testing
+
+How can I call you, what is your name?
 #+begin_src markdown
-  Certainly, Tony! Below is an Emacs Lisp function named `vizier` that
-  sequentially executes three interactive functions: `vizier-org`,
-  `vizier-run`, and `vizier-answer`. It also includes a one-second pause
-  between the execution of `vizier-run` and `vizier-answer` using
-  `sleep-for`.
-
-  Here's how you could write this function:
-
-  ```elisp
-  (defun vizier ()
-    "Sequentially execute vizier-org, vizier-run, and vizier-answer.
-  Pause for one second between vizier-run and vizier-answer."
-    (interactive)
-    (vizier-org)
-    (vizier-run)
-    (sleep-for 1)
-    (vizier-answer))
-
-  ;; Example dummy implementations of the interactive functions (for testing)
-  (defun vizier-org ()
-    "Dummy implementation of vizier-org."
-    (interactive)
-    (message "Executing vizier-org..."))
-
-  (defun vizier-run ()
-    "Dummy implementation of vizier-run."
-    (interactive)
-    (message "Executing vizier-run..."))
-
-  (defun vizier-answer ()
-    "Dummy implementation of vizier-answer."
-    (interactive)
-    (message "Executing vizier-answer..."))
-
-  ;; Usage:
-  ;; M-x vizier
-  ```
-
-  ### Explanation:
-
-  1. **`interactive`**: Marks `vizier` as an interactive function that
-     can be called with `M-x`.
-  2. **`vizier-org`, `vizier-run`, `vizier-answer`**: Sequentially calls
-     these existing interactive functions.
-  3. **`sleep-for`**: Pauses the execution for one second between
-     `vizier-run` and `vizier-answer`.
-
-  ### Testing the Function:
-
-  If you already have implementations for `vizier-org`, `vizier-run`,
-  and `vizier-answer`, you can skip the dummy implementations provided
-  above. Otherwise, you can use these dummy implementations to test the
-  `vizier` function and replace them with your actual interactive
-  functions later.
-
-  To use the function:
-  1. Evaluate the function definitions in your Emacs environment.
-  2. Call the function by typing `M-x vizier`.
-
-  This will execute `vizier-org`, then `vizier-run`, pause for one
-  second, and finally execute `vizier-answer`.
-
-  If you have any specific requirements or additional features you'd
-  like to add, feel free to ask!
+  You can simply call me Assistant. I'm here to help you with any
+  questions or tasks you have. How can I assist you further today, Tony?
 #+end_src
-The `vizier-org` function:
-```
-       (defun vizier-org (start end)
-         "Grasp the active region or the current header."
-         ;;(interactive "r")
-         ;; Check if there's an active region
-         (let* ((use-region (use-region-p))
-                (query (if use-region
-                           (buffer-substring-no-properties start end)
-                         (save-excursion
-                           (org-back-to-heading t)
-                           (org-element-property :title (org-element-at-point))))))
-           ;; Print message based on context
-           (if use-region
-               (message "The active region will be the query: %s" query)
-             (message "The current header will be the query: %s" query))
-         (vizier-send-query query)
-         ;; place for extension
-         ))
-```
-visier, as you're suggested above:
-```
-  (defun vizier ()
-    "Sequentially execute vizier-org, vizier-run, and vizier-answer.
-  Pause for one second between vizier-run and vizier-answer."
-    (interactive)
-    (vizier-org)
-    (vizier-run)
-    (sleep-for 1)
-    (vizier-answer))
-```
-
-If I try `M-x vizier` it throws the error:
-```
-vizier: Wrong number of arguments: (lambda (start end) "Grasp the
-active region or the current header." (let* ((use-region
-(use-region-p)) (query (if use-region (buffer-substring-no-properties
-start end) (save-excursion (org-back-to-heading t)
-(org-element-property :title (org-element-at-point)))))) (if
-use-region (message "The active region will be the query: %s" query)
-(message "The current header will be the query: %s" query))
-(vizier-send-query query))), 0
-```
-
-What is wrong?
-
+It would be please to me to call you not Assistant, but Richard, as
+the first name of Richard Stallman. Do you agree, Richard?
 #+begin_src markdown
-  The error you’re seeing is related to the `vizier-org` function
-  needing specific arguments, which it isn't receiving when called from
-  `vizier`. Your `vizier-org` function is designed to take two arguments
-  (`start` and `end`), likely for use with an active region, but
-  `vizier` attempts to call it without these arguments.
-
-  To resolve this issue, you need to:
-  1. Ensure `vizier-org` can handle both being calling normally from
-     `vizier` and interactively from `M-x vizier-org`.
-  2. Modify `vizier` to correctly call `vizier-org` with the appropriate
-     arguments.
-
-  ### Step 1: Ensure `vizier-org` can handle calls properly
-
-  First, let's make sure `vizier-org` works both interactively and from
-  within the `vizier` function. This can be done by making `vizier-org`
-  interactively handle an active region or fallback to the current
-  heading when called without `start` and `end`.
-
-  ```elisp
-  (defun vizier-org (start end)
-    "Grasp the active region or the current header."
-    (interactive "r")
-    ;; Check if there's an active region, or if start and end are provided
-    (let* ((use-region (if (use-region-p) t (not (and (null start) (null end)))))
-           (query (if use-region
-                      (buffer-substring-no-properties start end)
-                    (save-excursion
-                      (org-back-to-heading t)
-                      (org-element-property :title (org-element-at-point))))))
-      ;; Print message based on context
-      (if use-region
-          (message "The active region will be the query: %s" query)
-        (message "The current header will be the query: %s" query))
-      (vizier-send-query query)))
-  ```
-
-  ### Step 2: Modify `vizier` to correctly call `vizier-org`
-
-  Now let's adjust `vizier` so it calls `vizier-org` with the
-  appropriate arguments. Since `vizier-org` is meant to handle regions,
-  we'll look for an active region or default to the whole buffer when
-  there's no region.
-
-  ```elisp
-  (defun vizier ()
-    "Sequentially execute vizier-org, vizier-run, and vizier-answer.
-  Pause for one second between vizier-run and vizier-answer."
-    (interactive)
-    (let ((start (if (use-region-p) (region-beginning) (point-min)))
-          (end (if (use-region-p) (region-end) (point-max))))
-      (vizier-org start end)
-      (vizier-run)
-      (sleep-for 1)
-      (vizier-answer)))
-  ```
-
-  ### Dummy Functions for Completion
-
-  If you haven't defined `vizier-send-query`, `vizier-run`, and
-  `vizier-answer`, you might want to add dummy implementations for
-  testing. Assuming they are defined, it should work correctly.
-
-  Here’s a recap of the complete solution:
-
-  ```elisp
-  (defun vizier-org (start end)
-    "Grasp the active region or the current header."
-    (interactive "r")
-    ;; Check if there's an active region or if start and end are provided
-    (let* ((use-region (if (use-region-p) t (not (and (null start) (null end)))))
-           (query (if use-region
-                      (buffer-substring-no-properties start end)
-                    (save-excursion
-                      (org-back-to-heading t)
-                      (org-element-property :title (org-element-at-point))))))
-      ;; Print message based on context
-      (if use-region
-          (message "The active region will be the query: %s" query)
-        (message "The current header will be the query: %s" query))
-      (vizier-send-query query)))
-
-  (defun vizier ()
-    "Sequentially execute vizier-org, vizier-run, and vizier-answer.
-  Pause for one second between vizier-run and vizier-answer."
-    (interactive)
-    (let ((start (if (use-region-p) (region-beginning) (point-min)))
-          (end (if (use-region-p) (region-end) (point-max))))
-      (vizier-org start end)
-      (vizier-run)
-      (sleep-for 1)
-      (vizier-answer)))
-
-  ;; Example Dummy Implementations for testing
-  (defun vizier-send-query (query)
-    "Dummy implementation of vizier-send-query."
-    (message "Sending query: %s" query))
-
-  (defun vizier-run ()
-    "Dummy implementation of vizier-run."
-    (interactive)
-    (message "Executing vizier-run..."))
-
-  (defun vizier-answer ()
-    "Dummy implementation of vizier-answer."
-    (interactive)
-    (message "Executing vizier-answer..."))
-
-  ;; Usage:
-  ;; M-x vizier
-  ```
-
-  Now, calling `M-x vizier` should sequentially execute `vizier-org`,
-  `vizier-run`, and `vizier-answer` with a one-second pause between the
-  last two functions.
+  Of course, Tony! You can call me Richard. How can I assist you today?
 #+end_src
-Just say Hi!
-#+begin_src markdown
-  Hi Tony! How can I assist you further today?
-#+end_src
+Nothing serious for today's evening. Is this sentence grammatically correct?
 
 #+begin_src markdown
-  Hi! 🙌 How can I help you today?
-#+end_src
+  The sentence "Nothing serious for today's evening." is understandable
+  but slightly awkward. A more natural way to express this might be:
 
-*How to tag `markup` `md` blocks in org-mode?*
-#+begin_src markdown
+  - "Nothing serious for this evening."
+  - "Nothing serious planned for this evening."
+
+  The word "today" is typically associated with the daytime or the
+  entire day, whereas "this evening" is more specifically understood to
+  refer to the evening.
+
+  If you want to keep today's reference, you might say:
+
+  - "Nothing serious for this evening."
+
+  I hope that helps! If you have any other questions or need further
+  assistance, feel free to ask.
 
 #+end_src
+Thank you, Richard!
 
 #+begin_src markdown
-In Org-mode, you can easily tag and include blocks of various languages, including Markdown (`md`). You achieve this using the `#+BEGIN_SRC` and `#+END_SRC` directives provided by Org-mode to delimit code blocks. For Markdown specifically, you'll use `markdown` as the language for the source block.
+  You're welcome, Tony! If you need anything else or have more questions
+  in the future, don't hesitate to reach out. Have a great evening!
 
-Here's an example of how to include a Markdown block within an Org-mode file:
-
-```org
-#+BEGIN_SRC markdown
-# Markdown Header
-
-This is a paragraph in Markdown.
-
-- Bullet point 1
-- Bullet point 2
-
-Here is some **bold text** and *italic text*.
-#+END_SRC
-```
-
-### Explanation:
-
-1. **`#+BEGIN_SRC markdown`**: Starts the code block and specifies `markdown` as the language.
-2. **Content**: The actual Markdown-formatted content you want to include.
-3. **`#+END_SRC`**: Ends the code block.
-
-This `#+BEGIN_SRC markdown ... #+END_SRC` structure tells Org-mode to treat the enclosed content as raw Markdown text. 
-
-### Example Org-mode File:
-
-```org
-* Example Org Document
-
-Here is some sample content in Org-mode. Below is a block of Markdown.
-
-#+BEGIN_SRC markdown
-# This is a Markdown Title
-
-## This is a Subtitle
-
-Here is a list:
-- Item 1
-- Item 2
-- Item 3
-
-**Bold text** and *italic text* are also supported.
-#+END_SRC
-
-That's it for our Markdown block example.
-```
-
-### Viewing and Exporting:
-
-While in the Org-mode buffer, you will see the entire block as entered.
-
-When you export this Org-mode document to other formats (such as HTML, LaTeX, PDF, or Markdown), Org-mode will correctly interpret and handle the Markdown block. For instance:
-
-- **To export to HTML**: `C-c C-e h o` (exports and opens the HTML file in the default browser).
-- **To export to LaTeX/PDF**: `C-c C-e l o` (exports to LaTeX and opens the PDF file).
-- **To export to Markdown**: `C-c C-e M-m` (directly exports to a Markdown file).
-
-These commands ensure that the Markdown block is properly tagged and retains its formatting in the exported document.
-
-If you have any more questions or need further clarification, feel
-free to ask!  #+end_src
-* *How to export `markdown` blocks with syntax highlight?*
-:PROPERTIES:
-:vizier-thread-id: thread_Q1teTN2ZdIKPvKif3ZuzN42S
-:vizier-assistant-id: asst_k0LyQk3P0ugc93lkXqkzrP0x
-:END:
-
-#+begin_src markdown To export `markdown` blocks with syntax
-highlighting in Org-mode, you can make use of a package called
-`Pygments`, a syntax highlighter written in Python. Additionally,
-Org-mode supports various backends for exporting to formats like HTML
-and LaTeX, which can incorporate syntax highlighting.
-
-Here is a step-by-step guide to achieving syntax highlighting for
-Markdown blocks:
-
-### Step 1: Install Pygments
-
-First, make sure you have Pygments installed. If you don't have it
-installed, you can install it using `pip`:
-
-```sh
-pip install Pygments
-```
-
-### Step 2: Configure Org-mode for Syntax Highlighting
-
-Edit your Emacs configuration file (usually `.emacs` or `init.el`) to
-enable and configure syntax highlighting for source blocks:
-
-```elisp
-;; Enable syntax highlighting for source code blocks
-(setq org-src-fontify-natively t)
-(setq org-src-tab-acts-natively t)
-```
-
-### Step 3: Export to HTML with Syntax Highlighting
-
-For HTML export using Pygments, you need to configure Org-mode to
-include Pygments during HTML export. You can use `ox-html` and a
-custom CSS file that Pygments generates:
-
-1. Generate a CSS file for Pygments highlighting:
-   ```sh
-   pygmentize -S default -f html > pygments.css
-   ```
-
-2. Include the generated `pygments.css` in your Org-mode export. To do
-   this, you can either manually link it in your Org file or configure
-   Org-mode to include it automatically.
-
-#### Manual Link in Org File
-
-Add the following line to the top of your Org file to include the CSS file:
-
-```org
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="path/to/pygments.css" />
-```
-
-#### Automatic Inclusion via Configuration
-
-Add the following to your Emacs configuration to automatically include
-the CSS file in every exported HTML:
-
-```elisp
-(setq org-html-head-extra
-      "<link rel=\"stylesheet\" type=\"text/css\" href=\"path/to/pygments.css\" />")
-```
-
-### Step 4: Example Markdown Block with Syntax Highlighting
-
-Here is an example Org-mode file with a Markdown block and
-configuration for HTML export:
-
-```org
-#+TITLE: Example Org Document
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="path/to/pygments.css" />
-
-* Example Org Document
-
-Here is some sample content in Org-mode. Below is a block of Markdown
-with syntax highlighting.
-
-#+BEGIN_SRC markdown
-# This is a Markdown Title
-
-## This is a Subtitle
-
-Here is a list:
-- Item 1
-- Item 2
-- Item 3
-
-**Bold text** and *italic text* are also supported.
-#+END_SRC
-
-That's it for our Markdown block example.
-```
-
-### Exporting to HTML
-
-Export this Org file to HTML using `C-c C-e h o`. The exported HTML should now include the syntax highlighting from the Pygments CSS file.
-
-### Exporting to LaTeX with Syntax Highlighting
-
-If you want to export to LaTeX/PDF with syntax highlighting, you should install the `minted` package for LaTeX and configure Org-mode to use it.
-
-1. Install the `minted` package:
-   ```sh
-   sudo apt-get install texlive-latex-extra python-pygments
-   ```
-
-2. Configure Org-mode to use `minted` for LaTeX export:
-   ```elisp
-   ;; Use minted package for syntax highlighting
-   (setq org-latex-listings 'minted)
-   (setq org-latex-packages-alist '(("" "minted")))
-   (setq org-latex-minted-options
-         '(("frame" "lines")
-           ("linenos" "")))
-
-   ;; Ensure -shell-escape is enabled for pygments in minted
-   (setq org-latex-pdf-process
-         '("pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"
-           "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"
-           "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"))
-   ```
-
-### Example LaTeX/Org Mode Configuration
-
-Here is an example Org file configured for LaTeX export with syntax
-highlighting using `minted`:
-
-```org
-#+TITLE: Example Org Document
-#+LATEX_HEADER: \usepackage{minted}
-#+LATEX_HEADER: \newminted{markdown}{fontsize=\scriptsize, tabsize=4}
-
-* Example Org Document
-
-Here is some sample content in Org-mode. Below is a block of Markdown
-with syntax highlighting.
-
-#+BEGIN_SRC markdown
-# This is a Markdown Title
-
-## This is a Subtitle
-
-Here is a list:
-- Item 1
-- Item 2
-- Item 3
-
-**Bold text** and *italic text* are also supported.
-#+END_SRC
-
-That's it for our Markdown block example.
-```
-
-Export this Org file to PDF using `C-c C-e l o`. The exported PDF
-should now include the syntax highlighting.
-
-Follow these steps, and you should have nicely exported Markdown
-blocks with syntax highlighting in both HTML and PDF formats. If you
-have any further questions, feel free to ask!  #+end_src
-
-* What term `vizier` means?
-:PROPERTIES:
-:vizier-thread-id: thread_Q1teTN2ZdIKPvKif3ZuzN42S
-:vizier-assistant-id: asst_k0LyQk3P0ugc93lkXqkzrP0x
-:END:
-
-#+begin_src markdown
-  The term "vizier" has historical significance and is used to describe
-  a high-ranking political advisor or minister in various Middle
-  Eastern, Central Asian, North African, and some South Asian
-  governments.
-
-  ### Historical Context:
-
-  1. **Ancient Egypt**: In ancient Egypt, a vizier was the
-     highest-ranking official to serve the pharaoh, often overseeing the
-     administration of the kingdom. The vizier acted as a chief
-     minister, handling state affairs, the treasury, judiciary, and
-     more.
-
-  2. **Islamic Caliphates**: During the Islamic Golden Age, viziers were
-     key advisors and administrators under caliphs (Islamic rulers). The
-     most famous of these was perhaps the Abbasid viziers in Baghdad.
-
-  3. **Ottoman Empire**: In the Ottoman Empire, the Grand Vizier (Sadr-ı
-     Azam) was the head of the imperial government and second only to
-     the Sultan. The Grand Vizier had considerable autonomy and power in
-     administering the vast Ottoman territories.
-
-  4. **Persia and Mughal India**: In Persian and Mughal courts, viziers
-     held similar roles as chief advisors and administrators, managing
-     various aspects of governance and statecraft.
-
-  ### Literary and Cultural References:
-
-  - **The Thousand and One Nights (Arabian Nights)**: Viziers frequently
-    appear in Middle Eastern literature and folklore, often as wise
-    counselors or sometimes as scheming power-seekers.
-
-  - **Modern Usage**: The term "vizier" can be used metaphorically to
-    describe a trusted advisor or right-hand person in contemporary
-    contexts, though it retains a somewhat exotic and historical
-    connotation.
-
-  ### Etymology:
-
-  - The word "vizier" is derived from the Arabic word "وزير" (wazīr),
-    which means "helper" or "minister."
-  - It entered English through French and Turkish influences, reflecting
-    the historical interactions between Europe and the Islamic world.
-
-  In the context of Emacs Lisp and the function example you've been
-  working with, the usage of "vizier" is purely arbitrary or
-  metaphorical. It implies the function is acting as a guide or helper
-  to perform a series of tasks sequentially. If you have any specific
-  usage context or need more examples, feel free to let me know!
 #+end_src
+What do you know about the weather today in Donegal?
+
+#+begin_src markdown
+  I'm unable to access real-time data, including weather
+  updates. However, you can easily find the current weather in Donegal
+  through various methods:
+
+  1. **Weather Websites**: Websites like
+     [Weather.com](https://www.weather.com/), [BBC
+     Weather](https://www.bbc.com/weather), and [Met
+     Éireann](https://www.met.ie/) provide up-to-date weather
+     information for specific locations, including Donegal.
+
+  2. **Weather Apps**: Mobile apps like Weather.com, BBC Weather, and
+     Met Éireann apps give real-time weather forecasts and updates.
+
+  3. **Voice Assistants**: If you have a smartphone, you can ask your
+     voice assistant, such as Siri, Google Assistant, or Alexa, for the
+     current weather in Donegal.
+
+  4. **Local News**: Checking a local news website or channel can also
+     give you the latest weather updates for Donegal.
+
+  If you need anything else or want to discuss another topic, I'm here
+  to help!
+#+end_src
+
