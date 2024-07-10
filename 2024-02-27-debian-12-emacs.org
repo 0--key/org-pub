@@ -26,7 +26,7 @@ sure&fire manner.
 * Emacs ItSelf etc.
 
 #+begin_src sh
-sudo apt-get install emacs-nox git
+sudo apt-get install emacs-nox git wget
 #+end_src
 
 * Git Configuration
@@ -589,5 +589,16 @@ config =~/.emacs= in a single string:
 
 
 * Info System Extension
---Seems it is require `emacs-common-non-dfsg` installation
+-+Seems it is require `emacs-common-non-dfsg` installation
+#+begin_src sh
+  wget 'http://ftp.debian.org/debian/pool/non-free/e/emacs-non-dfsg/emacs-common-non-dfsg_28.2+1-2_all.deb' &&
+      sudo dpkg --install emacs-common-non-dfsg_28.2+1-2_all.deb &&
+      rm emacs-common-non-dfsg_28.2+1-2_all.deb
+#+end_src
+
+#+RESULTS:
+
 +python3.11-doc
+#+begin_src sh
+sudo apt-get install python3.11-doc
+#+end_src
