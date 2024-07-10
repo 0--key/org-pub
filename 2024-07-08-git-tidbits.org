@@ -132,3 +132,82 @@ tags: [tidbits]
   collaborators to your private repository.
 #+end_src
 
+* Pull conflict
+
+I made several commits, but when I try to push it the conflict happen:
+there are some changes in my repository, and my local version of it is
+obsolete. I review the newest commits and seems like they don't
+intersect with mine ones. What you can suggest in this case?
+
+#+begin_src markdown
+  When you encounter a conflict due to your local branch being behind
+  the remote branch, you can resolve this by pulling the latest changes
+  from the remote repository and then merging any conflicts. Here are
+  the steps:
+
+  1. **Fetch the latest changes**:
+     ```sh
+     git fetch origin
+     ```
+
+  2. **Merge the changes**:
+     If your local work is on the `master` branch (replace with your actual branch if different), you need to merge the changes from the remote branch:
+     ```sh
+     git merge origin/master
+     ```
+
+     If there are no conflicts, this will merge smoothly. If there are
+     conflicts, Git will mark them in the files, and you need to resolve
+     them manually.
+
+  3. **Resolve conflicts** (if any): Open the conflicting files, look
+     for conflict markers (`<<<<<<<`, `=======`, `>>>>>>>`), and resolve
+     the differences.
+
+     In Emacs using Magit:
+     - Open the conflicting file.
+     - Use `M-x magit-status` to open the Magit status buffer.
+     - Magit will list the conflicts. Use `e` (edit) on the conflicted
+       files to open them.
+     - Resolve the conflicts manually.
+     - After resolving, stage the resolved files (`s` in the Magit
+       status buffer).
+
+  4. **Add and commit the resolved conflicts**:
+     ```sh
+     git add <resolved_files>
+     git commit -m "Resolved merge conflicts"
+     ```
+
+  5. **Push your changes**:
+     ```sh
+     git push origin master
+     ```
+
+  ,**Alternative approach using rebase**: If you prefer a cleaner
+  history, you can use rebase instead of merge:
+
+  1. **Fetch and rebase**:
+     ```sh
+     git fetch origin
+     git rebase origin/master
+     ```
+
+     Resolve any conflicts during the rebase process, just as you would
+     with a merge.
+
+  2. **Continue rebase after resolving conflicts**:
+     ```sh
+     git rebase --continue
+     ```
+
+  3. **Push your rebased branch**:
+     In case of rebase, you might need to force push because rebase rewrites history.
+     ```sh
+     git push --force origin master
+     ```
+
+  Choose the method (merge or rebase) based on your preference for
+  handling the commit history.
+#+end_src
+
