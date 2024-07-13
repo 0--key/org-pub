@@ -1,11 +1,11 @@
 #+BEGIN_EXPORT html
 ---
 layout: page
-title: Open AI Assistant
+title: An Assistant Inferring
 tagline: " inside Org-Mode"
-permalink: /emacs/openai/assistant.html
-categories: [Python, OpenAI, Assistant]
-tags: []
+permalink: /emacs/openai/inferring.html
+categories: [Python, OpenAI]
+tags: [inferring]
 ---
 #+END_EXPORT
 #+STARTUP: showall indent
@@ -17,7 +17,7 @@ tags: []
 #+PROPERTY: vizier-assistant-id asst_oLuLDRdsSDyMcBAvpwCGkbGS
 #+TOC: headlines 2
 * Definitions
-** What is the meaning of verb `to infer`?
+** What is the meaning of verb =to infer=?
 #+begin_src markdown
   The verb "to infer" means to deduce or conclude information from
   evidence and reasoning rather than from explicit statements. It
@@ -35,7 +35,7 @@ tags: []
   deduction based on indirect evidence and context.
 #+end_src
 
-** What does "inferring" mean in the context of OpenAI's capabilities?
+** What does ~inferring~ mean in the context of OpenAI's capabilities?
 #+begin_src markdown
   In the context of OpenAI's capabilities, "inferring" refers to the
   process by which the model generates an output based on a given input
