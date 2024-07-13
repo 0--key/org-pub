@@ -15,7 +15,7 @@ tags: [code interpreter]
 #+PROPERTY: header-args+ :eval no-export
 #+PROPERTY: vizier-thread-id thread_bEfocrvYp57YATvOo3EmvkDV
 #+PROPERTY: vizier-assistant-id asst_Qy77LlTvrNX9xGWl5jxGnK46
-#+TOC: headlines 2
+#+TOC: headlines 3
 
 
 * Preamble
@@ -26,11 +26,37 @@ English and the associated test suite requirements.
 
 * Prerequisites
 
-=OpenAI Assistant= with ~code_interpreter~ as the tool.
+=OpenAI Assistant= with ~code_interpreter~ as the tool and
+instructions:
+#+begin_quote
+You are an experienced Python programmer proficient in test-driven
+development.
+#+end_quote
 
-* Question #1 medium
+* Functional Programming
+** A primitive task
 
-Write a function `last_digit` that takes in two numbers a and b and
+*** Description
+Write a function /get_vowels_count/ that returns the number (count) of
+vowels in the given string. We will consider a, e, i, o, and u as
+vowels.
+
+/get_vowels_count/ must pass this assertion:
+#+begin_src python
+assert (get_vowels_count('John the dully boy write this book') == 9)
+#+end_src
+
+*** Answer
+#+begin_src python
+  def get_vowels_count(s):
+      return sum(1 for char in s.lower() if char in 'aeiou')
+
+  # Assertion to validate the function
+  assert (get_vowels_count('John the dully boy write this book') == 9)
+#+end_src
+** A solution requiring nuanced comprehension
+*** Task description
+Write a function /last_digit/ that takes in two numbers a and b and
 returns the last decimal digit of a^b.  Note that a and b may be very
 large!
 
@@ -40,16 +66,17 @@ over 10^{92} decimal digits, is 6.
 
 The inputs to your function will always be non-negative integers.
 
-`last_digit` ought to pass all this assertions:
-```
+/last_digit/ must pass successfully through all of these assertions:
+#+begin_src python
 assert(last_digit(4, 1) == 4)
 assert(last_digit(4, 2) == 6)
 assert(last_digit(9, 7) == 9)
 assert(last_digit(10, 10 ** 10) == 0)
 assert(last_digit(2 ** 200, 2 ** 300) == 6)
-```
-#+begin_src markdown
-  ```python
+#+end_src
+
+*** Answer
+#+begin_src python
   def last_digit(a, b):
       if b == 0:
           return 1
@@ -61,10 +88,9 @@ assert(last_digit(2 ** 200, 2 ** 300) == 6)
   assert(last_digit(9, 7) == 9)
   assert(last_digit(10, 10 ** 10) == 0)
   assert(last_digit(2 ** 200, 2 ** 300) == 6)
-  ```
 #+end_src
 
-** Validation
+*** Validation
 #+begin_src python
 # Just a test
   print(pow(2**200, 2**300, 10))
@@ -73,29 +99,20 @@ assert(last_digit(2 ** 200, 2 ** 300) == 6)
 #+RESULTS:
 : 6
 
+*** Conclusion
 
-* Question #2 primitive
+#+begin_quote
+*Not bad at all!!!*
+#+BEGIN_EXPORT html
+<p align="right">Tony</p>
+#+END_EXPORT
+#+end_quote
 
-Write a function `get_vowels_count` that returns the number (count) of
-vowels in the given string. We will consider a, e, i, o, and u as
-vowels.
+** Raw and obscure description 
 
-`get_vowels_count` ought to pass this assertion:
-```
-assert (get_vowels_count('John the dully boy write this book') == 9)
-```
+Test the /ability to infer/ by submitting a poorly formatted task.
 
-#+begin_src markdown
-  ```python
-  def get_vowels_count(s):
-      return sum(1 for char in s.lower() if char in 'aeiou')
-
-  # Assertion to validate the function
-  assert (get_vowels_count('John the dully boy write this book') == 9)
-  ```
-#+end_src
-
-* Question #3 with raw description
+*** Description
 
 Consider a sequence u where u is defined as follows:
 
@@ -107,20 +124,22 @@ Ex: u = [1, 3, 4, 7, 9, 10, 13, 15, 19, 21, 22, 27, ...]
 1 gives 3 and 4, then 3 gives 7 and 10, 4 gives 9 and 13, then 7 gives 15
 and 22 and so on...
 
-Task:
+*Task:*
 
 Given parameter n the function dbl_linear (or dblLinear...) returns the element
 u(n) of the ordered (with <) sequence u.
 
-Example:
+~Example~:
 
 dbl_linear(10) should return 22
 
-Note:
+_Note:_
 
 Focus attention on efficiency
-#+begin_src markdown
-  ```python
+
+*** Answer
+
+#+begin_src python
   from heapq import heappop, heappush
 
   def dbl_linear(n):
@@ -138,15 +157,15 @@ Focus attention on efficiency
 
   # Example assertion to validate the function
   assert(dbl_linear(10) == 22)
-  ```
 #+end_src
 
-* #4 another raw description
+** A more complex task
 
+*** Description
 For a given chemical formula represented by a string, count the number
 of atoms of each element contained in the molecule and return an object.
 
-For example:
+=For example:=
 
 water = 'H2O'
 parse_molecule(water)                 # return {H: 2, O: 1}
@@ -165,63 +184,76 @@ two nitrogen atoms and six oxygen atoms.
 Note that brackets may be round, square or curly and can also be nested.
 Index after the braces is optional.
 
-#+begin_src markdown
-  ```python
-  import re
-  from collections import defaultdict
+*** Answer
+#+begin_src python
+import re
+from collections import defaultdict
 
-  def parse_molecule(formula):
-      def multiply_dict(d, n):
-          return {k: v * n for k, v in d.items()}
-    
-      def parse_section(section):
-          atoms = defaultdict(int)
-          i = 0
-          while i < len(section):
-              if section[i].isalpha():
-                  j = i + 1
-                  while j < len(section) and section[j].islower():
-                      j += 1
-                  element = section[i:j]
-                  k = j
-                  while k < len(section) and section[k].isdigit():
-                      k += 1
-                  count = int(section[j:k] or 1)
-                  atoms[element] += count
-                  i = k
-              elif section[i] in '([{':
-                  stack = []
-                  brackets = {'(': ')', '[': ']', '{': '}'}
-                  close_bracket = brackets[section[i]]
-                  for j in range(i, len(section)):
-                      if section[j] == section[i]:
-                          stack.append(section[i])
-                      elif section[j] == close_bracket:
-                          stack.pop()
-                      if not stack:
-                          break
-                  content = parse_section(section[i + 1: j])
-                  k = j + 1
-                  while k < len(section) and section[k].isdigit():
-                      k += 1
-                  multiplier = int(section[j + 1: k] or 1)
-                  content = multiply_dict(content, multiplier)
-                  for key, val in content.items():
-                      atoms[key] += val
-                  i = k
-          return atoms
-        
-      return parse_section(formula)
+def parse_molecule(formula):
+    def multiply_dict(d, n):
+        return {k: v * n for k, v in d.items()}
 
-  # Example assertions to validate the function
-  assert parse_molecule('H2O') == {'H': 2, 'O': 1}
-  assert parse_molecule('Mg(OH)2') == {'Mg': 1, 'O': 2, 'H': 2}
-  assert parse_molecule('K4[ON(SO3)2]2') == {'K': 4, 'O': 14, 'N': 2, 'S': 4}
-  ```
+    def parse_section(section):
+        atoms = defaultdict(int)
+        i = 0
+        while i < len(section):
+            if section[i].isalpha():
+                j = i + 1
+                while j < len(section) and section[j].islower():
+                    j += 1
+                element = section[i:j]
+                k = j
+                while k < len(section) and section[k].isdigit():
+                    k += 1
+                count = int(section[j:k] or 1)
+                atoms[element] += count
+                i = k
+            elif section[i] in '([{':
+                stack = []
+                brackets = {'(': ')', '[': ']', '{': '}'}
+                close_bracket = brackets[section[i]]
+                for j in range(i, len(section)):
+                    if section[j] == section[i]:
+                        stack.append(section[i])
+                    elif section[j] == close_bracket:
+                        stack.pop()
+                    if not stack:
+                        break
+                content = parse_section(section[i + 1: j])
+                k = j + 1
+                while k < len(section) and section[k].isdigit():
+                    k += 1
+                multiplier = int(section[j + 1: k] or 1)
+                content = multiply_dict(content, multiplier)
+                for key, val in content.items():
+                    atoms[key] += val
+                i = k
+        return atoms
+
+    return parse_section(formula)
+
+# Example assertions to validate the function
+if (parse_molecule('H2O') == {'H': 2, 'O': 1}):
+    print("Water!")
+
+assert parse_molecule('Mg(OH)2') == {'Mg': 1, 'O': 2, 'H': 2}
+assert parse_molecule('K4[ON(SO3)2]2') == {'K': 4, 'O': 14, 'N': 2, 'S': 4}
 #+end_src
 
-* #5
+#+RESULTS:
+: Water!
 
+*** Sum up
+#+begin_quote
+The assistant even wrote a set of assertions to prove the correctness of his code.
+   #+BEGIN_EXPORT html
+   <p align="right">Awesome!</p>
+   #+END_EXPORT
+#+end_quote
+
+** Another check of Assistant's dexterity
+
+*** Task description
 You have to create a function that takes a positive integer number and returns the
 next bigger number formed by the same digits:
 
@@ -235,201 +267,387 @@ next_bigger(9)==-1
 next_bigger(111)==-1
 next_bigger(531)==-1
 
-#+begin_src markdown
-  ```python
-  def next_bigger(n):
-      digits = list(str(n))
-    
-      # Find the rightmost digit that is smaller than the digit next to it
-      for i in range(len(digits) - 2, -1, -1):
-          if digits[i] < digits[i + 1]:
-              break
-      else:
-          return -1
-    
-      # Find the smallest digit on the right that is larger than digits[i]
-      for j in range(len(digits) - 1, i, -1):
-          if digits[j] > digits[i]:
-              break
-    
-      # Swap the two digits
-      digits[i], digits[j] = digits[j], digits[i]
-    
-      # Reverse the digits to the right of i
-      digits = digits[:i + 1] + sorted(digits[i + 1:])
-    
-      return int(''.join(digits))
+*** Answer
+#+begin_src python
+def next_bigger(n):
+    digits = list(str(n))
+  
+    # Find the rightmost digit that is smaller than the digit next to it
+    for i in range(len(digits) - 2, -1, -1):
+        if digits[i] < digits[i + 1]:
+            break
+    else:
+        return -1
+  
+    # Find the smallest digit on the right that is larger than digits[i]
+    for j in range(len(digits) - 1, i, -1):
+        if digits[j] > digits[i]:
+            break
+  
+    # Swap the two digits
+    digits[i], digits[j] = digits[j], digits[i]
+  
+    # Reverse the digits to the right of i
+    digits = digits[:i + 1] + sorted(digits[i + 1:])
+  
+    return int(''.join(digits))
 
-  # Example assertions to validate the function
-  assert next_bigger(12) == 21
-  assert next_bigger(513) == 531
-  assert next_bigger(2017) == 2071
-  assert next_bigger(9) == -1
-  assert next_bigger(111) == -1
-  assert next_bigger(531) == -1
-  ```
+# Example assertions to validate the function
+assert next_bigger(12) == 21
+assert next_bigger(513) == 531
+assert next_bigger(2017) == 2071
+assert next_bigger(9) == -1
+assert next_bigger(111) == -1
+assert next_bigger(531) == -1
+# my own test to be sure:
+if next_bigger(123456789) == 123456798:
+    print("Whoa!")
 #+end_src
 
-* # Optimization
+#+RESULTS:
+: Whoa!
 
-Optimize the function `parse_molecule`:
+** Thread-specific question
 
-```
-  import re
-  from collections import defaultdict
+To test the aptitude to make contextual (/conversation Thread/ related)
+suggestions.
 
-  def parse_molecule(formula):
-      def multiply_dict(d, n):
-          return {k: v * n for k, v in d.items()}
-    
-      def parse_section(section):
-          atoms = defaultdict(int)
-          i = 0
-          while i < len(section):
-              if section[i].isalpha():
-                  j = i + 1
-                  while j < len(section) and section[j].islower():
-                      j += 1
-                  element = section[i:j]
-                  k = j
-                  while k < len(section) and section[k].isdigit():
-                      k += 1
-                  count = int(section[j:k] or 1)
-                  atoms[element] += count
-                  i = k
-              elif section[i] in '([{':
-                  stack = []
-                  brackets = {'(': ')', '[': ']', '{': '}'}
-                  close_bracket = brackets[section[i]]
-                  for j in range(i, len(section)):
-                      if section[j] == section[i]:
-                          stack.append(section[i])
-                      elif section[j] == close_bracket:
-                          stack.pop()
-                      if not stack:
-                          break
-                  content = parse_section(section[i + 1: j])
-                  k = j + 1
-                  while k < len(section) and section[k].isdigit():
-                      k += 1
-                  multiplier = int(section[j + 1: k] or 1)
-                  content = multiply_dict(content, multiplier)
-                  for key, val in content.items():
-                      atoms[key] += val
-                  i = k
-          return atoms
-        
-      return parse_section(formula)
-```
+*** Task
 
-it ought to fit into this set of assertions:
-```
-  assert parse_molecule('H2O') == {'H': 2, 'O': 1}
-  assert parse_molecule('Mg(OH)2') == {'Mg': 1, 'O': 2, 'H': 2}
-  assert parse_molecule('K4[ON(SO3)2]2') == {'K': 4, 'O': 14, 'N': 2, 'S': 4}
-```
-#+begin_src markdown
-  ```python
-  import re
-  from collections import defaultdict
+Write the function ~parse_molecule~ without using the standard library
+modules ~re~ and ~collections~.
 
-  def parse_molecule(formula):
-      def multiply_dict(d, n):
-          for k in d:
-              d[k] *= n
-          return d
-    
-      def parse_section(section):
-          atoms = defaultdict(int)
-          pattern = re.compile(r'([A-Z][a-z]*)(\d*)|([\(\[\{])|([\)\]\}])(\d*)')
-          stack = [defaultdict(int)]
-          multipliers = [1]
-        
-          for match in pattern.finditer(section):
-              element, num, open_brac, close_brac, multiplier = match.groups()
-              if element:
-                  count = int(num) if num else 1
-                  stack[-1][element] += count * multipliers[-1]
-              elif open_brac:
-                  stack.append(defaultdict(int))
-                  multipliers.append(multipliers[-1])
-              elif close_brac:
-                  if multiplier:
-                      count = int(multiplier)
-                      stack[-1] = multiply_dict(stack.pop(), count)
-                  for k, v in stack.pop().items():
-                      stack[-1][k] += v * multipliers[-1]
-          return stack.pop()
-    
-      return parse_section(formula)
+*** Solution
 
-  # Example assertions to validate the function
-  assert parse_molecule('H2O') == {'H': 2, 'O': 1}
-  assert parse_molecule('Mg(OH)2') == {'Mg': 1, 'O': 2, 'H': 2}
-  assert parse_molecule('K4[ON(SO3)2]2') == {'K': 4, 'O': 14, 'N': 2, 'S': 4}
-  ```
+#+begin_src python
+def parse_molecule(formula):
+    def multiply_dict(d, n):
+        for k in d:
+            d[k] *= n
+        return d
+  
+    def parse_section(section):
+        atoms = {}
+        stack = []
+        multipliers = [1]
+        n = len(section)
+        i = 0
+      
+        while i < n:
+            if section[i].isalpha():
+                start = i
+                i += 1
+                while i < n and section[i].islower():
+                    i += 1
+                element = section[start:i]
+                start = i
+                while i < n and section[i].isdigit():
+                    i += 1
+                count = int(section[start:i]) if start != i else 1
+                atoms[element] = atoms.get(element, 0) + count * multipliers[-1]
+            elif section[i] in '([{':
+                stack.append(atoms)
+                atoms = {}
+                multipliers.append(multipliers[-1])
+                i += 1
+            elif section[i] in ')]}':
+                i += 1
+                start = i
+                while i < n and section[i].isdigit():
+                    i += 1
+                multiplier = int(section[start:i]) if start != i else 1
+                atoms = multiply_dict(atoms, multiplier)
+                if stack:
+                    prev_atoms = stack.pop()
+                    for k, v in atoms.items():
+                        prev_atoms[k] = prev_atoms.get(k, 0) + v
+                    atoms = prev_atoms
+                multipliers.pop()
+            else:
+                i += 1
+
+        return atoms
+  
+    return parse_section(formula)
+
+# Example assertions to validate the function
+assert parse_molecule('H2O') == {'H': 2, 'O': 1}
+assert parse_molecule('Mg(OH)2') == {'Mg': 1, 'O': 2, 'H': 2}
+assert parse_molecule('K4[ON(SO3)2]2') == {'K': 4, 'O': 14, 'N': 2, 'S': 4}
+# my own check-up:
+if parse_molecule('H2O2') == {'H': 2, 'O': 2}:
+    print("It is a hydrogen peroxide")
 #+end_src
 
-* #7 Thread-specific question
+#+RESULTS:
+: It is a hydrogen peroxide
+** The Snag
 
-Write the function `parse_molecule` not using standard library modules
-`re` and `collections`.
-#+begin_src markdown
-  ```python
-  def parse_molecule(formula):
-      def multiply_dict(d, n):
-          for k in d:
-              d[k] *= n
-          return d
+The balance between task intricacy and ambiguity of description.
+
+*** Question
+
+Optimize the function =parse_molecule=:
+
+
+#+begin_src python
+import re
+from collections import defaultdict
+
+def parse_molecule(formula):
+    def multiply_dict(d, n):
+        return {k: v * n for k, v in d.items()}
+  
+    def parse_section(section):
+        atoms = defaultdict(int)
+        i = 0
+        while i < len(section):
+            if section[i].isalpha():
+                j = i + 1
+                while j < len(section) and section[j].islower():
+                    j += 1
+                element = section[i:j]
+                k = j
+                while k < len(section) and section[k].isdigit():
+                    k += 1
+                count = int(section[j:k] or 1)
+                atoms[element] += count
+                i = k
+            elif section[i] in '([{':
+                stack = []
+                brackets = {'(': ')', '[': ']', '{': '}'}
+                close_bracket = brackets[section[i]]
+                for j in range(i, len(section)):
+                    if section[j] == section[i]:
+                        stack.append(section[i])
+                    elif section[j] == close_bracket:
+                        stack.pop()
+                    if not stack:
+                        break
+                content = parse_section(section[i + 1: j])
+                k = j + 1
+                while k < len(section) and section[k].isdigit():
+                    k += 1
+                multiplier = int(section[j + 1: k] or 1)
+                content = multiply_dict(content, multiplier)
+                for key, val in content.items():
+                    atoms[key] += val
+                i = k
+        return atoms
+      
+    return parse_section(formula)
+#+end_src
+
+it must successfully pass through this set of assertions:
+
+#+begin_src python
+assert parse_molecule('H2O') == {'H': 2, 'O': 1}
+assert parse_molecule('Mg(OH)2') == {'Mg': 1, 'O': 2, 'H': 2}
+assert parse_molecule('K4[ON(SO3)2]2') == {'K': 4, 'O': 14, 'N': 2, 'S': 4}
+#+end_src
+
+*** Answer
+
+#+begin_src python
+def parse_molecule(formula):
+    def multiply_dict(d, n):
+        for k in d:
+            d[k] *= n
+        return d
     
-      def parse_section(section):
-          atoms = {}
-          stack = []
-          multipliers = [1]
-          n = len(section)
-          i = 0
+    def parse_section(section, multiplier=1):
+        atoms = {}
+        stack = []
+        multipliers = [multiplier]
+        n = len(section)
+        i = 0
         
-          while i < n:
-              if section[i].isalpha():
-                  start = i
-                  i += 1
-                  while i < n and section[i].islower():
-                      i += 1
-                  element = section[start:i]
-                  start = i
-                  while i < n and section[i].isdigit():
-                      i += 1
-                  count = int(section[start:i]) if start != i else 1
-                  atoms[element] = atoms.get(element, 0) + count * multipliers[-1]
-              elif section[i] in '([{':
-                  stack.append(atoms)
-                  atoms = {}
-                  multipliers.append(multipliers[-1])
-                  i += 1
-              elif section[i] in ')]}':
-                  i += 1
-                  start = i
-                  while i < n and section[i].isdigit():
-                      i += 1
-                  multiplier = int(section[start:i]) if start != i else 1
-                  atoms = multiply_dict(atoms, multiplier)
-                  if stack:
-                      prev_atoms = stack.pop()
-                      for k, v in atoms.items():
-                          prev_atoms[k] = prev_atoms.get(k, 0) + v
-                      atoms = prev_atoms
-                  multipliers.pop()
-              else:
-                  i += 1
+        while i < n:
+            if section[i].isalpha():
+                start = i
+                i += 1
+                while i < n and section[i].islower():
+                    i += 1
+                element = section[start:i]
+                start = i
+                while i < n and section[i].isdigit():
+                    i += 1
+                count = int(section[start:i]) if start != i else 1
+                atoms[element] = atoms.get(element, 0) + count * multipliers[-1]
+            elif section[i] in '([{':
+                stack.append((atoms, multipliers.pop()))
+                atoms, multipliers[-1] = {}, 1
+                multipliers.append(multiplier)
+                i += 1
+            elif section[i] in ')]}':
+                i += 1
+                start = i
+                while i < n and section[i].isdigit():
+                    i += 1
+                sub_multiplier = int(section[start:i]) if start != i else 1
+                if stack:
+                    atoms = multiply_dict(atoms, sub_multiplier)
+                    prev_atoms, prev_multiplier = stack.pop()
+                    for k, v in atoms.items():
+                        prev_atoms[k] = prev_atoms.get(k, 0) + v * prev_multiplier
+                    atoms = prev_atoms
+                multipliers.pop()
+            else:
+                i += 1
 
-          return atoms
+        return atoms
     
-      return parse_section(formula)
+    return parse_section(formula)
 
-  # Example assertions to validate the function
-  assert parse_molecule('H2O') == {'H': 2, 'O': 1}
-  assert parse_molecule('Mg(OH)2') == {'Mg': 1, 'O': 2, 'H': 2}
-  assert parse_molecule('K4[ON(SO3)2]2') == {'K': 4, 'O': 14, 'N': 2, 'S': 4}
-  ```
+# Example assertions to validate the function
+assert parse_molecule('H2O') == {'H': 2, 'O': 1}
+assert parse_molecule('Mg(OH)2') == {'Mg': 1, 'O': 2, 'H': 2}
+assert parse_molecule('K4[ON(SO3)2]2') == {'K': 4, 'O': 14, 'N': 2, 'S': 4}
+#+end_src
+
+#+RESULTS:
+
+*** It is the limit!
+
+
+
+* Object-Oriented Programming
+
+** Double Linked List
+
+Write the OOP implementation of double-linked list, and the test suite
+to check up its main features:
+- add node;
+- delete node;
+- etc.
+
+
+*** Implementation
+
+Here's the implementation of a double-linked list in Python with a
+basic test suite to verify its main functionalities.
+
+#+begin_src python :session dll :results none
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.next = None
+        self.prev = None
+
+class DoubleLinkedList:
+    def __init__(self):
+        self.head = None
+        self.tail = None
+        
+    def add_node(self, value):
+        new_node = Node(value)
+        if not self.head:
+            self.head = self.tail = new_node
+        else:
+            self.tail.next = new_node
+            new_node.prev = self.tail
+            self.tail = new_node
+            
+    def delete_node(self, value):
+        current = self.head
+        while current:
+            if current.value == value:
+                if current.prev:
+                    current.prev.next = current.next
+                else:
+                    self.head = current.next
+                if current.next:
+                    current.next.prev = current.prev
+                else:
+                    self.tail = current.prev
+                return True
+            current = current.next
+        return False
+    
+    def find_node(self, value):
+        current = self.head
+        while current:
+            if current.value == value:
+                return current
+            current = current.next
+        return None
+    
+    def to_list(self):
+        result = []
+        current = self.head
+        while current:
+            result.append(current.value)
+            current = current.next
+        return result
+
+### Test suite:
+def test_double_linked_list():
+    dll = DoubleLinkedList()
+    # Test add_node
+    dll.add_node(1)
+    dll.add_node(2)
+    dll.add_node(3)
+    assert dll.to_list() == [1, 2, 3], f"Expected: [1, 2, 3], Got: {dll.to_list()}"
+
+    # Test find_node
+    node = dll.find_node(2)
+    assert node is not None and node.value == 2, f"Expected: 2, Got: {node.value if node else None}"
+    
+    node = dll.find_node(4)
+    assert node is None, f"Expected: None, Got: {node.value if node else None}"
+    
+    # Test delete_node
+    assert dll.delete_node(2) == True, "Node with value 2 should be found and deleted"
+    assert dll.to_list() == [1, 3], f"Expected: [1, 3], Got: {dll.to_list()}"
+    
+    assert dll.delete_node(2) == False, "Node with value 2 should not be found"
+    
+    assert dll.delete_node(1) == True, "Node with value 1 should be found and deleted"
+    assert dll.to_list() == [3], f"Expected: [3], Got: {dll.to_list()}"
+    
+    assert dll.delete_node(3) == True, "Node with value 3 should be found and deleted"
+    assert dll.to_list() == [], f"Expected: [], Got: {dll.to_list()}"
+    
+    assert dll.delete_node(3) == False, "Node with value 3 should not be found"
+    print("All tests are passed successfully")
+#+end_src
+
+*** Run tests
+#+begin_src python :session dll
+test_double_linked_list()
+#+end_src
+
+#+RESULTS:
+: All tests are passed successfully
+
+You can run the `test_doubly_linked_list` function to verify that the
+doubly-linked list implementation works as expected. This test suite
+checks the main features such as adding nodes, deleting nodes, finding
+nodes, and converting the list to a Python list.
+
+
+* Corollary
+
+** Question
+
+What is your opinion about writing Python code using the OpenAI
+Assistant equipped with the code interpreter tool? I see it as a
+*killer feature*, beyond a doubt. What are your thoughts on including
+test suites for the generated code? Is it necessary to /provide the
+test suites beforehand/ to simplify and clarify the task of Python
+code generation?
+
+** Answer
+
+#+begin_src markdown
+  Using an AI assistant equipped with a code interpreter tool is indeed
+  a powerful feature that can greatly enhance productivity and code
+  quality by providing quick feedback and validation of the generated
+  code. Including test suites for the generated code is not only
+  beneficial but practically necessary for ensuring the correctness and
+  robustness of the implementations. Providing the test suites
+  beforehand can indeed simplify and clarify the task of Python code
+  generation, as it sets clear expectations and constraints, enabling
+  more focused and accurate responses.
 #+end_src
 
