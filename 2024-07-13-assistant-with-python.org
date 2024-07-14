@@ -506,11 +506,7 @@ assert parse_molecule('Mg(OH)2') == {'Mg': 1, 'O': 2, 'H': 2}
 assert parse_molecule('K4[ON(SO3)2]2') == {'K': 4, 'O': 14, 'N': 2, 'S': 4}
 #+end_src
 
-#+RESULTS:
-
 *** It is the limit!
-
-
 
 * Object-Oriented Programming
 
@@ -581,7 +577,6 @@ class DoubleLinkedList:
             current = current.next
         return result
 
-### Test suite:
 def test_double_linked_list():
     dll = DoubleLinkedList()
     # Test add_node
