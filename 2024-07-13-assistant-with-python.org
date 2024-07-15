@@ -1118,3 +1118,12 @@ code generation?
   more focused and accurate responses.
 #+end_src
 
+* An Acid Note
+
+Despite the powerful ~OpenAI~ algorithms, the cornerstone of success
+in /augmented Python development/ is *prompt clarity*. A vague,
+uncertain, and convoluted task description results in incorrect
+answers.
+
+The *[[https://www.mtu.edu/cls/undergraduate/human-factors/what/][human factors]]* remain the weakest link in the code development
+chain.
