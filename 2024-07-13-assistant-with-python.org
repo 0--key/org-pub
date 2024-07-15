@@ -953,6 +953,145 @@ This =unittest= test suite includes the following tests:
 To run the tests, save the code in a file and execute the file. The
 =unittest= framework will discover and run all the test methods.
 
+** Clarification
+
+*** Question
+
+Rewrite class =TestDoubleLinkedList=:
+
+The chunks like
+#+begin_src python
+        self.dll.add_node(1)
+        self.dll.add_node(2)
+        self.dll.add_node(3)
+#+end_src
+are redundant and unnecessary repetition. Put them into =setUp= method.
+
+*** Answer
+
+Sure, here's the updated test suite for the =DoubleLinkedList=, where
+the repetitive setup code has been moved into the =setUp= method.
+
+# >> Updated Test Suite with Optimized =setUp=
+
+#+begin_src python
+import unittest
+
+class DoubleLinkedList:
+    def __init__(self):
+        self.head = None
+        self.tail = None
+        self.values = set()
+
+    def add_node(self, value):
+        if value in self.values:
+            raise Exception("This value is already in the list!")
+
+        new_node = Node(value)
+        if not self.head:
+            self.head = self.tail = new_node
+        else:
+            self.tail.next = new_node
+            new_node.prev = self.tail
+            self.tail = new_node
+        self.values.add(value)
+
+    def delete_node(self, value):
+        current = self.head
+        while current:
+            if current.value == value:
+                self.values.remove(value)
+                if current.prev:
+                    current.prev.next = current.next
+                else:
+                    self.head = current.next
+                if current.next:
+                    current.next.prev = current.prev
+                else:
+                    self.tail = current.prev
+                return True
+            current = current.next
+        return False
+
+    def find_node(self, value):
+        current = self.head
+        while current:
+            if current.value == value:
+                return current
+            current = current.next
+        return None
+
+    def __repr__(self):
+        result = []
+        current = self.head
+        while current:
+            result.append(current.value)
+            current = current.next
+        return str(result)
+
+
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.next = None
+        self.prev = None
+
+
+class TestDoubleLinkedList(unittest.TestCase):
+    def setUp(self):
+        self.dll = DoubleLinkedList()
+        self.dll.add_node(1)
+        self.dll.add_node(2)
+        self.dll.add_node(3)
+        
+    def test_add_node(self):
+        self.assertEqual(repr(self.dll), str([1, 2, 3]))
+        
+    def test_add_duplicate_node(self):
+        with self.assertRaises(Exception) as context:
+            self.dll.add_node(2)
+        self.assertEqual(str(context.exception), "This value is already in the list!")
+    
+    def test_find_node(self):
+        node = self.dll.find_node(2)
+        self.assertIsNotNone(node)
+        self.assertEqual(node.value, 2)
+        
+        node = self.dll.find_node(4)
+        self.assertIsNone(node)
+    
+    def test_delete_node(self):
+        self.assertTrue(self.dll.delete_node(2))
+        self.assertEqual(repr(self.dll), str([1, 3]))
+        
+        self.assertFalse(self.dll.delete_node(2))
+        
+        self.assertTrue(self.dll.delete_node(1))
+        self.assertEqual(repr(self.dll), str([3]))
+        
+        self.assertTrue(self.dll.delete_node(3))
+        self.assertEqual(repr(self.dll), str([]))
+        
+        self.assertFalse(self.dll.delete_node(3))
+unittest.main(exit=False)
+#+end_src
+
+#+RESULTS:
+: ....
+: ----------------------------------------------------------------------
+: Ran 4 tests in 0.000s
+: 
+: OK
+
+
+# >> Explanation
+
+- The =setUp= method now initializes the list and adds the nodes =1=,
+  =2=, and =3= for each test method.
+- Each test now assumes the list has these three elements from the
+  start, reducing redundancy and unnecessary repetition.
+- The =DoubleLinkedList= and =Node= classes are now included in the
+  same file for completeness.
 
 * Corollary
 
