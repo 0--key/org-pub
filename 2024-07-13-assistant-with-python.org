@@ -870,6 +870,89 @@ duplicate values are not allowed and that the main functionalities
 such as adding nodes, deleting nodes, and finding nodes work
 correctly.
 
+** Customization
+
+*** Question
+Rewrite =test_double_linked_list= in =unittest= style, please.
+
+*** Answer
+
+Here's the modified test suite for the =DoubleLinkedList= class using
+the =unittest= framework.
+
+# >> Updated Test Suite Using =unittest=
+
+#+begin_src python
+import unittest
+
+class TestDoubleLinkedList(unittest.TestCase):
+    def setUp(self):
+        self.dll = DoubleLinkedList()
+        
+    def test_add_node(self):
+        self.dll.add_node(1)
+        self.dll.add_node(2)
+        self.dll.add_node(3)
+        self.assertEqual(repr(self.dll), str([1, 2, 3]))
+        
+    def test_add_duplicate_node(self):
+        self.dll.add_node(1)
+        self.dll.add_node(2)
+        with self.assertRaises(Exception) as context:
+            self.dll.add_node(2)
+        self.assertEqual(str(context.exception), "This value is already in the list!")
+    
+    def test_find_node(self):
+        self.dll.add_node(1)
+        self.dll.add_node(2)
+        self.dll.add_node(3)
+        node = self.dll.find_node(2)
+        self.assertIsNotNone(node)
+        self.assertEqual(node.value, 2)
+        
+        node = self.dll.find_node(4)
+        self.assertIsNone(node)
+    
+    def test_delete_node(self):
+        self.dll.add_node(1)
+        self.dll.add_node(2)
+        self.dll.add_node(3)
+        
+        self.assertTrue(self.dll.delete_node(2))
+        self.assertEqual(repr(self.dll), str([1, 3]))
+        
+        self.assertFalse(self.dll.delete_node(2))
+        
+        self.assertTrue(self.dll.delete_node(1))
+        self.assertEqual(repr(self.dll), str([3]))
+        
+        self.assertTrue(self.dll.delete_node(3))
+        self.assertEqual(repr(self.dll), str([]))
+        
+        self.assertFalse(self.dll.delete_node(3))
+unittest.main(exit=False) # Emacs' Babel unittest run approach
+#+end_src
+
+#+RESULTS:
+: ....
+: ----------------------------------------------------------------------
+: Ran 4 tests in 0.000s
+: 
+: OK
+
+
+This =unittest= test suite includes the following tests:
+
+1. **test_add_node**: Tests adding nodes to the list.
+2. **test_add_duplicate_node**: Tests that adding a duplicate node
+   raises an exception.
+3. **test_find_node**: Tests finding existing and non-existing nodes
+   in the list.
+4. **test_delete_node**: Tests deleting nodes from the list.
+
+To run the tests, save the code in a file and execute the file. The
+=unittest= framework will discover and run all the test methods.
+
 
 * Corollary
 
