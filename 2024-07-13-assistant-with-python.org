@@ -736,6 +736,140 @@ checks the main features such as adding nodes, deleting nodes, finding
 nodes, and uses the =__repr__= method to convert the list to a string
 representation for comparison.
 
+** Extension
+
+*** Task
+
+The name of class is not =DoublyLinkedList= but =DoubleLinkedList=,
+bear it in your mind, please.
+
+Add the feature to prevent same nodes inclusion into the
+DoubleLinkedList. Each node must have the unique value. The attempt to
+insert the node with not unique value must throw the =Exception=:
+"This value is already in the list!"
+
+*** Answer
+
+Here's the updated implementation of the =DoubleLinkedList= class with
+the feature to ensure unique node values. If an attempt is made to
+insert a node with a non-unique value, an =Exception= is raised with
+the message "This value is already in the list!".
+
+# >> Updated Double-Linked List Implementation
+
+#+begin_src python
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.next = None
+        self.prev = None
+
+class DoubleLinkedList:
+    def __init__(self):
+        self.head = None
+        self.tail = None
+        self.values = set()
+        
+    def add_node(self, value):
+        if value in self.values:
+            raise Exception("This value is already in the list!")
+        
+        new_node = Node(value)
+        if not self.head:
+            self.head = self.tail = new_node
+        else:
+            self.tail.next = new_node
+            new_node.prev = self.tail
+            self.tail = new_node
+        self.values.add(value)
+            
+    def delete_node(self, value):
+        current = self.head
+        while current:
+            if current.value == value:
+                self.values.remove(value)
+                if current.prev:
+                    current.prev.next = current.next
+                else:
+                    self.head = current.next
+                if current.next:
+                    current.next.prev = current.prev
+                else:
+                    self.tail = current.prev
+                return True
+            current = current.next
+        return False
+    
+    def find_node(self, value):
+        current = self.head
+        while current:
+            if current.value == value:
+                return current
+            current = current.next
+        return None
+
+    def __repr__(self):
+        result = []
+        current = self.head
+        while current:
+            result.append(current.value)
+            current = current.next
+        return str(result)
+
+
+# >> Updated Test Suite for Double-Linked List
+
+def test_double_linked_list():
+    dll = DoubleLinkedList()
+    
+    # Test add_node
+    dll.add_node(1)
+    dll.add_node(2)
+    dll.add_node(3)
+    assert repr(dll) == str([1, 2, 3]), f"Expected: [1, 2, 3], Got: {repr(dll)}"
+    
+    # Test add_node with duplicate value
+    try:
+        dll.add_node(2)
+        assert False, "Expected an exception for duplicate value"
+    except Exception as e:
+        assert str(e) == "This value is already in the list!", f"Expected: 'This value is already in the list!', Got: {str(e)}"
+    
+    # Test find_node
+    node = dll.find_node(2)
+    assert node is not None and node.value == 2, f"Expected: 2, Got: {node.value if node else None}"
+    
+    node = dll.find_node(4)
+    assert node is None, f"Expected: None, Got: {node.value if node else None}"
+    
+    # Test delete_node
+    assert dll.delete_node(2) == True, "Node with value 2 should be found and deleted"
+    assert repr(dll) == str([1, 3]), f"Expected: [1, 3], Got: {repr(dll)}"
+    
+    assert dll.delete_node(2) == False, "Node with value 2 should not be found"
+    
+    assert dll.delete_node(1) == True, "Node with value 1 should be found and deleted"
+    assert repr(dll) == str([3]), f"Expected: [3], Got: {repr(dll)}"
+    
+    assert dll.delete_node(3) == True, "Node with value 3 should be found and deleted"
+    assert repr(dll) == str([]), f"Expected: [], Got: {repr(dll)}"
+    
+    assert dll.delete_node(3) == False, "Node with value 3 should not be found"
+
+# Run tests
+test_double_linked_list()
+print("All tests passed!")
+#+end_src
+
+#+RESULTS:
+: All tests passed!
+
+You can run the =test_double_linked_list= function to verify that the
+=DoubleLinkedList= class works as expected. The test suite checks that
+duplicate values are not allowed and that the main functionalities
+such as adding nodes, deleting nodes, and finding nodes work
+correctly.
+
 
 * Corollary
 
