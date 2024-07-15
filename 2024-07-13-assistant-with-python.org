@@ -616,10 +616,125 @@ test_double_linked_list()
 #+RESULTS:
 : All tests are passed successfully
 
-You can run the `test_doubly_linked_list` function to verify that the
+You can run the =test_doubly_linked_list= function to verify that the
 doubly-linked list implementation works as expected. This test suite
 checks the main features such as adding nodes, deleting nodes, finding
 nodes, and converting the list to a Python list.
+
+** Modification
+
+*** Task
+
+Modify class =DoubleLinkedList= by converting method =to_list= into
+=__repr__= and the test suite accordingly with this modification. 
+
+*** Resolution
+
+Here's the modified implementation of the =DoublyLinkedList= class,
+where the =to_list= method has been converted into the =__repr__=
+method. The test suite has also been updated accordingly.
+
+# >> Modified Double-Linked List Implementation
+
+#+begin_src  python
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.next = None
+        self.prev = None
+
+class DoubleLinkedList:
+    def __init__(self):
+        self.head = None
+        self.tail = None
+        
+    def add_node(self, value):
+        new_node = Node(value)
+        if not self.head:
+            self.head = self.tail = new_node
+        else:
+            self.tail.next = new_node
+            new_node.prev = self.tail
+            self.tail = new_node
+            
+    def delete_node(self, value):
+        current = self.head
+        while current:
+            if current.value == value:
+                if current.prev:
+                    current.prev.next = current.next
+                else:
+                    self.head = current.next
+                if current.next:
+                    current.next.prev = current.prev
+                else:
+                    self.tail = current.prev
+                return True
+            current = current.next
+        return False
+    
+    def find_node(self, value):
+        current = self.head
+        while current:
+            if current.value == value:
+                return current
+            current = current.next
+        return None
+
+    def __repr__(self):
+        result = []
+        current = self.head
+        while current:
+            result.append(current.value)
+            current = current.next
+        return str(result)
+
+
+# Modified Test Suite for Double-Linked List
+
+def test_double_linked_list():
+    dll = DoubleLinkedList()
+    
+    # Test add_node
+    dll.add_node(1)
+    dll.add_node(2)
+    dll.add_node(3)
+    assert repr(dll) == str([1, 2, 3]), f"Expected: [1, 2, 3], Got: {repr(dll)}"
+    
+    # Test find_node
+    node = dll.find_node(2)
+    assert node is not None and node.value == 2, f"Expected: 2, Got: {node.value if node else None}"
+    
+    node = dll.find_node(4)
+    assert node is None, f"Expected: None, Got: {node.value if node else None}"
+    
+    # Test delete_node
+    assert dll.delete_node(2) == True, "Node with value 2 should be found and deleted"
+    assert repr(dll) == str([1, 3]), f"Expected: [1, 3], Got: {repr(dll)}"
+    
+    assert dll.delete_node(2) == False, "Node with value 2 should not be found"
+    
+    assert dll.delete_node(1) == True, "Node with value 1 should be found and deleted"
+    assert repr(dll) == str([3]), f"Expected: [3], Got: {repr(dll)}"
+    
+    assert dll.delete_node(3) == True, "Node with value 3 should be found and deleted"
+    assert repr(dll) == str([]), f"Expected: [], Got: {repr(dll)}"
+    
+    assert dll.delete_node(3) == False, "Node with value 3 should not be found"
+
+# Run tests
+test_double_linked_list()
+print("All tests passed!")
+#+end_src
+
+#+RESULTS:
+: All tests passed!
+
+You can run the =test_double_linked_list= function to verify that the
+double-linked list implementation works as expected. This test suite
+checks the main features such as adding nodes, deleting nodes, finding
+nodes, and uses the =__repr__= method to convert the list to a string
+representation for comparison.
 
 
 * Corollary
