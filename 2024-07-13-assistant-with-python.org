@@ -13,6 +13,7 @@ tags: [code interpreter]
 #+PROPERTY: header-args :exports both
 #+PROPERTY: header-args+ :results output pp
 #+PROPERTY: header-args+ :eval no-export
+#+PROPERTY: header-args+ :session code_interpreter
 #+PROPERTY: vizier-thread-id thread_bEfocrvYp57YATvOo3EmvkDV
 #+PROPERTY: vizier-assistant-id asst_Qy77LlTvrNX9xGWl5jxGnK46
 #+TOC: headlines 3
