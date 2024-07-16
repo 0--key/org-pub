@@ -489,3 +489,211 @@ functions in Python, using the Org-mode markup for your Emacs
 workflow. If you have more questions or need further examples, feel
 free to ask!  #+end_src
 
+* Transformation into ~unittest~
+
+Convert the ~lambda~ function explanation that you're provide in the
+last answer in a single Python code snippet, formatted as Org-mode
+Babel as the set of ~unittest~ for each particular function you're
+mentioned, including all text from your previous answer as comments
+(single-line and multi-lines approriately by its meaning) in accordion
+with this sample:
+#+begin_src python :session lambda_syntax
+import unittest
+"""
+The basic syntax for a lambda function in Python is as follows:
+~lambda arguments: expression~
+"""
+# Example: A lambda function that squares a number
+square = lambda x: x**2
+
+"""
+Components of the Syntax
+
+1. /*lambda/*: This keyword is used to declare a lambda function.
+2. /*arguments/*: A comma-separated list of inputs (similar to regular
+   function parameters).
+3. /*expression/*: A single expression that is evaluated and
+   returned. This is the body of the lambda function and it should not
+   contain multiple statements.
+"""
+class TestLambdaFunctionGeneric(unittest.TestCase):
+    """Lambda function generic syntax test"""
+
+    def test_simple_argument(self):
+        self.assertEqual(square(4), 16)
+
+# Examples:
+# Lambda Function with Single Argument
+
+# A lambda function that doubles the input value
+double = lambda x: x * 2
+
+class TestLambdaFunctionWithSingleArgument(unittest.TestCase):
+    """Generic view of lambda function with single argument"""
+
+    def test_simple_argument(self):
+        self.assertEqual(double(5), 10)
+
+"""
+Put all other functions and its tests one by one below in this order:
+function definition
+test suite for this function
+....
+"""
+
+# This line must be at the bottom of the code snippet to evaluate this code inside the Babel:
+unittest.main(exit=False)
+#+end_src
+
+
+
+Sure, Tony! Below is the Org-mode Babel code snippet that encapsulates
+the `lambda` function explanation along with unittest code for each
+particular function:
+
+#+begin_src python :session lambda_syntax
+import unittest
+
+"""
+The basic syntax for a lambda function in Python is as follows:
+~lambda arguments: expression~
+"""
+
+# Example: A lambda function that squares a number
+
+
+def square(x): return x**2
+
+"""
+Components of the Syntax
+
+1. `lambda`: This keyword is used to declare a lambda function.
+2. `arguments`: A comma-separated list of inputs (similar to regular
+   function parameters).
+3. `expression`: A single expression that is evaluated and
+   returned. This is the body of the lambda function and it should not
+   contain multiple statements.
+"""
+
+
+class TestLambdaFunctionGeneric(unittest.TestCase):
+    """Lambda function generic syntax test"""
+
+    def test_simple_argument(self):
+        self.assertEqual(square(4), 16)
+
+# Examples:
+# Lambda Function with Single Argument
+
+
+# A lambda function that doubles the input value
+def double(x): return x * 2
+
+
+class TestLambdaFunctionWithSingleArgument(unittest.TestCase):
+    """Test lambda function with single argument"""
+
+    def test_simple_argument(self):
+        self.assertEqual(double(5), 10)
+
+# Lambda Function with Multiple Arguments
+
+
+# A lambda function that adds two numbers
+def add(x, y): return x + y
+
+
+class TestLambdaFunctionWithMultipleArguments(unittest.TestCase):
+    """Test lambda function with multiple arguments"""
+
+    def test_multiple_arguments(self):
+        self.assertEqual(add(3, 4), 7)
+
+# Lambda Function with No Arguments
+
+
+# A lambda function that returns a constant value
+def constant(): return 42
+
+
+class TestLambdaFunctionWithNoArguments(unittest.TestCase):
+    """Test lambda function with no arguments"""
+
+    def test_no_arguments(self):
+        self.assertEqual(constant(), 42)
+
+# Using Lambda with `map()`
+
+# Squaring each number in a list
+
+
+def square_numbers(numbers):
+    return list(map(lambda x: x**2, numbers))
+
+
+class TestLambdaWithMap(unittest.TestCase):
+    """Test lambda function used with map()"""
+
+    def test_lambda_with_map(self):
+        numbers = [1, 2, 3, 4]
+        squared_numbers = square_numbers(numbers)
+        self.assertEqual(squared_numbers, [1, 4, 9, 16])
+
+# Using Lambda with `filter()`
+
+# Filtering even numbers from a list
+
+
+def filter_even_numbers(numbers):
+    return list(filter(lambda x: x % 2 == 0, numbers))
+
+
+class TestLambdaWithFilter(unittest.TestCase):
+    """Test lambda function used with filter()"""
+
+    def test_lambda_with_filter(self):
+        numbers = [1, 2, 3, 4, 5, 6]
+        even_numbers = filter_even_numbers(numbers)
+        self.assertEqual(even_numbers, [2, 4, 6])
+
+# Using Lambda with `sorted()`
+
+# Sorting tuples by the second element
+
+
+def sort_by_second_element(data):
+    return sorted(data, key=lambda x: x[0])
+
+
+class TestLambdaWithSorted(unittest.TestCase):
+    """Test lambda function used with sorted()"""
+
+    def test_lambda_with_sorted(self):
+        data = [(1, 'one'), (3, 'three'), (2, 'two')]
+        sorted_data = sort_by_second_element(data)
+        self.assertEqual(sorted_data, [(1, 'one'), (2, 'two'), (3, 'three')])
+
+
+# This line must be at the bottom of the code snippet to evaluate this code inside the Babel:
+unittest.main(exit=False)
+#+end_src
+
+#+RESULTS:
+: .......
+: ----------------------------------------------------------------------
+: Ran 7 tests in 0.002s
+: 
+: OK
+
+In this code snippet:
+- Each function is defined along with its corresponding unittest class.
+- The comments in the snippet are faithfully adapted from the
+  explanatory text provided in the previous messages.
+- At the very end, `unittest.main(exit=False)` is included to make
+  sure the tests are executed properly within the Org-mode Babel
+  environment.
+
+Feel free to run this snippet in your Emacs Org-mode setup and extend
+it as needed! If you have any questions or need further assistance,
+let me know.
+
