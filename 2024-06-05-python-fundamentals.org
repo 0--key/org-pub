@@ -16,53 +16,106 @@ tags: [True, False, None]
 #+PROPERTY: header-args+ :session basement
 #+TOC: headlines 2
 * Intro
+
+My original approach to teaching Python fundamentals involves using
+~unittest~ in a creative and engaging way. By directly testing Python
+properties, I aim to encourage an exploratory mindset, which can be
+very effective in reinforcing the understanding of core concepts. This
+method nudges learners to actively engage with the code and observe
+the behavior of various Python constructs, making abstract concepts
+more concrete and self-explanatory.
+
 * Basics
-#+begin_src python :results none :tangle tests/test_cornerstones.py :comments link
-  import unittest
 
-  """
+Naturally, the foundation of any experiment, including software
+testing, is the scrutiny of the tools used for dissection and the
+overview of the object. On one hand, we have the capabilities of
+=unittest=; on the other, we have Python's fundamental elements:
+*True*, _False_, and ~None~.
 
-  First and foremost let be sure about True, False and None
-  existence:
+#+begin_src python
+import unittest
 
-  """
+"""
+
+First and foremost let be sure about True, False and None
+existence:
+
+"""
 
 
-  class TestTheBasement(unittest.TestCase):
+class TestTheBasement(unittest.TestCase):
 
-      def test_does_true_ever_exist(self):
-          self.assertTrue(True)
+    def test_does_true_ever_exist(self):
+        self.assertTrue(True)
 
-      def test_does_false_ever_exist(self):
-          self.assertFalse(False)
+    def test_does_false_ever_exist(self):
+        self.assertFalse(False)
 
-      # Now it is clear that True and False exist
-      # and they are touchable
+    # Now it is clear that True and False exist
+    # and they are touchable
 
-      def test_does_none_ever_exist(self):
-          self.assertIsNone(None)
-          self.assertFalse(None)  # None is showed up!
-          # None has a boolean value
+    def test_does_none_ever_exist(self):
+        self.assertIsNone(None)
+        self.assertFalse(None)  # None is showed up!
+        # None has a boolean value
 
-      def test_true_and_false_are_not_none_at_all(self):
-          self.assertIsNotNone(True)  # NotNone (inverted None) has no
-          self.assertIsNotNone(False)  # any Boolean value, it is unique
-          self.assertFalse(None)  # But the vanilla None is False!
+    def test_true_and_false_are_not_none_at_all(self):
+        self.assertIsNotNone(True)  # NotNone (inverted None) has no
+        self.assertIsNotNone(False)  # any Boolean value, it is unique
+        self.assertFalse(None)  # But the vanilla None is False!
 
-#+end_src
-
-#+begin_src python :exports results
 unittest.main(exit=False)
 #+end_src
 
 #+RESULTS:
-: ............
+: ....
 : ----------------------------------------------------------------------
-: Ran 12 tests in 0.000s
+: Ran 4 tests in 0.000s
 : 
 : OK
 
+** True, False and None are fundamentals
 
+#+begin_src python
+import unittest
+
+"""
+
+First and foremost, let's be sure about the existence and behavior of True, False, and None:
+
+"""
+
+
+class TestFundamentals(unittest.TestCase):
+
+    # Testing the existence and behavior of True
+    def test_true_exists(self):
+        self.assertTrue(True, "True should be truthy")
+
+    # Testing the existence and behavior of False
+    def test_false_exists(self):
+        self.assertFalse(False, "False should be falsy")
+
+    # Testing the existence and behavior of None
+    def test_none_exists(self):
+        self.assertIsNone(None, "None should be None")
+        self.assertFalse(None, "None should be falsy")
+
+    def test_true_and_false_are_not_none(self):
+        self.assertIsNotNone(True, "True should not be None")
+        self.assertIsNotNone(False, "False should not be None")
+        self.assertFalse(None, "None should be falsy")
+
+unittest.main(exit=False)
+#+end_src
+
+#+RESULTS:
+: ........
+: ----------------------------------------------------------------------
+: Ran 8 tests in 0.002s
+: 
+: OK
 
 * Comparisons
 
