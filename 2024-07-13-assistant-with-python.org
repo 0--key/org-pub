@@ -1127,3 +1127,66 @@ answers.
 
 The *[[https://www.mtu.edu/cls/undergraduate/human-factors/what/][human factors]]* remain the weakest link in the code development
 chain.
+
+* Interview
+What is the main purpose of using =unittest=?
+
+#+begin_src markdown
+The main purpose of using `unittest`, the built-in testing framework
+in Python, is to provide a structured and standardized way to test
+Python code. Here are the key benefits and purposes of using
+`unittest`:
+
+1. **Automated Testing**:
+   - `unittest` allows you to automate the process of testing your
+     code by defining test cases and test suites.
+
+2. **Code Quality and Reliability**:
+   - By writing and running tests, you can ensure that your code works
+     as expected. This helps in maintaining a high level of code
+     quality and reliability.
+
+3. **Regression Testing**:
+   - Automated tests help catch regressions. If a change in the code
+     breaks a previously working feature, the tests will fail,
+     alerting you to the issue.
+
+4. **Organized Test Cases**:
+   - `unittest` provides a way to organize your tests. You can group
+     related tests together in test cases and further group test cases
+     into test suites.
+
+5. **Standard Practices**:
+   - Using `unittest` encourages standard tests and practices. It
+     integrates well with other tools and libraries in the Python
+     ecosystem.
+
+6. **Setup and Teardown**:
+   - `unittest` provides setup and teardown methods (`setUp` and
+     `tearDown`) that run before and after each test method. This
+     ensures a clean, consistent state for each test.
+
+7. **Test Discovery**:
+   - `unittest` can automatically discover and run all test methods in
+     a given directory or module, simplifying the process of test
+     management.
+
+8. **Extensible**:
+   - The framework is extensible, allowing you to write custom
+     assertions and test runners to fit your specific needs.
+
+9. **Integration with CI/CD Pipelines**:
+   - `unittest` tests can be easily integrated into continuous
+     integration and continuous deployment (CI/CD) pipelines, ensuring
+     that tests are run automatically during the development and
+     deployment process.
+
+10. **Debugging and Diagnostics**:
+    - If a test fails, `unittest` provides detailed information about
+      the failure, helping you diagnose and fix the issue efficiently.
+
+By employing `unittest`, you adopt a systematic approach to testing
+that facilitates maintaining and improving codebases, especially as
+they grow in complexity and size.
+#+end_src
+
