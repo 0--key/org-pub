@@ -110,6 +110,25 @@ best practices. Below are some resources that can help:
 Feel free to refine or expand this question list based on specific
 areas of interest or projects you might be working on!
 #+end_src
+* Prerequisites
+
+#+begin_src sh
+pip install sqlalchemy
+#+end_src
+
+#+RESULTS:
+#+begin_example
+Collecting sqlalchemy
+  Downloading SQLAlchemy-2.0.31-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.2/3.2 MB 3.6 MB/s eta 0:00:00
+=4.6.0 in /home/alioth/.virtualenvs/FastAPI/lib/python3.11/site-packages (from sqlalchemy) (4.12.2)
+Collecting greenlet!=0.4.17
+  Downloading greenlet-3.0.3-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (620 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 620.0/620.0 kB 4.0 MB/s eta 0:00:00
+
+Installing collected packages: greenlet, sqlalchemy
+Successfully installed greenlet-3.0.3 sqlalchemy-2.0.31
+#+end_example
 
 * What is SQLAlchemy, and what are the main components of this library?
 
