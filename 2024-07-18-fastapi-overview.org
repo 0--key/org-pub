@@ -472,3 +472,143 @@ To execute the above workflow in Emacs with Org-mode:
 This setup will help you develop and test a RESTful API using FastAPI
 and ~unittest~ within Emacs efficiently.
 
+* What is the purpose of usage of FastAPI?
+
+The purpose of using FastAPI is to provide a high-performance,
+easy-to-use web framework for building APIs with Python. It is
+designed to make the development of web services efficient and
+enjoyable, offering several benefits that address common needs and
+challenges faced by developers. Here are some key purposes and
+advantages of FastAPI:
+
+*Key Purposes and Advantages of FastAPI*
+
+** *High Performance*:
+
+  - FastAPI is built on Starlette for the web parts and Pydantic for
+     the data parts, both of which are extremely performant
+     frameworks.
+   - It is designed to handle a large number of simultaneous requests
+     efficiently, making it suitable for high-load scenarios.
+
+** Developer Productivity:
+
+   - FastAPI uses Python’s type hints to automatically generate
+     validation, serialization, and documentation, reducing
+     boilerplate code and speeding up development.
+   - The automatic generation of OpenAPI and JSON Schema documentation
+     helps in creating self-documenting APIs, which can be explored
+     using interactive tools like Swagger UI and ReDoc.
+
+** Ease of Use:
+   - The framework is designed to be intuitive, with a clear and
+     concise API, making it easy for beginners to pick up and for
+     experienced developers to be productive quickly.
+   - FastAPI provides a straightforward way to define both synchronous
+     and asynchronous endpoints using Python’s native async/await
+     syntax.
+
+** Data Validation and Serialization:
+   - Using Pydantic, FastAPI ensures that the data entering your API
+     meets the defined type constraints. This prevents many common
+     bugs related to data handling.
+   - It automatically handles JSON serialization and deserialization, simplifying the process of working with JSON data.
+
+** Asynchronous Support:
+   - Built-in support for asynchronous programming allows for
+     non-blocking operations, which is particularly useful for
+     I/O-bound tasks like database queries, network requests, etc.
+   - FastAPI makes it easy to convert from synchronous to asynchronous
+     applications, leveraging Python's ~async~ and ~await~ keywords.
+
+** Dependency Injection:
+   - FastAPI includes a simple but powerful dependency injection
+     system that allows you to manage and inject dependencies easily.
+   - This promotes clean, modular code and makes it easier to manage
+     cross-cutting concerns like database connections, authentication,
+     etc.
+
+** Interactive API Documentation:
+   - By default, FastAPI provides interactive API documentation
+     through Swagger UI and ReDoc. This makes testing and exploring
+     the API straightforward and comprehensive.
+   - These tools are invaluable for developers, allowing them to
+     interact with endpoints directly from the browser.
+
+** Security:
+   - FastAPI includes easy-to-use tools for handling security,
+     including OAuth2, JWT tokens, and scopes.
+   - Security dependencies can be included with the same dependency
+     injection system, keeping the security implementations clean and
+     manageable.
+
+** Example Purposes
+
+Here are some common use cases where FastAPI is particularly advantageous:
+
+- *Microservices*: Building microservices that handle JSON payloads
+  efficiently.
+- *Data-Driven APIs*: Creating RESTful APIs to interface with data
+  stores (SQL or NoSQL databases).
+- *ML and AI*: Serving machine learning models or AI services through
+  an API.
+- *WebSockets*: Implementing real-time communication features (like
+  chat applications) with WebSockets support.
+- *Prototyping*: Quickly prototyping and iterating over API designs
+  before final implementation.
+
+** Example of FastAPI Usage
+
+Below is a simple example to illustrate how FastAPI can be used to
+create a RESTful API:
+
+#+begin_src python
+from fastapi import FastAPI
+from pydantic import BaseModel
+from typing import List
+
+app = FastAPI()
+
+class Item(BaseModel):
+    name: str
+    description: str = None
+    price: float
+    tax: float = None
+
+items = []
+
+@app.get("/items/", response_model=List[Item])
+async def read_items():
+    return items
+
+@app.post("/items/", response_model=Item)
+async def create_item(item: Item):
+    items.append(item)
+    return item
+
+@app.get("/items/{item_id}", response_model=Item)
+async def read_item(item_id: int):
+    if item_id >= len(items) or item_id < 0:
+        raise HTTPException(status_code=404, detail="Item not found")
+    return items[item_id]
+
+@app.put("/items/{item_id}", response_model=Item)
+async def update_item(item_id: int, item: Item):
+    if item_id >= len(items) or item_id < 0:
+        raise HTTPException(status_code=404, detail="Item not found")
+    items[item_id] = item
+    return item
+
+@app.delete("/items/{item_id}", response_model=Item)
+async def delete_item(item_id: int):
+    if item_id >= len(items) or item_id < 0:
+        raise HTTPException(status_code=404, detail="Item not found")
+    return items.pop(item_id)
+#+end_src
+
+** Summary
+
+In summary, FastAPI is used to create fast, robust, and maintainable
+APIs with minimal effort, high performance, and excellent developer
+experience. It is particularly suitable for modern web applications,
+microservices, and tasks requiring efficient I/O operations.
