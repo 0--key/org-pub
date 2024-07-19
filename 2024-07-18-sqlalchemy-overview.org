@@ -295,3 +295,163 @@ illustrating how it provides powerful abstractions for working with
 databases. For further exploration, refer to the official SQLAlchemy
 documentation and tutorials.
 
+
+* What is the purpose of usage of object-relational mapping?
+
+Object-Relational Mapping (ORM) is a programming technique used to
+convert data between incompatible type systems in object-oriented
+programming languages. In simpler terms, ORM allows developers to
+interact with a relational database using the idioms and patterns of
+their preferred programming language, transforming complex SQL queries
+and operations into more intuitive and manageable code constructs.
+
+** Purpose of ORM Usage:
+
+1. *Abstraction and Simplicity:*
+   - *Reduces Boilerplate Code:* ORM frameworks abstract much of the
+     repetitive SQL code that developers would otherwise need to
+     write. This leads to cleaner and more readable code.
+   - *Ease of Use:* By representing tables as classes and rows as
+     objects, ORMs allow developers to use object-oriented principles
+     to interact with database records.
+
+2. *Maintainability:*
+   - *Centralized Schema Management:* With ORM, the database schema
+     is often defined in the application's code. This centralizes
+     schema changes and helps keep the database schema in sync with
+     the application logic.
+   - *Shorter Development Cycle:* ORM simplifies CRUD (Create, Read,
+     Update, Delete) operations, making it easier to implement and
+     maintain code, especially in large applications.
+
+3. *Portability:*
+   - *Database-agnostic Code:* ORMs provide a layer of abstraction
+     that allows applications to be more database-agnostic. By
+     changing the ORM configuration, you can switch databases with
+     minimal changes to the application code.
+
+4. *Productivity:*
+   - *Faster Prototyping:* ORMs enable faster development cycles by
+     allowing developers to quickly prototype applications without
+     needing to write complex SQL queries.
+   - *Declarative Relationships:* Defining relationships
+     (one-to-one, one-to-many, many-to-many) between tables is more
+     straightforward and declarative with ORM, leading to fewer errors
+     and more predictable behavior.
+
+5. *Security:*
+   - *SQL Injection Protection:* ORMs often include mechanisms to
+     prevent SQL injection attacks by properly escaping and
+     parameterizing queries, reducing the risk of introducing
+     vulnerabilities.
+
+** Example Use Cases in SQLAlchemy:
+
+*** 1. Abstraction and Simplicity:
+#+begin_src python
+import sessionmaker
+from sqlalchemy import Column, Integer, String, create_engine
+from sqlalchemy.ext.declarative
+import declarative_base from sqlalchemy.orm
+
+# Define the database connection and base
+engine = create_engine('sqlite:///example.db', echo=True)
+#**Explanation of the Connection URL:**
+#- `sqlite://`: Specifies that the SQLite dialect should be used.
+#- `/example.db`: Indicates that the database file `example.db` is located in the current working directory.
+# Create an engine that uses an in-memory SQLite database
+# engine = create_engine('sqlite:///:memory:', echo=True)
+
+Base = declarative_base()
+
+# Define a User class mapped to a users table
+
+
+class User(Base):
+    __tablename__ = 'users'
+    id = Column(Integer, primary_key=True)
+    name = Column(String)
+    age = Column(Integer)
+
+
+# Create a session
+Session = sessionmaker(bind=engine)
+session = Session()
+
+# Adding a new user (CRUD operation)
+new_user = User(name="Alice", age=30)
+session.add(new_user)
+session.commit()
+
+# Querying the database
+users = session.query(User).all()
+
+for user in users:
+    print(user.id, user.name, user.age)
+#+end_src
+
+
+*** 2. Maintainability:
+
+#+begin_src python
+# Alter the User class to add a new column
+# class User(Base):
+#     __tablename__ = 'users'
+#     id = Column(Integer, primary_key=True)
+#     name = Column(String)
+#     age = Column(Integer)
+#     email = Column(String)  # Added column
+
+# # Reflect the changes in the database schema
+# Base.metadata.create_all(engine)
+
+for user in session.query(User).all():
+    print(user.id, user.name, user.age)
+#+end_src
+
+#+RESULTS:
+: 2024-07-20 10:46:30,462 INFO sqlalchemy.engine.Engine SELECT users.id AS users_id, users.name AS users_name, users.age AS users_age 
+: FROM users
+: 2024-07-20 10:46:30,462 INFO sqlalchemy.engine.Engine [cached since 806.8s ago] ()
+: 1 Alice 30
+: 2 Bob 32
+
+
+*** 3. Portability:
+
+#+begin_src python
+# Changing the database connection string to use PostgreSQL instead of SQLite
+engine = create_engine('postgresql://user:password@localhost/dbname')
+Session = sessionmaker(bind=engine)
+session = Session()
+
+# Existing ORM code remains unchanged, ensuring portability across databases
+#+end_src
+
+
+*** 4. Security:
+
+#+begin_src python
+# ORM helps prevent SQL injection by using parameterized queries
+user_id = 1
+user = session.query(User).filter(User.id == user_id).one()
+print(user.name)
+#+end_src
+
+
+** Additional Considerations:
+
+- ORMs come with some overhead, which can impact performance in
+  high-throughput applications.
+- Direct SQL queries might still be necessary for complex queries or
+  performance-critical parts of an application.
+- Understanding the underlying SQL and being aware of the trade-offs
+  is important when using ORMs.
+
+** The Essence
+
+Overall, the purpose of ORM is to bridge the gap between relational
+databases and object-oriented programming, providing a more intuitive
+and efficient way to interact with databases while improving code
+maintainability, security, and portability.
+
