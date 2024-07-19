@@ -612,3 +612,168 @@ In summary, FastAPI is used to create fast, robust, and maintainable
 APIs with minimal effort, high performance, and excellent developer
 experience. It is particularly suitable for modern web applications,
 microservices, and tasks requiring efficient I/O operations.
+
+* What is Starlette framework and how it used in FastAPI?
+
+*Starlette* is an ASGI (Asynchronous Server Gateway Interface)
+framework designed for building web applications. It's lightweight and
+focuses on providing the essential tools needed for web applications,
+such as routing, middleware, and session handling, among other
+features. FastAPI leverages Starlette for its web server parts,
+meaning that FastAPI extends Starlette and incorporates it as the
+underlying framework for handling HTTP requests and ASGI applications.
+
+*Key Features of Starlette*
+
+** ASGI Support:
+Starlette is built to support ASGI (the asynchronous successor to
+WSGI). This enables asynchronous request handling, allowing for better
+performance in I/O-bound and concurrent operatio.
+
+** Routing:
+Starlette provides an easy and powerful routg mechanism which lets you
+map URLs to endpoints (functions or class-based views).
+
+** Middleware:
+
+   Starlette supports middleware, which are hooks that intercept
+   requests and responses at different stages for various purposes
+   (e.g., logging, security checks, etc.).
+
+** Session Management:
+
+   Starlette includes built-in support for session management, which
+   is essential for maintaining user states.
+
+** Authentication:
+
+   Starlette provides authentication tools and utility functions,
+   making it easy to implement user authentication and authorization.
+
+** WebSockets:
+
+   Starlette has built-in support for WebSockets, which is useful for
+   real-time, bidirectional communication between clients and servers.
+
+** GraphQL:
+
+   Starlette supports GraphQL via integration with libraries such as
+   Graphene, making it flexible for various API paradigms.
+
+** How FastAPI Uses Starlette
+
+FastAPI builds on Starlette to provide a more comprehensive framework
+specifically aimed at creating APIs with Python. The key
+functionalities that FastAPI inherits from Starlette and expands upon
+include:
+
+- *Routing*: FastAPI uses Starlette's routing capabilities but adds
+  features for parameterized routes, path parameters, and dependency
+  injection.
+- *Middleware*: FastAPI fully supports Starlette's middleware
+  functionalities and adds its own set of middleware for tasks like
+  request validation and security.
+- *Requests and Responses*: FastAPI extends the request and response
+  handling to include data validation, automatic
+  serialization/deserialization using Pydantic.
+- *WebSockets and Background Tasks*: FastAPI supports WebSockets and
+  background tasks via Starlette, making it easier to build real-time
+  applications.
+- *Exception Handling*: FastAPI uses Starlette's exception handling
+  mechanisms, making it simple to define custom error responses.
+- *Static Files*: FastAPI can serve static files through Starlette's
+  static file serving tools.
+
+In essence, FastAPI extends Starlette's capabilities with additional
+layers of abstraction that make it easier to build APIs, focusing
+mainly on rapid development and type safety.
+
+** Example: Using FastAPI with Starlette Features
+
+Here's a simple example demonstrating how FastAPI utilizes some of Starlette's features:
+
+#+begin_src python
+from fastapi import FastAPI, HTTPException, Request
+from pydantic import BaseModel
+from starlette.middleware.sessions import SessionMiddleware
+from starlette.staticfiles import StaticFiles
+
+app = FastAPI()
+
+# Adding session middleware
+app.add_middleware(SessionMiddleware, secret_key="!secret")
+
+class Item(BaseModel):
+    name: str
+    description: str = None
+    price: float
+    tax: float = None
+
+# In-memory items storage
+items = []
+
+@app.get("/items/")
+async def read_items():
+    return items
+
+@app.post("/items/")
+async def create_item(item: Item):
+    items.append(item)
+    return item
+
+@app.get("/items/{item_id}")
+async def read_item(item_id: int):
+    if item_id >= len(items) or item_id < 0:
+        raise HTTPException(status_code=404, detail="Item not found")
+    return items[item_id]
+
+@app.put("/items/{item_id}")
+async def update_item(item_id: int, item: Item):
+    if item_id >= len(items) or item_id < 0:
+        raise HTTPException(status_code=404, detail="Item not found")
+    items[item_id] = item
+    return item
+
+@app.delete("/items/{item_id}")
+async def delete_item(item_id: int):
+    if item_id >= len(items) or item_id < 0:
+        raise HTTPException(status_code=404, detail="Item not found")
+    return items.pop(item_id)
+
+# Mounting static files, for example, serving files from 'static' directory
+app.mount("/static", StaticFiles(directory="static"), name="static")
+
+# Example of middleware that logs requests
+@app.middleware("http")
+async def log_requests(request: Request, call_next):
+    print(f"Request URL: {request.url}")
+    response = await call_next(request)
+    return response
+#+end_src
+
+
+** Explanation
+
+1. *Session Middleware*:
+   - We add a session middleware to handle session management, using
+     Starlette's ~SessionMiddleware~.
+
+2. *CRUD Operations*:
+   - Demonstrates basic CRUD operations on items, using FastAPI’s
+     routing and data validation.
+
+3. *Static Files*:
+   - Serves static files using Starlette’s ~StaticFiles~.
+
+4. *Custom Middleware*:
+   - Example of logging middleware that prints the URL of incoming
+     requests, showcasing how easy it is to implement custom
+     middleware.
+
+By combining FastAPI with the robust features of Starlette, you can
+efficiently build scalable and high-performance web
+applications. FastAPI not only makes it easier but also ensures that
+you adhere to best practices and modern web standards.
+
+
+
