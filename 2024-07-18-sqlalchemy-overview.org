@@ -183,7 +183,8 @@ from sqlalchemy.orm import sessionmaker
 
 # SQLAlchemy Core Example
 # Create an engine and connect to the database (SQLite in this case)
-engine = create_engine('sqlite:///example.db', echo=True) metadata = MetaData()
+engine = create_engine('sqlite:///:memory:', echo=True)
+metadata = MetaData()
 
 # Define a table using SQLAlchemy Core
 user_table = Table('users', metadata, Column('id', Integer,
@@ -203,23 +204,78 @@ Base = declarative_base()
 class User(Base):
     __tablename__ = 'users'
     id = Column(Integer, primary_key=True)
-    name = Column(String) age = Column(Integer)
+    name = Column(String)
+    age = Column(Integer)
 
 
 # Create a session
-Session = sessionmaker(bind=engine) session = Session()
+Session = sessionmaker(bind=engine)
+session = Session()
 
 # Add a new user to the database
-new_user = User(name="Alice", age=30) session.add(new_user)
+new_user = User(name="Alice", age=30)
+session.add(new_user)
 session.commit()
 
 # Query the database
 for user in session.query(User).all():
-    print(user.id, user.name,
-          user.age)
+    print(user.id, user.name, user.age)
 #+end_src
 
-** Explanations:**
+#+RESULTS:
+#+begin_example
+2024-07-20 10:33:03,681 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2024-07-20 10:33:03,682 INFO sqlalchemy.engine.Engine PRAGMA main.table_info("users")
+2024-07-20 10:33:03,682 INFO sqlalchemy.engine.Engine [raw sql] ()
+2024-07-20 10:33:03,682 INFO sqlalchemy.engine.Engine PRAGMA temp.table_info("users")
+2024-07-20 10:33:03,683 INFO sqlalchemy.engine.Engine [raw sql] ()
+2024-07-20 10:33:03,683 INFO sqlalchemy.engine.Engine 
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	name VARCHAR, 
+	age INTEGER, 
+	PRIMARY KEY (id)
+)
+
+
+2024-07-20 10:33:03,684 INFO sqlalchemy.engine.Engine [no key 0.00011s] ()
+2024-07-20 10:33:03,684 INFO sqlalchemy.engine.Engine COMMIT
+/tmp/babel-C8lSuP/python-uwm0l3:20: MovedIn20Warning: The ``declarative_base()`` function is now available as sqlalchemy.orm.declarative_base(). (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  Base = declarative_base()
+2024-07-20 10:33:03,688 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2024-07-20 10:33:03,690 INFO sqlalchemy.engine.Engine INSERT INTO users (name, age) VALUES (?, ?)
+2024-07-20 10:33:03,690 INFO sqlalchemy.engine.Engine [generated in 0.00016s] ('Alice', 30)
+2024-07-20 10:33:03,690 INFO sqlalchemy.engine.Engine COMMIT
+2024-07-20 10:33:03,691 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2024-07-20 10:33:03,692 INFO sqlalchemy.engine.Engine SELECT users.id AS users_id, users.name AS users_name, users.age AS users_age 
+FROM users
+2024-07-20 10:33:03,692 INFO sqlalchemy.engine.Engine [generated in 0.00013s] ()
+1 Alice 30
+#+end_example
+
+#+begin_src python
+# Add another user to the database
+new_user = User(name="Bob", age=32)
+session.add(new_user)
+session.commit()
+
+# Query the database
+for user in session.query(User).all():
+    print(user.id, user.name, user.age)
+#+end_src
+
+#+RESULTS:
+: 2024-07-20 10:35:27,323 INFO sqlalchemy.engine.Engine INSERT INTO users (name, age) VALUES (?, ?)
+: 2024-07-20 10:35:27,323 INFO sqlalchemy.engine.Engine [cached since 143.6s ago] ('Bob', 32)
+: 2024-07-20 10:35:27,323 INFO sqlalchemy.engine.Engine COMMIT
+: 2024-07-20 10:35:27,323 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+: 2024-07-20 10:35:27,324 INFO sqlalchemy.engine.Engine SELECT users.id AS users_id, users.name AS users_name, users.age AS users_age 
+: FROM users
+: 2024-07-20 10:35:27,324 INFO sqlalchemy.engine.Engine [cached since 143.6s ago] ()
+: 1 Alice 30
+: 2 Bob 32
+
+** Explanations:
 
 1. *Core Example:*
    - ~create_engine~: Establishes a connection to the database.
