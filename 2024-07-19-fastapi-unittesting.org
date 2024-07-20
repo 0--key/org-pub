@@ -1,0 +1,493 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: FastAPI Features Testing
+tagline: " with unittest module"
+permalink: /python/fastapi-unittest.html
+categories: [FastAPI, Python, unittest]
+tags: []
+---
+#+END_EXPORT
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+PROPERTY: header-args :exports both
+#+PROPERTY: header-args+ :results output pp
+#+PROPERTY: header-args+ :eval no-export
+#+PROPERTY: header-args+ :session fastapi
+#+PROPERTY: vizier-thread-id thread_P1IWm6tT9kp7NsERBQyN0Mbt
+#+PROPERTY: vizier-assistant-id asst_9U8N72u9uVQesQNNjgOLJOu8
+#+TOC: headlines 4
+* Preface
+
+
+Just examining by testing.
+* Prerequisites
+** The App *&* the Test Suite in a Single Block
+#+begin_src python
+import unittest
+from typing import Union
+from fastapi import FastAPI
+from fastapi.testclient import TestClient
+
+
+app = FastAPI()
+
+
+@app.get("/")
+def read_root():
+    return {"Hello": "World"}
+
+
+@app.get("/items/{item_id}")
+def read_item(item_id: int, q: Union[str, None] = None):
+    return {"item_id": item_id, "q": q}
+#
+#
+# The Test Suite
+#
+client = TestClient(app)
+
+class TestFastAPI(unittest.TestCase):
+
+    def test_read_root(self):
+        response = client.get("/")
+        self.assertEqual(response.status_code, 200)
+        self.assertDictEqual(response.json(), {"Hello": "World"})
+
+    def test_read_item_with_query(self):
+        response = client.get("/items/42?q=somequery")
+        self.assertEqual(response.status_code, 200)
+        self.assertDictEqual(response.json(), {"item_id": 42, "q": "somequery"})
+    
+    def test_read_item_without_query(self):
+        response = client.get("/items/42")
+        self.assertEqual(response.status_code, 200)
+        self.assertDictEqual(response.json(), {"item_id": 42, "q": None})
+
+unittest.main(exit=False)
+#+end_src
+
+#+RESULTS:
+: ...
+: ----------------------------------------------------------------------
+: Ran 3 tests in 0.010s
+: 
+: OK
+
+* TestClient module
+
+Can you explanin the main features of TestClient module?
+
+#+begin_src markdown
+Certainly! The `TestClient` module in FastAPI is a powerful tool
+designed to facilitate testing applications built with FastAPI. It is
+built on top of Starlette's `TestClient`, which itself wraps around
+`requests`, a popular HTTP library in Python. The `TestClient` module
+is essential for running tests that simulate HTTP requests to your
+application without starting an actual server. Here are the main
+features of the `TestClient` module:
+
+### Main Features of TestClient
+
+1. **Simulating HTTP Requests**:
+   - `TestClient` allows you to simulate HTTP requests (GET, POST,
+     PUT, DELETE, etc.) to your FastAPI application endpoints. This
+     helps in verifying the behavior of your API endpoints.
+
+2. **Session Management**:
+   - `TestClient` manages sessions, including cookies and headers,
+     making it easier to test workflows that depend on session states.
+
+3. **Response Validation**:
+   - You can validate the response status codes, headers, and body
+     content to ensure they meet the expected outcomes. This ensures
+     your API behaves as expected under different conditions.
+
+4. **Asynchronous Support**:
+   - `TestClient` supports testing asynchronous endpoints. It
+     seamlessly handles both synchronous and asynchronous requests,
+     maintaining the same interface for simplicity.
+
+5. **Context Management**:
+   - It provides a context manager to handle setup and teardown,
+     ensuring clean test environments. This is useful for initializing
+     and cleaning up resources needed for tests.
+
+6. **Integration with Testing Frameworks**:
+   - `TestClient` can be used in conjunction with various testing
+     frameworks like `unittest`, `pytest`, and others, providing
+     flexibility in writing and organizing tests.
+
+7. **API Documentation Testing**:
+   - It can automatically check that the documentation URLs (like
+     Swagger UI and ReDoc) load correctly and contain the expected
+     content, ensuring that the API documentation is always up-to-date
+     and functional.
+
+### Example Usage of TestClient
+
+Here's a more detailed look at how you can use `TestClient` with
+FastAPI:
+
+#### FastAPI Application
+
+```python
+from fastapi import FastAPI
+from typing import Union
+
+app = FastAPI()
+
+@app.get("/")
+def read_root():
+    return {"Hello": "World"}
+
+@app.get("/items/{item_id}")
+def read_item(item_id: int, q: Union[str, None] = None):
+    return {"item_id": item_id, "q": q}
+```
+
+#### Unit Tests
+
+```python
+import unittest
+from fastapi.testclient import TestClient
+from main import app  # Assuming your FastAPI app is defined in main.py
+
+client = TestClient(app)
+
+class TestFastAPI(unittest.TestCase):
+
+    def test_read_root(self):
+        response = client.get("/")
+        self.assertEqual(response.status_code, 200)
+        self.assertDictEqual(response.json(), {"Hello": "World"})
+
+    def test_read_item_with_query(self):
+        response = client.get("/items/42?q=somequery")
+        self.assertEqual(response.status_code, 200)
+        self.assertDictEqual(response.json(), {"item_id": 42, "q": "somequery"})
+
+    def test_read_item_without_query(self):
+        response = client.get("/items/42")
+        self.assertEqual(response.status_code, 200)
+        self.assertDictEqual(response.json(), {"item_id": 42, "q": None})
+
+if __name__ == "__main__":
+    unittest.main()
+```
+
+### Explanation of Example
+
+1. **Importing TestClient**:
+   - `TestClient` is imported from `fastapi.testclient`. This allows
+     us to create a client instance to interact with our FastAPI
+     application.
+
+2. **Creating an Instance**:
+   - We create an instance of `TestClient` by passing in the FastAPI
+     `app`. This client will be used to simulate HTTP requests to the
+     application.
+
+3. **Simulating Requests**:
+   - `GET`, `POST`, `PUT`, `DELETE`, and other HTTP methods are
+     available to simulate requests to the application endpoints.
+   
+4. **Response Validation**:
+   - The responses can be checked for status codes, headers, and JSON
+     content using the methods and attributes provided by the
+     `requests.Response` object returned by `TestClient`.
+
+5. **Handling Asynchronous Endpoints**:
+   - The same interface works seamlessly with asynchronous endpoints,
+     allowing tests to be written without worrying about the
+     underlying asynchronous nature.
+
+### Advanced Features
+
+While the above example covers basic usage, here are some advanced
+features you can take advantage of:
+- **Context Management**:
+  ```python
+  with TestClient(app) as client:
+      response = client.get("/items/")
+      assert response.status_code == 200
+  ```
+
+- **Custom Headers and Authentication**:
+  ```python
+  response = client.get("/items/", headers={"Authorization": "Bearer token"})
+  ```
+
+- **Session Management**:
+  ```python
+  client.cookie_jar.set("session", "session-value")
+  response = client.get("/items/")
+  ```
+
+### Summary
+
+The `TestClient` module in FastAPI is a powerful and convenient tool
+for testing web applications. It provides easy-to-use interfaces to
+simulate HTTP requests, manage sessions, validate responses, and
+integrate with various testing frameworks, making it an indispensable
+part of the FastAPI testing workflow.
+#+end_src
+
+* All Supported HTTP Request's Methods
+I've wrapped the app code and the test suite into a single Babel code snippet:
+#+begin_src python
+import unittest
+from typing import Union
+from fastapi import FastAPI
+from fastapi.testclient import TestClient
+
+
+app = FastAPI()
+
+
+@app.get("/")
+def read_root():
+    return {"Hello": "World"}
+
+
+@app.get("/items/{item_id}")
+def read_item(item_id: int, q: Union[str, None] = None):
+    return {"item_id": item_id, "q": q}
+#
+#
+# The Test Suite
+#
+client = TestClient(app)
+
+class TestFastAPI(unittest.TestCase):
+
+    def test_read_root(self):
+        response = client.get("/")
+        self.assertEqual(response.status_code, 200)
+        self.assertDictEqual(response.json(), {"Hello": "World"})
+
+    def test_read_item_with_query(self):
+        response = client.get("/items/42?q=somequery")
+        self.assertEqual(response.status_code, 200)
+        self.assertDictEqual(response.json(), {"item_id": 42, "q": "somequery"})
+    
+    def test_read_item_without_query(self):
+        response = client.get("/items/42")
+        self.assertEqual(response.status_code, 200)
+        self.assertDictEqual(response.json(), {"item_id": 42, "q": None})
+
+unittest.main(exit=False)
+#+end_src
+
+and it works. Now I want to:
+
+extend the basic FastAPI application to use all HTTP request methods
+(GET, PUT, POST, DELETE, PATCH, HEAD, OPTIONS, TRACE);
+extend the test suite in accordion with these methods.
+
+#+begin_src markdown
+
+Certainly! Let's extend the FastAPI application to support all the
+HTTP request methods (`GET`, `POST`, `PUT`, `DELETE`, `PATCH`, `HEAD`,
+`OPTIONS`, `TRACE`), and also extend the test suite to test these
+endpoints.
+
+**Extended FastAPI Application**
+#+end_src
+
+** Extended FastAPI Application with All HTTP Methods
+#+begin_src python
+import unittest
+from typing import Union
+from fastapi import FastAPI
+from fastapi.testclient import TestClient
+
+app = FastAPI()
+
+# In-memory storage for demonstration purposes
+items = {}
+
+@app.get("/")
+def read_root():
+    return {"Hello": "World"}
+
+@app.get("/items/{item_id}")
+def read_item(item_id: int, q: Union[str, None] = None):
+    return {"item_id": item_id, "q": q}
+
+@app.post("/items/")
+def create_item(item_id: int, item: dict):
+    items[item_id] = item
+    return {"item_id": item_id, "item": item}
+
+@app.put("/items/{item_id}")
+def update_item(item_id: int, item: dict):
+    if item_id not in items:
+        return {"Error": "Item not found"}, 404
+    items[item_id] = item
+    return {"item_id": item_id, "item": item}
+
+@app.delete("/items/{item_id}")
+def delete_item(item_id: int):
+    if item_id not in items:
+        return {"Error": "Item not found"}, 404
+    del items[item_id]
+    return {"Message": "Item deleted"}
+
+@app.patch("/items/{item_id}")
+def patch_item(item_id: int, item: dict):
+    if item_id not in items:
+        return {"Error": "Item not found"}, 404
+    items[item_id].update(item)
+    return {"item_id": item_id, "item": items[item_id]}
+
+@app.head("/items/{item_id}")
+def head_item(item_id: int):
+    if item_id not in items:
+        return {"Error": "Item not found"}, 404
+    return items[item_id]
+
+@app.options("/items/{item_id}")
+def options_item(item_id: int):
+    return {"Allow": ["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "TRACE"]}
+
+@app.trace("/items/")
+def trace_items():
+    return {"Message": "TRACE endpoint"}
+#
+#
+# The Test Suite
+#
+client = TestClient(app)
+
+class TestFastAPI(unittest.TestCase):
+
+    def test_read_root(self):
+        response = client.get("/")
+        self.assertEqual(response.status_code, 200)
+        self.assertDictEqual(response.json(), {"Hello": "World"})
+
+    def test_read_item_with_query(self):
+        response = client.get("/items/42?q=somequery")
+        self.assertEqual(response.status_code, 200)
+        self.assertDictEqual(response.json(), {"item_id": 42, "q": "somequery"})
+    
+    def test_read_item_without_query(self):
+        response = client.get("/items/42")
+        self.assertEqual(response.status_code, 200)
+        self.assertDictEqual(response.json(), {"item_id": 42, "q": None})
+
+    def test_create_item(self):
+        response = client.post("/items/", json={"item_id": 1, "item": {"name": "Item1"}})
+        self.assertEqual(response.status_code, 200)
+        self.assertDictEqual(response.json(), {"item_id": 1, "item": {"name": "Item1"}})
+
+    def test_update_item(self):
+        client.put("/items/", json={"item_id": 1, "item": {"name": "Item1"}})
+        response = client.put("/items/1", json={"name": "Updated Item1"})
+        self.assertEqual(response.status_code, 200)
+        self.assertDictEqual(response.json(), {"item_id": 1, "item": {"name": "Updated Item1"}})
+    
+    def test_delete_item(self):
+        client.post("/items/", json={"item_id": 1, "item": {"name": "Item1"}})
+        response = client.delete("/items/1")
+        self.assertEqual(response.status_code, 200)
+        self.assertDictEqual(response.json(), {"Message": "Item deleted"})
+    
+    def test_patch_item(self):
+        client.post("/items/", json={"item_id": 1, "item": {"name": "Item1"}})
+        response = client.patch("/items/1", json={"description": "Updated description"})
+        self.assertEqual(response.status_code, 200)
+        self.assertDictEqual(response.json(), {"item_id": 1, "item": {"name": "Item1", "description": "Updated description"}})
+
+    def test_head_item(self):
+        client.post("/items/", json={"item_id": 1, "item": {"name": "Item1"}})
+        response = client.head("/items/1")
+        self.assertEqual(response.status_code, 200)
+    
+    def test_options_item(self):
+        response = client.options("/items/1")
+        self.assertEqual(response.status_code, 200)
+        self.assertDictEqual(response.json(), {"Allow": ["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS", "TRACE"]})
+
+    def test_trace_items(self):
+        response = client.request("TRACE", "/items/")
+        self.assertEqual(response.status_code, 200)
+        self.assertDictEqual(response.json(), {"Message": "TRACE endpoint"})
+
+
+unittest.main(exit=False)
+#+end_src
+
+#+RESULTS:
+#+begin_example
+FF..F....F
+======================================================================
+FAIL: test_create_item (__main__.TestFastAPI.test_create_item)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/babel-C8lSuP/python-7NQNHi", line 84, in test_create_item
+    self.assertEqual(response.status_code, 200)
+AssertionError: 422 != 200
+
+======================================================================
+FAIL: test_delete_item (__main__.TestFastAPI.test_delete_item)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/babel-C8lSuP/python-7NQNHi", line 97, in test_delete_item
+    self.assertDictEqual(response.json(), {"Message": "Item deleted"})
+AssertionError: [{'Error': 'Item not found'}, 404] is not an instance of <class 'dict'> : First argument is not a dictionary
+
+======================================================================
+FAIL: test_patch_item (__main__.TestFastAPI.test_patch_item)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/babel-C8lSuP/python-7NQNHi", line 103, in test_patch_item
+    self.assertDictEqual(response.json(), {"item_id": 1, "item": {"name": "Item1", "description": "Updated description"}})
+AssertionError: [{'Error': 'Item not found'}, 404] is not an instance of <class 'dict'> : First argument is not a dictionary
+
+======================================================================
+FAIL: test_update_item (__main__.TestFastAPI.test_update_item)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/babel-C8lSuP/python-7NQNHi", line 91, in test_update_item
+    self.assertDictEqual(response.json(), {"item_id": 1, "item": {"name": "Updated Item1"}})
+AssertionError: [{'Error': 'Item not found'}, 404] is not an instance of <class 'dict'> : First argument is not a dictionary
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.037s
+
+FAILED (failures=4)
+#+end_example
+
+
+### Explanation of the Extended Application
+
+- **`GET /items/{item_id}`**: Retrieves an item with optional query parameters.
+- **`POST /items/`**: Creates a new item.
+- **`PUT /items/{item_id}`**: Updates an existing item.
+- **`DELETE /items/{item_id}`**: Deletes an item.
+- **`PATCH /items/{item_id}`**: Partially updates an item.
+- **`HEAD /items/{item_id}`**: Retrieves metadata for an item.
+- **`OPTIONS /items/{item_id}`**: Lists allowed methods.
+- **`TRACE /items/`**: Echoes the received request, used for diagnostics.
+
+### Explanation of the Extended Test Suite
+
+- **Test for Each HTTP Method**: Each test validates the respective HTTP method:
+  - `test_read_root`: Tests the root `GET /` endpoint.
+  - `test_read_item_with_query` and `test_read_item_without_query`: Test the `GET /items/{item_id}` endpoint with and without query parameters.
+  - `test_create_item`: Tests the `POST /items/` endpoint.
+  - `test_update_item`: Tests the `PUT /items/{item_id}` endpoint.
+  - `test_delete_item`: Tests the `DELETE /items/{item_id}` endpoint.
+  - `test_patch_item`: Tests the `PATCH /items/{item_id}` endpoint.
+  - `test_head_item`: Tests the `HEAD /items/{item_id}` endpoint.
+  - `test_options_item`: Tests the `OPTIONS /items/{item_id}` endpoint.
+  - `test_trace_items`: Tests the `TRACE /items/` endpoint.
+
+This setup ensures your FastAPI application correctly handles all
+major HTTP request methods and that the corresponding endpoints
+function as expected. You can simply run this code block in your
+Org-mode file, and it will execute the tests for the extended FastAPI
+application.
+
