@@ -1,0 +1,246 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Pydantic
+tagline: " core features"
+permalink: /python/pydantic-overivew.html
+categories: [Pydantic]
+tags: [overview]
+---
+#+END_EXPORT
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+PROPERTY: header-args :exports both
+#+PROPERTY: header-args+ :results output pp
+#+PROPERTY: header-args+ :eval no-export
+#+PROPERTY: header-args+ :session pydantic
+#+PROPERTY: vizier-thread-id thread_5S6bnqFjkyRuHiJKKAi3t0nI
+#+PROPERTY: vizier-assistant-id asst_9U8N72u9uVQesQNNjgOLJOu8
+#+TOC: headlines 4
+
+
+* Preface
+#+begin_quote
+Pydantic is a powerful data validation and settings management library
+for Python, engineered to enhance the robustness and reliability of
+your codebase. From basic tasks, such as checking whether a variable
+is an integer, to more complex tasks, like ensuring highly-nested
+dictionary keys and values have the correct data types, Pydantic can
+handle just about any data validation scenario with minimal
+boilerplate code.
+#+end_quote
+In this article I try to rectify the core principles behind the
+description.
+
+* Zero Shot
+Can you explain what is the main features of Pydantic Python library?
+
+#+begin_src markdown
+Pydantic is a data validation and settings management library for
+Python, built on top of Python's type hints. It allows you to define
+data models with validation and conversion rules, leveraging Python
+type annotations. Here's a breakdown of its main features:
+
+*Table of Contents*
+1. Basics of Pydantic
+2. Data Validation and Parsing
+3. Model Composition
+4. Data Serialization
+5. Custom Data Types
+6. Settings Management
+7. Integration and Use Cases
+
+*Note: Code snippets are provided in Org-mode Babel format.*
+#+end_src
+** Basics of Pydantic
+
+
+Pydantic allows you to define models using Python's typing
+annotations. Fields can have default values, and default factories, or
+be required.
+
+#+begin_src python :results none
+from typing import Optional
+from datetime import datetime
+from pydantic import BaseModel, ValidationError
+
+
+class User(BaseModel):
+    id: int
+    name: str
+    signup_ts: Optional[datetime] = None
+    friends: list[int] = []
+#+end_src
+
+** Data Validation and Parsing
+
+Pydantic automatically validates and parses input data, if correction
+is obvious it implements it on the fly, if correction is obscure and
+controversial (the data doesn't conform to the model's type
+annotations) it raising errors.
+
+#+begin_src python
+user = User(id='123', name='John Doe', signup_ts='2023-01-01T00:00:00', friends=[1, 2, '3'])
+print(user)
+#+end_src
+
+#+RESULTS:
+: id=123 name='John Doe' signup_ts=datetime.datetime(2023, 1, 1, 0, 0) friends=[1, 2, 3]
+
+#+begin_src python :results output
+try:
+    user = User(id='a23', name='John Doe', signup_ts='2023-01-01T00:00:00', friends=[1, 2, 'b'])
+except ValidationError as error_message:
+    print(error_message)    
+#+end_src
+
+#+RESULTS:
+: 2 validation errors for User
+: id
+:   Input should be a valid integer, unable to parse string as an integer [type=int_parsing, input_value='a23', input_type=str]
+:     For further information visit https://errors.pydantic.dev/2.8/v/int_parsing
+: friends.2
+:   Input should be a valid integer, unable to parse string as an integer [type=int_parsing, input_value='b', input_type=str]
+:     For further information visit https://errors.pydantic.dev/2.8/v/int_parsing
+
+** Model Composition
+
+Pydantic models can be nested, allowing for complex data structures. 
+
+#+begin_src python
+class Address(BaseModel):
+    street: str
+    city: str
+
+class User(BaseModel):
+    id: int
+    name: str
+    address: Address
+
+address_data = {'street': '123 Main St', 'city': 'Anytown'}
+user_data = {'id': 1, 'name': 'John Doe', 'address': address_data}
+user = User(**user_data)  # Automatically handles the nesting
+print(user)
+#+end_src
+
+#+RESULTS:
+: id=1 name='John Doe' address=Address(street='123 Main St', city='Anytown')
+
+** Data Serialization
+
+Pydantic models can be easily serialized to and deserialized from formats like JSON.
+
+#+begin_src python
+user_json = user.json()  # Serialize to JSON string
+user_dict = user.dict()  # Serialize to dictionary
+user_copy = User.parse_raw(user_json)  # Deserialize from JSON string
+print(user_json)
+print(user_dict)
+print(user_copy)
+#+end_src
+
+#+RESULTS:
+: {"id":1,"name":"John Doe","address":{"street":"123 Main St","city":"Anytown"}}
+: {'id': 1, 'name': 'John Doe', 'address': {'street': '123 Main St', 'city': 'Anytown'}}
+: id=1 name='John Doe' address=Address(street='123 Main St', city='Anytown')
+
+** Custom Data Types
+
+Pydantic allows the creation of custom data types by extending the
+`pydantic.BaseModel` and providing custom validation logic.
+
+#+begin_src python
+from typing_extensions import Annotated
+from pydantic import Field
+#from pydantic import ConstrainedInt <-- obsolete
+
+#class PositiveInt(ConstrainedInt):
+#    gt = 0
+
+PositiveInt = Annotated[int, Field(ge=0)]
+
+class User(BaseModel):
+    id: PositiveInt
+
+user = User(id=42)  # Valid
+print(user)
+try: user = User(id=-42)  # Raises validation error
+except ValidationError as error_message:
+    print(error_message)     
+#+end_src
+
+#+RESULTS:
+: id=42
+: 1 validation error for User
+: id
+:   Input should be greater than or equal to 0 [type=greater_than_equal, input_value=-42, input_type=int]
+:     For further information visit https://errors.pydantic.dev/2.8/v/greater_than_equal
+
+** Settings Management
+
+Pydantic can be used for settings management by leveraging environment
+variables through `pydantic.BaseSettings`.
+
+#+begin_src sh
+pip list | grep pydantic
+#+end_src
+
+#+RESULTS:
+: 
+: pydantic          2.8.2
+: pydantic_core     2.20.1
+
+Install =pydantic_settings= module:
+#+begin_src sh
+pip install pydantic_settings
+#+end_src
+
+#+RESULTS:
+: Collecting pydantic_settings
+:   Downloading pydantic_settings-2.3.4-py3-none-any.whl (22 kB)
+: =2.7.0 in /home/alioth/.virtualenvs/FastAPI/lib/python3.11/site-packages (from pydantic_settings) (2.8.2)
+: =0.21.0 in /home/alioth/.virtualenvs/FastAPI/lib/python3.11/site-packages (from pydantic_settings) (1.0.1)
+: =0.4.0 in /home/alioth/.virtualenvs/FastAPI/lib/python3.11/site-packages (from pydantic>=2.7.0->pydantic_settings) (0.7.0)
+: =2.7.0->pydantic_settings) (2.20.1)
+: =4.6.1 in /home/alioth/.virtualenvs/FastAPI/lib/python3.11/site-packages (from pydantic>=2.7.0->pydantic_settings) (4.12.2)
+: Installing collected packages: pydantic_settings
+: Successfully installed pydantic_settings-2.3.4
+
+#+begin_src python
+from pydantic_settings import BaseSettings
+
+class Settings(BaseSettings):
+    app_name: str
+    admin_email: str
+
+    class Config:
+        env_prefix = 'MY_APP_'  # Environment variables should start with MY_APP_
+
+settings = Settings(app_name='philomath', admin_email='tonyphilomath@gmail.com')
+print(settings.app_name)  # Read the value from the MY_APP_APP_NAME environment variable
+#+end_src
+
+#+RESULTS:
+: philomath
+
+** Integration and Use Cases
+
+Pydantic integrates well with frameworks like FastAPI for creating web
+APIs, and Django for model management, among other use cases.
+
+*** FastAPI Integration:
+Pydantic is the data validation and serialization backbone of FastAPI.
+*** Django Integration:
+Pydantic models can be used to validate API response payloads.
+
+** Further reading and documentation
+
+can be found here:
+- [Pydantic Documentation](https://pydantic-docs.helpmanual.io/)
+- [FastAPI Documentation](https://fastapi.tiangolo.com/)
+  
+** The Essence
+
+This should provide a comprehensive understanding of Pydantic's main
+features and capabilities.
+
