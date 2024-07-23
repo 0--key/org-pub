@@ -39,18 +39,7 @@ Can you explain what is the main features of Pydantic Python library?
 Pydantic is a data validation and settings management library for
 Python, built on top of Python's type hints. It allows you to define
 data models with validation and conversion rules, leveraging Python
-type annotations. Here's a breakdown of its main features:
-
-*Table of Contents*
-1. Basics of Pydantic
-2. Data Validation and Parsing
-3. Model Composition
-4. Data Serialization
-5. Custom Data Types
-6. Settings Management
-7. Integration and Use Cases
-
-*Note: Code snippets are provided in Org-mode Babel format.*
+type annotations.
 #+end_src
 ** Basics of Pydantic
 
@@ -147,7 +136,7 @@ print(user_copy)
 ** Custom Data Types
 
 Pydantic allows the creation of custom data types by extending the
-`pydantic.BaseModel` and providing custom validation logic.
+~pydantic.BaseModel~ and providing custom validation logic.
 
 #+begin_src python
 from typing_extensions import Annotated
@@ -179,7 +168,7 @@ except ValidationError as error_message:
 ** Settings Management
 
 Pydantic can be used for settings management by leveraging environment
-variables through `pydantic.BaseSettings`.
+variables through ~pydantic.BaseSettings~.
 
 #+begin_src sh
 pip list | grep pydantic

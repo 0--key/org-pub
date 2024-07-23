@@ -628,7 +628,7 @@ underlying framework for handling HTTP requests and ASGI applications.
 ** ASGI Support:
 Starlette is built to support ASGI (the asynchronous successor to
 WSGI). This enables asynchronous request handling, allowing for better
-performance in I/O-bound and concurrent operatio.
+performance in I/O-bound and concurrent operations.
 
 ** Routing:
 Starlette provides an easy and powerful routg mechanism which lets you

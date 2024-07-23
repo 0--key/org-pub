@@ -19,10 +19,13 @@ tags: []
 #+TOC: headlines 4
 * Preface
 
-
 Just examining by testing.
+
+
 * Prerequisites
-** The App *&* the Test Suite in a Single Block
+
+The App *&* the Test Suite in a Single Block
+
 #+begin_src python
 import unittest
 from typing import Union
@@ -73,6 +76,7 @@ unittest.main(exit=False)
 : Ran 3 tests in 0.010s
 : 
 : OK
+
 
 * TestClient module
 
@@ -233,7 +237,10 @@ integrate with various testing frameworks, making it an indispensable
 part of the FastAPI testing workflow.
 #+end_src
 
-* All Supported HTTP Request's Methods
+
+* Test All Supported HTTP Request's Methods
+
+* Scratch                                                          :noexport:
 I've wrapped the app code and the test suite into a single Babel code snippet:
 #+begin_src python
 import unittest
@@ -278,6 +285,13 @@ class TestFastAPI(unittest.TestCase):
 
 unittest.main(exit=False)
 #+end_src
+
+#+RESULTS:
+: ...
+: ----------------------------------------------------------------------
+: Ran 3 tests in 0.026s
+: 
+: OK
 
 and it works. Now I want to:
 

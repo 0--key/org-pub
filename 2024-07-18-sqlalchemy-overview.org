@@ -240,7 +240,7 @@ CREATE TABLE users (
 
 2024-07-20 10:33:03,684 INFO sqlalchemy.engine.Engine [no key 0.00011s] ()
 2024-07-20 10:33:03,684 INFO sqlalchemy.engine.Engine COMMIT
-/tmp/babel-C8lSuP/python-uwm0l3:20: MovedIn20Warning: The ``declarative_base()`` function is now available as sqlalchemy.orm.declarative_base(). (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+/tmp/babel-C8lSuP/python-uwm0l3:20: MovedIn20Warning: The ~~declarative_base()~~ function is now available as sqlalchemy.orm.declarative_base(). (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
   Base = declarative_base()
 2024-07-20 10:33:03,688 INFO sqlalchemy.engine.Engine BEGIN (implicit)
 2024-07-20 10:33:03,690 INFO sqlalchemy.engine.Engine INSERT INTO users (name, age) VALUES (?, ?)
@@ -357,8 +357,8 @@ import declarative_base from sqlalchemy.orm
 # Define the database connection and base
 engine = create_engine('sqlite:///example.db', echo=True)
 #**Explanation of the Connection URL:**
-#- `sqlite://`: Specifies that the SQLite dialect should be used.
-#- `/example.db`: Indicates that the database file `example.db` is located in the current working directory.
+#- ~sqlite://~: Specifies that the SQLite dialect should be used.
+#- ~/example.db~: Indicates that the database file ~example.db~ is located in the current working directory.
 # Create an engine that uses an in-memory SQLite database
 # engine = create_engine('sqlite:///:memory:', echo=True)
 
@@ -458,40 +458,44 @@ maintainability, security, and portability.
 * Clarification
 
 So, as I can understand the string:
-```
+
 engine = create_engine('sqlite:///example.db', echo=True)
-```
+
 initiate database in RAM, not at the hard drive?
 
-#+begin_src markdown
 Actually, the provided string:
 
-```org
 #+begin_src python
 engine = create_engine('sqlite:///example.db', echo=True)
 #+end_src
-```
 
-initializes a connection to an SQLite database stored in a file named `example.db` located in the current working directory on the hard drive. The `sqlite:///example.db` URL indicates that SQLite should use a file-based database.
+
+initializes a connection to an SQLite database stored in a file named
+~example.db~ located in the current working directory on the hard
+drive. The ~sqlite:///example.db~ URL indicates that SQLite should use
+a file-based database.
 
 **Explanation of the Connection URL:**
-- `sqlite://`: Specifies that the SQLite dialect should be used.
-- `/example.db`: Indicates that the database file `example.db` is located in the current working directory.
+- ~sqlite://~: Specifies that the SQLite dialect should be used.
+- ~/example.db~: Indicates that the database file ~example.db~ is
+  located in the current working directory.
 
-If you want to create a SQLite database in RAM (which resides in memory and is ephemeral), you need to modify the connection string as follows:
+If you want to create a SQLite database in RAM (which resides in
+memory and is ephemeral), you need to modify the connection string as
+follows:
 
-```org
+
 #+begin_src python
 engine = create_engine('sqlite:///:memory:', echo=True)
 #+end_src
-```
+
 
 **Explanation of the In-Memory Connection URL:**
-- `sqlite://`: Specifies that the SQLite dialect should be used.
-- `/:memory:`: Indicates that the SQLite database should be created in RAM.
+- ~sqlite://~: Specifies that the SQLite dialect should be used.
+- ~/:memory:~: Indicates that the SQLite database should be created in RAM.
 
 **Example Initializing a Database in RAM:**
-```org
+
 #+begin_src python
 from sqlalchemy import create_engine, Table, Column, Integer, String, MetaData
 from sqlalchemy.ext.declarative import declarative_base
@@ -530,16 +534,15 @@ session.commit()
 for user in session.query(User).all():
     print(user.id, user.name, user.age)
 #+end_src
-```
+
 
 **Points to Note:**
-1. **Persistence:** The `example.db` file persists on the filesystem, making the database durable until manually deleted.
-2. **In-Memory Database:** The `:memory:` database is temporary, meaning it is lost when the program exits. It is useful for testing or situations where you need a fast, transient database.
+1. **Persistence:** The ~example.db~ file persists on the filesystem, making the database durable until manually deleted.
+2. **In-Memory Database:** The ~:memory:~ database is temporary, meaning it is lost when the program exits. It is useful for testing or situations where you need a fast, transient database.
 3. **Connection URL Details:**
-   - `sqlite:///example.db`: File-based SQLite database on disk.
-   - `sqlite:///:memory:`: In-memory SQLite database.
+   - ~sqlite:///example.db~: File-based SQLite database on disk.
+   - ~sqlite:///:memory:~: In-memory SQLite database.
 
 In conclusion, to create a database in RAM, you need to use
-`sqlite:///:memory:`, whereas `sqlite:///example.db` creates a durable
-database file on the hard drive.  #+end_src
-
+~sqlite:///:memory:~, whereas ~sqlite:///example.db~ creates a durable
+database file on the hard drive.

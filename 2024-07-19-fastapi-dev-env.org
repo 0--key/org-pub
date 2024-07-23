@@ -344,7 +344,7 @@ you can execute the test code block within the Org document.
 This setup will help you ensure that your FastAPI application works as
 expected.
 
-* Corrections *The Snag*
+* Corrections *The Snag*                                           :noexport:
 
 My Org file with Babel code snippets and the =main.py= are in the
 different dirictories. The relative path is =code/awesomeapp/main.py=
