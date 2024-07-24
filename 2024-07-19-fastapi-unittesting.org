@@ -237,9 +237,6 @@ integrate with various testing frameworks, making it an indispensable
 part of the FastAPI testing workflow.
 #+end_src
 
-
-* Test All Supported HTTP Request's Methods
-
 * Scratch                                                          :noexport:
 I've wrapped the app code and the test suite into a single Babel code snippet:
 #+begin_src python
