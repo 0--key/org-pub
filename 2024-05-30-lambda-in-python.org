@@ -1,7 +1,7 @@
 #+BEGIN_EXPORT html
 ---
 layout: page
-title: Lamda Function
+title: Lambda Function
 tagline: " is a tiny and efficient"
 permalink: /fundamentals/python/lambda.html
 categories: [Python, Literate Programming]
