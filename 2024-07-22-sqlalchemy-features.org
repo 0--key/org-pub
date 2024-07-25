@@ -18,7 +18,7 @@ tags: [overview, features]
 #+PROPERTY: vizier-assistant-id asst_9U8N72u9uVQesQNNjgOLJOu8
 #+TOC: headlines 2
 
-* What is the purpose of usage of object-relational mapping?
+* Purpose of ORM Usage
 
 Object-Relational Mapping (ORM) is a programming technique used to
 convert data between incompatible type systems in object-oriented
@@ -27,7 +27,6 @@ interact with a relational database using the idioms and patterns of
 their preferred programming language, transforming complex SQL queries
 and operations into more intuitive and manageable code constructs.
 
-* Purpose of ORM Usage:
 
 1. *Abstraction and Simplicity:*
    - *Reduces Boilerplate Code:* ORM frameworks abstract much of the
@@ -70,9 +69,12 @@ and operations into more intuitive and manageable code constructs.
 
 * Abstraction and Simplicity
 
+
 ** One-to-many relationship
 
+
 *** SQLAlchemy
+
 Provide a complete Python code example using SQLAlchemy to implement a
 one-to-many relationship between two tables, representing 'Author' and
 'Book'. The 'Author' table should have multiple 'Book' entries
@@ -190,38 +192,38 @@ WHERE ? = books.author_id
 #+end_example
 
 
-**Explanation:**
+*Explanation:*
 
-1. **Model Definitions:**
-   - **Author Model:** Represents the 'authors' table with an `id`
-     primary key and a `name` field. It has a relationship with the
-     `Book` model specified by `books`.
-   - **Book Model:** Represents the 'books' table with an `id` primary
-     key, a `title` field, and a `author_id` foreign key pointing to
-     `authors.id`. It has a relationship with the `Author` model
-     specified by `author`.
+1. *Model Definitions:*
+   - *Author Model:* Represents the 'authors' table with an ~id~
+     primary key and a ~name~ field. It has a relationship with the
+     ~Book~ model specified by ~books~.
+   - *Book Model:* Represents the 'books' table with an ~id~ primary
+     key, a ~title~ field, and a ~author_id~ foreign key pointing to
+     ~authors.id~. It has a relationship with the ~Author~ model
+     specified by ~author~.
 
-2. **Relationships:**
-   - `relationship("Book", back_populates="author")` in the `Author`
+2. *Relationships:*
+   - ~relationship("Book", back_populates="author")~ in the ~Author~
      model defines a one-to-many relationship where each author can
      have multiple books.
-   - `relationship("Author", back_populates="books")` in the `Book`
+   - ~relationship("Author", back_populates="books")~ in the ~Book~
      model defines the inverse of this relationship.
 
-3. **Database Creation:**
-   - `Base.metadata.create_all(engine)` creates the 'authors' and
+3. *Database Creation:*
+   - ~Base.metadata.create_all(engine)~ creates the 'authors' and
      'books' tables in the SQLite in-memory database.
 
-4. **Data Insertion:**
-   - An `Author` object is created.
-   - Two `Book` objects are created with the `author` attribute set to
-     the previously created `Author` object.
+4. *Data Insertion:*
+   - An ~Author~ object is created.
+   - Two ~Book~ objects are created with the ~author~ attribute set to
+     the previously created ~Author~ object.
 
-5. **Session Commit:**
-   - The `author` and books are added to the session and committed to
+5. *Session Commit:*
+   - The ~author~ and books are added to the session and committed to
      the database.
 
-6. **Querying:**
+6. *Querying:*
    - Queries all authors and prints their names and associated books,
      demonstrating the one-to-many relationship.
 
@@ -236,7 +238,7 @@ have multiple 'Book' entries associated with it. The code should
 include model definitions, the creation of the database, and examples
 of how to add and query relationships.
 
-Certainly! Using the `sqlite3` standard library module, you can
+Certainly! Using the ~sqlite3~ standard library module, you can
 implement a one-to-many relationship between two tables ('Author' and
 'Book'). Here is the complete Python code example, including table
 definitions, database creation, data insertion, and relationship
@@ -282,54 +284,55 @@ results = cursor.fetchall() for row in results: print(f"Author:
 conn.close()
 #+end_src
 
-**Explanation:**
+*Explanation:*
 
-1. **Database Connection:**
-   - `conn = sqlite3.connect(':memory:')` creates a connection to an
+1. *Database Connection:*
+   - ~conn = sqlite3.connect(':memory:')~ creates a connection to an
      in-memory SQLite database. To persist the database to a file, you
-     would replace `:memory:` with a filename like `'example.db'`.
+     would replace ~:memory:~ with a filename like ~'example.db'~.
 
-2. **Table Creation:**
-   - `CREATE TABLE Author` creates the `Author` table with an `id`
-     primary key and a `name` column.
-   - `CREATE TABLE Book` creates the `Book` table with an `id` primary
-     key, a `title` column, and a `author_id` column that references
-     the `Author` table.
+2. *Table Creation:*
+   - ~CREATE TABLE Author~ creates the ~Author~ table with an ~id~
+     primary key and a ~name~ column.
+   - ~CREATE TABLE Book~ creates the ~Book~ table with an ~id~ primary
+     key, a ~title~ column, and a ~author_id~ column that references
+     the ~Author~ table.
 
-3. **Data Insertion:**
-   - An author named "J.K. Rowling" is inserted into the `Author`
+3. *Data Insertion:*
+   - An author named "J.K. Rowling" is inserted into the ~Author~
      table.
-   - The `lastrowid` attribute is used to get the ID of the last
-     inserted row (the author) for use in the `Book` table.
+   - The ~lastrowid~ attribute is used to get the ID of the last
+     inserted row (the author) for use in the ~Book~ table.
    - Two books associated with the inserted author are added to the
-     `Book` table using `executemany`.
+     ~Book~ table using ~executemany~.
 
-4. **Data Querying:**
+4. *Data Querying:*
    - A JOIN query retrieves authors and their associated books from
-     the `Author` and `Book` tables, displaying the results in a
+     the ~Author~ and ~Book~ tables, displaying the results in a
      readable format.
 
-5. **Result Display:**
+5. *Result Display:*
    - The results of the query are fetched and printed, showing the
      relationship between authors and their books.
 
-6. **Closing the Connection:**
+6. *Closing the Connection:*
    - Finally, the connection to the database is closed with
-     `conn.close()`.
+     ~conn.close()~.
 
 This complete example demonstrates how to implement a one-to-many
-relationship using the `sqlite3` standard library module, covering
+relationship using the ~sqlite3~ standard library module, covering
 creation, insertion, and querying of related data.
 
 
 ** Altering DB schema
 
+
 *** SQLAlchemy
 *Task Description:*
 
 "Provide a complete Python code example using SQLAlchemy to alter the
-`books` table by adding two additional columns: `publisher` and
-`publication_year`. The code should include the initial table
+~books~ table by adding two additional columns: ~publisher~ and
+~publication_year~. The code should include the initial table
 creation, the alteration to add new columns, and examples of
 populating and querying the updated table."
 
@@ -380,7 +383,7 @@ session.commit()
 
 # Alter the table to add new columns
 @compiles(AddColumn, "sqlite")
-def _compile_add_column(element, compiler, **kwargs):
+def _compile_add_column(element, compiler, *kwargs):
     return "ALTER TABLE %s ADD COLUMN %s" % (
         compiler.preparer.format_table(element.table),
         compiler.get_column_specification(element.column)
@@ -412,49 +415,55 @@ for book in books:
 session.close()
 #+end_src
 
-**Explanation:**
+*Explanation:*
 
-1. **Initial Table Creation:**
-   - The `Author` and `Book` tables are initially defined and created in an SQLite in-memory database.
+1. *Initial Table Creation:*
+   - The ~Author~ and ~Book~ tables are initially defined and created
+     in an SQLite in-memory database.
 
-2. **Adding New Columns:**
-   - The `@compiles(AddColumn, "sqlite")` decorator fixes the SQLite limitation of the SQLAlchemy's `ALTER TABLE` statement.
-   - Two new columns, `publisher` (String) and `publication_year` (Integer), are added to the `books` table.
+2. *Adding New Columns:*
+   - The ~@compiles(AddColumn, "sqlite")~ decorator fixes the SQLite
+     limitation of the SQLAlchemy's ~ALTER TABLE~ statement.
+   - Two new columns, ~publisher~ (String) and ~publication_year~
+     (Integer), are added to the ~books~ table.
 
-3. **Reflection to Include New Columns:**
-   - The `append_column` method is used to update the `Book` model with the newly added columns.
+3. *Reflection to Include New Columns:*
+   - The ~append_column~ method is used to update the ~Book~ model
+     with the newly added columns.
 
-4. **Adding Data:**
-   - A new book entry with the newly added columns is created and committed to the database.
+4. *Adding Data:*
+   - A new book entry with the newly added columns is created and
+     committed to the database.
 
-5. **Querying to Verify:**
-   - The updated table structure and data are queried and printed to verify the addition of the new columns and their values.
+5. *Querying to Verify:*
+   - The updated table structure and data are queried and printed to
+     verify the addition of the new columns and their values.
 
-6. **Closing the Session:**
+6. *Closing the Session:*
    - The session is closed to clean up database connections.
 
 This example illustrates how to alter an existing table to add new
 columns using SQLAlchemy and then handle the updated table in your
-models and data operations.  #+end_src
+models and data operations.
 
 *** Pure Python
 *Task Description:*
 
 Provide a complete Python code example using ~sqlite3~ module from
-the standard library to alter the `books` table by adding two
-additional columns: `publisher` and `publication_year`. The code
+the standard library to alter the ~books~ table by adding two
+additional columns: ~publisher~ and ~publication_year~. The code
 should include the initial table creation, the alteration to add new
 columns, and examples of populating and querying the updated table.
 
 -----
 
 Certainly! Here is a complete Python code example that demonstrates
-how to use the `sqlite3` module from the standard library to implement
+how to use the ~sqlite3~ module from the standard library to implement
 the following:
 
-1. Initial table creation for `Author` and `Book` tables.
-2. Altering the `books` table to add two additional columns:
-   `publisher` and `publication_year`.
+1. Initial table creation for ~Author~ and ~Book~ tables.
+2. Altering the ~books~ table to add two additional columns:
+   ~publisher~ and ~publication_year~.
 3. Adding new data to the updated table.
 4. Querying data from the updated table.
 
@@ -491,7 +500,8 @@ cursor.execute("INSERT INTO Author (name) VALUES ('J.K. Rowling')")
 author_id = cursor.lastrowid
 
 # Insert data into Book table
-cursor.execute("INSERT INTO Book (title, author_id) VALUES (?, ?)", ("Harry Potter and the Philosopher's Stone", author_id))
+cursor.execute("INSERT INTO Book (title, author_id) VALUES (?, ?)",
+               ("Harry Potter and the Philosopher's Stone", author_id))
 
 # Commit the transaction
 conn.commit()
@@ -501,7 +511,7 @@ cursor.execute("ALTER TABLE Book ADD COLUMN publisher TEXT")
 cursor.execute("ALTER TABLE Book ADD COLUMN publication_year INTEGER")
 
 # Insert additional data with new columns into Book table
-cursor.execute("INSERT INTO Book (title, author_id, publisher, publication_year) VALUES (?, ?, ?, ?)", 
+cursor.execute("INSERT INTO Book (title, author_id, publisher, publication_year) VALUES (?, ?, ?, ?)",
                ("Harry Potter and the Chamber of Secrets", author_id, "Bloomsbury", 1998))
 
 # Commit the transaction
@@ -522,39 +532,57 @@ JOIN
 
 results = cursor.fetchall()
 for row in results:
-    print(f"Author: {row[0]} - Book: {row[1]} - Publisher: {row[2]} - Publication Year: {row[3]}")
+    print(
+        f"Author: {row[0]} - Book: {row[1]} - Publisher: {row[2]} - Publication Year: {row[3]}")
 
 # Close the connection
 conn.close()
 #+end_src
 
-**Explanation:**
+#+RESULTS:
+: Author: J.K. Rowling - Book: Harry Potter and the Philosopher's Stone - Publisher: None - Publication Year: None
+: Author: J.K. Rowling - Book: Harry Potter and the Chamber of Secrets - Publisher: Bloomsbury - Publication Year: 1998
 
-1. **Database Connection:**
-   - `conn = sqlite3.connect(':memory:')` creates a connection to an in-memory SQLite database for testing purposes. To use a persistent database, replace `:memory:` with a file name like `'example.db'`.
+*Explanation:*
 
-2. **Table Creation:**
-   - The `Author` table is created with an `id` primary key and `name` field.
-   - The `Book` table is initially created with an `id` primary key, `title`, and `author_id` as a foreign key referencing `Author`.
+1. *Database Connection:*
+   - ~conn = sqlite3.connect(':memory:')~ creates a connection to an
+     in-memory SQLite database for testing purposes. To use a
+     persistent database, replace ~:memory:~ with a file name like
+     ~'example.db'~.
 
-3. **Data Insertion:**
-   - An author named "J.K. Rowling" is inserted into the `Author` table.
-   - A book titled "Harry Potter and the Philosopher's Stone" is inserted into the `Book` table with the foreign key `author_id`.
+2. *Table Creation:*
+   - The ~Author~ table is created with an ~id~ primary key and ~name~
+     field.
+   - The ~Book~ table is initially created with an ~id~ primary key,
+     ~title~, and ~author_id~ as a foreign key referencing ~Author~.
 
-4. **Table Alteration:**
-   - The `ALTER TABLE` statements add two new columns: `publisher` (TEXT) and `publication_year` (INTEGER) to the `Book` table.
+3. *Data Insertion:*
+   - An author named "J.K. Rowling" is inserted into the ~Author~
+     table.
+   - A book titled "Harry Potter and the Philosopher's Stone" is
+     inserted into the ~Book~ table with the foreign key ~author_id~.
 
-5. **Inserting Data to Updated Table:**
-   - Another book titled "Harry Potter and the Chamber of Secrets" is inserted with values for the new columns: `publisher` and `publication_year`.
+4. *Table Alteration:*
+   - The ~ALTER TABLE~ statements add two new columns: ~publisher~
+     (TEXT) and ~publication_year~ (INTEGER) to the ~Book~ table.
 
-6. **Querying Data:**
-   - A JOIN query fetches and displays author names, book titles, publishers, and publication years to verify the changes.
+5. *Inserting Data to Updated Table:*
+   - Another book titled "Harry Potter and the Chamber of Secrets" is
+     inserted with values for the new columns: ~publisher~ and
+     ~publication_year~.
 
-7. **Close Connection:**
-   - The connection to the SQLite database is closed to release resources.
+6. *Querying Data:*
+   - A JOIN query fetches and displays author names, book titles,
+     publishers, and publication years to verify the changes.
+
+7. *Close Connection:*
+   - The connection to the SQLite database is closed to release
+     resources.
 
 This example shows how to manage schema evolution in SQLite using the
-`sqlite3` standard library module in Python.
+~sqlite3~ standard library module in Python.
+
 
 * Maintainability
 
@@ -629,6 +657,7 @@ explain the advantages of using SQLAlchemy?"
      points for advanced use cases.
 
 *** Example Illustrations:
+
 **** Declarative Syntax:
 
   #+begin_src python
@@ -657,15 +686,17 @@ explain the advantages of using SQLAlchemy?"
 
 
 **** Automated Migrations (Alembic):
-  Create a migration script:
-  ```sh
-  alembic revision --autogenerate -m "Add email column to users"
-  ```
 
-  Apply the migration:
-  ```sh
-  alembic upgrade head
-  ```
+Create a migration script:
+  #+begin_src sh
+alembic revision --autogenerate -m "Add email column to users"
+  #+end_src
+
+
+Apply the migration:
+  #+begin_src sh
+alembic upgrade head
+  #+end_src
 
   
 **** Session Management:
@@ -683,6 +714,8 @@ explain the advantages of using SQLAlchemy?"
       session.close()
   #+end_src
 
+
+
 *** Conclusion
 These advantages demonstrate how SQLAlchemy simplifies database
 interactions, improves code maintainability, and provides powerful
@@ -692,7 +725,10 @@ libraries, SQLAlchemy offers a cohesive, feature-rich, and consistent
 framework that integrates seamlessly with Python's object-oriented
 capabilities.
 
+
+
 * Portability
+
 
 ** The Mechanism Unveiled
 What mechanism does SQLAlchemy use to facilitate migration from one
@@ -708,26 +744,32 @@ SQLAlchemy’s ORM and database-agnostic architecture can be leveraged
 to facilitate RDBMS migrations by using the following steps:
 
 1. **Schema Definition and Reflection:**
-   - SQLAlchemy’s ORM allows for schema definitions that are compatible with multiple databases.
-   - Use SQLAlchemy's reflection capabilities to introspect and work with existing database schemas.
+   - SQLAlchemy’s ORM allows for schema definitions that are
+     compatible with multiple databases.
+   - Use SQLAlchemy's reflection capabilities to introspect and work
+     with existing database schemas.
 
 2. **ORM Abstraction:**
-   - Define your database schema using SQLAlchemy ORM models. This ensures that the code is portable across different RDBMS backends.
+   - Define your database schema using SQLAlchemy ORM models. This
+     ensures that the code is portable across different RDBMS
+     backends.
    - Using ORM models, you can interact with the database in a
      consistent manner, irrespective of the underlying database.
 
 3. **Data Migration Process:**
-   - Utilize a data export and import strategy to transfer data between databases.
+   - Utilize a data export and import strategy to transfer data
+     between databases.
    - Read data from the source database using SQLAlchemy ORM or Core.
-   - Write data to the target database using the same ORM models or Core constructs.
+   - Write data to the target database using the same ORM models or
+     Core constructs.
 
 4. **Alembic for Schema Migration:**
-   - Although Alembic is typically used for version-controlled schema
+   - Although =Alembic= is typically used for version-controlled schema
      migrations within the same RDBMS, it can assist in defining
      schema transformations that are necessary when migrating between
      different RDBMS.
 
-**Example Workflow:**
+** Example Workflow
 
 1. **Define ORM models:**
    ```org
@@ -793,7 +835,7 @@ data transformation, thus minimizing the risk of data loss and
 ensuring compatibility across different RDBMS.  #+end_src
 
 
-* Consulting
+* Consulting                                                       :noexport:
 :PROPERTIES:
 :vizier-assistant-id: asst_1v0Z6IHadAtxRpc3XG4Uj58h
 :END:
