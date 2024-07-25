@@ -1,0 +1,238 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Declarative Programming
+tagline: " trust but verify"
+permalink: /python/declarative-programming.html
+categories: [FastAPI, Python, Declarative Programming, OpenAI]
+tags: [intro]
+---
+#+END_EXPORT
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+PROPERTY: header-args :exports both
+#+PROPERTY: header-args+ :results output pp
+#+PROPERTY: header-args+ :eval no-export
+#+PROPERTY: header-args+ :session declarative_programming
+#+PROPERTY: vizier-thread-id thread_P1IWm6tT9kp7NsERBQyN0Mbt
+#+PROPERTY: vizier-assistant-id asst_9U8N72u9uVQesQNNjgOLJOu8
+#+TOC: headlines 3
+* Preface
+
+=OpenAI= opens new horizons in software development. It is now possible
+to write programs in a /declarative style/ by simply describing the
+desired outcome. This approach allows developers to focus on what they
+want to achieve, rather than detailing the step-by-step instructions
+to get there. As a result, the development process becomes more
+intuitive and efficient, fostering innovation and reducing the
+complexity of coding.
+
+** Definition of DS
+
+The /declarative style of programming/ focuses on what the program
+should accomplish without explicitly specifying the steps to achieve
+that result. It describes the logic of computation without describing
+its control flow.
+
+** Characteristics of DS
+
+- Higher-level expression of computation;
+- Emphasis on what to do, rather than how to do it;
+- Often involves the use of expressions and declarations instead of
+  explicit control flow.
+
+
+** Definition of IS
+
+The imperative style of programming focuses on how to perform tasks
+using statements that change a program's state. It describes the steps
+that the computer must take to achieve a goal.
+
+** Characteristics of IS
+
+- Sequence of commands (instructions) to be executed;
+- Manipulation of variables and data structures;
+- Explicit control flow using loops, conditionals, and function
+  calls.
+
+
+** Stirring them Up!
+
+The task is to compose a question that defines the task clearly enough
+for OpenAI to comprehend. Naturally, this requires clarity in the
+plain English definition, as well as the provision of clear and lucid
+examples. By doing so, the instructions will be more precise, ensuring
+that OpenAI can process and generate the desired outcome
+effectively. This approach not only aids comprehension but also
+enhances the overall accuracy of the solution provided.
+
+
+
+* HTTP Methods
+
+** Question
+
+I write Python code block where I put the app and the test suite
+together in sake of clarity:
+
+#+begin_src python
+import unittest
+from typing import Union
+from fastapi import FastAPI
+from fastapi.testclient import TestClient
+
+
+app = FastAPI()
+client = TestClient(app)
+
+@app.get("/")
+def read_root():
+    return {"Method": "GET"}
+
+class TestFastAPIGetMethod(unittest.TestCase):
+
+    def test_read_root(self):
+        response = client.get("/")
+        self.assertEqual(response.status_code, 200)
+        self.assertDictEqual(response.json(), {"Method": "GET"})
+
+unittest.main(exit=False)
+#+end_src
+
+#+RESULTS:
+: .
+: ----------------------------------------------------------------------
+: Ran 1 test in 0.006s
+: 
+: OK
+Now I want to extend my app by adding new endpoints for POST, DELETE
+and PUT methods.
+
+** Answer
+
+Certainly! Let's extend the FastAPI application to include endpoints
+for ~POST~, ~DELETE~, and ~PUT~ methods. We will also update the test
+suite to verify the functionality of these new endpoints.
+
+*** Code
+#+begin_src python
+import unittest
+from typing import Union, Dict
+from fastapi import FastAPI, HTTPException
+from fastapi.testclient import TestClient
+
+app = FastAPI()
+client = TestClient(app)
+
+# In-memory storage for demonstration purposes
+items = {}
+
+@app.get("/")
+def read_root():
+    return {"Method": "GET"}
+
+@app.post("/items/{item_id}")
+def create_item(item_id: int, item: Dict):
+    if item_id in items:
+        raise HTTPException(status_code=400, detail="Item already exists")
+    items[item_id] = item
+    return {"Method": "POST", "item_id": item_id, "item": item}
+
+@app.put("/items/{item_id}")
+def update_item(item_id: int, item: Dict):
+    if item_id not in items:
+        raise HTTPException(status_code=404, detail="Item not found")
+    items[item_id] = item
+    return {"Method": "PUT", "item_id": item_id, "item": item}
+
+@app.delete("/items/{item_id}")
+def delete_item(item_id: int):
+    if item_id not in items:
+        raise HTTPException(status_code=404, detail="Item not found")
+    del items[item_id]
+    return {"Method": "DELETE", "item_id": item_id}
+
+class TestFastAPI(unittest.TestCase):
+
+    def test_read_root(self):
+        response = client.get("/")
+        self.assertEqual(response.status_code, 200)
+        self.assertDictEqual(response.json(), {"Method": "GET"})
+
+    def test_create_item(self):
+        response = client.post("/items/1", json={"name": "Item1"})
+        self.assertEqual(response.status_code, 200)
+        self.assertDictEqual(response.json(), {"Method": "POST", "item_id": 1, "item": {"name": "Item1"}})
+
+    def test_create_item_already_exists(self):
+        client.post("/items/1", json={"name": "Item1"})
+        response = client.post("/items/1", json={"name": "Item1 Duplicate"})
+        self.assertEqual(response.status_code, 400)
+        self.assertDictEqual(response.json(), {"detail": "Item already exists"})
+
+    def test_update_item(self):
+        client.post("/items/1", json={"name": "Item1"})
+        response = client.put("/items/1", json={"name": "Updated Item1"})
+        self.assertEqual(response.status_code, 200)
+        self.assertDictEqual(response.json(), {"Method": "PUT", "item_id": 1, "item": {"name": "Updated Item1"}})
+    
+    def test_update_item_not_found(self):
+        response = client.put("/items/999", json={"name": "Non-existent Item"})
+        self.assertEqual(response.status_code, 404)
+        self.assertDictEqual(response.json(), {"detail": "Item not found"})
+    
+    def test_delete_item(self):
+        client.post("/items/1", json={"name": "Item1"})
+        response = client.delete("/items/1")
+        self.assertEqual(response.status_code, 200)
+        self.assertDictEqual(response.json(), {"Method": "DELETE", "item_id": 1})
+    
+    def test_delete_item_not_found(self):
+        response = client.delete("/items/999")
+        self.assertEqual(response.status_code, 404)
+        self.assertDictEqual(response.json(), {"detail": "Item not found"})
+
+unittest.main(exit=False)
+#+end_src
+
+#+RESULTS:
+: ........
+: ----------------------------------------------------------------------
+: Ran 8 tests in 0.031s
+: 
+: OK
+
+*** Explanation of the Extended Application
+
+1. **Endpoints**:
+   - ~GET /~: Returns a simple JSON response indicating the request method.
+   - ~POST /items/{item_id}~: Creates a new item with a given ID. Returns an error if the item already exists.
+   - ~PUT /items/{item_id}~: Updates an existing item. Returns an error if the item does not exist.
+   - ~DELETE /items/{item_id}~: Deletes an item by ID. Returns an error if the item does not exist.
+
+*** Explanation of the Extended Test Suite
+
+1. **Testing GET Method**:
+   - ~test_read_root~: Verifies the ~GET /~ endpoint.
+
+2. **Testing POST Method**:
+   - ~test_create_item~: Verifies the ~POST /items/{item_id}~ endpoint for creating a new item.
+   - ~test_create_item_already_exists~: Verifies that attempting to create an item that already exists returns a 400 status code and appropriate error message.
+
+3. **Testing PUT Method**:
+   - ~test_update_item~: Verifies the ~PUT /items/{item_id}~ endpoint for updating an existing item.
+   - ~test_update_item_not_found~: Verifies that attempting to update a non-existent item returns a 404 status code and appropriate error message.
+
+4. **Testing DELETE Method**:
+   - ~test_delete_item~: Verifies the ~DELETE /items/{item_id}~ endpoint for deleting an existing item.
+   - ~test_delete_item_not_found~: Verifies that attempting to delete a non-existent item returns a 404 status code and appropriate error message.
+
+*** Counclusion
+This setup ensures your FastAPI application now correctly handles
+~POST~, ~PUT~, and ~DELETE~ methods, and the corresponding tests
+validate these endpoints thoroughly.
+
+*** Notes
+You can execute the code block in your Org-mode file, and it will run
+the tests for the extended FastAPI application.
+
