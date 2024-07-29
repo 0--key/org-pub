@@ -28,7 +28,45 @@ tags: [cv, info, about me, author]
 #+LaTeX_HEADER: \usepackage{courier}
 #+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
 
-* \alpha{}bout me
+* \alpha{}bout Me
+
+My innate, boundless curiosity has shaped me into an avid reader and
+an insatiable seeker of knowledge. Initially, this was simply an
+unconscious thirst, driven by a desire to know everything. However, I
+soon realized that it was impossible to cover /the infinite/ expanse
+of knowledge. Fifteen years after graduating from university, I
+intentionally embarked on a conscious journey to expand my personal
+knowledge and discovered the crucial importance of [[https://bit.ly/1Kkypx8][Meta-Learning]] — the
+skill that allows one to study any subject /more effectively/ while
+/still enjoying/ the process.
+
+After acquiring these skills and learning how to learn, a new
+challenge naturally emerged:
+
+#+begin_quote
+> "What should I know to be happy?"
+#+end_quote
+
+Thus, I sought a balance, a hack that would enable me to live a
+fulfilling and prosperous life. I decided to study [[https://bit.ly/3t5fN8][Data Science]], a
+field that inherently enhances one's ability to /organize and process
+information/. To further this goal, [[http://bit.ly/1lk9C7p][Model Thinking]] became an
+invaluable tool, significantly boosting my capacity for rapid
+knowledge acquisition.
+
+In this pursuit, =Python= emerged as my primary tool for handling vast
+amounts of data. =Emacs= proved to be a powerful ally in managing
+=Python=, =Bash=, my computer, and ultimately, *myself*, all at
+once. Crafting a systematic approach to learning and introspection
+became a mammoth task, one that demanded both time and patience.
+
+Over several years, I committed myself to mastering these powerful
+tools, combining intense periods of focused study with deliberate and
+thoughtful practice. Today, I am proud of the profound transformation
+I have undergone and feel a compelling drive to share my knowledge and
+offer support to others on their own journeys of growth and discovery.
+
+* About me                                                         :noexport:
 
  Innate fathomless curiosity forged me as an avid reader and voracious
  knowledge gatherer. Initially it was just an unconscious thirst of
