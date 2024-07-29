@@ -1,0 +1,318 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Pytest{ing} Inside Org-mode
+tagline: " babel"
+permalink: /python/pytest-in-babel.html
+categories: [Python, Literate Programming]
+tags: [pytest]
+---
+#+END_EXPORT
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+PROPERTY: header-args :exports both
+#+PROPERTY: header-args+ :results output pp
+#+PROPERTY: header-args+ :eval no-export
+#+PROPERTY: header-args+ :session pytest
+#+PROPERTY: vizier-thread-id thread_NSqpRJoW6SRNbM58Keanw5mI
+#+PROPERTY: vizier-assistant-id asst_9U8N72u9uVQesQNNjgOLJOu8
+#+TOC: headlines 3
+
+* Preface
+Let's compare the `pytest` library with the standard `unittest`
+module. Here’s a detailed assessment of the advantages and
+disadvantages of using `pytest` over `unittest`.
+
+** Advantages of `pytest`
+
+*** Ease of Use and Simplicity:
+   - `pytest` requires less boilerplate code. You can write and
+     understand `pytest` tests with minimal setup.
+   - Using simple assert statements for verifications is intuitive and
+     enhances readability.
+
+#+begin_src python
+# pytest example
+def test_addition():
+    assert (1 + 2) == 3
+#+end_src
+
+*** Advanced Features:
+   - `pytest` provides powerful features like fixtures, parameterized
+     testing, and plugins.
+   - Fixtures allow for clean and reusable setup and teardown between
+     tests.
+
+#+begin_src python
+# pytest fixture example
+import pytest
+
+@pytest.fixture
+def sample_data():
+    return {"name": "Alice", "age": 30}
+
+def test_data(sample_data):
+    assert sample_data["name"] == "Alice"
+#+end_src
+
+#+RESULTS:
+
+*** Test Discovery:
+   - `pytest` auto-discovers test modules and functions when running a
+     test suite, reducing the need for explicit test suite
+     organization.
+
+*** Extensive Plugin Ecosystem:
+   - A large number of plugins are available to extend `pytest`'s
+     functionality (e.g., `pytest-django` for Django, `pytest-cov` for
+     coverage).
+
+*** Detailed and Readable Output:
+   - Better output formatting and detailed error tracebacks aid in
+     rapid debugging.
+   - The output is human-readable, making it easier to identify where
+     the test has failed.
+
+*** Flexibility:
+   - `pytest` is versatile and supports parametrizing tests, which
+     helps in testing multiple scenarios using a single test function.
+
+#+begin_src python
+# pytest parameterized test example
+@pytest.mark.parametrize("input,expected", [(1, 2), (2, 3), (3, 4)])
+def test_increment(input, expected):
+    assert input + 1 == expected
+#+end_src
+
+** Disadvantages of `pytest`:
+
+*** Learning Curve:
+   - While `pytest` is simpler for basic tests, its advanced features,
+     such as custom fixtures and hooks, can require a learning curve
+     for new users.
+
+*** Dependency:
+   - `pytest` is an external library not included in the Python
+     standard library, which means you'll need to install it
+     separately and manage it within your project dependencies.
+
+*** Performance:
+   - In some scenarios, especially with extensive fixtures, `pytest`
+     might have slower performance compared to `unittest`, primarily
+     due to the overhead of advanced features.
+
+*** Tight Coupling with Plugins:
+   - Heavy reliance on plugins can sometimes complicate the dependency
+     management and might lead to compatibility issues with specific
+     `pytest` versions.
+
+*** Implicit Behavior:
+   - Auto-discovery and implicit setups might cause confusion in large
+     projects where the test suite grows in complexity and developers
+     need explicit control over which tests are run.
+
+** Comparative overview for better clarity:
+
+
+| Feature                  | pytest                         | unittest              |
+|--------------------------|--------------------------------|-----------------------|
+| Boilerplate code         | Minimal                        | Extensive             |
+| Assertions               | Simple assert statements       | `assert*` methods     |
+| Test discovery           | Automatic                      | Manual suite creation |
+| Fixtures                 | Advanced and flexible          | Basic setup/teardown  |
+| Parameterized tests      | Yes                            | No                    |
+| Output readability       | High                           | Moderate              |
+| Plugin ecosystem         | Extensive                      | Limited               |
+| Python standard library  | No                             | Yes                   |
+
+** Conclusion
+
+`pytest` offers powerful capabilities and a more flexible testing
+ecosystem than `unittest`, making it preferred for many modern
+projects. However, its advanced features and implicit behavior can add
+complexity, so choosing between `pytest` and `unittest` often comes
+down to the specific needs of the project and the preferences of the
+development team.
+
+
+
+* Installation
+#+begin_src sh
+pytest --version
+#+end_src
+
+#+RESULTS:
+: 
+: /usr/bin/sh: 1: pytest: not found
+
+#+begin_src sh
+pip install -U pytest
+#+end_src
+
+#+RESULTS:
+#+begin_example
+Collecting pytest
+  Downloading pytest-8.3.2-py3-none-any.whl (341 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 341.8/341.8 kB 1.3 MB/s eta 0:00:00
+
+Collecting iniconfig
+  Downloading iniconfig-2.0.0-py3-none-any.whl (5.9 kB)
+Collecting packaging
+  Downloading packaging-24.1-py3-none-any.whl (53 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.0/54.0 kB 1.2 MB/s eta 0:00:00
+=1.5
+  Downloading pluggy-1.5.0-py3-none-any.whl (20 kB)
+Installing collected packages: pluggy, packaging, iniconfig, pytest
+Successfully installed iniconfig-2.0.0 packaging-24.1 pluggy-1.5.0 pytest-8.3.2
+#+end_example
+
+#+begin_src sh
+pytest --version
+#+end_src
+
+#+RESULTS:
+: pytest 8.3.2
+
+* Testing pytest
+
+#+begin_src python
+# pytest example
+import pytest
+def test_addition():
+    assert (1 + 2) == 3
+
+pytest.main()
+#+end_src
+
+#+RESULTS:
+#+begin_example
+========================================== test session starts ===========================================
+platform linux -- Python 3.11.2, pytest-8.3.2, pluggy-1.5.0
+rootdir: /home/alioth/Git/0--key/org-pub
+plugins: anyio-4.4.0
+collecting ... collected 205 items / 3 errors                                                                           
+
+================================================= ERRORS =================================================
+_____________________________ ERROR collecting code/awesomeapp/test_main.py ______________________________
+ImportError while importing test module '/home/alioth/Git/0--key/org-pub/code/awesomeapp/test_main.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.11/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+code/awesomeapp/test_main.py:3: in <module>
+    from main import app  # Assuming your FastAPI app is saved in main.py
+E   ModuleNotFoundError: No module named 'main'
+____________________ ERROR collecting tests/test_00_primal_testing_oversimplified.py _____________________
+../../../.virtualenvs/FastAPI/lib/python3.11/site-packages/_pytest/python.py:493: in importtestmodule
+    mod = import_path(
+../../../.virtualenvs/FastAPI/lib/python3.11/site-packages/_pytest/pathlib.py:582: in import_path
+    importlib.import_module(module_name)
+/usr/lib/python3.11/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+<frozen importlib._bootstrap>:1206: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1178: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:1149: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:690: in _load_unlocked
+    ???
+../../../.virtualenvs/FastAPI/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:165: in exec_module
+    source_stat, co = _rewrite_test(fn, self.config)
+../../../.virtualenvs/FastAPI/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:345: in _rewrite_test
+    tree = ast.parse(source, filename=strfn)
+/usr/lib/python3.11/ast.py:50: in parse
+    return compile(source, filename, mode, flags,
+E     File "/home/alioth/Git/0--key/org-pub/tests/test_00_primal_testing_oversimplified.py", line 12
+E       	self.assertTrue(True)
+E       ^
+E   TabError: inconsistent use of tabs and spaces in indentation
+_______________________________ ERROR collecting tests/test_comparisons.py _______________________________
+tests/test_comparisons.py:9: in <module>
+    class TestTheLiteralTruths(unittest.TestCase):
+E   NameError: name 'unittest' is not defined
+======================================== short test summary info =========================================
+ERROR code/awesomeapp/test_main.py
+ERROR tests/test_00_primal_testing_oversimplified.py
+ERROR tests/test_comparisons.py - NameError: name 'unittest' is not defined
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Interrupted: 3 errors during collection !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+=========================================== 3 errors in 0.25s ============================================
+#+end_example
+
+
+#+begin_src python
+import pytest
+import sys
+from io import StringIO
+
+# Example test
+def test_example():
+    assert 1 + 1 == 2
+
+# Save current stdout
+old_stdout = sys.stdout
+sys.stdout = StringIO()
+
+try:
+    # Run pytest with desired arguments
+    pytest.main(['-q', '--tb=short'])
+
+    # Get pytest output
+    sys.stdout.seek(0)
+    output = sys.stdout.read()
+finally:
+    # Restore original stdout
+    sys.stdout = old_stdout
+
+print(output)
+#+end_src
+
+#+RESULTS:
+#+begin_example
+
+================================================= ERRORS =================================================
+_____________________________ ERROR collecting code/awesomeapp/test_main.py ______________________________
+ImportError while importing test module '/home/alioth/Git/0--key/org-pub/code/awesomeapp/test_main.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.11/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+code/awesomeapp/test_main.py:3: in <module>
+    from main import app  # Assuming your FastAPI app is saved in main.py
+E   ModuleNotFoundError: No module named 'main'
+____________________ ERROR collecting tests/test_00_primal_testing_oversimplified.py _____________________
+../../../.virtualenvs/FastAPI/lib/python3.11/site-packages/_pytest/python.py:493: in importtestmodule
+    mod = import_path(
+../../../.virtualenvs/FastAPI/lib/python3.11/site-packages/_pytest/pathlib.py:582: in import_path
+    importlib.import_module(module_name)
+/usr/lib/python3.11/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+<frozen importlib._bootstrap>:1206: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1178: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:1149: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:690: in _load_unlocked
+    ???
+../../../.virtualenvs/FastAPI/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:165: in exec_module
+    source_stat, co = _rewrite_test(fn, self.config)
+../../../.virtualenvs/FastAPI/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:345: in _rewrite_test
+    tree = ast.parse(source, filename=strfn)
+/usr/lib/python3.11/ast.py:50: in parse
+    return compile(source, filename, mode, flags,
+E     File "/home/alioth/Git/0--key/org-pub/tests/test_00_primal_testing_oversimplified.py", line 12
+E       	self.assertTrue(True)
+E       ^
+E   TabError: inconsistent use of tabs and spaces in indentation
+_______________________________ ERROR collecting tests/test_comparisons.py _______________________________
+tests/test_comparisons.py:9: in <module>
+    class TestTheLiteralTruths(unittest.TestCase):
+E   NameError: name 'unittest' is not defined
+======================================== short test summary info =========================================
+ERROR code/awesomeapp/test_main.py
+ERROR tests/test_00_primal_testing_oversimplified.py
+ERROR tests/test_comparisons.py - NameError: name 'unittest' is not defined
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Interrupted: 3 errors during collection !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+3 errors in 0.25s
+#+end_example
