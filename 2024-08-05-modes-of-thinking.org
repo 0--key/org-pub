@@ -14,7 +14,16 @@ tags: [modes]
 #+PROPERTY: vizier-assistant-id asst_vYEhUEz8sl5ZCMLF37QWQfKa
 #+TOC: headlines 3
 
-* Meta-learning in the Context of Gaining Knowledge by Adults
+* Meta-learning in the Context
+
+Meta-learning refers to the process of understanding how one learns
+and acquires new knowledge. In the context of adult education, it
+emphasizes the importance of self-awareness and self-regulation in
+learning strategies. Adults can benefit from meta-learning by
+identifying their preferred learning styles and adapting their methods
+to enhance comprehension and retention. This approach not only
+promotes more effective learning but also fosters greater independence
+and confidence in navigating complex information.
 
 ** Definition
 Meta-learning, often referred to as "learning how to learn," involves
@@ -70,9 +79,144 @@ solid foundation for continual self-improvement and lifelong learning.
 #+end_quote
 
 
+
+* Benjamin Bloom's =Taxonomy of Educational Objectives=
+
+** Introduction
+Developed in the 1950s by educational psychologist Benjamin Bloom and
+his colleagues, the Original Taxonomy of Educational Objectives is a
+framework designed to classify educational goals, objectives, and
+outcomes. It serves as a foundational tool for curriculum development,
+instruction, and assessment in education.
+
+** Structure of the Taxonomy
+The original taxonomy is structured as a hierarchy of cognitive
+skills, categorized into six levels, each representing increasing
+levels of complexity in thinking and learning.
+
+1. =Knowledge=:
+   - The ability to recall or recognize facts and basic concepts.
+   - *Examples*: Memorizing definitions, listing facts.
+
+2. =Comprehension=:
+   - The ability to understand information, summarize, and interpret it.
+   - *Examples*: Explaining ideas, summarizing readings.
+
+3. =Application=:
+   - The ability to use learned material in new and concrete situations.
+   - *Examples*: Solving problems, applying theories to new situations.
+
+4. =Analysis=:
+   - The ability to break down information into parts and understand
+     its structure.
+   - *Examples*: Identifying motives, analyzing arguments.
+
+5. =Synthesis=:
+   - The ability to combine information to form a new whole or propose
+     new ideas.
+   - *Examples*: Designing a new experiment, writing a cohesive paper.
+
+6. =Evaluation=:
+   - The ability to make judgments based on criteria and standards.
+   - *Examples*: Assessing the validity of a theory, critiquing a
+     piece of work.
+
+** Generic Questions for Each Level
+
+_of Bloom's Taxonomy of Educational Objectives_
+
+These questions aligned with each level of Bloom's Taxonomy help
+educators and learners focus on the appropriate cognitive processes
+necessary for mastering content and developing critical thinking
+skills. This structured approach to questioning enhances engagement
+and promotes deeper understanding throughout the learning experience.
+
+-----
+
+*** Knowledge (Remembering)
+   - =What is <object>?=
+   - =What are the facts about <object>?=
+   - =Can you list the key components of <object>?=
+   - =Who is associated with <object>?=
+   - =When did <event> happen?=
+-----
+
+*** Comprehension (Understanding)
+   - =What is the summary of <object>?=
+   - =How would you explain <concept> in your own words?=
+   - =What are the main ideas of <text>?=
+   - =How would you interpret <data or findings>?=
+   - =Can you compare and contrast <object A> and <object B>?=
+-----
+
+*** Application (Applying)
+   - =How can you apply <concept> to a real-world situation?=
+   - =In what ways can you use <knowledge> to solve <problem>?=
+   - =Can you demonstrate how to use <method or technique>?=
+   - =What would you do if <scenario>?=
+   - =How can you illustrate <concept> with an example?=
+-----
+
+*** Analysis (Analyzing)
+   - =What are the parts of <object> and how do they relate to each other?=
+   - =Can you identify the underlying assumptions of <argument or theory>?=
+   - =How would you classify <data> into different categories?=
+   - =What are the relationships between <object A> and <object B>?=
+   - =Can you break down the process of <task or concept>?=
+-----
+
+*** Synthesis (Creating)
+   - =How can you combine elements of <concept> to create something new?=
+   - =What is a new proposal for addressing <issue>?=
+   - =Can you design a plan using <knowledge or methods>?=
+   - =How would you rearrange <information> to improve understanding?=
+   - =What kind of new solutions can you formulate for <problem>?=
+-----
+
+*** Evaluation (Evaluating)
+   - =What criteria would you use to judge <object or process>?=
+   - =How would you assess the validity of <theory or claim>?=
+   - =What are the strengths and weaknesses of <object>?=
+   - =Can you compare the effectiveness of <strategy A> versus <strategy B>?=
+   - =What is your opinion on <issue> and how did you reach this conclusion?=
+  -----
+  
+** Purpose and Benefits
+- *Curriculum Development*: Provides a systematic approach for
+  educators to formulate learning objectives that cater to a range of
+  cognitive skills.
+- *Instructional Planning*: Helps teachers design lesson plans and
+  learning activities that engage students at multiple levels of
+  cognitive complexity.
+- *Assessment Design*: Creates a framework for developing
+  assessments that align with desired educational outcomes, ensuring a
+  comprehensive evaluation of student learning.
+
+** Impact on Education
+- Bloom's Taxonomy has significantly influenced educational practices,
+  promoting a focus on higher-order thinking skills and encouraging a
+  more active, engaging approach to learning.
+- It has paved the way for revised taxonomies, recognizing the need to
+  adapt and evolve as educational paradigms change.
+
+** Conclusion
+#+begin_quote
+~Bloom's Taxonomy of Educational Objectives~ provides a foundational
+understanding of different cognitive processes involved in
+learning. By guiding educators in /setting clear and structured
+goals/, it enhances both teaching strategies and student learning
+outcomes, promoting a /more robust educational experience/.
+#+end_quote
+
+** Reference
+Bloom, B. S. (Ed.) (1956). =Taxonomy of Educational Objectives,
+Handbook I: Cognitive Domain=. New York: David McKay Company.
+#+end_src
+
+
 * Bloom's Revised Taxonomy
 
-Bloom's Revised Taxonomy is an update to the original taxonomy of
+=Bloom's Revised Taxonomy= is an update to the original taxonomy of
 educational objectives created by Benjamin Bloom and colleagues
 in 1956. The revised version, developed by a group of cognitive
 psychologists, curriculum theorists, instructional researchers, and
@@ -153,9 +297,11 @@ Boston, MA: Allyn & Bacon.
 
 * Summary of the Paper:
 
+#+begin_quote
 "Perceived Effort as Poor Learning: The Misinterpreted-Effort
 Hypothesis of How Experienced Effort and Perceived Learning Relate to
 Study Strategy Choice" by Afton Kirk-Johnson and Others
+#+end_quote
 
 ** Introduction
 The paper by Afton Kirk-Johnson and colleagues investigates the
@@ -231,48 +377,66 @@ behaviors and improved educational outcomes, by helping learners
 differentiate between effort and effective learning.
 
 ** Reference
+
 Kirk-Johnson, A., et al. (Year).
-
-/Perceived Effort as Poor Learning: The Misinterpreted-Effort
+-----
+Perceived Effort as Poor Learning: The Misinterpreted-Effort
 Hypothesis of How Experienced Effort and Perceived Learning Relate to
-Study Strategy Choice./
+Study Strategy Choice.
+-----
+/Cognitive Psychology/
 
-Cognitive Psychology.
 
 * The Essence
-
+-----
 1. *Effort Misinterpretation*:
    - Learners often /misinterpret/ high levels of effort as signs of
      ineffective learning or poor performance, despite effort
-     frequently correlating with deeper cognitive processing and
-     better long-term retention.
-
+     frequently correlating with /deeper cognitive processing and
+     better long-term retention/.
+-----
 2. *Impact on Study Strategy Choice*:
    - Misinterpreted effort leads learners to opt for easier, less
      effective study strategies such as rereading, rather than
-     engaging in more effortful but beneficial practices like practice
-     testing.
-
+     engaging in more effortful but /beneficial practices like
+     practice testing/.
+-----
 3. *Perception vs. Reality*:
    - There is a disconnect between perceived effort and actual
      learning outcomes, resulting from cognitive discomfort being
      mistaken for failure.
-
+-----
 4. *Educational Interventions*:
    - Both educators and learners can benefit from being educated about
      the productive nature of cognitive effort and how it contributes
      to effective learning.
-
+-----
 5. *Strategy Awareness*:
    - Increasing awareness of evidence-based study strategies can help
      overcome misconceptions and promote more effective learning
      behaviors.
+-----
 
 * Key Takeaway
+
 #+begin_quote
 Recognizing and addressing the misconceptions around learning effort
 and strategy choice can significantly enhance the effectiveness of
 learning processes and outcomes.
 #+end_quote
+
+
+* Notes                                                            :noexport:
+
+So, as I can comprehend, in accordion with Bloom's =Taxonomy of
+Educational Objectives= the main questions
+
+for first level is:
+"What is <object>?"
+
+for second level is:
+"What is the summary of <object>?"
+
+Extend the list of general questions for each level of complexity.
 
 
