@@ -1,10 +1,10 @@
 #+BEGIN_EXPORT html
 ---
 layout: page
-title: Declarative Programming
+title: Meta-Declarative Paradigm of Programming
 tagline: " trust but verify"
-permalink: /python/declarative-programming.html
-categories: [FastAPI, Python, Declarative Programming, OpenAI]
+permalink: /python/meta-declarative-programming.html
+categories: [FastAPI, Python, Meta-Declarative Programming, OpenAI]
 tags: [intro]
 ---
 #+END_EXPORT
@@ -17,6 +17,7 @@ tags: [intro]
 #+PROPERTY: vizier-thread-id thread_P1IWm6tT9kp7NsERBQyN0Mbt
 #+PROPERTY: vizier-assistant-id asst_9U8N72u9uVQesQNNjgOLJOu8
 #+TOC: headlines 3
+
 * Preface
 
 =OpenAI= opens new horizons in software development. It is now possible
@@ -68,7 +69,7 @@ enhances the overall accuracy of the solution provided.
 
 
 
-* HTTP Methods
+* Meta-Declarative Style
 
 ** Question
 

@@ -211,3 +211,213 @@ only transforms the way we think about programming but also has the
 potential to reshape the entire landscape of software development.
 #+end_src
 
+* Corpora                                                          :noexport:
+Summarise this article:
+```
+Software engineers know that the days of simply being able to code are
+behind them.
+
+After all, artificial intelligence taking over jobs is not new — numerous
+tech giants over the past two years announced that they were axing jobs to
+focus more on artificial intelligence development.
+
+Last year, Google slashed 12,000 jobs — 6% of its then workforce — as the
+company began shifting its priorities toward AI.
+
+In May 2023, IBM announced that it would pause hiring for roles that could
+be replaced by AI. The affected roles, which amounted to 26,000 jobs,
+included those in human resources and other non-consumer-facing
+departments.
+
+But AI has had a direct impact on software engineers, too.
+
+Although AI has helped to increase their productivity by helping to debug
+and generate code, software engineers that Business Insider spoke to said
+that they expect the industry to shrink simply because it doesn't need as
+many workers as they do today.
+
+This, they said, means they have to work smarter if they want to keep their
+jobs. 
+
+AI will push companies to have leaner software engineering teams
+
+Arpita Kaushik, a data scientist at Rocket Mortgage, told BI that AI tools
+like ChatGPT and Github Copilot do a lot of the "heavy lifting" for workers
+like her.
+
+Advertisement
+ 
+This meant that companies could get by with leaner teams without
+compromising on output, she said.
+
+"I think there will be a change in the way a software engineer works, and
+instead of five software engineers you might need four in future," she
+said.
+
+Related stories 
+
+Kaushik's point was echoed by Aditya Swami, who heads product development
+efforts at Hatcher+, a venture capital firm in Singapore. In fact, Swami
+said that shrinking headcounts will be even more apparent in bigger
+companies.
+
+"That's going to happen," he said. "As an industry, it's going to shrink,
+and only people who really understand what they're doing are going to
+survive."
+
+Advertisement
+ 
+Aditya Swami, the head of product development at Hatcher+, a venture capital firm in Singapore.
+Aditya Swami, the head of product development at Hatcher+, a venture
+capital firm in Singapore. Aditya Swami 
+
+And the problem isn't just about there being fewer jobs available. Kaushik
+said the rise of AI means that the bar for hiring is much higher now for
+interns and entry-level software engineers.
+
+"Those people have to stretch their limits; they have to do a little bit of
+senior-level roles even at the starting of their careers," she added.
+"Because the basic things they could do, now they could do with AI."
+
+Don't say goodbye to technical skills just yet
+
+However, software engineers who think they can rely on AI to solve their
+problems may be disappointed to learn that one's technical abilities still
+matter.
+
+Swami from Hatcher+ said that he still expects his engineers to have strong
+coding skills, be able to understand code and explain what they are doing.
+
+Advertisement
+ 
+He said that people who studied software engineering before the rise of AI
+tools have a stronger foundation because they have "written code from
+scratch."
+
+"The biggest problem right now is that the AI large language model
+hallucinates. It's not correct 100%, only 50 to 60% of the time," he said.
+"You still need to be very careful."
+
+"When it comes to an interview, you should be able to explain line by line
+what the code is doing. That's still very important, that hasn't changed,"
+he said.
+
+Adrian Goh, cofounder of NodeFlair, a job board for tech professionals in
+Asia, told BI that one's technical foundations have only become more
+important in the age of AI.
+
+Advertisement
+ 
+"Companies value engineers with strong fundamentals who are dedicated to
+continuous learning and self-upgrading. These qualities ensure adaptability
+to evolving roles and technologies," Goh said.
+
+A computer science degree is still far from useless
+
+Academics BI spoke to also said the rise of AI has not diminished the value
+of a computer science degree and the technical skills that come with
+earning it
+
+"Computer science is not just about AI," said Kan Min Yen, an associate
+professor of computer science at the National University of Singapore.
+
+"Proper development and use of AI still require fundamental knowledge of
+software engineering, data management, and security, all tenets of a
+holistic computing education," he added.
+
+Advertisement
+ 
+While some may think that tools like GitHub Copilot will render them
+obsolete, Kan said such concerns may be overblown.
+
+Software professionals, he said, could still add value by understanding the
+limitations of AI tools and how to troubleshoot them.
+
+"You would go to a mechanic to fix a car and to someone who knows the math
+and training methods for large language modules to fix and diagnose
+problems with LLMs, such as ChatGPT," Kan explained.
+
+Bo An, who heads the AI division at Singapore's Nanyang Technological
+University (NTU), said that "the core value of a CS degree remains robust,"
+and advancements in AI do not erode the value of a CS degree.
+
+Advertisement
+ 
+An added that foundational knowledge in "algorithms, data structures,
+software engineering, and other critical areas" is essential for advancing
+AI technologies.
+
+Aspiring software engineers need to embrace AI and work on their own
+projects to stay ahead
+
+That said, software engineers looking to score a job in software
+engineering must strike a tricky balance between integrating AI into their
+workflows and honing their fundamentals.
+
+David Malan, a computer science professor at Harvard, told BI that AI tools
+could be a plus for aspiring software engineers who know how to leverage
+them.
+
+"In the near term, AI is posed to amplify the impact of individual software
+engineers," Malan said. "Consider just how many more features they can
+implement, how many more bugs they can fix if they have a virtual assistant
+by their side."
+
+Advertisement
+ 
+Malan also advised job seekers to continue building up their portfolio of
+projects if they haven't already.
+
+Working on your own projects, he said, could come in handy during
+interviews when employers want to see how candidates approach problems.
+
+"Continuing one's education beyond school, whether formally or informally,
+forever expanding your own knowledge and skills, can certainly help too,"
+Malan said. "There will always be something new to learn."
+
+Tejas Rajagopal, a recent computer science graduate from NTU, said he's
+been trying to expand his skillset to strengthen his chances of landing a
+job.
+
+Advertisement
+ 
+"You can't just go to classes, watch lectures, do tutorials, and expect to
+be useful out there," Rajagopal said. "Because if you haven't really done
+any projects, built anything up by yourself, your education probably won't
+be adequate."
+```
+
+#+begin_src markdown
+Here's a concise summary of the article:
+
+---
+
+The evolving landscape of software engineering is being significantly
+influenced by Artificial Intelligence (AI), making it imperative for
+software engineers to adapt. Major tech companies like Google and IBM
+have reduced their workforces, shifting focus toward AI development,
+reflecting a broader trend towards leaner teams. While AI tools such
+as ChatGPT and GitHub Copilot enhance productivity by automating
+coding tasks, professionals in the industry anticipate a decrease in
+job opportunities due to the reduced need for labor. Software
+engineers are now expected to work smarter and possess higher skills,
+as entry-level candidates must demonstrate abilities typically
+associated with more experienced roles.
+
+However, technical skills remain critical, as engineers must still
+understand and explain their code, given that AI tools are not
+infallible and can produce errors. Educational experts and industry
+leaders stress that a strong foundation in computer science is
+essential, as advances in AI do not diminish the value of traditional
+technical knowledge. Aspiring software engineers are encouraged to
+embrace AI tools while actively building their portfolios through
+personal projects to enhance their employability. Continuous learning
+and adaptability are emphasized as crucial for success in a rapidly
+changing field.
+
+--- 
+
+This summary encapsulates the key points and themes of the article
+while maintaining its core messages.
+#+end_src
+

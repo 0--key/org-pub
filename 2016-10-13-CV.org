@@ -44,7 +44,7 @@ After acquiring these skills and learning how to learn, a new
 challenge naturally emerged:
 
 #+begin_quote
-> "What should I know to be happy?"
+What should I know to be happy?
 #+end_quote
 
 Thus, I sought a balance, a hack that would enable me to live a
@@ -65,6 +65,7 @@ tools, combining intense periods of focused study with deliberate and
 thoughtful practice. Today, I am proud of the profound transformation
 I have undergone and feel a compelling drive to share my knowledge and
 offer support to others on their own journeys of growth and discovery.
+
 
 * About me                                                         :noexport:
 
@@ -107,15 +108,78 @@ So, I need to find a trade off, a some hack which allows me /to be
  
 * \beta{}rief overview
 
+I expertly navigate *Python* within *Emacs*, a combination crafted for
+true connoisseurs of programming. With over 30 years of experience in
+applied programming and more than 10 years of proficiency in =Literate
+Programming= with *Python*, I proudly define myself as an expert in
+this language. It feels as if I have truly become a programming adept!
+
+** Source                                                         :noexport:
+
 *Python* deliberately sliced and diced in *Emacs* - this dish is for
 gourmets and connoisseurs only. More than 30 years experience in
 applied programming, more than 10 years of acquaintance with *Python*
 allow to define me on the expert level, and seems like I literally am
 a /programming adept/!
 
-* \gamma{}ist
+
+* \Gamma{}ist
+
+** Meta-Declarative Programming
+
+#+begin_quote
+The *Meta-Declarative Paradigm of Programming* was initially
+introduced in September 2024 by Russian-Ukrainian-Irish computer
+scientist Anton Sergio Kosinov. It combines natural language for task
+description with programming language for test suite definition. This
+innovative paradigm enables large language models to write complex
+computer programs.
+#+end_quote
+
+My attention was drawn in early 2024 to an announcement by OpenAI
+regarding their capability to write programs. I became deeply engaged
+with the *Meta-Declarative Paradigm of Programming*, recognizing its
+potential to automate many tedious routine tasks and significantly
+reduce the effort and attention required from software developers. In
+September of that year, I published the results of my experiments and
+introduced the term *Meta-Declarative Paradigm of Programming*. While
+I did not invent the concept, I articulated it clearly enough for it
+to be accessible to a wide audience.
+
+This paradigm facilitates developers in gaining a deeper understanding
+of the core principles that underpin software design and
+implementation. By offering insights into the declarative nature of
+programming, it encourages developers to engage with code more
+thoughtfully, thereby refining their problem-solving strategies.
+
+Due to its reliance on natural language, the *Meta-Declarative
+Paradigm* fosters a culture of reflection and abstraction. This can
+enhance collaboration and spur innovation in software development. My
+goal is to empower developers through this paradigm to create more
+effective, efficient, and maintainable code, ultimately transforming
+the landscape of software engineering.
 
 ** Linux
+
+I installed my first Linux distribution, *RHEL4*, from a CD that I
+serendipitously bought at a flea market in 2007. This experience was
+an acute and palpable sensation, marking my liberation from
+proprietary operating systems. Since then, I have explored various
+distributions, including *Ubuntu*, *Debian*, *CentOS*, *AltLinux*,
+*Gentoo*, *DamnSmallLinux*, *Fedora*, and *PuppyLinux*. I even create
+a bootable USB stick to ran the i386 version of *Porteus*, a
+portable Linux distribution.
+
+Naturally, transitioning to cloud infrastructure was seamless for me,
+beginning with my utilization of Amazon Web Services (AWS) and *EC2*
+in 2011.
+
+Currently, I am using *Debian Bookworm* as it strikes an optimal
+balance between resilience and flexibility, allowing me to efficiently
+handle a variety of tasks while ensuring system stability and
+security.
+
+*** Source                                                       :noexport:
 
 I've installed my first Linux distro (it was *RHEL4* from CD which
 I've serendiptiously bought on the flea market) in 2007. And it was
@@ -129,11 +193,32 @@ Naturally it was easy to me to switch on the ~cloud infrastructure~
 provided by Amazon Web Services. I've commenced to utilize *EC2*. And
 it was 2011.
 
-Now I use *Chrome OS* on my HP ChromeBook with *Debian* BullsEye out
-from the box.
+Now I am using *Debian* BookWorm as the trade off resilience and
+flexibility.
 
 ** Emacs
 
+My first encounter with *Emacs* was in 2011, and at that time, my lack
+of experience made it seem strange and complex, which initially
+repelled me. However, after gaining considerable experience with
+various Integrated Development Environments (IDEs), a clear
+realization struck me:
+
+#+begin_quote
+All these commercial IDEs primarily rely on the mouse to navigate
+and manipulate code, which typically _has only two buttons_. In
+contrast, *Emacs* harnesses the power of the keyboard, featuring at
+least _104 keys_.
+#+end_quote
+
+The advantages of this approach are evident: for a touch typist like
+myself (a skill I have mastered since 2008), it is far more convenient
+to use a keyboard for routine tasks in software development. With its
+extensive array of keys, *Emacs* allows your fingers to memorize
+shortcuts and commands, enabling a more efficient and fluid workflow.
+
+
+*** Source                                                       :noexport:
 My first aquaintance was in 2011 and in that moment, due to the lack
 of experience, it repelled me by its weirdness and complexity. Later,
 than I've got enough adventures with other ~IDEs~, the obvious thought
@@ -153,6 +238,27 @@ fluently.
 
 ** Python
 
+My first encounter with a Python code snippet occurred around 2010,
+and my initial impression was utterly astounding and captivating:
+
+#+begin_quote
+"It was like finally meeting a long-known, yet occasionally forgotten,
+version of an algorithmic language that could comprehend your
+intentions on the fly."
+#+end_quote
+
+Everything in *Python* felt remarkably familiar to me, amplified a
+hundredfold by an unnamed magician's unfathomable brilliance. The core
+concepts were meticulously implemented, offering an elegant and
+intuitive approach to harnessing the power of each string. What was
+once pure rapture has transformed over the past 15 years into an
+enduring source of joy and inspiration.
+
+*Python* is the flexible and powerful tool I had always dreamed of
+possessing to command machines—everything I envisioned is already
+embedded within its capabilities.
+
+*** Source                                                       :noexport:
 Initially I met Python code snippet around 2010 and the first
 impression was utterly astounding and overly enchanting:
 
@@ -172,11 +278,52 @@ rapture.
 All that I only dreamt on to have in my hands as a ~flexible~ and
 ~powerful~ tool to rule machines, - all this /it has already/ inside.
 
-** Literate Programming                                           :noexport:
+** Literate Programming
 
+In my approach to programming, I embrace the principles of literate
+programming through the use of =Emacs= and its powerful =Babel=
+capabilities. This methodology allows me to write documents that are
+both human-readable and executable, explicitly demonstrating how the
+code works in a seamless narrative.
+
+By interweaving documentation with code, I strive to create a clear
+and comprehensive explanation of my thought process and design
+decisions. With =Babel=, I can embed code snippets directly within my
+documents, ensuring that the implementations are not only functional
+but also accompanied by detailed comments and explanations. This
+technique fosters a deeper understanding of the code and makes it
+accessible to others, facilitating collaboration and knowledge
+sharing.
 
 * \Delta{}esired role
 
+
+- Team synergy is more than just a sum of knowledge; our goal should
+  be to harness its power to achieve a greater outcome:
+  
+#+begin_quote
+
+$\displaystyle\sum_{n=1}^{team}\sum_{k=1}^{skill}\Rightarrow\prod_{n=1}^{team}\sum_{k=1}^{skill}$
+
+#+end_quote
+
+- In other words, the desired outcome should be a *multiplication of
+  knowledge* — creating a sustainable state of continuous intellectual
+  advancement for each team member.
+
+- I envision myself as part of a team of professionals with
+  complementary skills, working collaboratively to achieve common
+  goals.
+
+- At this stage in my professional growth, I am eager for *knowledge
+  exchange*. If you know something fascinating and are willing to
+  share it, I would adore the opportunity to learn from you!
+
+- I aspire to be a catalyst within the team—an accelerator and
+  propeller of ideas.
+
+
+** Source                                                         :noexport:
   - A synergy among the team is not just only a sum of knowledge, our
     goal is to obtain its product literally:
     #+BEGIN_QUOTE
@@ -193,7 +340,7 @@ All that I only dreamt on to have in my hands as a ~flexible~ and
    will fall in love with Emacs and Python simultaneously?
   
   
-* \epsilon{}macs
+* \epsilon{}macs                                                   :noexport:
 
 The rule of thumb is: the tough task split requires a handy and mighty
 tool in your hand. Mighty tool demands a lot of time, persistence and
@@ -218,12 +365,13 @@ entry threshold/.
 * \Sigma{}kills overview
 
 ** \Lambda{}ife long learner
-with /Double Loop Learning/ approach in my disposal at least 25 years.
+with [[https://en.wikipedia.org/wiki/Double-loop_learning][Double Loop Learning]] approach in my disposal at least 25 years.
+[[https://bit.ly/philomath_library][My Library]]
 
-** \epsilon{}macs
+** \xi{}macs
 dressed with ELPA/MELPA packages galore
 
-** \prod{}ython gently preliminarily cooked in Emacs:
+** Python gently preliminarily cooked in Emacs:                   :noexport:
    - Built-in functions test suite
    - Cookbook in a TDD dissection
    - OOP design patterns scrutiny
@@ -703,3 +851,53 @@ Python AWS Emacs SQL NoSQL
       funding to-date to $34 million. We’re growing fast and looking for
       A Players to take us to the next phase of our business.
 
+** Stephen Halpin
+
+I've recived the message:
+```
+ Stephen Halpin 10:48 AM
+Senior Python Engineer - Job Opportunity
+
+Hi Anton,
+
+I hope you are well and having a nice day. I wanted to reach out to you regarding a position I have open at the moment with my client Ardanis Technologies. They are currently looking for a Senior Python Engineer to help work on a project around their AI/ML product they have just started. 
+
+This role is a permanent position and is completely remote and will see you would with a great team and using all the latest and best technologies. 
+
+If you are interested in hearing more, please let me know and we can schedule a call to discuss the role in more detail. 
+
+I hope to hear from you soon. 
+
+Kind regards, 
+Stephen
+
+Stephen Halpin
+Manager - Software Engineering at Trilogy International.
+```
+
+with this job description:
+```
+Description
+Ardanis Technologies is a software development services consultancy, we provide solutions to complex technical challenges efficiently and reliably where businesses may not ordinarily have the resources to do so themselves. We provide extensive experience and expertise, and work closely with our clients to create digital solutions that can evolve and adapt as needs change. We are dedicated to helping businesses harness the power of technology to achieve their goals.
+We are seeking an ambitious and talented Principal Engineer to join our dynamic team. As an Principal Engineer, you will be instrumental in developing and deploying Principal Engineer that enhance our IT offerings. You will work closely with our software engineers, and clients to design, build, and implement AI-driven applications and systems. you could be a Senior Full-stack Developer with LLM experience.
+Responsibilities
+    • Solution Development: Design, develop, and deploy AI solutions, including large language models, using both closed and open-source models to address real-world problems.
+    • Data Analysis: Analyze large datasets to extract meaningful insights and identify trends that drive decision-making. Manage the data flow and infrastructure to support effective AI deployment.
+    • Model Training: Develop methodologies and UI/UX to train and optimize these advanced models to ensure high performance and accuracy.
+    • Collaboration: Work closely with cross-functional teams, including software developers and project leads, to deliver sophisticated AI solutions.
+    • Research: Stay updated with the latest advancements in AI technologies and apply them to ongoing projects.
+    • Documentation: Prepare comprehensive documentation to ensure reproducibility and scalability.
+    • Testing and Validation: Conduct rigorous testing and validation to ensure results meet the required standards and performance metrics.
+Requirements
+        ◦ Minimum of 7+ years of experience
+        ◦ Proficiency in programming languages such as Python, Typescript.
+        ◦ Interest or experience in LLM specialised/AI specialism with experience in recent tech stacks around AI a plus
+        ◦ Experience with cloud platforms (e.g., AWS, Azure, Google Cloud) and containerization technologies (e.g., Docker, Kubernetes) is a plus.
+        ◦ Excellent analytical and problem-solving abilities.
+        ◦ Strong communication skills, with the ability to explain complex concepts to non-technical stakeholders.
+        ◦ Ability to work collaboratively in a team-oriented environment.
+        ◦ Degree in Computer Science, Engineering or related
+discipline.
+```
+
+Can you compose the answer to Stephen with emphasis on meta-declarative approach?
