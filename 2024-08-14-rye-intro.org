@@ -1,0 +1,55 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Rye Introduction
+tagline: ""
+permalink: /python/dev-env/rye-intro.html
+categories: [Python, Dev-Env, Rye]
+tags: []
+---
+#+END_EXPORT
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+PROPERTY: header-args :exports both
+#+PROPERTY: header-args+ :results output pp
+#+PROPERTY: header-args+ :eval no-export
+#+PROPERTY: header-args+ :session rye
+#+PROPERTY: vizier-thread-id thread_yBs7IXRgsHHrKf2nRu0DhrTC
+#+PROPERTY: vizier-assistant-id asst_9U8N72u9uVQesQNNjgOLJOu8
+#+TOC: headlines 3
+* Preface
+For which purposes ~Rye~ package is used for?
+
+#+begin_src markdown
+The `Rye` package in Python is primarily designed for handling
+dependency management and installation of Python packages across
+different environments. It serves several key purposes, including:
+
+1. **Package Management:** Rye allows users to manage their Python
+   project dependencies efficiently. It aims to simplify the process
+   of adding, removing, and updating packages.
+
+2. **Environment Management:** It supports the creation and management
+   of isolated environments for Python projects, helping developers
+   manage dependencies specific to each project without conflicts.
+
+3. **Simplified Commands:** Rye offers a user-friendly command-line
+   interface that aims to reduce the complexity of managing
+   environments and dependencies compared to other tools like `pip`
+   and `virtualenv`.
+
+4. **Lock Files:** Similar to other dependency managers, Rye can
+   generate lock files to ensure consistency across different
+   environments. This helps in replicating the exact environment setup
+   in separate machines or stages.
+
+5. **Cross-Platform Support:** Rye is designed to work across
+   different operating systems, facilitating a smoother experience for
+   developers working in varied environments.
+
+For comprehensive usage and examples, you can refer to the [Rye
+documentation](https://rye.readthedocs.io/en/latest/). This resource
+includes in-depth guides on installation, configuration, and typical
+workflows for using Rye effectively.
+#+end_src
+

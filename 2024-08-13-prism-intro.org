@@ -1,0 +1,274 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Prism Introduction
+tagline: ""
+permalink: /python/dev-env/prism-intro.html
+categories: [Python, Dev-Env, Prism]
+tags: []
+---
+#+END_EXPORT
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+PROPERTY: header-args :exports both
+#+PROPERTY: header-args+ :results output pp
+#+PROPERTY: header-args+ :eval no-export
+#+PROPERTY: header-args+ :session prism
+#+PROPERTY: vizier-thread-id thread_ZEKKlxsq9EQpTFuZiYCPAuSS
+#+PROPERTY: vizier-assistant-id asst_9U8N72u9uVQesQNNjgOLJOu8
+#+TOC: headlines 3
+* Preface
+The =Prism= package (formerly known as Swagger) is primarily used for
+the following purposes:
+
+** API Development
+
+=Prism= is a tool for developing APIs based on OpenAPI specifications,
+ making it easier to create, document, and visualize RESTful services.
+
+** Mock Server
+
+It allows users to spin up a mock server based on OpenAPI
+definitions. This is particularly useful for front-end developers who
+need to work with APIs that are still under development.
+
+** Testing APIs
+
+=Prism= can be used to test and validate API requests and responses
+against predefined schemas. This helps ensure that the API behaves as
+expected and conforms to the specified contract.
+
+** Documentation Generation
+
+It aids in generating API documentation that is consistent with the
+defined OpenAPI specifications, providing clear guidelines and
+examples for users.
+
+** Dynamic Response Generation
+
+The package allows dynamic response generation based on the request,
+enabling various testing scenarios without the need for a backend
+implementation.
+
+** Support for Different Protocols
+
+While primarily focused on REST, =Prism= also supports other
+protocols, enabling comprehensive API testing across different
+paradigms.
+
+** Compatibility
+
+=Prism= interfaces well with numerous development environments and
+CI/CD pipelines, facilitating integration into modern software
+development workflows.
+
+** Error Handling
+
+It helps catch errors in API requests and provides detailed feedback,
+making debugging easier for developers.
+
+* Installation
+
+To install the `Prism` package on Debian 12, follow these steps. This
+process usually involves downloading the binaries or using package
+managers like `npm` or `yarn`. Below is a step-by-step guide to
+install `Prism` using npm:
+
+** Install Node.js and npm
+
+`Prism` is a Node.js-based application, so you need to ensure that
+Node.js and npm (Node Package Manager) are installed on your
+system. You can install them using the following commands:
+
+
+#+begin_src sh
+sudo apt update
+sudo apt install nodejs npm
+#+end_src
+
+You can verify the installations by checking the versions:
+
+
+#+begin_src sh
+node -v
+npm -v
+#+end_src
+
+#+RESULTS:
+: v18.19.0
+: 9.2.0
+
+** Install Prism
+
+Once Node.js and npm are installed, you can install `Prism` globally
+using npm:
+
+#+begin_src sh
+sudo npm install -g @stoplight/prism-cli
+#+end_src
+
+** Verify Installation
+
+After installing, you can verify that `Prism` is correctly installed
+by checking its version:
+
+#+begin_src sh
+prism --version
+#+end_src
+
+#+RESULTS:
+: 5.9.0
+
+** Using Prism
+
+You can now use `Prism` to start working on your API. A basic command
+to mock an API based on your OpenAPI specification would look like
+this:
+
+#+begin_src sh
+prism mock path/to/your/openapi.yaml
+#+end_src
+
+Replace `path/to/your/openapi.yaml` with the actual path to your
+OpenAPI specification file.
+
+** Additional Resources
+
+1. [Prism
+   Documentation](https://meta.stoplight.io/docs/prism/docs/overview.md) -
+   Official documentation for further details on usage and options.
+2. [Node.js Installation
+   Guide](https://nodejs.org/en/download/package-manager/) -
+   Instructions for using package managers to install Node.js.
+
+
+
+* OpenAPI specification file
+
+The OpenAPI Specification (OAS) is a standard format for describing
+the functionality of RESTful APIs. Here’s a detailed breakdown:
+
+** Overview of OpenAPI Specification
+
+1. Definition: The OpenAPI Specification is a specification for a
+   standard interface to REST APIs, which allows both humans and
+   machines to understand the capabilities of a service without direct
+   access to the source code. It is written in JSON or YAML format.
+
+2. Purpose: It provides a clear definition of endpoints, request
+   parameters, responses, error messages, authentication methods, and
+   the overall behavior of the API.
+
+3. Interoperability: By adhering to the OpenAPI standard, APIs can
+   be consumed by various tools and libraries that support automatic
+   generation of documentation, client SDKs, server stubs, and testing
+   frameworks.
+
+** Main Components of an OpenAPI Specification File
+
+1. OpenAPI Object: The root element that defines the version of
+   the OpenAPI Specification being used.
+
+   ```yaml
+   openapi: 3.0.0
+   ```
+
+2. Info Object: Contains metadata about the API, including title,
+   version, description, and contact information.
+
+   ```yaml
+   info:
+     title: Sample API
+     version: 1.0.0
+     description: An example API to demonstrate OpenAPI.
+   ```
+
+3. Paths Object: Defines the available endpoints and operations on
+   each endpoint (GET, POST, PUT, DELETE, etc.).
+
+   ```yaml
+   paths:
+     /users:
+       get:
+         summary: Retrieve a list of users
+         responses:
+           '200':
+             description: A list of users
+   ```
+
+4. Components Object: Allows for the reusable components like
+   schemas, responses, and parameters that can be referenced across
+   the API description.
+
+   ```yaml
+   components:
+     schemas:
+       User:
+         type: object
+         properties:
+           id:
+             type: integer
+           name:
+             type: string
+   ```
+
+5. Security: Describes the security mechanisms that API consumers
+   must use (e.g., API keys, OAuth2).
+
+   ```yaml
+   security:
+     - api_key: []
+   ```
+
+** Example of an OpenAPI Specification File
+
+Here’s a simple example in YAML format that combines the elements
+mentioned above:
+
+```yaml
+openapi: 3.0.0
+info:
+  title: Sample API
+  version: 1.0.0
+paths:
+  /users:
+    get:
+      summary: Retrieve a list of users
+      responses:
+        '200':
+          description: A list of users
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/User'
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+```
+
+** Benefits of Using OpenAPI Specification
+
+- **Automated Documentation**: Tools like Swagger UI can generate
+  interactive documentation from the OpenAPI specification.
+- **Code Generation**: Various tools can auto-generate client
+  libraries, server stubs, and API documentation.
+- **Consistency**: Encourages consistency in API design by providing a
+  standard language and structure for API descriptions.
+
+** Further Reading
+
+- [OpenAPI Specification Official
+  Documentation](https://swagger.io/specification/)
+- [Swagger UI GitHub
+  Repository](https://github.com/swagger-api/swagger-ui)
+
+
+
