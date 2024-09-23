@@ -1,0 +1,247 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Natural Language Programming
+tagline: " with LLM"
+permalink: /general/natural-languege-programming.html
+categories: [Natural Language Programming, LLM]
+tags: [NLP]
+---
+#+END_EXPORT
+#+STARTUP: showall indent
+#+PROPERTY: vizier-thread-id thread_rR2vlbV4F5sb2ia9KJZfbYLr
+#+PROPERTY: vizier-assistant-id asst_oLuLDRdsSDyMcBAvpwCGkbGS
+#+TOC: headlines 3
+
+* Preface
+
+** The Bait                                                       :noexport:
+Enhance and extend this passage:
+
+```
+The programming style (or paradigm) in which a user queries a Large
+Language Model (LLM) and retrieves answers that include source code
+snippets is commonly referred to as ~"Conversational Programming"~
+or ~"Natural Language Programming."~
+
+The alternative names, which could explain the concept in a quite
+explicit way:
+
+1. =Prompt-Based Programming=: This term emphasizes the use of
+   prompts or queries to instruct the LLM to generate code.
+2. =AI-Assisted Programming=: This describes the general idea of
+   leveraging AI tools, like LLMs, to aid in the programming process.
+3. =Meta-Programming with LLMs=: This term can be used to describe
+   the process of using LLMs to create or manipulate code based on
+   higher-level natural language queries.
+4. =Code Generation through Natural Language=: Specifically
+   highlights the code generation aspect facilitated by natural
+   language input.
+
+Each of these terms captures different facets of the interaction
+between users and LLMs when generating code through natural language
+queries.
+```
+
+** Definitions
+
+The programming style (or paradigm) in which a user queries a Large
+Language Model (LLM) and retrieves answers that include source code
+snippets is commonly referred to as *Conversational Programming* or
+, *Natural Language Programming*.
+
+For a clearer understanding of this concept, several alternative terms
+can be employed, each highlighting different characteristics of this
+innovative approach to software development:
+
+*** ~Prompt-Based Programming~
+
+   This term highlights the fact that users provide prompts or
+   queries, directing the LLM to generate specific code snippets. It's
+   a way of driving the programming process through intentional and
+   detailed $\displaystyle{ComplexInterface = \left( \sum_{i=1}^{n} qe(i) \right) \cdot label}$,
+   queries.
+   
+*** ~AI-Assisted Programming~
+
+This encompasses the broader idea of integrating AI tools, like LLMs,
+ to support and enhance traditional programming practices. It captures
+ the essence of augmentation, where AI plays a supportive role in
+ coding tasks.
+   
+*** ~Meta-Programming with LLMs~
+
+This term can describe the sophisticated process of employing LLMs to
+ generate or modify code. It pushes the boundaries of conventional
+ meta-programming by incorporating machine learning-driven natural
+ language understanding.
+   
+*** ~Code Generation through Natural Language~
+
+This specifically emphasizes the capability of generating code based
+ on straightforward natural language input, showcasing how
+ non-technical prompts can yield technical outputs.
+
+
+
+** Outline
+
+Each of these terms encapsulates varying facets of the synergy between
+human-directed natural language queries and the automated code
+completion or generation capabilities facilitated by contemporary LLMs
+like GPT-3 or palpogram. Such methodologies mark a significant
+departure from conventional coding practices, empowering both novice
+and experienced programmers to produce functional code more
+intuitively and collaboratively, by vocalizing or writing their
+programming intentions in everyday language.
+
+This approach is not just a shift towards user-friendly coding; it
+equally represents an evolution in how software development can be
+more efficiently aligned with human intentions, thereby inflicting
+deeper integration and, carrying forward creative software
+development.
+
+** Corrections                                                    :noexport:
+I'm using `MathJax` for formula rendering, so translate
+`\displaystyle{ @mcomplex=(=\@interface(qeson()label)}` into it,
+please.
+
+#+begin_src markdown
+Certainly! Here's the passage with the MathJax code correctly
+formatted:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Paradigms</title>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+</head>
+<body>
+    <div class="container">
+        <p>The programming style (or paradigm) in which a user queries a Large Language Model (LLM) and retrieves answers that include source code snippets is commonly referred to as <em>Conversational Programming</em> or <em>Natural Language Programming</em>.</p>
+        <p>For a clearer understanding of this concept, several alternative terms can be employed, each highlighting different characteristics of this innovative approach to software development:</p>
+        <ul>
+            <li><strong>Prompt-Based Programming:</strong> This term highlights the fact that users provide prompts or queries, directing the LLM to generate specific code snippets. It's a way of driving the programming process through intentional and detailed <span id="mcomplex"></span> queries.</li>
+            <li><strong>AI-Assisted Programming:</strong> This encompasses the broader idea of integrating AI tools, like LLMs, to support and enhance traditional programming practices. It captures the essence of augmentation, where AI plays a supportive role in coding tasks.</li>
+            <li><strong>Meta-Programming with LLMs:</strong> This term can describe the sophisticated process of employing LLMs to generate or modify code. It pushes the boundaries of conventional meta-programming by incorporating machine learning-driven natural language understanding.</li>
+            <li><strong>Code Generation through Natural Language:</strong> This specifically emphasizes the capability of generating code based on straightforward natural language input, showcasing how non-technical prompts can yield technical outputs.</li>
+        </ul>
+        <p>Each of these terms encapsulates varying facets of the synergy between human-directed natural language queries and the automated code completion or generation capabilities facilitated by contemporary LLMs like GPT-3 or others. Such methodologies mark a significant departure from conventional coding practices, empowering both novice and experienced programmers to produce functional code more intuitively and collaboratively by vocalizing or writing their programming intentions in everyday language.</p>
+    </div>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+        });
+    </script>
+    <script>
+        document.getElementById("mcomplex").innerHTML = "\\( @mcomplex=(\\@interface(qeson()label) \\)";
+        MathJax.Hub.Queue(["Typeset", MathJax.Hub, "mcomplex"]);
+    </script>
+</body>
+</html>
+```
+
+### Explanation:
+- The MathJax configuration script ensures that inline math is
+  processed correctly.
+- MathJax script tags are loaded for handling the formula rendering.
+- The mathematical expression `\displaystyle{
+  @mcomplex=(=\@interface(qeson()label)}` is placed within a `span`
+  tag with id `mcomplex` for targeted rendering.
+
+By including this in your HTML, MathJax will render the mathematical
+expression correctly.
+#+end_src
+
+
+I write the source of my page in `Org-mode` and export it into html
+using `Jekyll`. So the proper way to write formula source is:
+
+```
+$\displaystyle\sum_{n=1}^{team}\sum_{k=1}^{skill}\to\prod_{n=1}^{team}\sum_{k=1}^{skill}$
+```
+
+So, translate this formula only, I'm not need in html at all:
+
+```
+\displaystyle{ @mcomplex=(=\@interface(qeson()label)}
+```
+
+
+#+begin_src markdown
+Certainly! Here is the translated formula in the proper MathJax
+format:
+
+```org
+$\displaystyle{@mcomplex=(\@interface(qeson()label)}$
+```
+#+end_src
+
+What is the meaning of this formula:
+```org
+$\displaystyle{@mcomplex=(\@interface(qeson()label)}$
+```
+
+
+#+begin_src markdown
+The formula
+
+```org
+$\displaystyle{@mcomplex=(\@interface(qeson()label)}$
+```
+
+appears to be a syntactically incorrect expression both in terms of
+mathematical notation and programming context. It seems like a mix of
+symbols and function-like elements that don’t conform to standard
+mathematical or programming formats.
+
+### Possible Interpretations
+
+1. **Placeholder Text**: It could be placeholder text meant to
+   represent a more complex expression or code, but it doesn't
+   constitute valid MathJax or LaTeX notation as it is.
+
+2. **Pseudocode Style**: The use of `@mcomplex`, `\@interface`,
+   `qeson()label` hints that it might be referring to some pseudocode
+   or hypothetical function calls or parameters, but again, it’s not
+   formulated correctly for any specific language.
+
+3. **Typographical Error**: It might contain typographical errors and
+   lacks the necessary structure to be correctly parsed or interpreted
+   in either a mathematical or programming context.
+
+### Suggestions to Make It Meaningful
+To obtain a meaningful interpretation, the elements should be
+appropriately structured based on the context (mathematical or
+programming):
+
+- **In Mathematical Context**: Use standard notations, symbols, and
+  operators relevant to mathematics.
+- **In Programming Context**: Use correct syntax based on the
+  programming language in question.
+
+### Example Adjustments
+
+- **Mathematical Example**: Suppose the intention was to define a complex mathematical operation:
+    ```org
+    $\displaystyle{ComplexInterface = \left( \sum_{i=1}^{n} qe(i) \right) \cdot label}$
+    ```
+
+- **Programming Style**: If it were to represent parts of a code with some placeholders:
+    ```org
+    `@ComplexInterface = calculateSum(qe(i)) + label;`
+    ```
+
+### Summary
+The given formula has no inherent, clear meaning and needs to be
+revised to fit either a mathematical or programming context
+accurately. If you have a specific goal or meaning you wish to convey,
+providing additional context or correcting the format accordingly
+would be necessary.
+#+end_src
+
