@@ -1,0 +1,201 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Lesson Num.3
+tagline: " full forward"
+permalink: /english/lesson03.html
+categories: [English Course]
+tags: [lesson03]
+---
+#+END_EXPORT
+#+STARTUP: showall indent
+#+PROPERTY: vizier-thread-id thread_IhjBECfdS7Tf53zJWE8gCqb4
+#+PROPERTY: vizier-assistant-id asst_mEp1qd4WTGBLpPEImf6cam1K
+#+TOC: headlines 3
+
+* Scratches                                                        :noexport:
+
+Check the grammar, clarify and enhance this passage:
+
+``` I want to make the syllabus for 2-hour English lesson for adult
+learners whith these sections:
+
+- Greeting 15 minutes;
+- Warming up (tongue twisters) 20 minute;
+- Reading aloud 30 minutes (poetry, prosody);
+- Translation 30 minutes (Aesop fables);
+- Setting up and configuring Firefox 20 minutes.
+
+
+Can you suggest something else?
+```
+
+#+begin_src markdown
+Certainly! Creating a balanced syllabus is important to engage adult learners effectively. Here’s a revised 2-hour English lesson plan, incorporating your sections but adjusted for time and flow:
+
+** English Lesson Plan for Adult Learners (2 hours)
+
+*** 1. Greeting (10 minutes)
+   - Welcome and introductions.
+   - Short ice-breaker question (e.g., "What did you find interesting this week?").
+
+
+
+      
+
+
+
+*** 6. Closing Activity - Reflect and Share (10 minutes)
+   - Quick recap of the lesson.
+   - Share what was learned or what they found challenging.
+   - Set a small related activity for the next lesson (e.g., find a new tongue twister).
+
+This structure balances different skills like speaking, listening,
+reading, and technical task management, providing a varied and
+engaging learning experience.  #+end_src
+
+
+* Warming up - Tongue Twisters (15 minutes)
+1. =/θ/= The fifth thumb is thinner than the third thumb.
+2. =/θ/= The thirty-three thieves thought that they thrilled the
+   throne throughout Thursday.
+3. =/ð/= This, that, and the other thing were thought through
+   thoroughly.
+4. =/ð/= This, that, and the other thing were thought through
+   thoroughly.
+5. =/ɹ/= Round and round the rugged rock the ragged rascal ran.
+6. =/ɹ/= Red lorry, yellow lorry, red lorry, yellow lorry.
+7. =/ɹ/= Do horses really favour a hourse reddish?
+8. =/æ/= A black cat sat on a mat and ate a fat rat.
+9. =/æ/= Andy and an angry ant ambled aimlessly around.
+10. =/ŋ/= King Kong sings a long song.
+11. =/ŋ/= Hang the hungry ring in the swinging thing.
+12. =/ŋ/= The young king was strong and swung the gong.
+13. =/ŋ/= The song the singers sang was long and rang.
+14. =/ʌ/= A cup of coffee is enough for my uncle.
+15. =/ʌ/= Under the Sun, the fun won tons of laughs.
+16. =/ʌ/= Lucky ducks love jumping in the muck.
+17. =/ʌ/= Buttercups and bug hunts under the Sun.
+
+
+* Reading Aloud (Poetry and Prosody) (25 minutes)
+
+#+begin_quote
+In the context of language and linguistics, =prosody= refers to the
+patterns of rhythm, stress, and intonation in spoken language. It
+encompasses several elements:
+
+- =Rhythm:= The flow and timing of speech, including the duration of
+  syllables and pauses.
+- =Stress:= The emphasis placed on certain syllables or words, which
+  can affect meaning and contribute to the natural rhythm of speech.
+- =Intonation:= The variation in pitch while speaking, which can
+  convey different meanings, emotions, or questions.
+
+Prosody is important for understanding the nuances of language, as it
+can affect the emotional tone and clarity of the spoken message.
+#+end_quote
+
+
+[[https://www.poetryfoundation.org/poems/43650/auguries-of-innocence][Auguries of Innocence]] by William Blake
+
+#+begin_verse
+Every night and every morn
+Some to misery are born.
+Every morn and every night
+Some are born to sweet delight.
+Some are born to sweet delight,
+Some are born to endless night.
+#+end_verse
+
+
+[[https://www.poetryfoundation.org/poems/43687/the-tyger][The Tiger]] by William Blake
+
+#+begin_verse
+Tyger Tyger, burning bright, 
+In the forests of the night; 
+What immortal hand or eye, 
+Could frame thy fearful symmetry?
+
+In what distant deeps or skies. 
+Burnt the fire of thine eyes?
+On what wings dare he aspire?
+What the hand, dare seize the fire?
+
+And what shoulder, & what art,
+Could twist the sinews of thy heart?
+And when thy heart began to beat.
+What dread hand? & what dread feet?
+
+What the hammer? what the chain,
+In what furnace was thy brain?
+What the anvil? what dread grasp.
+Dare its deadly terrors clasp?
+
+When the stars threw down their spears 
+And water'd heaven with their tears:
+Did he smile his work to see?
+Did he who made the Lamb make thee?
+
+Tyger Tyger burning bright,
+In the forests of the night:
+What immortal hand or eye,
+Dare frame thy fearful symmetry?
+#+end_verse
+
+
+* Translation - Fables (30 minutes)
+
+Here is a popular anecdote that illustrates the value of
+sharing and cooperation, often told about an American farmer who
+shares his corn seeds:
+
+#+begin_quote
+A successful corn farmer in the Midwest consistently won the annual
+best corn competition at the state fair. Intrigued by his success, a
+reporter interviewed him and discovered an unexpected strategy: the
+farmer shared his best seeds with his neighbors.
+
+Puzzled, the reporter asked why he would share his prize-winning seeds
+with competitors. The farmer explained that wind picks up pollen from
+the ripening corn and swirls it from field to field. If his neighbors
+grew inferior corn, cross-pollination would degrade the quality of his
+own crop. By ensuring his neighbors had top-quality seeds as well, he
+maintained /the excellence of his own/ corn.
+#+end_quote
+
+This story highlights the interconnectedness of communities and how
+cooperation can lead to collective success, illustrating the principle
+that one's well-being is tied to the well-being of others.
+
+
+* Setting up and Configuring Firefox (20 minutes)
+
+Configure your smartphone to use FireFox to *watch YouTube videos
+without any advertisement*.
+
+** FireFox
+
+** uBlock Origin
+
+** Android
+
+Settings --> Apps --> YouTube --> Properties
+
+
+
+* Learning to Learn by Barbara Oakley
+
+
+ - [[https://bit.ly/1Kkypx8][Certificate]]
+ - [[https://bit.ly/4iUubo8][Mini-Book in epub]]
+ - [[https://www.youtube.com/watch?v=vd2dtkMINIw][YouTube video]]
+
+
+* Useful Links
+
+- [[https://www.youtube.com/channel/UClPyOwXLnSMejFdLvJXjA5A/videos][Pronunciation Tips]]
+- [[https://www.youtube.com/watch?v=_8tdqL5_Prc][Tongue Twisters]]
+- Suggestions from [[https://learnenglish.britishcouncil.org/english-levels/improve-your-english-level/how-can-i-improve-my-english-pronunciation][British Council]]
+- [[https://www.youtube.com/watch?v=t26iooY3PAo][10 Years in 10 Minutes]]
+

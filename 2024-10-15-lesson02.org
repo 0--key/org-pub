@@ -1,0 +1,123 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Lesson One
+tagline: " time and patience"
+permalink: /english/lesson01.html
+categories: [English Course]
+tags: [lesson01]
+---
+#+END_EXPORT
+#+STARTUP: showoall indent
+#+PROPERTY: vizier-thread-id thread_IHAiWGicFrSi1uNOwyDhFJHu
+#+PROPERTY: vizier-assistant-id asst_mEp1qd4WTGBLpPEImf6cam1K
+#+TOC: headlines 3
+
+* Preamble
+
+During our last lesson, we discovered that over the first *17 years*
+of life, a human typically acquires knowledge of the meanings of
+approximately *40,000 to 50,000 words*. In this lesson, let's explore
+how we might /accelerate this process/, acquiring a similar vocabulary
+in a shorter period.
+
+We will consider various methods and strategies that could enhance 
+vocabulary acquisition, focusing on efficient learning techniques. 
+These might include immersion in language-rich environments, utilizing 
+technology and language-learning apps, and engaging in intensive 
+reading and writing activities. 
+
+Additionally, we will discuss memory-enhancing techniques such as 
+mnemonics, spaced repetition, and deliberate practice. By understanding 
+and applying these strategies, we aim to uncover ways to expedite the 
+process of building a robust and extensive vocabulary efficiently. 
+Through active participation and discussion, we'll work together to 
+develop practical approaches for achieving rapid language mastery.
+
+* A Precious Time
+
+Let's consider that a child spends approximately 65,700 hours
+developing fluency in 50,000 words in their native language. What if
+our goal is to achieve the same amount of linguistic knowledge, but 10
+times faster—instead of 15 years, in just 18 months? Is it possible to
+learn the meaning of 13 words per hour instead of 1.3 words per hour?
+
+#+begin_quote
+*For a while, Yes!*
+#+end_quote
+
+To explore this ambitious goal, we must consider accelerated learning 
+techniques and strategies that could facilitate such rapid vocabulary 
+acquisition. These might include:
+
+** Intensive Language Immersion
+
+Engaging in a language-rich environment consistently, where the target
+language is used exclusively, can significantly speed up the learning
+process.
+
+** Advanced Memory Techniques
+
+Utilizing tools such as mnemonics, spaced repetition systems, and
+visualization can help in memorizing and retaining vocabulary more
+efficiently.
+
+** Technology and Multimedia Resources
+
+Leveraging language-learning apps, online courses, and multimedia
+content provides diverse exposure to vocabulary in various contexts.
+
+** Focused Speaking and Listening Exercises
+
+Regular practice through conversation groups and language exchange
+partners helps in reinforcing language skills actively.
+
+** Reading and Writing Intensively
+
+Consuming a wide range of written materials and engaging in writing
+tasks can enrich vocabulary and improve comprehension.
+
+** Sum It Up
+
+By employing these strategies and maintaining a disciplined, focused 
+approach, it may be possible to significantly accelerate the acquisition 
+of a new language. However, such intensive learning requires dedication, 
+consistent effort, and a supportive learning environment.
+
+
+* The Duration Concept
+
+Learning session duration multiplied by its depth.
+
+The number of words 
+
+* The Same Approach For Another Language
+
+* Notes                                                            :noexport:
+
+Check the grammar, clarify, enhance and extend this passage:
+
+```
+
+A Precious Time
+
+Lets assume that child spent 365 * 12 * 15 hours on elaboration
+fluency with 50 thousans words from the mother tongue. What if our aim
+is the same amount of knowledge, but 10 times faster, not 15 years,
+but 18 months? Does it possible?
+```
+
+Check up the grammar and correct the sentence:
+
+```
+
+Is this possible to learn the meaning of 13 words per hour instead of
+1.3 word per hour?
+```
+
+#+begin_src markdown
+```org
+
+```
+#+end_src
+

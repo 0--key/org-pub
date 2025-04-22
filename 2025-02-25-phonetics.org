@@ -1,0 +1,207 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: English Phonetics
+tagline: " dense and terse description"
+permalink: /english/phonetics.html
+categories: [English, Natural Language]
+tags: [phonetics]
+---
+#+END_EXPORT
+#+STARTUP: showall indent
+#+PROPERTY: vizier-thread-id thread_gciLJTz0PNVAgQnyRLJlX9gu
+#+PROPERTY: vizier-assistant-id asst_mEp1qd4WTGBLpPEImf6cam1K
+#+TOC: headlines 3
+
+* The Bait                                                         :noexport:
+
+How you can describe the natural language as an acoustic communication
+system? It is suffice to mention that different natural languages
+often have different phonetics.
+
+Could you provide the definition of natural language in a single sentence, please?
+
+Translate this into English, please:
+
+``` В английском языке весьма непривычная орфография, которая отражает
+произношение английского языка XII-XIV века. Это объясняется тем, что
+с введением книгопечатания орфография английского языка рано оказалась
+закреплённой, тогда как звуковой строй языка претерпел с тех пор ряд
+значительных изменений[1]. Все это усложняется влиянием на английский
+язык других языков, что породило большое количество исключений в
+написании, поэтому в словарях английского языка принято отображать
+транскрипцию, которая отражает реальное звучание слова.```
+
+Translate this into English, please:
+```это
+графическая запись звучания слова, предназначенная для точного отражения произношения,
+каждый отдельный звук обозначается определенным знаком, исключающим двоякое чтение. 
+
+В основном в английских словарях для записи транскрипции используют
+«Международный Фонетический Алфавит»```
+
+
+How you can describe International Phonetic Alphabet in several sentences?
+
+
+* Glossary
+
+#+begin_quote
+*Natural language* is a system of communication consisting of symbols,
+sounds, and rules used by humans to convey meaning, uniquely shaped by
+cultural and social contexts.
+
+In this article *Natural language* will be viewed */only as an
+acoustic communication system/* used by humans to convey meaning and
+information through sound.
+#+end_quote
+
+* Preface
+
+** Components of Acoustic Communication
+
+*** Phonetics
+
+Each language possesses its own /unique/ =phonetic system=, which
+comprises a collection of sounds used for communication. These sounds,
+known as phonemes, are the smallest units of sound that can
+distinguish meaning in a language.
+
+*** Phonology
+
+Understanding how these sounds function and interact in particular
+languages helps to form words and sentences. Phonological rules govern
+how phonemes can be combined and pronounced.
+
+*** Intonation and Stress
+
+Every language has specific patterns of intonation and stress that
+convey different meanings and emotions. These variations can change
+the intent or meaning of a sentence even when the words remain the
+same.
+
+** Differences in Natural Languages
+
+*** Varieties in Phonetic Structures
+
+Natural languages often have differing phonetic inventories, resulting
+in variations in sounds that languages are capable of producing. Some
+languages might have more complex sound systems with a greater number
+of distinct sounds, while others might have simpler systems.
+
+*** Cultural and Regional Influences
+
+The sound systems of natural languages are also shaped by cultural and
+geographical factors, leading to diverse auditory experiences across
+different linguistic groups.
+
+** Note
+#+begin_quote
+Natural language functions as a powerful acoustic communication
+system, utilizing specific sounds, patterns, and rules. These elements
+allow for the rich expression of ideas, emotions, and meaning, all
+while accommodating the vast diversity found in human language
+globally.
+#+end_quote
+
+* English Spelling
+
+English has a rather unusual spelling system that reflects the
+pronunciation of the English language from the 12th to 14th
+centuries. This is explained by the fact that with the introduction of
+printing, English spelling became fixed early on, while the sound
+structure of the language has since undergone a number of significant
+changes. All of this is complicated by the influence of other
+languages on English, which has led to a large number of spelling
+exceptions. Therefore, English dictionaries typically include
+*transcriptions* to reflect the actual pronunciation of words.
+
+* Phonetic Transcription
+
+[fə(u)ˈnetɪk trænsˈkrɪpʃ(ə)n]) — This is a graphic representation of a
+word's pronunciation, designed to accurately reflect the
+pronunciation, where each individual sound is represented by a
+specific symbol that eliminates ambiguous reading.
+
+Primarily in English dictionaries, the [[https://en.wikipedia.org/wiki/International_Phonetic_Alphabet][International Phonetic
+Alphabet]] is used for transcription.
+
+* International Phonetic Alphabet
+
+[ˌɪntərˈnæʃ(ə)nl fə(u)ˈnetɪk ˈælfəbet], "IPA"[ˌaɪ.piːˈeɪ] — is a
+standardized system of phonetic notation devised by linguists to
+accurately and uniquely represent the sounds of spoken languages. It
+was created to provide a consistent and universal method of
+transcribing the sounds of all human languages, overcoming the
+limitations and variations of traditional orthography. Each symbol in
+the IPA corresponds to a specific speech sound, ensuring clarity in
+pronunciation across different languages and dialects. The IPA
+includes symbols for consonants, vowels, suprasegmentals (like stress
+and intonation), and diacritics, which modify the sounds further.
+
+By using IPA, linguists, language learners, and educators can
+communicate pronunciation details precisely, facilitating better
+understanding and teaching of linguistic nuances.
+
+** Note #1
+
+#+begin_quote
+To separate phonetic transcription from other text, it is enclosed in
+square brackets […] or slashes /…/.
+#+end_quote
+
+** Note #2
+
+#+begin_quote
+/Sometimes/, for ease of working with fonts or for more familiar
+perception, transcription symbols different from the IPA may be
+used. Additionally, different variants of English have some
+differences in the pronunciation of the same words. As a result,
+transcriptions in different dictionaries may vary slightly.
+#+end_quote
+
+* The Phonemic Table
+
+  #+CAPTION: English Phonetics
+  #+ATTR_HTML: :title in a single table :align left :float wrap
+  #+ATTR_HTML: :width 100%
+  [[http://0--key.github.io/assets/img/phonetic.jpg]]
+
+* Subtleties Described in:
+
+** English
+
+[[https://esl.wiki/en/phonetics_and_spelling/phonetic_transcription][Push here]]
+
+** 國際音標
+
+[[https://zh.wikipedia.org/wiki/%E5%9C%8B%E9%9A%9B%E9%9F%B3%E6%A8%99][國際音標]]
+
+** |العربية
+
+[[https://ar.wikipedia.org/wiki/%D8%A3%D9%84%D9%81%D8%A8%D8%A7%D8%A6%D9%8A%D8%A9_%D8%B5%D9%88%D8%AA%D9%8A%D8%A9_%D8%AF%D9%88%D9%84%D9%8A%D8%A9][|العربية]]
+
+** [[https://pt.wikipedia.org/wiki/Alfabeto_fon%C3%A9tico_internacional][Português]]
+
+[[https://pt.wikipedia.org/wiki/Alfabeto_fon%C3%A9tico_internacional][Português]]
+
+** Русский
+
+[[https://esl.wiki/ru/phonetics_and_spelling/phonetic_transcription][Жми здесь]]
+
+* The BottomLine                                                   :noexport:
+
+
+Translate this into English, please:
+
+```Для того чтобы фонетическую транскрипцию отделить от другого
+текста, её заключают в квадратные скобки […] или косые черты (слеши)
+/…/.
+
+Иногда для облегчения работы со шрифтами или более привычного восприятия могут
+использоваться знаки транскрипции, отличающиеся от IPA. Также разные варианты английского
+языка имеют некоторое отличие в звучании одних и тех же слов. Все это приводит к тому, что
+в разных словарях транскрипция может слегка отличаться.
+```
+
+

@@ -1,0 +1,121 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Lesson Num.7
+tagline: " no pain no gain"
+permalink: /english/lesson07.html
+categories: [English Course]
+tags: [lesson07]
+---
+#+END_EXPORT
+#+STARTUP: showall indent
+#+PROPERTY: vizier-thread-id thread_IhjBECfdS7Tf53zJWE8gCqb4
+#+PROPERTY: vizier-assistant-id asst_mEp1qd4WTGBLpPEImf6cam1K
+#+TOC: headlines 3
+
+#+include: "2025-03-23-lesson04.org::* Warming up - Tongue Twisters (15 minutes)"
+#+include: "2025-03-19-lesson03.org::* Useful Links"
+#+include: "2025-04-03-lesson05.org::* LoopBack (20 minutes)"
+
+* Proverbs And Sayings
+
+** Definitions
+
+Here are the definitions of proverbs and sayings:
+
+- =Proverb=: A proverb is a short, commonly known expression that
+  imparts traditional wisdom, truth, or moral advice. Proverbs are
+  often metaphorical and have been passed down through generations,
+  encapsulating cultural values and shared experiences. An example
+  would be "Actions speak louder than words."
+
+- =Saying=: A saying is a general term that refers to any well-known
+  phrase or expression that conveys a truth or observation about
+  life. Sayings often include proverbs but can also encompass other
+  forms of popular expressions, such as idioms or adages. They are
+  typically less formal than proverbs. An example of a saying is "The
+  early bird catches the worm."
+
+While both proverbs and sayings encapsulate shared knowledge, proverbs
+typically convey specific moral lessons, whereas sayings may include a
+broader range of expressions about life and human nature.
+
+** Samples
+
+Here are ten proverbs and sayings that emphasize the values
+of diligence and patience:
+
+1. "Patience is a virtue."
+2. "Good things come to those who wait."
+3. "The early bird catches the worm."
+4. "Slow and steady wins the race."
+5. "Rome wasn't built in a day."
+6. "All things are difficult before they are easy."
+7. "Perseverance conquers all things."
+8. "A watched pot never boils."
+9. "Patience is bitter, but its fruit is sweet."
+10. "He who hesitates is lost."
+
+These proverbs and sayings highlight the importance of steady effort
+and the value of waiting for rewarding results.
+
+------
+
+Here are ten proverbs and sayings that touch on the themes
+of stupidity and a lack of patience:
+
+1. "Fools rush in where angels fear to tread."
+2. "Haste makes waste."
+3. "A fool and his money are soon parted."
+4. "Look before you leap."
+5. "There's no fool like an old fool."
+6. "Talk is cheap; actions speak louder than words."
+7. "A bird in the hand is worth two in the bush."
+8. "Cutting corners may lead to greater cost in the long run."
+9. "The more haste, the less speed."
+10. "Act in haste, repent at leisure."
+
+These proverbs and sayings warn against impulsive actions and
+highlight the pitfalls of imprudence and impatience.
+
+** Full List
+
+You can find and learn them on [[https://en.wikipedia.org/wiki/List_of_proverbial_phrases][WikiPedia]]. 
+
+* YouTube Shadowing
+
+I would like to propose an exercise for enhancing pronunciation
+fluency called /"YouTube Shadowing"/. To begin, find a video clip that
+interests you and launch it. Make sure to turn on the captions to
+follow along. After listening to each sentence, pause the video and
+replicate the sentence, mimicking the presenter's pronunciation as
+closely as possible. Continue this process, repeating as needed, to
+refine your pronunciation skills and improve your fluency.
+
+I would suggest to use materials from [[https://www.youtube.com/watch?v=eDGCWou3ph4][this channel]].
+
+
+* Scratches                                                        :noexport:
+
+Check the grammar, clarify and extend this passage:
+
+```
+I want to propose the exercise for elaboration pronunciation fluency -
+Youtube shadowing. First of all find a clip that can be interesting
+for you. Launch it and turn captions on. After that, pause after each
+sentence and replicate this sentence mimicking the presenter's
+pronunciation. Rinse and repeat.
+```
+
+#+begin_src markdown
+Certainly! Here is a revised and extended version of the passage, with
+improved grammar and added clarity:
+
+```
+
+```
+
+This revision clarifies the instructions and provides a more
+comprehensive explanation of the exercise.
+#+end_src
+

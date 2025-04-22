@@ -1,0 +1,179 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: English Phonemics Comparison
+tagline: " discrepancies and affinities with other languages"
+permalink: /english/phonemics_comparison.html
+categories: [English, Natural Language]
+tags: [phonemics, comparison]
+---
+#+END_EXPORT
+#+STARTUP: showall indent
+#+PROPERTY: vizier-thread-id thread_gciLJTz0PNVAgQnyRLJlX9gu
+#+PROPERTY: vizier-assistant-id asst_mEp1qd4WTGBLpPEImf6cam1K
+#+TOC: headlines 3
+
+
+* Scratches                                                        :noexport:
+
+Can you recall the most distinctive phonemes of English?
+
+#+begin_src markdown
+```org
+** Distinctive Phonemes of English
+
+  - /θ/: The voiceless dental fricative, as in the word "think."
+  - /ð/: The voiced dental fricative, as in the word "this."
+  - /ɹ/: The post-alveolar approximant, as in the word "red."
+  - /æ/: The near-open front unrounded vowel, as in the word "cat."
+  - /ʌ/: The open-mid back unrounded vowel, as in the word "cup."
+  - /ŋ/: The voiced velar nasal, as in the word "sing."
+  
+These phonemes are particularly distinctive in English and can pose
+challenges for speakers of other languages when learning English
+pronunciation.  ``` #+end_src
+
+
+
+Check the grammar, clarify and enhance this passage:
+
+```
+
+In other words: yes, it is possible to speak another language using
+the sounds of your mother tongue, but you will be the one who
+understand what you're taking about.
+```
+
+Define term `monolingual` in a single sentence.
+
+
+
+* Glossary
+
+** Phoneme
+A *phoneme* is the smallest distinctive unit of sound in a language that
+can differentiate words and meanings.
+** Mother Tongue
+A *mother tongue* is the first language a person learns from birth,
+often used for communication in the home and reflecting one's cultural
+and ethnic identity.
+** Monolingual
+A *monolingual* individual is someone who speaks and understands only
+one language.
+
+
+* Preamble
+
+Given that most people are monolingual, it can be quite surprising for
+them to discover that different languages exhibit distinct acoustic
+characteristics. I.e. each language possesses unique phonemes and
+often lacks the phonemes present in other languages.
+
+Naturally, if you wish to speak another language and want others to
+understand you, it is crucial to first comprehend the phonetic
+differences between your mother tongue and the target
+language. Additionally, it is essential to learn how to vocalize and
+articulate the new sounds from the other language.
+
+Often, when you attempt to speak another language using the phonemes
+of your mother tongue, it can sound quite strange and confusing to
+your listeners. Moreover in most cases it sounds so puzzling that they
+can't understand you at all.
+------
+*In other words:*
+#+begin_quote
+While it is possible to speak another language using the sounds of
+your mother tongue, you may be /the only one/ who understands what
+you're talking about.
+#+end_quote
+------
+
+
+* The English Phonemical Hallmarks
+
+These phonemes below are particularly distinctive in English and can
+pose challenges for speakers of other languages when learning English
+pronunciation.
+
+**  =/θ/=: The voiceless dental fricative, as in the word "think."
+**  =/ð/=: The voiced dental fricative, as in the word "this."
+**  =/ɹ/=: The post-alveolar approximant, as in the word "red."
+**  =/æ/=: The near-open front unrounded vowel, as in the word "cat."
+**  =/ʌ/=: The open-mid back unrounded vowel, as in the word "cup."
+**  =/ŋ/=: The voiced velar nasal, as in the word "sing."
+  
+
+* Arabic
+
+Arabic contains emphatic consonants such as =/sˤ/=, =/dˤ/=, and
+=/tˤ/=, which have no equivalent in English. Arabic features the
+pharyngeal sounds =/ʕ/= and =/ħ/= that are absent in English.  The
+uvular sounds like =/q/= and =/ʁ/= are present in Arabic but not in
+standard English.
+
+Conversely, English includes the interdental fricatives =/θ/= and
+=/ð/=, which are not found in Arabic.  English utilizes a broad set of
+vowel distinctions, like =/ɪ/= and =/æ/=, while Arabic tends to have
+fewer distinct vowel sounds.
+
+** Rhotic =/ɹ/= in Arabic:
+The rhotic =/ɹ/= sound, common in many varieties of English, does not
+exist in Arabic. Arabic typically uses the rolled or trilled rhotic
+=/r/=, which is distinct from the English =/ɹ/=.
+
+** Nasal =/ŋ/= in Arabic
+ The nasal =/ŋ/= sound, as in the English word "sing," does not exist
+ as a distinct phoneme in Arabic. Arabic primarily uses the nasal
+ sounds =/m/= and =/n/=, with no dedicated =/ŋ/= sound.
+
+
+ 
+* German
+
+Although German and English belong to the same language family, the
+phonemic differences are remarkable: German lacks the rhotic =/ɹ/=
+sound, the nasal =/ŋ/=, and =/θ/= sounds.
+
+Conversely, English does not use an explicit =/r/= sound as pronounced
+in certain other languages.
+
+
+* Russian
+
+Naturally, Russian is phonemically closer to German: it does not
+contain the rhotic =/ɹ/= sound, the nasal =/ŋ/=, or the =/θ/=
+sounds. Additionally, it lacks the =/f/= sound as well.
+
+In contrast, English lacks a range of soft consonants and the specific
+for [[https://en.wikipedia.org/wiki/Slavic_languages][Slavic languages]] phoneme =/ɨ/=.
+
+
+* Portuguese
+
+Portuguese includes nasal vowels, such as =/ɐ̃/=/, =/ẽ/=, and =/õ/=,
+which are absent in English. Portuguese has a range of palatal
+consonants like =/ʎ/= and =/ɲ/=, which do not occur in English.
+
+Conversely, English features the interdental fricatives =/θ/= and
+=/ð/=, which are not found in Portuguese. English also employs the
+rhotic sounds =/ɹ/= and =/ɾ/= (in some accents), which differ from the
+Portuguese sounds =/ʁ/= or =/ɾ/= commonly used in various Portuguese
+dialects.
+
+The nasal =/ŋ/= sound, found in English at the end of words like
+"sing," does not exist as a distinct phoneme in Portuguese. In
+Portuguese, nasal sounds are usually represented by nasal vowels or
+are not as consistently produced with a velar nasal as in English.
+
+
+* Notes                                                            :noexport:
+
+I'm trying to write the preamble for my article: "English Phonetics
+Comparison: discrepancies and affinities with other languages" 
+
+Describe the phonemical discrepancies between English and Arabic
+in the same manner. For description of phonetic differences use
+symbols from IPA, please.
+
+Does rhotic =/ɹ/= exist in Arabic?
+

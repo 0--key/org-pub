@@ -1,0 +1,463 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Hiberno-English Pronunciation Tips
+tagline: " for beginners"
+permalink: /english/hiberno/pronunciation.html
+categories: [Hiberno-English, Natural Language, Pronunciation]
+tags: [phonemics]
+---
+#+END_EXPORT
+#+STARTUP: showall indent
+#+PROPERTY: vizier-thread-id thread_hyEq1KWLEYjnP71u58yx3Yvd
+#+PROPERTY: vizier-assistant-id asst_3snfzpEB0H3TgZrcVwKnJtXU
+#+TOC: headlines 3
+
+* Scratches                                                        :noexport:
+
+* Preamble
+
+Attempting to describe all the dialects of English spoken in Ireland
+is destined to be incomplete due to the rich and diverse linguistic
+landscape. This article focuses solely on highlighting the general
+discrepancies and unique features that set Hiberno-English dialects
+apart.
+
+It is important to note that Ireland's dialects are multifaceted,
+influenced by historical, regional, and cultural factors that shape
+the way English is spoken across the island. The features discussed
+here provide a broad overview, offering insight into the distinct
+characteristics of English as it is spoken in Ireland, but they cannot
+capture the full complexity and nuance found in individual
+dialects. Further exploration and study of specific regions may reveal
+even more variety within this fascinating branch of the English
+language.
+
+* Definitions
+
+** Modern Standard English:
+
+This term generally refers to the standard form of the English
+language used in formal writing and speaking across English-speaking
+countries. It encompasses grammar, vocabulary, and sometimes
+pronunciation.
+
+** Received Pronunciation (=RP=):
+
+=RP= is a specific accent of English /traditionally associated with
+educated speakers/ in southern England. It is often considered one of
+the standard accents of British English.
+
+*RP is a pronunciation standard*, _not a broader language standard
+like Modern Standard English_.
+
+** Differences:
+
+While =RP= can be used as a model for Modern Standard English
+pronunciation, it's important to note that =RP= is only one specific
+accent within the broader scope of Standard English. Modern Standard
+English refers to language norms, including structure and usage,
+whereas =RP= specifically refers to an accent.
+
+In summary, while =RP= may be used as a pronunciation model within
+Modern Standard English, it is not correct to equate the two terms
+directly, as one refers to an accent and the other to a set of
+language standards.
+
+
+* Origin of the Name =Hiberno-English=
+
+The term *Hiberno-English* originates from the Latin word =Hibernia=,
+which is the classical Latin name for Ireland. The prefix "Hiberno-"
+is used to denote anything related to Ireland.
+
+** =Hibernia=: 
+
+This was the name used by the Romans to refer to the island of
+Ireland. Despite the Romans never conquering Ireland, the name
+remained in use in various forms, especially in scholarly and
+historical contexts.
+
+Thus, *Hiberno-English* refers to the varieties of English spoken in
+Ireland, highlighting the distinct characteristics and influences
+specific to Irish English dialects.
+
+
+* Origin of =Hiberno-English= Dialects
+
+** Early English Influence:
+
+The earliest English influence on Ireland began with the Anglo-Norman
+invasion in the 12th century. However, significant English-speaking
+settlements didn't form until the Tudor conquest and subsequent
+Plantations in the 16th and 17th centuries.
+
+** Irish Language Substrate:
+
+The native Irish language (Gaeilge) has had a profound influence on
+Hiberno-English. This includes syntactic, lexical, and phonetic
+influences, creating distinctive features in the dialects.
+
+** Scottish Influence:
+
+In Ulster, particularly due to the Ulster Plantation, there was a
+considerable Scottish influence, contributing to the development of
+Ulster Scots language, which further influenced the local variety of
+English.
+
+** Colonial and Post-Colonial Developments:
+
+With the Union of Great Britain and Ireland in 1801 and the later wave
+of immigration and trade, English became the dominant language. This
+period solidified English as the primary language, but it continued to
+evolve with a distinctly Irish identity.
+
+** Socioeconomic Factors:
+
+Over time, various socioeconomic changes, including the Famine and
+mass emigration, have shaped the language landscape, preserving
+distinct features and introducing new ones from contact with English
+speakers abroad.
+
+** Modern Linguistic Evolution:
+
+Today, Hiberno-English dialects continue to evolve, influenced by
+global media, technology, and interaction with other English-speaking
+regions, while retaining specific traditional features.
+
+** Sum Them Up:
+
+Each of these historical and cultural layers has contributed to the
+unique characteristics of Hiberno-English dialects as we know them
+today.
+
+
+* The =Received Pronunciation= Phonemical Hallmarks
+
+These phonemes below are particularly distinctive in English and can
+pose challenges for speakers of other languages when learning English
+pronunciation.
+
+
+**  =/θ/=: The voiceless dental fricative, as in the word "think."
+**  =/ð/=: The voiced dental fricative, as in the word "this."
+**  =/ɹ/=: The post-alveolar approximant, as in the word "red."
+**  =/æ/=: The near-open front unrounded vowel, as in the word "cat."
+**  =/ʌ/=: The open-mid back unrounded vowel, as in the word "cup."
+**  =/ŋ/=: The voiced velar nasal, as in the word "sing."
+
+
+
+* The Question#1
+
+#+begin_quote
+How are these phonemes represented in Hiberno-English dialects?
+#+end_quote
+
+* Representation of Phonemes in Hiberno-English Dialects
+
+
+Overall, while there are notable variations in pronunciation across
+different regions and speakers within Ireland, these are some general
+tendencies observed in Hiberno-English dialects.
+
+** =/θ/= and =/ð/=:
+
+In many Hiberno-English dialects, particularly in Dublin and
+surrounding areas, the phonemes =/θ/= and =/ð/= are often pronounced
+as =/t/= and =/d/= respectively.
+
+*For example:*
+
+     - "think" may be pronounced more like "tink."
+     - "this" may be pronounced more like "dis."
+
+** =/ɹ/=:
+
+Hiberno-English is typically rhotic, meaning the =/ɹ/= sound is
+pronounced quite clearly in most environments. However, the quality of
+the =/ɹ/= may vary, sometimes being more guttural or retroflex.
+
+** =/æ/=:
+
+The =/æ/= vowel may be realized as a slightly higher and fronter vowel
+in some parts of Ireland, often closer to =/a/= or even =/ɛa/=.
+
+*For instance*, "cat" may sound closer to "cot" in certain areas.
+
+** =/ʌ/=:
+The =/ʌ/= vowel can sometimes be pronounced as a more central or
+fronted vowel, sometimes sounding like =/ʊ/=.
+
+*As a result*, "cup" may sound closer to "cup" with a more rounded
+vowel, similar to "cook."
+
+** =/ŋ/=:
+This phoneme is generally pronounced similarly to Standard English,
+but in informal settings, especially in rural areas, it might be
+pronounced as =/n/= in some contexts.
+
+*For example*, "singing" might be heard as "singin'."
+
+
+* The Question#2
+
+#+begin_quote
+*Question*: What are the distinctive phonemes that unique for
+Hiberno-English dialects and absent in =RP=?
+#+end_quote
+
+* Distinctive Phonemes in Hiberno-English Dialects
+
+** =/eː/=:
+
+In Hiberno-English, especially in the Western dialects, the vowel
+sound in words like "face" and "make" can be pronounced with a long
+monophthong =/eː/= rather than a diphthong =/eɪ/= as in =RP=.
+
+** =/oː/=:
+
+Similarly, words with the "goat" vowel, like "boat" or "note," might
+feature a long monophthong =/oː/= instead of the diphthong =/oʊ/= used
+in =RP=.
+
+** =/iː/= (shortened variants):
+
+The vowel sounds in words like "kit" and "bid" can sometimes be
+pronounced with a closer vowel, resembling a shortened version of
+=/iː/=, making "kit" sound almost like "keet."
+
+** =/aɪ/=:
+
+In some Hiberno-English dialects, particularly in the west, the
+diphthong in words like "buy" and "fly" may be realized as a
+monophthong =/aː/= or a more traditional diphthong =/aɪ/= pronounced
+with more emphasis on the onset.
+
+** Word-initial /h/ Dropping:
+
+In Hiberno-English, especially in certain rural accents, you may
+encounter the dropping of the word-initial /h/ sound. For example,
+"house" might be pronounced as "ouse."
+
+** *Summing it up*:
+
+These features highlight the rich phonetic diversity within the
+Hiberno-English dialects and demonstrate how these phonemes can
+provide a distinct Irish flair to the spoken language that isn't
+typically found in =RP=.
+
+
+
+* The Question#3
+
+#+begin_quote
+What are *other differences* in pronunciation between Hiberno-English
+and =RP=?
+#+end_quote
+
+* Differences in Pronunciation: Hiberno-English vs. RP
+
+** Rhoticity:
+
+Hiberno-English is typically rhotic, meaning the 'r' sound is
+pronounced at the end of words and before consonants, unlike some
+non-rhotic =RP= accents (e.g. Received Pronunciation).
+
+** Vowel Length:
+
+Longer vowel sounds in Hiberno-English, such as the realization of a
+longer =/eː/= and =/oː/=, where =RP= often uses diphthongs.
+
+** T-Flapping:
+
+In Hiberno-English, the /t/ sound is often articulated clearly, unlike
+in American English, where it might be flapped or pronounced as a soft
+'d' sound.
+
+** Intonation Patterns:
+
+Irish English often employs a distinctive rising intonation at the end
+of sentences, even in statements, which can be different from the
+falling intonation typically used in =RP=.
+
+** Vowel Harmony:
+
+Hiberno-English features vowel harmony in some areas, where the
+quality of vowels within a word can be influenced by the initial vowel
+sound.
+
+** Diphthongization:
+
+Some monophthongs in =RP= may be diphthongized in Hiberno-English, and
+vice versa. For example, the word "thought" might have a more
+pronounced monophthong.
+
+** Consonantal Differences:
+
+There is often less assimilation of sounds in Hiberno-English. For
+example, "handbag" might have clearer pronunciation of the 'd', unlike
+some =RP= accents where it may assimilate to "hambag."
+
+** Plosive Clarity:
+
+Plosive sounds such as /p/, /t/, and /k/ are often pronounced with
+more force in Hiberno-English, lacking the aspirated quality often
+found in some =RP= accents.
+
+
+
+* Conclusion
+
+These differences contribute to the distinct identity of
+Hiberno-English, offering unique sounds and speech patterns that
+distinguish it from =RP=.
+
+
+* Notes                                                            :noexport:
+
+Does the term `Modern Standard English` correct if we talk about
+received pronunciation?
+
+#+begin_src markdown
+```org
+** Use of the Term "Modern Standard English" vs. "Received Pronunciation"
+  ``` #+end_src
+** Preamble
+
+Check the grammar, clarify and extend the `Preamble` section:
+
+```
+An attempt to describe all dialects of English spoken in Ireland
+doomed to be a failure. In this artitcle - only general discrepancies.
+```
+
+
+
+#+begin_src markdown
+```org
+** Preamble
+
+  ``` #+end_src
+** Distortion
+
+The sound system of Irish doesn't allow for an `s` sound before a `t`,
+an `n` or an `l` opting instead for a `sh` sound. Can you provide me
+10 jokes around these peculiarities in English pronunciation by native
+Irish speakers?
+
+#+begin_src markdown
+```org
+* Jokes on Irish Pronunciation Quirks
+
+1. Why was the Irishman great at guessing letter puzzles?
+   - Because he always thought "EST" was pronounced "ESH-T"!
+
+2. Why did the Irish chef never cook alone?
+   - He always warned, "Never shtir without supervision!"
+
+3. How do Irish mathematicians calculate angles?
+   - They always measure from "naught" to "naughty degrees!"
+
+4. What did the Irish musician say to his band before starting?
+   - "Let’s make sure we shtart with a bang!"
+
+5. Why did the Irish comedian always get laughs on New Year’s Eve?
+   - His resolution was to always "shtay" funny!
+
+6. How does an Irish gardener start their day?
+   - By making sure every plant passes the "shprout" inspection!
+
+7. What’s an Irish golfer’s favorite type of club?
+   - The one that helps him "shtay" on course!
+
+8. Why did the bookworm prefer Irish libraries?
+   - Because every time he entered, they’d ask, "Want a library ‘shponser-ship’?"
+
+9. Why don’t Irish astronomers ever get lost in space?
+   - They always "shtay" aligned with the stars!
+
+10. What did the Irish fashion designer say when showcasing a new line?
+    - "It’s all about the 'shmart' look this season!"
+
+These light-hearted jokes playfully highlight the unique pronunciation
+features of Irish speakers adapting to English.  ``` #+end_src
+
+Provide the sentence to show up a maximum flaws in English
+pronunciation with Irish accent.
+
+#+begin_src markdown
+```org
+** Sentence Highlighting Maximum Pronunciation Flaws in Irish Accent
+
+"When Sean thought about singing the soft song in the small stone
+church near the stream, he realized it would shtart sounding more like
+a lively shpinning dance!"
+
+- This sentence incorporates several elements where:
+  - =/s/ to 'sh'= occurs before 't' in "start" and "stone."
+  - The pronunciation of the =/θ/= sound in "thought" and =/ŋ/=/n/ swap in "singing."
+  - The potential for vowel shifting in words like "Sean," "small," and "song."
+  - The presence of the 'r' sound in "church" and "stream" illustrates rhoticity.
+  - Assonance and consonance patterns also challenge the typical Irish
+    flair in pronunciation.
+``` #+end_src
+
+Provide me another Sentence Highlighting Maximum Pronunciation Flaws
+in Irish Accent, please.
+
+#+begin_src markdown
+```org
+** Sentence Highlighting Maximum Pronunciation Flaws in Irish Accent
+
+"When the sheep lay asleep on the sleek green hill, Patrick decided it
+was time to take a long stroll through the woods on the misty street."
+
+- This sentence features:
+  - =/s/ to 'sh'= conversion before 't' in "street."
+  - Vowel variations in "sheep," "sleek," and "hill," reflecting
+    distinctive Irish vowel sounds.
+  - Potential rhoticity in "Patrick," "stroll," and "through."
+  - The opportunity for =/θ/=/t/= substitution in "through."
+  - Instances of soft 't' in "street" and "Patrick" can differ in Irish articulation.
+  - These elements showcase typical Irish pronunciation flair and possible challenges when adapting to standard English articulation.
+``` #+end_src
+** Benjamin Disraeli
+
+What is the context of Benjamin Disraeli quote:
+```Ah Ireland...that damnable, delightful country...```
+
+#+begin_src markdown
+```org
+*** Context of Benjamin Disraeli's Quote on Ireland
+
+Benjamin Disraeli, a prominent British Conservative politician and
+two-time Prime Minister in the 19th century, made the remark about
+Ireland, illustrating the complex and often contradictory relationship
+between Britain and Ireland during his time.
+
+1. =Historical Background=:
+   - The quote likely reflects the tumultuous political, social, and
+     economic conditions prevalent in 19th-century Ireland, often
+     marked by tensions between the Irish people and British
+     governance.
+   - Ireland was struggling with numerous issues such as poverty, land
+     ownership disputes, and calls for political reform, including the
+     push for Home Rule, which sought self-government for Ireland.
+
+2. =Disraeli’s Perspective=:
+   - As a British politician, Disraeli's views on Ireland would be
+     shaped by the political challenges of maintaining stability and
+     addressing Irish grievances while balancing British interests.
+   - The quote captures both the frustrations ("damnable") and the charm ("delightful") that he likely perceived in dealing with Irish affairs, acknowledging the beauty and cultural richness of Ireland alongside its political difficulties.
+
+3. =Literary and Political Significance=:
+   - The phrase has since been used to describe the enduring
+     complexities in Anglo-Irish relations, encapsulating the blend of
+     admiration and exasperation that often characterized British
+     perceptions of Ireland during that era.
+
+Overall, the quote is emblematic of the mixed emotions and challenges
+that Ireland posed to British statesmen like Disraeli during the 19th
+century.  ``` #+end_src
+

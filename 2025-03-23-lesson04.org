@@ -1,0 +1,352 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Lesson Num.4
+tagline: " dive deeper"
+permalink: /english/lesson04.html
+categories: [English Course]
+tags: [lesson04]
+---
+#+END_EXPORT
+#+STARTUP: showall indent
+#+PROPERTY: vizier-thread-id thread_IhjBECfdS7Tf53zJWE8gCqb4
+#+PROPERTY: vizier-assistant-id asst_mEp1qd4WTGBLpPEImf6cam1K
+#+TOC: headlines 3
+
+* Scratches                                                        :noexport:
+
+** Tongue Twisters
+
+Provide 5 tongue twitsters for elaboration fluency of pronunciation of
+=/æ/= sound.
+
+
+#+begin_src markdown
+Certainly! Here are five tongue twisters designed to improve the
+fluency of the =/æ/= pronunciation:
+
+1. "The cat ran after the man with a black hat."
+2. "Ann and Andy had an apple and a banana."
+3. "The fat rat sat on a flat mat in a hat."
+4. "Sally sang a sad song about a sandy land."
+5. "Pat packs a batch of snacks in a sack."
+
+These tongue twisters emphasize the =/æ/= sound, as in "cat" and
+"man," helping learners practice and improve their pronunciation
+fluency.
+#+end_src
+
+Provide another 5 tongue twitsters for elaboration fluency of
+pronunciation of =/ɹ/= sound.
+
+#+begin_src markdown
+Certainly! Here are five tongue twisters to help enhance the fluency
+of the =/ɹ/= pronunciation:
+
+"Rick rolled rapidly round the rocky road."
+"Rita's rabbit rarely runs around."
+"Robert ran rings around the rugged rocks."
+"Rachel's red roses really radiate."
+"Roger races rapidly, reaching ridges."
+
+These tongue twisters focus on the =/ɹ/= sound, as in "red" and
+"rabbit," providing excellent practice for pronunciation fluency.
+#+end_src
+
+Provide another 5 tongue twitsters for elaboration fluency of
+pronunciation of =/ŋ/= sound.
+
+#+begin_src markdown
+Certainly! Here are five tongue twisters to help improve the fluency
+of the =/ŋ/= pronunciation:
+
+"The king's song clung to the climbing swing."
+"Long strings of strong springs swing in the wind."
+"Binging on bananas brings a longing for something tangy."
+"The wings of the young swans are strong."
+"Singing along, the penguin swung to the ringing gong."
+
+These tongue twisters target the =/ŋ/= sound, as in "sing" and "long,"
+aiding in pronunciation fluency practice.
+#+end_src
+
+* Link
+
+[[https://bit.ly/424Byml][Link to Epub version]]
+
+* Warming up - Tongue Twisters (15 minutes)
+
+1. =/æ/= "The cat ran after the man with a black hat."
+2. "Ann and Andy had an apple and a banana."
+3. "The fat rat sat on a flat mat in a hat."
+4. "Sally sang a sad song about a sandy land."
+5. "Pat packs a batch of snacks in a sack."
+6. =/ŋ/= "The king's song clung to the climbing swing."
+7. "Long strings of strong springs swing in the wind."
+8. "Binging on bananas brings a longing for something tangy."
+9. "The wings of the young swans are strong."
+10. "Singing along, the penguin swung to the ringing gong."
+11. =/ɹ/= "Rick rolled rapidly round the rocky road."
+12. "Rita's rabbit rarely runs around."
+13. "Robert ran rings around the rugged rocks."
+14. "Rachel's red roses really radiate."
+15. "Roger races rapidly, reaching ridges."
+
+
+
+* LoopBack (20 minutes)
+
+- Who Barbara Oakley really are?
+- How many children she has?
+- How many cildren she has adopted?
+- The evidence of what these facts are?
+
+  
+* Reading Aloud (Poetry and Prosody) (35 minutes)
+
+*Glossary*
+
+#+begin_quote
+In the context of language and linguistics, =prosody= refers to the
+patterns of rhythm, stress, and intonation in spoken language. It
+encompasses several elements:
+
+- =Rhythm:= The flow and timing of speech, including the duration of
+  syllables and pauses.
+- =Stress:= The emphasis placed on certain syllables or words, which
+  can affect meaning and contribute to the natural rhythm of speech.
+- =Intonation:= The variation in pitch while speaking, which can
+  convey different meanings, emotions, or questions.
+
+Prosody is important for understanding the nuances of language, as it
+can affect the emotional tone and clarity of the spoken message.
+#+end_quote
+
+------
+
+#+begin_quote
+In the context of Hiberno-English (the variety of English spoken in
+Ireland), =pitch= refers to the perceived frequency of sound in
+speech, contributing to the melody or musical quality of spoken
+language. In Hiberno-English, pitch can play a significant role in
+communication for several reasons:
+
+- =Intonation Patterns:= Pitch variations often create distinctive
+  intonation patterns. Hiberno-English is known for its unique
+  intonation, which can be more varied and musical compared to other
+  English varieties.
+
+- =Expressing Emotion and Meaning:= Changes in pitch can convey
+  emotional nuances or emphasize certain parts of speech. In
+  Hiberno-English, shifts in pitch can indicate questions, statements,
+  irony, or emphasis, adding layers of meaning beyond the words alone.
+
+- =Regional Variation:= Different regions in Ireland may exhibit
+  variations in pitch usage, contributing to the distinctiveness of
+  local dialects and accents within Hiberno-English.
+
+Overall, in Hiberno-English, as in other dialects, pitch is an
+essential component of prosody, crucial for expressing emotion,
+intent, and meaning.
+#+end_quote
+
+** Ae Fond Kiss
+
+'Ae Fond Kiss' is the most famous and widely acclaimed song to arise
+from Robert Burns's association with Agnes McLehose, an educated woman
+whom he met whilst in Edinburgh in 1787 and who was separated from her
+husband James McLehose, a Glasgow lawyer.
+
+The lovers exchanged a wealth of letters in which they refer to each
+other as 'Sylvander' and 'Clarinda'. Mrs McLehose inspired some of
+Burns's most famous works including the song 'Ae fond Kiss'.
+
+Agnes McLehose arranged an introduction to Robert Burns by a mutual
+friend, Miss Erskine Nimmo (b.1731), and following this the couple
+embarked on a lengthy and, at times, passionate correspondence,
+sometimes writing to each other twice in one day (over the years 1787
+and 1788).
+
+This being said, Agnes McLehose remained aware of her controversial
+status as a married, yet separated woman, living alone and dependent
+upon the generosity of her cousin, William Craig (1745-1813).
+
+She was deeply concerned with propriety and confidentiality, and so it
+was partly to protect both her own and Burns's privacy and reputation
+that she suggested the noms d'amours 'Sylvander' and 'Clarinda'.
+
+There is nothing concrete to suggest that the relationship was ever
+consummated, yet one can derive from the letters that the couple were
+certainly taken with each other for a time.
+
+Following Robert Burns's departure from Edinburgh in 1788, it is
+apparent that the correspondents' friendship suffered owing to Burns's
+reunion with Jean Armour and their eventual marriage, not to mention
+the birth of his illegitimate child to Jenny Clow, Agnes McLehose's
+maid.
+
+In 1792 Agnes McLehose travelled to the West Indies on the Roselle at
+the request of her estranged husband who, it appears, wished to affect
+reconciliation. Robert Burns, upon learning of this plan, wrote the
+song 'Ae Fond Kiss' and sent it to Agnes McLehose on the 27th of
+December 1791.
+
+Burns's use of the song to express his distress at the finality of the
+pair's relationship is both dramatic and emotive. 'Ae Fond Kiss'
+conveys sincere, powerful notions of love, and yet a sense of deep
+despair and hopelessness is ever present. For this reason it is one of
+the most moving songs ever written in response to loss and heartbreak.
+
+#+begin_verse
+Ae fond kiss, and then we sever; 
+Ae fareweel, and then for ever!
+Deep in heart-wrung tears I'll pledge thee, 
+Warring sighs and groans I'll wage thee. 
+Who shall say that Fortune grieves him, 
+While the star of hope she leaves him? 
+Me, nae cheerful twinkle lights me; 
+Dark despair around benights me. 
+
+I'll ne'er blame my partial fancy, 
+Naething could resist my Nancy: 
+But to see her was to love her; 
+Love but her, and love for ever. 
+Had we never lov'd sae kindly, 
+Had we never lov'd sae blindly, 
+Never met-or never parted, 
+We had ne'er been broken-hearted. 
+
+Fare-thee-weel, thou first and fairest! 
+Fare-thee-weel, thou best and dearest! 
+Thine be ilka joy and treasure, 
+Peace, Enjoyment, Love and Pleasure! 
+Ae fond kiss, and then we sever! 
+Ae fareweel alas, for ever! 
+Deep in heart-wrung tears I'll pledge thee, 
+Warring sighs and groans I'll wage thee.
+#+end_verse
+
+[[https://www.youtube.com/watch?v=O04ylB5E114][YouTube]]
+
+Перевод С.Маршака
+
+#+begin_verse
+РАССТАВАНИЕ
+
+
+      Поцелуй - и до могилы
+      Мы простимся, друг мой милый.
+      Ропот сердца отовсюду
+      Посылать к тебе я буду.
+
+      В ком надежды искра тлеет,
+      На судьбу роптать не смеет.
+      Но ни зги передо мною.
+      Окружен я тьмой ночною.
+
+      Не кляну своей я страсти.
+      Кто твоей не сдастся власти?
+      Кто видал тебя, тот любит,
+      Кто полюбит, не разлюбит.
+
+      Не любить бы нам так нежно,
+      Безрассудно, безнадежно,
+      Не сходиться, не прощаться,
+      Нам бы с горем не встречаться!
+
+      Будь же ты благословенна,
+      Друг мой первый, друг бесценный.
+      Да сияет над тобою
+      Солнце счастья и покоя.
+
+      Поцелуй - и до могилы
+      Мы простимся, друг мой милый.
+      Ропот сердца отовсюду
+      Посылать к тебе я буду.
+#+end_verse
+
+[[https://онлайн-читать.рф/%D0%BB%D0%B5%D1%80%D0%BC%D0%BE%D0%BD%D1%82%D0%BE%D0%B2-%D1%85%D0%B0%D0%B4-w%D0%B5-%D0%BD%D0%B5%D0%B2%D0%B5%D1%80-%D0%BB%D0%BE%D0%B2%D0%B5%D0%B4-%D1%81%D0%BE-%D0%BA%D0%B8%D0%BD%D0%B4%D0%BBy-%D0%B5%D1%81%D0%BB%D0%B8-%D0%B1%D1%8B-%D0%BC%D1%8B-%D0%BD%D0%B5-%D0%BB%D1%8E%D0%B1%D0%B8%D0%BB%D0%B8/][Перевод М.Лермонтова]]
+
+
+* Proverbs and Sayings (15 minutes)
+
+#+begin_quote
+ A =proverb= is a short, commonly known saying that expresses a
+general truth, piece of advice, or moral lesson. Proverbs are
+typically concise and use figurative language or metaphor to convey
+their message in a memorable way. They are often passed down through
+generations and are part of the cultural wisdom of a society. For
+example, the proverb "A stitch in time saves nine" advises that it is
+better to address a problem promptly to prevent it from becoming
+larger.
+#+end_quote
+
+-----
+
+Here are ten proverbs that emphasize the values of diligence,
+perseverance, and persistence:
+
+1. "Rome wasn't built in a day."
+2. "Slow and steady wins the race."
+3. "If at first you don't succeed, try, try again."
+4. "The early bird catches the worm."
+5. "Fortune favors the brave."
+6. "Where there's a will, there's a way."
+7. "No pain, no gain."
+8. "Little strokes fell great oaks."
+9. "A journey of a thousand miles begins with a single step."
+10. "Practice makes perfect."
+
+These proverbs highlight the importance of consistent effort and
+determination in achieving success.
+
+
+* Translation (25 minutes)
+
+Here's a modern adaptation of a well-known Zen story involving two
+Tibetan monks, which conveys a moral lesson about letting go:
+
+-----
+
+Two Tibetan monks, an elder and a younger, were traveling together on
+a long journey when they came across a wide, swift river. As they were
+about to cross, they noticed a woman sitting by the riverbank,
+distressed because she was unable to cross the river by herself.
+
+The elder monk offered to help. With the woman's consent, he picked
+her up and carried her across the river, setting her down safely on
+the other side. The woman thanked him and went on her way.
+
+The monks continued their journey in silence. Hours passed, and the
+younger monk couldn't keep his feelings to himself any longer. He
+turned to the elder monk and said, "Brother, we are supposed to avoid
+contact with women. Why did you carry her?"
+
+The elder monk replied, "I set her down by the river hours ago, but
+*you are still carrying her with you*."
+
+-----
+
+This fable teaches a lesson about the importance of letting go of
+unnecessary burdens and not holding onto thoughts or worries that can
+weigh us down.
+
+
+* The Art of Being Yourself                                        :noexport:
+
+[[https://www.youtube.com/watch?v=veEQQ-N9xWU][YouTube video]]
+
+Transcript:
+
+
+
+* Notes                                                            :noexport:
+
+Can you provide 10 proverbs about diligence, perseverance and
+persistence, please?
+
+
+#+begin_src markdown
+Certainly! 
+#+end_src
+

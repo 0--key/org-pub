@@ -1,0 +1,28 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: English Pronunciation Samples
+tagline: " better to hear once"
+permalink: /english/pronunciation.html
+categories: [English, Natural Language, Pronunciation]
+tags: [phonemics, samples]
+---
+#+END_EXPORT
+#+STARTUP: showall indent
+#+PROPERTY: vizier-thread-id thread_P1Obn1EiRZrf8CDERGTbHi3K
+#+PROPERTY: vizier-assistant-id asst_mEp1qd4WTGBLpPEImf6cam1K
+#+TOC: headlines 3
+
+
+* Scratches                                                        :noexport:
+Please define pronunciation in a single sentence.
+
+* Glossary
+
+*Pronunciation* is the way in which a word or language is spoken,
+including the correct formation of sounds, intonation, stress, and
+rhythm. *Pronunciation* is the manner in which words are articulated
+and spoken, involving the accurate production of sounds, stress, and
+intonation patterns.
+
+* 

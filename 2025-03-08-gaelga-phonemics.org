@@ -1,0 +1,89 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Irish Language Phonemics
+tagline: " for beginners"
+permalink: /irish/phonemics.html
+categories: [Irish, Natural Language, Phonemics]
+tags: [phonemics]
+---
+#+END_EXPORT
+#+STARTUP: showall indent
+#+PROPERTY: vizier-thread-id thread_v0i62ITIg1ZEtx1etUfRHyKp
+#+PROPERTY: vizier-assistant-id asst_3snfzpEB0H3TgZrcVwKnJtXU
+#+TOC: headlines 3
+
+* Scratches                                                        :noexport:
+Can you describe the phonetic stricture of Irish-Gaelic by using
+International Phonetic Alphabet?
+
+
+Make the comparison between phonetic structure of Irish Gaelic and
+English Received Pronunciation. Which sounds are identical in both
+languages?
+
+
+
+* Irish Gaelic Phonetic Stricture using IPA
+
+This representation covers the basic phonetic structure of Irish
+Gaelic using the International Phonetic Alphabet (IPA). Note that the
+actual pronunciation can vary slightly depending on regional dialects.
+
+1. *Consonants*:
+   - Plosives: /pʲ/, /pˠ/, /bʲ/, /bˠ/, /tʲ/, /t̪ˠ/, /dʲ/, /d̪ˠ/, /kʲ/, /kˠ/, /ɡʲ/, /ɡˠ/
+   - Fricatives: /fʲ/, /fˠ/, /vʲ/, /vˠ/, /s̪ʲ/, /s̻ˠ/, /z̪ʲ/, /z̻ˠ/, /hʲ/, /hˠ/, /ç/, /x/
+   - Nasals: /mʲ/, /mˠ/, /nʲ/, /n̪ˠ/, /ŋʲ/, /ŋˠ/
+   - Approximants: /lʲ/, /l̪ˠ/, /ɾʲ/, /ɾˠ/, /j/, /w/
+   - Affricates: /tʃ/, /dʒ/
+
+2. *Vowels*:
+   - Short: /ɪ/, /ɛ/, /a/, /ɔ/, /ʊ/, /ə/
+   - Long: /iː/, /eː/, /aː/, /oː/, /uː/
+
+3. *Diphthongs*:
+   - /iə/, /eə/, /oə/, /uə/, /ai/, /ei/, /oi/, /ai̯/, /au̯/
+
+
+* Comparison of Phonetic Structures: Irish Gaelic vs. English RP
+
+This comparison highlights the shared and unique aspects of both
+phonetic systems, noting where overlap occurs and where significant
+differences lead to accent distinctions.
+
+1. *Similar Consonant Sounds*:
+   - Plosives: /p/, /b/, /t/, /d/, /k/, /ɡ/ (note palatalized counterparts in Irish)
+   - Fricatives: /f/, /v/, /s/, /h/
+   - Nasals: /m/, /n/, /ŋ/
+   - Approximants: /w/, /j/ (Note: RP includes /ɹ/, whereas Irish has /ɾ/)
+   - Affricates: /tʃ/, /dʒ/
+
+2. *Similar Vowel Sounds*:
+   - /ɪ/, /ɛ/, /a/ (in contexts like RP's "cat" and "some")
+   - /ɔ/, /ʊ/, /ə/ (schwa)
+
+3. *Unique or Different Sounds*
+
+   - *Irish Gaelic*:
+     - Palatalized vs. velarized consonants (e.g., /pʲ/, /pˠ/)
+     - Distinct nasal sounds like /n̪ˠ/
+
+   - *English RP*:
+     - The rhotic /ɹ/
+     - Certain diphthongs like /eɪ/ (as in "face"), /aɪ/ (as in "price"), and /əʊ/ (as in "go")
+     - Longer vowels such as /iː/ (as in "fleece"), /ɑː/ (as in "far")
+
+4. *Diphthongs*:
+   - Both languages have diphthongs, but their occurrences and
+     combinations differ. For instance, Irish has diphthongs like /iə/
+     which don't have a direct RP counterpart.
+
+
+* Conclusion
+
+Overall, while there are shared sounds between Irish Gaelic and
+English Received Pronunciation, the presence of palatalization in
+Irish Gaelic and certain key differences in vowel and diphthong usage
+create *distinctively different phonetic landscapes* between the two
+languages.
+

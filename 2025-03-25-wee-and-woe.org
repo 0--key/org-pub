@@ -1,0 +1,305 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Etymology as the Science
+tagline: " about language roots"
+permalink: /english/etymology.html
+categories: [English, Natural Language, Etymology]
+tags: [phonetics]
+---
+#+END_EXPORT
+#+STARTUP: showall indent
+#+PROPERTY: vizier-thread-id thread_cvJlSBXfCVxJPSZRtEBlB8pD
+#+PROPERTY: vizier-assistant-id asst_mEp1qd4WTGBLpPEImf6cam1K
+#+TOC: headlines 3
+
+* The Bait                                                         :noexport:
+
+Provide the definition of etimology: the origin, initial meaning and
+mutation in meaning and spelling for English.
+
+
+* Etymology in English Language
+
+#+begin_quote
+*Etymology* refers to the study of the origin of words and how their
+meanings and forms have changed over time. Understanding etymology
+helps in learning vocabulary by tracing back the roots, which often
+enhances the grasp of current meanings and usage.
+#+end_quote
+
+** Origin
+
+- The English word "etymology" comes from the Greek word "etymologia"
+  = (true sense), which is formed from:
+  - =etymon=: true meaning of a word
+  - =logia=: study or theory
+
+** Initial Meaning
+
+Originally, etymology was the pursuit of discovering a word's original
+or true meaning, often linked to its historical roots or connections
+to other languages, particularly Latin and Greek in the context of
+English.
+
+** Mutation in Meaning
+
+Over time, as the English language has absorbed influences from
+various languages through conquest, trade, and cultural exchange, the
+meanings of many words have evolved. This led to:
+
+  - Words adopting new meanings.
+  - Spelling changes to align phonetically or to denote different usage.
+  - Simplification or complex derivations leading to the creation of new words.
+
+** Spelling Changes
+
+Historical spelling variations have occurred due to:
+
+  - Pronunciation shifts (Great Vowel Shift in English).
+  - Standardization efforts, such as Samuel Johnson's dictionary.
+  - Influence from Norman French, Latin, Greek, and other languages,
+    leading to a mix of phonetic and morphological changes.
+
+** Summary
+
+Understanding etymology involves looking at historical records,
+linguistic evolution, and cultural influences that contribute to how
+words and their meanings have transformed in the English language. It
+is a key component in linguistic studies.
+
+=Remember=: Etymology not only sheds light on the history of a
+language but also strengthens vocabulary acquisition and comprehension
+by providing context and background to word usage.
+
+
+* Etymology of "Man" and "Men"
+
+** "Man"
+- =Old English=: "mann" = person, human being
+- =Proto-Germanic=: "*mann-" = person
+- Originally, "man" could refer to both males and females, meaning a
+  human being in general.
+- Over time, "man" became more commonly used to refer specifically to
+  an adult male human.
+
+** "Men"
+- =Old English=: "menn" = plural of "man"
+- Retains the original plurality and form from Old English.
+- Shift from general human beings to more gender-specific usage in
+  line with "man."
+
+
+* Etymology of "Woman" and "Women"
+
+** "Woman"
+- =Old English=: "wīfmann" = woman, female human
+  - "wīf" = female
+  - "mann" = person
+- The word "woman" evolved from the compound; "wīfmann" eventually
+  dropped the "f" sound, leading to "woman."
+- Reflects the combination of "wīf" (female) and "mann" (person) to
+  specify a female person.
+
+** "Women"
+- =Old English=: "wīfmen" = plural of "wīfmann"
+- The plural spelling reflects the typical pattern for Old English
+  plurals, even as pronunciation shifted.
+- The change in pronunciation and spelling mirrors natural linguistic
+  evolution to maintain clarity in plural form.
+
+** Summary
+The words "man," "men," "woman," and "women" illustrate the evolution
+of English from its Old English roots, displaying how societal and
+linguistic changes influenced gender-specific terminology. These
+changes highlight both morphological simplifications and cultural
+patterns in language use over centuries.
+
+
+* Evolution of the Spelling of "Women"
+
+** Origin and Old English
+The word originates from =Old English=: "wīfmen" or "wīfmann" = plural
+of female person. Initially, the pronunciation followed a more
+phonetic rule with clear distinction between singular and plural
+forms.
+
+** Middle English Changes
+During the Middle English period, pronunciation and spelling began to
+shift. The vowel change:
+
+  - "Wīfmen" became "wymmen" and later "wommen" as a reflection of
+    vowel shifts.
+  - The shift from "i" to "o" or "e" reflects typical linguistic vowel
+    transformations in English where vowels alter sound and spelling,
+    influenced by the Great Vowel Shift.
+
+** Early Modern English
+
+By Early Modern English, the spelling began to stabilize. The
+influence of print and standardization efforts led to the more
+consistent usage of "women" as the accepted form. Spelling was often
+dictated by leading figures in English scribes and printing, which
+helped solidify "women" as both the recognized spelling and
+pronunciation.
+
+** Summary
+
+The word "women" experienced significant changes influenced by:
+
+  - =Vowel shifts=: his occurred naturally and gradually over the centuries.
+  - =Standardization efforts=: Early print culture and standardization contributed to the current spelling.
+  - This evolution showcases typical orthographic shifts in English
+    whereby historical and phonetic influences have converged to form
+    the modern spelling.
+
+
+#+begin_quote
+=Conclusion=: The earlier variant "weemen" reflects older phonetic
+emphasis, showing the dynamic nature of English spelling and
+pronunciation through periods of linguistic transition.
+#+end_quote
+
+
+* Pronunciation and Spelling Variance in "Women"
+
+** Middle English Influence
+
+During the Middle English period, the pronunciation of many words
+began to shift due to various influences, including:
+
+  - =Regional dialects=: These diversified pronunciations.
+  - =Norman Conquest=: Introduced new sounds and spellings.
+
+** Great Vowel Shift
+
+The Great Vowel Shift (15th to 18th century) significantly altered
+English vowel pronunciation. During this period:
+
+  - Pronunciations were affected by a chain reaction among vowels,
+    where early vowels became higher and closer in the mouth,
+    sometimes altering their sound completely.
+  - The spelling of "women" retained historical consistency for
+    recognition, even though pronunciation shifted.
+
+** Influence of Standardization
+
+Early printers and standardizing efforts affected spelling but did not
+always align with regional pronunciation changes, which had a more
+immediate influence on spoken language. The spelling "women" preserved
+traditional orthographic conventions.
+
+** Modern Pronunciation
+
+Today, "women" is an example of English words where spelling does not
+perfectly match pronunciation:
+
+  - "o" in "women" aligns with [ʊ] due to historical phonetic
+    transcription, while "e" represents the current tense "i" sound
+    [ɪ] in "men."
+  
+** Summary
+
+The pronunciation of "women" reflects:
+
+  - Historical pronunciation patterns.
+  - Influence from language standardization while phonetic rules
+    shifted independently.
+
+English contains many words with mismatched spelling and sounds due to
+its complex linguistic history.
+
+
+* Etymology of Hiberno-English "Wee"
+
+** Origin
+
+=Middle English=: "wee" originates from the Middle English word "wei,"
+which was derived from: =Old English=: "wēage," meaning little or
+small.
+  
+** Proto-Germanic Roots
+
+Derived from =Proto-Germanic=: "*wiwaz" or similar reconstructions,
+indicating smallness or minuteness.
+
+** Use in Scottish and Ulster Scots
+
+"Wee" was prominently used in Scots and later in Ulster Scots,
+influencing its adoption in regions of Ireland. The word retained its
+meaning of "small" or "little," often used affectionately.
+
+** Hiberno-English Adoption
+
+"Wee" was absorbed into Hiberno-English through the significant
+Scottish influence on Ulster dialects and settlements in Ireland,
+particularly Northern Ireland. In Hiberno-English, "wee" is frequently
+used as a diminutive adjective, often to convey endearment, affection,
+or familiarity.
+
+** Contemporary Usage
+
+"Wee" remains a part of everyday vocabulary in Ireland and Scotland,
+maintaining its core meaning. It's commonly used to describe size or
+insignificant amounts but can also imply affection or familiarity with
+an object or person.
+
+** Summary
+
+The word "wee" exemplifies how regional dialects influence and
+contribute to broader language varieties. Its endurance is attributed
+to cultural exchanges and regional dialect preservation, maintaining
+the simplicity and attachment of its original meaning of smallness.
+
+
+* Conclusion
+
+The disparity between spelling and pronunciation in =women= is
+emblematic of broader changes in the English language, illustrating
+the tension between historical orthography and phonetic evolution.
+
+In another hand, =wee= offers a fascinating glimpse into the dynamic
+exchange between English dialects and underscores how cultural and
+linguistic intersections impact language development and usage.
+
+
+
+* Pronunciation of "Women" as [ˈwɪmɪn]                             :noexport:
+
+Q: Why the word `women` pronounced as [wimin]?
+
+** Historical Linguistic Shift
+- The word "women" comes from the Old English “wīfmen,” with an evolution of pronunciation through time.
+
+** Vowel Change
+- =Middle English Period=: This period experienced changes in vowel sounds, influenced by dialectical diversity and phonetic evolution.
+- The specific "o" to "i" vowel change:
+  - The first vowel “o” in "women" shifted to an “i” sound [ɪ], influenced by phonetic simplification which occurred before consistency in spelling conventions was established.
+
+** Influence of the Great Vowel Shift
+- Although little impact on the [ˈwɪmɪn] pronunciation, the period
+  highlighted the divergence between spelling and pronunciation,
+  contributing to future irregularities.
+
+** Standardization
+- The written form stabilized with "o" due to historical spelling
+  conventions, despite shifts in spoken language using “i.”
+- In English, standardization focused more on uniformity over phonetic
+  precision, leading to mismatches like "women."
+
+** Phonetic Influence
+- The retention of phonetic pronunciation with [ˈwɪmɪn]:
+  - Societal and regional influence kept the “i” pronunciation despite orthographic fixation on “o.”
+  - Variety and evolution through English dialects solidified the [wɪ] sound, making it the norm.
+
+** Summary
+- "Women" demonstrates how English words adopt phonetic shapes through
+  historical shifts and non-standardized spelling practices.
+- The pronunciation is a remnant of changing linguistics preserved in
+  speech but not in orthography.
+
+=Conclusion=: The divergence between spoken and written form in
+"women" highlights the complexity of English phonetic and orthographic
+histories, showcasing how practical usage often deviates from
+standardized written forms.  ``` #+end_src
+

@@ -1,0 +1,724 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Civil Defence
+tagline: " as a survival technology"
+permalink: /civil-defence/overview.html
+categories: [Civil Defence]
+tags: [overview]
+---
+#+END_EXPORT
+#+STARTUP: showall indent
+#+PROPERTY: vizier-thread-id thread_obrnVeeERzlSDRYlfAhGfgWX
+#+PROPERTY: vizier-assistant-id asst_BdUG9wTWydSXgeLeuYOFDRCl
+#+TOC: headlines 3
+
+* Scratches                                                        :noexport:
+
+Check the grammar, clarify and enhance this passage:
+
+```
+
+So, all that is necessary to do is to remember how the Civil Defence
+was implemented in that time, then adjust it to contemporary
+circumstances, and, if it is possible - enhance it.
+
+```
+
+** Technogenic Threats
+
+*** Nuclear Industry
+
+*** Chemical Industry
+
+*** Oil-Gas-Ammiak Transportation
+
+** Technical Equipment
+
+*** Shelter
+
+*** Antidotes
+
+*** Emergency Provisioning
+
+** Propaganda
+
+* Glossary
+** Civil Defence
+
+*Civil Defence* is a set of organized measures and actions taken to
+prepare for, respond to, and recover from emergencies and disasters,
+both natural and man-made, with the aim of protecting civilians,
+infrastructure, and essential services.
+
+* Preamble
+
+Although my military specialization in /"Protection against
+Radiological, Chemical, and Biological Weapons of Mass Destruction,"/
+acquired in 1999, it is prudent for me to share my perspective on the
+potential threats these weapons pose to the citizens of the Republic
+of Ireland in 2025.
+
+Given the present political tensions between nuclear-armed countries,
+the potential threat of their use by combatants and the severe
+consequences that would follow is a pressing concern. This precarious
+situation underscores the urgent need for comprehensive contingency
+planning to mitigate the impact of any nuclear confrontation.
+
+Naturally, there is nothing novel under the moon, and the current
+geopolitical situation is not unprecedented—it bears a resemblance to
+a distorted version of the Cold War era. Echoes of past tensions are
+evident in today's global landscape, reminding us of the cyclical
+nature of international relations and the persistent challenges posed
+by nuclear deterrence and political rivalry.
+
+Therefore, it is sensible to revisit the Civil Defence strategies
+employed during that era, adapt them to today's circumstances, and,
+where possible, enhance them to meet contemporary challenges.
+
+* Intro
+
+In the current geopolitical climate, characterized by heightened
+political tensions among nations that possess nuclear arsenals, the
+risk of the intentional or accidental release of radioactive materials
+on a global scale is a concerning reality. Although the probability of
+such an event remains low, /it is not negligible/ and requires closer
+attention to be paid to the issue in the face of potential nuclear
+threats in general, and in the context of Civil Defence in particular.
+
+* Civil Defence In The USSR
+
+  #+CAPTION: The Structure of Civil Defence
+  #+ATTR_HTML: :title Soviet Poster#3 :align left :float wrap
+  #+ATTR_HTML: :width 100%
+  [[http://0--key.github.io/assets/img/Civil_Defence/structure.jpg]]
+
+In the USSR, Civil Defence was institutionally established by the
+Soviet government around a century ago as a critical component of
+national security, underscored by comprehensive legal frameworks. It
+was intricately rooted in the nation's commitment to safeguarding its
+citizens, as delineated in the law, and was viewed as a fundamental
+extension of the Constitutional /right to life/.
+
+  #+CAPTION: Women Are Prepared
+  #+ATTR_HTML: :title Soviet Photo#1 :align left :float wrap
+  #+ATTR_HTML: :width 100%
+  [[http://0--key.github.io/assets/img/Civil_Defence/women.jpg]]
+
+  ------
+
+  #+CAPTION: The Dogs Are Prepared
+  #+ATTR_HTML: :title Soviet Photo#2 :align left :float wrap
+  #+ATTR_HTML: :width 100%
+  [[http://0--key.github.io/assets/img/Civil_Defence/dogs.jpg]]
+
+
+** Ideology
+
+The implementation of Civil Defence measures was designed to provide
+robust protection for the populace against a range of potential
+threats, including nuclear, chemical, and other emergencies,
+reflecting the state's prioritization of citizens' safety and
+resilience through well-orchestrated preparedness strategies and
+initiatives.
+
+  #+CAPTION: Civil Defence Is Business For Everyone
+  #+ATTR_HTML: :title Soviet Poster#1 :align left :float wrap
+  #+ATTR_HTML: :width 100%
+  [[http://0--key.github.io/assets/img/Civil_Defence/CD_concept.jpg]]
+
+** Law
+
+It follows logically that, with the Soviet government's extensive
+dedication to safeguarding the life and health of its citizens, a
+comprehensive framework for Civil Defence was meticulously crafted and
+enshrined in a broad array of laws and regulatory acts. This legal
+structure was designed to ensure systematic planning, preparedness,
+and response capabilities to effectively protect the population from
+various emergencies, including potential nuclear and radiological
+threats.
+
+The detailed codification of Civil Defence measures underscores the
+importance placed on citizen safety as a national priority, reflecting
+thorough government planning and strategic foresight.
+
+** Upbringing and training
+
+ #+CAPTION: Pupils in the classroom with Lenin
+ #+ATTR_HTML: :title Soviet Photo#3 :align left :float wrap
+ #+ATTR_HTML: :width 100%
+ [[http://0--key.github.io/assets/img/Civil_Defence/cd_classes_with_Lenin.jpg]]
+------
+
+It is noteworthy that Civil Defence was integrated into the secondary
+school curriculum as a dedicated educational subject, consisting of a
+weekly one-hour session for =13-16-year-old= students. This inclusion
+reflected the importance placed on equipping young citizens with
+essential knowledge and skills in emergency preparedness and response.
+------
+ #+CAPTION: Pupils in the civil defence classroom
+ #+ATTR_HTML: :title Soviet Photo#4 :align left :float wrap
+ #+ATTR_HTML: :width 100%
+ [[http://0--key.github.io/assets/img/Civil_Defence/cd_classes_with_coloner.jpg]]
+------
+By introducing these concepts at an early age, the education system
+aimed to foster a culture of awareness and resilience, preparing
+students to effectively handle potential threats and contribute to
+community safety.
+
+* Civil Defence In Ukraine                                         :noexport:
+
+Despite a substantial easing of political tensions between the Soviet
+Union and the capitalist world in the late 1980s, which reduced the
+likelihood of a nuclear exchange, other threats addressed by Civil
+Defence have persisted, /if not intensified/. Technological accidents,
+terrorism, and natural disasters continued to pose significant
+challenges, necessitating robust preparedness and response strategies.
+
+Following the fall of the /Iron Curtain/ and the dissolution of the
+Soviet Union in 1991, Ukraine inherited a well-developed nuclear
+industry established during the Soviet Era within its borders. Along
+with this industrial legacy, Ukraine also adopted a system of laws and
+regulatory acts that have since evolved to become the foundation of
+its national nuclear policy framework. This framework has played a
+critical role in guiding the safe and efficient management of
+Ukraine's nuclear resources, ensuring adherence to international
+standards in nuclear safety and radiological protection.
+
+After gaining independence, Ukraine leveraged existing Soviet-era
+Civil Defence approaches, adapting them to its current context, which
+includes the advanced generation of electricity through nuclear power
+plants.
+
+* Gallery
+
+** The Album Cover
+
+#+CAPTION: The Album Cover
+#+ATTR_HTML: :title The Album Cover :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/001.jpg]]
+------
+
+** The Aim of Civil Defence
+
+#+CAPTION: The Aim of Civil Defence
+#+ATTR_HTML: :title The Aim of Civil Defence :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/002.jpg]]
+------
+
+** The Structure of Civil Defence
+
+#+CAPTION: The Structure of Civil Defence
+#+ATTR_HTML: :title The Structure of Civil Defence :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/003.jpg]]
+------
+
+** U.S. Nuclear Offensive Capabilities
+
+#+CAPTION: U.S. Nuclear Offensive Capabilities
+#+ATTR_HTML: :title U.S. Nuclear Offensive Capabilities :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/004.jpg]]
+------
+
+** Blast Effects of a Nuclear Explosion
+
+#+CAPTION: Blast Effects of a Nuclear Explosion
+#+ATTR_HTML: :title Blast Effects of a Nuclear Explosion :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/005.jpg]]
+------
+
+** The ShockWave
+
+#+CAPTION: The Shock Wave
+#+ATTR_HTML: :title The Shock Wave :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/006.jpg]]
+------
+
+** The Light Flash And Thermal Radiation
+
+#+CAPTION: The Light Flash
+#+ATTR_HTML: :title The Light Flash :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/007.jpg]]
+------
+
+** Ionising Radiation
+
+#+CAPTION: Ionising Radiation
+#+ATTR_HTML: :title Ionising Radiation :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/008.jpg]]
+------
+
+** Pollution by Radioactive Nuclides
+
+#+CAPTION: Pollution by Radioactive Nuclides
+#+ATTR_HTML: :title Pollution by Radioactive Nuclides :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/009.jpg]]
+------
+
+** Electromagnetic Impulse
+
+#+CAPTION: Electromagnetic Impulse
+#+ATTR_HTML: :title Electromagnetic Impulse :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/010.jpg]]
+------
+
+** Neutron Weapons and Protective Measures Against Them
+
+#+CAPTION: Neutron Weapons and Protective Measures Against Them
+#+ATTR_HTML: :title Neutron Weapons and Protective Measures Against Them :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/011.jpg]]
+------
+
+** Chemical Weapons
+
+#+CAPTION: Chemical Weapons
+#+ATTR_HTML: :title Chemical Weapons :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/012.jpg]]
+------
+
+** Bacteriological (Biological) Weapons
+
+#+CAPTION: Bacteriological (Biological) Weapons
+#+ATTR_HTML: :title Bacteriological (Biological) Weapons :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/013.jpg]]
+------
+
+** Bacteriological (Biological) Weapons (Continuation)
+
+#+CAPTION: Bacteriological (Biological) Weapons (Continuation)
+#+ATTR_HTML: :title Bacteriological (Biological) Weapons (Continuation) :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/014.jpg]]
+------
+
+** Conventional Weapons and Basic Protection Measures Against Them
+
+#+CAPTION: Conventional Weapons and Basic Protection Measures Against Them
+#+ATTR_HTML: :title Conventional Weapons and Basic Protection Measures Against Them :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/015.jpg]]
+------
+
+** Collective Protective Measures: Shelters
+
+#+CAPTION: Collective Protective Measures: Shelters
+#+ATTR_HTML: :title Collective Protective Measures: Shelters :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/016.jpg]]
+------
+
+
+** Collective Protective Measures: Radiation Shelters
+
+#+CAPTION: Collective Protective Measures: Radiation Shelters
+#+ATTR_HTML: :title Collective Protective Measures: Radiation Shelters :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/017.jpg]]
+------
+
+
+** Collective Protective Measures: Basic Shelters
+
+#+CAPTION: Collective Protective Measures: Basic Shelters
+#+ATTR_HTML: :title Collective Protective Measures: Basic Shelters :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/018.jpg]]
+------
+
+
+** Personal Protective Equipment for Respiratory Organs
+
+#+CAPTION: Personal Protective Equipment for Respiratory Organs
+#+ATTR_HTML: :title Personal Protective Equipment for Respiratory Organs :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/019.jpg]]
+------
+
+** Personal Protective Equipment for Respiratory Organs (Continuation)
+
+#+CAPTION: Personal Protective Equipment for Respiratory Organs (Continuation)
+#+ATTR_HTML: :title Personal Protective Equipment for Respiratory Organs (Continuation) :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/020.jpg]]
+------
+
+** Basic Respiratory Protection Measures
+
+#+CAPTION: Basic Respiratory Protection Measures
+#+ATTR_HTML: :title Basic Respiratory Protection Measures :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/021.jpg]]
+------
+
+** Specialized Skin Protective Equipment
+
+#+CAPTION: Specialized Skin Protective Equipment
+#+ATTR_HTML: :title Specialized Skin Protective Equipment :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/022.jpg]]
+------
+
+** Improvised Skin Protection Measures
+
+#+CAPTION: Improvised Skin Protection Measures
+#+ATTR_HTML: :title Improvised Skin Protection Measures :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/023.jpg]]
+------
+
+** Dispersal and Evacuation of the Population
+
+#+CAPTION: Dispersal and Evacuation of the Population
+#+ATTR_HTML: :title Dispersal and Evacuation of the Population :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/024.jpg]]
+------
+
+** Dispersal and Evacuation of the Population (Continuation)
+
+#+CAPTION: Dispersal and Evacuation of the Population (Continuation)
+#+ATTR_HTML: :title Dispersal and Evacuation of the Population (Continuation) :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/025.jpg]]
+------
+
+** Assembly Evacuation Point
+
+#+CAPTION: Assembly Evacuation Point
+#+ATTR_HTML: :title Assembly Evacuation Point :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/026.jpg]]
+------
+
+** Actions in Response to Civil Defence Alerts
+
+#+CAPTION: Actions in Response to Civil Defence Alerts
+#+ATTR_HTML: :title Actions in Response to Civil Defence Alerts :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/027.jpg]]
+------
+
+** Actions in Response to Civil Defence Alerts (Continuation)
+
+#+CAPTION: Actions in Response to Civil Defence Alerts (Continuation)
+#+ATTR_HTML: :title Actions in Response to Civil Defence Alerts (Continuation) :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/028.jpg]]
+------
+
+** Actions in Response to Civil Defence Alerts (Continuation)
+
+#+CAPTION: Actions in Response to Civil Defence Alerts (Continuation)
+#+ATTR_HTML: :title Actions in Response to Civil Defence Alerts (Continuation) :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/029.jpg]]
+------
+
+** Protection of Children and the Responsibilities of Adults for Their Safety
+
+#+CAPTION: Protection of Children and the Responsibilities of Adults for Their Safety
+#+ATTR_HTML: :title Protection of Children and the Responsibilities of Adults for Their Safety :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/030.jpg]]
+------
+
+** Measures to Enhance the Protective Properties of Homes (Apartments)
+
+#+CAPTION: Measures to Enhance the Protective Properties of Homes (Apartments)
+#+ATTR_HTML: :title Measures to Enhance the Protective Properties of Homes (Apartments) :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/031.jpg]]
+------
+
+** Light Camouflage of Residential and Industrial Premises
+
+#+CAPTION: Light Camouflage of Residential and Industrial Premises
+#+ATTR_HTML: :title Light Camouflage of Residential and Industrial Premises :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/032.jpg]]
+------
+
+** Dose Rate Meter (Radiometer)
+
+#+CAPTION: Dose Rate Meter (Radiometer)
+#+ATTR_HTML: :title Dose Rate Meter (Radiometer) :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/033.jpg]]
+------
+
+** Working with a Radiometer
+
+#+CAPTION: Working with a Radiometer
+#+ATTR_HTML: :title Working with a Radiometer :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/034.jpg]]
+------
+
+** Military Chemical Reconnaissance Device
+
+#+CAPTION: Military Chemical Reconnaissance Device
+#+ATTR_HTML: :title Military Chemical Reconnaissance Device :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/035.jpg]]
+------
+
+** Protection of Food, Water, and Water Sources from Radioactive and Toxic Substances
+
+#+CAPTION: Protection of Food, Water, and Water Sources from Radioactive and Toxic Substances
+#+ATTR_HTML: :title Protection of Food, Water, and Water Sources from Radioactive and Toxic Substances :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/036.jpg]]
+------
+
+** Protection of Agricultural Animals from Weapons of Mass Destruction
+
+#+CAPTION: Protection of Agricultural Animals from Weapons of Mass Destruction
+#+ATTR_HTML: :title Protection of Agricultural Animals from Weapons of Mass Destruction :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/037.jpg]]
+------
+
+** Protection of Fodder from Radioactive Contamination
+
+#+CAPTION: Protection of Fodder from Radioactive Contamination
+#+ATTR_HTML: :title Protection of Fodder from Radioactive Contamination :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/038.jpg]]
+------
+
+** Rescue and Urgent Recovery Operations in the Affected Area
+
+#+CAPTION: Rescue and Urgent Recovery Operations in the Affected Area
+#+ATTR_HTML: :title Rescue and Urgent Recovery Operations in the Affected Area :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/039.jpg]]
+------
+
+** Rescue and Urgent Recovery Operations in the Affected Area (Continuation)
+
+#+CAPTION: Rescue and Urgent Recovery Operations in the Affected Area (Continuation)
+#+ATTR_HTML: :title Rescue and Urgent Recovery Operations in the Affected Area (Continuation) :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/040.jpg]]
+------
+
+** Rescue and Urgent Recovery Operations in the Affected Area (Continuation)
+
+#+CAPTION: Rescue and Urgent Recovery Operations in the Affected Area (Continuation)
+#+ATTR_HTML: :title Rescue and Urgent Recovery Operations in the Affected Area (Continuation) :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/041.jpg]]
+------
+
+** Rescue and Urgent Recovery Operations in the Affected Area (Continuation)
+
+#+CAPTION: Rescue and Urgent Recovery Operations in the Affected Area (Continuation)
+#+ATTR_HTML: :title Rescue and Urgent Recovery Operations in the Affected Area (Continuation) :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/042.jpg]]
+------
+
+** Urgent Recovery Operations in the Affected Area
+
+#+CAPTION: Urgent Recovery Operations in the Affected Area
+#+ATTR_HTML: :title Urgent Recovery Operations in the Affected Area :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/043.jpg]]
+------
+
+** Urgent Recovery Operations in the Affected Area (Continuation)
+
+#+CAPTION: Urgent Recovery Operations in the Affected Area (Continuation)
+#+ATTR_HTML: :title Urgent Recovery Operations in the Affected Area (Continuation) :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/044.jpg]]
+------
+
+** Partial Sanitary Processing for Radioactive Contamination
+
+#+CAPTION: Partial Sanitary Processing for Radioactive Contamination
+#+ATTR_HTML: :title Partial Sanitary Processing for Radioactive Contamination :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/045.jpg]]
+------
+
+** Decontamination of Food and Water
+
+#+CAPTION: Decontamination of Food and Water
+#+ATTR_HTML: :title Decontamination of Food and Water :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/046.jpg]]
+------
+
+** Decontamination of Clothing and Footwear
+
+#+CAPTION: Decontamination of Clothing and Footwear
+#+ATTR_HTML: :title Decontamination of Clothing and Footwear :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/047.jpg]]
+------
+
+** Veterinary Treatment of Agricultural Animals
+
+#+CAPTION: Veterinary Treatment of Agricultural Animals
+#+ATTR_HTML: :title Veterinary Treatment of Agricultural Animals :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/048.jpg]]
+------
+
+** Decontamination of Livestock Premises
+
+#+CAPTION: Decontamination of Livestock Premises
+#+ATTR_HTML: :title Decontamination of Livestock Premises :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/049.jpg]]
+------
+
+
+
+* Notes                                                            :noexport:
+
+** 
+
+#+CAPTION: 
+#+ATTR_HTML: :title  :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/025.jpg]]
+------
+
+** 
+
+#+CAPTION: 
+#+ATTR_HTML: :title  :align left :float wrap
+#+ATTR_HTML: :width 100%
+[[http://0--key.github.io/assets/img/Civil_Defence/Soviet_Poster/025.jpg]]
+------
+
+
+
+Check the grammar, clarify and enhance this passage:
+
+```
+
+The main accent was on preventing any accidents on the existing, but
+aging nuclear power units.
+
+```
+
+Define Civil Defence in generic terms in a single sentence.
+
+Translate from Russian into English name of several topics of Civil Defence:
+
+```
+ - Нейтронное оружие и особенности защиты от него;
+ - Химическое оружие;
+ - Бактериологическое (биологическое) оружие;
+ - Бактериологическое (биологическое) оружие (продолжение);
+ - Обычные средства поражения и основы защиты от них;
+ - Коллективные средства защиты. Убежища;
+ - Коллективные средства защиты. Противорадиационные укрытия;
+ - Коллективные средства защиты. Простейшие укрытия;
+ - Средства индивидуальной защиты органов дыхания;
+ - Средства индивидуальной защиты органов дыхания (продолжение);
+ - Простейшие средства защиты органов дыхания;
+ - Специальные средства защиты кожи;
+ - Подручные средства защиты кожи;
+ - Рассредоточение и эвакуация населения;
+ - Рассредоточение и эвакуация населения (продолжение);
+   
+   ```
+
+
+
+#+begin_src markdown
+
+
+```org
+** Translation of Civil Defence Topics from Russian to English
+
+- Neutron Weapons and Protective Measures Against Them
+- Chemical Weapons
+- Bacteriological (Biological) Weapons
+- Bacteriological (Biological) Weapons (Continuation)
+- Conventional Weapons and Basic Protection Measures Against Them
+- Collective Protective Measures: Shelters
+- Collective Protective Measures: Radiation Shelters
+- Collective Protective Measures: Basic Shelters
+- Personal Protective Equipment for Respiratory Organs
+- Personal Protective Equipment for Respiratory Organs (Continuation)
+- Basic Respiratory Protection Measures
+- Specialized Skin Protective Equipment
+- Improvised Skin Protection Measures
+- Dispersal and Evacuation of the Population
+- Dispersal and Evacuation of the Population (Continuation)
+``` #+end_src
+** #2
+Translate from Russian into English names of several topics of Civil Defence:
+
+```
+- Сборный эвакуационный пункт;
+- Действия по сигналам оповещения гражданской обороны;
+- Действия по сигналам оповещения гражданской обороны (продолжение);
+- Действия по сигналам оповещения гражданской обороны (продолжение);
+- Особенности защиты детей и обязанности взрослых по их защите;
+- Мероприятия по повышению защитных свойств дома (квартиры);
+- Светомаскоровка жилых и производственных помещений;
+- Измеритель мощности дозы (рентгенметр);
+- Работа с рентгенметром;
+- Войсковой прибор химической разведки;
+- Защита продовольствия, воды, водоисточников от радиоактивных и отравляющих веществ;
+- Защита сельскохозяйственных животных от оружия массового поражения;
+- Защита фуража от радиоактивного заражения;
+- Спасательные и неотложные аварийно-восстановительные работы в очаге поражения;
+- Спасательные и неотложные аварийно-восстановительные работы в очаге поражения (продолжение);
+- Спасательные и неотложные аварийно-восстановительные работы в очаге поражения (продолжение);
+- Спасательные и неотложные аварийно-восстановительные работы в очаге поражения (продолжение);
+- Неотложные аварийно-восстановительные работы в очаге поражения;
+- Неотложные аварийно-восстановительные работы в очаге поражения (продолжение);
+- Частичная санитарная обработка при заражении радиоактивными веществами;
+- Дезактивация продуктов питания и воды;
+- Дезактивация одежды и обуви;
+- Ветеринарная обработка сельскохозяйственных животных;
+- Обеззараживание животноводческих помещений;
+
+```
+
+** Translation of Civil Defence Topics from Russian to English
+
+- Assembly Evacuation Point
+- Actions in Response to Civil Defence Alerts
+- Actions in Response to Civil Defence Alerts (Continuation)
+- Actions in Response to Civil Defence Alerts (Continuation)
+- Protection of Children and the Responsibilities of Adults for Their Safety
+- Measures to Enhance the Protective Properties of Homes (Apartments)
+- Light Camouflage of Residential and Industrial Premises
+- Dose Rate Meter (Radiometer)
+- Working with a Radiometer
+- Military Chemical Reconnaissance Device
+- Protection of Food, Water, and Water Sources from Radioactive and Toxic Substances
+- Protection of Agricultural Animals from Weapons of Mass Destruction
+- Protection of Fodder from Radioactive Contamination
+- Rescue and Urgent Recovery Operations in the Affected Area
+- Rescue and Urgent Recovery Operations in the Affected Area (Continuation)
+- Rescue and Urgent Recovery Operations in the Affected Area (Continuation)
+- Rescue and Urgent Recovery Operations in the Affected Area (Continuation)
+- Urgent Recovery Operations in the Affected Area
+- Urgent Recovery Operations in the Affected Area (Continuation)
+- Partial Sanitary Processing for Radioactive Contamination
+- Decontamination of Food and Water
+- Decontamination of Clothing and Footwear
+- Veterinary Treatment of Agricultural Animals
+- Decontamination of Livestock Premises

@@ -1,0 +1,122 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Lesson Num.6
+tagline: " repetition and relaxation"
+permalink: /english/lesson06.html
+categories: [English Course]
+tags: [lesson06]
+---
+#+END_EXPORT
+#+STARTUP: showall indent
+#+PROPERTY: vizier-thread-id thread_IhjBECfdS7Tf53zJWE8gCqb4
+#+PROPERTY: vizier-assistant-id asst_mEp1qd4WTGBLpPEImf6cam1K
+#+TOC: headlines 3
+
+#+include: "2025-03-19-lesson03.org::* Warming up - Tongue Twisters (15 minutes)"
+#+include: "2025-03-19-lesson03.org::* Useful Links"
+#+include: "2025-04-03-lesson05.org::* LoopBack (20 minutes)"
+
+* A Writing Is a Useful Habit (30 minutes)
+
+Overall, writing is a /comprehensive activity/ that supports multiple
+aspects of language learning, making it a valuable tool in the
+acquisition of a foreign language. Writing is an effective method for
+learning a foreign language for several reasons:
+
+** Enhances Vocabulary and Grammar
+
+Writing requires the active use of vocabulary and grammar rules,
+reinforcing understanding and retention as learners construct
+sentences and express ideas.
+
+** Improves Memory Retention
+
+The process of writing engages cognitive processes that improve memory
+retention, as organizing thoughts and selecting appropriate words help
+solidify language structures in the mind.
+
+** Encourages Creative Thinking
+
+Writing allows learners to be creative with the language,
+experimenting with different expressions and structures, which can
+deepen their understanding and fluency.
+
+** Offers Opportunities for Practice
+
+Regular writing practice
+provides continuous opportunities to apply what has been learned,
+helping to internalize new vocabulary and structures.
+
+** Identifies Areas for Improvement
+
+Through writing, learners can identify gaps in their knowledge and
+areas that require more focus, allowing for targeted study and
+correction.
+
+** Builds Confidence
+
+As learners become more proficient in writing, they often gain
+confidence in their language skills, which can translate to improved
+speaking and comprehension abilities.
+
+** Facilitates Feedback
+
+Writing can be easily reviewed by peers or instructors, providing
+valuable feedback that can guide further learning and development.
+
+** A Bit More Comprehensive Explanation
+
+[[https://www.youtube.com/watch?v=_AyDPge-Dz8][YouTube video]] in Russian
+
+
+* Reading Aloud&Translation (20 minutes)
+
+The proverb "Slow and steady wins the race" originates from
+the classic fable "The Tortoise and the Hare," attributed to
+Aesop. Here is a summary of the fable:
+
+-----
+#+begin_quote
+Once upon a time, a swift hare boastfully challenged a tortoise to a
+race, certain of his own speed and superiority. The tortoise accepted
+the challenge calmly.
+
+On the day of the race, the two set off together. The hare sprinted
+ahead quickly, confident of an easy victory. Knowing he was far ahead,
+the hare decided to take a nap midway through the race, thinking he
+had plenty of time to catch up later.
+
+Meanwhile, the tortoise maintained a slow but steady pace, never
+stopping to rest. As the hare slept, the tortoise continued to move
+forward consistently.
+
+When the hare finally awoke, he was startled to see the tortoise near
+the finish line. Despite his frantic, speedy dash to the end, it was
+too late. The tortoise crossed the finish line first, winning the
+race.
+
+The moral of the story is that perseverance and consistent effort,
+even when slow, can lead to success, while overconfidence and
+carelessness can result in failure.
+#+end_quote
+----- 
+
+This fable illustrates the proverb "Slow and steady wins the race,"
+emphasizing the value of persistence and steady progress.
+
+* Convertation into EPUB Format
+
+It is possible to accomplish in Google Docs --> Download As -->> epub
+
+
+* Notes                                                            :noexport:
+
+Can you provide the fable that is the origin of proverb "Slow and
+steady wins the race"?
+
+
+#+begin_src markdown
+Certainly! 
+#+end_src
+

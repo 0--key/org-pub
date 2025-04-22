@@ -1,0 +1,246 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Lesson Num.5
+tagline: " fly higher"
+permalink: /english/lesson05.html
+categories: [English Course]
+tags: [lesson05]
+---
+#+END_EXPORT
+#+STARTUP: showall indent
+#+PROPERTY: vizier-thread-id thread_IhjBECfdS7Tf53zJWE8gCqb4
+#+PROPERTY: vizier-assistant-id asst_mEp1qd4WTGBLpPEImf6cam1K
+#+TOC: headlines 3
+
+* Scratches                                                        :noexport:
+
+** Tongue Twisters
+Provide 20 other tongue twitsters for elaboration fluency of pronunciation of
+=/æ/=, =/ŋ/=, =/ɹ/=, =/ð/= and =/θ/= sounds.
+
+
+#+begin_src markdown
+Certainly! Here are 20 tongue twisters covering the pronunciation of
+=/æ/=, =/ŋ/=, =/ɹ/=, =/ð/=, and =/θ/= sounds:
+
+* Warming up - Tongue Twisters (15 minutes)
+
+The tongue twisters below are tailored to practice specific sounds,
+fostering improved pronunciation and fluency.
+
+1. "Dan can fan a tan man with a pan."
+2. "Jack stacked black cans in a rack."
+3. "The magpie sat on a cracked cap."
+4. "The cat in the hat sat on a flat mat."
+5. "Anna's apples and Amanda's apricots attracted ants."
+6. "The king's ring is ringing in the spring."
+7. "Sing a song of sixpence, a pocket full of rye."
+8. "The young linguist clings to his strong wings."
+9. "Long strings of strong springs swing."
+10. "The king's song clung to the rung of the ladder."
+11. "Rowdy roosters were running around the ranch."
+12. "Roger ran around the rugged rock."
+13. "Red roses wrapped around the rusty rail."
+14. "Ryan's rabbit races rapidly around the ring."
+15. "Rachel's rare red roses are really remarkable."
+16. "This is the thatch that the rat thought thick."
+17. "The other brother smothers with love."
+18. "Those thieving thieves thought they were sly."
+19. "They thought they would rather gather feathers."
+20. "Neither of the brothers bothered to mother the other."
+21. "Thirty-three thirsty thieves thought they thrilled the throne."
+22. "Theo thought of three thick things."
+23. "Thin threads on the thick thatched roof."
+24. "The thin cloth is the thickest thing there."
+25. "Thirty-three thousand feathers fluttered."
+
+
+
+
+
+* LoopBack (20 minutes)
+
+** What is your favourite English proverb or saying?
+
+** What is the recent English word you're stumble upon?
+
+** What is your day routine as an English learner?
+
+** How you're struggle with distractions?
+
+
+* Quotes (65 minutes)
+
+------
+#+begin_quote 
+
+A =quote= is a repetition of someone else's statement or
+thoughts, usually with an indication of the original source or author.
+
+#+end_quote
+------
+
+** Seek Them Out
+
+Nowadays, it is quite easy to use the [[https://www.goodreads.com/quotes/][Internet]] to hunt for the meaning
+of a word: simply find your word used in a quote by someone famously
+wise and look it up.
+
+** Mark Twain
+
+1. "The secret of getting ahead is getting started. The secret of
+   getting started is breaking your complex overwhelming tasks into
+   small manageable tasks, and then starting on the first one."
+
+   This advice is both practical and motivational, emphasizing the
+   power of initiative and incremental progress.
+
+2. "Twenty years from now you will be more disappointed by the things
+   that you didn’t do than by the ones you did do. So throw off the
+   bowlines. Sail away from the safe harbor. Catch the trade winds in
+   your sails. Explore. Dream. Discover."
+
+   This encourages a proactive and adventurous approach to life,
+   urging people to embrace opportunities and experiences."
+
+3. "Kindness is the language which the deaf can hear and the blind can
+   see."
+
+   It speaks to the universal power of compassion and empathy,
+   transcending physical limitations and fostering human connection."
+
+4. "Whenever you find yourself on the side of the majority, it is time
+   to pause and reflect."
+
+   This quote invites critical thinking and the courage to challenge
+   conformity, encouraging individuals to consider their unique
+   perspectives."
+
+5. "The most interesting information comes from children, for they
+   tell all they know and then stop."
+
+   This humorously highlights the straightforwardness and honesty of
+   children, offering insight into a simple, unfiltered worldview."
+
+6. "Courage is resistance to fear, mastery of fear, not absence of
+   fear."
+
+   This distinguishes between the absence of fear and the conscious
+   effort to confront and manage it, a valuable lesson in facing
+   life's challenges."
+
+7. "The man who does not read has no advantage over the man who cannot
+   read."
+
+   It underscores the importance of reading and education, suggesting
+   that neglecting to learn is akin to being unable to learn."
+
+------
+
+** Sir Winston Leonard Spencer Churchill
+
+1. "Success is not final, failure is not fatal: it is the courage to
+   continue that counts. It means that every achievement is just a
+   step in a longer journey and that setbacks are not the end but
+   rather opportunities to gather strength and persist."
+
+2. "To each, there comes in their lifetime a special moment when they
+   are figuratively tapped on the shoulder and offered the chance to
+   do a very special thing, unique to them and fitted to their
+   talents. What a tragedy if that moment finds them unprepared or
+   unqualified for that which could have been their finest hour."
+
+3. "We shall fight on the beaches, we shall fight on the landing
+   grounds, we shall fight in the fields and in the streets, we shall
+   fight in the hills; we shall never surrender. This powerful
+   encouragement exemplifies the unwavering resolve and determination
+   needed in the face of adversity."
+
+4. "The empires of the future are the empires of the mind. It
+   underscores the importance of intellectual power, creativity, and
+   innovation in shaping the future, emphasizing how mental and
+   educational achievements define real power."
+
+5. "When you have to kill a man, it costs nothing to be polite. This
+   rhetorical remark suggests that civility should be maintained
+   regardless of the situation, subtly highlighting the value of
+   maintaining one's dignity and politeness."
+
+6. "It is not enough that we do our best; sometimes we must do what is
+   required. This speaks to going beyond personal limits and striving
+   to meet the demands of a situation, showing dedication and
+   responsibility."
+
+7. "Courage is what it takes to stand up and speak; courage is also
+   what it takes to sit down and listen. It highlights the dual nature
+   of courage, not just in expressing oneself but also in listening
+   and understanding others."
+
+------
+
+** Siddhartha Gautama
+
+1. "Peace comes from within. Do not seek it without. Those who are
+   victorious in war cannot find it; those who conquer only themselves
+   can. True serenity is found through internal harmony and
+   self-understanding, rather than external achievements."
+
+2. "Holding onto anger is like grasping a hot coal with the intent of
+   throwing it at someone else; you are the one who gets burned. This
+   teaching emphasizes the self-harm caused by harboring resentment
+   and the importance of letting go for personal peace."
+
+3. "Just as a candle cannot burn without fire, men cannot live without
+   a spiritual life. It implies that for a fulfilling life, nurturing
+   spiritual awareness and growth is as crucial as tending to physical
+   needs."
+
+4. "Three things cannot be long hidden: the sun, the moon, and the
+   truth. This illustrates the inevitability of truth prevailing, much
+   like the certainty of day and night following one another."
+
+5. "Do not dwell in the past, do not dream of the future, concentrate
+   the mind on the present moment. Focusing on the present enables one
+   to fully engage with life, rather than being consumed by regrets or
+   worries about what has yet to come."
+
+6. "We are shaped by our thoughts; we become what we think. When the
+   mind is pure, joy follows like a shadow that never leaves. It
+   highlights the power of positive thinking and the impact of mental
+   purity on realizing happiness."
+
+7. "The tongue like a sharp knife... Kills without drawing blood. This
+   highlights the significant impact of words, cautioning against
+   harmful speech and emphasizing verbal kindness."
+
+
+
+** Listen Them Up
+
+Nowadays, it's easy to use [[https://www.youtube.com/@quotes_official][YouTube]] to hunt for a word's meaning and
+pronunciation: simply find your word in a quote by someone famously
+wise, listen, and have fun.
+
+
+* Notes                                                            :noexport:
+
+Check the grammar, clarify and enhance this passage:
+
+``` Naturally nowadays it is easy to use YouTube on your hunt on
+word's meaning and pronunciation: find your word in quote of some one
+famously wise, listen and have a fun.  ```
+
+
+
+#+begin_src markdown
+Certainly! Here's an enhanced version of the passage:
+
+``` 
+
+```
+
+This revision corrects grammatical issues and clarifies the intended
+message, while maintaining a concise and engaging tone.
+#+end_src
+
