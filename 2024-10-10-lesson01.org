@@ -74,10 +74,22 @@ communication skills, are well worth it.
 
 In this article, I intend to explain the *time-consuming* process of
 learning a foreign language as a specific example of acquiring any
-skill. Indeed, you can acquire any skill through deliberate practice,
-and learning a foreign language is no exception. If you engage
-regularly in listening, speaking, reading, and writing in the
-language, you will inevitably gain proficiency over time.
+skill. Indeed, you can acquire any skill through /deliberate
+practice/, and learning a foreign language is no exception.
+
+#+begin_quote
+  *Deliberate practice* is a focused and structured approach to
+  learning and acquiring new skills, characterized by specific,
+  goal-oriented activities that are designed to improve
+  performance. Unlike regular practice, which might involve repetitive
+  actions without a clear objective, deliberate practice involves
+  concentrated effort /on areas that require improvement/.
+#+end_quote
+
+If you regularly engage in listening, speaking, reading, and writing
+in a language, you will inevitably gain proficiency over time. The
+speed and depth of your proficiency /depend greatly/ on how
+extensively and consistently you immerse yourself in the language.
 
 Acquiring a foreign language involves /consistent and deliberate
 effort/. Much like mastering a musical instrument or becoming skilled
@@ -385,4 +397,79 @@ structured education fosters the development of a robust and versatile
 vocabulary. This continual progression empowers learners, preparing
 them for academic challenges and successful communication in various
 aspects of life.
+
+* Ext                                                              :noexport:
+
+Provide the definition of 'deliberate practice' in the context of
+learning and acquiring new skill.
+
+#+begin_src markdown
+  ```org
+  Deliberate Practice
+
+  Deliberate practice is a focused and structured approach to learning and 
+  acquiring new skills, characterized by specific, goal-oriented activities 
+  that are designed to improve performance. Unlike regular practice, which 
+  might involve repetitive actions without a clear objective, deliberate practice 
+  involves concentrated effort on areas that require improvement.
+
+  Key elements of deliberate practice include:
+
+  - =Focus and Attention=: Engaging in activities with intense concentration and 
+    full attention, ensuring that practice is purposeful and directed towards 
+    mastering the skill.
+
+  - =Clear Goals=: Setting specific and attainable goals to measure progress and 
+    continually challenge oneself to reach higher levels of competence.
+
+  - =Feedback and Reflection=: Regularly receiving and reflecting on feedback to 
+    identify strengths and areas for improvement, and using this information to 
+    refine techniques and strategies.
+
+  - =Progressive Challenges=: Gradually increasing the complexity or difficulty of 
+    tasks, maintaining a balance between skill level and challenge to facilitate 
+    steady growth.
+
+  - =Consistent Practice=: Maintaining a routine of regular practice, emphasizing 
+    persistence and endurance over time for sustained skill development.
+
+  In the context of learning, deliberate practice is crucial for developing 
+  expertise and achieving high levels of performance across various domains, 
+  including academics, sports, music, and language acquisition. By fostering 
+  an environment of focused, goal-driven practice, individuals can effectively 
+  hone their abilities and master new skills.
+  ```
+#+end_src
+
+Correct the grammar, clarify and expand this paragraph:
+
+```
+If you engage regularly in listening, speaking, reading, and writing
+in the language, you will inevitably gain proficiency /over time/. And
+the latter depends on how deep and long you're engaged in this
+language.
+```
+
+#+begin_src markdown
+  ```org
+  If you regularly engage in listening, speaking, reading, and writing 
+  in a language, you will inevitably gain proficiency over time. The 
+  speed and depth of your proficiency depend greatly on how extensively 
+  and consistently you immerse yourself in the language.
+
+  Consistent practice and exposure are key factors in language acquisition. 
+  The more time you devote to interacting with the language in various 
+  forms, the more rapidly you'll develop your skills. Whether it's through 
+  listening to native speakers, participating in conversations, reading 
+  diverse materials, or writing regularly, each activity contributes to a 
+  deeper understanding and command of the language.
+
+  The intensity and duration of your engagement play a crucial role in 
+  accelerating your learning process. Immersing yourself in real-life 
+  situations where the language is used naturally will further enhance 
+  your proficiency, as it builds both your confidence and your ability to 
+  adapt linguistically. Therefore, a committed and active approach to 
+  language learning will yield significant progress.
+  ```
+#+end_src
 
