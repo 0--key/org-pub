@@ -1,0 +1,138 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Benjamin Bloom's
+tagline: " Revised Taxonomy of Educational Objectives"
+permalink: /general/bloom-revised-taxonomy.html
+categories: [Education, Objectives, Taxonomy]
+tags: [curriculum, instruction, assessment]
+---
+#+END_EXPORT
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+PROPERTY: vizier-thread-id thread_xZ6URnekeimU2YN1MRBPJgsB
+#+PROPERTY: vizier-assistant-id asst_vYEhUEz8sl5ZCMLF37QWQfKa
+#+TOC: headlines 3
+
+* Preface
+
+=Bloom's Revised Taxonomy= is an update to the original taxonomy of
+educational objectives created by Benjamin Bloom and colleagues
+in 1956. The revised version, developed by a group of cognitive
+psychologists, curriculum theorists, instructional researchers, and
+testing and assessment specialists, was published in 2001. It provides
+a more dynamic framework for classifying educational goals,
+objectives, and standards, focusing on the development of cognitive
+skills and critical thinking.
+
+* Key Components
+
+** Knowledge Dimensions
+
+*** Factual Knowledge
+
+Basic elements that students must know to be acquainted with a
+discipline.
+
+*** Conceptual Knowledge
+
+Understanding interrelationships among the basic elements within a
+larger structure.
+
+*** Procedural Knowledge
+
+Knowing how to do something, methods of inquiry, criteria for using
+skills, algorithms, techniques, and methods.
+
+*** Metacognitive Knowledge
+
+Awareness and understanding of one's own thought processes.
+
+** Cognitive Process Dimensions
+
+*** Remembering
+
+Retrieving relevant knowledge from long-term memory.
+- *Examples*: Recognizing, recalling.
+
+*** Understanding
+
+Constructing meaning from instructional messages, including oral,
+written, and graphic communication.
+
+- *Examples*: Interpreting, exemplifying, classifying,
+  summarizing, inferring, comparing, explaining.
+
+*** Applying
+
+Carrying out or using a procedure in a given situation.
+- *Examples*: Executing, implementing.
+
+*** Analyzing
+
+Breaking material into its constituent parts and detecting how the
+parts relate to one another and to an overall structure or purpose.
+
+- *Examples*: Differentiating, organizing, attributing.
+
+*** Evaluating
+
+Making judgments based on criteria and standards.
+- *Examples*: Checking, critiquing.
+
+*** Creating
+
+Putting elements together to form a novel, coherent whole or make an
+original product.
+
+- *Examples*: Generating, planning, producing.
+
+* Benefits of Bloom's Revised Taxonomy
+
+- Provides a structured framework for educators to formulate
+  curriculum;
+- Helps in designing assessments and evaluations aligned with learning
+  objectives;
+- Enhances the ability to promote higher-order thinking skills among
+  learners;
+- Facilitates clearer communication of educational goals between
+  instructors and students.
+
+* Practical Application in Adult Learning
+
+** Course Design
+Use the taxonomy to design courses that progress from basic to complex
+cognitive tasks.
+
+** Assessment
+Create assessments that evaluate not just factual knowledge but also
+deeper understanding, application, and critical analysis.
+
+** Personal Development
+Encourage adults to set learning goals that move beyond memorization
+to higher levels of cognitive function, such as evaluation and
+creation.
+
+** Learning Strategies
+Integrate learning activities that address different cognitive
+processes, enabling a more comprehensive approach to mastering
+content.
+
+
+* Conclusion
+
+Bloom's _Revised_ Taxonomy offers a valuable tool for both educators
+and learners to understand and develop cognitive skills
+systematically. By applying its principles, adult learners can achieve
+deeper, more meaningful, and transferable understanding and skill
+mastery.
+
+* Reference
+Anderson, L. W. & Krathwohl, D. R. (Eds.) (2001).
+
+/A Taxonomy for Learning, Teaching, and Assessing: A Revision of
+Bloom's Taxonomy of Educational Objectives./
+
+Boston, MA: Allyn & Bacon.
+
+
