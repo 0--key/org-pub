@@ -14,7 +14,7 @@ tags: [zero-shot]
 #+PROPERTY: header-args+ :results output pp
 #+PROPERTY: header-args+ :eval no-export
 #+TOC: headlines 2
-* Preamble
+* Preamble                                                         :noexport:
 :PROPERTIES:
 :vizier-assistant-id: asst_oLuLDRdsSDyMcBAvpwCGkbGS
 :vizier-thread-id: thread_HZBh9PMJgndmnJLVz2GqifRz
@@ -40,7 +40,7 @@ can generalize its learning to accurately identify unseen classes.
 new categories without direct prior exposure.
 
 
-* Key Components and Concepts:
+* Key Components and Concepts:                                     :noexport:
 
   1. **Generalization:** Zero-shot learning hinges on a model's ability
      to generalize from known classes to unknown classes. This contrasts
@@ -72,7 +72,7 @@ new categories without direct prior exposure.
        explicitly rated by users but described in reviews or texts
        associated with other items.
 
-* Example in Image Recognition:
+* Example in Image Recognition:                                    :noexport:
 
   Imagine you have a model trained on images of several types of
   animals, such as cats, dogs, and horses. You want your model also to
@@ -91,7 +91,7 @@ new categories without direct prior exposure.
      described attributes in the embedding space and identifies it as a
      zebra based on the similarity.
 
-* Benefits:
+* Benefits:                                                        :noexport:
 
   - **Scalability:** Can handle a vast number of categories without
     requiring labeled data for each.
@@ -100,7 +100,7 @@ new categories without direct prior exposure.
   - **Flexibility:** Easily extended to various applications, from image
     and text recognition to recommendation systems.
 
-* Challenges:
+* Challenges:                                                      :noexport:
 
   - **Accuracy:** Achieving high accuracy with unseen classes can be
     challenging.
@@ -112,9 +112,9 @@ new categories without direct prior exposure.
 
 
   
-* The halfway digest
+* Preface
 
-In summary, zero-shot learning offers a powerful way to generalize
+=Zero-shot learning= offers a powerful way to generalize
 knowledge to new, unseen scenarios by leveraging auxiliary information
 and shared embedding spaces, making it a significant area of interest
 in the quest for more versatile and intelligent AI systems.
@@ -125,74 +125,82 @@ in the quest for more versatile and intelligent AI systems.
 :vizier-thread-id: thread_HZBh9PMJgndmnJLVz2GqifRz
 :END:
 
-#+begin_src markdown
-Absolutely! Here are five prompts designed to help you grasp the core
-concepts of a completely new topic. These prompts will encourage a
-comprehensive understanding by breaking the topic down into
-fundamental elements, practical applications, and broader
-implications:
+Here are five prompts designed to help you grasp the core concepts of
+a completely new topic. These prompts will encourage a comprehensive
+understanding by breaking the topic down into fundamental elements,
+practical applications, and broader implications:
 
-**1. Overview and Key Definitions:
+* Overview and Key Definitions
+
 - /Prompt:/ "Can you provide an overview of [new topic] and define
   its key concepts and terminology?"
 - /Purpose:/ To gain a basic understanding of the topic and
   familiarize yourself with essential terms.
 
-**2. Fundamental Principles:
+* Fundamental Principles
+
 - /Prompt:/ "What are the fundamental principles or underlying
   theories of [new topic]?"
 - /Purpose:/ To understand the core theories or principles that form
   the foundation of the topic.
 
-**3. Practical Applications:
+* Practical Applications
+
 - /Prompt:/ "How is [new topic] applied or used in real-world
   scenarios? Can you provide some examples?"
 - /Purpose:/ To learn about practical applications and see how the
   topic is relevant and useful in real situations.
 
-**4. Current Trends and Developments:
+* Current Trends and Developments
+
 - /Prompt:/ "What are the current trends and recent developments in
   [new topic]?"
 - /Purpose:/ To get updated on the latest advancements and
   directions in which the field is evolving.
 
-**5. Challenges and Future Directions:
+* Challenges and Future Directions
+
 - /Prompt:/ "What are the main challenges or limitations associated
   with [new topic], and what are the potential future directions?"
 - /Purpose:/ To identify existing problems or limitations and
   understand potential areas for future research or development.
 
-**Example Topic: Quantum Computing
+* Example Topic: Quantum Computing
 
-***1. Overview and Key Definitions:
+1. Overview and Key Definitions:
+
 - /Prompt:/ "Can you provide an overview of quantum computing and
   define its key concepts and terminology?"
 - /Expected Response:/ An explanation of quantum computing,
   including definitions of qubits, superposition, entanglement, and
   quantum gates.
 
-**2. Fundamental Principles:
+2. Fundamental Principles:
+
 - /Prompt:/ "What are the fundamental principles or underlying
   theories of quantum computing?"
 - /Expected Response:/ Discussion on principles such as quantum
   mechanics, superposition, entanglement, and the role of quantum
   algorithms.
 
-**3. Practical Applications:
+3. Practical Applications:
+
 - /Prompt:/ "How is quantum computing applied or used in real-world
   scenarios? Can you provide some examples?"
 - /Expected Response:/ Examples like cryptography (quantum
   encryption), optimization problems, drug discovery, and complex
   simulations.
 
-**4. Current Trends and Developments:
+4. Current Trends and Developments:
+
 - /Prompt:/ "What are the current trends and recent developments in
   quantum computing?"
 - /Expected Response:/ Information on the latest advancements such
   as quantum supremacy, quantum hardware development, and recent
   breakthroughs from leading companies and research institutions.
 
-**5. Challenges and Future Directions:
+5. Challenges and Future Directions:
+
 - /Prompt:/ "What are the main challenges or limitations associated
   with quantum computing, and what are the potential future
   directions?"
@@ -201,10 +209,78 @@ implications:
   research areas like fault-tolerant quantum computing and new quantum
   algorithms.
 
+
+
+* Conclusion
+
 Using these prompts, you can effectively explore and understand the
 core concepts of any new topic.
-#+end_src
-* New thread for Emacs usage questions
-#+begin_src markup
 
+* Non-empirical system of perception                               :noexport:
+
+Seems like zero-shot learning have a relation with non-empirical
+system of perception. Can you discribe it, please?
+
+#+begin_src markdown
+  Zero-shot learning and non-empirical systems of perception can indeed
+  share some conceptual similarities, although they originate from
+  different domains—zero-shot learning in machine learning and
+  non-empirical perception in philosophy or cognitive science.
+
+  ### Zero-Shot Learning:
+  - **Definition:** In machine learning, zero-shot learning refers to
+    the model's ability to recognize and classify instances that it has
+    never seen during training. This is achieved by leveraging auxiliary
+    information like semantic attributes or descriptions that provide
+    context about the unseen classes.
+  - **Mechanism:** The model uses generalization from known classes to
+    make inferences about new, unseen classes based on available
+    relational or descriptive data.
+
+  ### Non-Empirical Systems of Perception:
+  - **Definition:** Non-empirical perception refers to forms of
+    understanding or insight that are not based directly on empirical,
+    sensory experience or direct observation. This can involve abstract
+    thinking, intuition, or innate understanding.
+  - **Characteristics:** Such systems may involve reasoning,
+    imagination, conceptual understanding, or mental constructs that
+    allow individuals to interpret inputs beyond immediate sensory data.
+
+  ### Connection and Relation:
+  1. **Generalization Beyond Immediate Experience:**
+     - Both zero-shot learning and non-empirical perception involve
+       making inferences or understanding beyond the immediately
+       available data.
+     - Zero-shot learning generalizes from known classes to unseen ones
+       using abstract relationships, similar to how non-empirical
+       perception may draw conclusions without direct sensory input.
+
+  2. **Use of Auxiliary Information:**
+     - Zero-shot learning depends heavily on auxiliary information to
+       bridge the gap between known and unknown, akin to how
+       non-empirical perception might use prior knowledge, abstract
+       concepts, or reasoning.
+
+  3. **Reasoning and Conceptual Mapping:**
+     - Zero-shot learning applies relational and semantic information
+       for reasoning in classification tasks, much like how
+       non-empirical systems rely on conceptual mapping and hypothetical
+       reasoning to interpret information.
+
+  4. **Mental Representations:**
+     - In cognitive science, non-empirical perceptions may involve
+       mental representations of concepts or instances. Similarly,
+       zero-shot learning relies on learned representations (like
+       embeddings) to make sense of unseen data.
+
+  ### Conclusion:
+  While zero-shot learning in AI focuses on computational methods to
+  extend learning and classification capabilities, non-empirical
+  perception in cognitive sciences refers to the human ability to
+  understand and interpret beyond direct sensory data. Both rely on
+  using and processing auxiliary information to bridge their respective
+  gaps, leading to knowledge or actions beyond what is directly observed
+  or previously encountered. This conceptual overlap underscores the
+  role of inference, abstraction, and generalization in both fields.
 #+end_src
+
