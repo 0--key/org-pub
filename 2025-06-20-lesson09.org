@@ -1,0 +1,249 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Lesson Num.9
+tagline: " stems and derivatives"
+permalink: /english/lesson09.html
+categories: [English Course]
+tags: [lesson08, morphology]
+---
+#+END_EXPORT
+#+FILETAGS: :morphology:English:
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+STARTUP: showall indent
+#+PROPERTY: vizier-thread-id thread_u85m46yP32Am22lHX4Fjcc25
+#+PROPERTY: vizier-assistant-id asst_mEp1qd4WTGBLpPEImf6cam1K
+#+TOC: headlines 3
+
+#+include: "2025-04-03-lesson05.org::* Warming up - Tongue Twisters (15 minutes)"
+#+include: "2025-04-03-lesson05.org::* LoopBack (20 minutes)"
+#+include: "2025-06-11-lesson08.org::* Useful Links (30 minutes)"
+
+* The Fable
+
+#+begin_quote
+Paddy the Irishman bought a donkey from a farmer for £100. The farmer
+agreed to deliver the donkey the next day.
+
+The next day he drove up and said, 'Sorry Paddy, but I have some bad
+news. *The donkey's died*.'
+#+end_quote
+
+Paddy the Irishman bought a donkey from a farmer for £100. The farmer
+agreed to deliver the donkey the next day.
+
+The next day he drove up and said, 'Sorry Paddy, but I have some bad
+news. The donkey's died.'
+
+Paddy replied, 'Well then just give me my money back.'
+
+The farmer said, 'Can't do that. I've already spent it.'
+
+Paddy said, 'OK, then, just bring me the dead donkey.'
+
+The farmer asked, 'What are you going to do with him?'
+
+Paddy said, 'I'm going to raffle him off.'
+
+The farmer said, 'You can't raffle a dead donkey!'
+
+Paddy said, 'Sure I can. Watch me.. I just won't tell anybody he's
+dead.'
+
+-----
+
+A month later, the farmer met up with Paddy and asked, 'What happened
+with that dead donkey?'
+
+Paddy said, 'I raffled him off. I sold 500 tickets at £2 each and made
+a profit of £898'
+
+The farmer said, 'Didn't anyone complain?'
+
+Paddy said, 'Just the guy who won. So I gave him his £2 back.'
+
+
+* Morphology in Linguistics
+
+** Glossary
+
+#+begin_quote
+/Morphology/ is the study of the internal structure of words and the
+rules for word formation, including the study of /morphemes/, which
+are the smallest units of meaning or grammatical function.
+#+end_quote
+-----
+#+begin_quote
+A /morpheme/ is the smallest unit in a language that carries meaning
+or grammatical function.
+#+end_quote
+
+** The Role
+
+
+Studying morphology is crucial because it:
+
+1. Enhances Vocabulary: Understanding roots, prefixes, and suffixes helps
+   learners decipher meanings of unfamiliar words.
+2. Improves Grammar: Knowledge of morphological rules assists in using 
+   correct verb tenses, plural forms, and other grammatical constructs.
+3. Aids in Spelling: Recognizing morphemes can provide clues for spelling 
+   difficult words.
+4. Facilitates Language Acquisition: Helps in understanding word
+   derivations and building a rich vocabulary.
+5. Supports Reading Comprehension: Allows learners to break down complex
+   words into understandable parts, improving comprehension.
+6. Bridges Language Connections: Facilitates the learning of other 
+   languages by recognizing universal morphological patterns.
+
+
+** Types of Morphemes in English
+
+1. =Free Morpheme=: A morpheme that can stand alone as a word without 
+   needing additional morphemes (e.g., "book", "run").
+
+2. =Bound Morpheme=: A morpheme that cannot stand alone and must be 
+   attached to a free morpheme (e.g., "-s", "-ed", "un-").
+
+3. =Root Morpheme=: The core part of a word that carries the primary 
+   meaning (e.g., "tract" in "retract").
+
+4. =Affix=: A bound morpheme added to a root. There are subcategories:
+   - =Prefix=: An affix placed before the root (e.g., "un-" in 
+     "unhappy").
+   - =Suffix=: An affix placed after the root (e.g., "-ment" in 
+     "agreement").
+   - =Infix=: An affix inserted within a word, not commonly used in 
+     English.
+
+5. =Inflectional Morpheme=: A bound morpheme that modifies a word's tense,
+   number, aspect, mood, or gender without changing its class or meaning
+   (e.g., "-s" for plurals, "-ed" for past tense).
+
+6. =Derivational Morpheme=: A bound morpheme that changes the meaning or
+   part of speech of a word (e.g., "happy" to "happiness" with the 
+   addition of "-ness").
+
+
+
+* Suffixes, prefixes and endings
+
+** Definitions
+#+begin_quote
+=Suffix=: A type of affix attached to the end of a root or base word
+that alters its meaning or grammatical function (e.g., "-ness" in 
+"kindness").
+
+------
+
+=Prefix=: A type of affix added to the beginning of a root or base word
+that modifies its meaning (e.g., "un-" in "unhappy").
+
+------
+
+=Ending=: Though sometimes used interchangeably with "suffix," in 
+morphological context, it often refers specifically to inflectional 
+morphemes that indicate grammatical distinctions such as tense, 
+mood, number, or case (e.g., "-ed" in "walked" for past tense).
+#+end_quote
+
+** Common English Suffixes and Their Meanings
+
+*** =-s / -es=
+Indicates plural form of nouns or third person singular present tense
+of verbs (e.g., "cats", "runs").
+
+*** =-ed=
+Forms the past tense or past participle of regular verbs (e.g.,
+"walked").
+
+*** =-ing=
+Denotes the present participle or gerund form of verbs (e.g.,
+"running").
+
+*** =-ly=
+Converts adjectives into adverbs, indicating manner (e.g., "quickly").
+
+*** =-er / -or=
+Used to form nouns indicating a person who performs an action (e.g.,
+"teacher", "actor").
+
+*** =-ion / -tion / -ation / -ition=
+ Forms nouns indicating an action or process (e.g., "completion").
+
+*** =-able / -ible=
+ Denotes capability or worthiness (e.g., "readable", "audible").
+
+*** =-al=
+ Forms adjectives meaning "relating to" (e.g., "natural").
+
+*** =-ment=
+Creates nouns referring to an action or resulting state (e.g., 
+"achievement").
+
+*** =-ous=
+Forms adjectives meaning "possessing the quality of" (e.g., "joyous").
+
+
+
+** Common English Prefixes and Their Meanings
+
+*** =un-=
+Indicates negation or opposite (e.g., "unhappy" = not happy).
+
+*** =re-=
+Signifies repetition or backward motion (e.g., "rewrite" = write
+again).
+
+*** =in- / im- / il- / ir-=
+Denotes negation or lack (e.g., "inactive" = not active, "impossible"
+= not possible).
+
+*** =dis-=
+Implies negation or reversal (e.g., "disagree" = not agree).
+
+*** =en- / em-=
+Means to cause to be or to put into (e.g., "enable" = cause to be
+able).
+
+*** =non-=
+Indicates negation or absence (e.g., "nonexistent" = not existing).
+
+*** =over-=
+Signifies excess or superiority (e.g., "overcook" = cook too much).
+
+*** =mis-=
+Refers to incorrectness or wrong action (e.g., "misunderstand" =
+understand wrongly).
+
+*** =sub-=
+Denotes below or under (e.g., "submarine" = under the sea).
+
+*** =pre-=
+Indicates before in time or order (e.g., "preview" = view beforehand).
+
+*** =inter-=
+ Means between or among (e.g., "international" = between nations).
+
+*** =fore-=
+Signifies before in time (e.g., "forecast" = predict beforehand).
+
+*** =de-=
+Implies removal, reversal, or reduction (e.g., "defrost" = remove
+frost).
+
+* Conclusion
+
+Studying the morphology of English significantly enhances language
+proficiency. It deepens understanding by revealing the structure and
+formation of words, allowing learners to expand their vocabulary and
+improve spelling intuitively. Grasping morphological rules aids in
+mastering grammar, facilitating more accurate and versatile language
+use. This knowledge also bolsters reading comprehension and assists in
+interpreting new words through context and component analysis.
+
+Moreover, it equips learners with skills transferable to
+other languages, empowering them to recognize and apply linguistic
+patterns universally. Ultimately, studying English morphology fosters
+more effective communication and a richer, more nuanced mastery of the
+language.

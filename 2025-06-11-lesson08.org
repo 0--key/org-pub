@@ -1,0 +1,85 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Lesson Num.8
+tagline: " parts of speech"
+permalink: /english/lesson08.html
+categories: [English Course]
+tags: [lesson08, parts of speech]
+---
+#+END_EXPORT
+#+FILETAGS: :parts of speech:
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+STARTUP: showall indent
+#+PROPERTY: vizier-thread-id thread_byf7g2bRNnlvX0vbQTVyhyMB
+#+PROPERTY: vizier-assistant-id asst_mEp1qd4WTGBLpPEImf6cam1K
+#+TOC: headlines 3
+
+* The Bait                                                         :noexport:
+
+Give me 15 popular amongst children tongue twisters.
+
+
+* Warming Up - Tongue Twisters (15 minutes)
+
+  Here are 15 popular tongue twisters that are often enjoyed by
+  children:
+
+  1. Peter Piper picked a peck of pickled peppers. A peck of pickled
+     peppers Peter Piper picked. If Peter Piper picked a peck of pickled
+     peppers, where's the peck of pickled peppers Peter Piper picked?
+
+  2. She sells seashells by the seashore. The shells she sells are
+     surely seashells. So if she sells shells on the seashore, I’m sure
+     she sells seashore shells.
+
+  3. How much wood would a woodchuck chuck if a woodchuck could chuck
+     wood? He would chuck as much wood as a woodchuck would if a
+     woodchuck could chuck wood.
+
+  4. Betty Botter bought some butter. But she said the butter’s
+     bitter. If I put it in my batter, it will make my batter
+     bitter. But a bit of better butter will make my batter better.
+
+  5. Fuzzy Wuzzy was a bear. Fuzzy Wuzzy had no hair. Fuzzy Wuzzy
+     wasn’t very fuzzy, was he?
+
+  6. Unique New York, Unique New York, You know you need Unique New
+     York.
+
+  7. Six slippery snails slid slowly seaward.
+
+  8. A proper copper coffee pot.
+
+  9. How can a clam cram in a clean cream can?
+
+  10. I scream, you scream, we all scream for ice cream!
+
+  11. A big black bear sat on a big black rug.
+
+  12. Red lorry, yellow lorry, red lorry, yellow lorry.
+
+  13. If two witches would watch two watches, which witch would watch
+      which watch?
+
+  14. I saw Susie sitting in a shoeshine shop. Where she shines, she
+      sits, and where she sits, she shines.
+
+  15. Can you can a can as a canner can can a can?
+
+  
+* FeedBack Questions (15 minutes)
+
+- What are the last 3 English words you've encountered recently?
+- What is your daily routine as an English Learner?
+- How do you repeat new words and sentences?
+  
+  
+* Parts of Speech (45 minutes)
+
+[[https://nickdale.me/2015/10/26/parts-of-speech/]]
+
+* Useful Links (30 minutes)
+
+1. [[https://www.ihbristol.com/useful-english-expressions/][Useful Expressions for Daily Life]]
+2. [[https://esldiscussions.com/][Everyday and Controversial Topics for Discussions]]
