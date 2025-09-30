@@ -1,0 +1,1368 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: How to
+tagline: " Stop Procrastinating"
+permalink: /general/procrastination.html
+categories: [Procrastination]
+tags: []
+---
+#+END_EXPORT
+#+FILETAGS: :procrastination:erradication:
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+STARTUP: showall indent
+#+PROPERTY: vizier-thread-id thread_UHPzrnZ9sKFztGblKNm2sVdM
+#+PROPERTY: vizier-assistant-id asst_CJSRW1RSlezhBQWzOtxoOX31
+#+TOC: headlines 3
+
+* The Lure                                                         :noexport:
+
+ and the particular topic is
+"Values vs. Psychological Needs vs. Preferences".
+
+The whole episode name is "How to Find and Live by Your Values", the
+
+
+Next chapter name is "Lessons and Takeaways" and this is the
+preface for it:
+
+Next particular topic is "Reflecting on the Episode". Don't tag the
+chapters, please.
+
+```
+```
+
+The [[https://www.youtube.com/watch?v=b77XuGU52To][Source]]
+
+* Introduction
+
+Welcome to Solved, the self-help podcast for smart people. My name is
+Mark Manson, threetime number one New York Times bestselling author,
+and this is my co-host and longtime lead researcher, Drew Bernie. Now,
+Drew and I have been in the personal growth and mental health space
+for a combined 30 years now. And we've had enough. We've had enough of
+the empty promises, and fake solutions. Every episode of Solved, our
+goal is to create the most comprehensive evidence-based valued
+delivering podcast on earth on that specific topic. And today's topic
+is procrastination. Now, the catch of Solved is that whatever topic we
+cover, our goal is that it is the last time you will ever feel a need
+to listen to a podcast on that topic. And this is the last time we can
+make an episode covering this topic. Therefore, our promise to you is
+that if you make the commitment to get through the entire episode and
+implement the advice, your procrastination will be [Music] solved.
+
+* Episode Roadmap
+
+Drew, I have two things to say before we get started. Okay. Before we
+solve procrastination for the entire world. You're welcome
+everybody. Uh first thing is uh so listeners don't know this but this
+is the second episode that's going out of this podcast but it this is
+actually the first one we're recording and uh ironically we
+procrastinated this episode like three months. How many months did it
+take us to shoot this thing? Pretty close to that. Yeah. So be
+confident listener that uh your your hosts are are experts very
+familiar with the topic you're about to
+discuss. Yes. Yes. Exactly.
+
+Uh, and then the second thing I want to say is is just I want to get
+in before all of the comments from people who are going to say, "Oh,
+I'll listen to this later. You're not funny. You're not clever. The
+same joke. I've been doing this for 15 years. Every time I create any
+content around procrastination, the first comment is always, "Oh, I'll
+get to this later." And I'm like, "Yeah, you're very cute." Those
+people haven't even made it that far yet, though. This far yet. So,
+yeah, that's true. So, All right. So, today is procrastination. We are
+solving procrastination. Just a reminder to the listener, the whole
+premise of this podcast is that this is the last podcast that you
+should ever have to listen to on this topic. Drew and I and our
+research team have gone just absurdly in depth researching trying to
+understand this topic. It is, this episode is absolutely
+comprehensive. It is everything you need to know about
+procrastination. and then some. Uh, you're probably going to want to
+vomit when you hear the word procrastination by the end of this. But
+the goal is that you don't have to ever listen to anything about
+procrastination ever again. You don't have to read another book. You
+don't have to take another seminar. It's all here.
+
+So, first some statistics. Procrastination is something that pretty
+much everybody struggles with. This is not surprising. 95% of adults
+report procrastinating at least some of the time. To me, the most
+surprising part of that stat is who the are the 5%? Yeah, show me
+that. They're liars. Who are these superhuman robots that never
+procrastinate? Uh, yeah, I think 5% of people are liars. Um, 42% of
+adults report procrastinating regularly. Uh, and then 25% of adults
+report being chronic procrastinators, which is essentially means that
+you are just literally procrastinating everything all the time, right?
+anything you try to do you end up procrastinating which that is that's
+a shocking amount 25% of people. So this is a huge problem. This is
+like this is a massive affliction that you know gets to us all. Um so
+some of the things that we're going to go through procrastination as a
+topic is really interesting because it it is it is such a common human
+occurrence that there is thought on it going back 2500 years.
+
+So, we went back 200 years and we're going to cover basically the
+entire corpus of human thought and approach towards procrastination uh
+since the beginning of civilization. And it's actually kind of
+surprising because a lot of things that we take to be true or a lot of
+our assumptions of what procrastination is are relatively
+modern. They're not they're they're pretty recent and and and you know
+people in the ancient world or people in medieval times wouldn't
+necessarily agree with us and how we approach uh the topic of
+procrastination.
+
+Ultimately we're going to get to the bottom of what is
+procrastination. What like fundamentally like what is happening in
+your brain? What is happening psychologically when you're
+procrastinating something? When you're not doing the thing you know
+you should be doing uh and why does it happen? Why is it even
+possible? Right? like if I know something is good for me, like why is
+it possible that I can choose not to do that? That that like kind of
+doesn't make sense in a in a certain philosophical way.
+
+Of course, we're going to cover all the latest research on
+procrastination. We're actually going to cover the entire history of
+research on procrastination. Uh and because a lot of it got it wrong
+and a lot of the conventional wisdom and typical self-help advice
+today is based on that old research that got it wrong. And the new
+research is says some things quite different than uh maybe what you're
+expecting. And of course, we are going to go through at least a dozen
+different tactics and strategies that the listener can implement uh to
+help lessen procrastination in their lives. Uh I think if there's one
+thing that I've learned preparing for this episode, Drew, is that I
+don't think procrastination's ever something that we just like
+completely get rid of.
+
+I think that it is it just seems to be kind of a side effect or a cost
+of being humans who have agency and have complex brains. Um we'll get
+more into that, but I do think it /is incumbent on all of us/ to do
+all the things that we can to lessen or mitigate the procrastination
+in our lives. And I do think that is very much attainable for most
+people uh relatively quickly.
+
+So before we get into it, anything you want to add, Drew? Um, what are
+you most excited for? I mean, this what are you procrastinating? Oh,
+god. I mean, you hit the nail on the head. This is a very common, very
+pervasive problem. And um, we all struggle with it. And I think
+there's just there's a tragedy kind of a tragic side to it as well cuz
+you know what what else is there to do but do the things you want to
+do in life, right? And then we put those things those very things
+off.
+
+So, I think a lot of people are going to find a there's just going to
+be a big nodfest going on while you're listening to this. And um yeah,
+I'm excited to get into it because it's something I struggle with
+quite a bit. I don't know if I'm a chronic procrastinator, but there's
+chronic strains of procrastination that I sometimes run into for
+sure. Sure. Um I have a lot of experience with this just being an
+author, a self-employed person um for my entire career. So, we'll
+we'll get into that.
+
+And you mentioned something which is like kind of the tragedy of it is
+that what we we'll actually discover later on the episode is that the
+proportion of procrastination is actually uh directly correlated to
+how important we see a task being in our lives. So it's like
+
+#+begin_quote
+the more important the task is the more likely we are to procrastinate
+it
+#+end_quote
+which is so screwed up right like like that's so unfair. Why does that
+happen? Yeah.
+
+We'll dig into why that is but yeah it's fascinating. But before we
+dive in, uh there's going to be a lot of information in this
+podcast. And between me and you and our research team, I think we went
+through like what 13 14 books and 100 research articles. So to help
+everyone get through this, we've put together a companion PDF
+guide. It's 65 pages, includes a full summary of the show, all of our
+citations and references, has book recommendations, and it includes
+some practical takeaways and lessons as well. So, if you're listening
+to this, you can get the PDF guide for free by going to
+solvedodcast.com/procrastination. That's
+solvedodcast.com/procrastination. The link is also in the description
+if you want to get through there. All right, let's get started.
+
+* What exactly is procrastination?
+
+Okay, so let's start off with uh a couple definitions first because it
+it I was actually surprised how hard it was to actually pin down a
+technical definition of procrastination. And even the one that I
+chose, as we'll see, there's a little bit of wiggle room with it. So,
+there's a researcher named Pier Steel in up in Canada. He did a big
+meta analysis in 2007, which is basically what a meta analysis is is
+for listeners is that it's when a researcher takes all of the the
+relevant studies or data and then kind of like finds a way to combine
+them into like a super study. So this guy still did this in 2007 and
+he crafted this definition of procrastination based on all the
+research at the time which is this
+
+#+begin_quote
+procrastination is the act of unnecessarily delaying something despite
+knowing that there could be negative consequences for doing
+#+end_quote
+
+so and when I look at this I kind of like break it down into three
+factors.
+
+So the first factor is an /unnecessary delay/, right? I think this is
+important because prioritization is not procrastination. Like if my
+plan is to uh write a a script this morning but uh then my wife gets
+in a car accident and I have to go to the hospital like that's not
+procrastination because something more important has now
+interfered. It's only when the delay is completely unnecessary uh and
+fabricated.
+
+Um the second one is that there are /negative consequences/. So a lot
+of times when you delay something there actually are not negative
+consequences. There are plenty of things that you can delay and
+there's actually nothing that immediately there's no immediate
+feedback that makes you feel bad for that. I think this is why so many
+people procrastinate uh things like working out or eating well because
+the that feedback loop is so insanely long. You know it's like 10 20
+30 years before you actually experience the repercussion for that
+decision. uh it's very easy to convince yourself that like there is no
+downside to eating the pizza tonight and uh sitting on the couch for
+another day.
+
+Uh and then finally the third factor is /despite knowing/ and this is
+where it gets tricky.
+
+Like I actually found this whole definition very interesting because
+all three of these factors are /ultimately subjective/. Like who says
+a delay is unnecessary? Who's to decide what's necessary and what's
+not necessary, right? Who's to say what a negative consequence is?
+Like you say potato, I say potato. And who says that you're aware or
+that you know?
+
+My personal experience is that most of my procrastination is I'm I'm
+usually bullshitting myself on all three of these factors. I've
+convinced myself that there is no negative consequence that's going to
+happen or the negative consequence is very minor. It's not a big
+deal. I've convinced myself that the delay is actually extremely
+necessary. Like when else am I going to be able to watch this Netflix
+show if if not for right now?  And and then of course I myself of
+saying that like I'm aware I know that this is going to cause a
+negative. It's like well who knows, right? Like maybe you know a book
+will write itself, right? It happens all the time.
+
+Yeah, I definitely ran into this too when talking with people about
+this, you know, kind of prepping with this and just talking with
+people around my life too. I definitely ran into this. They're like,
+"Well, is it so bad that you put this off?  is I there was a lot of
+that that goes into it.
+
+So yeah, it's very subjective. It's Yeah. And it it is there's a whole
+question around this of of awareness and knowledge uh which is
+actually very much well we we'll get into that. We're getting a little
+bit ahead of myself. So the other thing that kind of surprised me and
+I guess well I I guess it makes sense is that there there is a
+cultural element to this um that I think is worth discussing at least
+just for a few minutes especially because I know the the audience for
+this podcast is extremely international.
+
+So it turns out that procrastination is to a certain extent
+/culturally defined or culturally relative/. There are some cultures
+where showing up late it's not a huge deal. Turning something in late
+is not really judged or viewed as as something negative. Um, it
+actually reminded me, so I I lived in Brazil for a few years. My wife
+is Brazilian and and it's one of the things that drove me crazy as an
+American down there is that if you if you ever do a business meeting
+with a Brazilian, um, first of all, they show up like 20 minutes
+late. Uh, then they spend the first 20 minutes like talking about
+their weekend and uh, telling you about like their kids soccer game
+and uh, you know, asking you what kind of beer you like. And uh and
+then it's like not until like minute 45 that you actually get to the
+thing that you're supposed to be talking about. And what's interesting
+down there is that if you ever like cut try to cut that time down,
+they see it as as impolite and rude. Like they see you as doing
+something wrong.
+
+Um whereas coming from American culture where I'm like, "Dude, I was
+here at 10:00 a.m. It's 10:45. We still haven't even like talked about
+the the business thing." I see it as rude that they're like wasting my
+time. So this concept of time and punctuality uh is very culturally
+dependent.
+
+And what I found interesting there there's a a social psychologist
+from from the Netherlands named Gear Hof who did a bunch of work on
+just like cultural factors. He I think he called it I think it's
+called /cultural dimensions/ theory or something like that. And um he
+talked about how certain cultures have different orientations towards
+time and they have different understandings of like what is something
+that's done on time or not. Um, so some cultures very much
+prioritize.
+
+So like western cultures or like Anglo-Saxon cultures very much
+prioritize uh like following the clock. Like if I say we're going to
+do a thing at 11:30 and you show up at 11:35 to me, you've now delayed
+things unnecessarily. It's causing negative consequences. So on and so
+on. It's procrastination. Some cultures, if you say 11:30 and they
+show up at 11:40, as long as they show up in a way that's like feels
+justified or is like emotionally consistent uh with the people around
+them, it's not seen as being late, you know?
+
+It's like, oh well, yeah, we were going to be here 15 minutes ago, but
+like uh I was hanging out with my my my brother and my cousin, and we
+were having a great conversation. Um and so it just took longer. And
+like that's seen as a completely justified response.
+
+And so it's interesting that I guess coming back to the subjectivity
+of procrastination, some cultures see it very strictly in terms of
+tasks getting completed on time and some cultures see it more in terms
+of like emotions and relationships. like in Brazil, if I don't sit
+there and kind of chitchat for 20 minutes, um that is seen as some
+sort of productive failure because I'm not doing the work to maintain
+the relationship with that person. Okay. Yeah. Um anyway, it's just
+very interesting. We're not going to spend a ton of time on this, but
+I like I said, I'm bringing it up simply because we do have a big
+international audience.
+
+There are going to be people listening to this in Latin America and
+the Middle East and the Mediterranean and some of these places that
+are not so rigid with the clock itself. They're more kind of
+emotional, social and emotionally based. Um, and it's just worth
+considering. And I think it it really just comes back to I think
+probably a more effective way to just frame this entire discussion is
+why do we consistently fail at doing the things we wish we could do,
+right? Like we have things that we know are good for us and we want to
+do them yet we don't do them.
+
+* Plato's Thoughts on Procrastination
+
+Let's go back. I think the best way I decided the best way to do this
+is to just go start at the beginning. So the first recorded discussion
+of procrastination and what what it is and why it happens does start
+with Plato. He has a few dialogues that get into it. The first one is
+uh called /Protagoras/. There's a quote from Socrates in there. He says,
+
+#+begin_quote
+"Surely no one goes willingly towards the bad or what he believes to
+be bad. Neither is it in human nature, so it seems to want to go
+toward what one believes to be bad instead of the good."
+#+end_quote
+
+Plato puts forth like a really interesting argument. He kind of argues
+that procrastination like doesn't actually exist. That like if you're
+not doing the thing, it's because deep down you actually don't think
+it's worth doing. That if you thought it was worth doing, then you
+would just go do it.
+
+And it's kind of interesting that the earliest take ever on
+procrastination is like super spicy like that. I wouldn't expect
+that. I would expect something like, you know, uh uh I don't know,
+start small or um you know, like give yourself a little reward, a
+piece of candy if you like if you do something that that you've been
+putting off. And it's like Plato's like no, no, it's it's impossible
+to do something that you don't think is the best thing to do, which I
+think just intu like our gut intuition, everybody's gut
+intuition.
+
+It's just like that that doesn't feel true. Does that feel true to
+you? Absolutely not. No. the definition you brought up earlier and
+we'll get into that a little more too, but despite knowing part,
+right? I just I feel like anybody you talk to, they've probably got at
+least a handful of things in their life that like they know are good
+for them and they don't do it. Exactly. So Plato's full of No, that's
+So, okay, I'm I'm being I'm being facetious.
+
+The interesting thing about Plato is so almost all of his work is
+written in the forms of dialogues and those dialogues revolve around
+it's usually Socrates having a a debate a philosophical debate uh with
+some other prominent person and in most of the dialogue Socrates just
+kind of like clowns the the person and there there there's a lot of
+ambiguity around Plato's work for a couple reasons. One is it's
+sometimes unclear because Socrates was a real person and Plato was uh
+somebody who like followed and learned from Socrates. So, especially
+in in the early dialogues, it is hard to differentiate between what
+Socrates thought and what and Plato is just reporting what he thought
+versus like what Plato actually thinks and he's just putting his words
+into Socrates's mouth.
+
+So there's a lot of ambiguity around that and Socrates had a
+reputation for being a bit of a troll. The second piece of ambiguity
+is that sometimes Plato would just create a dialogue to just kind of
+raise points and play with those ideas and because they it was a
+conversation between uh two historical figures, it's sometimes unclear
+if he actually believes what he's writing.
+
+So later on, in /"The Republic"/ which was actually uh seems to be
+very clearly Plato's thoughts and ideas um he kind of backtracked a
+little bit and and the republic is the first place that you see this
+idea of what he called the tripartite soul and it's he basically says
+that the the mind is divided up into three different parts and it and
+it's actually pretty incredible because this idea still persists today
+like you still see it all over psychology and philosophy today. So the
+three parts of the mind is he called the the rational, the spirit and
+the appetitive.
+
+One way to think about that is that there's like the animalistic self,
+the part of you that has hunger and impulses and cravings. There's the
+emotional part of yourself. That's the spirit, right? It's the
+anger. It's the love. It's the passion. It's the joy. It's the
+sadness. And then you have the rational, which is like the calculating
+and um the the logic and all that stuff.
+
+Plato's argument is that he used the metaphor of a chariot which is
+that the rational part of yourself is like the driver in a chariot and
+he has two horses in front of him. One horse is the animalistic
+appetitive part of yourself. The other one is the spirit-emotional
+part of yourself and it is your job to guide those horses in the right
+direction. But they're wild horses. And so sometimes they're going to
+buck and they're going to run and they're going to go try to go in
+different directions and it's going to be chaotic, right?
+
+And in the Republic, Plato said that it is essentially what
+procrastination is or back then they called it a basically this
+experience of not doing the thing that you know you should do is when
+essentially your horses don't go where you want them to go. It's like,
+"Hey, we should go to the gym." And the horses just start going
+towards the fridge for another piece of cold pizza. And you're like,
+"Wait, no." And then next thing you know, you're there.
+
+And so I feel like that is a little bit more relatable and a little
+bit more understandable. But I think that the takeaway from Plato is
+that he ultimately saw Acrasia or procrastination as a knowledge
+problem. It was your problem isn't that you don't have willpower. The
+problem isn't that you don't have discipline. The problem is that you
+just aren't aware enough of the repercussions of your choices. He kind
+of puts forth this argument that like if people were just more
+knowledgeable and educated on what their choices were causing in their
+life, they wouldn't make those choices.
+
+And I personally think this is a very idealistic view. I think it's it
+feels nice. I mean, there's something to it clearly like knowledge
+certainly does help probably at the margins, but I also just think
+it's it's I don't know. It's too like roses and rainbows. It doesn't
+match my personal experience.
+
+Uh and I don't think it matches most of the people that I know who
+really struggle with procrastination and and not doing the right
+thing. Um but it is it's a nice it feels good to believe. It feels
+good to believe that like oh if I just understood what I was doing
+when I was going back to the fridge instead of the gym then I wouldn't
+do it so much. And you actually like you still see this a lot. It's
+funny. I'm going to I'm not going to name names, but um I was on
+social media the other day, and I see this stuff all the time.
+
+So, this is a very prominent person in our space posted this. They
+said,
+
+#+begin_quote
+"Your entire life will change when you realize that you have to
+sacrifice short-term freedom in order to earn long-term
+freedom. Instant gratification will kill your dreams."
+#+end_quote
+
+Ed has over a quarter of a million views and 7,000 likes, right? No
+Sherlock. Right. Right. Like everybody knows that. We all know the
+information. We all know that. Like it it's not you're not moving the
+needle by telling us that. But I think there is a part of ourselves, a
+very idealistic part of ourselves that just feels like if we were
+reminded of that, then it wouldn't be so hard. That it would be a
+little bit easier to get up early in the morning and, you know, put on
+your workout shoes and, you know, start with the hardest task of your
+day.
+
+And you know all those things that we wish we could do. So that's kind
+of the first school of thought. We're going to return to it quite a
+bit. It it like most of Plato's ideas, they never really go away. It's
+interesting. We actually, you and I talked to pretty much the most
+prominent researcher on procrastination in the world, Fuchsia
+Sarra. And even talking to her, she brought this up multiple
+times. This never really disappears, but it starts it starts with
+Plato.
+
+* The Buddhist & Confucian Views on Procrastination
+
+Yeah. The second school of thought I want to bring up. So around the
+same time, the Buddha was doing his thing and uh Buddhism has an
+interesting kind of spin-off of the the Platonic idea that that I
+think is worth talking about just briefly simply because I think when
+towards the end of end of the episode when we talk about interventions
+and tactics and strategies, there is a little bit of the Buddhist
+approach that I think makes sense.
+
+So Buddhism saw procrastination as /ignorance of oneself/. You know,
+Plato saw it as like an ignorance of the consequences of your
+action. The Buddha saw it as an ignorance of your own cravings and
+desires, not understanding what your own motivations were, which I
+think is a really interesting twist. And I actually think there's
+probably a lot more value in the Buddhist approach.
+
+Like I just know from my own life, you know, I like as you know, I
+went through this huge weight loss journey over many years. And a big
+component of that was like really understanding where my food cravings
+were coming from. What was causing my distractions when I couldn't
+focus or or or get any work done. And sure enough, usually there's
+like some emotion underneath the surface that's like driving
+things. And becoming aware of that or mindful of that and then um
+learning how to how to deal or negotiate with that emotion is super
+useful.
+
+Uh so I thought like the Buddhist twist on the ignorance as as on the
+procrastination as a knowledge issue. Um I actually think there's it
+carries some water.
+
+Sticking with Eastern philosophy, just want to touch really quick on
+Confucianism. Um from I'm not I'm by no means an expert on
+Confucianism, but uh by the little bit of research I did, it didn't
+seem like there was a whole lot directly written about it. But the
+interesting thing about Confucianism is that there is so much emphasis
+put on accountability and social pressure. Um everything in
+Confucianism is kind of written in such a way of like you have to do
+the right thing to honor your family, your society, your your country,
+your emperor, whatever. There's a nugget in there as well that's
+actually really important and useful that we will come back to much
+later. But that social pressure and accountability is like a legit
+thing.
+
+* Aristotle's Take on Procrastination
+
+Um, this finally brings us to Aristotle. So, Aristotle in the
+Nikomachian ethics wrote quite a bit about /akrasia or
+procrastination/. He wrote quite a bit about why people don't do the
+things that they they should be doing. And I have to say, dude, like
+as somebody who has studied the psychology around this for a decade,
+going back and reading Aristotle's take, I'm like, "Oh, he nailed it."
+Like the dude just nailed it over 2,000 years ago. Yeah. Like 2,300
+years ago, he's just like in one chapter just like, "Here's why we
+don't do the things that we know we should do."
+
+So, Aristotle essentially, here's like the super condensed version of
+what he says. Aristotle essentially saw procrastination as a skill
+issue. He said,
+
+#+begin_quote
+"Like any other skill, we all are born terrible at it."
+#+end_quote
+
+Uh, and then as we grow older, we develop and practice and and
+habituate ourselves to it. And anybody can learn to do it. Anybody can
+practice it. Anybody can develop the skill or discipline. And like any
+skill or discipline, some people are naturally extremely gifted at it
+and some people are naturally not gifted at it. Right?
+
+What's also interesting about this view is that he kind of puts his
+middle finger up the Play-Doh. He's just like, "Dude, we all don't do
+the things we know we should do." Like, we all know we should do
+certain things and we just fail to do them. Look around
+you. Yeah. Seriously, like it it's like wake up, man.
+
+But what I like about Aristotle as well is that it's /there was no
+moral judgment or shame attached to it/. This is actually what's super
+unique and interesting and like way ahead of his time. With Plato, it
+was there was a little bit of like, well, they're not doing the right
+thing just cuz they're they're ignorant. They're uneducated. They're
+not as privileged as you and I are, right? They're not as enlightened
+as us.
+
+You know, in the Buddhist view, there's if you're not doing the right
+thing, like you got to get right with yourself, dude. Like, you know,
+sit on a mat and meditate for a few years and and and like figure out
+what the hell's going on in your head. You know, the Confucious
+system, it's like you're dishonoring your family and you're you're
+screwing up society. Like, get your together. Aristotle's like, "Hey,
+man, we all struggle with this. This is a journey for all of us and
+it's something that any of us can get better at. Any of us can
+practice it. We can develop the right habits, we can develop the right
+skills and you can and you can improve upon it.
+
+And so I think the first takeaway around all of this is that
+ultimately there are like there's a little bit of truth in everything
+that each of those schools of thought said there, you know, some of it
+is knowledge of the repercussions that are going to happen if you, I
+don't know, stay up till 4:00 a.m. on a Tuesday night. Some of it is
+understanding your own internal awareness and emotions and you know
+what's motivating you, what's driving you. Some of it is finding good
+accountability systems and social pressure to like nudge you in the
+right direction. But ultimately, this is a skill issue. It's something
+that you can learn. It's something you can get better at and it's
+something that you have to to try to get better at.
+
+So, I'm curious, Drew, have you seen your procrastination as a /skill
+issue/? Uh, because I certainly haven't most of my life. I'm curious
+what your experience was. No, I think there is just a lot of that
+self-judgment that goes into it and I've always thought, yeah, if I
+just knew a little bit more, had the the right information at the
+right time, then I would be a better person, not so, you know, morally
+corrupt. Yeah. uh and and bankrupt in my ways.
+
+But um yeah, it's it's interesting that each one of these kind of
+schools of thought took one angle at it and it's like, yeah, you got
+that right, but you got this completely wrong. Yeah. And I I feel that
+within myself even too today. So, yeah, definitely. I think I started
+seeing it as a skill issue relatively late in my life. I would say
+like well into adulthood. Like I have vague I have vague memories in
+my 20s of like starting my first business and just being like
+incredibly upset at myself for playing too many video games or not
+being able to finish a work task in the amount of time that I allotted
+for myself. Like just really chastising myself and beating myself up
+over it. Uh and /I feel like that's the default for most people/.
+
+Like there is a shame and there's a moral judgment. And what I found
+super fascinating and surprising is that that moral judgment is is for
+the most part didn't exist in the ancient world. You know, Aristotle
+saw saw uh accasia or or doing the right action. He saw he had a whole
+/ethical system around virtue/, right?
+
+The virtues were like the right way to live. But Aristotle was very
+aware that like nobody is virtuous all the time. The virtues are never
+achieved. They're they're just something that you work towards and you
+get better at over time and everybody's going to screw it
+up. Everybody's going to fail to a certain extent. And so the only
+thing you can do is /just try to fail less/.
+
+And if you look at the Stoics, there's there's a very /similar vein
+there/, right? It's like you should try to be virtuous. The the Stoics
+were a little bit more platonic in that they saw it as more of a a
+lack like a knowledge problem, but it it's still the same attitude of
+like nobody's virtuous all the time. Nobody gets it right all the
+time. Just get up each day and try to do your best and try not to
+dwell on on your failures and and things like that.
+
+And it's it's so fascinating like going back and looking at those
+takes because that doesn't feel like anything I heard growing
+up. Yeah. Right. I heard that you are you are a a immoral piece of
+who's irresponsible and is failing yourself and failing your future
+and failing your family and like it it is there's so much moral
+judgment especially I guess in western culture but I think eastern
+culture as well there's so much moral judgment wrapped up in your
+ability to be disciplined you know. Like I think about people who are
+obese or overweight like one of the huge judgments against them it's
+not about the unhealthy illness. It's about the apparent lack of
+discipline, right?
+
+Like I've been around people who have said really mean things about
+overweight people. And /it's never about the weight/. It's about the
+like why can't they control themselves? Why can't they like keep food
+out of their mouth? How could you let yourself go to that extent?
+
+
+Yeah. Right. Yeah. And it and we have similar judgments like if
+somebody loses their job or if somebody doesn't make a lot of
+money. Um it it's there's like a moral judgment. It's and we just we
+joked about it earlier, right? It's like if I showed up an hour late
+for this shoot, you would judge me. Yes. Yes, I would. Yes, you
+would. So, it's interesting that that didn't always exist like
+that. That is it started somewhere along the line. And uh drum
+roll. Do you want to guess where it started? I have a good idea. Why
+don't you go ahead? I'll give you one. It starts with a Chris and it
+ends with aity. Yeah. Yeah. /One of the seven deadly sins/, right?
+
+#+begin_quote
+*Sloth. Sloth.*
+#+end_quote
+
+Exactly. Exactly.
+
+* Christianity and Procrastination
+
+So, interestingly, there's actually kind of a particular moment in
+time that I think you can point to where you can you can actually say
+this is the moment that procrastination and a failure to act became a
+moral problem. It became a /shame-ridden failure/ that that signifies
+that you are a piece of scum essentially, right?
+
+So the story actually starts in in the late 4th century. Uh
+St. Augustine of Hippo was born in what is present day Tunisia. And he
+would go on and become basically the most important theologian of
+pretty much anybody who didn't live during Christ's time. And but it's
+interesting because Augustine he was born pagan. He grew up he was a
+rich kid. His parents were like aristocrats. He was kind of like that
+douchebag with a Ferrari in high school. Like he just not a care in
+the world, screwed around, partied all the time, was drinking a lot,
+seeing a bunch of different girls, just life was on easy mode.
+
+But the interesting thing about Augustine was that he was very smart
+and he was very philosophical. And so he was he became curious about a
+bunch of different religions and I guess you call them cults.
+
+Throughout his early adult life he kind of dabbled in a bunch
+of different schools of thought. Now the interesting thing is that the
+Roman Empire had just converted to Christianity uh maybe 50 years
+prior and you have this gigantic empire and what essentially was kind
+of this French cult religion which was Christianity suddenly becomes
+the state religion and is now expected to be followed by like tens of
+millions of people.
+
+So there was kind of this vacuum of strong theological knowledge that
+didn't exist at the time. There was like an early opportunity to fill
+that void, that theological void. Like they they needed like very
+smart people to kind of like create frameworks and philosophical ideas
+that the masses could understand and implement into their lives. And
+so Augustine would end up filling that void to a great extent.
+
+And he would be the one who would take Christian thought and combine
+it with Plato and kind of turn it into early Christian theology and
+the the the Catholic theology as we understand it today. But the way
+he went about that is super fascinating. So he was this playboy. He's
+screwing around all the time and he's like drifting, you know, from
+this religious sect to this religious sect. And by the time he gets to
+his late 20s, he's he he becomes pretty self-loathing. Like I think he
+he's at this point he's self-aware that he is a very smart, talented
+guy who's been handed every privilege and advantage in the world and
+he's done nothing with it. He's like absolutely wasted everything. So
+this goes on for a number of years and he's just he's really looking
+for something to commit himself to and all the while he's like kind of
+disgusted with himself.
+
+He's like, "Why do I keep doing this? Why do I keep drinking?  Why do
+I keep hooking up with all these women that I don't care about?" And
+like, "Why can't I just get my together?" And one day he's sitting in
+a garden and he's reading and he hears a child singing outside saying,
+"Pick up the paper and read it. Pick up the paper and read it."
+Singing this like little lullabi or something. And so he happens to
+look down and he sees a parchment paper and he's like, "Huh?"
+
+So he picks it up and he starts reading it and it's Paul's letter to
+the Romans, verse 13:13. And it says,
+
+#+begin_quote
+"Let us behave decently as in the daytime, not in orgies and
+drunkenness, not in the sexual immorality and debauchery, not in
+dissension and jealousy."
+#+end_quote
+
+And Augustine claims that he converted to Christianity right there on
+the spot. He was like, /"This is it. This is a sign."/ Drops
+everything.
+
+Immediately goes to seminary, trains to become a priest, and then
+within a couple years goes on to become the most prolific and
+successful Christian preacher in the Roman Empire. He gave, I think,
+2500 sermons or something like that, of which like half are still
+around today. He was just like a /prodigy of preaching/, I
+guess. Yeah.
+
+But what's super interesting is that he has this personal history of
+like he was kind of this he's like this playboy wasting his life and
+then he finds God and God saves him, right? Like he doesn't drink
+anymore. He doesn't fornicate anymore. He doesn't screw around
+anymore. He's like very diligent and disciplined and he's working his
+ass off and he's like achieving his potential and he attributes all of
+this to God.
+
+So in his book, The Confessions, he talks about /akrasia/. He talks
+about he gives an example of when he was a boy of stealing fruit from
+a local market. And he talks about how he stole the fruit. He didn't
+need the fruit. He wasn't hungry. Uh he didn't need the money. He
+wasn't going to sell it to anybody else. He stole it for the thrill of
+it. Mhm. He stole it because it was something exciting to do to kind
+of impress the other boys that he was hanging out with.
+
+And he looked at that and with a very platonic lens. He said there was
+a lower desire. There are the lower values of the excitement, the
+thrill, impressing the the people around him. But then there's this
+higher level value of of fairness and justice and um you know not
+being selfish. And his argument was that anytime we sacrifice that
+higher level value for the lower level value that we succumb to our
+animalistic impulses or urges or desires at the cost of kind of the
+higher level rational intellectual spiritual values. /Not only is that
+a failure, that's a sin./
+
+That is you're not it's not you're not violating yourself, you're not
+violating your family, you're violating God because God's will is that
+you do these other things and you are failing God's will to indulge
+your animalistic behaviors and impulses and cravings and as soon as
+God enters the picture gets moral really quick, right? Like it's it's
+if you're suddenly it's like your procrastination or your failure to
+do the right thing for yourself. It's not about failing yourself like
+now you are actually sinning and becoming a corrupt individual and
+that is shameful and you should repent and you the the only path to
+salvation is to surrender yourself even further to God and to Jesus
+and to give even more of your life over to the church.
+
+And so this is where you see the /shame indoctrination/ really
+begin. And without getting into like too extensive of a commentary on
+Christianity itself, it was interesting reading Augustine in this
+context because I couldn't help but view it as like a it's like a
+multi-level marketing scheme or something where like it's basically
+like you create the problem for for people and then you sell them the
+solution, right?
+
+So, it really felt like, you know, Augustine is basically going around
+and taking this experience that we all have and we all already kind of
+feel bad about and are a little bit sensitive about and he's like,
+ And I'm like,
+
+#+begin_quote
+"Hey, that thing that you feel bad about, that means you're a piece of
+and God God hates you and the only way he's going to stop hating you
+is if you come to church and uh confess all your sins."
+#+end_quote
+
+man, that is that's like that's aggressive to say the least. And and
+look, I'm we're not here to comment on religion u or or make any sort
+of like theological arguments, but let's just say from a a mental
+health point of view, not optimal. Not optimal from a productivity
+point of view, also not optimal.
+
+Okay. Yeah. So, we can't want to get into the shame stuff then. Uh
+yeah, through some of that right now because like I said, I think it's
+a big misconception that most people have. Most people, what I have
+found is that a lot of people are afraid to relinquish that
+self-judgment, because they're afraid if they go easy on themselves,
+quote unquote, then they they won't do the thing.
+
+Right. Right. And it's like actually the research says the opposite,
+the exact opposite. This happens a lot. Yeah. So I think this is like
+a useful place to make this point and kind of discuss like why this
+happens or what it is. Yeah. Yeah. Yeah.
+
+Well, they do find that exactly that that um people who experience a
+lot of shame, especially around things like procrastination or any
+things that they deem to be character flaws. Uh they actually end up
+putting things off more. They don't end up doing them more. And it's
+because that _shame creates this uh kind of motivation for avoidance
+around these things_.
+
+You don't want to feel that shame. And so you just avoid doing it
+altogether in the first place. And you get this very very vicious
+cycle um that goes along with it. You there's this self-judgment cycle
+that comes with it right like you feel ashamed for delaying uh that
+this shame makes you uncomfortable and to escape that shame that you
+feel now you further procrastinate delay more you distract yourself
+you you give into those lower values that that um Augustine talked
+about so that's uh the the studies around this have really found that
+it's the exact opposite this doesn't happen all the time but a lot of
+times it will be yeah we have these intuitions around: oh I need to
+feel this way in order to get things done. Um, or I think my brain
+works this way and so I'm just going to keep doing this.
+
+When it's like, step back, there's actually a a kind of deeper issue
+going on here. Avoidance is really what what comes from that
+self-loathing and that shame.
+
+#+begin_quote
+Self-loathing, also known as self-hatred, is a deep-seated feeling of
+intense dislike or even hatred towards oneself. It's a persistent and
+negative attitude that can manifest as feelings of worthlessness,
+inadequacy, and a belief that one is undeserving of good things. This
+can lead to constant self-criticism, negative self-talk, and a
+tendency to focus on one's flaws and mistakes
+#+end_quote
+
+Yeah. Well, at least to me, some of the most interesting research that
+I saw around this was actually in workplace research. M so they
+actually there are a number of studies that they like looked at how
+shame based the feedback is in certain workplaces and then they
+tracked employee productivity and uh also absenteeism how many people
+stuck around. Basically looking at like who who like who has the boss
+and like how how do employees respond to that boss and uh surprise
+surprise shame based workplaces.
+
+Um they did one study on uh nurses in a hospital and they looked uh at
+supervisors who would like shame the nurses for their mistakes and um
+for for not completing all their tasks or whatever. And uh sure enough
+those nurses showed up less often to work. They got through fewer
+rounds. They spent less time with the patients and uh they quit more
+often.
+
+So, yeah, I think some researchers too will interpret that as you are
+violating your sense someone's sense of autonomy too, right?  If you
+shame them, you're saying you're a bad person, you don't have any um
+control over whether or not you can do something about this. Whereas,
+if you're much more gentle and much more compassionate about it,
+you're like, "Okay, this is how we fix it." It goes back to the skills
+thing, right?
+
+I was just going to say, we're going to come back to seeing
+procrastination as a skill issue uh a little bit later. And it it it
+is /mind-boggling/ to me though that like that got lost. Yeah. For
+thousands of years. Yeah. When when it was the norm before like that
+was just how people thought of it and then it completely got
+destroyed. Right. Cuz it's it is what you do see in this whole kind of
+Christian era through the medieval period and everything.
+
+It's just like if you don't do the right thing, it's because you're a
+bad person. If you if you can't get your work done, you're a bad
+person and you screwed up and I don't I don't want to be around
+you. Right?  Again, I still feel the residue of this, you know, like
+growing up in a western culture like and I know people who grew up in
+confusion cultures experience this a lot too because that that is also
+very shame. It's it's less about God. It's more about family. When you
+grow up in that, it's so hard to escape it. And and it is like I still
+catch myself like judging people. Oh, 100%. You know, just being like,
+"Oh, look at that guy."  Like can't even get his together, you know,
+like what a joke. Yeah. Judging other people or judging yourself,
+too. Again, going back to the same thing. And um and this isn't just
+uh applicable to procrastination, but anything where you kind of have
+this kind of self-loathing or self criticism that's very loud uh
+inside your head, it it will create avoidance, not uh approach, right?
+And so that's something to keep in mind all throughout this.
+
+* Self-Compassion and Procrastination
+
+So, what is the opposite of self-judgment or self-shaming? I
+/self-acceptance/, right? /Self-compassion/. Okay. What does that look
+like? Well, uh I hate myself, Drew. How do I stop? Well, make the
+_self-loathing_ stop.
+
+Pretend I'm your friend, Mark. Okay. And if you heard me saying that,
+you would be like, "Whoa, dude." Yeah. God, take it easy on yourself,
+right? And totally. This is kind of the the standard advice to a lot
+of people is when you're when you want to be more self-compassionate
+and and kinder to yourself, /treat yourself like a friend/. Step back,
+detach yourself a little bit from the whole situation and be like,
+"Okay, what's really going on here? How can I be a little bit more
+understanding of my own actions?" Yeah. And uh knowing some of these
+reasons, having some self-awareness around these reasons why I'm doing
+this and being like, "Okay, I need to address these. Let's move
+forward." Yeah, which I think is kind of the way things were even with
+Plato and his uh maybe a little bit muddied thinking around
+procrastination.
+
+I still think there was a lot of that prior to this whole injection of
+shame into the culture around doing getting things done. Yeah, that
+would be an interesting exercise. I mean, if if if you're listening to
+this and this is something that you really struggle with, like that
+could potentially be a really useful exercise of like write down your
+selft talk around this stuff and then go back later and read it and
+just probably be horrified by by it. I've been there. Yeah. Yeah, but
+it's it's one of those things that we don't notice it when we do it to
+ourselves. And that that self-compassion does that creates that space
+for approach like I'm saying instead of avoidance. So it if if you're
+if you know you're you're in a safe space, you know, in your own mind
+that opens up a a a space for exploring what's actually going on and
+then taking action. Whereas again, the shame just creates a lot of
+avoidance around that. Yeah. that the the thing I like about
+self-compassion too is that it it's not and this is a point I made in
+subtle art is that you know it's the flaw with self-esteem as a as a
+metric in my opinion is is like it's it became through a lot of the
+research it became a measurement of how people felt about themselves
+when they did good things right whereas like what you really want to
+measure is like how do people feel about themselves when things go bad
+right and that's that's where the self-compassion comes in it's like
+okay let's let's actually measure how you treat yourself when nothing
+is going right because that's actually probably a better more accurate
+metric of your mental health and your well-being and your life
+satisfaction and all that stuff. So the other thing that's um
+interesting with the the self-compassion research is that a big
+component of it, a big step in it is uh finding shared humanity. It's
+funny because it's just again thinking about this 95% of people That's
+what we opened with, right?  Yeah. Like literally a survey asking
+people, "Do you struggle with procrastination?" 95% of people said
+they do. Like I don't I'm not aware of any other problem that that
+scores that high. No. Yeah. I I in surveys. Yeah. Yeah. So yeah. And I
+think it's about 5% of the population is considered psychopaths,
+too. So maybe that's where the other 5% are. I don't know. They're
+just or or they're like androids that are secretly walking among
+us. They It was so interesting though that uh when we were talking to
+um to Fuchsia Sarra like I actually asked asked her I was like do
+those 5% actually exist and she said absolutely. Can you imagine? Well
+what that must feel like. I I wonder what like there's some downsides
+to that though too, right? Like sometimes you need to prioritize and
+sometimes you need to delay. Like what if you're jumping into things a
+little too much? So maybe it's I don't know maybe it's on a bell curve
+or something. I don't I don't know. But the to me, okay, getting off
+on a little bit of a tangent here, but like to me a certain amount of
+procra Yeah, like an optimal level of procrastination is probably not
+zero, right? Because there there is a certain weight that comes with
+like really really important tasks in your life and that that weight
+is intimidating and and sure as a human you find ways to delay it or
+put it off or avoid it in this way or that. I kind of like that. I
+don't know. Maybe maybe I'm being irrational here and like kind of
+playing the same game with the with the shame stuff where it's like
+I'm afraid that if I don't procrastinate something it means it doesn't
+have weight or importance, but like I don't know. I kind of like that
+there are certain things in my life that intimidate me a little bit
+that make me anxious because it it signifies to me that I'm doing
+something very worthwhile. And I don't know. Yeah. I worry that if I
+had zero procrastination that I would just kind of see everything in
+like you said a psychopath. I would just see everything in my life as
+just another task to be done and uh you just get on with it and you
+don't you know what's the point in stressing over it. I I would be
+curious any listeners out there who well I don't know why they'd be
+listening to this but like if for some reason you are one of these
+freaks who does not procrastinate I'd be very curious to hear from
+them like what their experience is or why like what what is your
+thought process when when there's a really important task in front of
+you? What is the emotional experience of that task? I'd be very
+curious. I actually just thought of something related to the
+self-compassion as well. Something else like it's funny when we're
+judging ourselves. I think we we like get very skewed perceptions of
+what's actually normal. Like I remember I used to feel this uh back
+when I was writing all the time, which is like I would set a goal for
+myself, right? Like I'm going to publish three articles a week of at
+least 2,000 words a piece, right? those 6,000 words a week, which is a
+really good clip of writing. And then if I didn't hit that
+expectation, I would judge myself. But then I'd go talk to other
+writers and they're like, "Man, I'm lucky if I get like 300 words in
+an entire day, right?" So, it's like our understanding of like what is
+normal and expected and and like reasonable can often get completely
+warped in our own heads, especially when we're judging ourselves. Uh,
+and so it's again it kind of comes back to that subjectivity
+thing. Like the same way we can kind of ourselves in one direction and
+tell ourselves that, oh yeah, I can, you know, I'll do it
+tomorrow. It's not going to be a big deal. We can also ourselves in
+the other direction by saying like, oh, you're you're absolutely a
+horrible person. You know, you only worked out for 90 minutes. You
+should be working out for two hours because you're just lazy if you
+don't do that. So, it's just it's useful to understand, I guess, that
+our minds are just crazy and wrong in in all sorts of different
+directions, and it can it can screw us up, especially when looking at
+ourselves. Yeah. Yeah. I have to say in prepping for both this episode
+and the last episode, I'm like, dude, Aristotle got everything
+right. Yeah. Like, that guy nailed everything. Plato gets a lot of
+credit, but Aristotle actually Yeah. between happiness, values and
+virtues, uh, and and this stuff, self-discipline and accrasia and
+procrastination, everything like Aristotle nailed like half of
+psychology before there was such a thing as psychology. So, shout out
+to Aristotle. So in like the 12th century there was a Arab an Arab
+scholar living in present day Spain named Avaro and he translated he
+was the first person to translate Aristotle into Latin back into Latin
+which gave Europeans access to Aristotle again for the first time in
+almost a thousand years which is mind-blowing. And sure enough quietly
+Aristotle started to go viral within European universities and among
+European scholars. It was just it was mind-blowing stuff to them. Keep
+in mind too that it wasn't just the psychology and the happiness and
+the virtue stuff. Aristotle like literally invented the scientific
+method. Like basically all of what is modern science started with
+Aristotle as well. So you start to see the the scientific method begin
+to show up in around this time. people are thinking about empirical
+observation, experimentation, um, documenting what they see, trying to
+measure, understand things. I mean, I I I don't think it's any
+coincidence that Galileo and Capernicus show up within a generation or
+two after Aristotle is translated back into Latin. Of course,
+predictably, the church has this horrible reaction. They try to ban
+it. They say it's heresy. But there's a young student at the
+University of Paris at the time by the name of uh Thomas Aquinus and
+Thomas has like a very unique and interesting talent which is he
+became famous very very early in his life. He was he was a prodigy. I
+think he ended up going to university when he was like 15 or something
+and he studied theology, became very successful very quickly and he
+became famous for being very good at taking people who were on two
+opposite ends of an argument and finding a way to synthesize
+them. Finding like the common threads and finding a way to like make
+things make sense for everybody. So he studies Aristotle, his mind is
+blown, but the rumblings going on around is is that the church is like
+not okay with this. But in his mind, he's like, "This stuff is so
+powerful. It's so worldchanging. There's got to be a way to make this
+synthesize with Christian thought and theology." And so that became
+his life's work. And eventually he published uh Suma Theologica which
+was his magnumopus which is was essentially that it was bringing
+Aristotleian philosophy into the Christian umbrella uh in a way that
+people could understand and that was acceptable to the church brought
+it essentially brought Europe out of its its medieval period
+intellectually into kind of what would eventually become the
+Renaissance and the scientific revolution and everything. So, I can't
+overstate how important it is to bring back the idea that this is a
+skill issue. This is not a character issue. This is not a theological
+issue. It's a skill issue. Procrastination is a skill issue. And and
+it it's interesting. There's there's this concept in psychology uh
+called self-efficacy, which is basically a belief that you can get
+better at something. And it's fascinating because self-efficacy
+strongly correlates with success in almost anything you
+do. Essentially, the more you believe you can get better at something,
+the more likely you are to get better at that thing. And I don't know,
+I just like everything I know about psychology, I I I don't think it
+can be overstated the importance and the impact of bringing
+self-efficacy back to the public. That belief of like we can be
+better. we can do things in this life that are better, right? Like I I
+really do think kind of old school Catholic theology is is like it's
+fatalism. It's like God decides. There's this kind of cosmological war
+going on between heaven and hell. We're all caught in the middle. All
+we can do is just ask for forgiveness, right? Like there's
+nothing. We're all we're all sinners. We're all uh we're all
+doomed. But like if we pray enough and ask for enough forgiveness,
+then like things are going to turn out all right in the next life, not
+in this life because this life is going to be It is It's got to be
+predetermined. Yeah. So I think just reintroducing self-efficacy back
+into the population. It's just like I I can't I can't overstate how
+impactful that probably was.
+
+* The Reformation and Procrastination
+
+And then sure enough, like a century or two later, you get the
+reformation. You know, when Luther hammered the 95 thesis to the to
+the door, he was essentially saying that like we have control over the
+outcome. We can decide we can improve our relationship with God. We
+can improve our lot in this life. We don't have to depend on the
+clergy. We don't have to depend on uh on the church. There there
+shouldn't be an intermediary between us, right? And sure enough, as
+Protestantism arises, this is what they become known for, right? It's
+the old Protestant work ethic. Like, because the idea is is that if
+our salvation is up to us in this life and we have control over it,
+then whoever works the hardest is the most likely to be saved, right?
+Like God God gives fortune to people who work hard and deserve it. And
+so you see you see these these kind of philosophies emerge like
+Calvinism where it's there's a huge amount of moral value attached to
+industriousness that if you are uh diligent and hardworking and uh you
+know do all the right things in this world you will be rewarded in
+this world and in the next world by God and you deserve it. So if you
+have nice things awesome you worked for it you deserve it. So on the
+one hand we've brought self-efficacy back into the equation. we've
+brought uh you know procrastination as a skill problem back into the
+equation. That's good. But on the other hand, we still have the shame,
+right? Because now it's like if you work your ass off and things
+aren't going well for you, well, God still is displeased with you. God
+God does not look on you with with favor or fortune, you you must be
+doing something wrong. there's still a there's still a moral
+attachment to material success, to your ability to do what you say
+you're going to do or or accomplish things in the real world. So, and
+in fact, because there is so much moral and theological weight placed
+on, I guess, worldly outcomes, these early Protestants, you get this
+kind of insane perfectionism. And I think the group that really
+illustrates this is like the Puritans who came to America. They were
+hardworking. They were diligent. They believe that, you know, if you
+did the right things and if you worked really hard, you would get what
+you deserve and God would smile on you with good fortune. But holy
+crap, they like judged the out of each other. Like there was an insane
+amount of perfectionism self-induced onto those communities, right?
+And it it and it makes sense because it's like if you if your worldly
+status is now being attached to your moral superiority or inferiority,
+it just adds that much extra pressure to everything you do. And so I
+think this is actually appropriate because I think as we'll talk about
+later, like a huge component of procrastination is perfectionism. is
+this feeling that you're not allowed to fail. That you if things don't
+work out the way you want them to, then that is some sort of moral
+reflection on you as a terrible person. And so I'm curious like I know
+you are a recovering perfectionist. Yes. I'm curious how this has like
+come up in your own life and what the research says around
+this. Yeah. Yeah. Definitely perfectionism. um it feeds into
+procrastination, what they find in the research, and I can vouch for
+that very much so in my life. Again, the research shows that um
+perfectionism, it's just it's another form of shame basically that
+causes you to avoid the things you need to do. It's an avoidance
+mechanism. Yeah. Of sorts. It creates a lot of anxiety around certain
+tasks. So, you end up avoiding them that way. um you're so afraid of
+failing that you just don't even want to approach the task to begin
+with or you come up with all sorts of mental gymnastics ways to to
+avoid those. Um so I need to wait. I need to have more information
+before I do this. I need to be better at this. So we're into the
+skills set now. I need to be better at this. I need to have the skills
+in order to do this. And for that I need to step back and develop
+these skills. That that's an evil loop that I've gotten caught up in
+before. I'm like, "Oh, I need to be better at this before I go do the
+thing." Right? And so then I spend all my time trying to be better
+instead of doing like actually like doing the thing is what will make
+you better at it. Right. But instead of actually just doing the thing,
+I I try to do all this other stuff to prepare for
+everything. Exactly. Do research. That's another thing. This this goes
+right up into today. This this happens in all sorts of productivity
+systems. Um people, you know, like, oh, you need to just have the
+right system in place or have the right information in place and
+you'll you'll get there. And that can very much feed into the very
+common problem of perfectionism. So what I'm hearing so far, it it
+sounds like the story so far is that if I was to really simplify this
+is that we avoid things that are unpleasant. No duh. Often the
+mechanisms by which we judge ourselves or the expectations we place on
+ourselves around that avoidance only makes us feel worse and therefore
+avoid even more. Yes. Right. And so shame is one component of
+that. Like that's one form of it. It's like the the more ashamed I
+feel of my inability to do the things that I set out to do. Um the
+worse I feel about doing them, therefore the more I avoid them. And
+you get in this downward spiral. Similarly with perfectionism, the
+unrealistic expectations that you set on yourself are make the task so
+intimidating and unpleasant that you find ways to avoid it, which then
+makes you feel even worse and expect even more of yourself and then
+you get end up in another kind of spiral.
+
+* Freud's Influence on Psychology
+
+Let's transition into Freud. Yeah, I actually have a cool little
+tidbit to to to like swing into this. Kick it off. Okay. Yeah. Um,
+it's actually really fascinating. So, Freud Freud went to university
+in Vienna in the mid 19th century. And at the time, like psychology
+didn't really exist, right? It wasn't really a thing. So, Freud had a
+professor. His name was France Brentano. and professor Brenano his
+kind of obsession and the thing that he would eventually become most
+known for uh he was really into Aristotle okay and he loved the kind
+of subjective what we would call today the psychological side of
+Aristotle but he also loved the scientific side as well and at the
+time most mostly Aristotle's scientific stuff was studied and it was
+like the virtue stuff was I guess less prominent but Brano had had had
+a theory which is he believed that you could take Aristotle's
+scientific method and you could potentially apply it to human
+happiness and he called it an an empiricism of the psychology and he
+taught the he taught this idea in his courses and Freud was one of his
+students. Oh, I did not know that. So interesting. This was so this
+would have been late 1800s. So this is 1860s
+1870s. Okay. Yeah. Interesting. I did not know that. Yeah. Yeah. Freud
+um is a fascinating guy to say the least. And yeah, whenever you bring
+him up, uh there's going to be a lot of uh a lot of dicks. A lot of
+dicks come out, right? A lot of lot of dicks and mothers. That's
+right. That's right. To to say he was controversial is an
+understatement. Um he got a lot of things right. He got a lot of
+things wrong. Some fascinatingly wrong and just uh spectacularly
+wrong. But um the mark he left on western thought and on psychology is
+undeniable. You can't you can't deny that. So we would be remiss if we
+did not bring up Freud in all of this. Yeah. There's a few ideas that
+Freud introduced into the larger kind of intellectual culture at the
+time that we need to be aware of for to that are pertinent to
+procrastination.
+
+* Pleasure Principle and Reality Principle
+
+Okay. Okay. So first we want to talk about the pleasure principle
+versus the reality principle. Right. Okay. So Freud uh he thought that
+we are basically just driven by these two principles. One he called
+the pleasure principle which is uh we seek we seek out pleasure and we
+want to avoid pain. Um this is from birth this is just part of our
+nature. Anything that's pleasurable we gravitate towards it. Anything
+painful we avoid it. Very basic. Okay. Then he said as we mature
+though um we mature into what he calls the reality principle where we
+realize that um just indulging in whatever pleasure comes our way is
+can be can be uh detrimental to us especially in the long run. So we
+start to realize this as we mature and actually one of the marks of
+maturity that he saw or that he he outlined was that we live more by
+the reality principle. Right? So again it goes back to this you know
+our evolution like I mentioned previously was such that we will uh
+prioritize pleasure in the immediate uh term over long-term uh
+benefits that that if we delay gratification right so that's the first
+one. Procrastination then can kind of be seen as giving into the
+pleasure principle over the reality principle and this can happen
+chronically or it can happen just in in the moment like that. Okay. So
+that's the first first idea we need to think we need to be aware of
+when it comes to Freud.
+
+* Id, Ego, and Superego
+
+Uh and then he also has if you go back to your psych 101 he has the
+the model of the psyche too. The three-part again the three parts y
+very platonic of him right you have the id ego and super ego. Okay you
+want to go through each one of those for everybody. Okay, so we have
+the id, right? And the id is like this this some people call it the
+lizard brain. I guess that's probably an oversimplification, but it's
+basically your drives for uh a lot of it is for the pleasures that we
+have, eating, sex, you know, whatever joyful experience you might want
+to uh indulge in. Hedenism basically. Yeah. You have the superego then
+though too which is kind of the opposite of the id which is all these
+moral standards that we obtain through socialization in our childhoods
+through the people around us our teachers our parents our siblings um
+we start to form as we as we mature we start to form this idea of what
+it's means to be a good person to do right to be morally superior to
+others or just to act morally out in the world that's the super ego
+and then Freud had other idea of the ego, which is kind of the
+mediator between the two. Like you need to satisfy some of your base
+urges, right? You need to eat and drink and have sex and all of those
+things in order for the species to survive and thrive and and
+propagate. Uh but we also need to temper that um in some way uh with
+our moral understanding of the world. Yeah. And that's the ego comes
+in and says, "Okay, I have a plan how we're going to get satisfied
+both of these." And the whole Freud said when these things were in
+balance and the ego was doing its job then we had mental health and
+whenever it's out of balance we're screwed. Right. Feels very similar
+to the chariot. Very very much the chariot driver with the two
+horses. Like you said Plato he'll come up all throughout western
+thought. He's everywhere and he's everywhere. Yeah. Procrastination
+then kind of through a Freudian lens is giving into like I said giving
+into the id when the id can overpower the super ego or the ego I
+guess. uh and the the super ego is kind of left out uh to dry. That is
+uh you know Freud never uh specifically addressed procrastination but
+a lot of his uh people after him did a lot of his students did the
+psychoanalysts. Yes. Who who were the the Freudian psychologists they
+addressed procrastination through this lens.
+
+* Defense Mechanisms
+
+Another thing uh he brought up too and brought to our awareness I
+think more was the defense mechanisms. Yeah. Okay. Yeah. I was going
+to say cuz doesn't the ego isn't part of the e when the ego is
+mediating between these two things right that the the the social
+obligations and and the c cultural values and versus the anim
+animalistic urges doesn't the ego kind of because like when people
+talk about an ego we usually think of some sort of like selfidentity
+or self-image. Yes. Right. So isn't is the mechanism for mediating
+those two things like is it kind of this mental construction that
+happens like how does that all map out? You mean in terms of uh like
+how the ego mediates that relationship or or Well, I I am I'm
+imagining that the the mediation between those two things. It happens
+through the construction of this self-image, right? It's like this is
+the type of person I am. This is what I how I act in these
+situations. And then once we've constructed that identity, we need to
+protect it. Right. Yeah. So the ego does it very much forms our basis
+of selfidentity. What you're saying and and how we navigate those that
+pull between the two horses, right? The ego is sitting in between uh
+in Freud's view, the ego sits in between those the poles to to be
+morally superior and good and pure versus, you know, a base uh
+creature of nature. Yeah. Right. So yes, the the ego very much
+navigates that and say this is how I act in these certain
+situations. These are here here are my morals. Here are how I get what
+I need out of life and want to. Yeah. So absolutely. Yeah. So I want
+to make a quick point here or quick interjection because I always find
+this super interesting. Like in conventional wisdom or or typical
+parlance, like if you're just hanging out with a bunch of random
+people and somebody's being an you're like, man, that guy's got too
+much of an ego. Yeah. He's got to get rid of his ego, man. Or if you
+go to like a meditation group or you know go to some woowoo, you know,
+incense burning temple here in Malibu, like they'll tell like, "Oh,
+we're here to dissolve our ego or get rid of our ego." It's
+interesting if you actually go back to Freud, you don't want to get
+rid of your ego. That's not what you want. Yeah. It's like your ego is
+actually really important. It's pragmatic. Yeah. Yeah. It's like
+actually you just want to have a good ego, right? Like you want to
+have a functional ego instead of a dysfunctional ego because a
+dysfunctional ego is probably giving in way too much to either the
+social pressures or the anim animalistic urges whereas a functional
+ego is able to balance everything effectively and manage
+itself. Right. Right. And it can manage shame for example too. So yes
+you can there there's good ego to have. Ego is not a bad word in the
+the fian parlance. Right. Yeah. Okay. But it does what what happens is
+when the ego comes under threat. Yes. Uh that can be a problem. So
+this is where the defense mechanisms defense mechanisms come
+in. Okay. Right. So if you um I if there is any sort of uh threat to
+the ego, threat to your selfidentity in in these or threat to your
+your your view of yourself. I'm a good person. I this is how I act in
+these situations. then these defense mechanisms can kick in and
+protect your ego, right? And that's where some problems can come just
+as they relate to procrastination. A couple of common ones are which
+we've already mentioned uh rationalization, right? We rationalize well
+uh one of them is I work best under pressure, which I want to really
+talk about that one. Okay. Um or I need the adrenaline of a looming
+deadline or something like that, right? that that um we rationalize
+our way out of actually taking action towards our
+goals. Yeah. Okay. Another one is intellectualization. Um one I'm very
+fond of which is we've already mentioned this one too. You research I
+need to research this more. I need to just I need more information aka
+this entire podcast. Right. Yes. Yes. Absolutely. I need to I need to
+listen to more podcast. I need to listen I need to listen to a 5 hour
+podcast before I can do this. So yes, that one's very much in our our
+wheelhouse where you you think you just need more information or you
+need to stop and understand it more in some way, right? So that's a
+very common one that that's um I mean as you know like one of one of
+my favorite things to say is is that uh learning more is a smart
+person's favorite way to procrastinate. 100%. And that I mean I think
+a lot of people listening to this will identify I do for sure. So
+they'll relate to that. Uh, another really common one too is just
+denial, which we've already mentioned this one, too. It's like, ah,
+it's not that important. I'm just going to put it off. It's fine, you
+know? Yeah. What's one more day? What's one more day? What's what's
+one workout? What's, you know, that sort of thing. So, those are some
+common ones. What those are designed to do in the Freudian school of
+thought is to protect this ego, the selfidentity that we've
+constructed over time. Yeah. So um the ego sitting in the middle
+trying to balance all these pulls that we have and then all of a
+sudden something comes along to threaten that and we need to protect
+that. That's what the idea of the um uh of defense mechanisms are and
+that's I mean you know for all Freud's flaws I think defense mechanism
+are definitely one of those things that he brought to um the cultural
+conscience that we absolutely needed. The the funny thing about Freud
+to me is is that it's he got the big stuff right. Yeah. He got the
+details horribly wrong. Yeah. And the details are horribly and and not
+only horribly wrong, but like hilariously wrong. So, and and it's
+because they're hilariously wrong. That's what everybody focuses on
+and remembers, but like the ego is just it is such like everything you
+just described is so profound and tracks, right? And it it is like it
+is such an incredible insight into human nature and and not only like
+you know talking about these defense mechanisms and protecting ego
+like not only do we protect the ego we protect our ego as if it is our
+physical body. Yes. Oh yeah. You get you you like revolt back into
+yourself. You you will crunch in you will have phys physiological
+responses to an ego threat the same way you would have responses to a
+physical threat. You will have uh emotional responses to an ego threat
+that track exactly as the emotional responses you would have to a
+physical threat. Right. It is so incredible like such an incredible
+realization. Yeah. Because we all need we all need a sense a
+selfidentity to navigate the world, right? And and so it is very
+threatening. Uh you have this kind of humans have this need um to
+explain things and and make sense of the world. And one way we do that
+is through a selfidentity. And when that gets threatened, that's very
+very scary like you said. So I I do think that that's one of Freud's
+biggest contributions definitely just in psychology in general, but
+around procrastination especially is um when we get defensive and like
+you said, you you you'll feel that in your body. You'll feel your
+yourself recoil um whenever your ego is is threatened in any way. So
+yeah.
+
+* Adopting Habits as Identity
