@@ -4,7 +4,7 @@ layout: page
 title: English Phonetics
 tagline: " dense and terse description"
 permalink: /english/phonetics.html
-categories: [English, Natural Language]
+categories: [English, Natural Language, English Course]
 tags: [phonetics]
 ---
 #+END_EXPORT

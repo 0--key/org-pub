@@ -4,7 +4,7 @@ layout: page
 title: English Phonemics Comparison
 tagline: " discrepancies and affinities with other languages"
 permalink: /english/phonemics_comparison.html
-categories: [English, Natural Language]
+categories: [English, Natural Language, English Course]
 tags: [phonemics, comparison]
 ---
 #+END_EXPORT

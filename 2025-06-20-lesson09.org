@@ -5,7 +5,7 @@ title: Lesson Num.9
 tagline: " stems and derivatives"
 permalink: /english/lesson09.html
 categories: [English Course]
-tags: [lesson08, morphology]
+tags: [lesson09, morphology]
 ---
 #+END_EXPORT
 #+FILETAGS: :morphology:English:
