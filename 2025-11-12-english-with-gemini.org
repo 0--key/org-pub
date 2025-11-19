@@ -1,0 +1,212 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Final Lesson
+tagline: " automate yourself"
+permalink: /english/lesson10.html
+categories: [English Course, Gemini]
+tags: [lesson10, automation]
+---
+#+END_EXPORT
+#+FILETAGS: :morphology:English:
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+STARTUP: showall indent
+#+PROPERTY: vizier-thread-id thread_FlwZd1EcSbvKDe5kU1e07TsD
+#+PROPERTY: vizier-assistant-id asst_mEp1qd4WTGBLpPEImf6cam1K
+#+TOC: headlines 3
+
+* Warming Up - Tongue Twisters
+
+Here are 10 tongue twisters focused on the pronunciation of the letter
+  "L":
+
+
+  1. =Larry the lion likes to leap and lounge lazily.=
+  2. =Lucky lizards like leaping limes.=
+  3. =Lila left the light lit last night.=
+  4. =Lucy loves luscious lemon lollipops.=
+  5. =Little Lily likes licking lemon lollipops.=
+  6. =Long-legged Larry leans lightly on lumpy logs.=
+  7. =Lovely lavender lilies line the lonely lane.=
+  8. =Lee lost his left shoe in the laundry.=
+  9. =Laura laughed loudly at the lazy llama.=
+  10. =Lively locals love lively lilting limericks.=
+
+
+  Practicing these tongue twisters regularly will help improve your
+  fluency and pronunciation of the letter "L".
+
+
+#+include: "2025-04-03-lesson05.org::* LoopBack (20 minutes)"
+
+#+include: "2025-04-03-lesson05.org::* Quotes (65 minutes)"
+
+* Automate Your Tedious Tasks with =Gemini=
+
+** Definitions
+#+begin_quote
+In Gemini, a *context window* is the total amount of information the
+model can process at one time, including prompts and its own
+responses.
+---------
+*Conversation chat* in Gemini is a natural, free-flowing way to
+interact with the AI by asking questions or giving prompts. It allows
+you to have a back-and-forth dialogue where Gemini can build on your
+previous messages, remember the context of the conversation, and offer
+more helpful responses. This feature allows for follow-up questions,
+brainstorming, and collaborative tasks within the same chat thread.
+#+end_quote
+
+** Understanding Conversation Chat and Context Window in Simple Terms
+
+*** =What is Conversation Chat?=
+Think of conversation chat like talking to a smart friend. You
+ask questions or give instructions, and the AI responds in a
+natural way. It's like carrying on a normal chat where both of
+you take turns.
+
+*** How to Use Conversation Chat?
+- Just type your questions, ideas, or anything else you want to
+  discuss with the AI.
+- The AI will reply based on what you said before, so you can
+  keep the conversation going.
+- You can ask follow-up questions or switch topics, and the AI
+  will try to keep up with the changes.
+
+*** What is a Context Window?
+- The context window is like the AI's short-term memory.
+- It's the amount of information the AI can "see" or "remember"
+  at one time during the chat.
+- This includes what you and the AI have said recently (both your
+  messages and the AI's responses).
+
+*** How does a Limited Context Window Affect Chatting?
+- If the conversation gets too long or you give a lot of
+  information at once, the AI may forget things from earlier.
+- It's like when you try to remember too many things at once and
+  start forgetting details.
+- Important points might need repeating if the chat exceeds what
+  the AI can handle at one time.
+
+*** Practical Tips for Using Chat with a Limited Context Window=
+- Keep your questions and information concise.
+- If the chat is getting long, remind the AI of important details
+  to keep it informed.
+- Don't hesitate to repeat or clarify points if needed.
+
+
+
+** Deliberate Practice
+
+***  Personal Vocabulary Elaboration
+How =Gemini= and its chats can automate such task for English
+language learner as:
+
+- Looking for words with the same ~stem~ with their transcription
+  (IPA), meaning (in Tamil, please) and samples of usage (3 per each
+  word).
+
+How the =Gemini= prompt should look like?
+
+#+begin_quote
+Find words related to the stem "___" (replace with your desired
+stem). For each word, provide:
+
+1. The word
+2. Its pronunciation in IPA
+3. Meaning translated into Tamil
+4. Three example sentences showing usage
+
+Here's the first word to start with:
+- [Include an example word if desired]
+
+Please present the information in a clear, organized format so I can
+easily review and learn from it.
+#+end_quote
+
+**** Example prompt for "love":
+
+#+begin_quote
+
+Find words related to the stem "love". For each word, provide:
+
+1. The word
+2. Its pronunciation in IPA
+3. Meaning translated into Tamil
+4. Three example sentences showing usage
+
+Please present the information in a clear, organized format.
+
+
+#+end_quote
+
+------
+=Note: Adapt the prompt above by inserting specific stems you are
+interested in and any particular details you need clarified.=
+------
+
+#+begin_example
+*Expected Output Structure*
+- =Word 1: Love=
+  - Pronunciation: /lʌv/
+  - Meaning (Tamil): காதல்
+  - Examples:
+    1. I love reading books.
+    2. They loved the movie.
+    3. She has a deep love for music.
+
+- =Word 2: Lovely=
+  - Pronunciation: /ˈlʌv.li/
+  - Meaning (Tamil): அருமையான
+  - Examples:
+    1. What a lovely dress!
+    2. They had a lovely time at the party.
+    3. The garden looks lovely in spring.
+#+end_example
+
+ *Continue with other related words in the same format*
+
+*** Grammar Exercises
+
+Here's a step-by-step template for creating a prompt to get English
+grammar information translated into Tamil:
+
+#+begin_quote
+Please explain the following English grammar topic in Tamil:
+
+=Grammar Topic: [Specify the grammatical concept, e.g., "Present
+Simple Tense"]=
+
+I would like:
+1. A detailed explanation tailored for an English language learner.
+2. Simple examples demonstrating the concept.
+3. Key rules summarized for easy understanding.
+
+Make sure to provide the explanation entirely in Tamil.
+#+end_quote
+
+**** Example Prompt
+
+#+begin_quote
+Please explain the following English grammar topic in Tamil:
+
+=Grammar Topic: Present Simple Tense=
+
+I would like:
+1. A detailed explanation tailored for an English language learner.
+2. Simple examples demonstrating the concept.
+3. Key rules summarized for easy understanding.
+
+Make sure to provide the explanation entirely in Tamil.
+#+end_quote
+
+-----
+*Note:* Replace "Present Simple Tense" with any specific topic of
+interest.
+-----
+
+**** Sum It Up
+
+This will ensure you receive a comprehensive explanation of English
+grammar concepts in Tamil, suitable for language learners.
+
