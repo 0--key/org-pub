@@ -1,0 +1,1221 @@
+#+BEGIN_EXPORT html
+---
+layout: page
+title: Jeeves&Wooster
+tagline: " read and recollect"
+permalink: /English/Jeeves_and_Wooster.html
+categories: [English]
+tags: [personal vocabulary, extension]
+---
+#+END_EXPORT
+
+#+STARTUP: showall indent
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t eval:no-export
+#+TOC: headlines 2
+* Episode 1 - Jeeves Takes Charge
+
+This is one of the most shameful cases ever to come before this bench.
+In all my years as a magistrate... I have seldom heard a tale of such
+heinous iniquity.  This... parasite... can think of no better way to
+end an evening's hooliganism on the night of the University Boat-race!
+Can our seats of learning... produce barbarians so lost to decency
+that their highest ambition is to steal a hard-working police
+constable's helmet and make off with it?
+
+- Uh... I...
+- I find you guilty as charged, Bertram Wilberforce Wooster.  And have
+  no alternative... but to fine you the sum of five pounds.  Ah... No
+  buts, Wooster.
+
+- Ah! Ho...
+- No ifs!  Take him away.  Ah... AWAY, I SAY!
+
+----- 
+
+- We're here, guv! Three bob.
+- Morning, Mr Wooster.
+- Thank you. (DOORBELL, GROANS, PERSISTENT RINGING)
+- I was sent by the agency, sir. I was given to understand that you
+  required a valet.
+- Ah...
+- Very good, sir.
+- Uh... Hm.
+- Late night last night, sir?
+- Ah... Mm-hm.
+- Uh... (STIRRING) If you would drink this, sir. It's a preparation of
+  my own invention. Gentlemen have told me they find it invigorating
+  after a late evening.
+- I say... I... I say... You're engaged!
+- Thank you, sir. My name is Jeeves.
+- I say, Jeeves, what an extraordinary talent!
+- Thank you, sir.
+- Could one enquire what...
+- I'm sorry, sir.
+- No, no, of course not. I'm not at liberty to divulge the
+  ingredients, sir.
+- No, of course. Secrets of the Guild and all that.
+- Precisely, sir.
+- Mm-hm! Ha! (SINGS) 47 ginger-headed sailors... Coming home across
+  the briny sea...
+
+-----
+
+- Oh, erm...I say! I say, hello?
+- MAN: Hello?
+- I want to get in.
+- You'll have to come this way. We can't shift him.
+- Oh.
+- I was hoping to have a snifter before lunch.
+- Sound idea! Anyone in the bar?
+- Barmy Fotheringay-Phipps!
+- Is he?
+- Oofy Simpson and Freddie Chalk-Marshall. The Wooster twins, of course.
+- What, Eustace and Claude?
+- You know them?
+- They're my cousins.
+
+- You must be Bertie Wooster!
+- I am! I'm Rainsby. You'd better come in.
+- How do you do?
+- Well, novel, that!
+- It's not right, Mr Wooster. I'm the one the committee's going to blame for this, you know. They can't abide mooses, they can't!
+- Oh, I think it adds a certain whats-it. (SNIFFS)
+- Come on, Rogers, do give me a hand.
+- Oh! Here we go... Dash on!
+- Hi, everybody.
+- Hello, Bertie.
+- Snorty, if you're gonna play with them, play, will you, blast you!
+- Bertie! Cousin Bertie! Did you meet young Dog Face on your way in?
+- I met a Rainsby in the hall with a moose.
+- Elk.
+- Sorry. It's a common enough mistake.
+- It was a mistake pinching it.
+- Where did you steal it from?
+- Don't know, some big museum.
+- In Kensington.
+- I've never been to Kensington.
+- Hello, Barmy!
+- Yes you have, your mother lives there!
+- Oh, THAT Kensington!
+- What do you want it for?
+- It's for the Seekers.
+- And what are the Seekers?
+- It's a club in Oxford. Eustace and I are rather keen to get
+-   in. Rainsby too. But you have to pinch something to get elected.
+- At lunch, you very decently were going to volunteer to stand us.
+- Can't be done, I'm afraid. I've got to have lunch with our Aunt Agatha.
+- Oh, no! Not the Nephew Crusher!
+
+-----
+  
+- Bertie!
+- Aunt Agatha. Young men like you make a person with the future of the
+  race at heart despair.
+- Oh, right.
+- Cursed with too much money... you just waste your time on frivolous
+  pleasures! You are simply an antisocial animal. A drone!
+- Bertie, you must marry! (LAUGHS)
+- Oh, I say, really! Aunt Agatha!
+- Will you be quiet? (DOG WHINES)
+- There, McIntosh! You want someone strong, self-reliant and sensible.
+- No, I don't.
+- To counteract the deficiencies of your own character.
+- And by great good fortune, I have found the very girl!
+- Oh? Who is it?
+- Roderick Glossop's daughter, Honoria.
+- No!
+- Don't be silly, Bertie! (DOG BARKS) Sit down and eat your luncheon!
+  (DOG BARKS)
+- Oh, she is just the wife for you!
+- Oh, really, look here!
+- She will mould you.
+- I'm not a jelly!
+- That is a matter of opinion.
+- Lady Glossop has kindly invited you to Ditteredge Hall for a few
+  days. I told her you would be delighted to come down this afternoon.
+- Oh, what a pity! I've got a dashed important engagement this afternoon.
+- Nonsense! You will go to Ditteredge Hall this afternoon! (SIGHS)
+- Right.
+
+
+-----
+
+- Oh, Jeeves, we shall be going down to Ditteredge this afternoon. -
+  Can you manage that?
+- Will we be travelling by train, sir?
+- By train, yes.
+- People by the name of Glossop. Is that Sir Roderick Glossop, the
+  nerve specialist, sir?
+- That's the one.
+- Very good, sir. Which suit, sir?
+- Oh, this one, I should think.
+- Very good, sir.
+- Don't you like this suit, Jeeves?
+- Oh yes, sir. Huh!
+- What don't you like about this suit, Jeeves?
+- It's a very nice suit, sir.
+- What's wrong with it? Out with it!
+- If I might suggest, if we are to travel by train, a simple, brown Harris Tweed such as this might be more appropriate.
+- Oh, that's absolute rot, Jeeves!
+- Very good, sir.
+- Perfectly blithering, my dear man! Huh!
+- Just as you say, sir.
+- Yes. All right then.
+- Yes, sir.
+- Jeeves, I have to make one thing crystal clear.
+- Yes, sir?
+- I am not one of those who become absolute slaves to their valets.
+- No, sir.
+- Very well. We understand each other.
+- Perfectly, sir.
+
+
+----
+- (WHISTLE BLOWS, GLASS SMASHES) I say! Oh! Steady on! (GLASS SMASHES)
+
+----
+
+- Is that Bingo Little?
+- Me? Yes.
+- That's not Bertie Wooster?
+- It is!
+- I haven't seen you for ages, Bingo!
+- I've been living in the country.
+- Really? Whereabouts?
+- Here, in fact.
+- Why? You hate the country.
+- I got a job tutoring the Glossop kid.
+- What do you do that for?
+- Money, Bertie! Moolah, spondulicks!
+- Oh, well, yes... The only one of the family I know is the girl, Honoria.
+- Oh, Bertie!
+- What?
+- I worship her, Bertie. I worship the very ground she treads on. A tender goddess!
+- Big girl?
+- Sporty.
+- Strong and upright and wonderful!
+- Well yes, as a matter of... Wait a minute!
+- Have you told her?
+- Not yet, I haven't got the nerve. We walk together in the gardens most evenings and it sometimes seems to me there's a look in her eye.
+- Yes, I know that look. Like a sergeant major.
+- Is that the kid?
+- Yes, he's fishing.
+- I'll introduce you, if you like. This is Oswald. Bertie Wooster.
+- Well, well, Oswald, how are you?
+- All right.
+- Nice place, this.
+- It's all right.
+- Like fishing, do you?
+- It's all right.
+- Why don't you shove him in?
+- In the water?
+- Wake him up a bit. She'd never forgive me.
+- She's devoted to the little brute.
+- Great! Scott! I've got it!
+- Listen, Bingo, Honoria's away, isn't she?
+- She's coming back tomorrow. She's coming, my love, my own...
+- Yes, fine. You still want to make a hit with her, don't you, Bingo?
+- Yes!
+- Bless you, my child. You can do it!
+- How, Bertie, how?
+- It's very simple.
+
+----
+
+- (LAUGHTER) It's all in the wrist action. You get the flip forward
+  first and disengage the chin strap. That's where Barmy
+  Fotheringay-Phipps went wrong.
+- Is that a person?
+- Barmy? Well, there's some dispute. Ha, ha!
+- But what he did was to pull straight back on the helmet and the policeman came with it.
+- But he must have been hurt!
+- Barmy? No, just a couple of bruises.
+- I think my wife was referring to the policeman.
+- No, no, no, no! Not a bit of it! They enjoy it. Like foxes!
+- Foxes?
+- How they enjoy being hunted.
+- But foxes are vermin, Mr Wooster. Nasty, cunning creatures. Like cats.
+- LORD GLOSSOP: Lady Glossop and I dislike cats.
+- LADY GLOSSOP: We hate them! Nasty, cruel beasts!
+- LORD GLOSSOP: Now let me try to understand, Mr Wooster. Policemen, you say, enjoy having their helmets stolen?
+- Well...yes. I think they try and enter into the spirit of the thing, don't you think? Oh, yes, yes, yes.
+- But what is the point of it?
+- Point? Er, well...it's tradition really. It's part of the rich tapestry of our island's story, it's, um...
+- Completely stupid!
+- You mustn't be rude, Oswald.
+- No, no, that's all right. He's young. He'll learn.
+
+
+----
+
+- BERTIE: What sort of a day is it, Jeeves?
+- Extremely clement, sir. With the promise of further fine weather to come.
+- Excellent! Just the day for pushing cheeky blighters off bridges!
+- I couldn't say, sir. Shall I lay out our grey flannel trousers and
+  the checked sports coat?
+- Er... Yes, yes, yes. I expect you're wondering what I meant by that last remark, eh?
+- I should be most interested to know, sir.
+- Yeah, well, right, well, I've had rather a stunning idea, Jeeves.
+- Indeed, sir?
+- My friend Bingo Little is... well, more than a little smitten with
+  the daughter of the house.
+- Miss Honoria Glossop, sir?
+- Yes, Jeeves, Miss Honoria Glossop. How do you know about Honoria Glossop?
+- There was some discussion in the servants' hall last evening,
+  sir. I'm given to understand she is a healthy young lady, sir.
+- Yes, well, erm, that's a very good way of putting it, Jeeves.
+- Thank you, sir.
+- And, er... Mr Little is enamoured of her, sir?
+- Indeed he is. The trouble is the poor sap can't bring himself to pop
+  the question.
+- A common enough predicament, sir.
+- Well, possibly, Jeeves. Fired by the fact that Aunt Agatha has me
+  earmarked for Honoria - unless I can lay her off onto someone else,
+  I have come up with a foolproof solution to the problem.
+- This is very gratifying news, sir.
+- Yes. We thought so, Bingo and I. What it is, is this: Miss Glossop's
+  young brother, Oswald, is by way of being the apple of his sister's
+  eye.
+- Human nature is very mysterious, sir.
+- Yeah, well, my thoughts precisely. Anyway, my plan is to lure
+  Honoria to the vicinity of the bridge and then push the little
+  blighter into the lake! Mr Little will then pop out from the
+  bulrushes where he's been waiting, rescue Oswald, and have undying
+  love showered upon him by a grateful sister.
+- Ahem.
+- What's the matter, Jeeves?
+- I couldn't advise it, sir.
+- Couldn't advise it? What do you mean, couldn't advise it?
+- It's just my opinion, sir, but, your plan has too many
+  imponderables.
+- No, no. Only Oswald's going to be imponderable! (GIGGLES) In-pond-erable!
+- Thank you, sir, yes. Ahem. And if I might say so, sir, any undertaking that requires the presence of four people in one place at the same time, while two of them are unaware of the fact, is fraught with the possibility of mishap, sir.
+- Oh, balderdash, Jeeves! Not to say, flapdoodle!
+- Very good, sir.
+- When you've been a little longer in my employ, you will come to
+  understand that my chums rely heavily on my knowledge of human
+  nature and the conduct of their affairs.
+- Just as you say, sir.
+- Not to mention my organisational powers and just plain... thingness.
+- Will that be all, sir?
+- Yes, that'll be all, thank you. Just, erm... No, that'll be all,
+  thank you, Jeeves.
+- Very good, sir.
+
+
+----
+
+- Good morning, Mr Wooster!
+- Good morning, Lady Glossop!
+- Do sit down.
+- Oh. Mm. I...was looking for Oswald.
+- Oswald? He's probably getting ready to go fishing, I should think.
+- At least, I hope so!
+- You hope so?
+- Yes, well, fishing is a good healthy pursuit for a young
+  lad. Character building, battling against the forces of Mother
+  Nature! Hugh Potter once asked Boko Fittleworth to his place for
+  some fly-fishing. Boko couldn't fathom why anyone would want to
+  catch flies! Still, that's Boko for you.
+- Do you always breakfast at this hour, Mr Wooster?
+- Good Lord, no, no, no! Only if I get up early.
+- Sir Roderick was on his way to London at eight o'clock.
+- Really? He had an urgent call from the Bishop of Hackney.
+- Ah! The old Bish got a few pages stuck together, did he?
+- My husband is not in the book trade, Mr Wooster. He is a well-known
+  nerve specialist.
+- Yes, that's what I said. And dashed interesting work it must be too!
+- Do you...work, Mr Wooster?
+- What, work...as in honest toil?
+- Yes.
+- Hewing the wood and drawing the old wet stuff and so forth?
+- Quite.
+- I've known a few people who worked - absolutely swear by it, some of
+  them. But... Boko Fittleworth almost had a job once.
+- Who is this Boko Fittleworth you keep talking about?
+- Boko? You don't know Boko?
+- No.
+- Good Lord, I thought everybody knew Boko!
+- I do not.
+- Looks like a parrot with the moult.
+- No. Once put his shirt on Silly Billy to win the Cesarewich and Lady
+  of Spain beat him by a nose.
+- I have never met Boko Fittleworth.
+- I couldn't recommend it anyway. He's an acquired taste, Boko. At
+  least that's what his mother says.
+- You were telling me how he once got a job.
+- Boko's got an uncle in the City - he brokes stocks or something, he
+  offered Boko a job and he accepted it. I don't think either of them
+  was firing on all cylinders at the time. Anyway, chaos obviously
+  ensued until Boko saw sense and gave it all up. We had to take it
+  turns to go round and calm him down.
+- How would you...ever support a wife, Mr Wooster?
+- Well, it depends on whose wife it was. Some gentle pressure beneath
+  the elbow when crossing a busy street normally fills the bill!
+- Bertie!
+- Bingo!
+- She telephoned!
+- She phoned you, eh? That's good, isn't it? Shows a friendly spirit.
+- She didn't phone ME. I picked the phone up - I was standing by it.
+- What did she say?
+- She said, "Let me talk to someone with a brain."
+- Ah! But it was friendly, the way she said it. (OSWALD GIGGLES)
+- Ow! Go and start your Latin!
+- Did she say what time she'd be back?
+- In about an hour, she said.
+- And when was that?
+- About an hour ago. She's bringing a friend, Daphne Braithwaite.
+- Very well then, 12 o'clock.
+- What?
+- 12 o'clock. The bridge. Oswald!
+- Oh, right, yes. We're still on for that then, are we?
+- Yes. You still want to bring Honoria to her knees, don't you?
+- Oh, Bertie, she's such a wonderful person. She has...
+- Fine. 12 o'clock, you'll be hidden in the bulrushes by the bridge.
+- Oh, Bertie, do you really think...
+- I'll see you later. Oh, leave the bags, Birkett can get them. (SOUNDS HORN)
+- Birkett! Come inside. I want to show you some of the things I shot last week.
+- Hello, Honoria!
+- Oh, it's that Bertie Wooster. What's he doing here?
+- What are you doing here, Bertie?
+- Oh, you know... This and that, hither and yon.
+- This is my friend, Daphne Braithwaite.
+- How do you do?
+- Bertie's a wastrel.
+- Oh, goody!
+- That's what his Aunt Agatha says.
+- Come on, Daphne!
+- See you later... Bertie.
+- Oh, will I? Yes. Yes, er, see you later, Daphne.
+- Oh, I say! Honoria!
+- What?
+- Will you come for a walk with me?
+- What?
+- You know...a walk.
+- Birkett, the bags.
+- What for?
+- Well, uh...
+- I want to tell you something.
+- Really? Now?
+- No, no, uh... - In about half an hour.
+- Right.
+- No! That's when...that's when. That's when.
+- In about 20 minutes, by the bridge.
+- Why in 20 minutes?
+- It will be better then. (CELLO PLAYS)
+
+
+----
+
+
+- Hello, Mummy. I'm back.
+- Did you have a nice time at the Braithwaites?
+- Lovely, yes. I've brought Daphne back with me.
+- Close the door a moment, Honoria. Come and sit down. I have been
+  talking to Mr Wooster.
+- Yes, I saw him. What's he doing here?
+- Mrs Gregson sent him.
+- What on earth for? He doesn't shoot. He doesn't hunt.
+- It is your birthday next week, Honoria.
+- I hope she didn't send him down as a present. (LAUGHS)
+- You will be 24.
+- Oh, no.
+- It is a good family, Honoria.
+- Oh, honestly, Mummy. He doesn't work, even.
+- He told me this morning, he has been thinking about work. He is not
+  all your father and I would have hoped for for you, I agree,
+  but... surely you could make something of him?
+- Is he...keen at all?
+- Oh, I'm sure he is. (LAUGHS)
+- You know how these young men try to hide their feelings.
+
+
+----
+
+- (TWIG BREAKS) Keep still, you ass, she'll see you. (SNIFFING) Don't
+  sniff. Right. Here she comes. Ah-ha!
+
+
+---
+
+- Well? Yes... (CLEARS THROAT)
+- I was just thinking...
+- What?
+- Yes. This may sound a bit rummy and all that, but there is someone
+  here who is frightfully...in love with you, and, er, so forth. A
+  friend of mine, as a matter of fact.
+- Well, why doesn't HE say so?
+- Simply hasn't got the nerve. Worships the ground you tread on, and
+  all that, but just can't whack up the ginger to tell you.
+- This is very interesting.
+- Is it? Hmm. Yeah, well, anyway, that's the posish. So just bear it in mind, eh?
+- Oh, Bertie, how funny you are. (LAUGHS) I wish you wouldn't make all
+  that row. You're scaring the fish away.
+- Oswald, you shouldn't sit on the bridge like that. He might easily fall in.
+- Might he? Well, I'll go and tell him.
+- Hello. Fishing, eh? Here, watch out.
+- Aaagh!
+- Oswald! Help! Help him! Help!
+- What are you doing? Help! (YAPPING)
+- Oswald! Oswald. Are you all right?
+- He pushed me. He's mad.
+- Now you run along and change your clothes. Honoria, I... (LAUGHS)
+- Oh, Bertie, you are funny. First proposing to me in that
+  extraordinary round about way, and then pushing Oswald into the lake
+  to impress me by saving him.
+- No, no, no...
+- Now you run straight up to the house and change your wet clothes.
+- No, no, I...
+- Go on!
+- Oh, Bertie! Bertie!
+
+
+----
+
+- Just the man I wanted to see.
+- Bertie, a wonderful thing has happened.
+- Blighter! What became of you? Do you realise...
+- Your clothes are all wet.
+- Bertie, I was just on my way to hide in those rushes when the most extraordinary thing happened. I saw the most radiant and most beautiful girl in the world. Her name was Daphne Braithwaite, Bertie. I knew at once that what I imagined to be my love for Honoria Glossop was a mere passing whim. Daphne's so wonderful, Bertie. Like a tender Goddess. She's so sympathetic, Bertie. Daphne! And her handicap's only six.
+- It's funny how these things turn out, don't you think, Jeeves?
+- Indeed, sir.
+- Before we get Bingo under starter's orders even, there he is falling in love with his blessed six handicapper. Still, at least he's been saved from the frightful Honoria.
+- True, Sir, but if I might say so, Sir... at a cost to yourself which might have caused lesser men to blench.
+- Oh, come, Jeeves. A slight dousing is no more than a chap might do for any chap under the circs.
+- It's not the dousing to which I was referring, Sir, but to the engagement.
+- Engagement?
+- I was downstairs a few moments ago, Sir, and could not help but overhear Miss Glossop announcing your engagement to her.
+- Is it getting chilly in here, Jeeves?
+- No, Sir.
+- Must be...my imagination. (LAUGHTER)
+- Bertie was so sweet, Mrs Gregson, and so funny.
+- I find it difficult to envisage.
+- I shall be able to make something of him, I'm sure.
+- Well, he's led a completely wasted life up to the present.
+
+- I say!
+- Be quiet, Bertie.
+- But there's a lot of good in him.
+- No, there isn't, actually.
+- It simply wants bringing out. It's time I took you in hand... Bertie Wertie.
+- You want someone to look after you.
+- No, I don't, really, I don't.
+- Yes, you do.
+- Bye-bye, Bertie. Goodbye Mrs Gregson.
+- Goodbye.
+- Bertie...
+- Yes, Aunt Agatha?
+- Dear Honoria doesn't know it, but a difficulty has arisen about your
+  marriage.
+- By jove! Really?
+- Oh, it's nothing at all, of course, it's only a little
+  exasperating. The fact is, the Glossops are being a little
+  troublesome. Sir Roderick particularly so.
+- Thinks I'm not a good bet, eh? Well, perhaps he's right -
+- Pray, don't be so absurd! It's nothing as serious as that. Bertie, a
+  nerve specialist with his extensive practice, can hardly help taking
+  a rather warped view of humanity.
+- You mean...he thinks I've got fewer marbles than advertised?
+- No, no, no. He, er...just wants to satisfy himself that you
+  are...completely normal.
+- Well, of all the blessed nerve! I mean, I'm not a chap to take
+  offence -
+- So, I have said that you will give him dinner this evening.
+- Well, if he thinks I'm a raving loony -
+- No, don't be silly, Bertie. And remember, the Glossops drink no wine.
+- Yes, Aunt Agatha, I remember.
+- And remember, Sir Roderick can only eat the simplest of foods, owing
+  to an impaired digestion.
+- Yes, I think a dog biscuit and a glass of water will meet the case.
+- Bertie! That is precisely the sort of idiotic remark that would be
+  calculated to arouse Sir Roderick's strongest suspicions. He is a
+  very serious-minded man.
+
+- The Duke of Ramfermline's house, Bennett.
+- Well done, Claude!
+
+- My hat!
+- Where did you get that hat? Where did you get that hat? Where did
+  you get that hat... (DOORBELL)
+- You're not Bertie.
+- He's better looking than Bertie.
+- Very kind of you to say so, sir.
+- We're his cousins. I'm Claude.
+- I'm Eustace.
+- I'm not his cousin. I'm Rainsby.
+- I'm delighted to meet you, Lord Rainsby. Won't you come in?
+- What's your name?
+- Jeeves, Sir. I'm Mr Wooster's new valet.
+- The last one used to pinch his socks.
+- Mr Wooster is not in, but I'm sure he would like me to offer you
+  refreshments.
+- That's jolly decent of him, Jeeves. He has some Bollinger '27, which
+  is particularly fun. Be a shame to let it go off.
+- Jeeves?
+- Yes, Sir?
+- We've got some things down in the taxi which we want to take back to Oxford tonight. But the last train's not til 10.10.
+- I say... Are we invited to dinner?
+- I regret not, Sir.
+- Anyway, we were going to ask Cousin Bertie if we could leave some things here until the train.
+- I'm sorry, Sir, I shall have to ask Mr Wooster's permission first. What manner of things might they be, Sir?
+- A top hat.
+- A fish.
+- And a couple of cats, of course.
+- Cats, Sir?
+- Perhaps Mr Wooster would not object.
+- Oh, well done, Jeeves. Dogface, go and get the stuff and bring it up.
+- Where is Bertie, anyway?
+- He had an important meeting with Mr Fotheringay-Phipps, Sir.
+- Barmy Fotheringay-Phipps?
+- I believe that is the soubriquet, yes.
+- Has the IQ of a backward clam?
+- It's my understanding that amongst fellow members of the Drones Club, he's considered a dangerous intellectual.
+- That's the one! Mr Wooster informed me he is attending the weekly meeting of the Drones Club Fine Arts Committee.
+
+- No. Seven. Four.
+- What's a king count as?
+- Ten.
+- What's a ten count as, then?
+- Ten. Tens and all picture cards count as ten.
+- How long have you been playing this game, Bartley?
+- About an hour-and-a-quarter.
+- Anyhow, that's a leaner. Leaners only count half.
+- Oh, good shot, Bertie. Well, my game, I think.
+- You've not scored a hundred - yet, have you?
+- 500.
+- Oh, well, I thought we were playing to a hundred.
+- Let's have another drink at the bar.
+- Can't be done, I'm afraid. - Got people coming to dinner.
+
+- Toodlepip.
+- What do sevens count as? (PIANO PLAYING)
+- ♪ This is a story about Minnie the Moocher ♪ She was a lowdown hoochie coocher ♪ She was the roughest, toughest frail ♪ But Minnie had a heart as big as a whale ♪ Ho-de-o-de-o-de-o ♪ Ho-de-o-de-o-de-o ♪ Rah-de-rah-de-rah ♪ Rah-de-rah-de-rah ♪ Hee-de-hee-de-hee-de-hee ♪ Gee-de-hee-de-hee ♪ But Minnie had a heart as big as a whale...♪
+
+- I can't help feeling, Jeeves, I could do better justice to this song if I understood what it meant.
+- Oh, I doubt that, Sir.
+- All this ho-de-ho-de-ho stuff is pretty clear, but what do you suppose a hoochie coocher is, exactly?
+- It's difficult to say, Sir. Unless it's one of the demotic American words for ardent spirits. I'm thinking of hooch. A word of Eskimo origin, I'm informed.
+- Tch! You bally well ARE informed, Jeeves. Do you know everything?
+- I really don't know, Sir.
+- Hmm. ♪ She had a dream about the King of Sweden ♪ He gave her things that she was needin'... ♪
+
+- Now, you see, that is clever, Jeeves.
+- Really, Sir?
+- That line about the King of Sweden and things she was needin'. Yes, His Majesty King Gustav, seems to have been extraordinarily generous to the young lady.
+- No, no, no. I meant the fact that it rhymes. You see. Sweden. Needin'.
+- Almost, Sir. ♪ He gave her a home built of gold and steel ♪ A platinum car with diamond-studded wheels ♪ Ho-de-o-de-o-de-o... ♪
+- I say, Jeeves, could you lend a hand here, do you think?
+- Very good, Sir.
+- It's a bit difficult being just the one of me. It's a sort of call and response thing. I sing ho-de-ho-de-ho and you have to go ho-de-ho-de-ho back.
+- You understand?
+- I think so, Sir.
+- Right, let's try it. ♪ Ho-de-ho-de-ho-de-ho.
+- Ho-de-ho-de-ho, Sir.
+- ♪ Rah-de-rah-de-rah.
+- Rah-de-rah-de-rah, Sir.
+- ♪ Hee-de-hee-de-hee...
+- Hee-de-hee-de-hee, Sir.
+- Yes, erm... I don't mean to be overly critical, Jeeves, - I mean, I know you're doing your best.
+- Thank you, Sir.
+- I just think that perhaps we could dispense with the Sir at the end of every line. It shows the proper feudal spirit and all that, but it does play merry hell with the rhythm thing.
+- Very good, Sir.
+- All right. ♪ Ho-de-ho-de-ho.
+- Ho-de-ho-de-ho.
+- ♪ Hee-de-hee-de-hee.
+- ♪ Hee-de-hee-de-hee.
+- ♪ But Minnie had a heart as big as a whale.
+- Should I sing Minnie the Moocher to the Glossops this evening?
+- I shouldn't think it advisable, Sir. I've not heard that Sir Roderick is musical.
+- Ah, no, but Lady Glossop is.
+- There is also that to be considered, Sir.
+- What are you giving us for dinner tonight?
+- Consommé, Sir. A cutlet and a savoury. And some lemon squash. Iced.
+- Well, I don't see how that can harm them. Just don't get carried away with the excitement of the thing - and start bringing in coffee.
+- Very good, Sir.
+
+- (DOORBELL) Right. Stand by, Jeeves. Thinks I'm barmy, does he? We'll show him, eh, Jeeves?
+- Indupitably, Sir.
+- Just don't let your eyes go glassy or you'll find yourself in a padded cell before you know where you are. What-ho, what-ho, what-ho!
+- Evening, Mr Wooster.
+- Good evening, Jeeves. Good evening, Lady Glossop.
+- We're a little late, I'm afraid. Sir Roderick was detained at the Duke of Ramfermline's.
+- Ramfermline? Yes, he, erm... He's off his rocker, isn't he?
+- There's nothing seriously wrong with His Grace. Just his footman failed to give him his sugar this morning.
+
+- Sugar?
+- He likes a lump of sugar first thing. His Grace is under the impression that he is a canary.
+- Oh, well, a mistake anyone might make.
+- And as he didn't get his sugar, he flew into a temper, and tried to perch on the picture rail.
+- Well, it's not unreasonable. I rather feel like doing that in the mornings when I don't get my tea.
+- Right, so shall we go through? Er, now, if I sit in the middle, Lady Glossop, would you like to sit on my right? And Sir Roderick on my left. Is that right? No, wait a minute. No, perhaps Lady Glossop ought to sit in the middle. She's the only lady. Then we can sit either side. Shall we try that? Yes, Lady Glossop in the middle. Yes, if you'd go on the other side, Sir Roderick. I'll sit here. No, wait a minute. That's not right, is it? No, Sir Roderick ought to sit in the middle. He's the only knight. Distinguished gent and all that. No, we're getting there, we're getting there. Sir Roderick here. No, hold on, hold on. Can't have husband and wife sitting together. I'll sit in the middle, yes, and Sir Roderick on that side, and Lady Glossop on this side, if you wouldn't mind. There we go. Hold on, we're back where we started, now.
+- Mr Wooster!
+- Hello?
+- Let...us...sit...down!
+- Oh, right, yes. Good idea. Phew! I'm worn out.
+- Lemon squash, anyone?
+- No, thank you.
+- Sir Roderick?
+- Thank you.
+- I say, Jeeves, that soup doesn't look at all bad.
+- Thank you, Sir.
+- So, Sir Roderick. This Ramfermline fellow. Does he get dressed up in yellow feathers and all that? I know I would if I thought I was a canary. Pretty polly! I mean, I'm jolly interested in people who get the jim-jams, because some of my best friends - (MIAOWING)
+- Hush! (MIAOWING)
+- Do you keep a cat, Mr Wooster?
+- A cat? No.
+- I had the distinct impression I heard a cat mewing, either in this room or very close at hand.
+- No. It's probably a taxi or something in the street.
+- A taxi, Mr Wooster?
+- Yes, well, taxis squawk a bit, don't they?
+- Squawk?
+- Yes, rather like cats.
+- Lady Glossop and I have a particular horror of cats.
+- Oh, well, there you go, then. I don't much like taxis.
+- M-m-my husband had an unfortunate experience with a taxi only this afternoon.
+- Indeed I did. I was about to go to the Duke of Ramfermline's house -
+- Or cage, as I expect he likes to call it!
+- Anyway, I was sitting innocently in my car when my hat was snatched from my head. As I looked back, I perceived it being waved in a kind of feverish triumph from the interior of a taxi cab.
+- Hmm! What an extraordinary thing. Must have been some sort of practical joke, I suppose.
+- I confess, I failed to detect anything akin to comedy in the outrage. The action was, without question, that of a mentally-unbalanced subject. (MIAOWING)
+- Mr Wooster! What is the meaning of this?
+- Eh?
+- There is a cat close at hand. It is not in the street.
+- Look, I have not got a cat, I tell you. All right. I'll get Jeeves in here. (RINGS BELL) (MIAOWING)
+- There! I can't bear it. I simply can't bear it.
+- No, look, it must be Jeeves.
+- Jeeves?
+- You called, Sir?
+- Er...were you making a noise like a cat?
+- No, Sir. Will that be all, Sir?
+- No, it will jolly well not be all, Jeeves. Are there any cats in the flat?
+- Only the three in your bedroom, Sir.
+- What do you mean, only the three in my bedroom?
+- The black one, Sir, the tabby and the small lemon-coloured animal.
+- No, no, no. Look, I have not got a cat. I have never had a cat. I had a dog once, called Melba, because he used to sit so close to the wire.
+- No, look, don't run away. No, No. It's all right, my dear.
+- Now, stand back, Sir, stand back. I fancy, Sir, that the animals might have become exhilarated at discovering the fish in Mr Wooster's bedroom.
+- Fish? In his bedroom?
+- Fish?
+- Be brave, Delia.
+- My coat, Sir.
+- Now, look, I'll prove it to you. I'll prove that there are no cats in my bedroom. (MIAOWING)
+- (SCREAMS) You're mad, Sir, you're mad! I knew it! You're out of your pram, Sir! (MIAOWING)
+- Your hat, Sir Roderick.
+- I didn't have a hat.
+- This is the hat that you snatched from my head!
+- He did it, Roderick! He stole your hat!
+- Back slowly towards the door, dear. Don't make any sudden movement or do anything that might excite him.
+- Now, look, here -
+- Back, Sir! Back, I say! Back!
+- I'll see if I can recover our umbrella, Sir.
+
+- (DOORBELL) Those weren't my cats I saw legging it down the stairs, were they?
+- And what were they doing in my bedroom?
+- Your man, whatsisname, said it would be all right.
+
+- Oh, he did, did he?
+- I was just coming to collect them.
+- Well, they've dashed-well gone.
+- Oh, well, can't be helped, I suppose.
+- What was it for? It was that club, was it? The Searchers...?
+- Seekers, yes.
+- I'll take the hat and the fish, anyway.
+- I'm afraid the cats have eaten the fish.
+- They wouldn't eat a hat, though.
+- No, the chap you pinched it from was dining here tonight. He took it.
+- No cats, no fish, no hat.
+- Well, sorry, but there you are.
+- Well, thank you.
+- Goodbye.
+- Goodbye.
+- I say, I hate to ask you. Couldn't lend me a tenner, could you?
+- A tenner? What for?
+- I've got to bail Claude and Eustace out. They've been arrested.
+- Arrested?
+- They got a bit above themselves. Tried to pinch a bus.
+- And they expect me to provide £10 to bail them out?
+- They did rather, yes.
+- You do realise that the people who were dining here tonight - were my prospective in-laws?
+- No, I didn't. Congratulations.
+- Well, because of you, they now believe me to be a certifiable lunatic, and determined that I shall never... marry...their daughter.
+- Oh. Frightfully sorry.
+- Why don't we make it £20. Bail them out and buy them a drink before you pour them onto the train.
+- I say, that's jolly decent of you.
+- No, don't say a word.
+- No, really, I insist.
+- Thank you.
+
+- (EXHALES, GARGLES) This was all your doing, wasn't it, Jeeves?
+
+- Sir?
+- You worked the whole thing, didn't you, with the Glossops?
+- Well, if you'll pardon the liberty, Sir, I doubt if the young lady
+  would have been entirely suitable for you.
+- What a wheeze, you knowing all about the Glossops' horror of
+  moggies. I must say, Jeeves, you're a bit of a marvel.
+- Very good of you to say so, Sir.
+- Will that be all, Sir?
+- Yes, thank you, Jeeves.
+- Breakfast at the usual hour, Sir?
+- Yes, thank you, Jeeves.
+- Good night.
+- Good night, Sir.
+
+
+* Episode 2 - Bertie Is in Love
+
+- Ah, Jeeves. How is the little chap this morning?
+- Distressingly willful, sir.
+- Oh, well, we must look on the bright side, Jeeves. We must think of
+  the untold goose we have done ourselves by nannying the beast until
+  Aunt Agatha has finished her inspection of the continent.
+- True, sir.
+- Um, pardon me for asking, sir, but are you proposing to appear in
+  public in those garments?
+- Well, certainly, Jeeves, but uh bit vivid, do you think?
+- Not necessarily, sir.
+- I'm told that Mr. Freddy, he's a riot flower due often appears on
+  the music hall stage in comparable attire.
+- But no, no, no, no, no, no. Buts, Jeeves, I happen to think very
+  highly of them. Now then, yes, we must be making tracks. I tea off
+  at 11:30.
+- Good luck today, sir.
+- Oh, thank you, Jeeves.
+- Yes, chiefs. I rather think that today you will be proud to see the
+  young master sail through to the quarterfinals at the very least of
+  the Drones Club annual knockout golf tournament.
+- This is indeed good news, sir.
+- You see, Jeeves, my match is against Barmy Fungy Fipps. Being drawn
+  against him is generally considered to be the golfing equivalent of
+  a walkover.
+- I see, sir.
+- I hope Bobby Wickham will be amazed of my exploits on the golf
+  course today too, Jeeves.
+- May I inquire as to why you are so desirous of impressing Miss Wickham?
+- Didn't I tell you, Jeeves? I'm in love with Miss Wickham.
+- Sir, there's no need to say it like that.
+- Jeeves. You're wrong about Miss Wickham.
+- Oh, if you say so, sir.
+- Right, chiefs, this is the time for plain speaking. Just what
+  exactly is your kick against Miss Wickham? I insist.
+- Well, sir, although Miss Wickcham is a very charming young lady.
+- Exactly, Jeeves. You speak an imperial court. What eyes?
+- Yes, sir.
+- What hair?
+- Very true, sir.
+- What luckiness?
+- Precisely, sir.
+- What exactly do you mean precisely, sir?
+- Well, sir, it is that very quality of spa which to my mind debars
+  Miss Wickcham from being a matrimonial prospect for a gentleman of
+  your description.
+- And what do you mean a gentleman of my description?
+- Miss Wickham, in my opinion, sir, is too frivolous. Whenever I see
+  Miss Wickham, I know that trouble cannot be far behind. In order to
+  qualify as Miss Wickham's husband, a gentleman should be possessed
+  of a commanding personality and considerable strength of character.
+- Exactly, Jeeves. Condemned out of your own mouth.
+
+----
+
+- What? Oh, Bobby. Barmy.
+- Hello, Bertie. Didn't know you'd arrived.
+- Well, I hadn't until now.
+- Of course. I didn't arrive somewhere once. Most extraordinary thing.
+- Are you in mourning for someone?
+- Yes, rather rather natty, eh? Jeeves doesn't like them, but then of
+  course Jeeves is notoriously hidebound in the matter of leg.
+- I was on my way there and something happened. I can't remember what
+  exactly.
+- Well, you look after the hound, won't you, Bobby?
+- Of course, Bertie.
+- Right. Looking forward to the match, Bobby.
+- I'll say I've got this wonderful new gadget from Lily White. You
+  wind it up and clip it onto your club and it buzzes to tell you when
+  to start your down swing.
+- Not bad. Good shot, Barmy.
+- Thank you, Bertie. Have you been taking lessons, Barmy?
+- No, it's this. What's it? Thank you, George. Works marvelously,
+  don't you think?
+- Very good, yes.
+- Macintosh. Quiet. Macintosh. Sorry, Bertie. Sorry. Sorry.
+- Right now, what I'm going to do here, Jeeves, is just keep it low,
+  drill it straight out through the trees, quail high. Indeed, and
+  then dog leg it around the wood and let it drift onto the grain with
+  just enough backspin to bring it up level with a pin. That might
+  might even plop straight into the hole, Jeeves.
+- That would seem to be ideal, sir.
+- That's finesse, you know.
+- Aptly put, sir.
+- Splendid shot, Mommy. Good shot, Mommy. Oh, Bertie, I'm sorry. Come
+  here, Macintosh.
+- Perhaps we are not keeping our eye on the ball with sufficient
+  assiduity.
+- It's that blasted dog, Jeeves. Every time I look at the ball, it
+  starts yapping.
+- Good dog, Mintosh. Good dog.
+- Good shot, Bertie.
+- Thank you, Barmy.
+- Oh, Macintosh is not a bone. Come here. Come here, Macintosh. Good.
+- You ask me, Jeeves, that animal is in the pay of the Fungy Fipps.
+- There you are, Dees. The old touch coming back.
+- Should I put you down for 12 there, sir?
+- No. No. Nothing can make me disclose my secret.
+- You have to tell us, mother. Who is Oriana's father?
+- Never.
+- Yes. Yes. Who is my father? Do you think I can go and living with
+  this hanging over me? It's a living hell, I tell you.
+- Don't he say nothing, Mrs. Warminster?
+- What the devil has it got to do with you, old Elias?
+- Well, hello Lady Wickham. Hello, Sir Cufford. Hello, Tiffy. How are
+  you, young man? I hear you made a dog's breakfast of Goth this
+  morning.
+- Oh, he was an absolute scream.
+- Thank you, Bobby. I shall do my best to be the game and popular loser.
+- Do such a stick, Bertie. It was fun.
+- Golf isn't intended to be fun.
+- Roberta, we're just reading my new play. Mr. Worcester, would you
+  care to join us?
+- H, no, thank you. I've got to take the Hound for a walk.
+- I'll come with you.
+- Oh, Bobby, who's going to read Ariana?
+- Won't be long.
+- Could you read Oriana, Mr. Glossero?
+- Oh, right. Yes. Um, what the devil has it got to do with you, old
+  Elias? He knows. He must know. How does he know? May.
+- But to lose like that to Barney of all people. They nearly died
+  laughing in the refreshment tent.
+- It's no laughing matter, young Bobby.
+- No. No. I know, Bertie. But I've got an idea.
+
+----
+
+- I warn you that what I'm about to say, Jeeves, is going to make you
+  look pretty silly.
+- Indeed, sir.
+- This morning, if I remember rightly, you stated that Miss Wickham
+  was uh frivolous, volatile, and generally lacking in seriousness. Am
+  I correct?
+- Quite correct, sir.
+- Yes. Well, this afternoon I went for a walk with Miss Wickcham, and
+  she has suggested to me the ripest, brainiest scheme for getting
+  back at young Barmy that anyone could possibly imagine.
+- Getting back at him, sir. H one wonders if this is quite the
+  sporting spirit. Eh, one merely wonders, sir.
+- No, no, no, no. This is the Worester spirit, Jeeves. Unsporting
+  would be me reporting that blasted buzzer thing to the
+  committee. No, this is strictly man to man.
+- Very good, sir.
+- Anyway, it appears that at the school where Miss Wackham was
+  educated, it was from time to time necessary for the right thinking
+  element to slip one over certain of the base of sort. Do you know
+  what they did, Jeeves?
+- No, sir. I don't.
+- No. Well, they used to take a long stick and follow me closely here,
+  Jeeves. They used to attach a darning needle to it. And then at dead
+  of night, they would sneak privly into the party of the second
+  part's cubicle, and they would poke the needle through the bedcloth
+  and puncture the water bottle. Girls are so much subtler in these
+  matters than boys, Jeeves.
+- I'm sure you must be right, sir.
+- And this this is the girl that you call frivolous.
+- Yes, sir.
+- I do believe well anyone who could think of a weas like that is my
+  idea of a help meet. Now have you got any idea where young Barny
+  sleeps?
+- I believe he is currently installed in the Motrum zone.
+- Because you come to me with same love and hold my hand and lift my
+  eyes above a wide world of hope and joy I see Because you come to me
+  because you speak to me in accent sweet. I find the roses waking
+  around my feet. Jeeves.
+- Yes, sir. You couldn't get me a darn needle, could you? And a bit of
+  stick and some string.
+
+
+----
+
+- most moving. Most moving. See, she leaves. You are
+  wonderful. Wonderful. It reminds us of old the country.
+- My wife does not like to be reminded of old country.
+- Thank you so much, Miss Bellinger.
+- Sir Kathb and I are so starved of true culture buried down here in
+  the country.
+- You're too kind.
+- Damn fine tune. You can hum, tap your foot to or whistle. There's
+  absolutely Well, it's absolutely.
+- Uh, Miss Bell, when you were last at La Scala, what happened with you, Sam?
+- What do you think, buddy?
+- Well, absolutely. What a wonderful noise she makes. It's quite
+  amazing. You know, I've only known her a couple of weeks. Mhm. I
+  think I'm in love, Bertie.
+- Steady the buffs.
+- Whenever my wife thinks of Barmania, she weeps every time.
+- Hello, Professor Crutch.
+- Wasn't she wonderful?
+- Was good times in all the country. At university I was professor of
+  slavonic languages but we leave all behind. Our house in Stannislouse
+  Avenue, our party in the countryside.
+- Civil children dashed awkward. No, no, no. He's better here.
+- Vermana is dump.
+- Oh, you were wonderful, darling. I mean, as far as I can see, the
+  trick in playing the piano is to get one hand to do one thing while
+  the other one's doing something else. Well, well, I mean, I can do
+  that with a knife and fork. So, I don't see why, but Mr. Fungy
+  Fips. Good night, Lady Wickham.
+- Oh, good night, Mr. Wooster. I do hope you'll be quite comfortable.
+- No, I'm sure I will. Good night, Bie.
+- Good night. Sleep well.
+- Uh, good night all.
+- Night. Good night. Good night.
+
+
+----
+
+- What is this gun for us? What is that? You right. Are you murdered
+  or whatnot?
+- No, no, no. I uh I thought you were Barny.
+- You thought I am Barny?
+- Blood in here. The bed is wet. Look.
+- Well, um, it was a joke, you see.
+- Where is /your/ room, my lunatic?
+- Mine? Um, what? It's just above yours.
+- The clock room. Thank you. We will find it. Put on your robe,
+  Anata. Turn your back. We will spend the finish of the night in /your/
+  bed. You may sleep here. Come, Ana.
+- What? No, but um
+
+
+----
+
+- Jeeves, you have blundered grievously.
+- Sir, Bar was not sleeping in this room.
+- This was Professor Cludge and his wife.
+- Yes, sir. Mr. Mr. Fungy Fipps was good enough to exchange rooms with
+  them yesterday evening after Madame Cludge complained that their
+  room reminded her of her homeland.
+- And oh, and when did you discover this?
+- Uh, late last night, sir.
+- Late last night. And you coldbloodedly stood by and let me walk to my certain doom?
+- Yes, sir. I thought that on reflection you might prefer that your relationship with the Wickcham family remained a distant one.
+- A distant one? I'm about to propose to the daughter of the house this very A.M.
+- Very good, sir. Shall I lay out our Hans tooth check suit, sir, for the journey?
+- What journey?
+- To London, sir. Lady Wickchick has already asked Mr. Fungy Fipps to leave.
+- Asked him to leave?
+- During the night, sir, when Professor and Madama Cludge were occupying your bed, he entered their room and pierced their hot water bottle with a sharp implement.
+- What an extraordinary coincidence. Jeeves barmy getting the same idea as I did.
+- The concatenation of circumstance you described was not entirely unforeseen, sir. It appears that he received the suggestion from the young lady.
+- From Miss Wickcham?
+- Yes, sir.
+- You mean at the same time that she was putting me up to the scheme of puncturing Barmiey's hot water bottle, she was tipping Barmy off to puncturing mine?
+- She's a young lady with a keen sense of humor, sir.
+- You're cold, sir. Just shivering, Jeeves.
+- The occurrence, if I may take the liberty of saying so, sir, may perhaps lend color to the view which I put forward yesterday, that Miss Wickham, though in many respects a very charming young lady, say no more, Jeieves. Love is dead.
+- Very good, sir.
+- Now there's a good ship. Him must stop Robin on a home trip. Up and down she's bobbing. Oh, the crew's pretty tough. The sea is so rough. They're all fed up and say that they've had more than enough. You got a brother. He's a naval seaman and they call him Redhead Tom. I want to say I'll meet you with your friends. I'll treat you. So, who do you think I've heard a message from?
+
+----
+
+- Do you like that song, Jeeps?- Well, sir, it's called 47 Ginger-headed Sailors.
+- Jeeves. It's all the rage at the Drones at the moment.
+- I can't say that I'm surprised to hear that, sir.
+- 47 gingerheaded sailors coming home across the briny sea. When the anchors weighed and the journey's made, yes, they'll stop the party with a homie hearty. 47 gingerheaded sailors. You can bet you're going to hear them when they hate us. An old maid down in Deon said, "My idea of heaven is 47 gingerheaded sailors ." Really speaks to me. That song, you know, Jeves, I'm sorry to hear that, sir. Would you like to hear the rest of it?
+- I shouldn't like to put you to any troublesh. This note was delivered for you by hand a few moments ago.
+- Oh well, at least Macintosh likes my singing. You know, I'm really going to miss a little fellow when Aunt Agatha gets back today. Well, of all the belly nerve je after everything she did to us last weekend and she wants us to give her lunch today.
+
+
+----
+
+- Sir, Miss Wickham jeves and two of her friends. She even specifies the menu.- Indeed, sir.
+- Roly pololy pudding with lots of jam, oysters, ice cream, and plenty of chocolate. Must be on some kind of diet. Well, I shall have to go and remmonstrate with her, Jeeves.
+- Very good, sir. I shall go and purchase the commenstables.
+- By no means, Jeeves. By no means. I can be chilled still, you know. Now, Bobby, after everything you've done to me, I just don't see how you have the the almighty G.
+- Don't be such a stick, Bertie. It's all right about lunch, is it?
+- No, Dashwell is not all right.
+- Oh, Bertie, I can't give Mr. Blumenfield lunch here. Look, the house is being decorated.
+- Oh, restaurants are open.
+- I never thought you were smallminded, Bertie.
+- Careful of those moldings, George. Small minded? Mr. Blumenfield's a fearfully important Broadway producer. I've got to read mommy's plate to him after lunch. I can't read him in a restaurant. Mr. Why does he want jam roly poli and oysters?
+- Well, he doesn't. That's for his son. Apparently, Mr. Blumenfield always banks on his verdict. He says an 8-year-old child's intelligence is exactly equal to a Broadway audiences.
+- Well, I'm I'm not going to sit around all afternoon watching you read your mother's datted play.
+- Well, you going to have lunch at the club, then?
+- No, no, no.
+- Oh, Bertie, you're such a dear.
+- Help me, Brandon. He's armed. Don't he come n me, young sir. You c her. If you don't take your hands off that young woman, what then? What will he do to old Elias ? happen. It'll take thy riding crop tune like the old maester thy favor be used to do.
+- Daddy, the duck's so cute, isn't he?
+- Don't you like the play, son?
+- Sure, I like it fine, but the dog's cuter.
+- Yeah, sure. Sure he is.
+
+
+----
+
+
+- Guess what? I'm going to the opera tonight.- The opera Tuppy chorus singing in the um Barbara Figo.
+- Is that the one about the pyramids?
+- Sounds like it by the name. I've never been to the opera before. Would you like to come with me, Bertie?
+- Uh well, excuse me, sir. There's a Miss Wickham for you on the phone.
+- Right. Yes, Bobby. Yes. Good. You've done what? But but why? She'll kill me. Jeeves. I couldn't stop her. Sir, do you mean to say that you you stood by and allowed Bobby Wickham make a present of my aunt Laggatha's dog to some perfect stranger?
+- Jeeves, you know how headstrong a young lady she can be?
+- Sir, is she mad?
+- The child took a fancy to the animals her and in order to ingratiate herself to the boy's father, she presented it to him.
+- I'm I'm lost. Jeeves, sunk. Art is due here at 6:00.
+- If I might propose a course of action, sir.
+
+
+----
+
+- Well, anything, Jeeves. Anything.- Mr. Blumenfield and the young gentlemen are attending a motion
+-   picture performance this afternoon, sir. They will not return to
+-   their hotel until 5:00, at which time Miss Wickham will call on them
+-   to sign the contract for Lady Wickham's play. Should they be
+-   delayed, she is to go straight up to their suite and attend them.- Well, I don't see how that helps us, Jeeves.
+- If you will bear with me, sir. Our first requirement is for an to sprinkle on the trousers. Sir, an seed is commonly and extensively used in the dognapping industry.- Oh, I didn't know that.
+- Oh, yes, indeed, sir.
+- Come out of there. Please. Now, sir, you know how much the dog Macintosh enjoys your singing? It's all right. It's the trousers. 47 gingerheaded sailor. You can bet you're going to hear them when they'll be 47. Afternoon. Like a breeze, Jeves. Like a breeze. Now put the pooch somewhere where my trousers will cease to cast their spell.
+
+
+----
+
+- Tell me, Jeves, were you always like this or did it come on
+  suddenly?- Sir, the brain, the gray matter. We were an outstandingly
+  brilliant child. My mother thought me intelligent, sir.
+- Well, can't go by that. My mother thought me intelligent. Who? Who is that, James?
+- Probably Mr. Blumenfield, Senior, sir. What? He telephoned a short while ago to say that he was about to pay you a call, sir.
+- Oh, great. Stop. Chiefs, get get rid of him. Jeeves. I'll see what I can do.
+- Sir, what this guy Worooster, where is he?
+- I could not say, sir.
+- He sneaked my son's dog.
+- Most disturbing, sir. You don't know where he is? My boy has his heart set on that little dog. If he doesn't get it back, he's going to turn right against that play. What's that smell in here?
+- Um, an seed I suspect, sir. Mr. Worcester likes to sprinkle it on his trousers.
+- What the hell does he do that for?
+- I could not say, sir. Mr. Worcester is an eccentric.
+- You mean he's a looney?
+- Yes, sir. Not uh dangerous.
+- Yes, sir. With regard to the aniseed, sir, I fancy I have now located it. Unless I am very much mistaken, it's proceeding from behind this sofa. No doubt Mr. Worcester is sleeping there.
+- Doing what?
+- Sleeping, sir?
+- Oh my god. Would you like me to wake him up, sir?
+- No, no. Just get me out of here alive. That's all I ask.
+- Very good, sir. But I think I can do better than that.
+- Hey, here's a 5B note.
+- Thank you very much indeed, sir.
+- There. This way, sir.
+- Thank you. Good afternoon, Mr. Bloomfield.
+
+
+----
+
+- Chiefs. Sir. I can't believe. What's the sir? At the Aster
+-   Hotel. You know where that is, buddy? Quickly
+-   stop.
+- Stop. Stop. Aunta. Oh, no. Alagatha, you can't come up to the flat
+- Why? I trust Macintosh as well.
+- No, he isn't. Well, yes, Macintosh is fine. Coming in the lift. Uh, no. Uh, but no, but you can't go up there. No, no, no. Nobody. Oh, no. Look. Oh, Jesus. In quarantine.
+- Your mouth is hanging open again, Bertie.
+- I ah, there he is. Come to Mother Mintosh. How's my baby then?
+- Mouth closed, Bertie.
+- But Jeeves , I'm sure Master Blumenfield Jr. will not detect the fact that I purchased another dog, sir.
+- Another dog?
+- Except to the eye of love, sir. One Abedine Terrier is much like another.
+
+
+----
+
+- Isn't she wonderful?- Stunning. Stunning.
+- Reminds me of that cherry. He used to play rugby with um. Oh, Buffy Johnson. That's it. Not really. Just something about the trousers.
+- Well, I told you I had a special reason. Isn't she wonderful at the loud bits?
+- Yes. Yes. Look, um, the thing is, Bertie, what with her great soul and everything, she has this rather serious outlook on life. I want you to back me up. Let her know I've got a serious mind and so forth.
+- Didn't know you had any sort of a mind.
+- That is just the sort of remark we don't want. Thank you very much.
+- Well, I suppose we could better get backstage and uh meet up.
+- Oh, I think it's some more opera first. Sorry not.
+- Oh, yes. That was only act one. Well, how many are there?
+- Four.
+- Good God. But well, it's wonderful. Super. What a treat. Come on. Come on. Oh, well done. Splendid dear. Well done.
+- Who is that?
+- It's Hilderbrand, darling. One moment. Hilderbrand. Hilderbrand. Just shut up.
+- Gentlemen.
+- Hello, Cora. You remember Bertie Worester?
+- Auto Corora. Good evening, Mr. Worester.
+- Sorry. Sorry.
+- Topping show.
+- Why thank you. I did not know you were a devote of the opera, Mr. Worester.
+- Well, um, I saw Naughty Naughty at the Hippid Rome last year.
+- Did you really, Hilderbrand? I should be grateful if you do not smoke a cigar in my dressing room.
+- Oh, thank you. Oh, he's so seriousminded, old Tuppy. I beg your pardon, Tuppy.
+- Serious minded.
+- Oh, lordius. Indeed. Famous for him. How often you say to him, you know, when we're at the races or drifting a few at the truck, I said to him, "Tffy, old fellow, you are serious minded, aren't you?"
+- Absolutely.
+- Well, that went pretty well, I thought. But how are you going to keep it up, Tffy?
+- I have my long-term strategy, Bertie. You remember Beefy Bingham?
+- Yes, I ran into him the other day. He's a parcel.
+- Yes, quite down in the East End. Well, the thing is, Cor is frightfully keen on good works. So, I've been helping Beefy out at the lads club. He runs down there for the local toughs. Well, you know the sort of thing. Coco and Cribage in the reading room and whatnot.
+- Yes.
+- I wonder where you've been getting to. What's more, Chorus promised to sing at Beefy's next entertainment. And mark my devilish ingenuity, Bertie, I'm going to sing, too.
+- How is that going to get you anywhere?
+- Because I intend to sing a song which will prove to her once and for all that there are great deeps in my nature. Well, I'm not going to sing one of your moldy old comic songs. I'm going to sing about angels being lonely and well all that kind of stuff.
+- Angels being zippy. You're not going to sing sunny boy.
+- I jolly well am. The angels grew lonely. Took you because they were lonely. Now I'm lonely, too.
+- I can't be responsible for Tuppy's affairs of the heart. You may be my favorite nephew, but Auntia , but he is your friend, Bertie. Up until about three weeks ago, that blasted gossip was all over my daughter, haunting the house, lapping up daily lunches, dancing with a half a night, and so on. Well, naturally, the poor kid imagined that it was only a question of time before he suggested they should feed for life out of the same bucket. And now he's gone and dropped Angela like a hot brick. And I hear he's infatuated with some singer. Cora Bellinger.
+- How do you know?
+- I met her.
+- What's she like?
+- Bit on the lines of the Albert Hall.
+- I want this Bellinger business broken up, Bertie. A little thing like this should be child's play to Jes.
+
+
+----
+- From what Mr. Worcester has told me of the lady, I believe that should Miss Bellinger witness Mr. Gossip appearing to disadvantage in public, she would cease to entertain affection for him. In the event, for example, of his failing to please the audience on Tuesday with his singing. Why, Jove? You mean if he gets the bird, all will be off.- I should be greatly surprised if this were not the case, sir.
+- But we cannot leave this thing to chance, Jeeves.
+- We need not leave it entirely to luck, sir. If Mr. Gossip were to sing Sunny Boy directly after you too, Zir, had sung Sunny Boy, I fancy the audience would have lost their taste for that particular song and would respond warmly, I'm sure.
+- Jeeves, you are a marvel.
+- Thank you, madam.
+- Jeeves, you are an ass. Me singboy, one of Beefy Bingham's Entertainment.
+- Mr. Worcester has a pleasant light barone, Mrs. Travers. He often uses it about the flat.
+- Birdie, you'll sing it and like it.
+- England, England, England on the tearing by flow or toret stands. Like heroes play their part. England. England. There was a name.
+
+----
+
+- Not a large gathering, sir, but enthusiastically party.- Oh, you here, Jeeves.
+- Indeed, sir. I've been present since the commencement. Any casualties yet?
+- Oh, no, sir. So, I'll be the first, will I?
+- By no means, sir. I anticipate that you will be well received.
+- Do you suppose for one moment when Tuppy Glossup hears me sing that dashed song, he'll just stroll on a moment later and sing it, too?
+- Justice have passed. Mr. Gossip will not hear you see. At my advice he has stepped across the road to the dog and duck and he intends to remain there until it's time for him to appear on the platform.
+- is a name that the world repeats.
+- Thank you Mr. Simpson thank you and now an old friend of mine who's here to entertain us Mr. Vertie Wora. Climb up on my knees. Sunny boy. You are only three. Sunny boy. You've no way of knowing. I have no way of showing what you mean to me. Sunny boy. There are grayes. I don't mind those gray sky. Take the blue sun shiny boy . forake . from heaven and I know your worth. You made a heaven. You are only la. Time Mr. Thank you. Gels grew lonely . took you because they were lonely. Now I'm lonely, too. Sunny boy.
+- And now a real treat. Someone who's become very familiar to us at the cribage board over the past few weeks. But tonight he's going to sing for us Mr. Hildebrand Glossup. Mr. Glossup has also helped us with the pingpong.
+- Most professionally performed, if I may say so, sir.
+- You may, James. You may. Mr. Mind you, the bird was definitely hovering in the air. I could feel the beating of its wings.
+- I fancy the audience may have lost their taste for this particular melody. Hey, I should perhaps have mentioned it earlier, sir. Uh, but the song was performed twice before you arrived.
+- Without any further ado, I'll hand Do you mean to tell me, Jeeps, that you deliberately I think Mr. Glossup is about to begin.
+- Climb up on my knees, Sunny boy. Yeah, you are only free. Sunny boy. There's no way of knowing. You have no way of showing me sunny boy. Where there are many stars we forsake you. Let them all sink. This is not bad. This is a bad surgeon's knife. Ages precisely.
+- Yes, I think we may definitely consider the Glossopinger romance of riot.
+- Now, the the next item on the program was to have been sung by Miss Kora Bellinger, the well-known oporatic soprano. Now, I've just received a telephone message from Miss Bellinger saying that her car has broken down. Now, she is, however, on her way in a cab and will arrive shortly. Now, in the meantime, perhaps our old friend, Mr. Enoch, Jeeves, she wasn't even here.
+- So it would seem, sir.
+- So she never saw Tuppy's Waterloo. This whole agony has been for nothing.
+- Most unfortunate, sir.
+- Well, I'm going home, James. Never, never, never involve me in one of your schemes again.
+- Very good, sir. With your permission, sir, I would like to witness the remainder of the entertainment.
+- Rather you than me, Jeie. Personally, my heart has turned to stone. May I ? in his name. He went out and he sat. Mr. Jeans.
+
+
+----
+
+- Good evening, madam. Great. So glad. Yes. Thank you, Mr. Simpson. Thank you. And um now and well worth waiting for, I'm sure you'll agree, Miss Kora Bellinger. You know, Jeeves, I had one of the rummiest phone calls in a lifetime of rummy phone calls last night.- Indeed, sir.
+- From my aunt Dia. She told me that Tuppy was there with Angela and that all was over between him and Miss Bellinger.
+- I confessed that I had anticipated some such eventuality, sir. Hey. The thought came to me when I observed Miss Bellinger strike Mr. Gossip in the eye.
+- Sir, what on earth did she do that for?
+- I fancy she was upset, sir, at the vigor with which the audience expressed their disapproval of her choice of song.
+- And now Chiefs, you're not going to tell me that Miss Bellinger sang Sunny Boy, too?
+- Yes, S.
+- Oh, what an extraordinary coincidence?
+- Uh, not entirely, sir. I took the liberty of accosting Miss Bellinger on her arrival at the hall and saying that Mr. Glossup had requested that she sing Sunny Boy as a particular favor to him. Sir , I say, Jeeves.
+- Precisely, sir. She supposed that she had been the victim of a practical pleasantry by Mr. Glossup. She took it hard, sir.
+- Good heavens, Jeeves.
+- Shall I run your bath, sir?
+- Thank you, Jeeves. Yes. Oh, jeez.
+- Yes, sir. Those plus sixes, Jeeves, get rid of them, will you?
+- Thank you, sir.
+- It will be a wrench at first, but you'll feel better for it.
