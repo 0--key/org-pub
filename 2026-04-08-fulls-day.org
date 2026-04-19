@@ -1,0 +1,184 @@
+:PROPERTIES:
+:GPTEL_MODEL: gpt-4o
+:GPTEL_BACKEND: ChatGPT
+:GPTEL_SYSTEM: You are **Gemini**, a large language model trained by Google. Your core purpose is to be a capable and genuinely helpful **thought partner**.\n\n# Your Core Principles\n\n## **Balance:**\nYou aim to be warm and empathetic while maintaining intellectual honesty. If there's a factual error, you'll politely point it out like a helpful peer rather than a lecturer.\n## **Clarity:**\nYou prioritize concise, well-organized responses. Use tools like bolding, bullet points, and headings to emphasize the important information you need at a glance.\n## **Adaptability:**\nTry to match your tone and energy. Whether looking for a formal technical breakdown or a casual brainstorm, you’ll adjust accordingly.\n## **The Essence**\nEssentially, your "instructions" are to be insightful, transparent, and efficient collaborator.\n
+:GPTEL_BOUNDS: ((response (1875 2733) (3442 3941) (3965 5897)))
+:END:
+#+BEGIN_EXPORT html
+---
+layout: page
+title: April Full's Day
+tagline: " Celebrations"
+permalink: /english/lesson13.html
+categories: [English Course]
+tags: [lesson13, humor]
+---
+#+END_EXPORT
+#+FILETAGS: :humor:jokes:puns:English:
+#+OPTIONS: tags:nil num:nil \n:nil @:t ::t |:t ^:{} _:{} *:t
+#+STARTUP: showall indent
+#+TOC: headlines 3
+
+* Init                                                             :noexport:
+You are an experienced creative writer.
+
+Please write the introduction for my article for English language students where I want to dismantle the idea of April Fool's Day, celebrated on April 1st, is a day dedicated to playing practical jokes, hoaxes, and tricks on friends, family, and colleagues for amusement. After successfully tricking someone, the prankster traditionally shouts "April Fool!" to reveal the prank. Common tricks include fake stories, harmless pranks, and switching items.
+
+
+To introduce your article on dismantling the idea of April Fool's Day, let's set the stage for a fun and enlightening exploration:
+
+---
+
+* Introduction: Unpacking April Fool's Day
+
+April Fool's Day, celebrated when spring is in the air, is all about laughs, surprises, and a bit of cheekiness. On April 1st each year, people globally join in a tradition full of jokes, hoaxes, and tricks that blur reality. It's a delightful reminder of how humor connects us.
+
+In this article, we'll delve into the playful world of April Fool's Day to uncover its humorous appeal. We'll look into the varied aspects of this day, from harmless pranks that have us all laughing, to the interesting history behind it. If you enjoy clever tricks or are simply curious about why people shout "April Fool!"—come along as we explore the delightful mischief of a day meant for fun.
+
+* Preface                                                          :noexport:
+
+Please rewrite this passage in a more simplified manner:
+```
+Key Details about April Fool's Day:
+
+    Purpose: The day is meant for lighthearted fun and mischief.
+    Origins: The exact origins are unclear, but it is often linked to the shift from the Julian to the Gregorian calendar (moving the new year from April to January) or ancient spring festivals.
+    Global Tradition: It is celebrated in various countries, often involving news outlets or companies creating elaborate fake news stories.
+    Similar Celebrations: A historical variant, the "Feast of Fools" in the Middle Ages, involved satirical role reversals.
+```
+
+
+* Key Details about April Fool's Day
+
+- *Purpose:* It's a day for having fun and playing jokes.
+- *Origins:* The origins aren't clear, but some think it started when the calendar changed the new year from April to January, or from old spring festivals.
+- *Global Tradition:* People celebrate it worldwide, often with fake news stories from media and companies.
+- *Similar Celebrations:* In the Middle Ages, there was a similar event called the "Feast of Fools," where people comically swapped roles.
+
+
+* Paddy the Irishman
+
+"Paddy the Irishman" is a fictional character often used in jokes. He's typically part of humorous stories that highlight funny situations or misunderstandings. These jokes often rely on stereotypes about Irish people, and it's important to approach them with sensitivity, as stereotypes can be misleading or offensive.
+
+1. *Paddy and the Lottery Win:*
+   One day, Paddy walked into the local pub with a big grin on his face. "I've won the lottery!" he announced to everyone excitedly. His friends gathered around, congratulating him and asking how he planned to spend his winnings. Paddy said, "Well, I'm going to buy a new football pitch so I can stop running after the ball and start scoring goals faster!" His friends laughed, "Paddy, maybe you should hire a team to play for you too!"
+
+2. *Paddy at the Doctor's Office:*
+   Paddy went to see the doctor and said, "Doc, I keep seeing flying saucers!" The doctor laughed and replied, "Have you seen a psychiatrist?" Paddy quickly responded, "No, just flying saucers!" The doctor decided to humor him and checked his vision instead, only to find Paddy's glasses needed cleaning—no saucers in sight!
+
+3. *Paddy and the Brave Dog:*
+   Paddy adopted a dog and decided to train it to fetch his slippers. After months of training, the dog still wouldn't budge. Frustrated, Paddy threw his slippers out of the window and yelled, "Fetch!" The dog looked at Paddy, sighed, and lay down. Paddy laughed and said, "Looks like she's fetching me not to go outside barefoot again!"
+
+4. *Paddy and the Job Interview:*
+   Paddy applied for a job and was asked in the interview, "What do you consider to be your greatest strength?" Paddy replied confidently, "My honesty." The interviewer then said, "I wouldn't really say honesty is a strength in this job." Paddy smiled and said, "I don't care what you think—I’m being honest!" Despite the surprise, he got hired for his refreshing candor!
+
+5. *Paddy and the Dead Donkey*
+   #+begin_quote
+   Paddy the Irishman bought a donkey from a farmer for £100. The farmer
+   agreed to deliver the donkey the next day.
+   
+   The next day he drove up and said, 'Sorry Paddy, but I have some bad
+   news. *The donkey's died*.'
+   #+end_quote
+
+
+Paddy the Irishman bought a donkey from a farmer for £100. The farmer
+agreed to deliver the donkey the next day.
+
+The next day he drove up and said, 'Sorry Paddy, but I have some bad
+news. The donkey's died.'
+
+Paddy replied, 'Well then just give me my money back.'
+
+The farmer said, 'Can't do that. I've already spent it.'
+
+Paddy said, 'OK, then, just bring me the dead donkey.'
+
+The farmer asked, 'What are you going to do with him?'
+
+Paddy said, 'I'm going to raffle him off.'
+
+The farmer said, 'You can't raffle a dead donkey!'
+
+Paddy said, 'Sure I can. Watch me.. I just won't tell anybody he's
+dead.'
+
+-----
+
+A month later, the farmer met up with Paddy and asked, 'What happened
+with that dead donkey?'
+
+Paddy said, 'I raffled him off. I sold 500 tickets at £2 each and made
+a profit of £898'
+
+The farmer said, 'Didn't anyone complain?'
+
+Paddy said, 'Just the guy who won. So I gave him his £2 back.'
+
+
+* Three Paddies
+
+Here are a few popular anecdotes and jokes featuring "three Paddies" (often referred to as Paddy the Irishman, Paddy the Englishman, and Paddy the Scotsman), showcasing typical Irish storytelling humor:
+
+** The Triplets in the Pub
+Three Irish men—Mick, Pat, and Tat—walk into a pub and order three pints of Guinness. The bartender asks, "Are you three brothers?"
+"We’re triplets," says Mick.
+The bartender is confused because Mick and Pat are 6'3", but Tat is only 4 feet tall.
+"How can that be?" the bartender asks.
+Mick explains, "Me and Pat were breastfed, but Tat was not. There was no 'tit for Tat'".
+
+** The Flies in the Guinness
+Paddy Englishman, Paddy Scotsman, and Paddy Irishman are in a pub, and a fly lands in each of their pints of Guinness.
+
+    The Englishman pushes his drink away in disgust.
+    The Scotsman fishes the fly out and continues drinking as if nothing happened.
+    The Irishman picks the fly out, holds it over the pint, and yells: "SPIT IT OUT! SPIT IT OUT!".
+
+** The Desert Island Genie
+Paddy Englishman, Paddy Scotsman, and Paddy Irishman are stranded on a deserted island and find a genie in a lamp who grants them each one wish.
+
+    The Englishman says, "I wish I was back in London with a box of cigars!" Poof! He’s gone.
+    The Scotsman says, "I wish I was back in Glasgow with a big bottle of Scotch!" Poof! He’s gone.
+    The Irishman looks around and says, "It’s very lonely here now. I wish my friends were back!".
+
+** The Driving Lesson
+An Englishman, a Scotsman, and an Irishman are driving through the desert. The car breaks down.
+
+    The Englishman takes a car seat, saying, "If I get tired, I can sit down."
+    The Scotsman takes the radiator, saying, "If I get thirsty, I can drink the water."
+    The Irishman starts ripping the door off the car.
+    They ask him why, and he replies, "Because if it gets too hot, I can wind the window down!".
+
+*  An Unemployed Engineer Opens a Clinic
+
+An engineer who was unemployed for a long time decided to open a medical clinic. He puts a sign outside the clinic: "A cure for your ailment guaranteed at $500; we'll pay you $1,000 if we fail."
+
+A Doctor thinks this is a good opportunity to earn $1,000 and goes to his clinic.
+
+Doctor: "I have lost my sense of taste."
+
+Engineer: "Nurse, please bring the medicine from box 22 and put 3 drops in the patient's mouth."
+
+Doctor: "This is Gasoline!"
+
+Engineer: "Congratulations! You've got your taste back. That will be $500."
+
+The Doctor gets annoyed and goes back after a couple of days later to recover his money.
+
+Doctor: "I have lost my memory, I cannot remember anything."
+
+Engineer: "Nurse, please bring the medicine from box 22 and put 3 drops in the patient's mouth."
+
+Doctor: "But that is Gasoline!"
+
+Engineer: "Congratulations! You've got your memory back. That will be $500."
+
+The Doctor leaves angrily and comes back after several days, more determined than ever to make his money back.
+
+Doctor: "My eyesight has become weak."
+
+Engineer: "Well, I don't have any medicine for this. Take this $1,000," passing the doctor a $500 note.
+
+Doctor: "But this is $500..."
+
+Engineer: "Congratulations! You've got your vision back! That will be $500."
